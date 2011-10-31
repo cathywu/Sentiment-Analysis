@@ -1,30 +1,37 @@
 import classifier
 import data
 from numpy import *
+import numpy.random
 
 def kfold(k, classifier_type, dat):
-    folds = array_split(dat.asMatrix(), k, axis=1)
+    print "Splitting array..."
+    mat = dat.asMatrix().T.copy()
+    numpy.random.shuffle(mat)
+    folds = array_split(mat.T, k, axis=1)
     error = 0
     count = 0
 
     for i in range(len(folds)):
+        print "Running fold", i
         testdata = folds[i]
-        classif = classifier_type(hstack(folds[:i] + folds[i+1:]))
+        classif = classifier_type(data.Data(hstack(folds[:i] + folds[i+1:])))
         e, c = errorrate(classif, data.Data(testdata))
+        print (1 - float(e)/float(c))
         error += e
         count += c
-    return float(error)/float(count)
+        
+    return 1 - (float(error)/float(count))
 
 def errorrate(classif, testdata):
     count = 0
     error = 0
-    for vec in testdata.asDict():
+    for col in testdata.asMatrix().T:
         count += 1
-        for v in testdata.asDict()[vec]:
-            if not v == classif.classify(vec):
-                error += 1
+        if not col[-1] == classif.classify(col[:-1]):
+            error += 1
     return (error, count)
-        
+
+
 if __name__ == "__main__":
     d = data.Data(data.DefDict((), {
                 (1,2,3) : (1,),
