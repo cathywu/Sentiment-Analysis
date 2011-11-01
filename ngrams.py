@@ -43,6 +43,12 @@ def ngrams(n, s):
     grams[" ".join(current)] += 1
     return grams
 
+def ngrams_range(b, e, s):
+    g = {}
+    for i in range(b, e+1):
+        g.update(ngrams(i, s))
+    return g
+
 def ngrams_to_matrix(grams, classes):
     print "a"
     keysets = [set(k) for k in grams]

@@ -8,8 +8,8 @@ classif = classifier.BayesPresenceClassifier
 
 def read_reviews():
     print "Reading and parsing files..."
-    pos_files = [ngrams.ngrams(1, open("pos/"+i).read()) for i in os.listdir("pos")]
-    neg_files = [ngrams.ngrams(1, open("neg/"+i).read()) for i in os.listdir("neg")]
+    pos_files = [ngrams.ngrams(3, open("pos/"+i).read()) for i in os.listdir("pos")]
+    neg_files = [ngrams.ngrams(3, open("neg/"+i).read()) for i in os.listdir("neg")]
     classes = [1] * len(pos_files) + [0] * len(neg_files)
     print "Creating matrix..."
     mat = ngrams.ngrams_to_matrix(pos_files + neg_files, classes)
