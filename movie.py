@@ -4,19 +4,35 @@ import validate
 import classifier
 import os
 from numpy import *
-classif = classifier.BayesPresenceClassifier
 
-def read_reviews():
+
+class MovieReviews:
+    def __init__(self, clsf, n):
+        print "Reading files"
+        self.pos_files = [ngrams.ngrams(n, open("pos/"+i).read()) for i in os.listdir("pos")]
+        self.neg_files = [ngrams.ngrams(n, open("neg/"+i).read()) for i in os.listdir("neg")]
+        self.classes = [1] * len(self.pos_files) + [0] * len(self.neg_files)
+        print "Building dictionary"
+        self.dictionary = ngrams.ngrams_to_dictionary(self.pos_files + self.neg_files)
+        print len(self.dictionary)
+        print "Building matrix"
+        self.mat = ngrams.ngrams_to_sparse(self.pos_files + self.neg_files, self.classes)
+        print "Building classifier"
+        self.classifier = clsf(self.mat)
+
+
+classif = classifier.SparseBayesClassifier
+#classif = classifier.LinearSVMClassifier
+def test():
     print "Reading and parsing files..."
-    pos_files = [ngrams.ngrams(3, open("pos/"+i).read()) for i in os.listdir("pos")]
-    neg_files = [ngrams.ngrams(3, open("neg/"+i).read()) for i in os.listdir("neg")]
-    classes = [1] * len(pos_files) + [0] * len(neg_files)
+    m = MovieReviews(classif, 2)
+
     print "Creating matrix..."
-    mat = ngrams.ngrams_to_matrix(pos_files + neg_files, classes)
+
     print "Running classifier..."
-    print validate.kfold(3, classif, mat)
-    print validate.kfold(5, classif, mat)
-    print validate.kfold(10, classif, mat)
+    print validate.kfold(3, classif, m.mat)
+    print validate.kfold(5, classif, m.mat)
+    print validate.kfold(10, classif, m.mat)
 
 if __name__ == "__main__":
-    read_reviews()
+    test()

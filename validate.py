@@ -8,28 +8,28 @@ def kfold(k, classifier_type, dat):
     mat = dat.asMatrix().T.copy()
     numpy.random.shuffle(mat)
     folds = array_split(mat.T, k, axis=1)
-    error = 0
+    success = 0
     count = 0
 
     for i in range(len(folds)):
         print "Running fold", i
         testdata = folds[i]
         classif = classifier_type(data.Data(hstack(folds[:i] + folds[i+1:])))
-        e, c = errorrate(classif, data.Data(testdata))
-        print (1 - float(e)/float(c))
-        error += e
+        s, c = successrate(classif, data.Data(testdata))
+        print (float(s)/float(c))
+        success += s
         count += c
         
-    return 1 - (float(error)/float(count))
+    return 1 - (float(success)/float(count))
 
-def errorrate(classif, testdata):
+def successrate(classif, testdata):
     count = 0
-    error = 0
+    success = 0
     for col in testdata.asMatrix().T:
         count += 1
         if not col[-1] == classif.classify(col[:-1]):
-            error += 1
-    return (error, count)
+            success += 1
+    return (success, count)
 
 
 if __name__ == "__main__":
@@ -45,9 +45,8 @@ if __name__ == "__main__":
                 (1,5,3) : (1,),
                 (1,6,3) : (0,)
                 }))
-    classif = classifier.OneClassifier
+    classif = classifier.BayesClassifier
     print d.asMatrix()
     
     print "-----------"
-    print kfold(5, classif, d)
-    
+    print kfold(5, classif, d)    

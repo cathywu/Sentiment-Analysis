@@ -1,6 +1,7 @@
 import collections
 import data
 from numpy import *
+from scipy.sparse import lil_matrix, csr_matrix
 def words(s):
     words = []
     current = ""
@@ -49,13 +50,22 @@ def ngrams_range(b, e, s):
         g.update(ngrams(i, s))
     return g
 
+def ngrams_to_dictionary(grams):
+    keysets = [set(k) for k in grams]
+    allgramset = set()
+    allgramset = apply(allgramset.union, keysets)
+    return allgramset
+    
+
+
+
+
 def ngrams_to_matrix(grams, classes):
     print "a"
     keysets = [set(k) for k in grams]
     allgramset = set()
     print "b"
-    for k in keysets:
-        allgramset = allgramset.union(k)
+    allgramset = apply(allgramset.union, keysets)
     print "c"
     allgrams = list(allgramset)
     print "d"
@@ -65,18 +75,54 @@ def ngrams_to_matrix(grams, classes):
     for i in range(len(allgrams)):
         allgramsdict[allgrams[i]] = i
     for g, c in zip(grams, classes):
-        vec = ones(len(allgrams) + 1, dtype=uint16)
+        vec = ones(len(allgramsdict) + 1, dtype=uint16)
         for i in g:
             vec[allgramsdict[i]] = g[i]
         vec[-1] = c
         vecs.append(vec)
+    print vstack(vecs).T.shape
     return data.Data(vstack(vecs).T)
+
+def ngrams_to_sparse(grams, classes):
+    print "a"
+    keysets = [set(k) for k in grams]
+    allgramset = set()
+    print "b"
+    allgramset = apply(allgramset.union, keysets)
+    print "c"
+    allgrams = list(allgramset)
+    print "d"
+    vecs = []
+    print "e"
+    allgramsdict = {}
+    for i in range(len(allgrams)):
+        allgramsdict[allgrams[i]] = i
+    print "f"
+    mat = lil_matrix((len(allgrams), len(grams)))
+    print "g"
+    for g in range(len(grams)):
+        for i in range(len(grams[g])):
+            if grams[g][i] > 1:
+                mat[allgramsdict[grams[g][i]], g] = grams[g][allgrams[i]] - 1
+        mat[g, -1] = classes[g]
+    return data.Data(mat.tocsr())
+        
     
-def ngram_vector(n, s, dictionary):
+
+def gen_indexdict(dictionary):
+    allgramsdict = {}
+    for i in range(len(dictionary)):
+        allgramsdict[dictionary[i]] = i
+    return allgramsdict
+    
+def ngram_vector(n, s, dictionary, allgramsdict = {}):
     grams = ngrams(n, s)
-    vec = []
-    for wrd in dictionary:
-        vec.append(grams[wrd])
+    if len(allgramsdict) == 0:
+        allgramsdict = gen_indexdict(dictionary)
+    vec = ones(len(dictionary), dtype=uint16)
+    for g in grams:
+        if g in allgramsdict:
+            vec[allgramsdict[g]] = grams[g]
     return array(vec)
         
 if __name__ == "__main__":
@@ -85,4 +131,5 @@ if __name__ == "__main__":
     g2 = ngrams(1, "Are you feeling well")
     g3 = ngrams(1, "Well hello there")
     print g3
+    print ngram_vector(1, "how are you today", ["how", "seven", "today", "three"])
     print ngrams_to_matrix([g1, g2, g3], [1, 2, 1]).asMatrix()

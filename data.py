@@ -1,4 +1,6 @@
 from numpy import *
+from scipy.sparse import lil_matrix, csr_matrix, csc_matrix
+
 """
 pass in data as a numpy matrix
 with data in vectors, class as last row
@@ -24,17 +26,23 @@ class DefDict(dict):
                     
 class Data:
     def __init__(self, inp):
-        if type(inp) == ndarray:
+        self.matrix = None
+        self.dict = None
+        self.sparse = None
+        if type(inp) == ndarray: 
             self.matrix = inp
-            self.dict = None
         elif type(inp) == DefDict:
             self.dict = inp
-            self.matrix = None
+        elif type(inp) == csc_matrix or type(inp) == csr_matrix or type(inp) == lil_matrix:
+            self.sparse = inp
         else:
+            print type(inp)
             raise RuntimeError
             
     def asDict(self):
         if self.dict == None:
+            if self.matrix == None:
+                raise RuntimeError
             self.dict = DefDict([])
             for col in self.matrix.T:
                 print "col:", col, col[:-1], col[-1], self.dict[tuple(col[:-1])]
@@ -44,13 +52,21 @@ class Data:
 
     def asMatrix(self):
         if self.matrix == None:
-            cols = []
-            for k in self.dict:
-                for v in self.dict[k]:
-                    cols.append(hstack((k, v)).T)
-            self.matrix = column_stack(cols)
+            if not self.sparse == None:
+                self.matrix = array(self.sparse)
+            else:
+                cols = []
+                for k in self.dict:
+                    for v in self.dict[k]:
+                        cols.append(hstack((k, v)).T)
+                        self.matrix = column_stack(cols)
         return self.matrix
 
+    def asSparseMatrix(self):
+        if self.sparse == None:
+            raise RuntimeError
+        return self.sparse
+            
 
 if __name__ == "__main__":
     testmat = DefDict((), {(1,2,3,4,5):(1,),
