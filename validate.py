@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import classifier
 import data
 from numpy import *
@@ -31,20 +33,19 @@ def errorrate(classif, testdata):
             error += 1
     return (error, count)
 
-
 if __name__ == "__main__":
     d = data.Data(data.DefDict((), {
-                (1,2,3) : (1,),
-                (3,3,1) : (0,),
-                (1,2,3) : (1,),
-                (1,4,3) : (1,),
-                (1,2,4) : (1,),
-                (1,2,1) : (1,),
-                (1,2,6) : (1,),
-                (1,4,5) : (0,),
-                (1,5,3) : (1,),
-                (1,6,3) : (0,)
-                }))
+                  (1,2,3) : (1,),
+                  (3,3,1) : (0,),
+                  (1,2,3) : (1,),
+                  (1,4,3) : (1,),
+                  (1,2,4) : (1,),
+                  (1,2,1) : (1,),
+                  (1,2,6) : (1,),
+                  (1,4,5) : (0,),
+                  (1,5,3) : (1,),
+                  (1,6,3) : (0,)
+                  }))
     classif = classifier.OneClassifier
     print d.asMatrix()
     

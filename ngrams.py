@@ -1,6 +1,9 @@
+#!/usr/bin/python
+
 import collections
 import data
 from numpy import *
+
 def words(s):
     words = []
     current = ""
@@ -50,17 +53,17 @@ def ngrams_range(b, e, s):
     return g
 
 def ngrams_to_matrix(grams, classes):
-    print "a"
+    print "Entering ngrams_to_matrix"
     keysets = [set(k) for k in grams]
     allgramset = set()
-    print "b"
+    print "> Sets created"
     for k in keysets:
         allgramset = allgramset.union(k)
-    print "c"
+    print "> Sets unioned"
     allgrams = list(allgramset)
-    print "d"
+    print "> Listed"
     vecs = []
-    print "e"
+    print "> []"
     allgramsdict = {}
     for i in range(len(allgrams)):
         allgramsdict[allgrams[i]] = i
@@ -80,9 +83,9 @@ def ngram_vector(n, s, dictionary):
     return array(vec)
         
 if __name__ == "__main__":
-    print ngrams(3, "Now is the time for all good men to not come to the aid of their party! Now is the time for all bad women to leave the aid of their country? This, being war, is bad")
+    print "Trigram example: %s" % ngrams(3, "Now is the time for all good men to not come to the aid of their party! Now is the time for all bad women to leave the aid of their country? This, being war, is bad")
     g1 = ngrams(1, "Hello how are you")
     g2 = ngrams(1, "Are you feeling well")
     g3 = ngrams(1, "Well hello there")
-    print g3
-    print ngrams_to_matrix([g1, g2, g3], [1, 2, 1]).asMatrix()
+    print "Unigram example: %s" % g3
+    print "Matrix example: %s" % ngrams_to_matrix([g1, g2, g3], [1, 2, 1]).asMatrix()

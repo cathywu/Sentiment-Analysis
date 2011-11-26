@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import data
 import ngrams
 import validate
