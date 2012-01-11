@@ -5,6 +5,9 @@ import ngrams
 import os
 import pickle
 import numpy
+import matplotlib.pyplot as plt
+
+TRAIN_SIZE = 300
 
 class FeatureMap:
     """
@@ -101,12 +104,12 @@ def load_features(n,fmap):
 def training_model(n=3):
     print "Loading features"
     load_features(n,fmap)
-    print fmap.getSize()
+    print "Feature map size: %s" % fmap.getSize()
     print "Getting training data"
     train = []
-    for i in os.listdir("pos")[0:500]:
+    for i in os.listdir("pos")[0:TRAIN_SIZE]:
         train.append((1,[(fmap.getID(item[0]),item[1]) for item in ngrams.ngrams(n, open("pos/"+i).read()).items() if fmap.hasFeature(item[0])]))
-    for i in os.listdir("neg")[0:500]:
+    for i in os.listdir("neg")[0:TRAIN_SIZE]:
         train.append((-1,[(fmap.getID(item[0]),item[1]) for item in ngrams.ngrams(n, open("neg/"+i).read()).items() if fmap.hasFeature(item[0])]))
     print "Training model"
     model = svmlight.learn(train, type='classification', verbosity=0)
@@ -115,9 +118,9 @@ def training_model(n=3):
 
 def test_model(model,n=3):
     test = []
-    for i in os.listdir("pos")[500:]:
+    for i in os.listdir("pos")[TRAIN_SIZE:]:
         test.append((1,[(fmap.getID(item[0]),item[1]) for item in ngrams.ngrams(n, open("pos/"+i).read()).items() if fmap.hasFeature(item[0])]))
-    for i in os.listdir("neg")[500:]:
+    for i in os.listdir("neg")[TRAIN_SIZE:]:
         test.append((-1,[(fmap.getID(item[0]),item[1]) for item in ngrams.ngrams(n, open("neg/"+i).read()).items() if fmap.hasFeature(item[0])]))
     predictions = svmlight.classify(model, test)
     return predictions
@@ -127,8 +130,35 @@ fmap = FeatureMap()
 #if __name__ == "__main__":
 m = training_model(n=1)
 p = test_model(m,n=1)
-print "POSITIVE"
-print numpy.histogram(p[0:500])
-print "NEGATIVE"
-print numpy.histogram(p[500:])
+nresults = len(p)
 
+# plot positive labels
+print "POSITIVE"
+pos_hist = numpy.histogram(p[0:nresults/2])
+print pos_hist
+fig = plt.figure()
+fig.suptitle('SVM results', fontsize=12)
+fig.add_subplot(1,2,1)
+plt.title('positive')
+plt.hist(p[0:nresults/2])
+pos_axis = plt.axis()
+
+# plot negative labels
+print "NEGATIVE"
+fig.add_subplot(1,2,2)
+plt.title('negative')
+neg_hist = numpy.histogram(p[nresults/2:])
+print neg_hist
+plt.hist(p[nresults/2:])
+neg_axis = plt.axis()
+
+# match axes of the two graphs
+low_axis = [min(a,b) for (a,b) in zip(pos_axis,neg_axis)]
+high_axis = [max(a,b) for (a,b) in zip(pos_axis,neg_axis)]
+new_axis = [low_axis[0],high_axis[1],low_axis[2],high_axis[3]]
+plt.axis(new_axis)
+plt.subplot(1,2,1)
+plt.axis(new_axis)
+
+# display plot
+plt.show()
