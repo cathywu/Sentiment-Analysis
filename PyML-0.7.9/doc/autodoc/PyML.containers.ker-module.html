@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>PyML.containers.ker</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pyml.sourceforge.net">PyML</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;PyML ::
+        <a href="PyML.containers-module.html">Package&nbsp;containers</a> ::
+        Module&nbsp;ker
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="PyML.containers.ker-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== MODULE DESCRIPTION ==================== -->
+<h1 class="epydoc">Module ker</h1><p class="nomargin-top"><span class="codelink"><a href="PyML.containers.ker-pysrc.html">source&nbsp;code</a></span></p>
+<!-- ==================== CLASSES ==================== -->
+<a name="section-Classes"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Classes</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.containers.ker.Kernel-class.html" class="summary-name">Kernel</a><br />
+      base class for kernel objects
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.containers.ker.Linear-class.html" class="summary-name">Linear</a><br />
+      A Linear kernel (dot product)
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.containers.ker.Cosine-class.html" class="summary-name">Cosine</a><br />
+      A Cosine kernel (dot product)
+Construction:
+k = Cosine()
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.containers.ker.Polynomial-class.html" class="summary-name">Polynomial</a><br />
+      A Polynomial kernel
+K(x,y) = (x dot y + additiveConst) ** degree
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.containers.ker.Gaussian-class.html" class="summary-name">Gaussian</a><br />
+      A Gaussian (RBF) kernel
+K(x,y) = exp( - gamma * ||x - y||**2
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTIONS ==================== -->
+<a name="section-Functions"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Functions</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="attachKernel"></a><span class="summary-sig-name">attachKernel</span>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">kernel</span>=<span class="summary-sig-default">'linear'</span>,
+        <span class="summary-sig-arg">**args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.ker-pysrc.html#attachKernel">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.containers.ker-module.html#kernel2file" class="summary-sig-name">kernel2file</a>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">fileName</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      compute a kernel matrix and save it to a file in tab delimited format</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.ker-pysrc.html#kernel2file">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="averageEntry"></a><span class="summary-sig-name">averageEntry</span>(<span class="summary-sig-arg">fileName</span>,
+        <span class="summary-sig-arg">ignoreDiagonal</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">delim</span>=<span class="summary-sig-default">None</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.ker-pysrc.html#averageEntry">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="PositionalKmerDispatcher"></a><span class="summary-sig-name">PositionalKmerDispatcher</span>(<span class="summary-sig-arg">**args</span>)</span><br />
+      A string kernel inspired by Raetsch et al's weighted degree kernel</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.ker-pysrc.html#PositionalKmerDispatcher">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.containers.ker-module.html#combineKernels" class="summary-sig-name">combineKernels</a>(<span class="summary-sig-arg">ker1file</span>,
+        <span class="summary-sig-arg">ker2file</span>,
+        <span class="summary-sig-arg">kerOutFile</span>,
+        <span class="summary-sig-arg">operation</span>=<span class="summary-sig-default">'add'</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      combine two kernels by either adding or multiplying them.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.ker-pysrc.html#combineKernels">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.containers.ker-module.html#sortKernel" class="summary-sig-name">sortKernel</a>(<span class="summary-sig-arg">kernelInFile</span>,
+        <span class="summary-sig-arg">kernelOutFile</span>,
+        <span class="summary-sig-arg">format</span>=<span class="summary-sig-default">'gist'</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      sort a kernel matrix according to its pattern ID</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.ker-pysrc.html#sortKernel">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="commonKernel"></a><span class="summary-sig-name">commonKernel</span>(<span class="summary-sig-arg">kernelFile1</span>,
+        <span class="summary-sig-arg">kernelFile2</span>,
+        <span class="summary-sig-arg">kernelOutFileName1</span>,
+        <span class="summary-sig-arg">kernelOutFileName2</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.ker-pysrc.html#commonKernel">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.containers.ker-module.html#expandKernel" class="summary-sig-name">expandKernel</a>(<span class="summary-sig-arg">inKernelFile</span>,
+        <span class="summary-sig-arg">referenceKernelFile</span>,
+        <span class="summary-sig-arg">outKernelFile</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      Given a kernel matrix that might have missing entries, fill those as 0
+on the basis of the patterns in a reference kernel (it is checked that
+the reference kernel is sorted).</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.ker-pysrc.html#expandKernel">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="showKernel"></a><span class="summary-sig-name">showKernel</span>(<span class="summary-sig-arg">dataOrMatrix</span>,
+        <span class="summary-sig-arg">fileName</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">useLabels</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">**args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.ker-pysrc.html#showKernel">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.containers.ker-module.html#sortKernel2" class="summary-sig-name">sortKernel2</a>(<span class="summary-sig-arg">kernelInFile</span>,
+        <span class="summary-sig-arg">kernelOutFile</span>,
+        <span class="summary-sig-arg">ids</span>,
+        <span class="summary-sig-arg">format</span>=<span class="summary-sig-default">'gist'</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      sort a kernel matrix according to the given list of ids</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.ker-pysrc.html#sortKernel2">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== VARIABLES ==================== -->
+<a name="section-Variables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Variables</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="normalizationMethods"></a><span class="summary-name">normalizationMethods</span> = <code title="['none', 'cosine', 'tanimoto', 'dices']">['none', 'cosine', 'tanimoto', 'dices']</code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTION DETAILS ==================== -->
+<a name="section-FunctionDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Function Details</span></td>
+</tr>
+</table>
+<a name="kernel2file"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">kernel2file</span>(<span class="sig-arg">data</span>,
+        <span class="sig-arg">fileName</span>,
+        <span class="sig-arg">**args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.containers.ker-pysrc.html#kernel2file">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  compute a kernel matrix and save it to a file in tab delimited format
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>data</code></strong> - a dataset</li>
+        <li><strong class="pname"><code>fileName</code></strong> - file name to save the kernel</li>
+        <li><strong class="pname"><code>format</code></strong> - the format in which to save the kernel: pyml or gist formats [default: 'gist']
+gist format has an additional header line that contains the ids.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="combineKernels"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">combineKernels</span>(<span class="sig-arg">ker1file</span>,
+        <span class="sig-arg">ker2file</span>,
+        <span class="sig-arg">kerOutFile</span>,
+        <span class="sig-arg">operation</span>=<span class="sig-default">'add'</span>,
+        <span class="sig-arg">**args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.containers.ker-pysrc.html#combineKernels">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>combine two kernels by either adding or multiplying them.
+In the case of addition the resulting kernel is of the form:
+K_out(i,j) = weight * K1(i,j) + (1-weight) * K2(i,j)
+where the default weight is 0.5
+In the case of multiplication the resulting kernel is:
+K_out(i,j) = (const1 + K1(i,j)) * (const2 + K2(i, j))
+where const1 and const2 are 0 by default.</p>
+<p>Notes:  It is assumed that the kernels have the same size and the ids
+are in the same order (an exception is raised if this is not satisfied).</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>operation</code></strong> - which operation to perform between the kernels; it is
+a string with supported values 'add' or 'multiply' (add by default)</li>
+        <li><strong class="pname"><code>weight</code></strong> - weighting of kernels for kernel addition</li>
+        <li><strong class="pname"><code>const1</code></strong>, <strong class="pname"><code>const2</code></strong> - additive factor in case of kernel multiplication</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="sortKernel"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">sortKernel</span>(<span class="sig-arg">kernelInFile</span>,
+        <span class="sig-arg">kernelOutFile</span>,
+        <span class="sig-arg">format</span>=<span class="sig-default">'gist'</span>,
+        <span class="sig-arg">**args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.containers.ker-pysrc.html#sortKernel">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  sort a kernel matrix according to its pattern ID
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>kernelInFile</code></strong> - the kernel input file name</li>
+        <li><strong class="pname"><code>kernelOutFile</code></strong> - the output file name</li>
+        <li><strong class="pname"><code>format</code></strong> - whether to output the kernel in gist format</li>
+        <li><strong class="pname"><code>delim</code></strong> - the field delimiter (default = tab)</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="expandKernel"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">expandKernel</span>(<span class="sig-arg">inKernelFile</span>,
+        <span class="sig-arg">referenceKernelFile</span>,
+        <span class="sig-arg">outKernelFile</span>,
+        <span class="sig-arg">**args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.containers.ker-pysrc.html#expandKernel">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  Given a kernel matrix that might have missing entries, fill those as 0
+on the basis of the patterns in a reference kernel (it is checked that
+the reference kernel is sorted).
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>inKernelFile</code></strong> - input kernel file name</li>
+        <li><strong class="pname"><code>referenceKernelFile</code></strong> - file name for the reference kernel</li>
+        <li><strong class="pname"><code>outKernelFile</code></strong> - file name to output expanded kernel</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="sortKernel2"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">sortKernel2</span>(<span class="sig-arg">kernelInFile</span>,
+        <span class="sig-arg">kernelOutFile</span>,
+        <span class="sig-arg">ids</span>,
+        <span class="sig-arg">format</span>=<span class="sig-default">'gist'</span>,
+        <span class="sig-arg">**args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.containers.ker-pysrc.html#sortKernel2">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  sort a kernel matrix according to the given list of ids
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>kernelInFile</code></strong> - the kernel input file name</li>
+        <li><strong class="pname"><code>kernelOutFile</code></strong> - the output file name</li>
+        <li><strong class="pname"><code>format</code></strong> - whether to output the kernel in gist format</li>
+        <li><strong class="pname"><code>delim</code></strong> - the field delimiter (default = tab)</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pyml.sourceforge.net">PyML</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Fri May  2 12:39:26 2008
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

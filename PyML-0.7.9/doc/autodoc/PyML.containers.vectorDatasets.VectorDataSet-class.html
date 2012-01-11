@@ -1,0 +1,1392 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>PyML.containers.vectorDatasets.VectorDataSet</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pyml.sourceforge.net">PyML</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;PyML ::
+        <a href="PyML.containers-module.html">Package&nbsp;containers</a> ::
+        <a href="PyML.containers.vectorDatasets-module.html">Module&nbsp;vectorDatasets</a> ::
+        Class&nbsp;VectorDataSet
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="PyML.containers.vectorDatasets.VectorDataSet-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class VectorDataSet</h1><p class="nomargin-top"><span class="codelink"><a href="PyML.containers.vectorDatasets-pysrc.html#VectorDataSet">source&nbsp;code</a></span></p>
+<pre class="base-tree">
+                object --+            
+                         |            
+  <a href="PyML.containers.baseDatasets.BaseDataSet-class.html">baseDatasets.BaseDataSet</a> --+        
+                             |        
+   <a href="PyML.containers.baseDatasets.WrapperDataSet-class.html">baseDatasets.WrapperDataSet</a> --+    
+                                 |    
+                object --+       |    
+                         |       |    
+  <a href="PyML.containers.baseDatasets.BaseDataSet-class.html">baseDatasets.BaseDataSet</a> --+   |    
+                             |   |    
+<a href="PyML.containers.baseDatasets.BaseVectorDataSet-class.html">baseDatasets.BaseVectorDataSet</a> --+    
+                                 |    
+                <a href="PyML.containers.vectorDatasets.BaseCVectorDataSet-class.html">BaseCVectorDataSet</a> --+
+                                     |
+ext.cvectordataset._object --+       |
+                             |       |
+    <a href="PyML.containers.ext.cvectordataset.DataSet-class.html">ext.cvectordataset.DataSet</a> --+   |
+                                 |   |
+  <a href="PyML.containers.ext.cvectordataset.VectorDataSet-class.html">ext.cvectordataset.VectorDataSet</a> --+
+                                     |
+                                    <strong class="uidshort">VectorDataSet</strong>
+</pre>
+
+<hr />
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Instance Methods</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.containers.vectorDatasets.VectorDataSet-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">arg</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      x.__init__(...) initializes x; see x.__class__.__doc__ for signature</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.vectorDatasets-pysrc.html#VectorDataSet.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.containers.vectorDatasets.VectorDataSet-class.html#addPattern" class="summary-sig-name">addPattern</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">x</span>,
+        <span class="summary-sig-arg">i</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.vectorDatasets-pysrc.html#VectorDataSet.addPattern">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="updateFeatureDict"></a><span class="summary-sig-name">updateFeatureDict</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">arg</span>=<span class="summary-sig-default">None</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.vectorDatasets-pysrc.html#VectorDataSet.updateFeatureDict">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__delattr__</code>,
+      <code>__getattribute__</code>,
+      <code>__hash__</code>,
+      <code>__new__</code>,
+      <code>__reduce__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__setattr__</code>,
+      <code>__str__</code>
+      </p>
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Inherited from <a href="PyML.containers.vectorDatasets.BaseCVectorDataSet-class.html">BaseCVectorDataSet</a></th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="addFeature"></a><span class="summary-sig-name">addFeature</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">id</span>,
+        <span class="summary-sig-arg">values</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.vectorDatasets-pysrc.html#BaseCVectorDataSet.addFeature">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="addFeatures"></a><span class="summary-sig-name">addFeatures</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">other</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.vectorDatasets-pysrc.html#BaseCVectorDataSet.addFeatures">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="commonFeatures"></a><span class="summary-sig-name">commonFeatures</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">pattern1</span>,
+        <span class="summary-sig-arg">pattern2</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.vectorDatasets-pysrc.html#BaseCVectorDataSet.commonFeatures">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.containers.vectorDatasets.BaseCVectorDataSet-class.html#copy" class="summary-sig-name">copy</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">other</span>,
+        <span class="summary-sig-arg">patterns</span>,
+        <span class="summary-sig-arg">deepcopy</span>)</span><br />
+      copy a wrapper dataset</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.vectorDatasets-pysrc.html#BaseCVectorDataSet.copy">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="eliminateFeatures"></a><span class="summary-sig-name">eliminateFeatures</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">featureList</span>)</span><br />
+      eliminate a list of features from a dataset INPUT: featureList - a 
+      list of features to eliminate; these are numbers between 0 and 
+      numFeatures-1 (indices of features, not their IDs)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.vectorDatasets-pysrc.html#BaseCVectorDataSet.eliminateFeatures">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="extendX"></a><span class="summary-sig-name">extendX</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">other</span>,
+        <span class="summary-sig-arg">patterns</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.vectorDatasets-pysrc.html#BaseCVectorDataSet.extendX">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="featureCount"></a><span class="summary-sig-name">featureCount</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">feature</span>,
+        <span class="summary-sig-arg">patterns</span>=<span class="summary-sig-default">None</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.vectorDatasets-pysrc.html#BaseCVectorDataSet.featureCount">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="featureCounts"></a><span class="summary-sig-name">featureCounts</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">patterns</span>=<span class="summary-sig-default">None</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.vectorDatasets-pysrc.html#BaseCVectorDataSet.featureCounts">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getPattern"></a><span class="summary-sig-name">getPattern</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">i</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.vectorDatasets-pysrc.html#BaseCVectorDataSet.getPattern">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="initializeDataMatrix"></a><span class="summary-sig-name">initializeDataMatrix</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">numPatterns</span>,
+        <span class="summary-sig-arg">numFeatures</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.vectorDatasets-pysrc.html#BaseCVectorDataSet.initializeDataMatrix">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="mean"></a><span class="summary-sig-name">mean</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">patterns</span>=<span class="summary-sig-default">None</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.vectorDatasets-pysrc.html#BaseCVectorDataSet.mean">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="nonzero"></a><span class="summary-sig-name">nonzero</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">feature</span>,
+        <span class="summary-sig-arg">patterns</span>=<span class="summary-sig-default">None</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.vectorDatasets-pysrc.html#BaseCVectorDataSet.nonzero">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="normalize"></a><span class="summary-sig-name">normalize</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">norm</span>=<span class="summary-sig-default">2</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.vectorDatasets-pysrc.html#BaseCVectorDataSet.normalize">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="scale"></a><span class="summary-sig-name">scale</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">w</span>)</span><br />
+      rescale the columns of the data matrix by a weight vector w: set 
+      X[i][j] = X[i][j] * w[j]</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.vectorDatasets-pysrc.html#BaseCVectorDataSet.scale">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="std"></a><span class="summary-sig-name">std</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">patterns</span>=<span class="summary-sig-default">None</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.vectorDatasets-pysrc.html#BaseCVectorDataSet.std">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="translate"></a><span class="summary-sig-name">translate</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">c</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.vectorDatasets-pysrc.html#BaseCVectorDataSet.translate">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Inherited from <a href="PyML.containers.baseDatasets.WrapperDataSet-class.html">baseDatasets.WrapperDataSet</a></th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="__len__"></a><span class="summary-sig-name">__len__</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      the number of patterns in the dataset</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.baseDatasets-pysrc.html#WrapperDataSet.__len__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.containers.baseDatasets.WrapperDataSet-class.html#attachKernel" class="summary-sig-name">attachKernel</a>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">kernel</span>=<span class="summary-sig-default">'linear'</span>,
+        <span class="summary-sig-arg">**args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.ker-pysrc.html#attachKernel">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.containers.baseDatasets.WrapperDataSet-class.html#attachLabels" class="summary-sig-name">attachLabels</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">labels</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.baseDatasets-pysrc.html#WrapperDataSet.attachLabels">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getX"></a><span class="summary-sig-name">getX</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.baseDatasets-pysrc.html#WrapperDataSet.getX">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="get_kernel"></a><span class="summary-sig-name">get_kernel</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.baseDatasets-pysrc.html#WrapperDataSet.get_kernel">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="setX"></a><span class="summary-sig-name">setX</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">value</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.baseDatasets-pysrc.html#WrapperDataSet.setX">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="set_kernel"></a><span class="summary-sig-name">set_kernel</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">value</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.baseDatasets-pysrc.html#WrapperDataSet.set_kernel">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Inherited from <a href="PyML.containers.baseDatasets.BaseVectorDataSet-class.html">baseDatasets.BaseVectorDataSet</a></th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.containers.baseDatasets.BaseVectorDataSet-class.html#__repr__" class="summary-sig-name">__repr__</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      repr(x)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.baseDatasets-pysrc.html#BaseVectorDataSet.__repr__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="addFeatureKeyDict"></a><span class="summary-sig-name">addFeatureKeyDict</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.baseDatasets-pysrc.html#BaseVectorDataSet.addFeatureKeyDict">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="constructFromFile"></a><span class="summary-sig-name">constructFromFile</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">fileName</span>,
+        <span class="summary-sig-arg">**args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.baseDatasets-pysrc.html#BaseVectorDataSet.constructFromFile">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="extend"></a><span class="summary-sig-name">extend</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">other</span>,
+        <span class="summary-sig-arg">patterns</span>=<span class="summary-sig-default">None</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.baseDatasets-pysrc.html#BaseVectorDataSet.extend">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="featureNames2IDs"></a><span class="summary-sig-name">featureNames2IDs</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">featureList</span>)</span><br />
+      convert a list of feature Names into their numeric IDs</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.baseDatasets-pysrc.html#BaseVectorDataSet.featureNames2IDs">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="fromArray"></a><span class="summary-sig-name">fromArray</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">X</span>,
+        <span class="summary-sig-arg">**args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.baseDatasets-pysrc.html#BaseVectorDataSet.fromArray">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="fromArrayAdd"></a><span class="summary-sig-name">fromArrayAdd</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">X</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.baseDatasets-pysrc.html#BaseVectorDataSet.fromArrayAdd">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getMatrix"></a><span class="summary-sig-name">getMatrix</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.baseDatasets-pysrc.html#BaseVectorDataSet.getMatrix">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="keepFeatures"></a><span class="summary-sig-name">keepFeatures</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">features</span>)</span><br />
+      eliminate all but the give list of features INPUT: features - a list 
+      of features to eliminate; these are either numbers between 0 and 
+      numFeatures-1 (indices of features, not their IDs) or featureIDs</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.baseDatasets-pysrc.html#BaseVectorDataSet.keepFeatures">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.containers.baseDatasets.BaseVectorDataSet-class.html#save" class="summary-sig-name">save</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">fileName</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      save a dataset to a file (does not use pickle!)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.baseDatasets-pysrc.html#BaseVectorDataSet.save">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Inherited from <a href="PyML.containers.baseDatasets.BaseDataSet-class.html">baseDatasets.BaseDataSet</a></th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="copyConstruct"></a><span class="summary-sig-name">copyConstruct</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">other</span>,
+        <span class="summary-sig-arg">**args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.baseDatasets-pysrc.html#BaseDataSet.copyConstruct">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getKernelMatrix"></a><span class="summary-sig-name">getKernelMatrix</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      returns the kernel matrix as a numpy array</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.baseDatasets-pysrc.html#BaseDataSet.getKernelMatrix">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getTestingFunc"></a><span class="summary-sig-name">getTestingFunc</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.baseDatasets-pysrc.html#BaseDataSet.getTestingFunc">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getTrainingFunc"></a><span class="summary-sig-name">getTrainingFunc</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.baseDatasets-pysrc.html#BaseDataSet.getTrainingFunc">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="registerAttribute"></a><span class="summary-sig-name">registerAttribute</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">attributeName</span>,
+        <span class="summary-sig-arg">attributeValue</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">action</span>=<span class="summary-sig-default">None</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.baseDatasets-pysrc.html#BaseDataSet.registerAttribute">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="setTestingFunc"></a><span class="summary-sig-name">setTestingFunc</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">func</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.baseDatasets-pysrc.html#BaseDataSet.setTestingFunc">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="setTrainingFunc"></a><span class="summary-sig-name">setTrainingFunc</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">func</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.baseDatasets-pysrc.html#BaseDataSet.setTrainingFunc">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="test"></a><span class="summary-sig-name">test</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">trainingData</span>,
+        <span class="summary-sig-arg">**args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.baseDatasets-pysrc.html#BaseDataSet.test">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="train"></a><span class="summary-sig-name">train</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">**args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.baseDatasets-pysrc.html#BaseDataSet.train">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Inherited from <a href="PyML.containers.ext.cvectordataset.VectorDataSet-class.html">ext.cvectordataset.VectorDataSet</a></th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.containers.ext.cvectordataset.VectorDataSet-class.html#castToBase" class="summary-sig-name">castToBase</a>(<span class="summary-sig-arg">*args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.ext.cvectordataset-pysrc.html#VectorDataSet.castToBase">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.containers.ext.cvectordataset.VectorDataSet-class.html#dotProduct" class="summary-sig-name">dotProduct</a>(<span class="summary-sig-arg">*args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.ext.cvectordataset-pysrc.html#VectorDataSet.dotProduct">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.containers.ext.cvectordataset.VectorDataSet-class.html#duplicate" class="summary-sig-name">duplicate</a>(<span class="summary-sig-arg">*args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.ext.cvectordataset-pysrc.html#VectorDataSet.duplicate">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="featureIDcompute"></a><span class="summary-sig-name">featureIDcompute</span>(<span class="summary-sig-arg">*args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.ext.cvectordataset-pysrc.html#VectorDataSet.featureIDcompute">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getFeature"></a><span class="summary-sig-name">getFeature</span>(<span class="summary-sig-arg">*args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.ext.cvectordataset-pysrc.html#VectorDataSet.getFeature">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="libsvm_construct"></a><span class="summary-sig-name">libsvm_construct</span>(<span class="summary-sig-arg">*args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.ext.cvectordataset-pysrc.html#VectorDataSet.libsvm_construct">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="setFeatureName"></a><span class="summary-sig-name">setFeatureName</span>(<span class="summary-sig-arg">*args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.ext.cvectordataset-pysrc.html#VectorDataSet.setFeatureName">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.containers.ext.cvectordataset.VectorDataSet-class.html#show" class="summary-sig-name">show</a>(<span class="summary-sig-arg">*args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.ext.cvectordataset-pysrc.html#VectorDataSet.show">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.containers.ext.cvectordataset.VectorDataSet-class.html#size" class="summary-sig-name">size</a>(<span class="summary-sig-arg">*args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.ext.cvectordataset-pysrc.html#VectorDataSet.size">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="standardDeviation"></a><span class="summary-sig-name">standardDeviation</span>(<span class="summary-sig-arg">*args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.ext.cvectordataset-pysrc.html#VectorDataSet.standardDeviation">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="weightedSum"></a><span class="summary-sig-name">weightedSum</span>(<span class="summary-sig-arg">*args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.ext.cvectordataset-pysrc.html#VectorDataSet.weightedSum">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Inherited from <a href="PyML.containers.ext.cvectordataset.DataSet-class.html">ext.cvectordataset.DataSet</a></th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="computeNorms"></a><span class="summary-sig-name">computeNorms</span>(<span class="summary-sig-arg">*args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.ext.cvectordataset-pysrc.html#DataSet.computeNorms">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getKernelMatrixAsVector"></a><span class="summary-sig-name">getKernelMatrixAsVector</span>(<span class="summary-sig-arg">*args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.ext.cvectordataset-pysrc.html#DataSet.getKernelMatrixAsVector">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="setKernel"></a><span class="summary-sig-name">setKernel</span>(<span class="summary-sig-arg">*args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.ext.cvectordataset-pysrc.html#DataSet.setKernel">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="setY"></a><span class="summary-sig-name">setY</span>(<span class="summary-sig-arg">*args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.containers.ext.cvectordataset-pysrc.html#DataSet.setY">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS VARIABLES ==================== -->
+<a name="section-ClassVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Class Variables</span></td>
+</tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Inherited from <a href="PyML.containers.baseDatasets.WrapperDataSet-class.html">baseDatasets.WrapperDataSet</a></th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="X"></a><span class="summary-name">X</span> = <code title="property(getX, setX, None, 'X')">property(getX, setX, None, 'X')</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="isWrapper"></a><span class="summary-name">isWrapper</span> = <code title="True">True</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="kernel"></a><span class="summary-name">kernel</span> = <code title="property(get_kernel, set_kernel, None, 'kernel')">property(get_kernel, set_kernel, None, 'kernel')</code>
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Inherited from <a href="PyML.containers.baseDatasets.BaseVectorDataSet-class.html">baseDatasets.BaseVectorDataSet</a></th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="isVector"></a><span class="summary-name">isVector</span> = <code title="True">True</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="verbose"></a><span class="summary-name">verbose</span> = <code title="1">1</code>
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Inherited from <a href="PyML.containers.baseDatasets.BaseDataSet-class.html">baseDatasets.BaseDataSet</a></th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.containers.baseDatasets.BaseDataSet-class.html#testingFunc" class="summary-name">testingFunc</a> = <code title="property(getTestingFunc, setTestingFunc, None, '_testingFunc')">property(getTestingFunc, setTestingFunc, None, '<code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.containers.baseDatasets.BaseDataSet-class.html#trainingFunc" class="summary-name">trainingFunc</a> = <code title="property(getTrainingFunc, setTrainingFunc, None, '_trainingFunc')">property(getTrainingFunc, setTrainingFunc, None<code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="type"></a><span class="summary-name">type</span> = <code title="'dataset'">'dataset'</code>
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Inherited from <a href="PyML.containers.ext.cvectordataset.VectorDataSet-class.html">ext.cvectordataset.VectorDataSet</a></th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__del__"></a><span class="summary-name">__del__</span> = <code title="lambda self:">lambda self:</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__getattr__"></a><span class="summary-name">__getattr__</span> = <code title="lambda self, name:">lambda self, name:</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__swig_destroy__"></a><span class="summary-name">__swig_destroy__</span> = <code title="_cvectordataset.delete_VectorDataSet">_cvectordataset.delete_VectorDataSet</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__swig_getmethods__"></a><span class="summary-name">__swig_getmethods__</span> = <code title="{}">{}</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__swig_setmethods__"></a><span class="summary-name">__swig_setmethods__</span> = <code title="{}">{}</code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Properties</span></td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Method Details</span></td>
+</tr>
+</table>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">arg</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">**args</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.containers.vectorDatasets-pysrc.html#VectorDataSet.__init__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>x.__init__(...) initializes x; see x.__class__.__doc__ for 
+  signature</p>
+  <dl class="fields">
+    <dt>Overrides:
+        <a href="PyML.containers.ext.cvectordataset.DataSet-class.html#__init__">ext.cvectordataset.DataSet.__init__</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="addPattern"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">addPattern</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">x</span>,
+        <span class="sig-arg">i</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.containers.vectorDatasets-pysrc.html#VectorDataSet.addPattern">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Overrides:
+        <a href="PyML.containers.ext.cvectordataset.VectorDataSet-class.html#addPattern">ext.cvectordataset.VectorDataSet.addPattern</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pyml.sourceforge.net">PyML</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Fri May  2 12:39:30 2008
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

@@ -1,0 +1,1104 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>PyML.evaluators.assess</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pyml.sourceforge.net">PyML</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;PyML ::
+        <a href="PyML.evaluators-module.html">Package&nbsp;evaluators</a> ::
+        Module&nbsp;assess
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="PyML.evaluators.assess-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== MODULE DESCRIPTION ==================== -->
+<h1 class="epydoc">Module assess</h1><p class="nomargin-top"><span class="codelink"><a href="PyML.evaluators.assess-pysrc.html">source&nbsp;code</a></span></p>
+<!-- ==================== CLASSES ==================== -->
+<a name="section-Classes"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Classes</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.evaluators.assess.ResultsContainer-class.html" class="summary-name">ResultsContainer</a>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.evaluators.assess.Results-class.html" class="summary-name">Results</a>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.evaluators.assess.ClassificationFunctions-class.html" class="summary-name">ClassificationFunctions</a>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.evaluators.assess.ClassificationResultsContainer-class.html" class="summary-name">ClassificationResultsContainer</a><br />
+      A class for holding the results of testing a classifier
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.evaluators.assess.ClassificationResults-class.html" class="summary-name">ClassificationResults</a>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.evaluators.assess.ResultsList-class.html" class="summary-name">ResultsList</a>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.evaluators.assess.RegressionResultsContainer-class.html" class="summary-name">RegressionResultsContainer</a>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.evaluators.assess.RegressionResults-class.html" class="summary-name">RegressionResults</a>
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTIONS ==================== -->
+<a name="section-Functions"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Functions</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.evaluators.assess-module.html#test" class="summary-sig-name">test</a>(<span class="summary-sig-arg">classifier</span>,
+        <span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      test a classifier on a given dataset</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#test">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.evaluators.assess-module.html#loo" class="summary-sig-name">loo</a>(<span class="summary-sig-arg">classifier</span>,
+        <span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      perform Leave One Out</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#loo">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.evaluators.assess-module.html#cvFromFolds" class="summary-sig-name">cvFromFolds</a>(<span class="summary-sig-arg">classifier</span>,
+        <span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">trainingPatterns</span>,
+        <span class="summary-sig-arg">testingPatterns</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      perform cross validation</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#cvFromFolds">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.evaluators.assess-module.html#cv" class="summary-sig-name">cv</a>(<span class="summary-sig-arg">classifier</span>,
+        <span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">numFolds</span>=<span class="summary-sig-default">5</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      perform k-fold cross validation</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#cv">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.evaluators.assess-module.html#stratifiedCV" class="summary-sig-name">stratifiedCV</a>(<span class="summary-sig-arg">classifier</span>,
+        <span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">numFolds</span>=<span class="summary-sig-default">5</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      perform k-fold stratified cross-validation; in each fold the number of
+patterns from each class is proportional to the relative fraction of the
+class in the dataset</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#stratifiedCV">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.evaluators.assess-module.html#nCV" class="summary-sig-name">nCV</a>(<span class="summary-sig-arg">classifier</span>,
+        <span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      runs CV n times, returning a 'ResultsList' object.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#nCV">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.evaluators.assess-module.html#makeFolds" class="summary-sig-name">makeFolds</a>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">numFolds</span>,
+        <span class="summary-sig-arg">datasetName</span>,
+        <span class="summary-sig-arg">directory</span>=<span class="summary-sig-default">'.'</span>)</span><br />
+      split a dataset into several folds and save the training and testing
+data of each fold as a separate dataset</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#makeFolds">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.evaluators.assess-module.html#cvFromFile" class="summary-sig-name">cvFromFile</a>(<span class="summary-sig-arg">classifier</span>,
+        <span class="summary-sig-arg">trainingBase</span>,
+        <span class="summary-sig-arg">testingBase</span>,
+        <span class="summary-sig-arg">datasetClass</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      perform CV when the training and test data are in files whose names
+are of the form:
+trainingBase + number + string
+and
+testingBase + number + string
+For example:
+training0.data, training1.data, training2.data
+and
+testing0.data, testing1.data, testing2.data
+for 3 fold CV.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#cvFromFile">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.evaluators.assess-module.html#scatter" class="summary-sig-name">scatter</a>(<span class="summary-sig-arg">r1</span>,
+        <span class="summary-sig-arg">r2</span>,
+        <span class="summary-sig-arg">statistic</span>=<span class="summary-sig-default">'roc'</span>,
+        <span class="summary-sig-arg">x1Label</span>=<span class="summary-sig-default">''</span>,
+        <span class="summary-sig-arg">x2Label</span>=<span class="summary-sig-default">''</span>,
+        <span class="summary-sig-arg">fileName</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      a scatter plot for comparing the performance of two classifiers</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#scatter">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="plotROC2"></a><span class="summary-sig-name">plotROC2</span>(<span class="summary-sig-arg">decisionFunc</span>,
+        <span class="summary-sig-arg">givenY</span>,
+        <span class="summary-sig-arg">fileName</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">**args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#plotROC2">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.evaluators.assess-module.html#plotROC" class="summary-sig-name">plotROC</a>(<span class="summary-sig-arg">res</span>,
+        <span class="summary-sig-arg">fileName</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      plot the ROC curve from a given Results (or Results-like) object</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#plotROC">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.evaluators.assess-module.html#plotROCs" class="summary-sig-name">plotROCs</a>(<span class="summary-sig-arg">resList</span>,
+        <span class="summary-sig-arg">descriptions</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">fileName</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      plot multiple ROC curves.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#plotROCs">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.evaluators.assess-module.html#significance" class="summary-sig-name">significance</a>(<span class="summary-sig-arg">r1</span>,
+        <span class="summary-sig-arg">r2</span>,
+        <span class="summary-sig-arg">statistic</span>=<span class="summary-sig-default">'roc'</span>)</span><br />
+      report the statistical significance of the difference in error rates
+of a series of classification results of two classifiers
+using the Wilcoxon signed rank test.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#significance">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="trainTest"></a><span class="summary-sig-name">trainTest</span>(<span class="summary-sig-arg">classifierTemplate</span>,
+        <span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">trainingPatterns</span>,
+        <span class="summary-sig-arg">testingPatterns</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      Train a classifier on the list of training patterns, and test it
+on the test patterns</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#trainTest">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="confmat"></a><span class="summary-sig-name">confmat</span>(<span class="summary-sig-arg">L1</span>,
+        <span class="summary-sig-arg">L2</span>)</span><br />
+      computes the confusion matrix between two labelings</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#confmat">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="superConfmat"></a><span class="summary-sig-name">superConfmat</span>(<span class="summary-sig-arg">Y1</span>,
+        <span class="summary-sig-arg">Y2</span>,
+        <span class="summary-sig-arg">numClasses</span>=<span class="summary-sig-default">0</span>)</span><br />
+      computes the confusion matrix between two labelings, where
+the matrix is assumed to be square, according to the labels of L1
+L1 and L2 are assumed to have integer components in the range
+0,.., numClasses</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#superConfmat">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.evaluators.assess-module.html#roc" class="summary-sig-name">roc</a>(<span class="summary-sig-arg">Y</span>,
+        <span class="summary-sig-arg">givenY</span>,
+        <span class="summary-sig-arg">decisionFunc</span>,
+        <span class="summary-sig-arg">n</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">targetClass</span>=<span class="summary-sig-default">1</span>,
+        <span class="summary-sig-arg">normalize</span>=<span class="summary-sig-default">True</span>)</span><br />
+      Compute the ROC curve and area under the curve for a two class problem</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#roc">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="convert"></a><span class="summary-sig-name">convert</span>(<span class="summary-sig-arg">object</span>,
+        <span class="summary-sig-arg">attributes</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#convert">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.evaluators.assess-module.html#saveResultObjects" class="summary-sig-name">saveResultObjects</a>(<span class="summary-sig-arg">objects</span>,
+        <span class="summary-sig-arg">fileName</span>,
+        <span class="summary-sig-arg">*options</span>)</span><br />
+      save a list or dictionary of Results objects
+it is o.k.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#saveResultObjects">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="loadResults"></a><span class="summary-sig-name">loadResults</span>(<span class="summary-sig-arg">fileName</span>,
+        <span class="summary-sig-arg">isNewFormat</span>=<span class="summary-sig-default">True</span>)</span><br />
+      isNewFormat -- whether the Results were saved under version 0.6.1 or newer</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#loadResults">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="loadResults2"></a><span class="summary-sig-name">loadResults2</span>(<span class="summary-sig-arg">fileName</span>)</span><br />
+      load a list of list of Results objects or a dictionary of a list of Results objects</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#loadResults2">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTION DETAILS ==================== -->
+<a name="section-FunctionDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Function Details</span></td>
+</tr>
+</table>
+<a name="test"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">test</span>(<span class="sig-arg">classifier</span>,
+        <span class="sig-arg">data</span>,
+        <span class="sig-arg">**args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#test">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  test a classifier on a given dataset
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>classifier</code></strong> - a trained classifier</li>
+        <li><strong class="pname"><code>data</code></strong> - a dataset</li>
+        <li><strong class="pname"><code>stats</code></strong> - whether to compute the statistics of the match between the
+predicted labels and the given labels [True by default]</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>a Results class instance</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="loo"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">loo</span>(<span class="sig-arg">classifier</span>,
+        <span class="sig-arg">data</span>,
+        <span class="sig-arg">**args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#loo">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>perform Leave One Out</p>
+<p>USAGE: loo(classifier, data)</p>
+  <dl class="fields">
+    <dt>Returns:</dt>
+        <dd>a results object</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="cvFromFolds"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">cvFromFolds</span>(<span class="sig-arg">classifier</span>,
+        <span class="sig-arg">data</span>,
+        <span class="sig-arg">trainingPatterns</span>,
+        <span class="sig-arg">testingPatterns</span>,
+        <span class="sig-arg">**args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#cvFromFolds">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  perform cross validation
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>classifier</code></strong> - a classifier template</li>
+        <li><strong class="pname"><code>data</code></strong> - a dataset</li>
+        <li><strong class="pname"><code>trainingPatterns</code></strong> - a list providing the training examples for each fold</li>
+        <li><strong class="pname"><code>testingPatterns</code></strong> - a list providing the testing examples for each fold</li>
+        <li><strong class="pname"><code>intermediateFile</code></strong> - a file name to save intermediate results under
+if this argument is not given, no intermediate results are saved</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>a Results object.
+The ROC curve is computed using the resulting classification of each
+point in the dataset (in contrast to Provost, Fawcett and Kohavi who compute
+average ROC curves).</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="cv"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">cv</span>(<span class="sig-arg">classifier</span>,
+        <span class="sig-arg">data</span>,
+        <span class="sig-arg">numFolds</span>=<span class="sig-default">5</span>,
+        <span class="sig-arg">**args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#cv">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  perform k-fold cross validation
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>classifier</code></strong> - a classifier template</li>
+        <li><strong class="pname"><code>data</code></strong> - a dataset</li>
+        <li><strong class="pname"><code>numFolds</code></strong> - number of cross validation folds (default = 5)</li>
+        <li><strong class="pname"><code>numFolds</code></strong> - number of cross validation folds (default = 5)</li>
+        <li><strong class="pname"><code>seed</code></strong> - random number generator seed</li>
+        <li><strong class="pname"><code>foldsToPerform</code></strong> - number of folds to actually perform (in case you're doing
+n fold CV, and want to save time, and only do some of the folds)</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>a Results object.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="stratifiedCV"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">stratifiedCV</span>(<span class="sig-arg">classifier</span>,
+        <span class="sig-arg">data</span>,
+        <span class="sig-arg">numFolds</span>=<span class="sig-default">5</span>,
+        <span class="sig-arg">**args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#stratifiedCV">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  perform k-fold stratified cross-validation; in each fold the number of
+patterns from each class is proportional to the relative fraction of the
+class in the dataset
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>classifier</code></strong> - a classifier template</li>
+        <li><strong class="pname"><code>data</code></strong> - a dataset</li>
+        <li><strong class="pname"><code>numFolds</code></strong> - number of cross validation folds (default = 5)</li>
+        <li><strong class="pname"><code>numFolds</code></strong> - number of cross-validation folds -- overrides the numFolds parameter</li>
+        <li><strong class="pname"><code>seed</code></strong> - random number generator seed</li>
+        <li><strong class="pname"><code>trainingAllFolds</code></strong> - a list of patterns that are to be used as training
+examples in all CV folds.</li>
+        <li><strong class="pname"><code>intermediateFile</code></strong> - a file name to save intermediate results under
+if this argument is not given, not intermediate results are saved</li>
+        <li><strong class="pname"><code>foldsToPerform</code></strong> - number of folds to actually perform (in case you're doing
+n fold CV, and want to save time, and only do some of the folds)</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>a Results object.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="nCV"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">nCV</span>(<span class="sig-arg">classifier</span>,
+        <span class="sig-arg">data</span>,
+        <span class="sig-arg">**args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#nCV">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  runs CV n times, returning a 'ResultsList' object.
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>classifier</code></strong> - classifier template</li>
+        <li><strong class="pname"><code>data</code></strong> - dataset</li>
+        <li><strong class="pname"><code>cvType</code></strong> - which CV function to apply (default: stratifiedCV)</li>
+        <li><strong class="pname"><code>seed</code></strong> - random number generator seed (default: 1)
+This is used as the seed for the first CV run.  Subsequent runs
+use seed + 1, seed + 2...</li>
+        <li><strong class="pname"><code>iterations</code></strong> - number of times to run CV (default: 10)</li>
+        <li><strong class="pname"><code>numFolds</code></strong> - number of folds to use with CV (default: 5)</li>
+        <li><strong class="pname"><code>intermediateFile</code></strong> - a file name to save intermediate results under
+if this argument is not given, no intermediate results are saved</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd><a href="PyML.evaluators.assess.ResultsList-class.html" class="link">ResultsList</a> - a list of the results of each CV run as a ResultsList object</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="makeFolds"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">makeFolds</span>(<span class="sig-arg">data</span>,
+        <span class="sig-arg">numFolds</span>,
+        <span class="sig-arg">datasetName</span>,
+        <span class="sig-arg">directory</span>=<span class="sig-default">'.'</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#makeFolds">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>split a dataset into several folds and save the training and testing
+data of each fold as a separate dataset</p>
+<p>data - a dataset instance
+numfolds - number of folds into which to split the data
+datasetName - string to use for the file names
+directory - the directory into which to deposit the files</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="cvFromFile"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">cvFromFile</span>(<span class="sig-arg">classifier</span>,
+        <span class="sig-arg">trainingBase</span>,
+        <span class="sig-arg">testingBase</span>,
+        <span class="sig-arg">datasetClass</span>,
+        <span class="sig-arg">**args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#cvFromFile">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  perform CV when the training and test data are in files whose names
+are of the form:
+trainingBase + number + string
+and
+testingBase + number + string
+For example:
+training0.data, training1.data, training2.data
+and
+testing0.data, testing1.data, testing2.data
+for 3 fold CV.
+training and testing files are matched by the number appearing after
+the strings trainingBase and testingBase
+both trainingBase and testingBase can be paths.
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="scatter"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">scatter</span>(<span class="sig-arg">r1</span>,
+        <span class="sig-arg">r2</span>,
+        <span class="sig-arg">statistic</span>=<span class="sig-default">'roc'</span>,
+        <span class="sig-arg">x1Label</span>=<span class="sig-default">''</span>,
+        <span class="sig-arg">x2Label</span>=<span class="sig-default">''</span>,
+        <span class="sig-arg">fileName</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">**args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#scatter">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  a scatter plot for comparing the performance of two classifiers
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>r1</code></strong>, <strong class="pname"><code>r2</code></strong> - both are either a list of Result classes, or a list of
+success rates / ROC scores</li>
+        <li><strong class="pname"><code>statistic</code></strong> - which measure of classifier success to plot
+values : 'roc', 'successRate', 'balancedSuccessRate'
+in order to specify parts of the roc curve you can use something like:
+'roc50' or 'roc0.1'</li>
+        <li><strong class="pname"><code>title</code></strong> - the title of the plot</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="plotROC"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">plotROC</span>(<span class="sig-arg">res</span>,
+        <span class="sig-arg">fileName</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">**args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#plotROC">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  plot the ROC curve from a given Results (or Results-like) object
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>res</code></strong> - Results (or Container object that was made by saving a a
+Results object (note that if you have a Results object you can
+use this function as a method so there is no need to supply this
+argument).</li>
+        <li><strong class="pname"><code>fileName</code></strong> - optional argument - if given, the roc curve is saved
+in the given file name.  The format is determined by the extension.
+Supported extensions: .eps, .png, .svg</li>
+        <li><strong class="pname"><code>rocN</code></strong> - what type of ROC curve to plot (roc50, roc10 etc.) default is
+full ROC curve</li>
+        <li><strong class="pname"><code>normalize</code></strong> - whether to normalize the ROC curve (default: True)</li>
+        <li><strong class="pname"><code>plotStr</code></strong> - which string to pass to matplotlib's plot function
+default: 'ob'</li>
+        <li><strong class="pname"><code>axis</code></strong> - redefine the figure axes; takes a list of the form
+[xmin,xmax,ymin,ymax]</li>
+        <li><strong class="pname"><code>show</code></strong> - whether to show the ROC curve (default: True)
+useful when you just want to save the curve to a file.
+The use of Some file formats automatically sets this to False
+(e.g. svg files).  This relates to quirks of matplotlib.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="plotROCs"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">plotROCs</span>(<span class="sig-arg">resList</span>,
+        <span class="sig-arg">descriptions</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">fileName</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">**args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#plotROCs">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  plot multiple ROC curves.
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>resList</code></strong> - a list or dictionary of Result or Result-like objects</li>
+        <li><strong class="pname"><code>descriptions</code></strong> - text for the legend (a list the size of resList).
+A legend is not shown if this parameter is not given
+In the case of a dictionary input the description for the legend is
+taken from the dictionary keys.</li>
+        <li><strong class="pname"><code>fileName</code></strong> - if given, a file to save the figure in</li>
+        <li><strong class="pname"><code>legendLoc</code></strong> - the position of the legend -- an integer between 0 and 9;
+see the matplotlib documentation for details</li>
+        <li><strong class="pname"><code>plotStrings</code></strong> - a list of matlab style plotting string to send to the
+plotROC function (instead of the plotString keyword of plotROC)</li>
+        <li><strong class="pname"><code>other</code></strong>, <strong class="pname"><code>keywords</code></strong> - keywords of the plotROC function</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="significance"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">significance</span>(<span class="sig-arg">r1</span>,
+        <span class="sig-arg">r2</span>,
+        <span class="sig-arg">statistic</span>=<span class="sig-default">'roc'</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#significance">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>report the statistical significance of the difference in error rates
+of a series of classification results of two classifiers
+using the Wilcoxon signed rank test.</p>
+<p>Returns: pvalue, (median1, median2)
+where:
+pvalue - the pvalue of the two sided Wilcoxon signed rank test; to get
+the pvalue of a one sided test divide the pvalue by two.
+(median1, median2) - the median of the statistics of the inputs r1 and r2.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>r1</code></strong>, <strong class="pname"><code>r2</code></strong> - both are either a list of Result classes, or a list of success
+rates</li>
+        <li><strong class="pname"><code>statistic</code></strong> - which measure of classifier success to plot
+values : 'roc', 'successRate', 'balancedSuccessRate'
+in order to specify parts of the roc curve you can use something like:
+'roc50' or 'roc0.1'</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="roc"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">roc</span>(<span class="sig-arg">Y</span>,
+        <span class="sig-arg">givenY</span>,
+        <span class="sig-arg">decisionFunc</span>,
+        <span class="sig-arg">n</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">targetClass</span>=<span class="sig-default">1</span>,
+        <span class="sig-arg">normalize</span>=<span class="sig-default">True</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#roc">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Compute the ROC curve and area under the curve for a two class problem</p>
+<blockquote>
+</blockquote>
+<ul>
+<li><p class="rst-first"><code class="link">Y</code> - the predicted labels (can put None instead)</p>
+</li>
+<li><dl class="rst-first rst-docutils">
+<dt><code class="link">givenY</code> - the true labels</dt>
+<dd><ul class="rst-first rst-last rst-simple">
+<li><code class="link">decisionFunc</code> - the values of the decision function</li>
+<li><code class="link">n</code> - the number of false positives to take into account (roc_n)</li>
+<li><code class="link">targetClass</code> - the &quot;positive&quot; class</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="rst-first"><code class="link">normalize</code> whether to normalize the roc curve (default: True)
+when this is set to False, TP/FP counts are output rather than TP/FP rates</p>
+</li>
+</ul>
+  <dl class="fields">
+  </dl>
+<div class="fields">      <p><strong>Parameters:</strong>
+        &nbsp;
+      </p>
+</div></td></tr></table>
+</div>
+<a name="saveResultObjects"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">saveResultObjects</span>(<span class="sig-arg">objects</span>,
+        <span class="sig-arg">fileName</span>,
+        <span class="sig-arg">*options</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#saveResultObjects">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  save a list or dictionary of Results objects
+it is o.k. if the list or dictionary is itself a list or dictionary of
+OPTIONS:
+long - save the long attribute list
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pyml.sourceforge.net">PyML</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Fri May  2 12:39:26 2008
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

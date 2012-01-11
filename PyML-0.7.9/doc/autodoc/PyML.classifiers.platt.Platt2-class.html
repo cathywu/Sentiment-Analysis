@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>PyML.classifiers.platt.Platt2</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pyml.sourceforge.net">PyML</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;PyML ::
+        <a href="PyML.classifiers-module.html">Package&nbsp;classifiers</a> ::
+        <a href="PyML.classifiers.platt-module.html">Module&nbsp;platt</a> ::
+        Class&nbsp;Platt2
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="PyML.classifiers.platt.Platt2-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class Platt2</h1><p class="nomargin-top"><span class="codelink"><a href="PyML.classifiers.platt-pysrc.html#Platt2">source&nbsp;code</a></span></p>
+<pre class="base-tree">
+base.pymlObject.PyMLobject --+            
+                             |            
+    <a href="PyML.classifiers.baseClassifiers.Classifier-class.html">baseClassifiers.Classifier</a> --+        
+                                 |        
+     <a href="PyML.classifiers.composite.CompositeClassifier-class.html">composite.CompositeClassifier</a> --+    
+                                     |    
+                                 <a href="PyML.classifiers.platt.Platt-class.html">Platt</a> --+
+                                         |
+                                        <strong class="uidshort">Platt2</strong>
+</pre>
+
+<hr />
+<p>Converts a real valued classifier into a conditional probability 
+  estimator. This is achieved by fitting a sigmoid with parameters A and B 
+  to the values of the decision function: f(x) --&gt;  
+  1/(1+exp(A*f(x)+B)</p>
+  <p>The fitting procedure is a Levenberg-Marquardt optimization derived by
+  Tobias Mann using Mathematica, to optimize the objective function in:</p>
+  <p>John C. Platt.  Probabilistic Outputs for Support Vector Machines and 
+  Comparisons to Regularized Likelihood Methods. in: Advances in Large 
+  Margin Classifiers A. J. Smola, B. Schoelkopf, D. Schuurmans, eds. MIT 
+  Press (1999).</p>
+
+<!-- ==================== NESTED CLASSES ==================== -->
+<a name="section-NestedClasses"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Nested Classes</span></td>
+</tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Inherited from <a href="PyML.classifiers.baseClassifiers.Classifier-class.html">baseClassifiers.Classifier</a></th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.evaluators.assess.ClassificationResults-class.html" class="summary-name">resultsObject</a>
+    </td>
+  </tr>
+</table>
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Instance Methods</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.classifiers.platt.Platt2-class.html#fit_A_B" class="summary-sig-name">fit_A_B</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">prior1</span>,
+        <span class="summary-sig-arg">prior0</span>,
+        <span class="summary-sig-arg">out</span>,
+        <span class="summary-sig-arg">deci</span>,
+        <span class="summary-sig-arg">Y</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.platt-pysrc.html#Platt2.fit_A_B">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="get_proposed_update_vec"></a><span class="summary-sig-name">get_proposed_update_vec</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">m</span>,
+        <span class="summary-sig-arg">v</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.platt-pysrc.html#Platt2.get_proposed_update_vec">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="condition_number"></a><span class="summary-sig-name">condition_number</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">M</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.platt-pysrc.html#Platt2.condition_number">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="log_likelihood"></a><span class="summary-sig-name">log_likelihood</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">t</span>,
+        <span class="summary-sig-arg">f</span>,
+        <span class="summary-sig-arg">A</span>,
+        <span class="summary-sig-arg">B</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.platt-pysrc.html#Platt2.log_likelihood">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="two_by_two_inverse"></a><span class="summary-sig-name">two_by_two_inverse</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">M</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.platt-pysrc.html#Platt2.two_by_two_inverse">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="gradient"></a><span class="summary-sig-name">gradient</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">t</span>,
+        <span class="summary-sig-arg">f</span>,
+        <span class="summary-sig-arg">A</span>,
+        <span class="summary-sig-arg">B</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.platt-pysrc.html#Platt2.gradient">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="hessian"></a><span class="summary-sig-name">hessian</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">t</span>,
+        <span class="summary-sig-arg">f</span>,
+        <span class="summary-sig-arg">A</span>,
+        <span class="summary-sig-arg">B</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.platt-pysrc.html#Platt2.hessian">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="dF_dA"></a><span class="summary-sig-name">dF_dA</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">t</span>,
+        <span class="summary-sig-arg">f</span>,
+        <span class="summary-sig-arg">A</span>,
+        <span class="summary-sig-arg">B</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.platt-pysrc.html#Platt2.dF_dA">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="dF_dB"></a><span class="summary-sig-name">dF_dB</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">t</span>,
+        <span class="summary-sig-arg">f</span>,
+        <span class="summary-sig-arg">A</span>,
+        <span class="summary-sig-arg">B</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.platt-pysrc.html#Platt2.dF_dB">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="dF_dAA"></a><span class="summary-sig-name">dF_dAA</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">t</span>,
+        <span class="summary-sig-arg">f</span>,
+        <span class="summary-sig-arg">A</span>,
+        <span class="summary-sig-arg">B</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.platt-pysrc.html#Platt2.dF_dAA">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="dF_dBB"></a><span class="summary-sig-name">dF_dBB</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">t</span>,
+        <span class="summary-sig-arg">f</span>,
+        <span class="summary-sig-arg">A</span>,
+        <span class="summary-sig-arg">B</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.platt-pysrc.html#Platt2.dF_dBB">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="dF_dAB"></a><span class="summary-sig-name">dF_dAB</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">t</span>,
+        <span class="summary-sig-arg">f</span>,
+        <span class="summary-sig-arg">A</span>,
+        <span class="summary-sig-arg">B</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.platt-pysrc.html#Platt2.dF_dAB">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Inherited from <a href="PyML.classifiers.platt.Platt-class.html">Platt</a></th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.classifiers.platt.Platt-class.html#classify" class="summary-sig-name">classify</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">i</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.platt-pysrc.html#Platt.classify">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.classifiers.platt.Platt-class.html#decisionFunc" class="summary-sig-name">decisionFunc</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">i</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.platt-pysrc.html#Platt.decisionFunc">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="load"></a><span class="summary-sig-name">load</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">fileName</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.platt-pysrc.html#Platt.load">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.classifiers.platt.Platt-class.html#save" class="summary-sig-name">save</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">fileName</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.platt-pysrc.html#Platt.save">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.classifiers.platt.Platt-class.html#test" class="summary-sig-name">test</a>(<span class="summary-sig-arg">classifier</span>,
+        <span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      test a classifier on a given dataset</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#test">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.classifiers.platt.Platt-class.html#train" class="summary-sig-name">train</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">**args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.platt-pysrc.html#Platt.train">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Inherited from <a href="PyML.classifiers.composite.CompositeClassifier-class.html">composite.CompositeClassifier</a></th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.classifiers.composite.CompositeClassifier-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">classifier</span>,
+        <span class="summary-sig-arg">**args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.composite-pysrc.html#CompositeClassifier.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.classifiers.composite.CompositeClassifier-class.html#__repr__" class="summary-sig-name">__repr__</a>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.composite-pysrc.html#CompositeClassifier.__repr__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getTest"></a><span class="summary-sig-name">getTest</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.composite-pysrc.html#CompositeClassifier.getTest">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="preproject"></a><span class="summary-sig-name">preproject</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">data</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.composite-pysrc.html#CompositeClassifier.preproject">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="setTest"></a><span class="summary-sig-name">setTest</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.composite-pysrc.html#CompositeClassifier.setTest">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Inherited from <a href="PyML.classifiers.baseClassifiers.Classifier-class.html">baseClassifiers.Classifier</a></th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.classifiers.baseClassifiers.Classifier-class.html#cv" class="summary-sig-name">cv</a>(<span class="summary-sig-arg">classifier</span>,
+        <span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">numFolds</span>=<span class="summary-sig-default">5</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      perform k-fold cross validation</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#cv">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getTrainingTime"></a><span class="summary-sig-name">getTrainingTime</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.baseClassifiers-pysrc.html#Classifier.getTrainingTime">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="logger"></a><span class="summary-sig-name">logger</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.baseClassifiers-pysrc.html#Classifier.logger">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.classifiers.baseClassifiers.Classifier-class.html#loo" class="summary-sig-name">loo</a>(<span class="summary-sig-arg">classifier</span>,
+        <span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      perform Leave One Out</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#loo">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.classifiers.baseClassifiers.Classifier-class.html#nCV" class="summary-sig-name">nCV</a>(<span class="summary-sig-arg">classifier</span>,
+        <span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      runs CV n times, returning a 'ResultsList' object.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#nCV">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="project"></a><span class="summary-sig-name">project</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">data</span>)</span><br />
+      project a test dataset to the training data features.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.baseClassifiers-pysrc.html#Classifier.project">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.classifiers.baseClassifiers.Classifier-class.html#stratifiedCV" class="summary-sig-name">stratifiedCV</a>(<span class="summary-sig-arg">classifier</span>,
+        <span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">numFolds</span>=<span class="summary-sig-default">5</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      perform k-fold stratified cross-validation; in each fold the number of
+patterns from each class is proportional to the relative fraction of the
+class in the dataset</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#stratifiedCV">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="trainFinalize"></a><span class="summary-sig-name">trainFinalize</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.baseClassifiers-pysrc.html#Classifier.trainFinalize">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="trainTest"></a><span class="summary-sig-name">trainTest</span>(<span class="summary-sig-arg">classifierTemplate</span>,
+        <span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">trainingPatterns</span>,
+        <span class="summary-sig-arg">testingPatterns</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      Train a classifier on the list of training patterns, and test it
+on the test patterns</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.evaluators.assess-pysrc.html#trainTest">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="twoClassClassify"></a><span class="summary-sig-name">twoClassClassify</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">i</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.classifiers.baseClassifiers-pysrc.html#Classifier.twoClassClassify">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS VARIABLES ==================== -->
+<a name="section-ClassVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Class Variables</span></td>
+</tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Inherited from <a href="PyML.classifiers.platt.Platt-class.html">Platt</a></th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.classifiers.platt.Platt-class.html#attributes" class="summary-name">attributes</a> = <code title="{'mode': 'holdOut', 'numFolds': 3, 'fittingFraction': 0.2}">{'mode': 'holdOut', 'numFolds': 3, 'fittingFracti<code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Inherited from <a href="PyML.classifiers.composite.CompositeClassifier-class.html">composite.CompositeClassifier</a></th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="deepcopy"></a><span class="summary-name">deepcopy</span> = <code title="True">True</code>
+    </td>
+  </tr>
+<tr bgcolor="#e8f0f8" >
+  <th colspan="2" class="group-header"
+    >&nbsp;&nbsp;&nbsp;&nbsp;Inherited from <a href="PyML.classifiers.baseClassifiers.Classifier-class.html">baseClassifiers.Classifier</a></th></tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="type"></a><span class="summary-name">type</span> = <code title="'classifier'">'classifier'</code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Method Details</span></td>
+</tr>
+</table>
+<a name="fit_A_B"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">fit_A_B</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">prior1</span>,
+        <span class="sig-arg">prior0</span>,
+        <span class="sig-arg">out</span>,
+        <span class="sig-arg">deci</span>,
+        <span class="sig-arg">Y</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.classifiers.platt-pysrc.html#Platt2.fit_A_B">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Overrides:
+        <a href="PyML.classifiers.platt.Platt-class.html#fit_A_B">Platt.fit_A_B</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pyml.sourceforge.net">PyML</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Fri May  2 12:39:27 2008
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

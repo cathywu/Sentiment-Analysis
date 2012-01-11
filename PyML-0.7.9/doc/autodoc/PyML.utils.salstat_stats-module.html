@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>PyML.utils.salstat_stats</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="PyML-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pyml.sourceforge.net">PyML</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="PyML-module.html">Package&nbsp;PyML</a> ::
+        <a href="PyML.utils-module.html">Package&nbsp;utils</a> ::
+        Module&nbsp;salstat_stats
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="PyML.utils.salstat_stats-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== MODULE DESCRIPTION ==================== -->
+<h1 class="epydoc">Module salstat_stats</h1><p class="nomargin-top"><span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html">source&nbsp;code</a></span></p>
+<p>The complete code in this file is copyright 2002 Alan James Salmoni, 
+  and is released under version 2 or later of the GNU General Public 
+  Licence (GPL). See the enclosed file COPYING for the full text of the 
+  licence.</p>
+  <p>Significant parts of the code were taken from stats.py by Gary 
+  Strangman of Harvard University (c) Not sure what year, Gary Strangman, 
+  released under the GNU General Public License.</p>
+
+<!-- ==================== CLASSES ==================== -->
+<a name="section-Classes"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Classes</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Classes"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.utils.salstat_stats.FullDescriptives-class.html" class="summary-name">FullDescriptives</a>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.utils.salstat_stats.OneSampleTests-class.html" class="summary-name">OneSampleTests</a>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.utils.salstat_stats.TwoSampleTests-class.html" class="summary-name">TwoSampleTests</a>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.utils.salstat_stats.ThreeSampleTests-class.html" class="summary-name">ThreeSampleTests</a>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.utils.salstat_stats.FriedmanComp-class.html" class="summary-name">FriedmanComp</a><br />
+      This class performs multiple comparisons on a Freidmans test.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.utils.salstat_stats.KWComp-class.html" class="summary-name">KWComp</a><br />
+      This class performs multiple comparisons on a Kruskal Wallis test.
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTIONS ==================== -->
+<a name="section-Functions"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Functions</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Functions"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="add"></a><span class="summary-sig-name">add</span>(<span class="summary-sig-arg">a</span>,
+        <span class="summary-sig-arg">b</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#add">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="squared"></a><span class="summary-sig-name">squared</span>(<span class="summary-sig-arg">a</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#squared">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="cubed"></a><span class="summary-sig-name">cubed</span>(<span class="summary-sig-arg">a</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#cubed">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="quaded"></a><span class="summary-sig-name">quaded</span>(<span class="summary-sig-arg">a</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#quaded">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="multiply"></a><span class="summary-sig-name">multiply</span>(<span class="summary-sig-arg">a</span>,
+        <span class="summary-sig-arg">b</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#multiply">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="obsMinusExp"></a><span class="summary-sig-name">obsMinusExp</span>(<span class="summary-sig-arg">a</span>,
+        <span class="summary-sig-arg">b</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#obsMinusExp">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="diffsquared"></a><span class="summary-sig-name">diffsquared</span>(<span class="summary-sig-arg">a</span>,
+        <span class="summary-sig-arg">b</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#diffsquared">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="higher"></a><span class="summary-sig-name">higher</span>(<span class="summary-sig-arg">a</span>,
+        <span class="summary-sig-arg">b</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#higher">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="lower"></a><span class="summary-sig-name">lower</span>(<span class="summary-sig-arg">a</span>,
+        <span class="summary-sig-arg">b</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#lower">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.utils.salstat_stats-module.html#shellsort" class="summary-sig-name">shellsort</a>(<span class="summary-sig-arg">inlist</span>)</span><br />
+      Shellsort algorithm.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#shellsort">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.utils.salstat_stats-module.html#rankdata" class="summary-sig-name">rankdata</a>(<span class="summary-sig-arg">inlist</span>)</span><br />
+      Ranks the data in inlist, dealing with ties appropritely.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#rankdata">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.utils.salstat_stats-module.html#tiecorrect" class="summary-sig-name">tiecorrect</a>(<span class="summary-sig-arg">rankvals</span>)</span><br />
+      Corrects for ties in Mann Whitney U and Kruskal Wallis H tests.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#tiecorrect">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.utils.salstat_stats-module.html#sum" class="summary-sig-name">sum</a>(<span class="summary-sig-arg">inlist</span>)</span><br />
+      Returns the sum of the items in the passed list.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#sum">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="minimaldescriptives"></a><span class="summary-sig-name">minimaldescriptives</span>(<span class="summary-sig-arg">inlist</span>)</span><br />
+      this function takes a clean list of data and returns the N, sum, mean
+      and sum of squares.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#minimaldescriptives">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.utils.salstat_stats-module.html#chisqprob" class="summary-sig-name">chisqprob</a>(<span class="summary-sig-arg">chisq</span>,
+        <span class="summary-sig-arg">df</span>)</span><br />
+      Returns the (1-tailed) probability value associated with the provided
+      chi-square value and df.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#chisqprob">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.utils.salstat_stats-module.html#inversechi" class="summary-sig-name">inversechi</a>(<span class="summary-sig-arg">prob</span>,
+        <span class="summary-sig-arg">df</span>)</span><br />
+      This function calculates the inverse of the chi square function.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#inversechi">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.utils.salstat_stats-module.html#erfcc" class="summary-sig-name">erfcc</a>(<span class="summary-sig-arg">x</span>)</span><br />
+      Returns the complementary error function erfc(x) with fractional 
+      error everywhere less than 1.2e-7.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#erfcc">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.utils.salstat_stats-module.html#zprob" class="summary-sig-name">zprob</a>(<span class="summary-sig-arg">z</span>)</span><br />
+      Returns the area under the normal curve 'to the left of' the given z value.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#zprob">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.utils.salstat_stats-module.html#ksprob" class="summary-sig-name">ksprob</a>(<span class="summary-sig-arg">alam</span>)</span><br />
+      Computes a Kolmolgorov-Smirnov t-test significance level.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#ksprob">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.utils.salstat_stats-module.html#fprob" class="summary-sig-name">fprob</a>(<span class="summary-sig-arg">dfnum</span>,
+        <span class="summary-sig-arg">dfden</span>,
+        <span class="summary-sig-arg">F</span>)</span><br />
+      Returns the (1-tailed) significance level (p-value) of an F statistic
+      given the degrees of freedom for the numerator (dfR-dfF) and the 
+      degrees of freedom for the denominator (dfF).</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#fprob">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.utils.salstat_stats-module.html#inversef" class="summary-sig-name">inversef</a>(<span class="summary-sig-arg">prob</span>,
+        <span class="summary-sig-arg">df1</span>,
+        <span class="summary-sig-arg">df2</span>)</span><br />
+      This function returns the f value for a given probability and 2 given
+      degrees of freedom.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#inversef">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.utils.salstat_stats-module.html#betacf" class="summary-sig-name">betacf</a>(<span class="summary-sig-arg">a</span>,
+        <span class="summary-sig-arg">b</span>,
+        <span class="summary-sig-arg">x</span>)</span><br />
+      This function evaluates the continued fraction form of the incomplete
+      Beta function, betai.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#betacf">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.utils.salstat_stats-module.html#gammln" class="summary-sig-name">gammln</a>(<span class="summary-sig-arg">xx</span>)</span><br />
+      Returns the gamma function of xx.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#gammln">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.utils.salstat_stats-module.html#betai" class="summary-sig-name">betai</a>(<span class="summary-sig-arg">a</span>,
+        <span class="summary-sig-arg">b</span>,
+        <span class="summary-sig-arg">x</span>)</span><br />
+      Returns the incomplete beta function:</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#betai">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTION DETAILS ==================== -->
+<a name="section-FunctionDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Function Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-FunctionDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="shellsort"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">shellsort</span>(<span class="sig-arg">inlist</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#shellsort">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Shellsort algorithm.  Sorts a 1D-list.</p>
+  <p>Usage:   shellsort(inlist) Returns: sorted-inlist, 
+  sorting-index-vector (for original list)</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="rankdata"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">rankdata</span>(<span class="sig-arg">inlist</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#rankdata">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Ranks the data in inlist, dealing with ties appropritely.  Assumes a 
+  1D inlist.  Adapted from Gary Perlman's |Stat ranksort.</p>
+  <p>Usage:   rankdata(inlist) Returns: a list of length equal to inlist, 
+  containing rank scores</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="tiecorrect"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">tiecorrect</span>(<span class="sig-arg">rankvals</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#tiecorrect">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Corrects for ties in Mann Whitney U and Kruskal Wallis H tests.  See 
+  Siegel, S. (1956) Nonparametric Statistics for the Behavioral Sciences. 
+  New York: McGraw-Hill.  Code adapted from |Stat rankind.c code.</p>
+  <p>Usage:   tiecorrect(rankvals) Returns: T correction factor for U or 
+  H</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="sum"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">sum</span>(<span class="sig-arg">inlist</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#sum">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Returns the sum of the items in the passed list.</p>
+  <p>Usage:   sum(inlist)</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="chisqprob"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">chisqprob</span>(<span class="sig-arg">chisq</span>,
+        <span class="sig-arg">df</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#chisqprob">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Returns the (1-tailed) probability value associated with the provided 
+  chi-square value and df.  Adapted from chisq.c in Gary Perlman's 
+  |Stat.</p>
+  <p>Usage:   chisqprob(chisq,df)</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="inversechi"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">inversechi</span>(<span class="sig-arg">prob</span>,
+        <span class="sig-arg">df</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#inversechi">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>This function calculates the inverse of the chi square function. Given
+  a p-value and a df, it should approximate the critical value needed to 
+  achieve these functions. Adapted from Gary Perlmans critchi function in 
+  C. Apologies if this breaks copyright, but no copyright notice was 
+  attached to the relevant file.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="erfcc"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">erfcc</span>(<span class="sig-arg">x</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#erfcc">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Returns the complementary error function erfc(x) with fractional error
+  everywhere less than 1.2e-7.  Adapted from Numerical Recipies.</p>
+  <p>Usage:   erfcc(x)</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="zprob"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">zprob</span>(<span class="sig-arg">z</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#zprob">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+
+Returns the area under the normal curve 'to the left of' the given z value.
+Thus, 
+    for z&lt;0, zprob(z) = 1-tail probability
+    for z&gt;0, 1.0-zprob(z) = 1-tail probability
+    for any z, 2.0*(1.0-zprob(abs(z))) = 2-tail probability
+Adapted from z.c in Gary Perlman's |Stat.
+
+Usage:   zprob(z)
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="ksprob"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">ksprob</span>(<span class="sig-arg">alam</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#ksprob">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Computes a Kolmolgorov-Smirnov t-test significance level.  Adapted 
+  from Numerical Recipies.</p>
+  <p>Usage:   ksprob(alam)</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="fprob"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">fprob</span>(<span class="sig-arg">dfnum</span>,
+        <span class="sig-arg">dfden</span>,
+        <span class="sig-arg">F</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#fprob">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Returns the (1-tailed) significance level (p-value) of an F statistic 
+  given the degrees of freedom for the numerator (dfR-dfF) and the degrees 
+  of freedom for the denominator (dfF).</p>
+  <p>Usage:   fprob(dfnum, dfden, F)   where usually dfnum=dfbn, 
+  dfden=dfwn</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="inversef"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">inversef</span>(<span class="sig-arg">prob</span>,
+        <span class="sig-arg">df1</span>,
+        <span class="sig-arg">df2</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#inversef">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>This function returns the f value for a given probability and 2 given 
+  degrees of freedom. It is an approximation using the fprob function. 
+  Adapted from Gary Perlmans critf function - apologies if copyright is 
+  broken, but no copyright notice was attached</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="betacf"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">betacf</span>(<span class="sig-arg">a</span>,
+        <span class="sig-arg">b</span>,
+        <span class="sig-arg">x</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#betacf">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>This function evaluates the continued fraction form of the incomplete 
+  Beta function, betai.  (Adapted from: Numerical Recipies in C.)</p>
+  <p>Usage:   betacf(a,b,x)</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="gammln"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">gammln</span>(<span class="sig-arg">xx</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#gammln">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+
+Returns the gamma function of xx.
+    Gamma(z) = Integral(0,infinity) of t^(z-1)exp(-t) dt.
+(Adapted from: Numerical Recipies in C.)
+
+Usage:   gammln(xx)
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="betai"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">betai</span>(<span class="sig-arg">a</span>,
+        <span class="sig-arg">b</span>,
+        <span class="sig-arg">x</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.utils.salstat_stats-pysrc.html#betai">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+
+Returns the incomplete beta function:
+
+    I-sub-x(a,b) = 1/B(a,b)*(Integral(0,x) of t^(a-1)(1-t)^(b-1) dt)
+
+where a,b&gt;0 and B(a,b) = G(a)*G(b)/(G(a+b)) where G(a) is the gamma
+function of a.  The continued fraction formulation is implemented here,
+using the betacf function.  (Adapted from: Numerical Recipies in C.)
+
+Usage:   betai(a,b,x)
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="PyML-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pyml.sourceforge.net">PyML</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Sun Apr 27 07:57:02 2008
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

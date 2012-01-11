@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>PyML.datagen.toydata</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pyml.sourceforge.net">PyML</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;PyML ::
+        <a href="PyML.datagen-module.html">Package&nbsp;datagen</a> ::
+        Module&nbsp;toydata
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="PyML.datagen.toydata-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== MODULE DESCRIPTION ==================== -->
+<h1 class="epydoc">Module toydata</h1><p class="nomargin-top"><span class="codelink"><a href="PyML.datagen.toydata-pysrc.html">source&nbsp;code</a></span></p>
+<p>generate toy datasets based on code by Mark Rogers</p>
+
+<!-- ==================== FUNCTIONS ==================== -->
+<a name="section-Functions"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Functions</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.datagen.toydata-module.html#sineClass" class="summary-sig-name">sineClass</a>(<span class="summary-sig-arg">xlim</span>=<span class="summary-sig-default">[0,1]</span>,
+        <span class="summary-sig-arg">ylim</span>=<span class="summary-sig-default">[0,1]</span>,
+        <span class="summary-sig-arg">n</span>=<span class="summary-sig-default">20</span>,
+        <span class="summary-sig-arg">sigma</span>=<span class="summary-sig-default">0.04</span>)</span><br />
+      Generates a 2-D noisy sine wave...</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.datagen.toydata-pysrc.html#sineClass">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.datagen.toydata-module.html#multivariate_normal" class="summary-sig-name">multivariate_normal</a>(<span class="summary-sig-arg">mu</span>,
+        <span class="summary-sig-arg">sigma</span>=<span class="summary-sig-default">0.1</span>,
+        <span class="summary-sig-arg">n</span>=<span class="summary-sig-default">20</span>)</span><br />
+      a wrapper around numpy's random.multivariate_normal function
+Generates data from a Gaussian distribution with mean mu
+and standard deviation sigma
+Parameters:
+  mu      - mean
+  sigma   - variance (either a float, list or square matrix)
+  n       - number of points to generate</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.datagen.toydata-pysrc.html#multivariate_normal">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="gaussianData"></a><span class="summary-sig-name">gaussianData</span>(<span class="summary-sig-arg">mu</span>,
+        <span class="summary-sig-arg">sigma</span>,
+        <span class="summary-sig-arg">n</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.datagen.toydata-pysrc.html#gaussianData">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.datagen.toydata-module.html#noisyData" class="summary-sig-name">noisyData</a>()</span><br />
+      Creates two populations, usually linearly-separable, but with vastly 
+      different variance.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.datagen.toydata-pysrc.html#noisyData">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.datagen.toydata-module.html#sineData" class="summary-sig-name">sineData</a>(<span class="summary-sig-arg">n</span>=<span class="summary-sig-default">30</span>)</span><br />
+      Uses sine-wave populations to create two class populations that 
+      meander close to each other.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.datagen.toydata-pysrc.html#sineData">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.datagen.toydata-module.html#separableData" class="summary-sig-name">separableData</a>()</span><br />
+      Creates two linearly-separable populations, one centered at (-.5,0) 
+      and the other at (0.5,0).</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.datagen.toydata-pysrc.html#separableData">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== VARIABLES ==================== -->
+<a name="section-Variables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Variables</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.datagen.toydata-module.html#USAGE" class="summary-name">USAGE</a> = <code title="&quot;&quot;&quot;
+Usage: python generate.py type
+Where 'type' is one of:
+    l  - two similar, linearly-separable populations
+    n  - two linearly-separable populations, one with more
+         noise than the other
+    s  - two populations generated by sine waves (with some noise)
+&quot;&quot;&quot;"><code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTION DETAILS ==================== -->
+<a name="section-FunctionDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Function Details</span></td>
+</tr>
+</table>
+<a name="sineClass"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">sineClass</span>(<span class="sig-arg">xlim</span>=<span class="sig-default">[0,1]</span>,
+        <span class="sig-arg">ylim</span>=<span class="sig-default">[0,1]</span>,
+        <span class="sig-arg">n</span>=<span class="sig-default">20</span>,
+        <span class="sig-arg">sigma</span>=<span class="sig-default">0.04</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.datagen.toydata-pysrc.html#sineClass">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+
+Generates a 2-D noisy sine wave
+Parameters:
+  xlim     - list of length 2 that delimits the x value range 
+  ylim     - list of length 2 that delimits the y value range
+  n        - number of data points
+Note: for use with PyML demo2d, only use x and y values
+      between -1 and 1
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="multivariate_normal"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">multivariate_normal</span>(<span class="sig-arg">mu</span>,
+        <span class="sig-arg">sigma</span>=<span class="sig-default">0.1</span>,
+        <span class="sig-arg">n</span>=<span class="sig-default">20</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.datagen.toydata-pysrc.html#multivariate_normal">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+
+a wrapper around numpy's random.multivariate_normal function
+Generates data from a Gaussian distribution with mean mu
+and standard deviation sigma
+Parameters:
+  mu      - mean
+  sigma   - variance (either a float, list or square matrix)
+  n       - number of points to generate
+
+Note: for use with PyML demo2d, only use mu1 and mu2
+      values that keep populations between -1 and 1
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="noisyData"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">noisyData</span>()</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.datagen.toydata-pysrc.html#noisyData">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Creates two populations, usually linearly-separable, but with vastly 
+  different variance.  Simulates a problem where one population has 
+  significantly more noise than another.  Data are output in a CSV format 
+  suitable for creating a PyML VectorDataSet (labelsColumn=1).</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="sineData"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">sineData</span>(<span class="sig-arg">n</span>=<span class="sig-default">30</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.datagen.toydata-pysrc.html#sineData">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Uses sine-wave populations to create two class populations that 
+  meander close to each other.  Data are output in a CSV format suitable 
+  for creating a PyML VectorDataSet (labelsColumn=1).</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="separableData"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">separableData</span>()</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.datagen.toydata-pysrc.html#separableData">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Creates two linearly-separable populations, one centered at (-.5,0) 
+  and the other at (0.5,0).  Data are output in a CSV format suitable for 
+  creating a PyML VectorDataSet (labelsColumn=1).</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== VARIABLES DETAILS ==================== -->
+<a name="section-VariablesDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Variables Details</span></td>
+</tr>
+</table>
+<a name="USAGE"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">USAGE</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+&quot;&quot;&quot;
+Usage: python generate.py type
+Where 'type' is one of:
+    l  - two similar, linearly-separable populations
+    n  - two linearly-separable populations, one with more
+         noise than the other
+    s  - two populations generated by sine waves (with some noise)
+&quot;&quot;&quot;
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pyml.sourceforge.net">PyML</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Fri May  2 12:39:26 2008
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

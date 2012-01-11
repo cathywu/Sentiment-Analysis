@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>PyML.utils.arrayWrap</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="PyML-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pyml.sourceforge.net">PyML</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="PyML-module.html">Package&nbsp;PyML</a> ::
+        <a href="PyML.utils-module.html">Package&nbsp;utils</a> ::
+        Module&nbsp;arrayWrap
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="PyML.utils.arrayWrap-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="PyML.utils.arrayWrap-module.html">Module PyML.utils.arrayWrap</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno">  1</tt>  <tt class="py-line"> </tt>
+<a name="L2"></a><tt class="py-lineno">  2</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-0" class="py-name" targets="Package PyML=PyML-module.html"><a title="PyML" class="py-name" href="#" onclick="return doclink('link-0', 'PyML', 'link-0');">PyML</a></tt><tt class="py-op">.</tt><tt id="link-1" class="py-name" targets="Package PyML.utils=PyML.utils-module.html"><a title="PyML.utils" class="py-name" href="#" onclick="return doclink('link-1', 'utils', 'link-1');">utils</a></tt><tt class="py-op">.</tt><tt id="link-2" class="py-name" targets="Package PyML.classifiers.ext=PyML.classifiers.ext-module.html,Package PyML.containers.ext=PyML.containers.ext-module.html,Package PyML.utils.ext=PyML.utils.ext-module.html"><a title="PyML.classifiers.ext
+PyML.containers.ext
+PyML.utils.ext" class="py-name" href="#" onclick="return doclink('link-2', 'ext', 'link-2');">ext</a></tt> <tt class="py-keyword">import</tt> <tt id="link-3" class="py-name" targets="Module PyML.utils.ext.carrayWrap=PyML.utils.ext.carrayWrap-module.html"><a title="PyML.utils.ext.carrayWrap" class="py-name" href="#" onclick="return doclink('link-3', 'carrayWrap', 'link-3');">carrayWrap</a></tt> </tt>
+<a name="L3"></a><tt class="py-lineno">  3</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">numpy</tt> </tt>
+<a name="L4"></a><tt class="py-lineno">  4</tt>  <tt class="py-line"> </tt>
+<a name="arrayFromDoubleArray"></a><div id="arrayFromDoubleArray-def"><a name="L5"></a><tt class="py-lineno">  5</tt> <a class="py-toggle" href="#" id="arrayFromDoubleArray-toggle" onclick="return toggle('arrayFromDoubleArray');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.utils.arrayWrap-module.html#arrayFromDoubleArray">arrayFromDoubleArray</a><tt class="py-op">(</tt><tt class="py-param">doubleArray</tt><tt class="py-op">,</tt> <tt class="py-param">length</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="arrayFromDoubleArray-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="arrayFromDoubleArray-expanded"><a name="L6"></a><tt class="py-lineno">  6</tt>  <tt class="py-line"> </tt>
+<a name="L7"></a><tt class="py-lineno">  7</tt>  <tt class="py-line">    <tt class="py-name">array</tt> <tt class="py-op">=</tt> <tt class="py-name">numpy</tt><tt class="py-op">.</tt><tt class="py-name">zeros</tt><tt class="py-op">(</tt><tt class="py-name">length</tt><tt class="py-op">,</tt> <tt class="py-name">numpy</tt><tt class="py-op">.</tt><tt class="py-name">float_</tt><tt class="py-op">)</tt> </tt>
+<a name="L8"></a><tt class="py-lineno">  8</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">length</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L9"></a><tt class="py-lineno">  9</tt>  <tt class="py-line">        <tt class="py-name">array</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt id="link-4" class="py-name" targets="Class PyML.classifiers.ext.libsvm.doubleArray=PyML.classifiers.ext.libsvm.doubleArray-class.html,Class PyML.containers.ext.csparsedataset.doubleArray=PyML.containers.ext.csparsedataset.doubleArray-class.html,Function PyML.utils.arrayWrap.doubleArray()=PyML.utils.arrayWrap-module.html#doubleArray,Class PyML.utils.ext.carrayWrap.doubleArray=PyML.utils.ext.carrayWrap.doubleArray-class.html"><a title="PyML.classifiers.ext.libsvm.doubleArray
+PyML.containers.ext.csparsedataset.doubleArray
+PyML.utils.arrayWrap.doubleArray
+PyML.utils.ext.carrayWrap.doubleArray" class="py-name" href="#" onclick="return doclink('link-4', 'doubleArray', 'link-4');">doubleArray</a></tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> </tt>
+<a name="L10"></a><tt class="py-lineno"> 10</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">array</tt> </tt>
+</div><a name="L11"></a><tt class="py-lineno"> 11</tt>  <tt class="py-line"> </tt>
+<a name="L12"></a><tt class="py-lineno"> 12</tt>  <tt class="py-line"> </tt>
+<a name="doubleArray"></a><div id="doubleArray-def"><a name="L13"></a><tt class="py-lineno"> 13</tt> <a class="py-toggle" href="#" id="doubleArray-toggle" onclick="return toggle('doubleArray');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.utils.arrayWrap-module.html#doubleArray">doubleArray</a><tt class="py-op">(</tt><tt class="py-param">a</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="doubleArray-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="doubleArray-expanded"><a name="L14"></a><tt class="py-lineno"> 14</tt>  <tt class="py-line"> </tt>
+<a name="L15"></a><tt class="py-lineno"> 15</tt>  <tt class="py-line">    <tt class="py-name">array</tt> <tt class="py-op">=</tt> <tt id="link-5" class="py-name"><a title="PyML.utils.ext.carrayWrap" class="py-name" href="#" onclick="return doclink('link-5', 'carrayWrap', 'link-3');">carrayWrap</a></tt><tt class="py-op">.</tt><tt id="link-6" class="py-name"><a title="PyML.classifiers.ext.libsvm.doubleArray
+PyML.containers.ext.csparsedataset.doubleArray
+PyML.utils.arrayWrap.doubleArray
+PyML.utils.ext.carrayWrap.doubleArray" class="py-name" href="#" onclick="return doclink('link-6', 'doubleArray', 'link-4');">doubleArray</a></tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">a</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L16"></a><tt class="py-lineno"> 16</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">a</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L17"></a><tt class="py-lineno"> 17</tt>  <tt class="py-line">        <tt class="py-name">array</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">a</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> </tt>
+<a name="L18"></a><tt class="py-lineno"> 18</tt>  <tt class="py-line"> </tt>
+<a name="L19"></a><tt class="py-lineno"> 19</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">array</tt> </tt>
+</div><a name="L20"></a><tt class="py-lineno"> 20</tt>  <tt class="py-line"> </tt>
+<a name="intArray"></a><div id="intArray-def"><a name="L21"></a><tt class="py-lineno"> 21</tt> <a class="py-toggle" href="#" id="intArray-toggle" onclick="return toggle('intArray');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.utils.arrayWrap-module.html#intArray">intArray</a><tt class="py-op">(</tt><tt class="py-param">a</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="intArray-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="intArray-expanded"><a name="L22"></a><tt class="py-lineno"> 22</tt>  <tt class="py-line"> </tt>
+<a name="L23"></a><tt class="py-lineno"> 23</tt>  <tt class="py-line">    <tt class="py-name">array</tt> <tt class="py-op">=</tt> <tt id="link-7" class="py-name"><a title="PyML.utils.ext.carrayWrap" class="py-name" href="#" onclick="return doclink('link-7', 'carrayWrap', 'link-3');">carrayWrap</a></tt><tt class="py-op">.</tt><tt id="link-8" class="py-name" targets="Class PyML.classifiers.ext.libsvm.intArray=PyML.classifiers.ext.libsvm.intArray-class.html,Class PyML.containers.ext.csparsedataset.intArray=PyML.containers.ext.csparsedataset.intArray-class.html,Function PyML.utils.arrayWrap.intArray()=PyML.utils.arrayWrap-module.html#intArray,Class PyML.utils.ext.carrayWrap.intArray=PyML.utils.ext.carrayWrap.intArray-class.html"><a title="PyML.classifiers.ext.libsvm.intArray
+PyML.containers.ext.csparsedataset.intArray
+PyML.utils.arrayWrap.intArray
+PyML.utils.ext.carrayWrap.intArray" class="py-name" href="#" onclick="return doclink('link-8', 'intArray', 'link-8');">intArray</a></tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">a</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L24"></a><tt class="py-lineno"> 24</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">a</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L25"></a><tt class="py-lineno"> 25</tt>  <tt class="py-line">        <tt class="py-name">array</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">a</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> </tt>
+<a name="L26"></a><tt class="py-lineno"> 26</tt>  <tt class="py-line"> </tt>
+<a name="L27"></a><tt class="py-lineno"> 27</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">array</tt> </tt>
+</div><a name="L28"></a><tt class="py-lineno"> 28</tt>  <tt class="py-line"> </tt>
+<a name="doubleVector"></a><div id="doubleVector-def"><a name="L29"></a><tt class="py-lineno"> 29</tt> <a class="py-toggle" href="#" id="doubleVector-toggle" onclick="return toggle('doubleVector');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.utils.arrayWrap-module.html#doubleVector">doubleVector</a><tt class="py-op">(</tt><tt class="py-param">v</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="doubleVector-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="doubleVector-expanded"><a name="L30"></a><tt class="py-lineno"> 30</tt>  <tt class="py-line"> </tt>
+<a name="L31"></a><tt class="py-lineno"> 31</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-name">v</tt> <tt class="py-keyword">is</tt> <tt class="py-name">None</tt> <tt class="py-op">:</tt> <tt class="py-keyword">return</tt> <tt id="link-9" class="py-name"><a title="PyML.utils.ext.carrayWrap" class="py-name" href="#" onclick="return doclink('link-9', 'carrayWrap', 'link-3');">carrayWrap</a></tt><tt class="py-op">.</tt><tt id="link-10" class="py-name" targets="Class PyML.classifiers.ext.cgist.DoubleVector=PyML.classifiers.ext.cgist.DoubleVector-class.html,Class PyML.classifiers.ext.csmo.DoubleVector=PyML.classifiers.ext.csmo.DoubleVector-class.html,Class PyML.classifiers.ext.csvmodel.DoubleVector=PyML.classifiers.ext.csvmodel.DoubleVector-class.html,Class PyML.classifiers.ext.knn.DoubleVector=PyML.classifiers.ext.knn.DoubleVector-class.html,Class PyML.containers.ext.caggregate.DoubleVector=PyML.containers.ext.caggregate.DoubleVector-class.html,Class PyML.containers.ext.ckernel.DoubleVector=PyML.containers.ext.ckernel.DoubleVector-class.html,Class PyML.containers.ext.ckerneldata.DoubleVector=PyML.containers.ext.ckerneldata.DoubleVector-class.html,Class PyML.containers.ext.cpairdataset.DoubleVector=PyML.containers.ext.cpairdataset.DoubleVector-class.html,Class PyML.containers.ext.csequencedata.DoubleVector=PyML.containers.ext.csequencedata.DoubleVector-class.html,Class PyML.containers.ext.csparsedataset.DoubleVector=PyML.containers.ext.csparsedataset.DoubleVector-class.html,Class PyML.containers.ext.cstringkernel.DoubleVector=PyML.containers.ext.cstringkernel.DoubleVector-class.html,Class PyML.containers.ext.cvectordataset.DoubleVector=PyML.containers.ext.cvectordataset.DoubleVector-class.html,Class PyML.utils.ext.carrayWrap.DoubleVector=PyML.utils.ext.carrayWrap.DoubleVector-class.html"><a title="PyML.classifiers.ext.cgist.DoubleVector
+PyML.classifiers.ext.csmo.DoubleVector
+PyML.classifiers.ext.csvmodel.DoubleVector
+PyML.classifiers.ext.knn.DoubleVector
+PyML.containers.ext.caggregate.DoubleVector
+PyML.containers.ext.ckernel.DoubleVector
+PyML.containers.ext.ckerneldata.DoubleVector
+PyML.containers.ext.cpairdataset.DoubleVector
+PyML.containers.ext.csequencedata.DoubleVector
+PyML.containers.ext.csparsedataset.DoubleVector
+PyML.containers.ext.cstringkernel.DoubleVector
+PyML.containers.ext.cvectordataset.DoubleVector
+PyML.utils.ext.carrayWrap.DoubleVector" class="py-name" href="#" onclick="return doclink('link-10', 'DoubleVector', 'link-10');">DoubleVector</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L32"></a><tt class="py-lineno"> 32</tt>  <tt class="py-line">    <tt class="py-name">vector</tt> <tt class="py-op">=</tt> <tt id="link-11" class="py-name"><a title="PyML.utils.ext.carrayWrap" class="py-name" href="#" onclick="return doclink('link-11', 'carrayWrap', 'link-3');">carrayWrap</a></tt><tt class="py-op">.</tt><tt id="link-12" class="py-name"><a title="PyML.classifiers.ext.cgist.DoubleVector
+PyML.classifiers.ext.csmo.DoubleVector
+PyML.classifiers.ext.csvmodel.DoubleVector
+PyML.classifiers.ext.knn.DoubleVector
+PyML.containers.ext.caggregate.DoubleVector
+PyML.containers.ext.ckernel.DoubleVector
+PyML.containers.ext.ckerneldata.DoubleVector
+PyML.containers.ext.cpairdataset.DoubleVector
+PyML.containers.ext.csequencedata.DoubleVector
+PyML.containers.ext.csparsedataset.DoubleVector
+PyML.containers.ext.cstringkernel.DoubleVector
+PyML.containers.ext.cvectordataset.DoubleVector
+PyML.utils.ext.carrayWrap.DoubleVector" class="py-name" href="#" onclick="return doclink('link-12', 'DoubleVector', 'link-10');">DoubleVector</a></tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">v</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L33"></a><tt class="py-lineno"> 33</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">v</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L34"></a><tt class="py-lineno"> 34</tt>  <tt class="py-line">        <tt class="py-name">vector</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">v</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> </tt>
+<a name="L35"></a><tt class="py-lineno"> 35</tt>  <tt class="py-line"> </tt>
+<a name="L36"></a><tt class="py-lineno"> 36</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">vector</tt> </tt>
+</div><a name="L37"></a><tt class="py-lineno"> 37</tt>  <tt class="py-line"> </tt>
+<a name="floatVector"></a><div id="floatVector-def"><a name="L38"></a><tt class="py-lineno"> 38</tt> <a class="py-toggle" href="#" id="floatVector-toggle" onclick="return toggle('floatVector');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.utils.arrayWrap-module.html#floatVector">floatVector</a><tt class="py-op">(</tt><tt class="py-param">v</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="floatVector-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="floatVector-expanded"><a name="L39"></a><tt class="py-lineno"> 39</tt>  <tt class="py-line"> </tt>
+<a name="L40"></a><tt class="py-lineno"> 40</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-name">v</tt> <tt class="py-keyword">is</tt> <tt class="py-name">None</tt> <tt class="py-op">:</tt> <tt class="py-keyword">return</tt> <tt id="link-13" class="py-name"><a title="PyML.utils.ext.carrayWrap" class="py-name" href="#" onclick="return doclink('link-13', 'carrayWrap', 'link-3');">carrayWrap</a></tt><tt class="py-op">.</tt><tt id="link-14" class="py-name" targets="Class PyML.containers.ext.ckernel.FloatVector=PyML.containers.ext.ckernel.FloatVector-class.html,Class PyML.containers.ext.ckerneldata.FloatVector=PyML.containers.ext.ckerneldata.FloatVector-class.html,Class PyML.containers.ext.csparsedataset.FloatVector=PyML.containers.ext.csparsedataset.FloatVector-class.html,Class PyML.utils.ext.carrayWrap.FloatVector=PyML.utils.ext.carrayWrap.FloatVector-class.html"><a title="PyML.containers.ext.ckernel.FloatVector
+PyML.containers.ext.ckerneldata.FloatVector
+PyML.containers.ext.csparsedataset.FloatVector
+PyML.utils.ext.carrayWrap.FloatVector" class="py-name" href="#" onclick="return doclink('link-14', 'FloatVector', 'link-14');">FloatVector</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L41"></a><tt class="py-lineno"> 41</tt>  <tt class="py-line">    <tt class="py-name">vector</tt> <tt class="py-op">=</tt> <tt id="link-15" class="py-name"><a title="PyML.utils.ext.carrayWrap" class="py-name" href="#" onclick="return doclink('link-15', 'carrayWrap', 'link-3');">carrayWrap</a></tt><tt class="py-op">.</tt><tt id="link-16" class="py-name"><a title="PyML.containers.ext.ckernel.FloatVector
+PyML.containers.ext.ckerneldata.FloatVector
+PyML.containers.ext.csparsedataset.FloatVector
+PyML.utils.ext.carrayWrap.FloatVector" class="py-name" href="#" onclick="return doclink('link-16', 'FloatVector', 'link-14');">FloatVector</a></tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">v</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L42"></a><tt class="py-lineno"> 42</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">v</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L43"></a><tt class="py-lineno"> 43</tt>  <tt class="py-line">        <tt class="py-name">vector</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">v</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> </tt>
+<a name="L44"></a><tt class="py-lineno"> 44</tt>  <tt class="py-line"> </tt>
+<a name="L45"></a><tt class="py-lineno"> 45</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">vector</tt> </tt>
+</div><a name="L46"></a><tt class="py-lineno"> 46</tt>  <tt class="py-line"> </tt>
+<a name="intVector"></a><div id="intVector-def"><a name="L47"></a><tt class="py-lineno"> 47</tt> <a class="py-toggle" href="#" id="intVector-toggle" onclick="return toggle('intVector');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.utils.arrayWrap-module.html#intVector">intVector</a><tt class="py-op">(</tt><tt class="py-param">v</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="intVector-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="intVector-expanded"><a name="L48"></a><tt class="py-lineno"> 48</tt>  <tt class="py-line"> </tt>
+<a name="L49"></a><tt class="py-lineno"> 49</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-name">v</tt> <tt class="py-keyword">is</tt> <tt class="py-name">None</tt> <tt class="py-op">:</tt> <tt class="py-keyword">return</tt> <tt id="link-17" class="py-name"><a title="PyML.utils.ext.carrayWrap" class="py-name" href="#" onclick="return doclink('link-17', 'carrayWrap', 'link-3');">carrayWrap</a></tt><tt class="py-op">.</tt><tt id="link-18" class="py-name" targets="Class PyML.classifiers.ext.cgist.IntVector=PyML.classifiers.ext.cgist.IntVector-class.html,Class PyML.classifiers.ext.csmo.IntVector=PyML.classifiers.ext.csmo.IntVector-class.html,Class PyML.classifiers.ext.csvmodel.IntVector=PyML.classifiers.ext.csvmodel.IntVector-class.html,Class PyML.classifiers.ext.knn.IntVector=PyML.classifiers.ext.knn.IntVector-class.html,Class PyML.containers.ext.caggregate.IntVector=PyML.containers.ext.caggregate.IntVector-class.html,Class PyML.containers.ext.ckernel.IntVector=PyML.containers.ext.ckernel.IntVector-class.html,Class PyML.containers.ext.ckerneldata.IntVector=PyML.containers.ext.ckerneldata.IntVector-class.html,Class PyML.containers.ext.cpairdataset.IntVector=PyML.containers.ext.cpairdataset.IntVector-class.html,Class PyML.containers.ext.csequencedata.IntVector=PyML.containers.ext.csequencedata.IntVector-class.html,Class PyML.containers.ext.csparsedataset.IntVector=PyML.containers.ext.csparsedataset.IntVector-class.html,Class PyML.containers.ext.cstringkernel.IntVector=PyML.containers.ext.cstringkernel.IntVector-class.html,Class PyML.containers.ext.cvectordataset.IntVector=PyML.containers.ext.cvectordataset.IntVector-class.html,Class PyML.utils.ext.carrayWrap.IntVector=PyML.utils.ext.carrayWrap.IntVector-class.html"><a title="PyML.classifiers.ext.cgist.IntVector
+PyML.classifiers.ext.csmo.IntVector
+PyML.classifiers.ext.csvmodel.IntVector
+PyML.classifiers.ext.knn.IntVector
+PyML.containers.ext.caggregate.IntVector
+PyML.containers.ext.ckernel.IntVector
+PyML.containers.ext.ckerneldata.IntVector
+PyML.containers.ext.cpairdataset.IntVector
+PyML.containers.ext.csequencedata.IntVector
+PyML.containers.ext.csparsedataset.IntVector
+PyML.containers.ext.cstringkernel.IntVector
+PyML.containers.ext.cvectordataset.IntVector
+PyML.utils.ext.carrayWrap.IntVector" class="py-name" href="#" onclick="return doclink('link-18', 'IntVector', 'link-18');">IntVector</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L50"></a><tt class="py-lineno"> 50</tt>  <tt class="py-line">    <tt class="py-name">vector</tt> <tt class="py-op">=</tt> <tt id="link-19" class="py-name"><a title="PyML.utils.ext.carrayWrap" class="py-name" href="#" onclick="return doclink('link-19', 'carrayWrap', 'link-3');">carrayWrap</a></tt><tt class="py-op">.</tt><tt id="link-20" class="py-name"><a title="PyML.classifiers.ext.cgist.IntVector
+PyML.classifiers.ext.csmo.IntVector
+PyML.classifiers.ext.csvmodel.IntVector
+PyML.classifiers.ext.knn.IntVector
+PyML.containers.ext.caggregate.IntVector
+PyML.containers.ext.ckernel.IntVector
+PyML.containers.ext.ckerneldata.IntVector
+PyML.containers.ext.cpairdataset.IntVector
+PyML.containers.ext.csequencedata.IntVector
+PyML.containers.ext.csparsedataset.IntVector
+PyML.containers.ext.cstringkernel.IntVector
+PyML.containers.ext.cvectordataset.IntVector
+PyML.utils.ext.carrayWrap.IntVector" class="py-name" href="#" onclick="return doclink('link-20', 'IntVector', 'link-18');">IntVector</a></tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">v</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L51"></a><tt class="py-lineno"> 51</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">v</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L52"></a><tt class="py-lineno"> 52</tt>  <tt class="py-line">        <tt class="py-name">vector</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">v</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> </tt>
+<a name="L53"></a><tt class="py-lineno"> 53</tt>  <tt class="py-line"> </tt>
+<a name="L54"></a><tt class="py-lineno"> 54</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">vector</tt> </tt>
+</div><a name="L55"></a><tt class="py-lineno"> 55</tt>  <tt class="py-line"> </tt>
+<a name="longVector"></a><div id="longVector-def"><a name="L56"></a><tt class="py-lineno"> 56</tt> <a class="py-toggle" href="#" id="longVector-toggle" onclick="return toggle('longVector');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.utils.arrayWrap-module.html#longVector">longVector</a><tt class="py-op">(</tt><tt class="py-param">v</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="longVector-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="longVector-expanded"><a name="L57"></a><tt class="py-lineno"> 57</tt>  <tt class="py-line"> </tt>
+<a name="L58"></a><tt class="py-lineno"> 58</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-name">v</tt> <tt class="py-keyword">is</tt> <tt class="py-name">None</tt> <tt class="py-op">:</tt> <tt class="py-keyword">return</tt> <tt id="link-21" class="py-name"><a title="PyML.utils.ext.carrayWrap" class="py-name" href="#" onclick="return doclink('link-21', 'carrayWrap', 'link-3');">carrayWrap</a></tt><tt class="py-op">.</tt><tt id="link-22" class="py-name" targets="Class PyML.containers.ext.csequencedata.LongVector=PyML.containers.ext.csequencedata.LongVector-class.html,Class PyML.containers.ext.csparsedataset.LongVector=PyML.containers.ext.csparsedataset.LongVector-class.html,Class PyML.containers.ext.cstringkernel.LongVector=PyML.containers.ext.cstringkernel.LongVector-class.html,Class PyML.containers.ext.cvectordataset.LongVector=PyML.containers.ext.cvectordataset.LongVector-class.html,Class PyML.utils.ext.carrayWrap.LongVector=PyML.utils.ext.carrayWrap.LongVector-class.html"><a title="PyML.containers.ext.csequencedata.LongVector
+PyML.containers.ext.csparsedataset.LongVector
+PyML.containers.ext.cstringkernel.LongVector
+PyML.containers.ext.cvectordataset.LongVector
+PyML.utils.ext.carrayWrap.LongVector" class="py-name" href="#" onclick="return doclink('link-22', 'LongVector', 'link-22');">LongVector</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L59"></a><tt class="py-lineno"> 59</tt>  <tt class="py-line">    <tt class="py-name">vector</tt> <tt class="py-op">=</tt> <tt id="link-23" class="py-name"><a title="PyML.utils.ext.carrayWrap" class="py-name" href="#" onclick="return doclink('link-23', 'carrayWrap', 'link-3');">carrayWrap</a></tt><tt class="py-op">.</tt><tt id="link-24" class="py-name"><a title="PyML.containers.ext.csequencedata.LongVector
+PyML.containers.ext.csparsedataset.LongVector
+PyML.containers.ext.cstringkernel.LongVector
+PyML.containers.ext.cvectordataset.LongVector
+PyML.utils.ext.carrayWrap.LongVector" class="py-name" href="#" onclick="return doclink('link-24', 'LongVector', 'link-22');">LongVector</a></tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">v</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L60"></a><tt class="py-lineno"> 60</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">v</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L61"></a><tt class="py-lineno"> 61</tt>  <tt class="py-line">        <tt class="py-name">vector</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">v</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> </tt>
+<a name="L62"></a><tt class="py-lineno"> 62</tt>  <tt class="py-line"> </tt>
+<a name="L63"></a><tt class="py-lineno"> 63</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">vector</tt> </tt>
+</div><a name="L64"></a><tt class="py-lineno"> 64</tt>  <tt class="py-line"> </tt>
+<a name="datasetVector"></a><div id="datasetVector-def"><a name="L65"></a><tt class="py-lineno"> 65</tt> <a class="py-toggle" href="#" id="datasetVector-toggle" onclick="return toggle('datasetVector');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.utils.arrayWrap-module.html#datasetVector">datasetVector</a><tt class="py-op">(</tt><tt class="py-param">v</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="datasetVector-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="datasetVector-expanded"><a name="L66"></a><tt class="py-lineno"> 66</tt>  <tt class="py-line"> </tt>
+<a name="L67"></a><tt class="py-lineno"> 67</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-name">v</tt> <tt class="py-keyword">is</tt> <tt class="py-name">None</tt> <tt class="py-op">:</tt> <tt class="py-keyword">return</tt> <tt id="link-25" class="py-name"><a title="PyML.utils.ext.carrayWrap" class="py-name" href="#" onclick="return doclink('link-25', 'carrayWrap', 'link-3');">carrayWrap</a></tt><tt class="py-op">.</tt><tt class="py-name">DataSetPtrVector</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L68"></a><tt class="py-lineno"> 68</tt>  <tt class="py-line">    <tt class="py-name">vector</tt> <tt class="py-op">=</tt> <tt id="link-26" class="py-name"><a title="PyML.utils.ext.carrayWrap" class="py-name" href="#" onclick="return doclink('link-26', 'carrayWrap', 'link-3');">carrayWrap</a></tt><tt class="py-op">.</tt><tt class="py-name">DataSetPtrVector</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">v</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L69"></a><tt class="py-lineno"> 69</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">v</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L70"></a><tt class="py-lineno"> 70</tt>  <tt class="py-line">        <tt class="py-name">vector</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">v</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> </tt>
+<a name="L71"></a><tt class="py-lineno"> 71</tt>  <tt class="py-line"> </tt>
+<a name="L72"></a><tt class="py-lineno"> 72</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">vector</tt> </tt>
+</div><a name="L73"></a><tt class="py-lineno"> 73</tt>  <tt class="py-line"> </tt>
+<a name="intVector2list"></a><div id="intVector2list-def"><a name="L74"></a><tt class="py-lineno"> 74</tt> <a class="py-toggle" href="#" id="intVector2list-toggle" onclick="return toggle('intVector2list');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.utils.arrayWrap-module.html#intVector2list">intVector2list</a><tt class="py-op">(</tt><tt class="py-param">v</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="intVector2list-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="intVector2list-expanded"><a name="L75"></a><tt class="py-lineno"> 75</tt>  <tt class="py-line"> </tt>
+<a name="L76"></a><tt class="py-lineno"> 76</tt>  <tt class="py-line">    <tt class="py-comment">#vPtr = carrayWrap.IntVectorPtr(v)</tt> </tt>
+<a name="L77"></a><tt class="py-lineno"> 77</tt>  <tt class="py-line"><tt class="py-comment"></tt>    <tt class="py-name">vPtr</tt> <tt class="py-op">=</tt> <tt id="link-27" class="py-name"><a title="PyML.utils.ext.carrayWrap" class="py-name" href="#" onclick="return doclink('link-27', 'carrayWrap', 'link-3');">carrayWrap</a></tt><tt class="py-op">.</tt><tt id="link-28" class="py-name"><a title="PyML.classifiers.ext.cgist.IntVector
+PyML.classifiers.ext.csmo.IntVector
+PyML.classifiers.ext.csvmodel.IntVector
+PyML.classifiers.ext.knn.IntVector
+PyML.containers.ext.caggregate.IntVector
+PyML.containers.ext.ckernel.IntVector
+PyML.containers.ext.ckerneldata.IntVector
+PyML.containers.ext.cpairdataset.IntVector
+PyML.containers.ext.csequencedata.IntVector
+PyML.containers.ext.csparsedataset.IntVector
+PyML.containers.ext.cstringkernel.IntVector
+PyML.containers.ext.cvectordataset.IntVector
+PyML.utils.ext.carrayWrap.IntVector" class="py-name" href="#" onclick="return doclink('link-28', 'IntVector', 'link-18');">IntVector</a></tt><tt class="py-op">(</tt><tt class="py-name">v</tt><tt class="py-op">)</tt> </tt>
+<a name="L78"></a><tt class="py-lineno"> 78</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-op">[</tt><tt class="py-name">vPtr</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">vPtr</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">]</tt> </tt>
+</div><a name="L79"></a><tt class="py-lineno"> 79</tt>  <tt class="py-line"> </tt>
+<a name="doubleVector2list"></a><div id="doubleVector2list-def"><a name="L80"></a><tt class="py-lineno"> 80</tt> <a class="py-toggle" href="#" id="doubleVector2list-toggle" onclick="return toggle('doubleVector2list');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.utils.arrayWrap-module.html#doubleVector2list">doubleVector2list</a><tt class="py-op">(</tt><tt class="py-param">v</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="doubleVector2list-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="doubleVector2list-expanded"><a name="L81"></a><tt class="py-lineno"> 81</tt>  <tt class="py-line"> </tt>
+<a name="L82"></a><tt class="py-lineno"> 82</tt>  <tt class="py-line">    <tt class="py-comment">#vPtr = carrayWrap.DoubleVectorPtr(v)</tt> </tt>
+<a name="L83"></a><tt class="py-lineno"> 83</tt>  <tt class="py-line"><tt class="py-comment"></tt>    <tt class="py-name">vPtr</tt> <tt class="py-op">=</tt> <tt id="link-29" class="py-name"><a title="PyML.utils.ext.carrayWrap" class="py-name" href="#" onclick="return doclink('link-29', 'carrayWrap', 'link-3');">carrayWrap</a></tt><tt class="py-op">.</tt><tt id="link-30" class="py-name"><a title="PyML.classifiers.ext.cgist.DoubleVector
+PyML.classifiers.ext.csmo.DoubleVector
+PyML.classifiers.ext.csvmodel.DoubleVector
+PyML.classifiers.ext.knn.DoubleVector
+PyML.containers.ext.caggregate.DoubleVector
+PyML.containers.ext.ckernel.DoubleVector
+PyML.containers.ext.ckerneldata.DoubleVector
+PyML.containers.ext.cpairdataset.DoubleVector
+PyML.containers.ext.csequencedata.DoubleVector
+PyML.containers.ext.csparsedataset.DoubleVector
+PyML.containers.ext.cstringkernel.DoubleVector
+PyML.containers.ext.cvectordataset.DoubleVector
+PyML.utils.ext.carrayWrap.DoubleVector" class="py-name" href="#" onclick="return doclink('link-30', 'DoubleVector', 'link-10');">DoubleVector</a></tt><tt class="py-op">(</tt><tt class="py-name">v</tt><tt class="py-op">)</tt> </tt>
+<a name="L84"></a><tt class="py-lineno"> 84</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-op">[</tt><tt class="py-name">vPtr</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">vPtr</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">]</tt> </tt>
+</div><a name="L85"></a><tt class="py-lineno"> 85</tt>  <tt class="py-line"> </tt>
+<a name="dict2vectors"></a><div id="dict2vectors-def"><a name="L86"></a><tt class="py-lineno"> 86</tt> <a class="py-toggle" href="#" id="dict2vectors-toggle" onclick="return toggle('dict2vectors');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.utils.arrayWrap-module.html#dict2vectors">dict2vectors</a><tt class="py-op">(</tt><tt class="py-param">a</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="dict2vectors-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="dict2vectors-expanded"><a name="L87"></a><tt class="py-lineno"> 87</tt>  <tt class="py-line"> </tt>
+<a name="L88"></a><tt class="py-lineno"> 88</tt>  <tt class="py-line">    <tt class="py-name">keys</tt> <tt class="py-op">=</tt> <tt id="link-31" class="py-name"><a title="PyML.utils.ext.carrayWrap" class="py-name" href="#" onclick="return doclink('link-31', 'carrayWrap', 'link-3');">carrayWrap</a></tt><tt class="py-op">.</tt><tt id="link-32" class="py-name"><a title="PyML.containers.ext.csequencedata.LongVector
+PyML.containers.ext.csparsedataset.LongVector
+PyML.containers.ext.cstringkernel.LongVector
+PyML.containers.ext.cvectordataset.LongVector
+PyML.utils.ext.carrayWrap.LongVector" class="py-name" href="#" onclick="return doclink('link-32', 'LongVector', 'link-22');">LongVector</a></tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">a</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L89"></a><tt class="py-lineno"> 89</tt>  <tt class="py-line">    <tt class="py-comment">#keys = carrayWrap.IntVector(len(a))</tt> </tt>
+<a name="L90"></a><tt class="py-lineno"> 90</tt>  <tt class="py-line"><tt class="py-comment"></tt>    <tt class="py-name">values</tt> <tt class="py-op">=</tt> <tt id="link-33" class="py-name"><a title="PyML.utils.ext.carrayWrap" class="py-name" href="#" onclick="return doclink('link-33', 'carrayWrap', 'link-3');">carrayWrap</a></tt><tt class="py-op">.</tt><tt id="link-34" class="py-name"><a title="PyML.classifiers.ext.cgist.DoubleVector
+PyML.classifiers.ext.csmo.DoubleVector
+PyML.classifiers.ext.csvmodel.DoubleVector
+PyML.classifiers.ext.knn.DoubleVector
+PyML.containers.ext.caggregate.DoubleVector
+PyML.containers.ext.ckernel.DoubleVector
+PyML.containers.ext.ckerneldata.DoubleVector
+PyML.containers.ext.cpairdataset.DoubleVector
+PyML.containers.ext.csequencedata.DoubleVector
+PyML.containers.ext.csparsedataset.DoubleVector
+PyML.containers.ext.cstringkernel.DoubleVector
+PyML.containers.ext.cvectordataset.DoubleVector
+PyML.utils.ext.carrayWrap.DoubleVector" class="py-name" href="#" onclick="return doclink('link-34', 'DoubleVector', 'link-10');">DoubleVector</a></tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">a</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L91"></a><tt class="py-lineno"> 91</tt>  <tt class="py-line">    <tt class="py-name">keyList</tt> <tt class="py-op">=</tt> <tt class="py-name">a</tt><tt class="py-op">.</tt><tt class="py-name">keys</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L92"></a><tt class="py-lineno"> 92</tt>  <tt class="py-line">    <tt class="py-name">keyList</tt><tt class="py-op">.</tt><tt class="py-name">sort</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L93"></a><tt class="py-lineno"> 93</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">keyList</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L94"></a><tt class="py-lineno"> 94</tt>  <tt class="py-line">        <tt class="py-name">keys</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">keyList</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> </tt>
+<a name="L95"></a><tt class="py-lineno"> 95</tt>  <tt class="py-line">        <tt class="py-name">values</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">a</tt><tt class="py-op">[</tt><tt class="py-name">keys</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">]</tt> </tt>
+<a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line"> </tt>
+<a name="L97"></a><tt class="py-lineno"> 97</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">keys</tt><tt class="py-op">,</tt><tt class="py-name">values</tt> </tt>
+</div><a name="L98"></a><tt class="py-lineno"> 98</tt>  <tt class="py-line">         </tt>
+<a name="L99"></a><tt class="py-lineno"> 99</tt>  <tt class="py-line"> </tt>
+<a name="L100"></a><tt class="py-lineno">100</tt>  <tt class="py-line"><tt id="link-35" class="py-name" targets="Variable PyML.classifiers.ext.libsvm.doubleArray_frompointer=PyML.classifiers.ext.libsvm-module.html#doubleArray_frompointer,Variable PyML.containers.ext.csparsedataset.doubleArray_frompointer=PyML.containers.ext.csparsedataset-module.html#doubleArray_frompointer,Variable PyML.utils.arrayWrap.doubleArray_frompointer=PyML.utils.arrayWrap-module.html#doubleArray_frompointer,Variable PyML.utils.ext.carrayWrap.doubleArray_frompointer=PyML.utils.ext.carrayWrap-module.html#doubleArray_frompointer"><a title="PyML.classifiers.ext.libsvm.doubleArray_frompointer
+PyML.containers.ext.csparsedataset.doubleArray_frompointer
+PyML.utils.arrayWrap.doubleArray_frompointer
+PyML.utils.ext.carrayWrap.doubleArray_frompointer" class="py-name" href="#" onclick="return doclink('link-35', 'doubleArray_frompointer', 'link-35');">doubleArray_frompointer</a></tt> <tt class="py-op">=</tt> <tt id="link-36" class="py-name"><a title="PyML.utils.ext.carrayWrap" class="py-name" href="#" onclick="return doclink('link-36', 'carrayWrap', 'link-3');">carrayWrap</a></tt><tt class="py-op">.</tt><tt id="link-37" class="py-name"><a title="PyML.classifiers.ext.libsvm.doubleArray_frompointer
+PyML.containers.ext.csparsedataset.doubleArray_frompointer
+PyML.utils.arrayWrap.doubleArray_frompointer
+PyML.utils.ext.carrayWrap.doubleArray_frompointer" class="py-name" href="#" onclick="return doclink('link-37', 'doubleArray_frompointer', 'link-35');">doubleArray_frompointer</a></tt> </tt>
+<a name="L101"></a><tt class="py-lineno">101</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="PyML-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pyml.sourceforge.net">PyML</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Sun Apr 27 07:57:07 2008
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

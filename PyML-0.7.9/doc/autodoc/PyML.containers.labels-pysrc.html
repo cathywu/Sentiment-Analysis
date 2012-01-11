@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>PyML.containers.labels</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pyml.sourceforge.net">PyML</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;PyML ::
+        <a href="PyML.containers-module.html">Package&nbsp;containers</a> ::
+        Module&nbsp;labels
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="PyML.containers.labels-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="PyML.containers.labels-module.html">Module PyML.containers.labels</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno">  1</tt>  <tt class="py-line"> </tt>
+<a name="L2"></a><tt class="py-lineno">  2</tt>  <tt class="py-line"><tt class="py-name">__docformat__</tt> <tt class="py-op">=</tt> <tt class="py-docstring">"restructuredtext en"</tt> </tt>
+<a name="L3"></a><tt class="py-lineno">  3</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">random</tt> </tt>
+<a name="L4"></a><tt class="py-lineno">  4</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">PyML</tt><tt class="py-op">.</tt><tt id="link-0" class="py-name" targets="Package PyML.containers=PyML.containers-module.html"><a title="PyML.containers" class="py-name" href="#" onclick="return doclink('link-0', 'containers', 'link-0');">containers</a></tt> <tt class="py-keyword">import</tt> <tt id="link-1" class="py-name" targets="Module PyML.containers.parsers=PyML.containers.parsers-module.html"><a title="PyML.containers.parsers" class="py-name" href="#" onclick="return doclink('link-1', 'parsers', 'link-1');">parsers</a></tt> </tt>
+<a name="L5"></a><tt class="py-lineno">  5</tt>  <tt class="py-line"> </tt>
+<a name="Labels"></a><div id="Labels-def"><a name="L6"></a><tt class="py-lineno">  6</tt> <a class="py-toggle" href="#" id="Labels-toggle" onclick="return toggle('Labels');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="PyML.containers.labels.Labels-class.html">Labels</a> <tt class="py-op">(</tt><tt class="py-base-class">object</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="Labels-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Labels-expanded"><a name="L7"></a><tt class="py-lineno">  7</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L8"></a><tt class="py-lineno">  8</tt>  <tt class="py-line"><tt class="py-docstring">        A class that holds the labels of a dataset.</tt> </tt>
+<a name="L9"></a><tt class="py-lineno">  9</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L10"></a><tt class="py-lineno"> 10</tt>  <tt class="py-line"><tt class="py-docstring">    Attributes::</tt> </tt>
+<a name="L11"></a><tt class="py-lineno"> 11</tt>  <tt class="py-line"><tt class="py-docstring">    </tt> </tt>
+<a name="L12"></a><tt class="py-lineno"> 12</tt>  <tt class="py-line"><tt class="py-docstring">      L - labels provided by the user (strings)</tt> </tt>
+<a name="L13"></a><tt class="py-lineno"> 13</tt>  <tt class="py-line"><tt class="py-docstring">      Y - internal label representation - an integer from 0 to numClasses - 1</tt> </tt>
+<a name="L14"></a><tt class="py-lineno"> 14</tt>  <tt class="py-line"><tt class="py-docstring">      for multilabel problems each pattern has a list of integer labels</tt> </tt>
+<a name="L15"></a><tt class="py-lineno"> 15</tt>  <tt class="py-line"><tt class="py-docstring">      patternID - a list of the ids of each pattern</tt> </tt>
+<a name="L16"></a><tt class="py-lineno"> 16</tt>  <tt class="py-line"><tt class="py-docstring">      classDict - a mapping from L to Y</tt> </tt>
+<a name="L17"></a><tt class="py-lineno"> 17</tt>  <tt class="py-line"><tt class="py-docstring">      classLabels - a list providing the name of class i</tt> </tt>
+<a name="L18"></a><tt class="py-lineno"> 18</tt>  <tt class="py-line"><tt class="py-docstring">      classSize - a list with the number of patterns in each class</tt> </tt>
+<a name="L19"></a><tt class="py-lineno"> 19</tt>  <tt class="py-line"><tt class="py-docstring">      numClasses - the number of classes in the data</tt> </tt>
+<a name="L20"></a><tt class="py-lineno"> 20</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L21"></a><tt class="py-lineno"> 21</tt>  <tt class="py-line"> </tt>
+<a name="Labels.__init__"></a><div id="Labels.__init__-def"><a name="L22"></a><tt class="py-lineno"> 22</tt> <a class="py-toggle" href="#" id="Labels.__init__-toggle" onclick="return toggle('Labels.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.containers.labels.Labels-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">arg</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-param">args</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt>  </tt>
+</div><a name="L23"></a><tt class="py-lineno"> 23</tt>  <tt class="py-line"> </tt>
+<a name="L24"></a><tt class="py-lineno"> 24</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L25"></a><tt class="py-lineno"> 25</tt>  <tt class="py-line"><tt class="py-docstring">        :Parameters:</tt> </tt>
+<a name="L26"></a><tt class="py-lineno"> 26</tt>  <tt class="py-line"><tt class="py-docstring">          - `arg` - a file name from which to read labels, or a list of labels</tt> </tt>
+<a name="L27"></a><tt class="py-lineno"> 27</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L28"></a><tt class="py-lineno"> 28</tt>  <tt class="py-line"><tt class="py-docstring">        :Keywords:</tt> </tt>
+<a name="L29"></a><tt class="py-lineno"> 29</tt>  <tt class="py-line"><tt class="py-docstring">          - `patternID` - a list of pattern IDs</tt> </tt>
+<a name="L30"></a><tt class="py-lineno"> 30</tt>  <tt class="py-line"><tt class="py-docstring">          - `patterns` - in case of copy construction, which patterns to copy</tt> </tt>
+<a name="L31"></a><tt class="py-lineno"> 31</tt>  <tt class="py-line"><tt class="py-docstring">          - `numericLabels` - a Boolean, indicating whether the labels are</tt> </tt>
+<a name="L32"></a><tt class="py-lineno"> 32</tt>  <tt class="py-line"><tt class="py-docstring">            class labels or numeric values (class labels by default).</tt> </tt>
+<a name="L33"></a><tt class="py-lineno"> 33</tt>  <tt class="py-line"><tt class="py-docstring">          - `positiveClass` - for a two class problem, the identity of the</tt> </tt>
+<a name="L34"></a><tt class="py-lineno"> 34</tt>  <tt class="py-line"><tt class="py-docstring">            positive class.  If the labels are '+1' and '-1' or  '1' and '-1',</tt> </tt>
+<a name="L35"></a><tt class="py-lineno"> 35</tt>  <tt class="py-line"><tt class="py-docstring">            the positive class is detected automatically.</tt> </tt>
+<a name="L36"></a><tt class="py-lineno"> 36</tt>  <tt class="py-line"><tt class="py-docstring">          - `classLabels` - </tt> </tt>
+<a name="L37"></a><tt class="py-lineno"> 37</tt>  <tt class="py-line"><tt class="py-docstring">          - `forgetClassLabels` - when using copy construction the default behavior</tt> </tt>
+<a name="L38"></a><tt class="py-lineno"> 38</tt>  <tt class="py-line"><tt class="py-docstring">            is to return a Labels object that remembers the set of classes that the</tt> </tt>
+<a name="L39"></a><tt class="py-lineno"> 39</tt>  <tt class="py-line"><tt class="py-docstring">            original object had, even if some classes are no longer represented.</tt> </tt>
+<a name="L40"></a><tt class="py-lineno"> 40</tt>  <tt class="py-line"><tt class="py-docstring">            this keyword allows you to change this behavior, so that the classes of</tt> </tt>
+<a name="L41"></a><tt class="py-lineno"> 41</tt>  <tt class="py-line"><tt class="py-docstring">            the original object are forgotten.</tt> </tt>
+<a name="L42"></a><tt class="py-lineno"> 42</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L43"></a><tt class="py-lineno"> 43</tt>  <tt class="py-line"> </tt>
+<a name="L44"></a><tt class="py-lineno"> 44</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">L</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L45"></a><tt class="py-lineno"> 45</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">numericLabels</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L46"></a><tt class="py-lineno"> 46</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-string">'numericLabels'</tt> <tt class="py-keyword">in</tt> <tt class="py-name">args</tt> <tt class="py-op">:</tt> </tt>
+<a name="L47"></a><tt class="py-lineno"> 47</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">numericLabels</tt> <tt class="py-op">=</tt> <tt class="py-name">args</tt><tt class="py-op">[</tt><tt class="py-string">'numericLabels'</tt><tt class="py-op">]</tt> </tt>
+<a name="L48"></a><tt class="py-lineno"> 48</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">positiveClass</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L49"></a><tt class="py-lineno"> 49</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-string">'positiveClass'</tt> <tt class="py-keyword">in</tt> <tt class="py-name">args</tt> <tt class="py-op">:</tt> </tt>
+<a name="L50"></a><tt class="py-lineno"> 50</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">positiveClass</tt> <tt class="py-op">=</tt> <tt class="py-name">args</tt><tt class="py-op">[</tt><tt class="py-string">'positiveClass'</tt><tt class="py-op">]</tt> </tt>
+<a name="L51"></a><tt class="py-lineno"> 51</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-string">'classLabels'</tt> <tt class="py-keyword">in</tt> <tt class="py-name">args</tt> <tt class="py-op">:</tt> </tt>
+<a name="L52"></a><tt class="py-lineno"> 52</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classLabels</tt> <tt class="py-op">=</tt> <tt class="py-name">args</tt><tt class="py-op">[</tt><tt class="py-string">'classLabels'</tt><tt class="py-op">]</tt> </tt>
+<a name="L53"></a><tt class="py-lineno"> 53</tt>  <tt class="py-line"> </tt>
+<a name="L54"></a><tt class="py-lineno"> 54</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt id="link-2" class="py-name" targets="Variable PyML.classifiers.baseClassifiers.Classifier.type=PyML.classifiers.baseClassifiers.Classifier-class.html#type,Variable PyML.containers.baseDatasets.BaseDataSet.type=PyML.containers.baseDatasets.BaseDataSet-class.html#type,Variable PyML.containers.ker.Kernel.type=PyML.containers.ker.Kernel-class.html#type,Variable PyML.feature_selection.featsel.FeatureScorer.type=PyML.feature_selection.featsel.FeatureScorer-class.html#type,Variable PyML.feature_selection.featsel.FeatureSelector.type=PyML.feature_selection.featsel.FeatureSelector-class.html#type"><a title="PyML.classifiers.baseClassifiers.Classifier.type
+PyML.containers.baseDatasets.BaseDataSet.type
+PyML.containers.ker.Kernel.type
+PyML.feature_selection.featsel.FeatureScorer.type
+PyML.feature_selection.featsel.FeatureSelector.type" class="py-name" href="#" onclick="return doclink('link-2', 'type', 'link-2');">type</a></tt><tt class="py-op">(</tt><tt class="py-name">arg</tt><tt class="py-op">)</tt> <tt class="py-op">==</tt> <tt id="link-3" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.type
+PyML.containers.baseDatasets.BaseDataSet.type
+PyML.containers.ker.Kernel.type
+PyML.feature_selection.featsel.FeatureScorer.type
+PyML.feature_selection.featsel.FeatureSelector.type" class="py-name" href="#" onclick="return doclink('link-3', 'type', 'link-2');">type</a></tt><tt class="py-op">(</tt><tt class="py-string">''</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L55"></a><tt class="py-lineno"> 55</tt>  <tt class="py-line">            <tt class="py-name">args</tt><tt class="py-op">[</tt><tt class="py-string">'hint'</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-string">'csv'</tt> </tt>
+<a name="L56"></a><tt class="py-lineno"> 56</tt>  <tt class="py-line">            <tt id="link-4" class="py-name" targets="Variable PyML.demo.demo.p=PyML.demo.demo-module.html#p"><a title="PyML.demo.demo.p" class="py-name" href="#" onclick="return doclink('link-4', 'p', 'link-4');">p</a></tt> <tt class="py-op">=</tt> <tt id="link-5" class="py-name"><a title="PyML.containers.parsers" class="py-name" href="#" onclick="return doclink('link-5', 'parsers', 'link-1');">parsers</a></tt><tt class="py-op">.</tt><tt id="link-6" class="py-name" targets="Function PyML.containers.parsers.parserDispatcher()=PyML.containers.parsers-module.html#parserDispatcher"><a title="PyML.containers.parsers.parserDispatcher" class="py-name" href="#" onclick="return doclink('link-6', 'parserDispatcher', 'link-6');">parserDispatcher</a></tt><tt class="py-op">(</tt><tt class="py-name">arg</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-name">args</tt><tt class="py-op">)</tt> </tt>
+<a name="L57"></a><tt class="py-lineno"> 57</tt>  <tt class="py-line">            <tt class="py-name">L</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">patternID</tt> <tt class="py-op">=</tt> <tt id="link-7" class="py-name"><a title="PyML.demo.demo.p" class="py-name" href="#" onclick="return doclink('link-7', 'p', 'link-4');">p</a></tt><tt class="py-op">.</tt><tt id="link-8" class="py-name" targets="Method PyML.containers.parsers.CSVParser.readLabels()=PyML.containers.parsers.CSVParser-class.html#readLabels,Method PyML.containers.parsers.SparseParser.readLabels()=PyML.containers.parsers.SparseParser-class.html#readLabels"><a title="PyML.containers.parsers.CSVParser.readLabels
+PyML.containers.parsers.SparseParser.readLabels" class="py-name" href="#" onclick="return doclink('link-8', 'readLabels', 'link-8');">readLabels</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L58"></a><tt class="py-lineno"> 58</tt>  <tt class="py-line">        <tt class="py-keyword">elif</tt> <tt class="py-name">arg</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt> <tt class="py-op">==</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt> <tt class="py-op">:</tt> </tt>
+<a name="L59"></a><tt class="py-lineno"> 59</tt>  <tt class="py-line">            <tt class="py-name">L</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">patternID</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-9" class="py-name" targets="Method PyML.classifiers.ext.cgist.PySwigIterator.copy()=PyML.classifiers.ext.cgist.PySwigIterator-class.html#copy,Method PyML.classifiers.ext.csmo.PySwigIterator.copy()=PyML.classifiers.ext.csmo.PySwigIterator-class.html#copy,Method PyML.classifiers.ext.csvmodel.PySwigIterator.copy()=PyML.classifiers.ext.csvmodel.PySwigIterator-class.html#copy,Method PyML.classifiers.ext.knn.PySwigIterator.copy()=PyML.classifiers.ext.knn.PySwigIterator-class.html#copy,Method PyML.classifiers.ext.libsvm.PySwigIterator.copy()=PyML.classifiers.ext.libsvm.PySwigIterator-class.html#copy,Method PyML.containers.aggregate.Aggregate.copy()=PyML.containers.aggregate.Aggregate-class.html#copy,Method PyML.containers.baseDatasets.BaseDataSet.copy()=PyML.containers.baseDatasets.BaseDataSet-class.html#copy,Method PyML.containers.datafunc.PySparseDataSet.copy()=PyML.containers.datafunc.PySparseDataSet-class.html#copy,Method PyML.containers.datafunc.PyVectorDataSet.copy()=PyML.containers.datafunc.PyVectorDataSet-class.html#copy,Method PyML.containers.ext.caggregate.PySwigIterator.copy()=PyML.containers.ext.caggregate.PySwigIterator-class.html#copy,Method PyML.containers.ext.ckernel.PySwigIterator.copy()=PyML.containers.ext.ckernel.PySwigIterator-class.html#copy,Method PyML.containers.ext.ckerneldata.PySwigIterator.copy()=PyML.containers.ext.ckerneldata.PySwigIterator-class.html#copy,Method PyML.containers.ext.cpairdataset.PySwigIterator.copy()=PyML.containers.ext.cpairdataset.PySwigIterator-class.html#copy,Method PyML.containers.ext.csequencedata.PySwigIterator.copy()=PyML.containers.ext.csequencedata.PySwigIterator-class.html#copy,Method PyML.containers.ext.csparsedataset.PySwigIterator.copy()=PyML.containers.ext.csparsedataset.PySwigIterator-class.html#copy,Method PyML.containers.ext.cstringkernel.PySwigIterator.copy()=PyML.containers.ext.cstringkernel.PySwigIterator-class.html#copy,Method PyML.containers.ext.cvectordataset.PySwigIterator.copy()=PyML.containers.ext.cvectordataset.PySwigIterator-class.html#copy,Method PyML.containers.kernelData.KernelData.copy()=PyML.containers.kernelData.KernelData-class.html#copy,Method PyML.containers.labels.Labels.copy()=PyML.containers.labels.Labels-class.html#copy,Method PyML.containers.pairData.PairDataSet.copy()=PyML.containers.pairData.PairDataSet-class.html#copy,Method PyML.containers.sequenceData.SequenceData.copy()=PyML.containers.sequenceData.SequenceData-class.html#copy,Method PyML.containers.vectorDatasets.BaseCVectorDataSet.copy()=PyML.containers.vectorDatasets.BaseCVectorDataSet-class.html#copy"><a title="PyML.classifiers.ext.cgist.PySwigIterator.copy
+PyML.classifiers.ext.csmo.PySwigIterator.copy
+PyML.classifiers.ext.csvmodel.PySwigIterator.copy
+PyML.classifiers.ext.knn.PySwigIterator.copy
+PyML.classifiers.ext.libsvm.PySwigIterator.copy
+PyML.containers.aggregate.Aggregate.copy
+PyML.containers.baseDatasets.BaseDataSet.copy
+PyML.containers.datafunc.PySparseDataSet.copy
+PyML.containers.datafunc.PyVectorDataSet.copy
+PyML.containers.ext.caggregate.PySwigIterator.copy
+PyML.containers.ext.ckernel.PySwigIterator.copy
+PyML.containers.ext.ckerneldata.PySwigIterator.copy
+PyML.containers.ext.cpairdataset.PySwigIterator.copy
+PyML.containers.ext.csequencedata.PySwigIterator.copy
+PyML.containers.ext.csparsedataset.PySwigIterator.copy
+PyML.containers.ext.cstringkernel.PySwigIterator.copy
+PyML.containers.ext.cvectordataset.PySwigIterator.copy
+PyML.containers.kernelData.KernelData.copy
+PyML.containers.labels.Labels.copy
+PyML.containers.pairData.PairDataSet.copy
+PyML.containers.sequenceData.SequenceData.copy
+PyML.containers.vectorDatasets.BaseCVectorDataSet.copy" class="py-name" href="#" onclick="return doclink('link-9', 'copy', 'link-9');">copy</a></tt><tt class="py-op">(</tt><tt class="py-name">arg</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-name">args</tt><tt class="py-op">)</tt> </tt>
+<a name="L60"></a><tt class="py-lineno"> 60</tt>  <tt class="py-line">        <tt class="py-keyword">else</tt> <tt class="py-op">:</tt> </tt>
+<a name="L61"></a><tt class="py-lineno"> 61</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-name">arg</tt> <tt class="py-keyword">is</tt> <tt class="py-keyword">not</tt> <tt class="py-name">None</tt> <tt class="py-op">:</tt> </tt>
+<a name="L62"></a><tt class="py-lineno"> 62</tt>  <tt class="py-line">                <tt class="py-name">L</tt> <tt class="py-op">=</tt> <tt class="py-name">list</tt><tt class="py-op">(</tt><tt class="py-name">arg</tt><tt class="py-op">)</tt> </tt>
+<a name="L63"></a><tt class="py-lineno"> 63</tt>  <tt class="py-line">                <tt class="py-keyword">if</tt> <tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">L</tt><tt class="py-op">)</tt> <tt class="py-op">==</tt> <tt class="py-number">0</tt> <tt class="py-op">:</tt> <tt class="py-name">L</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L64"></a><tt class="py-lineno"> 64</tt>  <tt class="py-line">            <tt class="py-keyword">else</tt> <tt class="py-op">:</tt> </tt>
+<a name="L65"></a><tt class="py-lineno"> 65</tt>  <tt class="py-line">                <tt class="py-name">L</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L66"></a><tt class="py-lineno"> 66</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-string">'patternID'</tt> <tt class="py-keyword">in</tt> <tt class="py-name">args</tt> <tt class="py-op">:</tt> </tt>
+<a name="L67"></a><tt class="py-lineno"> 67</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">patternID</tt> <tt class="py-op">=</tt> <tt class="py-name">args</tt><tt class="py-op">[</tt><tt class="py-string">'patternID'</tt><tt class="py-op">]</tt> </tt>
+<a name="L68"></a><tt class="py-lineno"> 68</tt>  <tt class="py-line">            <tt class="py-keyword">else</tt> <tt class="py-op">:</tt> </tt>
+<a name="L69"></a><tt class="py-lineno"> 69</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">patternID</tt> <tt class="py-op">=</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">L</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L70"></a><tt class="py-lineno"> 70</tt>  <tt class="py-line"> </tt>
+<a name="L71"></a><tt class="py-lineno"> 71</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">L</tt> <tt class="py-keyword">is</tt> <tt class="py-keyword">not</tt> <tt class="py-name">None</tt> <tt class="py-op">:</tt> </tt>
+<a name="L72"></a><tt class="py-lineno"> 72</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-10" class="py-name" targets="Method PyML.containers.labels.Labels.processLabels()=PyML.containers.labels.Labels-class.html#processLabels"><a title="PyML.containers.labels.Labels.processLabels" class="py-name" href="#" onclick="return doclink('link-10', 'processLabels', 'link-10');">processLabels</a></tt><tt class="py-op">(</tt><tt class="py-name">L</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L73"></a><tt class="py-lineno"> 73</tt>  <tt class="py-line"> </tt>
+<a name="Labels.copy"></a><div id="Labels.copy-def"><a name="L74"></a><tt class="py-lineno"> 74</tt> <a class="py-toggle" href="#" id="Labels.copy-toggle" onclick="return toggle('Labels.copy');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.containers.labels.Labels-class.html#copy">copy</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">other</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-param">args</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="Labels.copy-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Labels.copy-expanded"><a name="L75"></a><tt class="py-lineno"> 75</tt>  <tt class="py-line"> </tt>
+<a name="L76"></a><tt class="py-lineno"> 76</tt>  <tt class="py-line">        <tt class="py-name">forgetClassLabels</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L77"></a><tt class="py-lineno"> 77</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-string">'forgetClassLabels'</tt> <tt class="py-keyword">in</tt> <tt class="py-name">args</tt> <tt class="py-op">:</tt> </tt>
+<a name="L78"></a><tt class="py-lineno"> 78</tt>  <tt class="py-line">            <tt class="py-name">forgetClassLabels</tt> <tt class="py-op">=</tt> <tt class="py-name">args</tt><tt class="py-op">[</tt><tt class="py-string">'forgetClassLabels'</tt><tt class="py-op">]</tt> </tt>
+<a name="L79"></a><tt class="py-lineno"> 79</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">numericLabels</tt> <tt class="py-op">=</tt> <tt class="py-name">other</tt><tt class="py-op">.</tt><tt class="py-name">numericLabels</tt> </tt>
+<a name="L80"></a><tt class="py-lineno"> 80</tt>  <tt class="py-line"> </tt>
+<a name="L81"></a><tt class="py-lineno"> 81</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">other</tt><tt class="py-op">.</tt><tt class="py-name">L</tt> <tt class="py-keyword">is</tt> <tt class="py-keyword">not</tt> <tt class="py-name">None</tt> <tt class="py-keyword">and</tt> <tt class="py-keyword">not</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">numericLabels</tt> <tt class="py-keyword">and</tt> <tt class="py-keyword">not</tt> <tt class="py-name">forgetClassLabels</tt> <tt class="py-op">:</tt> </tt>
+<a name="L82"></a><tt class="py-lineno"> 82</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">numClasses</tt> <tt class="py-op">=</tt> <tt class="py-name">other</tt><tt class="py-op">.</tt><tt class="py-name">numClasses</tt> </tt>
+<a name="L83"></a><tt class="py-lineno"> 83</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classLabels</tt> <tt class="py-op">=</tt> <tt class="py-name">other</tt><tt class="py-op">.</tt><tt class="py-name">classLabels</tt><tt class="py-op">[</tt><tt class="py-op">:</tt><tt class="py-op">]</tt> </tt>
+<a name="L84"></a><tt class="py-lineno"> 84</tt>  <tt class="py-line"> </tt>
+<a name="L85"></a><tt class="py-lineno"> 85</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-string">'patterns'</tt> <tt class="py-keyword">in</tt> <tt class="py-name">args</tt> <tt class="py-op">:</tt> </tt>
+<a name="L86"></a><tt class="py-lineno"> 86</tt>  <tt class="py-line">            <tt class="py-name">patternsToCopy</tt> <tt class="py-op">=</tt> <tt class="py-name">args</tt><tt class="py-op">[</tt><tt class="py-string">'patterns'</tt><tt class="py-op">]</tt> </tt>
+<a name="L87"></a><tt class="py-lineno"> 87</tt>  <tt class="py-line">        <tt class="py-keyword">else</tt> <tt class="py-op">:</tt> </tt>
+<a name="L88"></a><tt class="py-lineno"> 88</tt>  <tt class="py-line">            <tt class="py-name">patternsToCopy</tt> <tt class="py-op">=</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">other</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L89"></a><tt class="py-lineno"> 89</tt>  <tt class="py-line"> </tt>
+<a name="L90"></a><tt class="py-lineno"> 90</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">other</tt><tt class="py-op">.</tt><tt class="py-name">L</tt> <tt class="py-keyword">is</tt> <tt class="py-name">None</tt> <tt class="py-op">:</tt> </tt>
+<a name="L91"></a><tt class="py-lineno"> 91</tt>  <tt class="py-line">            <tt class="py-keyword">return</tt> <tt class="py-op">(</tt> <tt class="py-name">None</tt><tt class="py-op">,</tt> <tt class="py-op">[</tt><tt class="py-name">other</tt><tt class="py-op">.</tt><tt class="py-name">patternID</tt><tt class="py-op">[</tt><tt id="link-11" class="py-name"><a title="PyML.demo.demo.p" class="py-name" href="#" onclick="return doclink('link-11', 'p', 'link-4');">p</a></tt><tt class="py-op">]</tt> <tt class="py-keyword">for</tt> <tt id="link-12" class="py-name"><a title="PyML.demo.demo.p" class="py-name" href="#" onclick="return doclink('link-12', 'p', 'link-4');">p</a></tt> <tt class="py-keyword">in</tt> <tt class="py-name">patternsToCopy</tt><tt class="py-op">]</tt> <tt class="py-op">)</tt> </tt>
+<a name="L92"></a><tt class="py-lineno"> 92</tt>  <tt class="py-line">        <tt class="py-keyword">else</tt> <tt class="py-op">:</tt> </tt>
+<a name="L93"></a><tt class="py-lineno"> 93</tt>  <tt class="py-line">            <tt class="py-keyword">return</tt> <tt class="py-op">(</tt><tt class="py-op">[</tt><tt class="py-name">other</tt><tt class="py-op">.</tt><tt class="py-name">L</tt><tt class="py-op">[</tt><tt id="link-13" class="py-name"><a title="PyML.demo.demo.p" class="py-name" href="#" onclick="return doclink('link-13', 'p', 'link-4');">p</a></tt><tt class="py-op">]</tt> <tt class="py-keyword">for</tt> <tt id="link-14" class="py-name"><a title="PyML.demo.demo.p" class="py-name" href="#" onclick="return doclink('link-14', 'p', 'link-4');">p</a></tt> <tt class="py-keyword">in</tt> <tt class="py-name">patternsToCopy</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> </tt>
+<a name="L94"></a><tt class="py-lineno"> 94</tt>  <tt class="py-line">                    <tt class="py-op">[</tt><tt class="py-name">other</tt><tt class="py-op">.</tt><tt class="py-name">patternID</tt><tt class="py-op">[</tt><tt id="link-15" class="py-name"><a title="PyML.demo.demo.p" class="py-name" href="#" onclick="return doclink('link-15', 'p', 'link-4');">p</a></tt><tt class="py-op">]</tt> <tt class="py-keyword">for</tt> <tt id="link-16" class="py-name"><a title="PyML.demo.demo.p" class="py-name" href="#" onclick="return doclink('link-16', 'p', 'link-4');">p</a></tt> <tt class="py-keyword">in</tt> <tt class="py-name">patternsToCopy</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L95"></a><tt class="py-lineno"> 95</tt>  <tt class="py-line"> </tt>
+<a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line"> </tt>
+<a name="Labels.extend"></a><div id="Labels.extend-def"><a name="L97"></a><tt class="py-lineno"> 97</tt> <a class="py-toggle" href="#" id="Labels.extend-toggle" onclick="return toggle('Labels.extend');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.containers.labels.Labels-class.html#extend">extend</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">other</tt><tt class="py-op">,</tt> <tt class="py-param">patterns</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="Labels.extend-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Labels.extend-expanded"><a name="L98"></a><tt class="py-lineno"> 98</tt>  <tt class="py-line">        <tt class="py-docstring">"""add to a dataset a list of patterns from another dataset"""</tt> </tt>
+<a name="L99"></a><tt class="py-lineno"> 99</tt>  <tt class="py-line">         </tt>
+<a name="L100"></a><tt class="py-lineno">100</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">patterns</tt> <tt class="py-keyword">is</tt> <tt class="py-name">None</tt> <tt class="py-op">:</tt> </tt>
+<a name="L101"></a><tt class="py-lineno">101</tt>  <tt class="py-line">            <tt class="py-name">patterns</tt> <tt class="py-op">=</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">other</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L102"></a><tt class="py-lineno">102</tt>  <tt class="py-line">        <tt class="py-comment"># retrieve labels from other</tt> </tt>
+<a name="L103"></a><tt class="py-lineno">103</tt>  <tt class="py-line"><tt class="py-comment"></tt>        <tt class="py-keyword">for</tt> <tt id="link-17" class="py-name"><a title="PyML.demo.demo.p" class="py-name" href="#" onclick="return doclink('link-17', 'p', 'link-4');">p</a></tt> <tt class="py-keyword">in</tt> <tt class="py-name">patterns</tt> <tt class="py-op">:</tt> </tt>
+<a name="L104"></a><tt class="py-lineno">104</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">L</tt> <tt class="py-keyword">is</tt> <tt class="py-keyword">not</tt> <tt class="py-name">None</tt> <tt class="py-op">:</tt> </tt>
+<a name="L105"></a><tt class="py-lineno">105</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">L</tt><tt class="py-op">.</tt><tt id="link-18" class="py-name" targets="Method PyML.classifiers.ext.cgist.DoubleVector.append()=PyML.classifiers.ext.cgist.DoubleVector-class.html#append,Method PyML.classifiers.ext.cgist.IntVector.append()=PyML.classifiers.ext.cgist.IntVector-class.html#append,Method PyML.classifiers.ext.csmo.DoubleVector.append()=PyML.classifiers.ext.csmo.DoubleVector-class.html#append,Method PyML.classifiers.ext.csmo.IntVector.append()=PyML.classifiers.ext.csmo.IntVector-class.html#append,Method PyML.classifiers.ext.csvmodel.DoubleVector.append()=PyML.classifiers.ext.csvmodel.DoubleVector-class.html#append,Method PyML.classifiers.ext.csvmodel.IntVector.append()=PyML.classifiers.ext.csvmodel.IntVector-class.html#append,Method PyML.classifiers.ext.knn.DoubleVector.append()=PyML.classifiers.ext.knn.DoubleVector-class.html#append,Method PyML.classifiers.ext.knn.IntVector.append()=PyML.classifiers.ext.knn.IntVector-class.html#append,Method PyML.containers.ext.caggregate.DoubleVector.append()=PyML.containers.ext.caggregate.DoubleVector-class.html#append,Method PyML.containers.ext.caggregate.IntVector.append()=PyML.containers.ext.caggregate.IntVector-class.html#append,Method PyML.containers.ext.ckernel.DoubleVector.append()=PyML.containers.ext.ckernel.DoubleVector-class.html#append,Method PyML.containers.ext.ckernel.FloatVector.append()=PyML.containers.ext.ckernel.FloatVector-class.html#append,Method PyML.containers.ext.ckernel.IntVector.append()=PyML.containers.ext.ckernel.IntVector-class.html#append,Method PyML.containers.ext.ckerneldata.DoubleVector.append()=PyML.containers.ext.ckerneldata.DoubleVector-class.html#append,Method PyML.containers.ext.ckerneldata.FloatVector.append()=PyML.containers.ext.ckerneldata.FloatVector-class.html#append,Method PyML.containers.ext.ckerneldata.IntVector.append()=PyML.containers.ext.ckerneldata.IntVector-class.html#append,Method PyML.containers.ext.cpairdataset.DoubleVector.append()=PyML.containers.ext.cpairdataset.DoubleVector-class.html#append,Method PyML.containers.ext.cpairdataset.IntVector.append()=PyML.containers.ext.cpairdataset.IntVector-class.html#append,Method PyML.containers.ext.csequencedata.DoubleVector.append()=PyML.containers.ext.csequencedata.DoubleVector-class.html#append,Method PyML.containers.ext.csequencedata.IntVector.append()=PyML.containers.ext.csequencedata.IntVector-class.html#append,Method PyML.containers.ext.csequencedata.LongVector.append()=PyML.containers.ext.csequencedata.LongVector-class.html#append,Method PyML.containers.ext.csequencedata.StringVector.append()=PyML.containers.ext.csequencedata.StringVector-class.html#append,Method PyML.containers.ext.csparsedataset.DoubleVector.append()=PyML.containers.ext.csparsedataset.DoubleVector-class.html#append,Method PyML.containers.ext.csparsedataset.FloatVector.append()=PyML.containers.ext.csparsedataset.FloatVector-class.html#append,Method PyML.containers.ext.csparsedataset.IntVector.append()=PyML.containers.ext.csparsedataset.IntVector-class.html#append,Method PyML.containers.ext.csparsedataset.LongVector.append()=PyML.containers.ext.csparsedataset.LongVector-class.html#append,Method PyML.containers.ext.csparsedataset.StringVector.append()=PyML.containers.ext.csparsedataset.StringVector-class.html#append,Method PyML.containers.ext.cstringkernel.DoubleVector.append()=PyML.containers.ext.cstringkernel.DoubleVector-class.html#append,Method PyML.containers.ext.cstringkernel.IntVector.append()=PyML.containers.ext.cstringkernel.IntVector-class.html#append,Method PyML.containers.ext.cstringkernel.LongVector.append()=PyML.containers.ext.cstringkernel.LongVector-class.html#append,Method PyML.containers.ext.cstringkernel.StringVector.append()=PyML.containers.ext.cstringkernel.StringVector-class.html#append,Method PyML.containers.ext.cvectordataset.DoubleVector.append()=PyML.containers.ext.cvectordataset.DoubleVector-class.html#append,Method PyML.containers.ext.cvectordataset.IntVector.append()=PyML.containers.ext.cvectordataset.IntVector-class.html#append,Method PyML.containers.ext.cvectordataset.LongVector.append()=PyML.containers.ext.cvectordataset.LongVector-class.html#append,Method PyML.containers.ext.cvectordataset.StringVector.append()=PyML.containers.ext.cvectordataset.StringVector-class.html#append"><a title="PyML.classifiers.ext.cgist.DoubleVector.append
+PyML.classifiers.ext.cgist.IntVector.append
+PyML.classifiers.ext.csmo.DoubleVector.append
+PyML.classifiers.ext.csmo.IntVector.append
+PyML.classifiers.ext.csvmodel.DoubleVector.append
+PyML.classifiers.ext.csvmodel.IntVector.append
+PyML.classifiers.ext.knn.DoubleVector.append
+PyML.classifiers.ext.knn.IntVector.append
+PyML.containers.ext.caggregate.DoubleVector.append
+PyML.containers.ext.caggregate.IntVector.append
+PyML.containers.ext.ckernel.DoubleVector.append
+PyML.containers.ext.ckernel.FloatVector.append
+PyML.containers.ext.ckernel.IntVector.append
+PyML.containers.ext.ckerneldata.DoubleVector.append
+PyML.containers.ext.ckerneldata.FloatVector.append
+PyML.containers.ext.ckerneldata.IntVector.append
+PyML.containers.ext.cpairdataset.DoubleVector.append
+PyML.containers.ext.cpairdataset.IntVector.append
+PyML.containers.ext.csequencedata.DoubleVector.append
+PyML.containers.ext.csequencedata.IntVector.append
+PyML.containers.ext.csequencedata.LongVector.append
+PyML.containers.ext.csequencedata.StringVector.append
+PyML.containers.ext.csparsedataset.DoubleVector.append
+PyML.containers.ext.csparsedataset.FloatVector.append
+PyML.containers.ext.csparsedataset.IntVector.append
+PyML.containers.ext.csparsedataset.LongVector.append
+PyML.containers.ext.csparsedataset.StringVector.append
+PyML.containers.ext.cstringkernel.DoubleVector.append
+PyML.containers.ext.cstringkernel.IntVector.append
+PyML.containers.ext.cstringkernel.LongVector.append
+PyML.containers.ext.cstringkernel.StringVector.append
+PyML.containers.ext.cvectordataset.DoubleVector.append
+PyML.containers.ext.cvectordataset.IntVector.append
+PyML.containers.ext.cvectordataset.LongVector.append
+PyML.containers.ext.cvectordataset.StringVector.append" class="py-name" href="#" onclick="return doclink('link-18', 'append', 'link-18');">append</a></tt><tt class="py-op">(</tt><tt class="py-name">other</tt><tt class="py-op">.</tt><tt class="py-name">L</tt><tt class="py-op">[</tt><tt id="link-19" class="py-name"><a title="PyML.demo.demo.p" class="py-name" href="#" onclick="return doclink('link-19', 'p', 'link-4');">p</a></tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L106"></a><tt class="py-lineno">106</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">patternID</tt> <tt class="py-keyword">is</tt> <tt class="py-keyword">not</tt> <tt class="py-name">None</tt> <tt class="py-op">:</tt> </tt>
+<a name="L107"></a><tt class="py-lineno">107</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">patternID</tt><tt class="py-op">.</tt><tt id="link-20" class="py-name"><a title="PyML.classifiers.ext.cgist.DoubleVector.append
+PyML.classifiers.ext.cgist.IntVector.append
+PyML.classifiers.ext.csmo.DoubleVector.append
+PyML.classifiers.ext.csmo.IntVector.append
+PyML.classifiers.ext.csvmodel.DoubleVector.append
+PyML.classifiers.ext.csvmodel.IntVector.append
+PyML.classifiers.ext.knn.DoubleVector.append
+PyML.classifiers.ext.knn.IntVector.append
+PyML.containers.ext.caggregate.DoubleVector.append
+PyML.containers.ext.caggregate.IntVector.append
+PyML.containers.ext.ckernel.DoubleVector.append
+PyML.containers.ext.ckernel.FloatVector.append
+PyML.containers.ext.ckernel.IntVector.append
+PyML.containers.ext.ckerneldata.DoubleVector.append
+PyML.containers.ext.ckerneldata.FloatVector.append
+PyML.containers.ext.ckerneldata.IntVector.append
+PyML.containers.ext.cpairdataset.DoubleVector.append
+PyML.containers.ext.cpairdataset.IntVector.append
+PyML.containers.ext.csequencedata.DoubleVector.append
+PyML.containers.ext.csequencedata.IntVector.append
+PyML.containers.ext.csequencedata.LongVector.append
+PyML.containers.ext.csequencedata.StringVector.append
+PyML.containers.ext.csparsedataset.DoubleVector.append
+PyML.containers.ext.csparsedataset.FloatVector.append
+PyML.containers.ext.csparsedataset.IntVector.append
+PyML.containers.ext.csparsedataset.LongVector.append
+PyML.containers.ext.csparsedataset.StringVector.append
+PyML.containers.ext.cstringkernel.DoubleVector.append
+PyML.containers.ext.cstringkernel.IntVector.append
+PyML.containers.ext.cstringkernel.LongVector.append
+PyML.containers.ext.cstringkernel.StringVector.append
+PyML.containers.ext.cvectordataset.DoubleVector.append
+PyML.containers.ext.cvectordataset.IntVector.append
+PyML.containers.ext.cvectordataset.LongVector.append
+PyML.containers.ext.cvectordataset.StringVector.append" class="py-name" href="#" onclick="return doclink('link-20', 'append', 'link-18');">append</a></tt><tt class="py-op">(</tt><tt class="py-name">other</tt><tt class="py-op">.</tt><tt class="py-name">patternID</tt><tt class="py-op">[</tt><tt id="link-21" class="py-name"><a title="PyML.demo.demo.p" class="py-name" href="#" onclick="return doclink('link-21', 'p', 'link-4');">p</a></tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L108"></a><tt class="py-lineno">108</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">L</tt> <tt class="py-keyword">is</tt> <tt class="py-keyword">not</tt> <tt class="py-name">None</tt> <tt class="py-op">:</tt> </tt>
+<a name="L109"></a><tt class="py-lineno">109</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-22" class="py-name"><a title="PyML.containers.labels.Labels.processLabels" class="py-name" href="#" onclick="return doclink('link-22', 'processLabels', 'link-10');">processLabels</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">L</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L110"></a><tt class="py-lineno">110</tt>  <tt class="py-line">             </tt>
+<a name="L111"></a><tt class="py-lineno">111</tt>  <tt class="py-line">         </tt>
+<a name="Labels.processLabels"></a><div id="Labels.processLabels-def"><a name="L112"></a><tt class="py-lineno">112</tt> <a class="py-toggle" href="#" id="Labels.processLabels-toggle" onclick="return toggle('Labels.processLabels');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.containers.labels.Labels-class.html#processLabels">processLabels</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">L</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-param">args</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="Labels.processLabels-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Labels.processLabels-expanded"><a name="L113"></a><tt class="py-lineno">113</tt>  <tt class="py-line"> </tt>
+<a name="L114"></a><tt class="py-lineno">114</tt>  <tt class="py-line">        <tt class="py-name">forgetClassLabels</tt> <tt class="py-op">=</tt> <tt class="py-name">False</tt> </tt>
+<a name="L115"></a><tt class="py-lineno">115</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-string">'forgetClassLabels'</tt> <tt class="py-keyword">in</tt> <tt class="py-name">args</tt> <tt class="py-op">:</tt> </tt>
+<a name="L116"></a><tt class="py-lineno">116</tt>  <tt class="py-line">            <tt class="py-name">forgetClassLabels</tt> <tt class="py-op">=</tt> <tt class="py-name">args</tt><tt class="py-op">[</tt><tt class="py-string">'forgetClassLabels'</tt><tt class="py-op">]</tt> </tt>
+<a name="L117"></a><tt class="py-lineno">117</tt>  <tt class="py-line"> </tt>
+<a name="L118"></a><tt class="py-lineno">118</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">numericLabels</tt> <tt class="py-keyword">or</tt> <tt id="link-23" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.type
+PyML.containers.baseDatasets.BaseDataSet.type
+PyML.containers.ker.Kernel.type
+PyML.feature_selection.featsel.FeatureScorer.type
+PyML.feature_selection.featsel.FeatureSelector.type" class="py-name" href="#" onclick="return doclink('link-23', 'type', 'link-2');">type</a></tt><tt class="py-op">(</tt><tt class="py-name">L</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> <tt class="py-op">==</tt> <tt id="link-24" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.type
+PyML.containers.baseDatasets.BaseDataSet.type
+PyML.containers.ker.Kernel.type
+PyML.feature_selection.featsel.FeatureScorer.type
+PyML.feature_selection.featsel.FeatureSelector.type" class="py-name" href="#" onclick="return doclink('link-24', 'type', 'link-2');">type</a></tt><tt class="py-op">(</tt><tt class="py-number">1.0</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L119"></a><tt class="py-lineno">119</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-25" class="py-name" targets="Variable PyML.demo.demo2d.Y=PyML.demo.demo2d-module.html#Y"><a title="PyML.demo.demo2d.Y" class="py-name" href="#" onclick="return doclink('link-25', 'Y', 'link-25');">Y</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-name">float</tt><tt class="py-op">(</tt><tt class="py-name">y</tt><tt class="py-op">)</tt> <tt class="py-keyword">for</tt> <tt class="py-name">y</tt> <tt class="py-keyword">in</tt> <tt class="py-name">L</tt><tt class="py-op">]</tt> </tt>
+<a name="L120"></a><tt class="py-lineno">120</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">L</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-26" class="py-name"><a title="PyML.demo.demo2d.Y" class="py-name" href="#" onclick="return doclink('link-26', 'Y', 'link-25');">Y</a></tt> </tt>
+<a name="L121"></a><tt class="py-lineno">121</tt>  <tt class="py-line">            <tt class="py-keyword">return</tt> </tt>
+<a name="L122"></a><tt class="py-lineno">122</tt>  <tt class="py-line">        <tt class="py-name">n</tt> <tt class="py-op">=</tt> <tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">L</tt><tt class="py-op">)</tt> </tt>
+<a name="L123"></a><tt class="py-lineno">123</tt>  <tt class="py-line">        <tt class="py-name">classDict</tt> <tt class="py-op">=</tt> <tt class="py-op">{</tt><tt class="py-op">}</tt> </tt>
+<a name="L124"></a><tt class="py-lineno">124</tt>  <tt class="py-line">        <tt id="link-27" class="py-name"><a title="PyML.demo.demo2d.Y" class="py-name" href="#" onclick="return doclink('link-27', 'Y', 'link-25');">Y</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
+<a name="L125"></a><tt class="py-lineno">125</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-keyword">not</tt> <tt class="py-name">forgetClassLabels</tt> <tt class="py-keyword">and</tt> <tt class="py-name">hasattr</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-string">'classLabels'</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L126"></a><tt class="py-lineno">126</tt>  <tt class="py-line">            <tt class="py-name">classLabels</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classLabels</tt> </tt>
+<a name="L127"></a><tt class="py-lineno">127</tt>  <tt class="py-line">            <tt class="py-name">numClasses</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">numClasses</tt> </tt>
+<a name="L128"></a><tt class="py-lineno">128</tt>  <tt class="py-line">        <tt class="py-keyword">else</tt> <tt class="py-op">:</tt> </tt>
+<a name="L129"></a><tt class="py-lineno">129</tt>  <tt class="py-line">            <tt class="py-keyword">for</tt> <tt class="py-name">l</tt> <tt class="py-keyword">in</tt> <tt class="py-name">L</tt> <tt class="py-op">:</tt> </tt>
+<a name="L130"></a><tt class="py-lineno">130</tt>  <tt class="py-line">                <tt class="py-name">classDict</tt><tt class="py-op">[</tt><tt class="py-name">l</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-number">1</tt> </tt>
+<a name="L131"></a><tt class="py-lineno">131</tt>  <tt class="py-line">            <tt class="py-name">classLabels</tt> <tt class="py-op">=</tt> <tt class="py-name">classDict</tt><tt class="py-op">.</tt><tt class="py-name">keys</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L132"></a><tt class="py-lineno">132</tt>  <tt class="py-line">            <tt class="py-name">classLabels</tt><tt class="py-op">.</tt><tt class="py-name">sort</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L133"></a><tt class="py-lineno">133</tt>  <tt class="py-line">            <tt class="py-name">numClasses</tt> <tt class="py-op">=</tt> <tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">classLabels</tt><tt class="py-op">)</tt> </tt>
+<a name="L134"></a><tt class="py-lineno">134</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-name">classLabels</tt> <tt class="py-op">==</tt> <tt class="py-op">[</tt><tt class="py-string">'+1'</tt><tt class="py-op">,</tt> <tt class="py-string">'-1'</tt><tt class="py-op">]</tt> <tt class="py-keyword">or</tt> <tt class="py-name">classLabels</tt> <tt class="py-op">==</tt> <tt class="py-op">[</tt><tt class="py-string">'1'</tt><tt class="py-op">,</tt> <tt class="py-string">'-1'</tt><tt class="py-op">]</tt> <tt class="py-op">:</tt> </tt>
+<a name="L135"></a><tt class="py-lineno">135</tt>  <tt class="py-line">                <tt class="py-name">classLabels</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">,</tt><tt class="py-name">classLabels</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">classLabels</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">,</tt><tt class="py-name">classLabels</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt> </tt>
+<a name="L136"></a><tt class="py-lineno">136</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">positiveClass</tt> <tt class="py-keyword">is</tt> <tt class="py-keyword">not</tt> <tt class="py-name">None</tt> <tt class="py-keyword">and</tt> <tt class="py-name">numClasses</tt> <tt class="py-op">==</tt> <tt class="py-number">2</tt> <tt class="py-op">:</tt> </tt>
+<a name="L137"></a><tt class="py-lineno">137</tt>  <tt class="py-line">                <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">positiveClass</tt> <tt class="py-keyword">not</tt> <tt class="py-keyword">in</tt> <tt class="py-name">classLabels</tt> <tt class="py-op">:</tt> </tt>
+<a name="L138"></a><tt class="py-lineno">138</tt>  <tt class="py-line">                    <tt class="py-keyword">raise</tt> <tt class="py-name">ValueError</tt><tt class="py-op">,</tt> <tt class="py-string">'unrecognized positiveClass'</tt> </tt>
+<a name="L139"></a><tt class="py-lineno">139</tt>  <tt class="py-line">                <tt class="py-keyword">if</tt> <tt class="py-name">classLabels</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt> <tt class="py-op">!=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">positiveClass</tt> <tt class="py-op">:</tt> </tt>
+<a name="L140"></a><tt class="py-lineno">140</tt>  <tt class="py-line">                    <tt class="py-name">classLabels</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">,</tt><tt class="py-name">classLabels</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">classLabels</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">,</tt><tt class="py-name">classLabels</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt> </tt>
+<a name="L141"></a><tt class="py-lineno">141</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-string">'rest'</tt> <tt class="py-keyword">in</tt> <tt class="py-name">classLabels</tt> <tt class="py-keyword">and</tt> <tt class="py-name">numClasses</tt> <tt class="py-op">==</tt> <tt class="py-number">2</tt> <tt class="py-op">:</tt> </tt>
+<a name="L142"></a><tt class="py-lineno">142</tt>  <tt class="py-line">                <tt class="py-keyword">if</tt> <tt class="py-name">classLabels</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt> <tt class="py-op">==</tt> <tt class="py-string">'rest'</tt> <tt class="py-op">:</tt> </tt>
+<a name="L143"></a><tt class="py-lineno">143</tt>  <tt class="py-line">                    <tt class="py-name">classLabels</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">,</tt><tt class="py-name">classLabels</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">classLabels</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">,</tt><tt class="py-name">classLabels</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt> </tt>
+<a name="L144"></a><tt class="py-lineno">144</tt>  <tt class="py-line"> </tt>
+<a name="L145"></a><tt class="py-lineno">145</tt>  <tt class="py-line">        <tt class="py-name">classDict</tt> <tt class="py-op">=</tt> <tt class="py-op">{</tt><tt class="py-op">}</tt> </tt>
+<a name="L146"></a><tt class="py-lineno">146</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">classLabels</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L147"></a><tt class="py-lineno">147</tt>  <tt class="py-line">            <tt class="py-name">classDict</tt><tt class="py-op">[</tt><tt class="py-name">classLabels</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">i</tt> </tt>
+<a name="L148"></a><tt class="py-lineno">148</tt>  <tt class="py-line"> </tt>
+<a name="L149"></a><tt class="py-lineno">149</tt>  <tt class="py-line">        <tt class="py-name">classSize</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-number">0</tt> <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">numClasses</tt><tt class="py-op">)</tt><tt class="py-op">]</tt> </tt>
+<a name="L150"></a><tt class="py-lineno">150</tt>  <tt class="py-line">        <tt class="py-name">classes</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">[</tt><tt class="py-op">]</tt> <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">numClasses</tt><tt class="py-op">)</tt><tt class="py-op">]</tt> </tt>
+<a name="L151"></a><tt class="py-lineno">151</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">n</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L152"></a><tt class="py-lineno">152</tt>  <tt class="py-line">            <tt class="py-name">y</tt> <tt class="py-op">=</tt> <tt class="py-name">classDict</tt><tt class="py-op">[</tt><tt class="py-name">L</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">]</tt> </tt>
+<a name="L153"></a><tt class="py-lineno">153</tt>  <tt class="py-line">            <tt class="py-name">classSize</tt><tt class="py-op">[</tt><tt class="py-name">y</tt><tt class="py-op">]</tt> <tt class="py-op">+=</tt> <tt class="py-number">1</tt> </tt>
+<a name="L154"></a><tt class="py-lineno">154</tt>  <tt class="py-line">            <tt id="link-28" class="py-name"><a title="PyML.demo.demo2d.Y" class="py-name" href="#" onclick="return doclink('link-28', 'Y', 'link-25');">Y</a></tt><tt class="py-op">.</tt><tt id="link-29" class="py-name"><a title="PyML.classifiers.ext.cgist.DoubleVector.append
+PyML.classifiers.ext.cgist.IntVector.append
+PyML.classifiers.ext.csmo.DoubleVector.append
+PyML.classifiers.ext.csmo.IntVector.append
+PyML.classifiers.ext.csvmodel.DoubleVector.append
+PyML.classifiers.ext.csvmodel.IntVector.append
+PyML.classifiers.ext.knn.DoubleVector.append
+PyML.classifiers.ext.knn.IntVector.append
+PyML.containers.ext.caggregate.DoubleVector.append
+PyML.containers.ext.caggregate.IntVector.append
+PyML.containers.ext.ckernel.DoubleVector.append
+PyML.containers.ext.ckernel.FloatVector.append
+PyML.containers.ext.ckernel.IntVector.append
+PyML.containers.ext.ckerneldata.DoubleVector.append
+PyML.containers.ext.ckerneldata.FloatVector.append
+PyML.containers.ext.ckerneldata.IntVector.append
+PyML.containers.ext.cpairdataset.DoubleVector.append
+PyML.containers.ext.cpairdataset.IntVector.append
+PyML.containers.ext.csequencedata.DoubleVector.append
+PyML.containers.ext.csequencedata.IntVector.append
+PyML.containers.ext.csequencedata.LongVector.append
+PyML.containers.ext.csequencedata.StringVector.append
+PyML.containers.ext.csparsedataset.DoubleVector.append
+PyML.containers.ext.csparsedataset.FloatVector.append
+PyML.containers.ext.csparsedataset.IntVector.append
+PyML.containers.ext.csparsedataset.LongVector.append
+PyML.containers.ext.csparsedataset.StringVector.append
+PyML.containers.ext.cstringkernel.DoubleVector.append
+PyML.containers.ext.cstringkernel.IntVector.append
+PyML.containers.ext.cstringkernel.LongVector.append
+PyML.containers.ext.cstringkernel.StringVector.append
+PyML.containers.ext.cvectordataset.DoubleVector.append
+PyML.containers.ext.cvectordataset.IntVector.append
+PyML.containers.ext.cvectordataset.LongVector.append
+PyML.containers.ext.cvectordataset.StringVector.append" class="py-name" href="#" onclick="return doclink('link-29', 'append', 'link-18');">append</a></tt><tt class="py-op">(</tt><tt class="py-name">y</tt><tt class="py-op">)</tt> </tt>
+<a name="L155"></a><tt class="py-lineno">155</tt>  <tt class="py-line">            <tt class="py-name">classes</tt><tt class="py-op">[</tt><tt class="py-name">y</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt id="link-30" class="py-name"><a title="PyML.classifiers.ext.cgist.DoubleVector.append
+PyML.classifiers.ext.cgist.IntVector.append
+PyML.classifiers.ext.csmo.DoubleVector.append
+PyML.classifiers.ext.csmo.IntVector.append
+PyML.classifiers.ext.csvmodel.DoubleVector.append
+PyML.classifiers.ext.csvmodel.IntVector.append
+PyML.classifiers.ext.knn.DoubleVector.append
+PyML.classifiers.ext.knn.IntVector.append
+PyML.containers.ext.caggregate.DoubleVector.append
+PyML.containers.ext.caggregate.IntVector.append
+PyML.containers.ext.ckernel.DoubleVector.append
+PyML.containers.ext.ckernel.FloatVector.append
+PyML.containers.ext.ckernel.IntVector.append
+PyML.containers.ext.ckerneldata.DoubleVector.append
+PyML.containers.ext.ckerneldata.FloatVector.append
+PyML.containers.ext.ckerneldata.IntVector.append
+PyML.containers.ext.cpairdataset.DoubleVector.append
+PyML.containers.ext.cpairdataset.IntVector.append
+PyML.containers.ext.csequencedata.DoubleVector.append
+PyML.containers.ext.csequencedata.IntVector.append
+PyML.containers.ext.csequencedata.LongVector.append
+PyML.containers.ext.csequencedata.StringVector.append
+PyML.containers.ext.csparsedataset.DoubleVector.append
+PyML.containers.ext.csparsedataset.FloatVector.append
+PyML.containers.ext.csparsedataset.IntVector.append
+PyML.containers.ext.csparsedataset.LongVector.append
+PyML.containers.ext.csparsedataset.StringVector.append
+PyML.containers.ext.cstringkernel.DoubleVector.append
+PyML.containers.ext.cstringkernel.IntVector.append
+PyML.containers.ext.cstringkernel.LongVector.append
+PyML.containers.ext.cstringkernel.StringVector.append
+PyML.containers.ext.cvectordataset.DoubleVector.append
+PyML.containers.ext.cvectordataset.IntVector.append
+PyML.containers.ext.cvectordataset.LongVector.append
+PyML.containers.ext.cvectordataset.StringVector.append" class="py-name" href="#" onclick="return doclink('link-30', 'append', 'link-18');">append</a></tt><tt class="py-op">(</tt><tt class="py-name">i</tt><tt class="py-op">)</tt> </tt>
+<a name="L156"></a><tt class="py-lineno">156</tt>  <tt class="py-line"> </tt>
+<a name="L157"></a><tt class="py-lineno">157</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">L</tt> <tt class="py-op">=</tt> <tt class="py-name">L</tt> </tt>
+<a name="L158"></a><tt class="py-lineno">158</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-31" class="py-name"><a title="PyML.demo.demo2d.Y" class="py-name" href="#" onclick="return doclink('link-31', 'Y', 'link-25');">Y</a></tt> <tt class="py-op">=</tt> <tt id="link-32" class="py-name"><a title="PyML.demo.demo2d.Y" class="py-name" href="#" onclick="return doclink('link-32', 'Y', 'link-25');">Y</a></tt> </tt>
+<a name="L159"></a><tt class="py-lineno">159</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classSize</tt> <tt class="py-op">=</tt> <tt class="py-name">classSize</tt> </tt>
+<a name="L160"></a><tt class="py-lineno">160</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classLabels</tt> <tt class="py-op">=</tt> <tt class="py-name">classLabels</tt> </tt>
+<a name="L161"></a><tt class="py-lineno">161</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classDict</tt> <tt class="py-op">=</tt> <tt class="py-name">classDict</tt> </tt>
+<a name="L162"></a><tt class="py-lineno">162</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classes</tt> <tt class="py-op">=</tt> <tt class="py-name">classes</tt> </tt>
+<a name="L163"></a><tt class="py-lineno">163</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">numClasses</tt> <tt class="py-op">=</tt> <tt class="py-name">numClasses</tt> </tt>
+</div><a name="L164"></a><tt class="py-lineno">164</tt>  <tt class="py-line"> </tt>
+<a name="Labels.flip"></a><div id="Labels.flip-def"><a name="L165"></a><tt class="py-lineno">165</tt> <a class="py-toggle" href="#" id="Labels.flip-toggle" onclick="return toggle('Labels.flip');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.containers.labels.Labels-class.html#flip">flip</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">patterns</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="Labels.flip-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Labels.flip-expanded"><a name="L166"></a><tt class="py-lineno">166</tt>  <tt class="py-line"> </tt>
+<a name="L167"></a><tt class="py-lineno">167</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">numClasses</tt> <tt class="py-op">!=</tt> <tt class="py-number">2</tt> <tt class="py-op">:</tt> </tt>
+<a name="L168"></a><tt class="py-lineno">168</tt>  <tt class="py-line">            <tt class="py-keyword">raise</tt> <tt class="py-name">ValueError</tt><tt class="py-op">,</tt> <tt class="py-string">'not a two class labeling'</tt> </tt>
+<a name="L169"></a><tt class="py-lineno">169</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt id="link-33" class="py-name"><a title="PyML.demo.demo.p" class="py-name" href="#" onclick="return doclink('link-33', 'p', 'link-4');">p</a></tt> <tt class="py-keyword">in</tt> <tt class="py-name">patterns</tt> <tt class="py-op">:</tt> </tt>
+<a name="L170"></a><tt class="py-lineno">170</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">L</tt><tt class="py-op">[</tt><tt id="link-34" class="py-name"><a title="PyML.demo.demo.p" class="py-name" href="#" onclick="return doclink('link-34', 'p', 'link-4');">p</a></tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classLabels</tt><tt class="py-op">[</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-35" class="py-name"><a title="PyML.demo.demo2d.Y" class="py-name" href="#" onclick="return doclink('link-35', 'Y', 'link-25');">Y</a></tt><tt class="py-op">[</tt><tt id="link-36" class="py-name"><a title="PyML.demo.demo.p" class="py-name" href="#" onclick="return doclink('link-36', 'p', 'link-4');">p</a></tt><tt class="py-op">]</tt> <tt class="py-op">+</tt> <tt class="py-number">1</tt><tt class="py-op">)</tt> <tt class="py-op">%</tt> <tt class="py-number">2</tt><tt class="py-op">]</tt> </tt>
+<a name="L171"></a><tt class="py-lineno">171</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-37" class="py-name"><a title="PyML.containers.labels.Labels.processLabels" class="py-name" href="#" onclick="return doclink('link-37', 'processLabels', 'link-10');">processLabels</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">L</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L172"></a><tt class="py-lineno">172</tt>  <tt class="py-line"> </tt>
+<a name="Labels.__len__"></a><div id="Labels.__len__-def"><a name="L173"></a><tt class="py-lineno">173</tt> <a class="py-toggle" href="#" id="Labels.__len__-toggle" onclick="return toggle('Labels.__len__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.containers.labels.Labels-class.html#__len__">__len__</a> <tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="Labels.__len__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Labels.__len__-expanded"><a name="L174"></a><tt class="py-lineno">174</tt>  <tt class="py-line"> </tt>
+<a name="L175"></a><tt class="py-lineno">175</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">patternID</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L176"></a><tt class="py-lineno">176</tt>  <tt class="py-line"> </tt>
+<a name="Labels.__repr__"></a><div id="Labels.__repr__-def"><a name="L177"></a><tt class="py-lineno">177</tt> <a class="py-toggle" href="#" id="Labels.__repr__-toggle" onclick="return toggle('Labels.__repr__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.containers.labels.Labels-class.html#__repr__">__repr__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="Labels.__repr__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Labels.__repr__-expanded"><a name="L178"></a><tt class="py-lineno">178</tt>  <tt class="py-line"> </tt>
+<a name="L179"></a><tt class="py-lineno">179</tt>  <tt class="py-line">        <tt class="py-name">rep</tt> <tt class="py-op">=</tt> <tt class="py-string">''</tt> </tt>
+<a name="L180"></a><tt class="py-lineno">180</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">L</tt> <tt class="py-keyword">is</tt> <tt class="py-keyword">not</tt> <tt class="py-name">None</tt> <tt class="py-keyword">and</tt> <tt id="link-38" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.type
+PyML.containers.baseDatasets.BaseDataSet.type
+PyML.containers.ker.Kernel.type
+PyML.feature_selection.featsel.FeatureScorer.type
+PyML.feature_selection.featsel.FeatureSelector.type" class="py-name" href="#" onclick="return doclink('link-38', 'type', 'link-2');">type</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">L</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> <tt class="py-op">==</tt> <tt id="link-39" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.type
+PyML.containers.baseDatasets.BaseDataSet.type
+PyML.containers.ker.Kernel.type
+PyML.feature_selection.featsel.FeatureScorer.type
+PyML.feature_selection.featsel.FeatureSelector.type" class="py-name" href="#" onclick="return doclink('link-39', 'type', 'link-2');">type</a></tt><tt class="py-op">(</tt><tt class="py-string">''</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L181"></a><tt class="py-lineno">181</tt>  <tt class="py-line">            <tt class="py-name">rep</tt> <tt class="py-op">+=</tt> <tt class="py-string">'class Label  /  Size \n'</tt> </tt>
+<a name="L182"></a><tt class="py-lineno">182</tt>  <tt class="py-line">            <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">numClasses</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L183"></a><tt class="py-lineno">183</tt>  <tt class="py-line">                <tt class="py-name">rep</tt> <tt class="py-op">+=</tt> <tt class="py-string">' %s : %d\n'</tt> <tt class="py-op">%</tt> <tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classLabels</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">,</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classSize</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L184"></a><tt class="py-lineno">184</tt>  <tt class="py-line"> </tt>
+<a name="L185"></a><tt class="py-lineno">185</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">rep</tt> </tt>
+</div><a name="L186"></a><tt class="py-lineno">186</tt>  <tt class="py-line"> </tt>
+<a name="Labels.isLabeled"></a><div id="Labels.isLabeled-def"><a name="L187"></a><tt class="py-lineno">187</tt> <a class="py-toggle" href="#" id="Labels.isLabeled-toggle" onclick="return toggle('Labels.isLabeled');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.containers.labels.Labels-class.html#isLabeled">isLabeled</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="Labels.isLabeled-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Labels.isLabeled-expanded"><a name="L188"></a><tt class="py-lineno">188</tt>  <tt class="py-line"> </tt>
+<a name="L189"></a><tt class="py-lineno">189</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">L</tt> <tt class="py-keyword">is</tt> <tt class="py-name">None</tt> <tt class="py-op">:</tt> </tt>
+<a name="L190"></a><tt class="py-lineno">190</tt>  <tt class="py-line">            <tt class="py-keyword">return</tt> <tt class="py-name">False</tt> </tt>
+<a name="L191"></a><tt class="py-lineno">191</tt>  <tt class="py-line">        <tt class="py-keyword">else</tt> <tt class="py-op">:</tt> </tt>
+<a name="L192"></a><tt class="py-lineno">192</tt>  <tt class="py-line">            <tt class="py-keyword">return</tt> <tt class="py-name">True</tt> </tt>
+</div><a name="L193"></a><tt class="py-lineno">193</tt>  <tt class="py-line">     </tt>
+<a name="Labels.save"></a><div id="Labels.save-def"><a name="L194"></a><tt class="py-lineno">194</tt> <a class="py-toggle" href="#" id="Labels.save-toggle" onclick="return toggle('Labels.save');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.containers.labels.Labels-class.html#save">save</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">fileName</tt><tt class="py-op">,</tt> <tt class="py-param">delim</tt> <tt class="py-op">=</tt> <tt class="py-string">'\t'</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="Labels.save-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Labels.save-expanded"><a name="L195"></a><tt class="py-lineno">195</tt>  <tt class="py-line"> </tt>
+<a name="L196"></a><tt class="py-lineno">196</tt>  <tt class="py-line">        <tt class="py-name">fileHandle</tt> <tt class="py-op">=</tt> <tt class="py-name">open</tt><tt class="py-op">(</tt><tt class="py-name">fileName</tt><tt class="py-op">,</tt> <tt class="py-string">'w'</tt><tt class="py-op">)</tt> </tt>
+<a name="L197"></a><tt class="py-lineno">197</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L198"></a><tt class="py-lineno">198</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">L</tt> <tt class="py-keyword">is</tt> <tt class="py-keyword">not</tt> <tt class="py-name">None</tt> <tt class="py-op">:</tt> </tt>
+<a name="L199"></a><tt class="py-lineno">199</tt>  <tt class="py-line">                <tt class="py-name">fileHandle</tt><tt class="py-op">.</tt><tt class="py-name">write</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">patternID</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> <tt class="py-op">+</tt> <tt class="py-name">delim</tt> <tt class="py-op">+</tt> <tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">L</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> <tt class="py-op">+</tt> <tt class="py-string">'\n'</tt><tt class="py-op">)</tt> </tt>
+<a name="L200"></a><tt class="py-lineno">200</tt>  <tt class="py-line">            <tt class="py-keyword">else</tt> <tt class="py-op">:</tt> </tt>
+<a name="L201"></a><tt class="py-lineno">201</tt>  <tt class="py-line">                <tt class="py-name">fileHandle</tt><tt class="py-op">.</tt><tt class="py-name">write</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">patternID</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> <tt class="py-op">+</tt> <tt class="py-string">'\n'</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L202"></a><tt class="py-lineno">202</tt>  <tt class="py-line"> </tt>
+<a name="Labels.convertFromMultiLabel"></a><div id="Labels.convertFromMultiLabel-def"><a name="L203"></a><tt class="py-lineno">203</tt> <a class="py-toggle" href="#" id="Labels.convertFromMultiLabel-toggle" onclick="return toggle('Labels.convertFromMultiLabel');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.containers.labels.Labels-class.html#convertFromMultiLabel">convertFromMultiLabel</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="Labels.convertFromMultiLabel-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Labels.convertFromMultiLabel-expanded"><a name="L204"></a><tt class="py-lineno">204</tt>  <tt class="py-line"> </tt>
+<a name="L205"></a><tt class="py-lineno">205</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">L</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L206"></a><tt class="py-lineno">206</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">L</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">string</tt><tt class="py-op">.</tt><tt class="py-name">join</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">L</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> <tt class="py-string">";"</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L207"></a><tt class="py-lineno">207</tt>  <tt class="py-line"> </tt>
+<a name="L208"></a><tt class="py-lineno">208</tt>  <tt class="py-line"> </tt>
+<a name="Labels.mergeClasses"></a><div id="Labels.mergeClasses-def"><a name="L209"></a><tt class="py-lineno">209</tt> <a class="py-toggle" href="#" id="Labels.mergeClasses-toggle" onclick="return toggle('Labels.mergeClasses');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.containers.labels.Labels-class.html#mergeClasses">mergeClasses</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">classList</tt><tt class="py-op">,</tt> <tt class="py-param">newLabel</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="Labels.mergeClasses-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Labels.mergeClasses-expanded"><a name="L210"></a><tt class="py-lineno">210</tt>  <tt class="py-line">        <tt class="py-docstring">"""Merge a list of classes into a new class.</tt> </tt>
+<a name="L211"></a><tt class="py-lineno">211</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L212"></a><tt class="py-lineno">212</tt>  <tt class="py-line"><tt class="py-docstring">        :Parameters:</tt> </tt>
+<a name="L213"></a><tt class="py-lineno">213</tt>  <tt class="py-line"><tt class="py-docstring">        - `classList` - a list of classes to merge; can either provide the</tt> </tt>
+<a name="L214"></a><tt class="py-lineno">214</tt>  <tt class="py-line"><tt class="py-docstring">          names of the classes or the index.</tt> </tt>
+<a name="L215"></a><tt class="py-lineno">215</tt>  <tt class="py-line"><tt class="py-docstring">        - `newLabel` - the name of the new class (if not given then the label</tt> </tt>
+<a name="L216"></a><tt class="py-lineno">216</tt>  <tt class="py-line"><tt class="py-docstring">          is formed by concatenating the names of the merged classes)</tt> </tt>
+<a name="L217"></a><tt class="py-lineno">217</tt>  <tt class="py-line"><tt class="py-docstring">          """</tt> </tt>
+<a name="L218"></a><tt class="py-lineno">218</tt>  <tt class="py-line"> </tt>
+<a name="L219"></a><tt class="py-lineno">219</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt id="link-40" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.type
+PyML.containers.baseDatasets.BaseDataSet.type
+PyML.containers.ker.Kernel.type
+PyML.feature_selection.featsel.FeatureScorer.type
+PyML.feature_selection.featsel.FeatureSelector.type" class="py-name" href="#" onclick="return doclink('link-40', 'type', 'link-2');">type</a></tt><tt class="py-op">(</tt><tt class="py-name">classList</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> <tt class="py-op">==</tt> <tt id="link-41" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.type
+PyML.containers.baseDatasets.BaseDataSet.type
+PyML.containers.ker.Kernel.type
+PyML.feature_selection.featsel.FeatureScorer.type
+PyML.feature_selection.featsel.FeatureSelector.type" class="py-name" href="#" onclick="return doclink('link-41', 'type', 'link-2');">type</a></tt><tt class="py-op">(</tt><tt class="py-number">1</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L220"></a><tt class="py-lineno">220</tt>  <tt class="py-line">            <tt class="py-name">classList</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classLabels</tt><tt class="py-op">[</tt><tt class="py-name">label</tt><tt class="py-op">]</tt> <tt class="py-keyword">for</tt> <tt class="py-name">label</tt> <tt class="py-keyword">in</tt> <tt class="py-name">classList</tt><tt class="py-op">]</tt> </tt>
+<a name="L221"></a><tt class="py-lineno">221</tt>  <tt class="py-line"> </tt>
+<a name="L222"></a><tt class="py-lineno">222</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">newLabel</tt> <tt class="py-keyword">is</tt> <tt class="py-name">None</tt> <tt class="py-op">:</tt> </tt>
+<a name="L223"></a><tt class="py-lineno">223</tt>  <tt class="py-line">            <tt class="py-keyword">try</tt> <tt class="py-op">:</tt> </tt>
+<a name="L224"></a><tt class="py-lineno">224</tt>  <tt class="py-line">                <tt class="py-name">newLabel</tt> <tt class="py-op">=</tt> <tt class="py-string">"+"</tt><tt class="py-op">.</tt><tt class="py-name">join</tt><tt class="py-op">(</tt><tt class="py-name">classList</tt><tt class="py-op">)</tt> </tt>
+<a name="L225"></a><tt class="py-lineno">225</tt>  <tt class="py-line">            <tt class="py-keyword">except</tt> <tt class="py-op">:</tt> </tt>
+<a name="L226"></a><tt class="py-lineno">226</tt>  <tt class="py-line">                <tt class="py-name">newLabel</tt> <tt class="py-op">=</tt> <tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">classList</tt><tt class="py-op">)</tt> </tt>
+<a name="L227"></a><tt class="py-lineno">227</tt>  <tt class="py-line"> </tt>
+<a name="L228"></a><tt class="py-lineno">228</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">classLabel</tt> <tt class="py-keyword">in</tt> <tt class="py-name">classList</tt> <tt class="py-op">:</tt> </tt>
+<a name="L229"></a><tt class="py-lineno">229</tt>  <tt class="py-line">            <tt class="py-keyword">for</tt> <tt id="link-42" class="py-name"><a title="PyML.demo.demo.p" class="py-name" href="#" onclick="return doclink('link-42', 'p', 'link-4');">p</a></tt> <tt class="py-keyword">in</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classes</tt><tt class="py-op">[</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classDict</tt><tt class="py-op">[</tt><tt class="py-name">classLabel</tt><tt class="py-op">]</tt><tt class="py-op">]</tt> <tt class="py-op">:</tt> </tt>
+<a name="L230"></a><tt class="py-lineno">230</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">L</tt><tt class="py-op">[</tt><tt id="link-43" class="py-name"><a title="PyML.demo.demo.p" class="py-name" href="#" onclick="return doclink('link-43', 'p', 'link-4');">p</a></tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">newLabel</tt> </tt>
+<a name="L231"></a><tt class="py-lineno">231</tt>  <tt class="py-line">         </tt>
+<a name="L232"></a><tt class="py-lineno">232</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-44" class="py-name"><a title="PyML.containers.labels.Labels.processLabels" class="py-name" href="#" onclick="return doclink('link-44', 'processLabels', 'link-10');">processLabels</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">L</tt><tt class="py-op">,</tt> <tt class="py-name">forgetClassLabels</tt> <tt class="py-op">=</tt> <tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L233"></a><tt class="py-lineno">233</tt>  <tt class="py-line"> </tt>
+<a name="Labels.oneAgainstRest"></a><div id="Labels.oneAgainstRest-def"><a name="L234"></a><tt class="py-lineno">234</tt> <a class="py-toggle" href="#" id="Labels.oneAgainstRest-toggle" onclick="return toggle('Labels.oneAgainstRest');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.containers.labels.Labels-class.html#oneAgainstRest">oneAgainstRest</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">classLabels</tt><tt class="py-op">,</tt> <tt class="py-param">className</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="Labels.oneAgainstRest-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Labels.oneAgainstRest-expanded"><a name="L235"></a><tt class="py-lineno">235</tt>  <tt class="py-line"> </tt>
+<a name="L236"></a><tt class="py-lineno">236</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L237"></a><tt class="py-lineno">237</tt>  <tt class="py-line"><tt class="py-docstring">        creates a one-against-the-rest labels object</tt> </tt>
+<a name="L238"></a><tt class="py-lineno">238</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L239"></a><tt class="py-lineno">239</tt>  <tt class="py-line"><tt class="py-docstring">        :Parameters:</tt> </tt>
+<a name="L240"></a><tt class="py-lineno">240</tt>  <tt class="py-line"><tt class="py-docstring">          - `classLabels` - a single class name, or a list of class names (string</tt> </tt>
+<a name="L241"></a><tt class="py-lineno">241</tt>  <tt class="py-line"><tt class="py-docstring">            or a list of strings)</tt> </tt>
+<a name="L242"></a><tt class="py-lineno">242</tt>  <tt class="py-line"><tt class="py-docstring">          - `className` - if given, the new name given to the class</tt> </tt>
+<a name="L243"></a><tt class="py-lineno">243</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L244"></a><tt class="py-lineno">244</tt>  <tt class="py-line"><tt class="py-docstring">          """</tt> </tt>
+<a name="L245"></a><tt class="py-lineno">245</tt>  <tt class="py-line"> </tt>
+<a name="L246"></a><tt class="py-lineno">246</tt>  <tt class="py-line">        <tt class="py-name">patternID</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">patternID</tt><tt class="py-op">[</tt><tt class="py-op">:</tt><tt class="py-op">]</tt> </tt>
+<a name="L247"></a><tt class="py-lineno">247</tt>  <tt class="py-line"> </tt>
+<a name="L248"></a><tt class="py-lineno">248</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt id="link-45" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.type
+PyML.containers.baseDatasets.BaseDataSet.type
+PyML.containers.ker.Kernel.type
+PyML.feature_selection.featsel.FeatureScorer.type
+PyML.feature_selection.featsel.FeatureSelector.type" class="py-name" href="#" onclick="return doclink('link-45', 'type', 'link-2');">type</a></tt><tt class="py-op">(</tt><tt class="py-name">classLabels</tt><tt class="py-op">)</tt> <tt class="py-op">==</tt> <tt id="link-46" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.type
+PyML.containers.baseDatasets.BaseDataSet.type
+PyML.containers.ker.Kernel.type
+PyML.feature_selection.featsel.FeatureScorer.type
+PyML.feature_selection.featsel.FeatureSelector.type" class="py-name" href="#" onclick="return doclink('link-46', 'type', 'link-2');">type</a></tt><tt class="py-op">(</tt><tt class="py-number">1</tt><tt class="py-op">)</tt> <tt class="py-keyword">or</tt> <tt id="link-47" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.type
+PyML.containers.baseDatasets.BaseDataSet.type
+PyML.containers.ker.Kernel.type
+PyML.feature_selection.featsel.FeatureScorer.type
+PyML.feature_selection.featsel.FeatureSelector.type" class="py-name" href="#" onclick="return doclink('link-47', 'type', 'link-2');">type</a></tt><tt class="py-op">(</tt><tt class="py-name">classLabels</tt><tt class="py-op">)</tt> <tt class="py-op">==</tt> <tt id="link-48" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.type
+PyML.containers.baseDatasets.BaseDataSet.type
+PyML.containers.ker.Kernel.type
+PyML.feature_selection.featsel.FeatureScorer.type
+PyML.feature_selection.featsel.FeatureSelector.type" class="py-name" href="#" onclick="return doclink('link-48', 'type', 'link-2');">type</a></tt><tt class="py-op">(</tt><tt class="py-string">''</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L249"></a><tt class="py-lineno">249</tt>  <tt class="py-line">            <tt class="py-name">classLabels</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-name">classLabels</tt><tt class="py-op">]</tt> </tt>
+<a name="L250"></a><tt class="py-lineno">250</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt id="link-49" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.type
+PyML.containers.baseDatasets.BaseDataSet.type
+PyML.containers.ker.Kernel.type
+PyML.feature_selection.featsel.FeatureScorer.type
+PyML.feature_selection.featsel.FeatureSelector.type" class="py-name" href="#" onclick="return doclink('link-49', 'type', 'link-2');">type</a></tt><tt class="py-op">(</tt><tt class="py-name">classLabels</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> <tt class="py-op">==</tt> <tt id="link-50" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.type
+PyML.containers.baseDatasets.BaseDataSet.type
+PyML.containers.ker.Kernel.type
+PyML.feature_selection.featsel.FeatureScorer.type
+PyML.feature_selection.featsel.FeatureSelector.type" class="py-name" href="#" onclick="return doclink('link-50', 'type', 'link-2');">type</a></tt><tt class="py-op">(</tt><tt class="py-number">1</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L251"></a><tt class="py-lineno">251</tt>  <tt class="py-line">            <tt class="py-name">classLabels</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt id="link-51" class="py-name" targets="Module PyML.containers.labels=PyML.containers.labels-module.html"><a title="PyML.containers.labels" class="py-name" href="#" onclick="return doclink('link-51', 'labels', 'link-51');">labels</a></tt><tt class="py-op">.</tt><tt class="py-name">classLabels</tt><tt class="py-op">[</tt><tt class="py-name">label</tt><tt class="py-op">]</tt> <tt class="py-keyword">for</tt> <tt class="py-name">label</tt> <tt class="py-keyword">in</tt> <tt class="py-name">classLabels</tt><tt class="py-op">]</tt> </tt>
+<a name="L252"></a><tt class="py-lineno">252</tt>  <tt class="py-line"> </tt>
+<a name="L253"></a><tt class="py-lineno">253</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">className</tt> <tt class="py-keyword">is</tt> <tt class="py-name">None</tt> <tt class="py-op">:</tt> </tt>
+<a name="L254"></a><tt class="py-lineno">254</tt>  <tt class="py-line">            <tt class="py-name">className</tt> <tt class="py-op">=</tt> <tt class="py-string">'+'</tt><tt class="py-op">.</tt><tt class="py-name">join</tt><tt class="py-op">(</tt><tt class="py-name">classLabels</tt><tt class="py-op">)</tt> </tt>
+<a name="L255"></a><tt class="py-lineno">255</tt>  <tt class="py-line"> </tt>
+<a name="L256"></a><tt class="py-lineno">256</tt>  <tt class="py-line">        <tt class="py-name">newL</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
+<a name="L257"></a><tt class="py-lineno">257</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L258"></a><tt class="py-lineno">258</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">L</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> <tt class="py-keyword">in</tt> <tt class="py-name">classLabels</tt> <tt class="py-op">:</tt> </tt>
+<a name="L259"></a><tt class="py-lineno">259</tt>  <tt class="py-line">                <tt class="py-name">newL</tt><tt class="py-op">.</tt><tt id="link-52" class="py-name"><a title="PyML.classifiers.ext.cgist.DoubleVector.append
+PyML.classifiers.ext.cgist.IntVector.append
+PyML.classifiers.ext.csmo.DoubleVector.append
+PyML.classifiers.ext.csmo.IntVector.append
+PyML.classifiers.ext.csvmodel.DoubleVector.append
+PyML.classifiers.ext.csvmodel.IntVector.append
+PyML.classifiers.ext.knn.DoubleVector.append
+PyML.classifiers.ext.knn.IntVector.append
+PyML.containers.ext.caggregate.DoubleVector.append
+PyML.containers.ext.caggregate.IntVector.append
+PyML.containers.ext.ckernel.DoubleVector.append
+PyML.containers.ext.ckernel.FloatVector.append
+PyML.containers.ext.ckernel.IntVector.append
+PyML.containers.ext.ckerneldata.DoubleVector.append
+PyML.containers.ext.ckerneldata.FloatVector.append
+PyML.containers.ext.ckerneldata.IntVector.append
+PyML.containers.ext.cpairdataset.DoubleVector.append
+PyML.containers.ext.cpairdataset.IntVector.append
+PyML.containers.ext.csequencedata.DoubleVector.append
+PyML.containers.ext.csequencedata.IntVector.append
+PyML.containers.ext.csequencedata.LongVector.append
+PyML.containers.ext.csequencedata.StringVector.append
+PyML.containers.ext.csparsedataset.DoubleVector.append
+PyML.containers.ext.csparsedataset.FloatVector.append
+PyML.containers.ext.csparsedataset.IntVector.append
+PyML.containers.ext.csparsedataset.LongVector.append
+PyML.containers.ext.csparsedataset.StringVector.append
+PyML.containers.ext.cstringkernel.DoubleVector.append
+PyML.containers.ext.cstringkernel.IntVector.append
+PyML.containers.ext.cstringkernel.LongVector.append
+PyML.containers.ext.cstringkernel.StringVector.append
+PyML.containers.ext.cvectordataset.DoubleVector.append
+PyML.containers.ext.cvectordataset.IntVector.append
+PyML.containers.ext.cvectordataset.LongVector.append
+PyML.containers.ext.cvectordataset.StringVector.append" class="py-name" href="#" onclick="return doclink('link-52', 'append', 'link-18');">append</a></tt><tt class="py-op">(</tt><tt class="py-name">className</tt><tt class="py-op">)</tt> </tt>
+<a name="L260"></a><tt class="py-lineno">260</tt>  <tt class="py-line">            <tt class="py-keyword">else</tt> <tt class="py-op">:</tt> </tt>
+<a name="L261"></a><tt class="py-lineno">261</tt>  <tt class="py-line">                <tt class="py-name">newL</tt><tt class="py-op">.</tt><tt id="link-53" class="py-name"><a title="PyML.classifiers.ext.cgist.DoubleVector.append
+PyML.classifiers.ext.cgist.IntVector.append
+PyML.classifiers.ext.csmo.DoubleVector.append
+PyML.classifiers.ext.csmo.IntVector.append
+PyML.classifiers.ext.csvmodel.DoubleVector.append
+PyML.classifiers.ext.csvmodel.IntVector.append
+PyML.classifiers.ext.knn.DoubleVector.append
+PyML.classifiers.ext.knn.IntVector.append
+PyML.containers.ext.caggregate.DoubleVector.append
+PyML.containers.ext.caggregate.IntVector.append
+PyML.containers.ext.ckernel.DoubleVector.append
+PyML.containers.ext.ckernel.FloatVector.append
+PyML.containers.ext.ckernel.IntVector.append
+PyML.containers.ext.ckerneldata.DoubleVector.append
+PyML.containers.ext.ckerneldata.FloatVector.append
+PyML.containers.ext.ckerneldata.IntVector.append
+PyML.containers.ext.cpairdataset.DoubleVector.append
+PyML.containers.ext.cpairdataset.IntVector.append
+PyML.containers.ext.csequencedata.DoubleVector.append
+PyML.containers.ext.csequencedata.IntVector.append
+PyML.containers.ext.csequencedata.LongVector.append
+PyML.containers.ext.csequencedata.StringVector.append
+PyML.containers.ext.csparsedataset.DoubleVector.append
+PyML.containers.ext.csparsedataset.FloatVector.append
+PyML.containers.ext.csparsedataset.IntVector.append
+PyML.containers.ext.csparsedataset.LongVector.append
+PyML.containers.ext.csparsedataset.StringVector.append
+PyML.containers.ext.cstringkernel.DoubleVector.append
+PyML.containers.ext.cstringkernel.IntVector.append
+PyML.containers.ext.cstringkernel.LongVector.append
+PyML.containers.ext.cstringkernel.StringVector.append
+PyML.containers.ext.cvectordataset.DoubleVector.append
+PyML.containers.ext.cvectordataset.IntVector.append
+PyML.containers.ext.cvectordataset.LongVector.append
+PyML.containers.ext.cvectordataset.StringVector.append" class="py-name" href="#" onclick="return doclink('link-53', 'append', 'link-18');">append</a></tt><tt class="py-op">(</tt><tt class="py-string">"rest"</tt><tt class="py-op">)</tt> </tt>
+<a name="L262"></a><tt class="py-lineno">262</tt>  <tt class="py-line"> </tt>
+<a name="L263"></a><tt class="py-lineno">263</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-54" class="py-name"><a title="PyML.containers.labels.Labels.processLabels" class="py-name" href="#" onclick="return doclink('link-54', 'processLabels', 'link-10');">processLabels</a></tt><tt class="py-op">(</tt><tt class="py-name">newL</tt><tt class="py-op">,</tt> <tt class="py-name">forgetClassLabels</tt> <tt class="py-op">=</tt> <tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L264"></a><tt class="py-lineno">264</tt>  <tt class="py-line"> </tt>
+<a name="L265"></a><tt class="py-lineno">265</tt>  <tt class="py-line"> </tt>
+<a name="mergeClasses"></a><div id="mergeClasses-def"><a name="L266"></a><tt class="py-lineno">266</tt> <a class="py-toggle" href="#" id="mergeClasses-toggle" onclick="return toggle('mergeClasses');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.containers.labels-module.html#mergeClasses">mergeClasses</a><tt class="py-op">(</tt><tt class="py-param">data</tt><tt class="py-op">,</tt> <tt class="py-param">classList</tt><tt class="py-op">,</tt> <tt class="py-param">newLabel</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="mergeClasses-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="mergeClasses-expanded"><a name="L267"></a><tt class="py-lineno">267</tt>  <tt class="py-line">    <tt class="py-docstring">"""Merge a list of classes into a new class.</tt> </tt>
+<a name="L268"></a><tt class="py-lineno">268</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L269"></a><tt class="py-lineno">269</tt>  <tt class="py-line"><tt class="py-docstring">    :Parameters:</tt> </tt>
+<a name="L270"></a><tt class="py-lineno">270</tt>  <tt class="py-line"><tt class="py-docstring">    - `data` - a dataset container</tt> </tt>
+<a name="L271"></a><tt class="py-lineno">271</tt>  <tt class="py-line"><tt class="py-docstring">    - `classList` - a list of classes to merge; can either provide the</tt> </tt>
+<a name="L272"></a><tt class="py-lineno">272</tt>  <tt class="py-line"><tt class="py-docstring">      names of the classes or the index.</tt> </tt>
+<a name="L273"></a><tt class="py-lineno">273</tt>  <tt class="py-line"><tt class="py-docstring">    - `newLabel` - the name of the new class (if not given then the label</tt> </tt>
+<a name="L274"></a><tt class="py-lineno">274</tt>  <tt class="py-line"><tt class="py-docstring">      is formed by concatenating the names of the merged classes)</tt> </tt>
+<a name="L275"></a><tt class="py-lineno">275</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L276"></a><tt class="py-lineno">276</tt>  <tt class="py-line"><tt class="py-docstring">    calls Labels.mergeClasses and returns the dataset with the modified labels</tt> </tt>
+<a name="L277"></a><tt class="py-lineno">277</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L278"></a><tt class="py-lineno">278</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L279"></a><tt class="py-lineno">279</tt>  <tt class="py-line"> </tt>
+<a name="L280"></a><tt class="py-lineno">280</tt>  <tt class="py-line">    <tt class="py-name">data</tt><tt class="py-op">.</tt><tt id="link-55" class="py-name"><a title="PyML.containers.labels" class="py-name" href="#" onclick="return doclink('link-55', 'labels', 'link-51');">labels</a></tt><tt class="py-op">.</tt><tt id="link-56" class="py-name" targets="Method PyML.containers.labels.Labels.mergeClasses()=PyML.containers.labels.Labels-class.html#mergeClasses,Function PyML.containers.labels.mergeClasses()=PyML.containers.labels-module.html#mergeClasses"><a title="PyML.containers.labels.Labels.mergeClasses
+PyML.containers.labels.mergeClasses" class="py-name" href="#" onclick="return doclink('link-56', 'mergeClasses', 'link-56');">mergeClasses</a></tt><tt class="py-op">(</tt><tt class="py-name">classList</tt><tt class="py-op">,</tt> <tt class="py-name">newLabel</tt><tt class="py-op">)</tt> </tt>
+<a name="L281"></a><tt class="py-lineno">281</tt>  <tt class="py-line">    <tt class="py-name">data</tt><tt class="py-op">.</tt><tt id="link-57" class="py-name" targets="Method PyML.containers.baseDatasets.BaseDataSet.attachLabels()=PyML.containers.baseDatasets.BaseDataSet-class.html#attachLabels,Method PyML.containers.baseDatasets.WrapperDataSet.attachLabels()=PyML.containers.baseDatasets.WrapperDataSet-class.html#attachLabels"><a title="PyML.containers.baseDatasets.BaseDataSet.attachLabels
+PyML.containers.baseDatasets.WrapperDataSet.attachLabels" class="py-name" href="#" onclick="return doclink('link-57', 'attachLabels', 'link-57');">attachLabels</a></tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">.</tt><tt id="link-58" class="py-name"><a title="PyML.containers.labels" class="py-name" href="#" onclick="return doclink('link-58', 'labels', 'link-51');">labels</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L282"></a><tt class="py-lineno">282</tt>  <tt class="py-line"> </tt>
+<a name="L283"></a><tt class="py-lineno">283</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">data</tt> </tt>
+</div><a name="L284"></a><tt class="py-lineno">284</tt>  <tt class="py-line">         </tt>
+<a name="L285"></a><tt class="py-lineno">285</tt>  <tt class="py-line">     </tt>
+<a name="oneAgainstRest"></a><div id="oneAgainstRest-def"><a name="L286"></a><tt class="py-lineno">286</tt> <a class="py-toggle" href="#" id="oneAgainstRest-toggle" onclick="return toggle('oneAgainstRest');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.containers.labels-module.html#oneAgainstRest">oneAgainstRest</a><tt class="py-op">(</tt><tt class="py-param">data</tt><tt class="py-op">,</tt> <tt class="py-param">classLabels</tt><tt class="py-op">,</tt> <tt class="py-param">className</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="oneAgainstRest-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="oneAgainstRest-expanded"><a name="L287"></a><tt class="py-lineno">287</tt>  <tt class="py-line"> </tt>
+<a name="L288"></a><tt class="py-lineno">288</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L289"></a><tt class="py-lineno">289</tt>  <tt class="py-line"><tt class="py-docstring">    creates a one-against-the-rest dataset/labels object</tt> </tt>
+<a name="L290"></a><tt class="py-lineno">290</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L291"></a><tt class="py-lineno">291</tt>  <tt class="py-line"><tt class="py-docstring">    :Parameters:</tt> </tt>
+<a name="L292"></a><tt class="py-lineno">292</tt>  <tt class="py-line"><tt class="py-docstring">    </tt> </tt>
+<a name="L293"></a><tt class="py-lineno">293</tt>  <tt class="py-line"><tt class="py-docstring">      - `data` - a dataset</tt> </tt>
+<a name="L294"></a><tt class="py-lineno">294</tt>  <tt class="py-line"><tt class="py-docstring">      - `classLabels` - a single class name, or a list of class names (string</tt> </tt>
+<a name="L295"></a><tt class="py-lineno">295</tt>  <tt class="py-line"><tt class="py-docstring">        or a list of strings)</tt> </tt>
+<a name="L296"></a><tt class="py-lineno">296</tt>  <tt class="py-line"><tt class="py-docstring">      - `className` - if given, the new name given to the class</tt> </tt>
+<a name="L297"></a><tt class="py-lineno">297</tt>  <tt class="py-line"><tt class="py-docstring">      </tt> </tt>
+<a name="L298"></a><tt class="py-lineno">298</tt>  <tt class="py-line"><tt class="py-docstring">    Return value::</tt> </tt>
+<a name="L299"></a><tt class="py-lineno">299</tt>  <tt class="py-line"><tt class="py-docstring">    </tt> </tt>
+<a name="L300"></a><tt class="py-lineno">300</tt>  <tt class="py-line"><tt class="py-docstring">      returns a dataset object where all class labels that are different</tt> </tt>
+<a name="L301"></a><tt class="py-lineno">301</tt>  <tt class="py-line"><tt class="py-docstring">      from the given class label/s are converted to a single class</tt> </tt>
+<a name="L302"></a><tt class="py-lineno">302</tt>  <tt class="py-line"><tt class="py-docstring">      """</tt> </tt>
+<a name="L303"></a><tt class="py-lineno">303</tt>  <tt class="py-line">         </tt>
+<a name="L304"></a><tt class="py-lineno">304</tt>  <tt class="py-line">    <tt class="py-name">data</tt><tt class="py-op">.</tt><tt id="link-59" class="py-name"><a title="PyML.containers.labels" class="py-name" href="#" onclick="return doclink('link-59', 'labels', 'link-51');">labels</a></tt><tt class="py-op">.</tt><tt id="link-60" class="py-name" targets="Method PyML.containers.labels.Labels.oneAgainstRest()=PyML.containers.labels.Labels-class.html#oneAgainstRest,Function PyML.containers.labels.oneAgainstRest()=PyML.containers.labels-module.html#oneAgainstRest"><a title="PyML.containers.labels.Labels.oneAgainstRest
+PyML.containers.labels.oneAgainstRest" class="py-name" href="#" onclick="return doclink('link-60', 'oneAgainstRest', 'link-60');">oneAgainstRest</a></tt><tt class="py-op">(</tt><tt class="py-name">classLabels</tt><tt class="py-op">,</tt> <tt class="py-name">className</tt><tt class="py-op">)</tt> </tt>
+<a name="L305"></a><tt class="py-lineno">305</tt>  <tt class="py-line">    <tt class="py-name">data</tt><tt class="py-op">.</tt><tt id="link-61" class="py-name"><a title="PyML.containers.baseDatasets.BaseDataSet.attachLabels
+PyML.containers.baseDatasets.WrapperDataSet.attachLabels" class="py-name" href="#" onclick="return doclink('link-61', 'attachLabels', 'link-57');">attachLabels</a></tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">.</tt><tt id="link-62" class="py-name"><a title="PyML.containers.labels" class="py-name" href="#" onclick="return doclink('link-62', 'labels', 'link-51');">labels</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L306"></a><tt class="py-lineno">306</tt>  <tt class="py-line"> </tt>
+<a name="L307"></a><tt class="py-lineno">307</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">data</tt> </tt>
+</div><a name="L308"></a><tt class="py-lineno">308</tt>  <tt class="py-line"> </tt>
+<a name="L309"></a><tt class="py-lineno">309</tt>  <tt class="py-line"> </tt>
+<a name="randomLabels"></a><div id="randomLabels-def"><a name="L310"></a><tt class="py-lineno">310</tt> <a class="py-toggle" href="#" id="randomLabels-toggle" onclick="return toggle('randomLabels');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.containers.labels-module.html#randomLabels">randomLabels</a><tt class="py-op">(</tt><tt class="py-param">Y</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="randomLabels-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="randomLabels-expanded"><a name="L311"></a><tt class="py-lineno">311</tt>  <tt class="py-line">    <tt class="py-docstring">"""shuffle the vector Y"""</tt> </tt>
+<a name="L312"></a><tt class="py-lineno">312</tt>  <tt class="py-line"> </tt>
+<a name="L313"></a><tt class="py-lineno">313</tt>  <tt class="py-line">    <tt class="py-name">Yrand</tt> <tt class="py-op">=</tt> <tt id="link-63" class="py-name"><a title="PyML.demo.demo2d.Y" class="py-name" href="#" onclick="return doclink('link-63', 'Y', 'link-25');">Y</a></tt><tt class="py-op">[</tt><tt class="py-op">:</tt><tt class="py-op">]</tt> </tt>
+<a name="L314"></a><tt class="py-lineno">314</tt>  <tt class="py-line">    <tt class="py-name">random</tt><tt class="py-op">.</tt><tt id="link-64" class="py-name" targets="Function PyML.datagen.sample.shuffle()=PyML.datagen.sample-module.html#shuffle"><a title="PyML.datagen.sample.shuffle" class="py-name" href="#" onclick="return doclink('link-64', 'shuffle', 'link-64');">shuffle</a></tt><tt class="py-op">(</tt><tt class="py-name">Yrand</tt><tt class="py-op">)</tt> </tt>
+<a name="L315"></a><tt class="py-lineno">315</tt>  <tt class="py-line"> </tt>
+<a name="L316"></a><tt class="py-lineno">316</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">Yrand</tt> </tt>
+</div><a name="L317"></a><tt class="py-lineno">317</tt>  <tt class="py-line"> </tt>
+<a name="eliminateMultiLabeled"></a><div id="eliminateMultiLabeled-def"><a name="L318"></a><tt class="py-lineno">318</tt> <a class="py-toggle" href="#" id="eliminateMultiLabeled-toggle" onclick="return toggle('eliminateMultiLabeled');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.containers.labels-module.html#eliminateMultiLabeled">eliminateMultiLabeled</a><tt class="py-op">(</tt><tt class="py-param">data</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="eliminateMultiLabeled-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="eliminateMultiLabeled-expanded"><a name="L319"></a><tt class="py-lineno">319</tt>  <tt class="py-line"> </tt>
+<a name="L320"></a><tt class="py-lineno">320</tt>  <tt class="py-line">    <tt class="py-name">patterns</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-name">i</tt> <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">.</tt><tt class="py-name">n</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L321"></a><tt class="py-lineno">321</tt>  <tt class="py-line">                <tt class="py-keyword">if</tt> <tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">.</tt><tt id="link-65" class="py-name"><a title="PyML.containers.labels" class="py-name" href="#" onclick="return doclink('link-65', 'labels', 'link-51');">labels</a></tt><tt class="py-op">.</tt><tt class="py-name">L</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt class="py-name">split</tt><tt class="py-op">(</tt><tt class="py-string">';'</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> <tt class="py-op">==</tt> <tt class="py-number">1</tt><tt class="py-op">]</tt> </tt>
+<a name="L322"></a><tt class="py-lineno">322</tt>  <tt class="py-line"> </tt>
+<a name="L323"></a><tt class="py-lineno">323</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">data</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">,</tt> <tt class="py-name">patterns</tt> <tt class="py-op">=</tt> <tt class="py-name">patterns</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L324"></a><tt class="py-lineno">324</tt>  <tt class="py-line"> </tt>
+<a name="L325"></a><tt class="py-lineno">325</tt>  <tt class="py-line"> </tt>
+<a name="eliminateSmallClasses"></a><div id="eliminateSmallClasses-def"><a name="L326"></a><tt class="py-lineno">326</tt> <a class="py-toggle" href="#" id="eliminateSmallClasses-toggle" onclick="return toggle('eliminateSmallClasses');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.containers.labels-module.html#eliminateSmallClasses">eliminateSmallClasses</a><tt class="py-op">(</tt><tt class="py-param">data</tt><tt class="py-op">,</tt> <tt class="py-param">size</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="eliminateSmallClasses-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="eliminateSmallClasses-expanded"><a name="L327"></a><tt class="py-lineno">327</tt>  <tt class="py-line">    <tt class="py-docstring">"""returns a dataset that contains the classes of d that contain</tt> </tt>
+<a name="L328"></a><tt class="py-lineno">328</tt>  <tt class="py-line"><tt class="py-docstring">    at least size patterns"""</tt> </tt>
+<a name="L329"></a><tt class="py-lineno">329</tt>  <tt class="py-line">     </tt>
+<a name="L330"></a><tt class="py-lineno">330</tt>  <tt class="py-line">    <tt class="py-name">patterns</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
+<a name="L331"></a><tt class="py-lineno">331</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L332"></a><tt class="py-lineno">332</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">data</tt><tt class="py-op">.</tt><tt id="link-66" class="py-name"><a title="PyML.containers.labels" class="py-name" href="#" onclick="return doclink('link-66', 'labels', 'link-51');">labels</a></tt><tt class="py-op">.</tt><tt class="py-name">classSize</tt><tt class="py-op">[</tt><tt class="py-name">data</tt><tt class="py-op">.</tt><tt id="link-67" class="py-name"><a title="PyML.containers.labels" class="py-name" href="#" onclick="return doclink('link-67', 'labels', 'link-51');">labels</a></tt><tt class="py-op">.</tt><tt id="link-68" class="py-name"><a title="PyML.demo.demo2d.Y" class="py-name" href="#" onclick="return doclink('link-68', 'Y', 'link-25');">Y</a></tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">]</tt> <tt class="py-op">&gt;=</tt> <tt id="link-69" class="py-name" targets="Method PyML.classifiers.ext.cgist.DoubleVector.size()=PyML.classifiers.ext.cgist.DoubleVector-class.html#size,Method PyML.classifiers.ext.cgist.IntVector.size()=PyML.classifiers.ext.cgist.IntVector-class.html#size,Method PyML.classifiers.ext.csmo.DoubleVector.size()=PyML.classifiers.ext.csmo.DoubleVector-class.html#size,Method PyML.classifiers.ext.csmo.IntVector.size()=PyML.classifiers.ext.csmo.IntVector-class.html#size,Method PyML.classifiers.ext.csvmodel.DoubleVector.size()=PyML.classifiers.ext.csvmodel.DoubleVector-class.html#size,Method PyML.classifiers.ext.csvmodel.IntVector.size()=PyML.classifiers.ext.csvmodel.IntVector-class.html#size,Method PyML.classifiers.ext.knn.DoubleVector.size()=PyML.classifiers.ext.knn.DoubleVector-class.html#size,Method PyML.classifiers.ext.knn.IntVector.size()=PyML.classifiers.ext.knn.IntVector-class.html#size,Method PyML.containers.ext.caggregate.Aggregate.size()=PyML.containers.ext.caggregate.Aggregate-class.html#size,Method PyML.containers.ext.caggregate.DataSet.size()=PyML.containers.ext.caggregate.DataSet-class.html#size,Method PyML.containers.ext.caggregate.DoubleVector.size()=PyML.containers.ext.caggregate.DoubleVector-class.html#size,Method PyML.containers.ext.caggregate.IntVector.size()=PyML.containers.ext.caggregate.IntVector-class.html#size,Method PyML.containers.ext.ckernel.DoubleVector.size()=PyML.containers.ext.ckernel.DoubleVector-class.html#size,Method PyML.containers.ext.ckernel.FloatVector.size()=PyML.containers.ext.ckernel.FloatVector-class.html#size,Method PyML.containers.ext.ckernel.IntVector.size()=PyML.containers.ext.ckernel.IntVector-class.html#size,Method PyML.containers.ext.ckernel.KernelMatrix.size()=PyML.containers.ext.ckernel.KernelMatrix-class.html#size,Method PyML.containers.ext.ckerneldata.DataSet.size()=PyML.containers.ext.ckerneldata.DataSet-class.html#size,Method PyML.containers.ext.ckerneldata.DoubleVector.size()=PyML.containers.ext.ckerneldata.DoubleVector-class.html#size,Method PyML.containers.ext.ckerneldata.FloatVector.size()=PyML.containers.ext.ckerneldata.FloatVector-class.html#size,Method PyML.containers.ext.ckerneldata.IntVector.size()=PyML.containers.ext.ckerneldata.IntVector-class.html#size,Method PyML.containers.ext.ckerneldata.KernelData.size()=PyML.containers.ext.ckerneldata.KernelData-class.html#size,Method PyML.containers.ext.cpairdataset.DataSet.size()=PyML.containers.ext.cpairdataset.DataSet-class.html#size,Method PyML.containers.ext.cpairdataset.DoubleVector.size()=PyML.containers.ext.cpairdataset.DoubleVector-class.html#size,Method PyML.containers.ext.cpairdataset.IntVector.size()=PyML.containers.ext.cpairdataset.IntVector-class.html#size,Method PyML.containers.ext.cpairdataset.PairDataSet.size()=PyML.containers.ext.cpairdataset.PairDataSet-class.html#size,Method PyML.containers.ext.csequencedata.DataSet.size()=PyML.containers.ext.csequencedata.DataSet-class.html#size,Method PyML.containers.ext.csequencedata.DoubleVector.size()=PyML.containers.ext.csequencedata.DoubleVector-class.html#size,Method PyML.containers.ext.csequencedata.IntVector.size()=PyML.containers.ext.csequencedata.IntVector-class.html#size,Method PyML.containers.ext.csequencedata.LongVector.size()=PyML.containers.ext.csequencedata.LongVector-class.html#size,Method PyML.containers.ext.csequencedata.SequenceData.size()=PyML.containers.ext.csequencedata.SequenceData-class.html#size,Method PyML.containers.ext.csequencedata.StringVector.size()=PyML.containers.ext.csequencedata.StringVector-class.html#size,Method PyML.containers.ext.csparsedataset.DataSet.size()=PyML.containers.ext.csparsedataset.DataSet-class.html#size,Method PyML.containers.ext.csparsedataset.DoubleVector.size()=PyML.containers.ext.csparsedataset.DoubleVector-class.html#size,Method PyML.containers.ext.csparsedataset.FloatVector.size()=PyML.containers.ext.csparsedataset.FloatVector-class.html#size,Method PyML.containers.ext.csparsedataset.IntVector.size()=PyML.containers.ext.csparsedataset.IntVector-class.html#size,Method PyML.containers.ext.csparsedataset.LongVector.size()=PyML.containers.ext.csparsedataset.LongVector-class.html#size,Method PyML.containers.ext.csparsedataset.SparseDataSet.size()=PyML.containers.ext.csparsedataset.SparseDataSet-class.html#size,Method PyML.containers.ext.csparsedataset.StringVector.size()=PyML.containers.ext.csparsedataset.StringVector-class.html#size,Method PyML.containers.ext.csparsefeaturevector.SparseFeatureVector.size()=PyML.containers.ext.csparsefeaturevector.SparseFeatureVector-class.html#size,Method PyML.containers.ext.cstringkernel.DoubleVector.size()=PyML.containers.ext.cstringkernel.DoubleVector-class.html#size,Method PyML.containers.ext.cstringkernel.IntVector.size()=PyML.containers.ext.cstringkernel.IntVector-class.html#size,Method PyML.containers.ext.cstringkernel.LongVector.size()=PyML.containers.ext.cstringkernel.LongVector-class.html#size,Method PyML.containers.ext.cstringkernel.StringVector.size()=PyML.containers.ext.cstringkernel.StringVector-class.html#size,Method PyML.containers.ext.cvectordataset.DataSet.size()=PyML.containers.ext.cvectordataset.DataSet-class.html#size,Method PyML.containers.ext.cvectordataset.DoubleVector.size()=PyML.containers.ext.cvectordataset.DoubleVector-class.html#size,Method PyML.containers.ext.cvectordataset.IntVector.size()=PyML.containers.ext.cvectordataset.IntVector-class.html#size,Method PyML.containers.ext.cvectordataset.LongVector.size()=PyML.containers.ext.cvectordataset.LongVector-class.html#size,Method PyML.containers.ext.cvectordataset.StringVector.size()=PyML.containers.ext.cvectordataset.StringVector-class.html#size,Method PyML.containers.ext.cvectordataset.VectorDataSet.size()=PyML.containers.ext.cvectordataset.VectorDataSet-class.html#size"><a title="PyML.classifiers.ext.cgist.DoubleVector.size
+PyML.classifiers.ext.cgist.IntVector.size
+PyML.classifiers.ext.csmo.DoubleVector.size
+PyML.classifiers.ext.csmo.IntVector.size
+PyML.classifiers.ext.csvmodel.DoubleVector.size
+PyML.classifiers.ext.csvmodel.IntVector.size
+PyML.classifiers.ext.knn.DoubleVector.size
+PyML.classifiers.ext.knn.IntVector.size
+PyML.containers.ext.caggregate.Aggregate.size
+PyML.containers.ext.caggregate.DataSet.size
+PyML.containers.ext.caggregate.DoubleVector.size
+PyML.containers.ext.caggregate.IntVector.size
+PyML.containers.ext.ckernel.DoubleVector.size
+PyML.containers.ext.ckernel.FloatVector.size
+PyML.containers.ext.ckernel.IntVector.size
+PyML.containers.ext.ckernel.KernelMatrix.size
+PyML.containers.ext.ckerneldata.DataSet.size
+PyML.containers.ext.ckerneldata.DoubleVector.size
+PyML.containers.ext.ckerneldata.FloatVector.size
+PyML.containers.ext.ckerneldata.IntVector.size
+PyML.containers.ext.ckerneldata.KernelData.size
+PyML.containers.ext.cpairdataset.DataSet.size
+PyML.containers.ext.cpairdataset.DoubleVector.size
+PyML.containers.ext.cpairdataset.IntVector.size
+PyML.containers.ext.cpairdataset.PairDataSet.size
+PyML.containers.ext.csequencedata.DataSet.size
+PyML.containers.ext.csequencedata.DoubleVector.size
+PyML.containers.ext.csequencedata.IntVector.size
+PyML.containers.ext.csequencedata.LongVector.size
+PyML.containers.ext.csequencedata.SequenceData.size
+PyML.containers.ext.csequencedata.StringVector.size
+PyML.containers.ext.csparsedataset.DataSet.size
+PyML.containers.ext.csparsedataset.DoubleVector.size
+PyML.containers.ext.csparsedataset.FloatVector.size
+PyML.containers.ext.csparsedataset.IntVector.size
+PyML.containers.ext.csparsedataset.LongVector.size
+PyML.containers.ext.csparsedataset.SparseDataSet.size
+PyML.containers.ext.csparsedataset.StringVector.size
+PyML.containers.ext.csparsefeaturevector.SparseFeatureVector.size
+PyML.containers.ext.cstringkernel.DoubleVector.size
+PyML.containers.ext.cstringkernel.IntVector.size
+PyML.containers.ext.cstringkernel.LongVector.size
+PyML.containers.ext.cstringkernel.StringVector.size
+PyML.containers.ext.cvectordataset.DataSet.size
+PyML.containers.ext.cvectordataset.DoubleVector.size
+PyML.containers.ext.cvectordataset.IntVector.size
+PyML.containers.ext.cvectordataset.LongVector.size
+PyML.containers.ext.cvectordataset.StringVector.size
+PyML.containers.ext.cvectordataset.VectorDataSet.size" class="py-name" href="#" onclick="return doclink('link-69', 'size', 'link-69');">size</a></tt> <tt class="py-op">:</tt> </tt>
+<a name="L333"></a><tt class="py-lineno">333</tt>  <tt class="py-line">            <tt class="py-name">patterns</tt><tt class="py-op">.</tt><tt id="link-70" class="py-name"><a title="PyML.classifiers.ext.cgist.DoubleVector.append
+PyML.classifiers.ext.cgist.IntVector.append
+PyML.classifiers.ext.csmo.DoubleVector.append
+PyML.classifiers.ext.csmo.IntVector.append
+PyML.classifiers.ext.csvmodel.DoubleVector.append
+PyML.classifiers.ext.csvmodel.IntVector.append
+PyML.classifiers.ext.knn.DoubleVector.append
+PyML.classifiers.ext.knn.IntVector.append
+PyML.containers.ext.caggregate.DoubleVector.append
+PyML.containers.ext.caggregate.IntVector.append
+PyML.containers.ext.ckernel.DoubleVector.append
+PyML.containers.ext.ckernel.FloatVector.append
+PyML.containers.ext.ckernel.IntVector.append
+PyML.containers.ext.ckerneldata.DoubleVector.append
+PyML.containers.ext.ckerneldata.FloatVector.append
+PyML.containers.ext.ckerneldata.IntVector.append
+PyML.containers.ext.cpairdataset.DoubleVector.append
+PyML.containers.ext.cpairdataset.IntVector.append
+PyML.containers.ext.csequencedata.DoubleVector.append
+PyML.containers.ext.csequencedata.IntVector.append
+PyML.containers.ext.csequencedata.LongVector.append
+PyML.containers.ext.csequencedata.StringVector.append
+PyML.containers.ext.csparsedataset.DoubleVector.append
+PyML.containers.ext.csparsedataset.FloatVector.append
+PyML.containers.ext.csparsedataset.IntVector.append
+PyML.containers.ext.csparsedataset.LongVector.append
+PyML.containers.ext.csparsedataset.StringVector.append
+PyML.containers.ext.cstringkernel.DoubleVector.append
+PyML.containers.ext.cstringkernel.IntVector.append
+PyML.containers.ext.cstringkernel.LongVector.append
+PyML.containers.ext.cstringkernel.StringVector.append
+PyML.containers.ext.cvectordataset.DoubleVector.append
+PyML.containers.ext.cvectordataset.IntVector.append
+PyML.containers.ext.cvectordataset.LongVector.append
+PyML.containers.ext.cvectordataset.StringVector.append" class="py-name" href="#" onclick="return doclink('link-70', 'append', 'link-18');">append</a></tt><tt class="py-op">(</tt><tt class="py-name">i</tt><tt class="py-op">)</tt> </tt>
+<a name="L334"></a><tt class="py-lineno">334</tt>  <tt class="py-line"> </tt>
+<a name="L335"></a><tt class="py-lineno">335</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt id="link-71" class="py-name" targets="Variable PyML.demo.demo.d=PyML.demo.demo-module.html#d"><a title="PyML.demo.demo.d" class="py-name" href="#" onclick="return doclink('link-71', 'd', 'link-71');">d</a></tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">(</tt><tt id="link-72" class="py-name"><a title="PyML.demo.demo.d" class="py-name" href="#" onclick="return doclink('link-72', 'd', 'link-71');">d</a></tt><tt class="py-op">,</tt> <tt class="py-name">patterns</tt> <tt class="py-op">=</tt> <tt class="py-name">patterns</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L336"></a><tt class="py-lineno">336</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pyml.sourceforge.net">PyML</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Fri May  2 12:39:33 2008
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

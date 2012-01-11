@@ -1,0 +1,1536 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>PyML.classifiers.composite</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pyml.sourceforge.net">PyML</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;PyML ::
+        <a href="PyML.classifiers-module.html">Package&nbsp;classifiers</a> ::
+        Module&nbsp;composite
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="PyML.classifiers.composite-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="PyML.classifiers.composite-module.html">Module PyML.classifiers.composite</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno">  1</tt>  <tt class="py-line"> </tt>
+<a name="L2"></a><tt class="py-lineno">  2</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">numpy</tt> </tt>
+<a name="L3"></a><tt class="py-lineno">  3</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">math</tt> </tt>
+<a name="L4"></a><tt class="py-lineno">  4</tt>  <tt class="py-line"> </tt>
+<a name="L5"></a><tt class="py-lineno">  5</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">PyML</tt><tt class="py-op">.</tt><tt class="py-name">utils</tt> <tt class="py-keyword">import</tt> <tt class="py-name">misc</tt> </tt>
+<a name="L6"></a><tt class="py-lineno">  6</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">PyML</tt><tt class="py-op">.</tt><tt id="link-0" class="py-name" targets="Package PyML.datagen=PyML.datagen-module.html"><a title="PyML.datagen" class="py-name" href="#" onclick="return doclink('link-0', 'datagen', 'link-0');">datagen</a></tt> <tt class="py-keyword">import</tt> <tt id="link-1" class="py-name" targets="Module PyML.datagen.sample=PyML.datagen.sample-module.html,Function PyML.datagen.sample.sample()=PyML.datagen.sample-module.html#sample"><a title="PyML.datagen.sample
+PyML.datagen.sample.sample" class="py-name" href="#" onclick="return doclink('link-1', 'sample', 'link-1');">sample</a></tt> </tt>
+<a name="L7"></a><tt class="py-lineno">  7</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">PyML</tt><tt class="py-op">.</tt><tt id="link-2" class="py-name" targets="Package PyML.evaluators=PyML.evaluators-module.html"><a title="PyML.evaluators" class="py-name" href="#" onclick="return doclink('link-2', 'evaluators', 'link-2');">evaluators</a></tt> <tt class="py-keyword">import</tt> <tt id="link-3" class="py-name" targets="Module PyML.evaluators.assess=PyML.evaluators.assess-module.html"><a title="PyML.evaluators.assess" class="py-name" href="#" onclick="return doclink('link-3', 'assess', 'link-3');">assess</a></tt> </tt>
+<a name="L8"></a><tt class="py-lineno">  8</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-4" class="py-name" targets="Module PyML.classifiers.baseClassifiers=PyML.classifiers.baseClassifiers-module.html"><a title="PyML.classifiers.baseClassifiers" class="py-name" href="#" onclick="return doclink('link-4', 'baseClassifiers', 'link-4');">baseClassifiers</a></tt> <tt class="py-keyword">import</tt> <tt id="link-5" class="py-name" targets="Class PyML.classifiers.baseClassifiers.Classifier=PyML.classifiers.baseClassifiers.Classifier-class.html"><a title="PyML.classifiers.baseClassifiers.Classifier" class="py-name" href="#" onclick="return doclink('link-5', 'Classifier', 'link-5');">Classifier</a></tt><tt class="py-op">,</tt> <tt id="link-6" class="py-name" targets="Class PyML.classifiers.baseClassifiers.IteratorClassifier=PyML.classifiers.baseClassifiers.IteratorClassifier-class.html"><a title="PyML.classifiers.baseClassifiers.IteratorClassifier" class="py-name" href="#" onclick="return doclink('link-6', 'IteratorClassifier', 'link-6');">IteratorClassifier</a></tt> </tt>
+<a name="L9"></a><tt class="py-lineno">  9</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt id="link-7" class="py-name" targets="Module PyML.classifiers.svm=PyML.classifiers.svm-module.html"><a title="PyML.classifiers.svm" class="py-name" href="#" onclick="return doclink('link-7', 'svm', 'link-7');">svm</a></tt> </tt>
+<a name="L10"></a><tt class="py-lineno"> 10</tt>  <tt class="py-line"> </tt>
+<a name="L11"></a><tt class="py-lineno"> 11</tt>  <tt class="py-line"><tt class="py-name">__docformat__</tt> <tt class="py-op">=</tt> <tt class="py-string">"restructuredtext en"</tt> </tt>
+<a name="L12"></a><tt class="py-lineno"> 12</tt>  <tt class="py-line"> </tt>
+<a name="CompositeClassifier"></a><div id="CompositeClassifier-def"><a name="L13"></a><tt class="py-lineno"> 13</tt> <a class="py-toggle" href="#" id="CompositeClassifier-toggle" onclick="return toggle('CompositeClassifier');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="PyML.classifiers.composite.CompositeClassifier-class.html">CompositeClassifier</a> <tt class="py-op">(</tt><tt class="py-base-class">Classifier</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="CompositeClassifier-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="CompositeClassifier-expanded"><a name="L14"></a><tt class="py-lineno"> 14</tt>  <tt class="py-line"> </tt>
+<a name="L15"></a><tt class="py-lineno"> 15</tt>  <tt class="py-line">    <tt class="py-docstring">'''A base class for creating composite classifiers</tt> </tt>
+<a name="L16"></a><tt class="py-lineno"> 16</tt>  <tt class="py-line"><tt class="py-docstring">    </tt> </tt>
+<a name="L17"></a><tt class="py-lineno"> 17</tt>  <tt class="py-line"><tt class="py-docstring">    A composite classifier has an attribute called "classifier", and by default</tt> </tt>
+<a name="L18"></a><tt class="py-lineno"> 18</tt>  <tt class="py-line"><tt class="py-docstring">    requests are forwarded to the appropriate function of the classifier</tt> </tt>
+<a name="L19"></a><tt class="py-lineno"> 19</tt>  <tt class="py-line"><tt class="py-docstring">    (including the "test" function).</tt> </tt>
+<a name="L20"></a><tt class="py-lineno"> 20</tt>  <tt class="py-line"><tt class="py-docstring">    For logging purposes, use the log attribute of the classifier rather</tt> </tt>
+<a name="L21"></a><tt class="py-lineno"> 21</tt>  <tt class="py-line"><tt class="py-docstring">    than the composite log.</tt> </tt>
+<a name="L22"></a><tt class="py-lineno"> 22</tt>  <tt class="py-line"><tt class="py-docstring">    See for example the FeatureSelect object.'''</tt> </tt>
+<a name="L23"></a><tt class="py-lineno"> 23</tt>  <tt class="py-line"> </tt>
+<a name="L24"></a><tt class="py-lineno"> 24</tt>  <tt class="py-line">    <tt id="link-8" class="py-name" targets="Variable PyML.classifiers.baseClassifiers.Classifier.deepcopy=PyML.classifiers.baseClassifiers.Classifier-class.html#deepcopy,Variable PyML.classifiers.composite.Chain.deepcopy=PyML.classifiers.composite.Chain-class.html#deepcopy,Variable PyML.classifiers.composite.CompositeClassifier.deepcopy=PyML.classifiers.composite.CompositeClassifier-class.html#deepcopy,Variable PyML.classifiers.composite.FeatureSelect.deepcopy=PyML.classifiers.composite.FeatureSelect-class.html#deepcopy,Variable PyML.classifiers.composite.FeatureSelectAll.deepcopy=PyML.classifiers.composite.FeatureSelectAll-class.html#deepcopy"><a title="PyML.classifiers.baseClassifiers.Classifier.deepcopy
+PyML.classifiers.composite.Chain.deepcopy
+PyML.classifiers.composite.CompositeClassifier.deepcopy
+PyML.classifiers.composite.FeatureSelect.deepcopy
+PyML.classifiers.composite.FeatureSelectAll.deepcopy" class="py-name" href="#" onclick="return doclink('link-8', 'deepcopy', 'link-8');">deepcopy</a></tt> <tt class="py-op">=</tt> <tt class="py-name">True</tt> </tt>
+<a name="L25"></a><tt class="py-lineno"> 25</tt>  <tt class="py-line"> </tt>
+<a name="CompositeClassifier.__init__"></a><div id="CompositeClassifier.__init__-def"><a name="L26"></a><tt class="py-lineno"> 26</tt> <a class="py-toggle" href="#" id="CompositeClassifier.__init__-toggle" onclick="return toggle('CompositeClassifier.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.composite.CompositeClassifier-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">classifier</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-param">args</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="CompositeClassifier.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="CompositeClassifier.__init__-expanded"><a name="L27"></a><tt class="py-lineno"> 27</tt>  <tt class="py-line"> </tt>
+<a name="L28"></a><tt class="py-lineno"> 28</tt>  <tt class="py-line">        <tt id="link-9" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier" class="py-name" href="#" onclick="return doclink('link-9', 'Classifier', 'link-5');">Classifier</a></tt><tt class="py-op">.</tt><tt id="link-10" class="py-name" targets="Method PyML.classifiers.baseClassifiers.Classifier.__init__()=PyML.classifiers.baseClassifiers.Classifier-class.html#__init__,Method PyML.classifiers.composite.AggregateClassifier.__init__()=PyML.classifiers.composite.AggregateClassifier-class.html#__init__,Method PyML.classifiers.composite.Chain.__init__()=PyML.classifiers.composite.Chain-class.html#__init__,Method PyML.classifiers.composite.CompositeClassifier.__init__()=PyML.classifiers.composite.CompositeClassifier-class.html#__init__,Method PyML.classifiers.composite.FeatureSelect.__init__()=PyML.classifiers.composite.FeatureSelect-class.html#__init__,Method PyML.classifiers.composite.FeatureSelectAll.__init__()=PyML.classifiers.composite.FeatureSelectAll-class.html#__init__,Method PyML.classifiers.ext.cgist.DoubleVector.__init__()=PyML.classifiers.ext.cgist.DoubleVector-class.html#__init__,Method PyML.classifiers.ext.cgist.IntVector.__init__()=PyML.classifiers.ext.cgist.IntVector-class.html#__init__,Method PyML.classifiers.ext.cgist.PySwigIterator.__init__()=PyML.classifiers.ext.cgist.PySwigIterator-class.html#__init__,Method PyML.classifiers.ext.csmo.DoubleVector.__init__()=PyML.classifiers.ext.csmo.DoubleVector-class.html#__init__,Method PyML.classifiers.ext.csmo.IntVector.__init__()=PyML.classifiers.ext.csmo.IntVector-class.html#__init__,Method PyML.classifiers.ext.csmo.PySwigIterator.__init__()=PyML.classifiers.ext.csmo.PySwigIterator-class.html#__init__,Method PyML.classifiers.ext.csvmodel.DoubleVector.__init__()=PyML.classifiers.ext.csvmodel.DoubleVector-class.html#__init__,Method PyML.classifiers.ext.csvmodel.IntVector.__init__()=PyML.classifiers.ext.csvmodel.IntVector-class.html#__init__,Method PyML.classifiers.ext.csvmodel.LinearSVModel.__init__()=PyML.classifiers.ext.csvmodel.LinearSVModel-class.html#__init__,Method PyML.classifiers.ext.csvmodel.LinearSparseSVModel.__init__()=PyML.classifiers.ext.csvmodel.LinearSparseSVModel-class.html#__init__,Method PyML.classifiers.ext.csvmodel.PySwigIterator.__init__()=PyML.classifiers.ext.csvmodel.PySwigIterator-class.html#__init__,Method PyML.classifiers.ext.csvmodel.SVModel.__init__()=PyML.classifiers.ext.csvmodel.SVModel-class.html#__init__,Method PyML.classifiers.ext.knn.DoubleVector.__init__()=PyML.classifiers.ext.knn.DoubleVector-class.html#__init__,Method PyML.classifiers.ext.knn.IntVector.__init__()=PyML.classifiers.ext.knn.IntVector-class.html#__init__,Method PyML.classifiers.ext.knn.KNN.__init__()=PyML.classifiers.ext.knn.KNN-class.html#__init__,Method PyML.classifiers.ext.knn.PySwigIterator.__init__()=PyML.classifiers.ext.knn.PySwigIterator-class.html#__init__,Method PyML.classifiers.ext.libsvm.DecisionFunction.__init__()=PyML.classifiers.ext.libsvm.DecisionFunction-class.html#__init__,Method PyML.classifiers.ext.libsvm.PySwigIterator.__init__()=PyML.classifiers.ext.libsvm.PySwigIterator-class.html#__init__,Method PyML.classifiers.ext.libsvm.doubleArray.__init__()=PyML.classifiers.ext.libsvm.doubleArray-class.html#__init__,Method PyML.classifiers.ext.libsvm.intArray.__init__()=PyML.classifiers.ext.libsvm.intArray-class.html#__init__,Method PyML.classifiers.ext.libsvm.svm_node.__init__()=PyML.classifiers.ext.libsvm.svm_node-class.html#__init__,Method PyML.classifiers.ext.libsvm.svm_parameter.__init__()=PyML.classifiers.ext.libsvm.svm_parameter-class.html#__init__,Method PyML.classifiers.ext.libsvm.svm_problem.__init__()=PyML.classifiers.ext.libsvm.svm_problem-class.html#__init__,Method PyML.classifiers.knn.KNN.__init__()=PyML.classifiers.knn.KNN-class.html#__init__,Method PyML.classifiers.libsvmWrap.svmParameter.__init__()=PyML.classifiers.libsvmWrap.svmParameter-class.html#__init__,Method PyML.classifiers.modelSelection.ModelSelector.__init__()=PyML.classifiers.modelSelection.ModelSelector-class.html#__init__,Method PyML.classifiers.modelSelection.Param.__init__()=PyML.classifiers.modelSelection.Param-class.html#__init__,Method PyML.classifiers.modelSelection.ParamGrid.__init__()=PyML.classifiers.modelSelection.ParamGrid-class.html#__init__,Method PyML.classifiers.modelSelection.SVMselect.__init__()=PyML.classifiers.modelSelection.SVMselect-class.html#__init__,Method PyML.classifiers.ridgeRegression.RidgeRegression.__init__()=PyML.classifiers.ridgeRegression.RidgeRegression-class.html#__init__,Method PyML.classifiers.svm.LinearSVModel.__init__()=PyML.classifiers.svm.LinearSVModel-class.html#__init__,Method PyML.classifiers.svm.SVC.__init__()=PyML.classifiers.svm.SVC-class.html#__init__,Method PyML.classifiers.svm.SVM.__init__()=PyML.classifiers.svm.SVM-class.html#__init__,Method PyML.classifiers.svm.SVModel.__init__()=PyML.classifiers.svm.SVModel-class.html#__init__,Method PyML.classifiers.template.Template.__init__()=PyML.classifiers.template.Template-class.html#__init__,Method PyML.containers.aggregate.Aggregate.__init__()=PyML.containers.aggregate.Aggregate-class.html#__init__,Method PyML.containers.aggregate.DataAggregate.__init__()=PyML.containers.aggregate.DataAggregate-class.html#__init__,Method PyML.containers.baseDatasets.BaseDataSet.__init__()=PyML.containers.baseDatasets.BaseDataSet-class.html#__init__,Method PyML.containers.baseDatasets.BaseVectorDataSet.__init__()=PyML.containers.baseDatasets.BaseVectorDataSet-class.html#__init__,Method PyML.containers.ext.caggregate.Aggregate.__init__()=PyML.containers.ext.caggregate.Aggregate-class.html#__init__,Method PyML.containers.ext.caggregate.DataSet.__init__()=PyML.containers.ext.caggregate.DataSet-class.html#__init__,Method PyML.containers.ext.caggregate.DoubleVector.__init__()=PyML.containers.ext.caggregate.DoubleVector-class.html#__init__,Method PyML.containers.ext.caggregate.IntVector.__init__()=PyML.containers.ext.caggregate.IntVector-class.html#__init__,Method PyML.containers.ext.caggregate.PySwigIterator.__init__()=PyML.containers.ext.caggregate.PySwigIterator-class.html#__init__,Method PyML.containers.ext.ckernel.Cosine.__init__()=PyML.containers.ext.ckernel.Cosine-class.html#__init__,Method PyML.containers.ext.ckernel.DoubleVector.__init__()=PyML.containers.ext.ckernel.DoubleVector-class.html#__init__,Method PyML.containers.ext.ckernel.FloatVector.__init__()=PyML.containers.ext.ckernel.FloatVector-class.html#__init__,Method PyML.containers.ext.ckernel.Gaussian.__init__()=PyML.containers.ext.ckernel.Gaussian-class.html#__init__,Method PyML.containers.ext.ckernel.IntVector.__init__()=PyML.containers.ext.ckernel.IntVector-class.html#__init__,Method PyML.containers.ext.ckernel.Kernel.__init__()=PyML.containers.ext.ckernel.Kernel-class.html#__init__,Method PyML.containers.ext.ckernel.KernelMatrix.__init__()=PyML.containers.ext.ckernel.KernelMatrix-class.html#__init__,Method PyML.containers.ext.ckernel.Linear.__init__()=PyML.containers.ext.ckernel.Linear-class.html#__init__,Method PyML.containers.ext.ckernel.Polynomial.__init__()=PyML.containers.ext.ckernel.Polynomial-class.html#__init__,Method PyML.containers.ext.ckernel.PySwigIterator.__init__()=PyML.containers.ext.ckernel.PySwigIterator-class.html#__init__,Method PyML.containers.ext.ckerneldata.DataSet.__init__()=PyML.containers.ext.ckerneldata.DataSet-class.html#__init__,Method PyML.containers.ext.ckerneldata.DoubleVector.__init__()=PyML.containers.ext.ckerneldata.DoubleVector-class.html#__init__,Method PyML.containers.ext.ckerneldata.FloatVector.__init__()=PyML.containers.ext.ckerneldata.FloatVector-class.html#__init__,Method PyML.containers.ext.ckerneldata.IntVector.__init__()=PyML.containers.ext.ckerneldata.IntVector-class.html#__init__,Method PyML.containers.ext.ckerneldata.KernelData.__init__()=PyML.containers.ext.ckerneldata.KernelData-class.html#__init__,Method PyML.containers.ext.ckerneldata.PySwigIterator.__init__()=PyML.containers.ext.ckerneldata.PySwigIterator-class.html#__init__,Method PyML.containers.ext.cpairdataset.DataSet.__init__()=PyML.containers.ext.cpairdataset.DataSet-class.html#__init__,Method PyML.containers.ext.cpairdataset.DoubleVector.__init__()=PyML.containers.ext.cpairdataset.DoubleVector-class.html#__init__,Method PyML.containers.ext.cpairdataset.IntVector.__init__()=PyML.containers.ext.cpairdataset.IntVector-class.html#__init__,Method PyML.containers.ext.cpairdataset.PairDataSet.__init__()=PyML.containers.ext.cpairdataset.PairDataSet-class.html#__init__,Method PyML.containers.ext.cpairdataset.PairDataSetOrd.__init__()=PyML.containers.ext.cpairdataset.PairDataSetOrd-class.html#__init__,Method PyML.containers.ext.cpairdataset.PairDataSetSum.__init__()=PyML.containers.ext.cpairdataset.PairDataSetSum-class.html#__init__,Method PyML.containers.ext.cpairdataset.PySwigIterator.__init__()=PyML.containers.ext.cpairdataset.PySwigIterator-class.html#__init__,Method PyML.containers.ext.csequencedata.DataSet.__init__()=PyML.containers.ext.csequencedata.DataSet-class.html#__init__,Method PyML.containers.ext.csequencedata.DoubleVector.__init__()=PyML.containers.ext.csequencedata.DoubleVector-class.html#__init__,Method PyML.containers.ext.csequencedata.IntVector.__init__()=PyML.containers.ext.csequencedata.IntVector-class.html#__init__,Method PyML.containers.ext.csequencedata.LongVector.__init__()=PyML.containers.ext.csequencedata.LongVector-class.html#__init__,Method PyML.containers.ext.csequencedata.PySwigIterator.__init__()=PyML.containers.ext.csequencedata.PySwigIterator-class.html#__init__,Method PyML.containers.ext.csequencedata.SequenceData.__init__()=PyML.containers.ext.csequencedata.SequenceData-class.html#__init__,Method PyML.containers.ext.csequencedata.StringVector.__init__()=PyML.containers.ext.csequencedata.StringVector-class.html#__init__,Method PyML.containers.ext.csparsedataset.DataSet.__init__()=PyML.containers.ext.csparsedataset.DataSet-class.html#__init__,Method PyML.containers.ext.csparsedataset.DoubleVector.__init__()=PyML.containers.ext.csparsedataset.DoubleVector-class.html#__init__,Method PyML.containers.ext.csparsedataset.FloatVector.__init__()=PyML.containers.ext.csparsedataset.FloatVector-class.html#__init__,Method PyML.containers.ext.csparsedataset.IntVector.__init__()=PyML.containers.ext.csparsedataset.IntVector-class.html#__init__,Method PyML.containers.ext.csparsedataset.LongVector.__init__()=PyML.containers.ext.csparsedataset.LongVector-class.html#__init__,Method PyML.containers.ext.csparsedataset.PySwigIterator.__init__()=PyML.containers.ext.csparsedataset.PySwigIterator-class.html#__init__,Method PyML.containers.ext.csparsedataset.SparseDataSet.__init__()=PyML.containers.ext.csparsedataset.SparseDataSet-class.html#__init__,Method PyML.containers.ext.csparsedataset.StringVector.__init__()=PyML.containers.ext.csparsedataset.StringVector-class.html#__init__,Method PyML.containers.ext.csparsedataset.doubleArray.__init__()=PyML.containers.ext.csparsedataset.doubleArray-class.html#__init__,Method PyML.containers.ext.csparsedataset.intArray.__init__()=PyML.containers.ext.csparsedataset.intArray-class.html#__init__,Method PyML.containers.ext.csparsefeaturevector.Feature.__init__()=PyML.containers.ext.csparsefeaturevector.Feature-class.html#__init__,Method PyML.containers.ext.csparsefeaturevector.SparseFeatureVector.__init__()=PyML.containers.ext.csparsefeaturevector.SparseFeatureVector-class.html#__init__,Method PyML.containers.ext.cstringkernel.DoubleVector.__init__()=PyML.containers.ext.cstringkernel.DoubleVector-class.html#__init__,Method PyML.containers.ext.cstringkernel.IntVector.__init__()=PyML.containers.ext.cstringkernel.IntVector-class.html#__init__,Method PyML.containers.ext.cstringkernel.LongVector.__init__()=PyML.containers.ext.cstringkernel.LongVector-class.html#__init__,Method PyML.containers.ext.cstringkernel.PositionalKmer.__init__()=PyML.containers.ext.cstringkernel.PositionalKmer-class.html#__init__,Method PyML.containers.ext.cstringkernel.PySwigIterator.__init__()=PyML.containers.ext.cstringkernel.PySwigIterator-class.html#__init__,Method PyML.containers.ext.cstringkernel.StringKernel.__init__()=PyML.containers.ext.cstringkernel.StringKernel-class.html#__init__,Method PyML.containers.ext.cstringkernel.StringVector.__init__()=PyML.containers.ext.cstringkernel.StringVector-class.html#__init__,Method PyML.containers.ext.cvectordataset.DataSet.__init__()=PyML.containers.ext.cvectordataset.DataSet-class.html#__init__,Method PyML.containers.ext.cvectordataset.DoubleVector.__init__()=PyML.containers.ext.cvectordataset.DoubleVector-class.html#__init__,Method PyML.containers.ext.cvectordataset.IntVector.__init__()=PyML.containers.ext.cvectordataset.IntVector-class.html#__init__,Method PyML.containers.ext.cvectordataset.LongVector.__init__()=PyML.containers.ext.cvectordataset.LongVector-class.html#__init__,Method PyML.containers.ext.cvectordataset.PySwigIterator.__init__()=PyML.containers.ext.cvectordataset.PySwigIterator-class.html#__init__,Method PyML.containers.ext.cvectordataset.StringVector.__init__()=PyML.containers.ext.cvectordataset.StringVector-class.html#__init__,Method PyML.containers.ext.cvectordataset.VectorDataSet.__init__()=PyML.containers.ext.cvectordataset.VectorDataSet-class.html#__init__,Method PyML.containers.ker.Cosine.__init__()=PyML.containers.ker.Cosine-class.html#__init__,Method PyML.containers.ker.Gaussian.__init__()=PyML.containers.ker.Gaussian-class.html#__init__,Method PyML.containers.ker.Linear.__init__()=PyML.containers.ker.Linear-class.html#__init__,Method PyML.containers.ker.Polynomial.__init__()=PyML.containers.ker.Polynomial-class.html#__init__,Method PyML.containers.kernelData.KernelData.__init__()=PyML.containers.kernelData.KernelData-class.html#__init__,Method PyML.containers.labels.Labels.__init__()=PyML.containers.labels.Labels-class.html#__init__,Method PyML.containers.pairData.PairDataSet.__init__()=PyML.containers.pairData.PairDataSet-class.html#__init__,Method PyML.containers.pairData.PairDataSetOrd.__init__()=PyML.containers.pairData.PairDataSetOrd-class.html#__init__,Method PyML.containers.pairData.PairDataSetSum.__init__()=PyML.containers.pairData.PairDataSetSum-class.html#__init__,Method PyML.containers.pairData.SimplePairDataSet.__init__()=PyML.containers.pairData.SimplePairDataSet-class.html#__init__,Method PyML.containers.parsers.CSVParser.__init__()=PyML.containers.parsers.CSVParser-class.html#__init__,Method PyML.containers.parsers.Parser.__init__()=PyML.containers.parsers.Parser-class.html#__init__,Method PyML.containers.parsers.SparseParser.__init__()=PyML.containers.parsers.SparseParser-class.html#__init__,Method PyML.containers.sequenceData.SequenceData.__init__()=PyML.containers.sequenceData.SequenceData-class.html#__init__,Method PyML.containers.vectorDatasets.BaseCVectorDataSet.__init__()=PyML.containers.vectorDatasets.BaseCVectorDataSet-class.html#__init__,Method PyML.containers.vectorDatasets.SparseDataSet.__init__()=PyML.containers.vectorDatasets.SparseDataSet-class.html#__init__,Method PyML.containers.vectorDatasets.VectorDataSet.__init__()=PyML.containers.vectorDatasets.VectorDataSet-class.html#__init__,Method PyML.evaluators.assess.ClassificationResults.__init__()=PyML.evaluators.assess.ClassificationResults-class.html#__init__,Method PyML.evaluators.assess.ClassificationResultsContainer.__init__()=PyML.evaluators.assess.ClassificationResultsContainer-class.html#__init__,Method PyML.evaluators.assess.RegressionResults.__init__()=PyML.evaluators.assess.RegressionResults-class.html#__init__,Method PyML.evaluators.assess.RegressionResultsContainer.__init__()=PyML.evaluators.assess.RegressionResultsContainer-class.html#__init__,Method PyML.evaluators.assess.Results.__init__()=PyML.evaluators.assess.Results-class.html#__init__,Method PyML.evaluators.assess.ResultsList.__init__()=PyML.evaluators.assess.ResultsList-class.html#__init__,Method PyML.feature_selection.featsel.BackwardSelector.__init__()=PyML.feature_selection.featsel.BackwardSelector-class.html#__init__,Method PyML.feature_selection.featsel.FeatureScore.__init__()=PyML.feature_selection.featsel.FeatureScore-class.html#__init__,Method PyML.feature_selection.featsel.Filter.__init__()=PyML.feature_selection.featsel.Filter-class.html#__init__,Method PyML.feature_selection.featsel.MultiplicativeUpdate.__init__()=PyML.feature_selection.featsel.MultiplicativeUpdate-class.html#__init__,Method PyML.feature_selection.featsel.OneAgainstRestSelect.__init__()=PyML.feature_selection.featsel.OneAgainstRestSelect-class.html#__init__,Method PyML.feature_selection.featsel.RFE.__init__()=PyML.feature_selection.featsel.RFE-class.html#__init__,Method PyML.feature_selection.featsel.Random.__init__()=PyML.feature_selection.featsel.Random-class.html#__init__,Method PyML.preproc.preproc.Correlator.__init__()=PyML.preproc.preproc.Correlator-class.html#__init__,Method PyML.preproc.preproc.Standardizer.__init__()=PyML.preproc.preproc.Standardizer-class.html#__init__"><a title="PyML.classifiers.baseClassifiers.Classifier.__init__
+PyML.classifiers.composite.AggregateClassifier.__init__
+PyML.classifiers.composite.Chain.__init__
+PyML.classifiers.composite.CompositeClassifier.__init__
+PyML.classifiers.composite.FeatureSelect.__init__
+PyML.classifiers.composite.FeatureSelectAll.__init__
+PyML.classifiers.ext.cgist.DoubleVector.__init__
+PyML.classifiers.ext.cgist.IntVector.__init__
+PyML.classifiers.ext.cgist.PySwigIterator.__init__
+PyML.classifiers.ext.csmo.DoubleVector.__init__
+PyML.classifiers.ext.csmo.IntVector.__init__
+PyML.classifiers.ext.csmo.PySwigIterator.__init__
+PyML.classifiers.ext.csvmodel.DoubleVector.__init__
+PyML.classifiers.ext.csvmodel.IntVector.__init__
+PyML.classifiers.ext.csvmodel.LinearSVModel.__init__
+PyML.classifiers.ext.csvmodel.LinearSparseSVModel.__init__
+PyML.classifiers.ext.csvmodel.PySwigIterator.__init__
+PyML.classifiers.ext.csvmodel.SVModel.__init__
+PyML.classifiers.ext.knn.DoubleVector.__init__
+PyML.classifiers.ext.knn.IntVector.__init__
+PyML.classifiers.ext.knn.KNN.__init__
+PyML.classifiers.ext.knn.PySwigIterator.__init__
+PyML.classifiers.ext.libsvm.DecisionFunction.__init__
+PyML.classifiers.ext.libsvm.PySwigIterator.__init__
+PyML.classifiers.ext.libsvm.doubleArray.__init__
+PyML.classifiers.ext.libsvm.intArray.__init__
+PyML.classifiers.ext.libsvm.svm_node.__init__
+PyML.classifiers.ext.libsvm.svm_parameter.__init__
+PyML.classifiers.ext.libsvm.svm_problem.__init__
+PyML.classifiers.knn.KNN.__init__
+PyML.classifiers.libsvmWrap.svmParameter.__init__
+PyML.classifiers.modelSelection.ModelSelector.__init__
+PyML.classifiers.modelSelection.Param.__init__
+PyML.classifiers.modelSelection.ParamGrid.__init__
+PyML.classifiers.modelSelection.SVMselect.__init__
+PyML.classifiers.ridgeRegression.RidgeRegression.__init__
+PyML.classifiers.svm.LinearSVModel.__init__
+PyML.classifiers.svm.SVC.__init__
+PyML.classifiers.svm.SVM.__init__
+PyML.classifiers.svm.SVModel.__init__
+PyML.classifiers.template.Template.__init__
+PyML.containers.aggregate.Aggregate.__init__
+PyML.containers.aggregate.DataAggregate.__init__
+PyML.containers.baseDatasets.BaseDataSet.__init__
+PyML.containers.baseDatasets.BaseVectorDataSet.__init__
+PyML.containers.ext.caggregate.Aggregate.__init__
+PyML.containers.ext.caggregate.DataSet.__init__
+PyML.containers.ext.caggregate.DoubleVector.__init__
+PyML.containers.ext.caggregate.IntVector.__init__
+PyML.containers.ext.caggregate.PySwigIterator.__init__
+PyML.containers.ext.ckernel.Cosine.__init__
+PyML.containers.ext.ckernel.DoubleVector.__init__
+PyML.containers.ext.ckernel.FloatVector.__init__
+PyML.containers.ext.ckernel.Gaussian.__init__
+PyML.containers.ext.ckernel.IntVector.__init__
+PyML.containers.ext.ckernel.Kernel.__init__
+PyML.containers.ext.ckernel.KernelMatrix.__init__
+PyML.containers.ext.ckernel.Linear.__init__
+PyML.containers.ext.ckernel.Polynomial.__init__
+PyML.containers.ext.ckernel.PySwigIterator.__init__
+PyML.containers.ext.ckerneldata.DataSet.__init__
+PyML.containers.ext.ckerneldata.DoubleVector.__init__
+PyML.containers.ext.ckerneldata.FloatVector.__init__
+PyML.containers.ext.ckerneldata.IntVector.__init__
+PyML.containers.ext.ckerneldata.KernelData.__init__
+PyML.containers.ext.ckerneldata.PySwigIterator.__init__
+PyML.containers.ext.cpairdataset.DataSet.__init__
+PyML.containers.ext.cpairdataset.DoubleVector.__init__
+PyML.containers.ext.cpairdataset.IntVector.__init__
+PyML.containers.ext.cpairdataset.PairDataSet.__init__
+PyML.containers.ext.cpairdataset.PairDataSetOrd.__init__
+PyML.containers.ext.cpairdataset.PairDataSetSum.__init__
+PyML.containers.ext.cpairdataset.PySwigIterator.__init__
+PyML.containers.ext.csequencedata.DataSet.__init__
+PyML.containers.ext.csequencedata.DoubleVector.__init__
+PyML.containers.ext.csequencedata.IntVector.__init__
+PyML.containers.ext.csequencedata.LongVector.__init__
+PyML.containers.ext.csequencedata.PySwigIterator.__init__
+PyML.containers.ext.csequencedata.SequenceData.__init__
+PyML.containers.ext.csequencedata.StringVector.__init__
+PyML.containers.ext.csparsedataset.DataSet.__init__
+PyML.containers.ext.csparsedataset.DoubleVector.__init__
+PyML.containers.ext.csparsedataset.FloatVector.__init__
+PyML.containers.ext.csparsedataset.IntVector.__init__
+PyML.containers.ext.csparsedataset.LongVector.__init__
+PyML.containers.ext.csparsedataset.PySwigIterator.__init__
+PyML.containers.ext.csparsedataset.SparseDataSet.__init__
+PyML.containers.ext.csparsedataset.StringVector.__init__
+PyML.containers.ext.csparsedataset.doubleArray.__init__
+PyML.containers.ext.csparsedataset.intArray.__init__
+PyML.containers.ext.csparsefeaturevector.Feature.__init__
+PyML.containers.ext.csparsefeaturevector.SparseFeatureVector.__init__
+PyML.containers.ext.cstringkernel.DoubleVector.__init__
+PyML.containers.ext.cstringkernel.IntVector.__init__
+PyML.containers.ext.cstringkernel.LongVector.__init__
+PyML.containers.ext.cstringkernel.PositionalKmer.__init__
+PyML.containers.ext.cstringkernel.PySwigIterator.__init__
+PyML.containers.ext.cstringkernel.StringKernel.__init__
+PyML.containers.ext.cstringkernel.StringVector.__init__
+PyML.containers.ext.cvectordataset.DataSet.__init__
+PyML.containers.ext.cvectordataset.DoubleVector.__init__
+PyML.containers.ext.cvectordataset.IntVector.__init__
+PyML.containers.ext.cvectordataset.LongVector.__init__
+PyML.containers.ext.cvectordataset.PySwigIterator.__init__
+PyML.containers.ext.cvectordataset.StringVector.__init__
+PyML.containers.ext.cvectordataset.VectorDataSet.__init__
+PyML.containers.ker.Cosine.__init__
+PyML.containers.ker.Gaussian.__init__
+PyML.containers.ker.Linear.__init__
+PyML.containers.ker.Polynomial.__init__
+PyML.containers.kernelData.KernelData.__init__
+PyML.containers.labels.Labels.__init__
+PyML.containers.pairData.PairDataSet.__init__
+PyML.containers.pairData.PairDataSetOrd.__init__
+PyML.containers.pairData.PairDataSetSum.__init__
+PyML.containers.pairData.SimplePairDataSet.__init__
+PyML.containers.parsers.CSVParser.__init__
+PyML.containers.parsers.Parser.__init__
+PyML.containers.parsers.SparseParser.__init__
+PyML.containers.sequenceData.SequenceData.__init__
+PyML.containers.vectorDatasets.BaseCVectorDataSet.__init__
+PyML.containers.vectorDatasets.SparseDataSet.__init__
+PyML.containers.vectorDatasets.VectorDataSet.__init__
+PyML.evaluators.assess.ClassificationResults.__init__
+PyML.evaluators.assess.ClassificationResultsContainer.__init__
+PyML.evaluators.assess.RegressionResults.__init__
+PyML.evaluators.assess.RegressionResultsContainer.__init__
+PyML.evaluators.assess.Results.__init__
+PyML.evaluators.assess.ResultsList.__init__
+PyML.feature_selection.featsel.BackwardSelector.__init__
+PyML.feature_selection.featsel.FeatureScore.__init__
+PyML.feature_selection.featsel.Filter.__init__
+PyML.feature_selection.featsel.MultiplicativeUpdate.__init__
+PyML.feature_selection.featsel.OneAgainstRestSelect.__init__
+PyML.feature_selection.featsel.RFE.__init__
+PyML.feature_selection.featsel.Random.__init__
+PyML.preproc.preproc.Correlator.__init__
+PyML.preproc.preproc.Standardizer.__init__" class="py-name" href="#" onclick="return doclink('link-10', '__init__', 'link-10');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">classifier</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-name">args</tt><tt class="py-op">)</tt> </tt>
+<a name="L29"></a><tt class="py-lineno"> 29</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt id="link-11" class="py-name" targets="Variable PyML.classifiers.baseClassifiers.Classifier.type=PyML.classifiers.baseClassifiers.Classifier-class.html#type,Variable PyML.containers.baseDatasets.BaseDataSet.type=PyML.containers.baseDatasets.BaseDataSet-class.html#type,Variable PyML.containers.ker.Kernel.type=PyML.containers.ker.Kernel-class.html#type,Variable PyML.feature_selection.featsel.FeatureScorer.type=PyML.feature_selection.featsel.FeatureScorer-class.html#type,Variable PyML.feature_selection.featsel.FeatureSelector.type=PyML.feature_selection.featsel.FeatureSelector-class.html#type"><a title="PyML.classifiers.baseClassifiers.Classifier.type
+PyML.containers.baseDatasets.BaseDataSet.type
+PyML.containers.ker.Kernel.type
+PyML.feature_selection.featsel.FeatureScorer.type
+PyML.feature_selection.featsel.FeatureSelector.type" class="py-name" href="#" onclick="return doclink('link-11', 'type', 'link-11');">type</a></tt><tt class="py-op">(</tt><tt class="py-name">classifier</tt><tt class="py-op">)</tt> <tt class="py-op">==</tt> <tt id="link-12" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.type
+PyML.containers.baseDatasets.BaseDataSet.type
+PyML.containers.ker.Kernel.type
+PyML.feature_selection.featsel.FeatureScorer.type
+PyML.feature_selection.featsel.FeatureSelector.type" class="py-name" href="#" onclick="return doclink('link-12', 'type', 'link-11');">type</a></tt><tt class="py-op">(</tt><tt class="py-string">''</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> <tt class="py-keyword">return</tt> </tt>
+<a name="L30"></a><tt class="py-lineno"> 30</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-op">(</tt><tt class="py-keyword">not</tt> <tt class="py-name">hasattr</tt><tt class="py-op">(</tt><tt class="py-name">classifier</tt><tt class="py-op">,</tt> <tt class="py-string">'type'</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> <tt class="py-keyword">or</tt> <tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt id="link-13" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.type
+PyML.containers.baseDatasets.BaseDataSet.type
+PyML.containers.ker.Kernel.type
+PyML.feature_selection.featsel.FeatureScorer.type
+PyML.feature_selection.featsel.FeatureSelector.type" class="py-name" href="#" onclick="return doclink('link-13', 'type', 'link-11');">type</a></tt> <tt class="py-op">!=</tt> <tt class="py-string">'classifier'</tt> <tt class="py-op">:</tt> </tt>
+<a name="L31"></a><tt class="py-lineno"> 31</tt>  <tt class="py-line">            <tt class="py-keyword">raise</tt> <tt class="py-name">ValueError</tt><tt class="py-op">,</tt> <tt class="py-string">'argument should be a classifier'</tt> </tt>
+<a name="L32"></a><tt class="py-lineno"> 32</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt> <tt class="py-op">==</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt> <tt class="py-op">:</tt> </tt>
+<a name="L33"></a><tt class="py-lineno"> 33</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt> <tt class="py-op">=</tt> <tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">(</tt> </tt>
+<a name="L34"></a><tt class="py-lineno"> 34</tt>  <tt class="py-line">                <tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">)</tt> </tt>
+<a name="L35"></a><tt class="py-lineno"> 35</tt>  <tt class="py-line">        <tt class="py-keyword">else</tt> <tt class="py-op">:</tt> </tt>
+<a name="L36"></a><tt class="py-lineno"> 36</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt> <tt class="py-op">=</tt> <tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">(</tt><tt class="py-name">classifier</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L37"></a><tt class="py-lineno"> 37</tt>  <tt class="py-line">          </tt>
+<a name="CompositeClassifier.__repr__"></a><div id="CompositeClassifier.__repr__-def"><a name="L38"></a><tt class="py-lineno"> 38</tt> <a class="py-toggle" href="#" id="CompositeClassifier.__repr__-toggle" onclick="return toggle('CompositeClassifier.__repr__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.composite.CompositeClassifier-class.html#__repr__">__repr__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="CompositeClassifier.__repr__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="CompositeClassifier.__repr__-expanded"><a name="L39"></a><tt class="py-lineno"> 39</tt>  <tt class="py-line">        <tt class="py-name">rep</tt> <tt class="py-op">=</tt> <tt class="py-string">'&lt;'</tt> <tt class="py-op">+</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">.</tt><tt class="py-name">__name__</tt> <tt class="py-op">+</tt> <tt class="py-string">' instance&gt;\n'</tt> </tt>
+<a name="L40"></a><tt class="py-lineno"> 40</tt>  <tt class="py-line">        <tt class="py-name">rep</tt> <tt class="py-op">+=</tt> <tt class="py-string">'Classifier:\n'</tt> </tt>
+<a name="L41"></a><tt class="py-lineno"> 41</tt>  <tt class="py-line">        <tt class="py-name">rep</tt> <tt class="py-op">+=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt id="link-14" class="py-name" targets="Method PyML.classifiers.baseClassifiers.Classifier.__repr__()=PyML.classifiers.baseClassifiers.Classifier-class.html#__repr__,Method PyML.classifiers.composite.CompositeClassifier.__repr__()=PyML.classifiers.composite.CompositeClassifier-class.html#__repr__,Method PyML.classifiers.composite.FeatureSelect.__repr__()=PyML.classifiers.composite.FeatureSelect-class.html#__repr__,Method PyML.classifiers.knn.KNN.__repr__()=PyML.classifiers.knn.KNN-class.html#__repr__,Method PyML.classifiers.modelSelection.ModelSelector.__repr__()=PyML.classifiers.modelSelection.ModelSelector-class.html#__repr__,Method PyML.classifiers.modelSelection.Param.__repr__()=PyML.classifiers.modelSelection.Param-class.html#__repr__,Method PyML.classifiers.modelSelection.ParamGrid.__repr__()=PyML.classifiers.modelSelection.ParamGrid-class.html#__repr__,Method PyML.classifiers.modelSelection.SVMselect.__repr__()=PyML.classifiers.modelSelection.SVMselect-class.html#__repr__,Method PyML.classifiers.ridgeRegression.RidgeRegression.__repr__()=PyML.classifiers.ridgeRegression.RidgeRegression-class.html#__repr__,Method PyML.classifiers.svm.LinearSVModel.__repr__()=PyML.classifiers.svm.LinearSVModel-class.html#__repr__,Method PyML.classifiers.svm.OneClassSVM.__repr__()=PyML.classifiers.svm.OneClassSVM-class.html#__repr__,Method PyML.classifiers.svm.SVM.__repr__()=PyML.classifiers.svm.SVM-class.html#__repr__,Method PyML.classifiers.svm.SVModel.__repr__()=PyML.classifiers.svm.SVModel-class.html#__repr__,Method PyML.classifiers.svm.SVR.__repr__()=PyML.classifiers.svm.SVR-class.html#__repr__,Method PyML.containers.aggregate.DataAggregate.__repr__()=PyML.containers.aggregate.DataAggregate-class.html#__repr__,Method PyML.containers.baseDatasets.BaseVectorDataSet.__repr__()=PyML.containers.baseDatasets.BaseVectorDataSet-class.html#__repr__,Method PyML.containers.ker.Gaussian.__repr__()=PyML.containers.ker.Gaussian-class.html#__repr__,Method PyML.containers.ker.Kernel.__repr__()=PyML.containers.ker.Kernel-class.html#__repr__,Method PyML.containers.ker.Polynomial.__repr__()=PyML.containers.ker.Polynomial-class.html#__repr__,Method PyML.containers.labels.Labels.__repr__()=PyML.containers.labels.Labels-class.html#__repr__,Method PyML.evaluators.assess.ClassificationFunctions.__repr__()=PyML.evaluators.assess.ClassificationFunctions-class.html#__repr__,Method PyML.evaluators.assess.ClassificationResults.__repr__()=PyML.evaluators.assess.ClassificationResults-class.html#__repr__,Method PyML.evaluators.assess.RegressionResults.__repr__()=PyML.evaluators.assess.RegressionResults-class.html#__repr__,Method PyML.evaluators.assess.ResultsList.__repr__()=PyML.evaluators.assess.ResultsList-class.html#__repr__,Method PyML.feature_selection.featsel.FeatureScore.__repr__()=PyML.feature_selection.featsel.FeatureScore-class.html#__repr__,Method PyML.feature_selection.featsel.Filter.__repr__()=PyML.feature_selection.featsel.Filter-class.html#__repr__,Method PyML.feature_selection.featsel.MultiplicativeUpdate.__repr__()=PyML.feature_selection.featsel.MultiplicativeUpdate-class.html#__repr__,Method PyML.feature_selection.featsel.RFE.__repr__()=PyML.feature_selection.featsel.RFE-class.html#__repr__,Method PyML.feature_selection.featsel.Random.__repr__()=PyML.feature_selection.featsel.Random-class.html#__repr__"><a title="PyML.classifiers.baseClassifiers.Classifier.__repr__
+PyML.classifiers.composite.CompositeClassifier.__repr__
+PyML.classifiers.composite.FeatureSelect.__repr__
+PyML.classifiers.knn.KNN.__repr__
+PyML.classifiers.modelSelection.ModelSelector.__repr__
+PyML.classifiers.modelSelection.Param.__repr__
+PyML.classifiers.modelSelection.ParamGrid.__repr__
+PyML.classifiers.modelSelection.SVMselect.__repr__
+PyML.classifiers.ridgeRegression.RidgeRegression.__repr__
+PyML.classifiers.svm.LinearSVModel.__repr__
+PyML.classifiers.svm.OneClassSVM.__repr__
+PyML.classifiers.svm.SVM.__repr__
+PyML.classifiers.svm.SVModel.__repr__
+PyML.classifiers.svm.SVR.__repr__
+PyML.containers.aggregate.DataAggregate.__repr__
+PyML.containers.baseDatasets.BaseVectorDataSet.__repr__
+PyML.containers.ker.Gaussian.__repr__
+PyML.containers.ker.Kernel.__repr__
+PyML.containers.ker.Polynomial.__repr__
+PyML.containers.labels.Labels.__repr__
+PyML.evaluators.assess.ClassificationFunctions.__repr__
+PyML.evaluators.assess.ClassificationResults.__repr__
+PyML.evaluators.assess.RegressionResults.__repr__
+PyML.evaluators.assess.ResultsList.__repr__
+PyML.feature_selection.featsel.FeatureScore.__repr__
+PyML.feature_selection.featsel.Filter.__repr__
+PyML.feature_selection.featsel.MultiplicativeUpdate.__repr__
+PyML.feature_selection.featsel.RFE.__repr__
+PyML.feature_selection.featsel.Random.__repr__" class="py-name" href="#" onclick="return doclink('link-14', '__repr__', 'link-14');">__repr__</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L42"></a><tt class="py-lineno"> 42</tt>  <tt class="py-line">         </tt>
+<a name="L43"></a><tt class="py-lineno"> 43</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">rep</tt> </tt>
+</div><a name="L44"></a><tt class="py-lineno"> 44</tt>  <tt class="py-line"> </tt>
+<a name="CompositeClassifier.preproject"></a><div id="CompositeClassifier.preproject-def"><a name="L45"></a><tt class="py-lineno"> 45</tt> <a class="py-toggle" href="#" id="CompositeClassifier.preproject-toggle" onclick="return toggle('CompositeClassifier.preproject');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.composite.CompositeClassifier-class.html#preproject">preproject</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">data</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="CompositeClassifier.preproject-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="CompositeClassifier.preproject-expanded"><a name="L46"></a><tt class="py-lineno"> 46</tt>  <tt class="py-line"> </tt>
+<a name="L47"></a><tt class="py-lineno"> 47</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt id="link-15" class="py-name" targets="Method PyML.classifiers.composite.CompositeClassifier.preproject()=PyML.classifiers.composite.CompositeClassifier-class.html#preproject,Method PyML.classifiers.multi.OneAgainstOne.preproject()=PyML.classifiers.multi.OneAgainstOne-class.html#preproject,Method PyML.classifiers.multi.OneAgainstRest.preproject()=PyML.classifiers.multi.OneAgainstRest-class.html#preproject"><a title="PyML.classifiers.composite.CompositeClassifier.preproject
+PyML.classifiers.multi.OneAgainstOne.preproject
+PyML.classifiers.multi.OneAgainstRest.preproject" class="py-name" href="#" onclick="return doclink('link-15', 'preproject', 'link-15');">preproject</a></tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L48"></a><tt class="py-lineno"> 48</tt>  <tt class="py-line"> </tt>
+<a name="CompositeClassifier.decisionFunc"></a><div id="CompositeClassifier.decisionFunc-def"><a name="L49"></a><tt class="py-lineno"> 49</tt> <a class="py-toggle" href="#" id="CompositeClassifier.decisionFunc-toggle" onclick="return toggle('CompositeClassifier.decisionFunc');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.composite.CompositeClassifier-class.html#decisionFunc">decisionFunc</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">data</tt><tt class="py-op">,</tt> <tt class="py-param">i</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="CompositeClassifier.decisionFunc-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="CompositeClassifier.decisionFunc-expanded"><a name="L50"></a><tt class="py-lineno"> 50</tt>  <tt class="py-line"> </tt>
+<a name="L51"></a><tt class="py-lineno"> 51</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt id="link-16" class="py-name" targets="Method PyML.classifiers.composite.CompositeClassifier.decisionFunc()=PyML.classifiers.composite.CompositeClassifier-class.html#decisionFunc,Method PyML.classifiers.ext.csvmodel.LinearSVModel.decisionFunc()=PyML.classifiers.ext.csvmodel.LinearSVModel-class.html#decisionFunc,Method PyML.classifiers.ext.csvmodel.LinearSparseSVModel.decisionFunc()=PyML.classifiers.ext.csvmodel.LinearSparseSVModel-class.html#decisionFunc,Method PyML.classifiers.ext.csvmodel.SVModel.decisionFunc()=PyML.classifiers.ext.csvmodel.SVModel-class.html#decisionFunc,Method PyML.classifiers.platt.Platt.decisionFunc()=PyML.classifiers.platt.Platt-class.html#decisionFunc,Method PyML.classifiers.ridgeRegression.RidgeRegression.decisionFunc()=PyML.classifiers.ridgeRegression.RidgeRegression-class.html#decisionFunc,Method PyML.classifiers.svm.LinearSVModel.decisionFunc()=PyML.classifiers.svm.LinearSVModel-class.html#decisionFunc,Method PyML.classifiers.svm.SVC.decisionFunc()=PyML.classifiers.svm.SVC-class.html#decisionFunc,Method PyML.classifiers.svm.SVM.decisionFunc()=PyML.classifiers.svm.SVM-class.html#decisionFunc,Method PyML.classifiers.svm.SVModel.decisionFunc()=PyML.classifiers.svm.SVModel-class.html#decisionFunc,Method PyML.classifiers.template.Template.decisionFunc()=PyML.classifiers.template.Template-class.html#decisionFunc"><a title="PyML.classifiers.composite.CompositeClassifier.decisionFunc
+PyML.classifiers.ext.csvmodel.LinearSVModel.decisionFunc
+PyML.classifiers.ext.csvmodel.LinearSparseSVModel.decisionFunc
+PyML.classifiers.ext.csvmodel.SVModel.decisionFunc
+PyML.classifiers.platt.Platt.decisionFunc
+PyML.classifiers.ridgeRegression.RidgeRegression.decisionFunc
+PyML.classifiers.svm.LinearSVModel.decisionFunc
+PyML.classifiers.svm.SVC.decisionFunc
+PyML.classifiers.svm.SVM.decisionFunc
+PyML.classifiers.svm.SVModel.decisionFunc
+PyML.classifiers.template.Template.decisionFunc" class="py-name" href="#" onclick="return doclink('link-16', 'decisionFunc', 'link-16');">decisionFunc</a></tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">,</tt> <tt class="py-name">i</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L52"></a><tt class="py-lineno"> 52</tt>  <tt class="py-line"> </tt>
+<a name="CompositeClassifier.classify"></a><div id="CompositeClassifier.classify-def"><a name="L53"></a><tt class="py-lineno"> 53</tt> <a class="py-toggle" href="#" id="CompositeClassifier.classify-toggle" onclick="return toggle('CompositeClassifier.classify');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.composite.CompositeClassifier-class.html#classify">classify</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">data</tt><tt class="py-op">,</tt> <tt class="py-param">i</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="CompositeClassifier.classify-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="CompositeClassifier.classify-expanded"><a name="L54"></a><tt class="py-lineno"> 54</tt>  <tt class="py-line"> </tt>
+<a name="L55"></a><tt class="py-lineno"> 55</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt id="link-17" class="py-name" targets="Method PyML.classifiers.baseClassifiers.Classifier.classify()=PyML.classifiers.baseClassifiers.Classifier-class.html#classify,Method PyML.classifiers.composite.AggregateClassifier.classify()=PyML.classifiers.composite.AggregateClassifier-class.html#classify,Method PyML.classifiers.composite.CompositeClassifier.classify()=PyML.classifiers.composite.CompositeClassifier-class.html#classify,Method PyML.classifiers.knn.KNN.classify()=PyML.classifiers.knn.KNN-class.html#classify,Method PyML.classifiers.multi.OneAgainstOne.classify()=PyML.classifiers.multi.OneAgainstOne-class.html#classify,Method PyML.classifiers.multi.OneAgainstRest.classify()=PyML.classifiers.multi.OneAgainstRest-class.html#classify,Method PyML.classifiers.platt.Platt.classify()=PyML.classifiers.platt.Platt-class.html#classify,Method PyML.classifiers.svm.SVC.classify()=PyML.classifiers.svm.SVC-class.html#classify,Method PyML.classifiers.svm.SVM.classify()=PyML.classifiers.svm.SVM-class.html#classify,Method PyML.classifiers.template.Template.classify()=PyML.classifiers.template.Template-class.html#classify"><a title="PyML.classifiers.baseClassifiers.Classifier.classify
+PyML.classifiers.composite.AggregateClassifier.classify
+PyML.classifiers.composite.CompositeClassifier.classify
+PyML.classifiers.knn.KNN.classify
+PyML.classifiers.multi.OneAgainstOne.classify
+PyML.classifiers.multi.OneAgainstRest.classify
+PyML.classifiers.platt.Platt.classify
+PyML.classifiers.svm.SVC.classify
+PyML.classifiers.svm.SVM.classify
+PyML.classifiers.template.Template.classify" class="py-name" href="#" onclick="return doclink('link-17', 'classify', 'link-17');">classify</a></tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">,</tt> <tt class="py-name">i</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L56"></a><tt class="py-lineno"> 56</tt>  <tt class="py-line"> </tt>
+<a name="L57"></a><tt class="py-lineno"> 57</tt>  <tt class="py-line"> </tt>
+<a name="L58"></a><tt class="py-lineno"> 58</tt>  <tt class="py-line">    <tt class="py-comment">#def preprocess(self, data) :</tt> </tt>
+<a name="L59"></a><tt class="py-lineno"> 59</tt>  <tt class="py-line"><tt class="py-comment"></tt> </tt>
+<a name="L60"></a><tt class="py-lineno"> 60</tt>  <tt class="py-line">    <tt class="py-comment">#    self.classifier.preprocess(data)</tt> </tt>
+<a name="L61"></a><tt class="py-lineno"> 61</tt>  <tt class="py-line"><tt class="py-comment"></tt> </tt>
+<a name="CompositeClassifier.getTest"></a><div id="CompositeClassifier.getTest-def"><a name="L62"></a><tt class="py-lineno"> 62</tt> <a class="py-toggle" href="#" id="CompositeClassifier.getTest-toggle" onclick="return toggle('CompositeClassifier.getTest');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.composite.CompositeClassifier-class.html#getTest">getTest</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="CompositeClassifier.getTest-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="CompositeClassifier.getTest-expanded"><a name="L63"></a><tt class="py-lineno"> 63</tt>  <tt class="py-line"> </tt>
+<a name="L64"></a><tt class="py-lineno"> 64</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt id="link-18" class="py-name" targets="Method PyML.classifiers.baseClassifiers.IteratorClassifier.test()=PyML.classifiers.baseClassifiers.IteratorClassifier-class.html#test,Method PyML.classifiers.composite.Chain.test()=PyML.classifiers.composite.Chain-class.html#test,Variable PyML.classifiers.composite.CompositeClassifier.test=PyML.classifiers.composite.CompositeClassifier-class.html#test,Method PyML.classifiers.ext.knn.KNN.test()=PyML.classifiers.ext.knn.KNN-class.html#test,Method PyML.classifiers.knn.KNN.test()=PyML.classifiers.knn.KNN-class.html#test,Method PyML.containers.baseDatasets.BaseDataSet.test()=PyML.containers.baseDatasets.BaseDataSet-class.html#test,Function PyML.containers.parsers.test()=PyML.containers.parsers-module.html#test,Function PyML.demo.pyml_test.test()=PyML.demo.pyml_test-module.html#test,Module PyML.demo.test=PyML.demo.test-module.html,Function PyML.demo.test.test()=PyML.demo.test-module.html#test,Function PyML.evaluators.assess.test()=PyML.evaluators.assess-module.html#test,Method PyML.feature_selection.featsel.FeatureScorer.test()=PyML.feature_selection.featsel.FeatureScorer-class.html#test,Method PyML.feature_selection.featsel.FeatureSelector.test()=PyML.feature_selection.featsel.FeatureSelector-class.html#test,Method PyML.preproc.preproc.Standardizer.test()=PyML.preproc.preproc.Standardizer-class.html#test"><a title="PyML.classifiers.baseClassifiers.IteratorClassifier.test
+PyML.classifiers.composite.Chain.test
+PyML.classifiers.composite.CompositeClassifier.test
+PyML.classifiers.ext.knn.KNN.test
+PyML.classifiers.knn.KNN.test
+PyML.containers.baseDatasets.BaseDataSet.test
+PyML.containers.parsers.test
+PyML.demo.pyml_test.test
+PyML.demo.test
+PyML.demo.test.test
+PyML.evaluators.assess.test
+PyML.feature_selection.featsel.FeatureScorer.test
+PyML.feature_selection.featsel.FeatureSelector.test
+PyML.preproc.preproc.Standardizer.test" class="py-name" href="#" onclick="return doclink('link-18', 'test', 'link-18');">test</a></tt> </tt>
+</div><a name="L65"></a><tt class="py-lineno"> 65</tt>  <tt class="py-line"> </tt>
+<a name="CompositeClassifier.setTest"></a><div id="CompositeClassifier.setTest-def"><a name="L66"></a><tt class="py-lineno"> 66</tt> <a class="py-toggle" href="#" id="CompositeClassifier.setTest-toggle" onclick="return toggle('CompositeClassifier.setTest');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.composite.CompositeClassifier-class.html#setTest">setTest</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="CompositeClassifier.setTest-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="CompositeClassifier.setTest-expanded"><a name="L67"></a><tt class="py-lineno"> 67</tt>  <tt class="py-line"> </tt>
+<a name="L68"></a><tt class="py-lineno"> 68</tt>  <tt class="py-line">        <tt class="py-keyword">raise</tt> <tt class="py-name">ValueError</tt><tt class="py-op">,</tt> <tt class="py-string">'do not call this function'</tt> </tt>
+</div><a name="L69"></a><tt class="py-lineno"> 69</tt>  <tt class="py-line"> </tt>
+<a name="L70"></a><tt class="py-lineno"> 70</tt>  <tt class="py-line">    <tt class="py-comment"># if the classifier used by the composite implements a test function -</tt> </tt>
+<a name="L71"></a><tt class="py-lineno"> 71</tt>  <tt class="py-line"><tt class="py-comment"></tt>    <tt class="py-comment"># use it rather than the default assess.test</tt> </tt>
+<a name="L72"></a><tt class="py-lineno"> 72</tt>  <tt class="py-line"><tt class="py-comment"></tt>    <tt id="link-19" class="py-name"><a title="PyML.classifiers.baseClassifiers.IteratorClassifier.test
+PyML.classifiers.composite.Chain.test
+PyML.classifiers.composite.CompositeClassifier.test
+PyML.classifiers.ext.knn.KNN.test
+PyML.classifiers.knn.KNN.test
+PyML.containers.baseDatasets.BaseDataSet.test
+PyML.containers.parsers.test
+PyML.demo.pyml_test.test
+PyML.demo.test
+PyML.demo.test.test
+PyML.evaluators.assess.test
+PyML.feature_selection.featsel.FeatureScorer.test
+PyML.feature_selection.featsel.FeatureSelector.test
+PyML.preproc.preproc.Standardizer.test" class="py-name" href="#" onclick="return doclink('link-19', 'test', 'link-18');">test</a></tt> <tt class="py-op">=</tt> <tt class="py-name">property</tt> <tt class="py-op">(</tt><tt id="link-20" class="py-name" targets="Method PyML.classifiers.composite.CompositeClassifier.getTest()=PyML.classifiers.composite.CompositeClassifier-class.html#getTest"><a title="PyML.classifiers.composite.CompositeClassifier.getTest" class="py-name" href="#" onclick="return doclink('link-20', 'getTest', 'link-20');">getTest</a></tt><tt class="py-op">,</tt> <tt id="link-21" class="py-name" targets="Method PyML.classifiers.composite.CompositeClassifier.setTest()=PyML.classifiers.composite.CompositeClassifier-class.html#setTest"><a title="PyML.classifiers.composite.CompositeClassifier.setTest" class="py-name" href="#" onclick="return doclink('link-21', 'setTest', 'link-21');">setTest</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L73"></a><tt class="py-lineno"> 73</tt>  <tt class="py-line">                     <tt class="py-name">None</tt><tt class="py-op">,</tt> <tt class="py-string">'the test function of the underlying classifier'</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L74"></a><tt class="py-lineno"> 74</tt>  <tt class="py-line"> </tt>
+<a name="L75"></a><tt class="py-lineno"> 75</tt>  <tt class="py-line">     </tt>
+<a name="L76"></a><tt class="py-lineno"> 76</tt>  <tt class="py-line"> </tt>
+<a name="Chain"></a><div id="Chain-def"><a name="L77"></a><tt class="py-lineno"> 77</tt> <a class="py-toggle" href="#" id="Chain-toggle" onclick="return toggle('Chain');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="PyML.classifiers.composite.Chain-class.html">Chain</a> <tt class="py-op">(</tt><tt class="py-base-class">CompositeClassifier</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="Chain-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Chain-expanded"><a name="L78"></a><tt class="py-lineno"> 78</tt>  <tt class="py-line">    <tt class="py-docstring">'''A chain is a list of actions to be performed on a dataset,</tt> </tt>
+<a name="L79"></a><tt class="py-lineno"> 79</tt>  <tt class="py-line"><tt class="py-docstring">    the last of which is assumed to be a classifier.</tt> </tt>
+<a name="L80"></a><tt class="py-lineno"> 80</tt>  <tt class="py-line"><tt class="py-docstring">    The actions can be for example a chain of preprocessing steps or</tt> </tt>
+<a name="L81"></a><tt class="py-lineno"> 81</tt>  <tt class="py-line"><tt class="py-docstring">    a step of feature selection (same as using the FeatureSelect class)</tt> </tt>
+<a name="L82"></a><tt class="py-lineno"> 82</tt>  <tt class="py-line"><tt class="py-docstring">    Each action in the chain is assumed to have a "train" method and is</tt> </tt>
+<a name="L83"></a><tt class="py-lineno"> 83</tt>  <tt class="py-line"><tt class="py-docstring">    assumed to have a copy constructor'''</tt> </tt>
+<a name="L84"></a><tt class="py-lineno"> 84</tt>  <tt class="py-line"> </tt>
+<a name="L85"></a><tt class="py-lineno"> 85</tt>  <tt class="py-line">    <tt id="link-22" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.deepcopy
+PyML.classifiers.composite.Chain.deepcopy
+PyML.classifiers.composite.CompositeClassifier.deepcopy
+PyML.classifiers.composite.FeatureSelect.deepcopy
+PyML.classifiers.composite.FeatureSelectAll.deepcopy" class="py-name" href="#" onclick="return doclink('link-22', 'deepcopy', 'link-8');">deepcopy</a></tt> <tt class="py-op">=</tt> <tt class="py-name">True</tt> </tt>
+<a name="L86"></a><tt class="py-lineno"> 86</tt>  <tt class="py-line">     </tt>
+<a name="Chain.__init__"></a><div id="Chain.__init__-def"><a name="L87"></a><tt class="py-lineno"> 87</tt> <a class="py-toggle" href="#" id="Chain.__init__-toggle" onclick="return toggle('Chain.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.composite.Chain-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">arg</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="Chain.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Chain.__init__-expanded"><a name="L88"></a><tt class="py-lineno"> 88</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L89"></a><tt class="py-lineno"> 89</tt>  <tt class="py-line"><tt class="py-docstring">        :Parameters:</tt> </tt>
+<a name="L90"></a><tt class="py-lineno"> 90</tt>  <tt class="py-line"><tt class="py-docstring">          - `arg` - a Chain object of a list of objects, each of which implements</tt> </tt>
+<a name="L91"></a><tt class="py-lineno"> 91</tt>  <tt class="py-line"><tt class="py-docstring">            a 'train', 'test' and has a copy constructor</tt> </tt>
+<a name="L92"></a><tt class="py-lineno"> 92</tt>  <tt class="py-line"><tt class="py-docstring">        </tt> </tt>
+<a name="L93"></a><tt class="py-lineno"> 93</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L94"></a><tt class="py-lineno"> 94</tt>  <tt class="py-line">        <tt id="link-23" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier" class="py-name" href="#" onclick="return doclink('link-23', 'Classifier', 'link-5');">Classifier</a></tt><tt class="py-op">.</tt><tt id="link-24" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.__init__
+PyML.classifiers.composite.AggregateClassifier.__init__
+PyML.classifiers.composite.Chain.__init__
+PyML.classifiers.composite.CompositeClassifier.__init__
+PyML.classifiers.composite.FeatureSelect.__init__
+PyML.classifiers.composite.FeatureSelectAll.__init__
+PyML.classifiers.ext.cgist.DoubleVector.__init__
+PyML.classifiers.ext.cgist.IntVector.__init__
+PyML.classifiers.ext.cgist.PySwigIterator.__init__
+PyML.classifiers.ext.csmo.DoubleVector.__init__
+PyML.classifiers.ext.csmo.IntVector.__init__
+PyML.classifiers.ext.csmo.PySwigIterator.__init__
+PyML.classifiers.ext.csvmodel.DoubleVector.__init__
+PyML.classifiers.ext.csvmodel.IntVector.__init__
+PyML.classifiers.ext.csvmodel.LinearSVModel.__init__
+PyML.classifiers.ext.csvmodel.LinearSparseSVModel.__init__
+PyML.classifiers.ext.csvmodel.PySwigIterator.__init__
+PyML.classifiers.ext.csvmodel.SVModel.__init__
+PyML.classifiers.ext.knn.DoubleVector.__init__
+PyML.classifiers.ext.knn.IntVector.__init__
+PyML.classifiers.ext.knn.KNN.__init__
+PyML.classifiers.ext.knn.PySwigIterator.__init__
+PyML.classifiers.ext.libsvm.DecisionFunction.__init__
+PyML.classifiers.ext.libsvm.PySwigIterator.__init__
+PyML.classifiers.ext.libsvm.doubleArray.__init__
+PyML.classifiers.ext.libsvm.intArray.__init__
+PyML.classifiers.ext.libsvm.svm_node.__init__
+PyML.classifiers.ext.libsvm.svm_parameter.__init__
+PyML.classifiers.ext.libsvm.svm_problem.__init__
+PyML.classifiers.knn.KNN.__init__
+PyML.classifiers.libsvmWrap.svmParameter.__init__
+PyML.classifiers.modelSelection.ModelSelector.__init__
+PyML.classifiers.modelSelection.Param.__init__
+PyML.classifiers.modelSelection.ParamGrid.__init__
+PyML.classifiers.modelSelection.SVMselect.__init__
+PyML.classifiers.ridgeRegression.RidgeRegression.__init__
+PyML.classifiers.svm.LinearSVModel.__init__
+PyML.classifiers.svm.SVC.__init__
+PyML.classifiers.svm.SVM.__init__
+PyML.classifiers.svm.SVModel.__init__
+PyML.classifiers.template.Template.__init__
+PyML.containers.aggregate.Aggregate.__init__
+PyML.containers.aggregate.DataAggregate.__init__
+PyML.containers.baseDatasets.BaseDataSet.__init__
+PyML.containers.baseDatasets.BaseVectorDataSet.__init__
+PyML.containers.ext.caggregate.Aggregate.__init__
+PyML.containers.ext.caggregate.DataSet.__init__
+PyML.containers.ext.caggregate.DoubleVector.__init__
+PyML.containers.ext.caggregate.IntVector.__init__
+PyML.containers.ext.caggregate.PySwigIterator.__init__
+PyML.containers.ext.ckernel.Cosine.__init__
+PyML.containers.ext.ckernel.DoubleVector.__init__
+PyML.containers.ext.ckernel.FloatVector.__init__
+PyML.containers.ext.ckernel.Gaussian.__init__
+PyML.containers.ext.ckernel.IntVector.__init__
+PyML.containers.ext.ckernel.Kernel.__init__
+PyML.containers.ext.ckernel.KernelMatrix.__init__
+PyML.containers.ext.ckernel.Linear.__init__
+PyML.containers.ext.ckernel.Polynomial.__init__
+PyML.containers.ext.ckernel.PySwigIterator.__init__
+PyML.containers.ext.ckerneldata.DataSet.__init__
+PyML.containers.ext.ckerneldata.DoubleVector.__init__
+PyML.containers.ext.ckerneldata.FloatVector.__init__
+PyML.containers.ext.ckerneldata.IntVector.__init__
+PyML.containers.ext.ckerneldata.KernelData.__init__
+PyML.containers.ext.ckerneldata.PySwigIterator.__init__
+PyML.containers.ext.cpairdataset.DataSet.__init__
+PyML.containers.ext.cpairdataset.DoubleVector.__init__
+PyML.containers.ext.cpairdataset.IntVector.__init__
+PyML.containers.ext.cpairdataset.PairDataSet.__init__
+PyML.containers.ext.cpairdataset.PairDataSetOrd.__init__
+PyML.containers.ext.cpairdataset.PairDataSetSum.__init__
+PyML.containers.ext.cpairdataset.PySwigIterator.__init__
+PyML.containers.ext.csequencedata.DataSet.__init__
+PyML.containers.ext.csequencedata.DoubleVector.__init__
+PyML.containers.ext.csequencedata.IntVector.__init__
+PyML.containers.ext.csequencedata.LongVector.__init__
+PyML.containers.ext.csequencedata.PySwigIterator.__init__
+PyML.containers.ext.csequencedata.SequenceData.__init__
+PyML.containers.ext.csequencedata.StringVector.__init__
+PyML.containers.ext.csparsedataset.DataSet.__init__
+PyML.containers.ext.csparsedataset.DoubleVector.__init__
+PyML.containers.ext.csparsedataset.FloatVector.__init__
+PyML.containers.ext.csparsedataset.IntVector.__init__
+PyML.containers.ext.csparsedataset.LongVector.__init__
+PyML.containers.ext.csparsedataset.PySwigIterator.__init__
+PyML.containers.ext.csparsedataset.SparseDataSet.__init__
+PyML.containers.ext.csparsedataset.StringVector.__init__
+PyML.containers.ext.csparsedataset.doubleArray.__init__
+PyML.containers.ext.csparsedataset.intArray.__init__
+PyML.containers.ext.csparsefeaturevector.Feature.__init__
+PyML.containers.ext.csparsefeaturevector.SparseFeatureVector.__init__
+PyML.containers.ext.cstringkernel.DoubleVector.__init__
+PyML.containers.ext.cstringkernel.IntVector.__init__
+PyML.containers.ext.cstringkernel.LongVector.__init__
+PyML.containers.ext.cstringkernel.PositionalKmer.__init__
+PyML.containers.ext.cstringkernel.PySwigIterator.__init__
+PyML.containers.ext.cstringkernel.StringKernel.__init__
+PyML.containers.ext.cstringkernel.StringVector.__init__
+PyML.containers.ext.cvectordataset.DataSet.__init__
+PyML.containers.ext.cvectordataset.DoubleVector.__init__
+PyML.containers.ext.cvectordataset.IntVector.__init__
+PyML.containers.ext.cvectordataset.LongVector.__init__
+PyML.containers.ext.cvectordataset.PySwigIterator.__init__
+PyML.containers.ext.cvectordataset.StringVector.__init__
+PyML.containers.ext.cvectordataset.VectorDataSet.__init__
+PyML.containers.ker.Cosine.__init__
+PyML.containers.ker.Gaussian.__init__
+PyML.containers.ker.Linear.__init__
+PyML.containers.ker.Polynomial.__init__
+PyML.containers.kernelData.KernelData.__init__
+PyML.containers.labels.Labels.__init__
+PyML.containers.pairData.PairDataSet.__init__
+PyML.containers.pairData.PairDataSetOrd.__init__
+PyML.containers.pairData.PairDataSetSum.__init__
+PyML.containers.pairData.SimplePairDataSet.__init__
+PyML.containers.parsers.CSVParser.__init__
+PyML.containers.parsers.Parser.__init__
+PyML.containers.parsers.SparseParser.__init__
+PyML.containers.sequenceData.SequenceData.__init__
+PyML.containers.vectorDatasets.BaseCVectorDataSet.__init__
+PyML.containers.vectorDatasets.SparseDataSet.__init__
+PyML.containers.vectorDatasets.VectorDataSet.__init__
+PyML.evaluators.assess.ClassificationResults.__init__
+PyML.evaluators.assess.ClassificationResultsContainer.__init__
+PyML.evaluators.assess.RegressionResults.__init__
+PyML.evaluators.assess.RegressionResultsContainer.__init__
+PyML.evaluators.assess.Results.__init__
+PyML.evaluators.assess.ResultsList.__init__
+PyML.feature_selection.featsel.BackwardSelector.__init__
+PyML.feature_selection.featsel.FeatureScore.__init__
+PyML.feature_selection.featsel.Filter.__init__
+PyML.feature_selection.featsel.MultiplicativeUpdate.__init__
+PyML.feature_selection.featsel.OneAgainstRestSelect.__init__
+PyML.feature_selection.featsel.RFE.__init__
+PyML.feature_selection.featsel.Random.__init__
+PyML.preproc.preproc.Correlator.__init__
+PyML.preproc.preproc.Standardizer.__init__" class="py-name" href="#" onclick="return doclink('link-24', '__init__', 'link-10');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">)</tt> </tt>
+<a name="L95"></a><tt class="py-lineno"> 95</tt>  <tt class="py-line"> </tt>
+<a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">arg</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt> <tt class="py-op">==</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt> <tt class="py-op">:</tt> </tt>
+<a name="L97"></a><tt class="py-lineno"> 97</tt>  <tt class="py-line">            <tt class="py-name">other</tt> <tt class="py-op">=</tt> <tt class="py-name">arg</tt> </tt>
+<a name="L98"></a><tt class="py-lineno"> 98</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt> <tt class="py-op">=</tt> <tt class="py-name">other</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">(</tt><tt class="py-name">other</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">)</tt> </tt>
+<a name="L99"></a><tt class="py-lineno"> 99</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">chain</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-name">component</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">(</tt><tt class="py-name">component</tt><tt class="py-op">)</tt> </tt>
+<a name="L100"></a><tt class="py-lineno">100</tt>  <tt class="py-line">                          <tt class="py-keyword">for</tt> <tt class="py-name">component</tt> <tt class="py-keyword">in</tt> <tt class="py-name">other</tt><tt class="py-op">.</tt><tt class="py-name">chain</tt><tt class="py-op">]</tt> </tt>
+<a name="L101"></a><tt class="py-lineno">101</tt>  <tt class="py-line">             </tt>
+<a name="L102"></a><tt class="py-lineno">102</tt>  <tt class="py-line">        <tt class="py-keyword">elif</tt> <tt id="link-25" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.type
+PyML.containers.baseDatasets.BaseDataSet.type
+PyML.containers.ker.Kernel.type
+PyML.feature_selection.featsel.FeatureScorer.type
+PyML.feature_selection.featsel.FeatureSelector.type" class="py-name" href="#" onclick="return doclink('link-25', 'type', 'link-11');">type</a></tt><tt class="py-op">(</tt><tt class="py-name">arg</tt><tt class="py-op">)</tt> <tt class="py-op">==</tt> <tt id="link-26" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.type
+PyML.containers.baseDatasets.BaseDataSet.type
+PyML.containers.ker.Kernel.type
+PyML.feature_selection.featsel.FeatureScorer.type
+PyML.feature_selection.featsel.FeatureSelector.type" class="py-name" href="#" onclick="return doclink('link-26', 'type', 'link-11');">type</a></tt><tt class="py-op">(</tt><tt class="py-op">[</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L103"></a><tt class="py-lineno">103</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt> <tt class="py-op">=</tt> <tt class="py-name">arg</tt><tt class="py-op">[</tt><tt class="py-op">-</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">(</tt><tt class="py-name">arg</tt><tt class="py-op">[</tt><tt class="py-op">-</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L104"></a><tt class="py-lineno">104</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">chain</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-name">arg</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">(</tt><tt class="py-name">arg</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L105"></a><tt class="py-lineno">105</tt>  <tt class="py-line">                          <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">arg</tt><tt class="py-op">)</tt> <tt class="py-op">-</tt> <tt class="py-number">1</tt><tt class="py-op">)</tt><tt class="py-op">]</tt> </tt>
+</div><a name="L106"></a><tt class="py-lineno">106</tt>  <tt class="py-line">             </tt>
+<a name="L107"></a><tt class="py-lineno">107</tt>  <tt class="py-line"> </tt>
+<a name="Chain.train"></a><div id="Chain.train-def"><a name="L108"></a><tt class="py-lineno">108</tt> <a class="py-toggle" href="#" id="Chain.train-toggle" onclick="return toggle('Chain.train');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.composite.Chain-class.html#train">train</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">data</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-param">args</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="Chain.train-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Chain.train-expanded"><a name="L109"></a><tt class="py-lineno">109</tt>  <tt class="py-line"> </tt>
+<a name="L110"></a><tt class="py-lineno">110</tt>  <tt class="py-line">        <tt id="link-27" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier" class="py-name" href="#" onclick="return doclink('link-27', 'Classifier', 'link-5');">Classifier</a></tt><tt class="py-op">.</tt><tt id="link-28" class="py-name" targets="Method PyML.classifiers.baseClassifiers.Classifier.train()=PyML.classifiers.baseClassifiers.Classifier-class.html#train,Method PyML.classifiers.composite.AggregateClassifier.train()=PyML.classifiers.composite.AggregateClassifier-class.html#train,Method PyML.classifiers.composite.Chain.train()=PyML.classifiers.composite.Chain-class.html#train,Method PyML.classifiers.composite.FeatureSelect.train()=PyML.classifiers.composite.FeatureSelect-class.html#train,Method PyML.classifiers.composite.FeatureSelectAll.train()=PyML.classifiers.composite.FeatureSelectAll-class.html#train,Method PyML.classifiers.ext.knn.KNN.train()=PyML.classifiers.ext.knn.KNN-class.html#train,Method PyML.classifiers.knn.KNN.train()=PyML.classifiers.knn.KNN-class.html#train,Method PyML.classifiers.modelSelection.ModelSelector.train()=PyML.classifiers.modelSelection.ModelSelector-class.html#train,Method PyML.classifiers.modelSelection.Param.train()=PyML.classifiers.modelSelection.Param-class.html#train,Method PyML.classifiers.modelSelection.SVMselect.train()=PyML.classifiers.modelSelection.SVMselect-class.html#train,Method PyML.classifiers.multi.OneAgainstOne.train()=PyML.classifiers.multi.OneAgainstOne-class.html#train,Method PyML.classifiers.multi.OneAgainstRest.train()=PyML.classifiers.multi.OneAgainstRest-class.html#train,Method PyML.classifiers.platt.Platt.train()=PyML.classifiers.platt.Platt-class.html#train,Method PyML.classifiers.ridgeRegression.RidgeRegression.train()=PyML.classifiers.ridgeRegression.RidgeRegression-class.html#train,Method PyML.classifiers.svm.SVC.train()=PyML.classifiers.svm.SVC-class.html#train,Method PyML.classifiers.svm.SVM.train()=PyML.classifiers.svm.SVM-class.html#train,Method PyML.classifiers.template.Template.train()=PyML.classifiers.template.Template-class.html#train,Method PyML.containers.baseDatasets.BaseDataSet.train()=PyML.containers.baseDatasets.BaseDataSet-class.html#train,Method PyML.preproc.preproc.Standardizer.train()=PyML.preproc.preproc.Standardizer-class.html#train"><a title="PyML.classifiers.baseClassifiers.Classifier.train
+PyML.classifiers.composite.AggregateClassifier.train
+PyML.classifiers.composite.Chain.train
+PyML.classifiers.composite.FeatureSelect.train
+PyML.classifiers.composite.FeatureSelectAll.train
+PyML.classifiers.ext.knn.KNN.train
+PyML.classifiers.knn.KNN.train
+PyML.classifiers.modelSelection.ModelSelector.train
+PyML.classifiers.modelSelection.Param.train
+PyML.classifiers.modelSelection.SVMselect.train
+PyML.classifiers.multi.OneAgainstOne.train
+PyML.classifiers.multi.OneAgainstRest.train
+PyML.classifiers.platt.Platt.train
+PyML.classifiers.ridgeRegression.RidgeRegression.train
+PyML.classifiers.svm.SVC.train
+PyML.classifiers.svm.SVM.train
+PyML.classifiers.template.Template.train
+PyML.containers.baseDatasets.BaseDataSet.train
+PyML.preproc.preproc.Standardizer.train" class="py-name" href="#" onclick="return doclink('link-28', 'train', 'link-28');">train</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">data</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-name">args</tt><tt class="py-op">)</tt> </tt>
+<a name="L111"></a><tt class="py-lineno">111</tt>  <tt class="py-line">         </tt>
+<a name="L112"></a><tt class="py-lineno">112</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">component</tt> <tt class="py-keyword">in</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">chain</tt> <tt class="py-op">:</tt> </tt>
+<a name="L113"></a><tt class="py-lineno">113</tt>  <tt class="py-line">            <tt class="py-name">component</tt><tt class="py-op">.</tt><tt id="link-29" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.train
+PyML.classifiers.composite.AggregateClassifier.train
+PyML.classifiers.composite.Chain.train
+PyML.classifiers.composite.FeatureSelect.train
+PyML.classifiers.composite.FeatureSelectAll.train
+PyML.classifiers.ext.knn.KNN.train
+PyML.classifiers.knn.KNN.train
+PyML.classifiers.modelSelection.ModelSelector.train
+PyML.classifiers.modelSelection.Param.train
+PyML.classifiers.modelSelection.SVMselect.train
+PyML.classifiers.multi.OneAgainstOne.train
+PyML.classifiers.multi.OneAgainstRest.train
+PyML.classifiers.platt.Platt.train
+PyML.classifiers.ridgeRegression.RidgeRegression.train
+PyML.classifiers.svm.SVC.train
+PyML.classifiers.svm.SVM.train
+PyML.classifiers.template.Template.train
+PyML.containers.baseDatasets.BaseDataSet.train
+PyML.preproc.preproc.Standardizer.train" class="py-name" href="#" onclick="return doclink('link-29', 'train', 'link-28');">train</a></tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-name">args</tt><tt class="py-op">)</tt> </tt>
+<a name="L114"></a><tt class="py-lineno">114</tt>  <tt class="py-line"> </tt>
+<a name="L115"></a><tt class="py-lineno">115</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt id="link-30" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.train
+PyML.classifiers.composite.AggregateClassifier.train
+PyML.classifiers.composite.Chain.train
+PyML.classifiers.composite.FeatureSelect.train
+PyML.classifiers.composite.FeatureSelectAll.train
+PyML.classifiers.ext.knn.KNN.train
+PyML.classifiers.knn.KNN.train
+PyML.classifiers.modelSelection.ModelSelector.train
+PyML.classifiers.modelSelection.Param.train
+PyML.classifiers.modelSelection.SVMselect.train
+PyML.classifiers.multi.OneAgainstOne.train
+PyML.classifiers.multi.OneAgainstRest.train
+PyML.classifiers.platt.Platt.train
+PyML.classifiers.ridgeRegression.RidgeRegression.train
+PyML.classifiers.svm.SVC.train
+PyML.classifiers.svm.SVM.train
+PyML.classifiers.template.Template.train
+PyML.containers.baseDatasets.BaseDataSet.train
+PyML.preproc.preproc.Standardizer.train" class="py-name" href="#" onclick="return doclink('link-30', 'train', 'link-28');">train</a></tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-name">args</tt><tt class="py-op">)</tt> </tt>
+<a name="L116"></a><tt class="py-lineno">116</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">log</tt><tt class="py-op">.</tt><tt class="py-name">trainingTime</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-31" class="py-name" targets="Method PyML.classifiers.baseClassifiers.Classifier.getTrainingTime()=PyML.classifiers.baseClassifiers.Classifier-class.html#getTrainingTime"><a title="PyML.classifiers.baseClassifiers.Classifier.getTrainingTime" class="py-name" href="#" onclick="return doclink('link-31', 'getTrainingTime', 'link-31');">getTrainingTime</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L117"></a><tt class="py-lineno">117</tt>  <tt class="py-line">         </tt>
+<a name="Chain.test"></a><div id="Chain.test-def"><a name="L118"></a><tt class="py-lineno">118</tt> <a class="py-toggle" href="#" id="Chain.test-toggle" onclick="return toggle('Chain.test');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.composite.Chain-class.html#test">test</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">data</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-param">args</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="Chain.test-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Chain.test-expanded"><a name="L119"></a><tt class="py-lineno">119</tt>  <tt class="py-line"> </tt>
+<a name="L120"></a><tt class="py-lineno">120</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">component</tt> <tt class="py-keyword">in</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">chain</tt> <tt class="py-op">:</tt> </tt>
+<a name="L121"></a><tt class="py-lineno">121</tt>  <tt class="py-line">            <tt class="py-name">component</tt><tt class="py-op">.</tt><tt id="link-32" class="py-name"><a title="PyML.classifiers.baseClassifiers.IteratorClassifier.test
+PyML.classifiers.composite.Chain.test
+PyML.classifiers.composite.CompositeClassifier.test
+PyML.classifiers.ext.knn.KNN.test
+PyML.classifiers.knn.KNN.test
+PyML.containers.baseDatasets.BaseDataSet.test
+PyML.containers.parsers.test
+PyML.demo.pyml_test.test
+PyML.demo.test
+PyML.demo.test.test
+PyML.evaluators.assess.test
+PyML.feature_selection.featsel.FeatureScorer.test
+PyML.feature_selection.featsel.FeatureSelector.test
+PyML.preproc.preproc.Standardizer.test" class="py-name" href="#" onclick="return doclink('link-32', 'test', 'link-18');">test</a></tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-name">args</tt><tt class="py-op">)</tt> </tt>
+<a name="L122"></a><tt class="py-lineno">122</tt>  <tt class="py-line"> </tt>
+<a name="L123"></a><tt class="py-lineno">123</tt>  <tt class="py-line">        <tt class="py-keyword">print</tt> <tt class="py-string">'I am testing'</tt><tt class="py-op">,</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt> </tt>
+<a name="L124"></a><tt class="py-lineno">124</tt>  <tt class="py-line">        <tt class="py-keyword">print</tt> <tt class="py-string">'testing function'</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt id="link-33" class="py-name"><a title="PyML.classifiers.baseClassifiers.IteratorClassifier.test
+PyML.classifiers.composite.Chain.test
+PyML.classifiers.composite.CompositeClassifier.test
+PyML.classifiers.ext.knn.KNN.test
+PyML.classifiers.knn.KNN.test
+PyML.containers.baseDatasets.BaseDataSet.test
+PyML.containers.parsers.test
+PyML.demo.pyml_test.test
+PyML.demo.test
+PyML.demo.test.test
+PyML.evaluators.assess.test
+PyML.feature_selection.featsel.FeatureScorer.test
+PyML.feature_selection.featsel.FeatureSelector.test
+PyML.preproc.preproc.Standardizer.test" class="py-name" href="#" onclick="return doclink('link-33', 'test', 'link-18');">test</a></tt> </tt>
+<a name="L125"></a><tt class="py-lineno">125</tt>  <tt class="py-line">        <tt class="py-keyword">print</tt> <tt class="py-string">'the data is :'</tt><tt class="py-op">,</tt> <tt class="py-name">data</tt> </tt>
+<a name="L126"></a><tt class="py-lineno">126</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt id="link-34" class="py-name"><a title="PyML.classifiers.baseClassifiers.IteratorClassifier.test
+PyML.classifiers.composite.Chain.test
+PyML.classifiers.composite.CompositeClassifier.test
+PyML.classifiers.ext.knn.KNN.test
+PyML.classifiers.knn.KNN.test
+PyML.containers.baseDatasets.BaseDataSet.test
+PyML.containers.parsers.test
+PyML.demo.pyml_test.test
+PyML.demo.test
+PyML.demo.test.test
+PyML.evaluators.assess.test
+PyML.feature_selection.featsel.FeatureScorer.test
+PyML.feature_selection.featsel.FeatureSelector.test
+PyML.preproc.preproc.Standardizer.test" class="py-name" href="#" onclick="return doclink('link-34', 'test', 'link-18');">test</a></tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-name">args</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L127"></a><tt class="py-lineno">127</tt>  <tt class="py-line"> </tt>
+<a name="FeatureSelect"></a><div id="FeatureSelect-def"><a name="L128"></a><tt class="py-lineno">128</tt> <a class="py-toggle" href="#" id="FeatureSelect-toggle" onclick="return toggle('FeatureSelect');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="PyML.classifiers.composite.FeatureSelect-class.html">FeatureSelect</a> <tt class="py-op">(</tt><tt class="py-base-class">CompositeClassifier</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="FeatureSelect-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="FeatureSelect-expanded"><a name="L129"></a><tt class="py-lineno">129</tt>  <tt class="py-line"> </tt>
+<a name="L130"></a><tt class="py-lineno">130</tt>  <tt class="py-line">    <tt class="py-docstring">"""A method for combining a feature selector and classifier;</tt> </tt>
+<a name="L131"></a><tt class="py-lineno">131</tt>  <tt class="py-line"><tt class="py-docstring">    training consists of performing feature selection and afterwards training</tt> </tt>
+<a name="L132"></a><tt class="py-lineno">132</tt>  <tt class="py-line"><tt class="py-docstring">    the classifier on the selected features;</tt> </tt>
+<a name="L133"></a><tt class="py-lineno">133</tt>  <tt class="py-line"><tt class="py-docstring">    use this classifier to test the accuracy of a feature selector/classifier</tt> </tt>
+<a name="L134"></a><tt class="py-lineno">134</tt>  <tt class="py-line"><tt class="py-docstring">    combination.</tt> </tt>
+<a name="L135"></a><tt class="py-lineno">135</tt>  <tt class="py-line"><tt class="py-docstring">    USAGE:</tt> </tt>
+<a name="L136"></a><tt class="py-lineno">136</tt>  <tt class="py-line"><tt class="py-docstring">    construction :</tt> </tt>
+<a name="L137"></a><tt class="py-lineno">137</tt>  <tt class="py-line"><tt class="py-docstring">    featureSelect(classifier, featureSelector)</tt> </tt>
+<a name="L138"></a><tt class="py-lineno">138</tt>  <tt class="py-line"><tt class="py-docstring">    featureSelect(otherFeatureSelectInstance) - copy construction</tt> </tt>
+<a name="L139"></a><tt class="py-lineno">139</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L140"></a><tt class="py-lineno">140</tt>  <tt class="py-line">     </tt>
+<a name="L141"></a><tt class="py-lineno">141</tt>  <tt class="py-line">    <tt id="link-35" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.deepcopy
+PyML.classifiers.composite.Chain.deepcopy
+PyML.classifiers.composite.CompositeClassifier.deepcopy
+PyML.classifiers.composite.FeatureSelect.deepcopy
+PyML.classifiers.composite.FeatureSelectAll.deepcopy" class="py-name" href="#" onclick="return doclink('link-35', 'deepcopy', 'link-8');">deepcopy</a></tt> <tt class="py-op">=</tt> <tt class="py-name">True</tt> </tt>
+<a name="L142"></a><tt class="py-lineno">142</tt>  <tt class="py-line">     </tt>
+<a name="FeatureSelect.__init__"></a><div id="FeatureSelect.__init__-def"><a name="L143"></a><tt class="py-lineno">143</tt> <a class="py-toggle" href="#" id="FeatureSelect.__init__-toggle" onclick="return toggle('FeatureSelect.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.composite.FeatureSelect-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">arg1</tt><tt class="py-op">,</tt> <tt class="py-param">arg2</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="FeatureSelect.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="FeatureSelect.__init__-expanded"><a name="L144"></a><tt class="py-lineno">144</tt>  <tt class="py-line"> </tt>
+<a name="L145"></a><tt class="py-lineno">145</tt>  <tt class="py-line">        <tt id="link-36" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier" class="py-name" href="#" onclick="return doclink('link-36', 'Classifier', 'link-5');">Classifier</a></tt><tt class="py-op">.</tt><tt id="link-37" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.__init__
+PyML.classifiers.composite.AggregateClassifier.__init__
+PyML.classifiers.composite.Chain.__init__
+PyML.classifiers.composite.CompositeClassifier.__init__
+PyML.classifiers.composite.FeatureSelect.__init__
+PyML.classifiers.composite.FeatureSelectAll.__init__
+PyML.classifiers.ext.cgist.DoubleVector.__init__
+PyML.classifiers.ext.cgist.IntVector.__init__
+PyML.classifiers.ext.cgist.PySwigIterator.__init__
+PyML.classifiers.ext.csmo.DoubleVector.__init__
+PyML.classifiers.ext.csmo.IntVector.__init__
+PyML.classifiers.ext.csmo.PySwigIterator.__init__
+PyML.classifiers.ext.csvmodel.DoubleVector.__init__
+PyML.classifiers.ext.csvmodel.IntVector.__init__
+PyML.classifiers.ext.csvmodel.LinearSVModel.__init__
+PyML.classifiers.ext.csvmodel.LinearSparseSVModel.__init__
+PyML.classifiers.ext.csvmodel.PySwigIterator.__init__
+PyML.classifiers.ext.csvmodel.SVModel.__init__
+PyML.classifiers.ext.knn.DoubleVector.__init__
+PyML.classifiers.ext.knn.IntVector.__init__
+PyML.classifiers.ext.knn.KNN.__init__
+PyML.classifiers.ext.knn.PySwigIterator.__init__
+PyML.classifiers.ext.libsvm.DecisionFunction.__init__
+PyML.classifiers.ext.libsvm.PySwigIterator.__init__
+PyML.classifiers.ext.libsvm.doubleArray.__init__
+PyML.classifiers.ext.libsvm.intArray.__init__
+PyML.classifiers.ext.libsvm.svm_node.__init__
+PyML.classifiers.ext.libsvm.svm_parameter.__init__
+PyML.classifiers.ext.libsvm.svm_problem.__init__
+PyML.classifiers.knn.KNN.__init__
+PyML.classifiers.libsvmWrap.svmParameter.__init__
+PyML.classifiers.modelSelection.ModelSelector.__init__
+PyML.classifiers.modelSelection.Param.__init__
+PyML.classifiers.modelSelection.ParamGrid.__init__
+PyML.classifiers.modelSelection.SVMselect.__init__
+PyML.classifiers.ridgeRegression.RidgeRegression.__init__
+PyML.classifiers.svm.LinearSVModel.__init__
+PyML.classifiers.svm.SVC.__init__
+PyML.classifiers.svm.SVM.__init__
+PyML.classifiers.svm.SVModel.__init__
+PyML.classifiers.template.Template.__init__
+PyML.containers.aggregate.Aggregate.__init__
+PyML.containers.aggregate.DataAggregate.__init__
+PyML.containers.baseDatasets.BaseDataSet.__init__
+PyML.containers.baseDatasets.BaseVectorDataSet.__init__
+PyML.containers.ext.caggregate.Aggregate.__init__
+PyML.containers.ext.caggregate.DataSet.__init__
+PyML.containers.ext.caggregate.DoubleVector.__init__
+PyML.containers.ext.caggregate.IntVector.__init__
+PyML.containers.ext.caggregate.PySwigIterator.__init__
+PyML.containers.ext.ckernel.Cosine.__init__
+PyML.containers.ext.ckernel.DoubleVector.__init__
+PyML.containers.ext.ckernel.FloatVector.__init__
+PyML.containers.ext.ckernel.Gaussian.__init__
+PyML.containers.ext.ckernel.IntVector.__init__
+PyML.containers.ext.ckernel.Kernel.__init__
+PyML.containers.ext.ckernel.KernelMatrix.__init__
+PyML.containers.ext.ckernel.Linear.__init__
+PyML.containers.ext.ckernel.Polynomial.__init__
+PyML.containers.ext.ckernel.PySwigIterator.__init__
+PyML.containers.ext.ckerneldata.DataSet.__init__
+PyML.containers.ext.ckerneldata.DoubleVector.__init__
+PyML.containers.ext.ckerneldata.FloatVector.__init__
+PyML.containers.ext.ckerneldata.IntVector.__init__
+PyML.containers.ext.ckerneldata.KernelData.__init__
+PyML.containers.ext.ckerneldata.PySwigIterator.__init__
+PyML.containers.ext.cpairdataset.DataSet.__init__
+PyML.containers.ext.cpairdataset.DoubleVector.__init__
+PyML.containers.ext.cpairdataset.IntVector.__init__
+PyML.containers.ext.cpairdataset.PairDataSet.__init__
+PyML.containers.ext.cpairdataset.PairDataSetOrd.__init__
+PyML.containers.ext.cpairdataset.PairDataSetSum.__init__
+PyML.containers.ext.cpairdataset.PySwigIterator.__init__
+PyML.containers.ext.csequencedata.DataSet.__init__
+PyML.containers.ext.csequencedata.DoubleVector.__init__
+PyML.containers.ext.csequencedata.IntVector.__init__
+PyML.containers.ext.csequencedata.LongVector.__init__
+PyML.containers.ext.csequencedata.PySwigIterator.__init__
+PyML.containers.ext.csequencedata.SequenceData.__init__
+PyML.containers.ext.csequencedata.StringVector.__init__
+PyML.containers.ext.csparsedataset.DataSet.__init__
+PyML.containers.ext.csparsedataset.DoubleVector.__init__
+PyML.containers.ext.csparsedataset.FloatVector.__init__
+PyML.containers.ext.csparsedataset.IntVector.__init__
+PyML.containers.ext.csparsedataset.LongVector.__init__
+PyML.containers.ext.csparsedataset.PySwigIterator.__init__
+PyML.containers.ext.csparsedataset.SparseDataSet.__init__
+PyML.containers.ext.csparsedataset.StringVector.__init__
+PyML.containers.ext.csparsedataset.doubleArray.__init__
+PyML.containers.ext.csparsedataset.intArray.__init__
+PyML.containers.ext.csparsefeaturevector.Feature.__init__
+PyML.containers.ext.csparsefeaturevector.SparseFeatureVector.__init__
+PyML.containers.ext.cstringkernel.DoubleVector.__init__
+PyML.containers.ext.cstringkernel.IntVector.__init__
+PyML.containers.ext.cstringkernel.LongVector.__init__
+PyML.containers.ext.cstringkernel.PositionalKmer.__init__
+PyML.containers.ext.cstringkernel.PySwigIterator.__init__
+PyML.containers.ext.cstringkernel.StringKernel.__init__
+PyML.containers.ext.cstringkernel.StringVector.__init__
+PyML.containers.ext.cvectordataset.DataSet.__init__
+PyML.containers.ext.cvectordataset.DoubleVector.__init__
+PyML.containers.ext.cvectordataset.IntVector.__init__
+PyML.containers.ext.cvectordataset.LongVector.__init__
+PyML.containers.ext.cvectordataset.PySwigIterator.__init__
+PyML.containers.ext.cvectordataset.StringVector.__init__
+PyML.containers.ext.cvectordataset.VectorDataSet.__init__
+PyML.containers.ker.Cosine.__init__
+PyML.containers.ker.Gaussian.__init__
+PyML.containers.ker.Linear.__init__
+PyML.containers.ker.Polynomial.__init__
+PyML.containers.kernelData.KernelData.__init__
+PyML.containers.labels.Labels.__init__
+PyML.containers.pairData.PairDataSet.__init__
+PyML.containers.pairData.PairDataSetOrd.__init__
+PyML.containers.pairData.PairDataSetSum.__init__
+PyML.containers.pairData.SimplePairDataSet.__init__
+PyML.containers.parsers.CSVParser.__init__
+PyML.containers.parsers.Parser.__init__
+PyML.containers.parsers.SparseParser.__init__
+PyML.containers.sequenceData.SequenceData.__init__
+PyML.containers.vectorDatasets.BaseCVectorDataSet.__init__
+PyML.containers.vectorDatasets.SparseDataSet.__init__
+PyML.containers.vectorDatasets.VectorDataSet.__init__
+PyML.evaluators.assess.ClassificationResults.__init__
+PyML.evaluators.assess.ClassificationResultsContainer.__init__
+PyML.evaluators.assess.RegressionResults.__init__
+PyML.evaluators.assess.RegressionResultsContainer.__init__
+PyML.evaluators.assess.Results.__init__
+PyML.evaluators.assess.ResultsList.__init__
+PyML.feature_selection.featsel.BackwardSelector.__init__
+PyML.feature_selection.featsel.FeatureScore.__init__
+PyML.feature_selection.featsel.Filter.__init__
+PyML.feature_selection.featsel.MultiplicativeUpdate.__init__
+PyML.feature_selection.featsel.OneAgainstRestSelect.__init__
+PyML.feature_selection.featsel.RFE.__init__
+PyML.feature_selection.featsel.Random.__init__
+PyML.preproc.preproc.Correlator.__init__
+PyML.preproc.preproc.Standardizer.__init__" class="py-name" href="#" onclick="return doclink('link-37', '__init__', 'link-10');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">)</tt> </tt>
+<a name="L146"></a><tt class="py-lineno">146</tt>  <tt class="py-line"> </tt>
+<a name="L147"></a><tt class="py-lineno">147</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">arg1</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt> <tt class="py-op">==</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt> <tt class="py-op">:</tt> </tt>
+<a name="L148"></a><tt class="py-lineno">148</tt>  <tt class="py-line">            <tt class="py-name">other</tt> <tt class="py-op">=</tt> <tt class="py-name">arg1</tt> </tt>
+<a name="L149"></a><tt class="py-lineno">149</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt> <tt class="py-op">=</tt> <tt class="py-name">other</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">(</tt><tt class="py-name">other</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">)</tt> </tt>
+<a name="L150"></a><tt class="py-lineno">150</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">featureSelector</tt> <tt class="py-op">=</tt> <tt class="py-name">other</tt><tt class="py-op">.</tt><tt class="py-name">featureSelector</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">(</tt> </tt>
+<a name="L151"></a><tt class="py-lineno">151</tt>  <tt class="py-line">                <tt class="py-name">other</tt><tt class="py-op">.</tt><tt class="py-name">featureSelector</tt><tt class="py-op">)</tt> </tt>
+<a name="L152"></a><tt class="py-lineno">152</tt>  <tt class="py-line">        <tt class="py-keyword">else</tt> <tt class="py-op">:</tt> </tt>
+<a name="L153"></a><tt class="py-lineno">153</tt>  <tt class="py-line">            <tt class="py-keyword">for</tt> <tt class="py-name">arg</tt> <tt class="py-keyword">in</tt> <tt class="py-op">(</tt><tt class="py-name">arg1</tt><tt class="py-op">,</tt> <tt class="py-name">arg2</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L154"></a><tt class="py-lineno">154</tt>  <tt class="py-line">                <tt class="py-keyword">if</tt> <tt class="py-name">arg</tt><tt class="py-op">.</tt><tt id="link-38" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.type
+PyML.containers.baseDatasets.BaseDataSet.type
+PyML.containers.ker.Kernel.type
+PyML.feature_selection.featsel.FeatureScorer.type
+PyML.feature_selection.featsel.FeatureSelector.type" class="py-name" href="#" onclick="return doclink('link-38', 'type', 'link-11');">type</a></tt> <tt class="py-op">==</tt> <tt class="py-string">'classifier'</tt> <tt class="py-op">:</tt> </tt>
+<a name="L155"></a><tt class="py-lineno">155</tt>  <tt class="py-line">                    <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt> <tt class="py-op">=</tt> <tt class="py-name">arg</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">(</tt><tt class="py-name">arg</tt><tt class="py-op">)</tt> </tt>
+<a name="L156"></a><tt class="py-lineno">156</tt>  <tt class="py-line">                <tt class="py-keyword">elif</tt> <tt class="py-name">arg</tt><tt class="py-op">.</tt><tt id="link-39" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.type
+PyML.containers.baseDatasets.BaseDataSet.type
+PyML.containers.ker.Kernel.type
+PyML.feature_selection.featsel.FeatureScorer.type
+PyML.feature_selection.featsel.FeatureSelector.type" class="py-name" href="#" onclick="return doclink('link-39', 'type', 'link-11');">type</a></tt> <tt class="py-op">==</tt> <tt class="py-string">'featureSelector'</tt> <tt class="py-op">:</tt> </tt>
+<a name="L157"></a><tt class="py-lineno">157</tt>  <tt class="py-line">                    <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">featureSelector</tt> <tt class="py-op">=</tt> <tt class="py-name">arg</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">(</tt><tt class="py-name">arg</tt><tt class="py-op">)</tt> </tt>
+<a name="L158"></a><tt class="py-lineno">158</tt>  <tt class="py-line">                <tt class="py-keyword">else</tt> <tt class="py-op">:</tt> </tt>
+<a name="L159"></a><tt class="py-lineno">159</tt>  <tt class="py-line">                    <tt class="py-keyword">raise</tt> <tt class="py-name">ValueError</tt><tt class="py-op">,</tt> \ </tt>
+<a name="L160"></a><tt class="py-lineno">160</tt>  <tt class="py-line">                          <tt class="py-string">'argument should be either classifier or featureSelector'</tt> </tt>
+</div><a name="L161"></a><tt class="py-lineno">161</tt>  <tt class="py-line"> </tt>
+<a name="L162"></a><tt class="py-lineno">162</tt>  <tt class="py-line"> </tt>
+<a name="FeatureSelect.__repr__"></a><div id="FeatureSelect.__repr__-def"><a name="L163"></a><tt class="py-lineno">163</tt> <a class="py-toggle" href="#" id="FeatureSelect.__repr__-toggle" onclick="return toggle('FeatureSelect.__repr__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.composite.FeatureSelect-class.html#__repr__">__repr__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="FeatureSelect.__repr__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="FeatureSelect.__repr__-expanded"><a name="L164"></a><tt class="py-lineno">164</tt>  <tt class="py-line">         </tt>
+<a name="L165"></a><tt class="py-lineno">165</tt>  <tt class="py-line">        <tt class="py-name">rep</tt> <tt class="py-op">=</tt> <tt class="py-string">'&lt;'</tt> <tt class="py-op">+</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">.</tt><tt class="py-name">__name__</tt> <tt class="py-op">+</tt> <tt class="py-string">' instance&gt;\n'</tt> </tt>
+<a name="L166"></a><tt class="py-lineno">166</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">hasattr</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-string">'numFeatures'</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L167"></a><tt class="py-lineno">167</tt>  <tt class="py-line">            <tt class="py-name">rep</tt> <tt class="py-op">+=</tt> <tt class="py-string">'number of features trained on:'</tt> <tt class="py-op">+</tt> <tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-40" class="py-name" targets="Variable PyML.containers.datafunc.PySparseDataSet.numFeatures=PyML.containers.datafunc.PySparseDataSet-class.html#numFeatures,Variable PyML.containers.datafunc.PyVectorDataSet.numFeatures=PyML.containers.datafunc.PyVectorDataSet-class.html#numFeatures"><a title="PyML.containers.datafunc.PySparseDataSet.numFeatures
+PyML.containers.datafunc.PyVectorDataSet.numFeatures" class="py-name" href="#" onclick="return doclink('link-40', 'numFeatures', 'link-40');">numFeatures</a></tt><tt class="py-op">)</tt> <tt class="py-op">+</tt> <tt class="py-string">'\n'</tt> </tt>
+<a name="L168"></a><tt class="py-lineno">168</tt>  <tt class="py-line">        <tt class="py-name">rep</tt> <tt class="py-op">+=</tt> <tt class="py-string">'Classifier:\n'</tt> </tt>
+<a name="L169"></a><tt class="py-lineno">169</tt>  <tt class="py-line">        <tt class="py-name">rep</tt> <tt class="py-op">+=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt id="link-41" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.__repr__
+PyML.classifiers.composite.CompositeClassifier.__repr__
+PyML.classifiers.composite.FeatureSelect.__repr__
+PyML.classifiers.knn.KNN.__repr__
+PyML.classifiers.modelSelection.ModelSelector.__repr__
+PyML.classifiers.modelSelection.Param.__repr__
+PyML.classifiers.modelSelection.ParamGrid.__repr__
+PyML.classifiers.modelSelection.SVMselect.__repr__
+PyML.classifiers.ridgeRegression.RidgeRegression.__repr__
+PyML.classifiers.svm.LinearSVModel.__repr__
+PyML.classifiers.svm.OneClassSVM.__repr__
+PyML.classifiers.svm.SVM.__repr__
+PyML.classifiers.svm.SVModel.__repr__
+PyML.classifiers.svm.SVR.__repr__
+PyML.containers.aggregate.DataAggregate.__repr__
+PyML.containers.baseDatasets.BaseVectorDataSet.__repr__
+PyML.containers.ker.Gaussian.__repr__
+PyML.containers.ker.Kernel.__repr__
+PyML.containers.ker.Polynomial.__repr__
+PyML.containers.labels.Labels.__repr__
+PyML.evaluators.assess.ClassificationFunctions.__repr__
+PyML.evaluators.assess.ClassificationResults.__repr__
+PyML.evaluators.assess.RegressionResults.__repr__
+PyML.evaluators.assess.ResultsList.__repr__
+PyML.feature_selection.featsel.FeatureScore.__repr__
+PyML.feature_selection.featsel.Filter.__repr__
+PyML.feature_selection.featsel.MultiplicativeUpdate.__repr__
+PyML.feature_selection.featsel.RFE.__repr__
+PyML.feature_selection.featsel.Random.__repr__" class="py-name" href="#" onclick="return doclink('link-41', '__repr__', 'link-14');">__repr__</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L170"></a><tt class="py-lineno">170</tt>  <tt class="py-line">        <tt class="py-name">rep</tt> <tt class="py-op">+=</tt> <tt class="py-string">'Feature Selector:\n'</tt> </tt>
+<a name="L171"></a><tt class="py-lineno">171</tt>  <tt class="py-line">        <tt class="py-name">rep</tt> <tt class="py-op">+=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">featureSelector</tt><tt class="py-op">.</tt><tt id="link-42" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.__repr__
+PyML.classifiers.composite.CompositeClassifier.__repr__
+PyML.classifiers.composite.FeatureSelect.__repr__
+PyML.classifiers.knn.KNN.__repr__
+PyML.classifiers.modelSelection.ModelSelector.__repr__
+PyML.classifiers.modelSelection.Param.__repr__
+PyML.classifiers.modelSelection.ParamGrid.__repr__
+PyML.classifiers.modelSelection.SVMselect.__repr__
+PyML.classifiers.ridgeRegression.RidgeRegression.__repr__
+PyML.classifiers.svm.LinearSVModel.__repr__
+PyML.classifiers.svm.OneClassSVM.__repr__
+PyML.classifiers.svm.SVM.__repr__
+PyML.classifiers.svm.SVModel.__repr__
+PyML.classifiers.svm.SVR.__repr__
+PyML.containers.aggregate.DataAggregate.__repr__
+PyML.containers.baseDatasets.BaseVectorDataSet.__repr__
+PyML.containers.ker.Gaussian.__repr__
+PyML.containers.ker.Kernel.__repr__
+PyML.containers.ker.Polynomial.__repr__
+PyML.containers.labels.Labels.__repr__
+PyML.evaluators.assess.ClassificationFunctions.__repr__
+PyML.evaluators.assess.ClassificationResults.__repr__
+PyML.evaluators.assess.RegressionResults.__repr__
+PyML.evaluators.assess.ResultsList.__repr__
+PyML.feature_selection.featsel.FeatureScore.__repr__
+PyML.feature_selection.featsel.Filter.__repr__
+PyML.feature_selection.featsel.MultiplicativeUpdate.__repr__
+PyML.feature_selection.featsel.RFE.__repr__
+PyML.feature_selection.featsel.Random.__repr__" class="py-name" href="#" onclick="return doclink('link-42', '__repr__', 'link-14');">__repr__</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L172"></a><tt class="py-lineno">172</tt>  <tt class="py-line">             </tt>
+<a name="L173"></a><tt class="py-lineno">173</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">rep</tt> </tt>
+</div><a name="L174"></a><tt class="py-lineno">174</tt>  <tt class="py-line"> </tt>
+<a name="L175"></a><tt class="py-lineno">175</tt>  <tt class="py-line">             </tt>
+<a name="FeatureSelect.train"></a><div id="FeatureSelect.train-def"><a name="L176"></a><tt class="py-lineno">176</tt> <a class="py-toggle" href="#" id="FeatureSelect.train-toggle" onclick="return toggle('FeatureSelect.train');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.composite.FeatureSelect-class.html#train">train</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">data</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-param">args</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="FeatureSelect.train-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="FeatureSelect.train-expanded"><a name="L177"></a><tt class="py-lineno">177</tt>  <tt class="py-line"> </tt>
+<a name="L178"></a><tt class="py-lineno">178</tt>  <tt class="py-line">        <tt id="link-43" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier" class="py-name" href="#" onclick="return doclink('link-43', 'Classifier', 'link-5');">Classifier</a></tt><tt class="py-op">.</tt><tt id="link-44" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.train
+PyML.classifiers.composite.AggregateClassifier.train
+PyML.classifiers.composite.Chain.train
+PyML.classifiers.composite.FeatureSelect.train
+PyML.classifiers.composite.FeatureSelectAll.train
+PyML.classifiers.ext.knn.KNN.train
+PyML.classifiers.knn.KNN.train
+PyML.classifiers.modelSelection.ModelSelector.train
+PyML.classifiers.modelSelection.Param.train
+PyML.classifiers.modelSelection.SVMselect.train
+PyML.classifiers.multi.OneAgainstOne.train
+PyML.classifiers.multi.OneAgainstRest.train
+PyML.classifiers.platt.Platt.train
+PyML.classifiers.ridgeRegression.RidgeRegression.train
+PyML.classifiers.svm.SVC.train
+PyML.classifiers.svm.SVM.train
+PyML.classifiers.template.Template.train
+PyML.containers.baseDatasets.BaseDataSet.train
+PyML.preproc.preproc.Standardizer.train" class="py-name" href="#" onclick="return doclink('link-44', 'train', 'link-28');">train</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">data</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-name">args</tt><tt class="py-op">)</tt> </tt>
+<a name="L179"></a><tt class="py-lineno">179</tt>  <tt class="py-line"> </tt>
+<a name="L180"></a><tt class="py-lineno">180</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">featureSelector</tt><tt class="py-op">.</tt><tt id="link-45" class="py-name" targets="Method PyML.feature_selection.featsel.FeatureSelector.select()=PyML.feature_selection.featsel.FeatureSelector-class.html#select"><a title="PyML.feature_selection.featsel.FeatureSelector.select" class="py-name" href="#" onclick="return doclink('link-45', 'select', 'link-45');">select</a></tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-name">args</tt><tt class="py-op">)</tt> </tt>
+<a name="L181"></a><tt class="py-lineno">181</tt>  <tt class="py-line">        <tt class="py-comment">#self.numFeatures = data.numFeatures</tt> </tt>
+<a name="L182"></a><tt class="py-lineno">182</tt>  <tt class="py-line"><tt class="py-comment"></tt>        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt class="py-name">log</tt><tt class="py-op">.</tt><tt id="link-46" class="py-name"><a title="PyML.containers.datafunc.PySparseDataSet.numFeatures
+PyML.containers.datafunc.PyVectorDataSet.numFeatures" class="py-name" href="#" onclick="return doclink('link-46', 'numFeatures', 'link-40');">numFeatures</a></tt> <tt class="py-op">=</tt> <tt class="py-name">data</tt><tt class="py-op">.</tt><tt id="link-47" class="py-name"><a title="PyML.containers.datafunc.PySparseDataSet.numFeatures
+PyML.containers.datafunc.PyVectorDataSet.numFeatures" class="py-name" href="#" onclick="return doclink('link-47', 'numFeatures', 'link-40');">numFeatures</a></tt> </tt>
+<a name="L183"></a><tt class="py-lineno">183</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt class="py-name">log</tt><tt class="py-op">.</tt><tt class="py-name">features</tt> <tt class="py-op">=</tt> <tt class="py-name">data</tt><tt class="py-op">.</tt><tt class="py-name">featureID</tt><tt class="py-op">[</tt><tt class="py-op">:</tt><tt class="py-op">]</tt> </tt>
+<a name="L184"></a><tt class="py-lineno">184</tt>  <tt class="py-line">         </tt>
+<a name="L185"></a><tt class="py-lineno">185</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt id="link-48" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.train
+PyML.classifiers.composite.AggregateClassifier.train
+PyML.classifiers.composite.Chain.train
+PyML.classifiers.composite.FeatureSelect.train
+PyML.classifiers.composite.FeatureSelectAll.train
+PyML.classifiers.ext.knn.KNN.train
+PyML.classifiers.knn.KNN.train
+PyML.classifiers.modelSelection.ModelSelector.train
+PyML.classifiers.modelSelection.Param.train
+PyML.classifiers.modelSelection.SVMselect.train
+PyML.classifiers.multi.OneAgainstOne.train
+PyML.classifiers.multi.OneAgainstRest.train
+PyML.classifiers.platt.Platt.train
+PyML.classifiers.ridgeRegression.RidgeRegression.train
+PyML.classifiers.svm.SVC.train
+PyML.classifiers.svm.SVM.train
+PyML.classifiers.template.Template.train
+PyML.containers.baseDatasets.BaseDataSet.train
+PyML.preproc.preproc.Standardizer.train" class="py-name" href="#" onclick="return doclink('link-48', 'train', 'link-28');">train</a></tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-name">args</tt><tt class="py-op">)</tt> </tt>
+<a name="L186"></a><tt class="py-lineno">186</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt class="py-name">log</tt><tt class="py-op">.</tt><tt class="py-name">trainingTime</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-49" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.getTrainingTime" class="py-name" href="#" onclick="return doclink('link-49', 'getTrainingTime', 'link-31');">getTrainingTime</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L187"></a><tt class="py-lineno">187</tt>  <tt class="py-line"> </tt>
+<a name="L188"></a><tt class="py-lineno">188</tt>  <tt class="py-line"> </tt>
+<a name="FeatureSelectAll"></a><div id="FeatureSelectAll-def"><a name="L189"></a><tt class="py-lineno">189</tt> <a class="py-toggle" href="#" id="FeatureSelectAll-toggle" onclick="return toggle('FeatureSelectAll');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="PyML.classifiers.composite.FeatureSelectAll-class.html">FeatureSelectAll</a> <tt class="py-op">(</tt><tt class="py-base-class">IteratorClassifier</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="FeatureSelectAll-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="FeatureSelectAll-expanded"><a name="L190"></a><tt class="py-lineno">190</tt>  <tt class="py-line"> </tt>
+<a name="L191"></a><tt class="py-lineno">191</tt>  <tt class="py-line">    <tt class="py-docstring">'''A method for combining a feature selector and classifier;</tt> </tt>
+<a name="L192"></a><tt class="py-lineno">192</tt>  <tt class="py-line"><tt class="py-docstring">    the difference from FeatureSelect is that it is specifically</tt> </tt>
+<a name="L193"></a><tt class="py-lineno">193</tt>  <tt class="py-line"><tt class="py-docstring">    designed for computing the accuracy while varying the </tt> </tt>
+<a name="L194"></a><tt class="py-lineno">194</tt>  <tt class="py-line"><tt class="py-docstring">    number of features.</tt> </tt>
+<a name="L195"></a><tt class="py-lineno">195</tt>  <tt class="py-line"><tt class="py-docstring">    '''</tt> </tt>
+<a name="L196"></a><tt class="py-lineno">196</tt>  <tt class="py-line">     </tt>
+<a name="L197"></a><tt class="py-lineno">197</tt>  <tt class="py-line">    <tt id="link-50" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.deepcopy
+PyML.classifiers.composite.Chain.deepcopy
+PyML.classifiers.composite.CompositeClassifier.deepcopy
+PyML.classifiers.composite.FeatureSelect.deepcopy
+PyML.classifiers.composite.FeatureSelectAll.deepcopy" class="py-name" href="#" onclick="return doclink('link-50', 'deepcopy', 'link-8');">deepcopy</a></tt> <tt class="py-op">=</tt> <tt class="py-name">True</tt> </tt>
+<a name="L198"></a><tt class="py-lineno">198</tt>  <tt class="py-line"> </tt>
+<a name="FeatureSelectAll.__init__"></a><div id="FeatureSelectAll.__init__-def"><a name="L199"></a><tt class="py-lineno">199</tt> <a class="py-toggle" href="#" id="FeatureSelectAll.__init__-toggle" onclick="return toggle('FeatureSelectAll.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.composite.FeatureSelectAll-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">arg1</tt><tt class="py-op">,</tt> <tt class="py-param">arg2</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="FeatureSelectAll.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="FeatureSelectAll.__init__-expanded"><a name="L200"></a><tt class="py-lineno">200</tt>  <tt class="py-line"> </tt>
+<a name="L201"></a><tt class="py-lineno">201</tt>  <tt class="py-line">        <tt id="link-51" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier" class="py-name" href="#" onclick="return doclink('link-51', 'Classifier', 'link-5');">Classifier</a></tt><tt class="py-op">.</tt><tt id="link-52" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.__init__
+PyML.classifiers.composite.AggregateClassifier.__init__
+PyML.classifiers.composite.Chain.__init__
+PyML.classifiers.composite.CompositeClassifier.__init__
+PyML.classifiers.composite.FeatureSelect.__init__
+PyML.classifiers.composite.FeatureSelectAll.__init__
+PyML.classifiers.ext.cgist.DoubleVector.__init__
+PyML.classifiers.ext.cgist.IntVector.__init__
+PyML.classifiers.ext.cgist.PySwigIterator.__init__
+PyML.classifiers.ext.csmo.DoubleVector.__init__
+PyML.classifiers.ext.csmo.IntVector.__init__
+PyML.classifiers.ext.csmo.PySwigIterator.__init__
+PyML.classifiers.ext.csvmodel.DoubleVector.__init__
+PyML.classifiers.ext.csvmodel.IntVector.__init__
+PyML.classifiers.ext.csvmodel.LinearSVModel.__init__
+PyML.classifiers.ext.csvmodel.LinearSparseSVModel.__init__
+PyML.classifiers.ext.csvmodel.PySwigIterator.__init__
+PyML.classifiers.ext.csvmodel.SVModel.__init__
+PyML.classifiers.ext.knn.DoubleVector.__init__
+PyML.classifiers.ext.knn.IntVector.__init__
+PyML.classifiers.ext.knn.KNN.__init__
+PyML.classifiers.ext.knn.PySwigIterator.__init__
+PyML.classifiers.ext.libsvm.DecisionFunction.__init__
+PyML.classifiers.ext.libsvm.PySwigIterator.__init__
+PyML.classifiers.ext.libsvm.doubleArray.__init__
+PyML.classifiers.ext.libsvm.intArray.__init__
+PyML.classifiers.ext.libsvm.svm_node.__init__
+PyML.classifiers.ext.libsvm.svm_parameter.__init__
+PyML.classifiers.ext.libsvm.svm_problem.__init__
+PyML.classifiers.knn.KNN.__init__
+PyML.classifiers.libsvmWrap.svmParameter.__init__
+PyML.classifiers.modelSelection.ModelSelector.__init__
+PyML.classifiers.modelSelection.Param.__init__
+PyML.classifiers.modelSelection.ParamGrid.__init__
+PyML.classifiers.modelSelection.SVMselect.__init__
+PyML.classifiers.ridgeRegression.RidgeRegression.__init__
+PyML.classifiers.svm.LinearSVModel.__init__
+PyML.classifiers.svm.SVC.__init__
+PyML.classifiers.svm.SVM.__init__
+PyML.classifiers.svm.SVModel.__init__
+PyML.classifiers.template.Template.__init__
+PyML.containers.aggregate.Aggregate.__init__
+PyML.containers.aggregate.DataAggregate.__init__
+PyML.containers.baseDatasets.BaseDataSet.__init__
+PyML.containers.baseDatasets.BaseVectorDataSet.__init__
+PyML.containers.ext.caggregate.Aggregate.__init__
+PyML.containers.ext.caggregate.DataSet.__init__
+PyML.containers.ext.caggregate.DoubleVector.__init__
+PyML.containers.ext.caggregate.IntVector.__init__
+PyML.containers.ext.caggregate.PySwigIterator.__init__
+PyML.containers.ext.ckernel.Cosine.__init__
+PyML.containers.ext.ckernel.DoubleVector.__init__
+PyML.containers.ext.ckernel.FloatVector.__init__
+PyML.containers.ext.ckernel.Gaussian.__init__
+PyML.containers.ext.ckernel.IntVector.__init__
+PyML.containers.ext.ckernel.Kernel.__init__
+PyML.containers.ext.ckernel.KernelMatrix.__init__
+PyML.containers.ext.ckernel.Linear.__init__
+PyML.containers.ext.ckernel.Polynomial.__init__
+PyML.containers.ext.ckernel.PySwigIterator.__init__
+PyML.containers.ext.ckerneldata.DataSet.__init__
+PyML.containers.ext.ckerneldata.DoubleVector.__init__
+PyML.containers.ext.ckerneldata.FloatVector.__init__
+PyML.containers.ext.ckerneldata.IntVector.__init__
+PyML.containers.ext.ckerneldata.KernelData.__init__
+PyML.containers.ext.ckerneldata.PySwigIterator.__init__
+PyML.containers.ext.cpairdataset.DataSet.__init__
+PyML.containers.ext.cpairdataset.DoubleVector.__init__
+PyML.containers.ext.cpairdataset.IntVector.__init__
+PyML.containers.ext.cpairdataset.PairDataSet.__init__
+PyML.containers.ext.cpairdataset.PairDataSetOrd.__init__
+PyML.containers.ext.cpairdataset.PairDataSetSum.__init__
+PyML.containers.ext.cpairdataset.PySwigIterator.__init__
+PyML.containers.ext.csequencedata.DataSet.__init__
+PyML.containers.ext.csequencedata.DoubleVector.__init__
+PyML.containers.ext.csequencedata.IntVector.__init__
+PyML.containers.ext.csequencedata.LongVector.__init__
+PyML.containers.ext.csequencedata.PySwigIterator.__init__
+PyML.containers.ext.csequencedata.SequenceData.__init__
+PyML.containers.ext.csequencedata.StringVector.__init__
+PyML.containers.ext.csparsedataset.DataSet.__init__
+PyML.containers.ext.csparsedataset.DoubleVector.__init__
+PyML.containers.ext.csparsedataset.FloatVector.__init__
+PyML.containers.ext.csparsedataset.IntVector.__init__
+PyML.containers.ext.csparsedataset.LongVector.__init__
+PyML.containers.ext.csparsedataset.PySwigIterator.__init__
+PyML.containers.ext.csparsedataset.SparseDataSet.__init__
+PyML.containers.ext.csparsedataset.StringVector.__init__
+PyML.containers.ext.csparsedataset.doubleArray.__init__
+PyML.containers.ext.csparsedataset.intArray.__init__
+PyML.containers.ext.csparsefeaturevector.Feature.__init__
+PyML.containers.ext.csparsefeaturevector.SparseFeatureVector.__init__
+PyML.containers.ext.cstringkernel.DoubleVector.__init__
+PyML.containers.ext.cstringkernel.IntVector.__init__
+PyML.containers.ext.cstringkernel.LongVector.__init__
+PyML.containers.ext.cstringkernel.PositionalKmer.__init__
+PyML.containers.ext.cstringkernel.PySwigIterator.__init__
+PyML.containers.ext.cstringkernel.StringKernel.__init__
+PyML.containers.ext.cstringkernel.StringVector.__init__
+PyML.containers.ext.cvectordataset.DataSet.__init__
+PyML.containers.ext.cvectordataset.DoubleVector.__init__
+PyML.containers.ext.cvectordataset.IntVector.__init__
+PyML.containers.ext.cvectordataset.LongVector.__init__
+PyML.containers.ext.cvectordataset.PySwigIterator.__init__
+PyML.containers.ext.cvectordataset.StringVector.__init__
+PyML.containers.ext.cvectordataset.VectorDataSet.__init__
+PyML.containers.ker.Cosine.__init__
+PyML.containers.ker.Gaussian.__init__
+PyML.containers.ker.Linear.__init__
+PyML.containers.ker.Polynomial.__init__
+PyML.containers.kernelData.KernelData.__init__
+PyML.containers.labels.Labels.__init__
+PyML.containers.pairData.PairDataSet.__init__
+PyML.containers.pairData.PairDataSetOrd.__init__
+PyML.containers.pairData.PairDataSetSum.__init__
+PyML.containers.pairData.SimplePairDataSet.__init__
+PyML.containers.parsers.CSVParser.__init__
+PyML.containers.parsers.Parser.__init__
+PyML.containers.parsers.SparseParser.__init__
+PyML.containers.sequenceData.SequenceData.__init__
+PyML.containers.vectorDatasets.BaseCVectorDataSet.__init__
+PyML.containers.vectorDatasets.SparseDataSet.__init__
+PyML.containers.vectorDatasets.VectorDataSet.__init__
+PyML.evaluators.assess.ClassificationResults.__init__
+PyML.evaluators.assess.ClassificationResultsContainer.__init__
+PyML.evaluators.assess.RegressionResults.__init__
+PyML.evaluators.assess.RegressionResultsContainer.__init__
+PyML.evaluators.assess.Results.__init__
+PyML.evaluators.assess.ResultsList.__init__
+PyML.feature_selection.featsel.BackwardSelector.__init__
+PyML.feature_selection.featsel.FeatureScore.__init__
+PyML.feature_selection.featsel.Filter.__init__
+PyML.feature_selection.featsel.MultiplicativeUpdate.__init__
+PyML.feature_selection.featsel.OneAgainstRestSelect.__init__
+PyML.feature_selection.featsel.RFE.__init__
+PyML.feature_selection.featsel.Random.__init__
+PyML.preproc.preproc.Correlator.__init__
+PyML.preproc.preproc.Standardizer.__init__" class="py-name" href="#" onclick="return doclink('link-52', '__init__', 'link-10');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">)</tt> </tt>
+<a name="L202"></a><tt class="py-lineno">202</tt>  <tt class="py-line"> </tt>
+<a name="L203"></a><tt class="py-lineno">203</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">arg1</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt> <tt class="py-op">==</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt> <tt class="py-op">:</tt> </tt>
+<a name="L204"></a><tt class="py-lineno">204</tt>  <tt class="py-line">            <tt class="py-name">other</tt> <tt class="py-op">=</tt> <tt class="py-name">arg1</tt> </tt>
+<a name="L205"></a><tt class="py-lineno">205</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt> <tt class="py-op">=</tt> <tt class="py-name">other</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">(</tt><tt class="py-name">other</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">)</tt> </tt>
+<a name="L206"></a><tt class="py-lineno">206</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">featureSelector</tt> <tt class="py-op">=</tt> <tt class="py-name">other</tt><tt class="py-op">.</tt><tt class="py-name">featureSelector</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">(</tt> </tt>
+<a name="L207"></a><tt class="py-lineno">207</tt>  <tt class="py-line">                <tt class="py-name">other</tt><tt class="py-op">.</tt><tt class="py-name">featureSelector</tt><tt class="py-op">)</tt> </tt>
+<a name="L208"></a><tt class="py-lineno">208</tt>  <tt class="py-line">        <tt class="py-keyword">else</tt> <tt class="py-op">:</tt> </tt>
+<a name="L209"></a><tt class="py-lineno">209</tt>  <tt class="py-line">            <tt class="py-keyword">for</tt> <tt class="py-name">arg</tt> <tt class="py-keyword">in</tt> <tt class="py-op">(</tt><tt class="py-name">arg1</tt><tt class="py-op">,</tt> <tt class="py-name">arg2</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L210"></a><tt class="py-lineno">210</tt>  <tt class="py-line">                <tt class="py-keyword">if</tt> <tt class="py-name">arg</tt><tt class="py-op">.</tt><tt id="link-53" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.type
+PyML.containers.baseDatasets.BaseDataSet.type
+PyML.containers.ker.Kernel.type
+PyML.feature_selection.featsel.FeatureScorer.type
+PyML.feature_selection.featsel.FeatureSelector.type" class="py-name" href="#" onclick="return doclink('link-53', 'type', 'link-11');">type</a></tt> <tt class="py-op">==</tt> <tt class="py-string">'classifier'</tt> <tt class="py-op">:</tt> </tt>
+<a name="L211"></a><tt class="py-lineno">211</tt>  <tt class="py-line">                    <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt> <tt class="py-op">=</tt> <tt class="py-name">arg</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">(</tt><tt class="py-name">arg</tt><tt class="py-op">)</tt> </tt>
+<a name="L212"></a><tt class="py-lineno">212</tt>  <tt class="py-line">                <tt class="py-keyword">elif</tt> <tt class="py-name">arg</tt><tt class="py-op">.</tt><tt id="link-54" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.type
+PyML.containers.baseDatasets.BaseDataSet.type
+PyML.containers.ker.Kernel.type
+PyML.feature_selection.featsel.FeatureScorer.type
+PyML.feature_selection.featsel.FeatureSelector.type" class="py-name" href="#" onclick="return doclink('link-54', 'type', 'link-11');">type</a></tt> <tt class="py-op">==</tt> <tt class="py-string">'featureSelector'</tt> <tt class="py-op">:</tt> </tt>
+<a name="L213"></a><tt class="py-lineno">213</tt>  <tt class="py-line">                    <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">featureSelector</tt> <tt class="py-op">=</tt> <tt class="py-name">arg</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">(</tt><tt class="py-name">arg</tt><tt class="py-op">)</tt> </tt>
+<a name="L214"></a><tt class="py-lineno">214</tt>  <tt class="py-line">                <tt class="py-keyword">else</tt> <tt class="py-op">:</tt> </tt>
+<a name="L215"></a><tt class="py-lineno">215</tt>  <tt class="py-line">                    <tt class="py-keyword">raise</tt> <tt class="py-name">ValueError</tt><tt class="py-op">,</tt> \ </tt>
+<a name="L216"></a><tt class="py-lineno">216</tt>  <tt class="py-line">                          <tt class="py-string">'argument should be either classifier or featureSelector'</tt> </tt>
+</div><a name="L217"></a><tt class="py-lineno">217</tt>  <tt class="py-line"> </tt>
+<a name="L218"></a><tt class="py-lineno">218</tt>  <tt class="py-line"> </tt>
+<a name="FeatureSelectAll.train"></a><div id="FeatureSelectAll.train-def"><a name="L219"></a><tt class="py-lineno">219</tt> <a class="py-toggle" href="#" id="FeatureSelectAll.train-toggle" onclick="return toggle('FeatureSelectAll.train');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.composite.FeatureSelectAll-class.html#train">train</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">data</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-param">args</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="FeatureSelectAll.train-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="FeatureSelectAll.train-expanded"><a name="L220"></a><tt class="py-lineno">220</tt>  <tt class="py-line"> </tt>
+<a name="L221"></a><tt class="py-lineno">221</tt>  <tt class="py-line">        <tt id="link-55" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier" class="py-name" href="#" onclick="return doclink('link-55', 'Classifier', 'link-5');">Classifier</a></tt><tt class="py-op">.</tt><tt id="link-56" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.train
+PyML.classifiers.composite.AggregateClassifier.train
+PyML.classifiers.composite.Chain.train
+PyML.classifiers.composite.FeatureSelect.train
+PyML.classifiers.composite.FeatureSelectAll.train
+PyML.classifiers.ext.knn.KNN.train
+PyML.classifiers.knn.KNN.train
+PyML.classifiers.modelSelection.ModelSelector.train
+PyML.classifiers.modelSelection.Param.train
+PyML.classifiers.modelSelection.SVMselect.train
+PyML.classifiers.multi.OneAgainstOne.train
+PyML.classifiers.multi.OneAgainstRest.train
+PyML.classifiers.platt.Platt.train
+PyML.classifiers.ridgeRegression.RidgeRegression.train
+PyML.classifiers.svm.SVC.train
+PyML.classifiers.svm.SVM.train
+PyML.classifiers.template.Template.train
+PyML.containers.baseDatasets.BaseDataSet.train
+PyML.preproc.preproc.Standardizer.train" class="py-name" href="#" onclick="return doclink('link-56', 'train', 'link-28');">train</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">data</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-name">args</tt><tt class="py-op">)</tt> </tt>
+<a name="L222"></a><tt class="py-lineno">222</tt>  <tt class="py-line"> </tt>
+<a name="L223"></a><tt class="py-lineno">223</tt>  <tt class="py-line">        <tt id="link-57" class="py-name"><a title="PyML.containers.datafunc.PySparseDataSet.numFeatures
+PyML.containers.datafunc.PyVectorDataSet.numFeatures" class="py-name" href="#" onclick="return doclink('link-57', 'numFeatures', 'link-40');">numFeatures</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
+<a name="L224"></a><tt class="py-lineno">224</tt>  <tt class="py-line">        <tt class="py-name">n</tt> <tt class="py-op">=</tt> <tt class="py-number">1</tt> </tt>
+<a name="L225"></a><tt class="py-lineno">225</tt>  <tt class="py-line">        <tt class="py-keyword">while</tt> <tt class="py-name">n</tt> <tt class="py-op">&lt;</tt> <tt class="py-name">data</tt><tt class="py-op">.</tt><tt id="link-58" class="py-name"><a title="PyML.containers.datafunc.PySparseDataSet.numFeatures
+PyML.containers.datafunc.PyVectorDataSet.numFeatures" class="py-name" href="#" onclick="return doclink('link-58', 'numFeatures', 'link-40');">numFeatures</a></tt> <tt class="py-op">:</tt> </tt>
+<a name="L226"></a><tt class="py-lineno">226</tt>  <tt class="py-line">            <tt id="link-59" class="py-name"><a title="PyML.containers.datafunc.PySparseDataSet.numFeatures
+PyML.containers.datafunc.PyVectorDataSet.numFeatures" class="py-name" href="#" onclick="return doclink('link-59', 'numFeatures', 'link-40');">numFeatures</a></tt><tt class="py-op">.</tt><tt id="link-60" class="py-name" targets="Method PyML.classifiers.ext.cgist.DoubleVector.append()=PyML.classifiers.ext.cgist.DoubleVector-class.html#append,Method PyML.classifiers.ext.cgist.IntVector.append()=PyML.classifiers.ext.cgist.IntVector-class.html#append,Method PyML.classifiers.ext.csmo.DoubleVector.append()=PyML.classifiers.ext.csmo.DoubleVector-class.html#append,Method PyML.classifiers.ext.csmo.IntVector.append()=PyML.classifiers.ext.csmo.IntVector-class.html#append,Method PyML.classifiers.ext.csvmodel.DoubleVector.append()=PyML.classifiers.ext.csvmodel.DoubleVector-class.html#append,Method PyML.classifiers.ext.csvmodel.IntVector.append()=PyML.classifiers.ext.csvmodel.IntVector-class.html#append,Method PyML.classifiers.ext.knn.DoubleVector.append()=PyML.classifiers.ext.knn.DoubleVector-class.html#append,Method PyML.classifiers.ext.knn.IntVector.append()=PyML.classifiers.ext.knn.IntVector-class.html#append,Method PyML.containers.ext.caggregate.DoubleVector.append()=PyML.containers.ext.caggregate.DoubleVector-class.html#append,Method PyML.containers.ext.caggregate.IntVector.append()=PyML.containers.ext.caggregate.IntVector-class.html#append,Method PyML.containers.ext.ckernel.DoubleVector.append()=PyML.containers.ext.ckernel.DoubleVector-class.html#append,Method PyML.containers.ext.ckernel.FloatVector.append()=PyML.containers.ext.ckernel.FloatVector-class.html#append,Method PyML.containers.ext.ckernel.IntVector.append()=PyML.containers.ext.ckernel.IntVector-class.html#append,Method PyML.containers.ext.ckerneldata.DoubleVector.append()=PyML.containers.ext.ckerneldata.DoubleVector-class.html#append,Method PyML.containers.ext.ckerneldata.FloatVector.append()=PyML.containers.ext.ckerneldata.FloatVector-class.html#append,Method PyML.containers.ext.ckerneldata.IntVector.append()=PyML.containers.ext.ckerneldata.IntVector-class.html#append,Method PyML.containers.ext.cpairdataset.DoubleVector.append()=PyML.containers.ext.cpairdataset.DoubleVector-class.html#append,Method PyML.containers.ext.cpairdataset.IntVector.append()=PyML.containers.ext.cpairdataset.IntVector-class.html#append,Method PyML.containers.ext.csequencedata.DoubleVector.append()=PyML.containers.ext.csequencedata.DoubleVector-class.html#append,Method PyML.containers.ext.csequencedata.IntVector.append()=PyML.containers.ext.csequencedata.IntVector-class.html#append,Method PyML.containers.ext.csequencedata.LongVector.append()=PyML.containers.ext.csequencedata.LongVector-class.html#append,Method PyML.containers.ext.csequencedata.StringVector.append()=PyML.containers.ext.csequencedata.StringVector-class.html#append,Method PyML.containers.ext.csparsedataset.DoubleVector.append()=PyML.containers.ext.csparsedataset.DoubleVector-class.html#append,Method PyML.containers.ext.csparsedataset.FloatVector.append()=PyML.containers.ext.csparsedataset.FloatVector-class.html#append,Method PyML.containers.ext.csparsedataset.IntVector.append()=PyML.containers.ext.csparsedataset.IntVector-class.html#append,Method PyML.containers.ext.csparsedataset.LongVector.append()=PyML.containers.ext.csparsedataset.LongVector-class.html#append,Method PyML.containers.ext.csparsedataset.StringVector.append()=PyML.containers.ext.csparsedataset.StringVector-class.html#append,Method PyML.containers.ext.cstringkernel.DoubleVector.append()=PyML.containers.ext.cstringkernel.DoubleVector-class.html#append,Method PyML.containers.ext.cstringkernel.IntVector.append()=PyML.containers.ext.cstringkernel.IntVector-class.html#append,Method PyML.containers.ext.cstringkernel.LongVector.append()=PyML.containers.ext.cstringkernel.LongVector-class.html#append,Method PyML.containers.ext.cstringkernel.StringVector.append()=PyML.containers.ext.cstringkernel.StringVector-class.html#append,Method PyML.containers.ext.cvectordataset.DoubleVector.append()=PyML.containers.ext.cvectordataset.DoubleVector-class.html#append,Method PyML.containers.ext.cvectordataset.IntVector.append()=PyML.containers.ext.cvectordataset.IntVector-class.html#append,Method PyML.containers.ext.cvectordataset.LongVector.append()=PyML.containers.ext.cvectordataset.LongVector-class.html#append,Method PyML.containers.ext.cvectordataset.StringVector.append()=PyML.containers.ext.cvectordataset.StringVector-class.html#append"><a title="PyML.classifiers.ext.cgist.DoubleVector.append
+PyML.classifiers.ext.cgist.IntVector.append
+PyML.classifiers.ext.csmo.DoubleVector.append
+PyML.classifiers.ext.csmo.IntVector.append
+PyML.classifiers.ext.csvmodel.DoubleVector.append
+PyML.classifiers.ext.csvmodel.IntVector.append
+PyML.classifiers.ext.knn.DoubleVector.append
+PyML.classifiers.ext.knn.IntVector.append
+PyML.containers.ext.caggregate.DoubleVector.append
+PyML.containers.ext.caggregate.IntVector.append
+PyML.containers.ext.ckernel.DoubleVector.append
+PyML.containers.ext.ckernel.FloatVector.append
+PyML.containers.ext.ckernel.IntVector.append
+PyML.containers.ext.ckerneldata.DoubleVector.append
+PyML.containers.ext.ckerneldata.FloatVector.append
+PyML.containers.ext.ckerneldata.IntVector.append
+PyML.containers.ext.cpairdataset.DoubleVector.append
+PyML.containers.ext.cpairdataset.IntVector.append
+PyML.containers.ext.csequencedata.DoubleVector.append
+PyML.containers.ext.csequencedata.IntVector.append
+PyML.containers.ext.csequencedata.LongVector.append
+PyML.containers.ext.csequencedata.StringVector.append
+PyML.containers.ext.csparsedataset.DoubleVector.append
+PyML.containers.ext.csparsedataset.FloatVector.append
+PyML.containers.ext.csparsedataset.IntVector.append
+PyML.containers.ext.csparsedataset.LongVector.append
+PyML.containers.ext.csparsedataset.StringVector.append
+PyML.containers.ext.cstringkernel.DoubleVector.append
+PyML.containers.ext.cstringkernel.IntVector.append
+PyML.containers.ext.cstringkernel.LongVector.append
+PyML.containers.ext.cstringkernel.StringVector.append
+PyML.containers.ext.cvectordataset.DoubleVector.append
+PyML.containers.ext.cvectordataset.IntVector.append
+PyML.containers.ext.cvectordataset.LongVector.append
+PyML.containers.ext.cvectordataset.StringVector.append" class="py-name" href="#" onclick="return doclink('link-60', 'append', 'link-60');">append</a></tt><tt class="py-op">(</tt><tt class="py-name">n</tt><tt class="py-op">)</tt> </tt>
+<a name="L227"></a><tt class="py-lineno">227</tt>  <tt class="py-line">            <tt class="py-name">n</tt> <tt class="py-op">*=</tt><tt class="py-number">2</tt> </tt>
+<a name="L228"></a><tt class="py-lineno">228</tt>  <tt class="py-line"> </tt>
+<a name="L229"></a><tt class="py-lineno">229</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-61" class="py-name" targets="Package PyML.classifiers=PyML.classifiers-module.html"><a title="PyML.classifiers" class="py-name" href="#" onclick="return doclink('link-61', 'classifiers', 'link-61');">classifiers</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">)</tt> </tt>
+<a name="L230"></a><tt class="py-lineno">230</tt>  <tt class="py-line">                            <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt id="link-62" class="py-name"><a title="PyML.containers.datafunc.PySparseDataSet.numFeatures
+PyML.containers.datafunc.PyVectorDataSet.numFeatures" class="py-name" href="#" onclick="return doclink('link-62', 'numFeatures', 'link-40');">numFeatures</a></tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">]</tt> </tt>
+<a name="L231"></a><tt class="py-lineno">231</tt>  <tt class="py-line"> </tt>
+<a name="L232"></a><tt class="py-lineno">232</tt>  <tt class="py-line">        <tt class="py-name">featureSelector</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">featureSelector</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">featureSelector</tt><tt class="py-op">)</tt> </tt>
+<a name="L233"></a><tt class="py-lineno">233</tt>  <tt class="py-line">        <tt class="py-name">rankedFeatures</tt> <tt class="py-op">=</tt> <tt class="py-name">featureSelector</tt><tt class="py-op">.</tt><tt id="link-63" class="py-name" targets="Method PyML.feature_selection.featsel.FeatureSelector.rank()=PyML.feature_selection.featsel.FeatureSelector-class.html#rank,Method PyML.feature_selection.featsel.RFE.rank()=PyML.feature_selection.featsel.RFE-class.html#rank"><a title="PyML.feature_selection.featsel.FeatureSelector.rank
+PyML.feature_selection.featsel.RFE.rank" class="py-name" href="#" onclick="return doclink('link-63', 'rank', 'link-63');">rank</a></tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">)</tt> </tt>
+<a name="L234"></a><tt class="py-lineno">234</tt>  <tt class="py-line">         </tt>
+<a name="L235"></a><tt class="py-lineno">235</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt id="link-64" class="py-name"><a title="PyML.containers.datafunc.PySparseDataSet.numFeatures
+PyML.containers.datafunc.PyVectorDataSet.numFeatures" class="py-name" href="#" onclick="return doclink('link-64', 'numFeatures', 'link-40');">numFeatures</a></tt><tt class="py-op">)</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L236"></a><tt class="py-lineno">236</tt>  <tt class="py-line">            <tt class="py-name">selectedData</tt> <tt class="py-op">=</tt> <tt class="py-name">data</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">)</tt> </tt>
+<a name="L237"></a><tt class="py-lineno">237</tt>  <tt class="py-line">            <tt class="py-name">selectedData</tt><tt class="py-op">.</tt><tt id="link-65" class="py-name" targets="Method PyML.containers.baseDatasets.BaseVectorDataSet.keepFeatures()=PyML.containers.baseDatasets.BaseVectorDataSet-class.html#keepFeatures"><a title="PyML.containers.baseDatasets.BaseVectorDataSet.keepFeatures" class="py-name" href="#" onclick="return doclink('link-65', 'keepFeatures', 'link-65');">keepFeatures</a></tt><tt class="py-op">(</tt><tt class="py-name">rankedFeatures</tt><tt class="py-op">[</tt><tt class="py-op">:</tt><tt id="link-66" class="py-name"><a title="PyML.containers.datafunc.PySparseDataSet.numFeatures
+PyML.containers.datafunc.PyVectorDataSet.numFeatures" class="py-name" href="#" onclick="return doclink('link-66', 'numFeatures', 'link-40');">numFeatures</a></tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L238"></a><tt class="py-lineno">238</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-67" class="py-name"><a title="PyML.classifiers" class="py-name" href="#" onclick="return doclink('link-67', 'classifiers', 'link-61');">classifiers</a></tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt id="link-68" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.train
+PyML.classifiers.composite.AggregateClassifier.train
+PyML.classifiers.composite.Chain.train
+PyML.classifiers.composite.FeatureSelect.train
+PyML.classifiers.composite.FeatureSelectAll.train
+PyML.classifiers.ext.knn.KNN.train
+PyML.classifiers.knn.KNN.train
+PyML.classifiers.modelSelection.ModelSelector.train
+PyML.classifiers.modelSelection.Param.train
+PyML.classifiers.modelSelection.SVMselect.train
+PyML.classifiers.multi.OneAgainstOne.train
+PyML.classifiers.multi.OneAgainstRest.train
+PyML.classifiers.platt.Platt.train
+PyML.classifiers.ridgeRegression.RidgeRegression.train
+PyML.classifiers.svm.SVC.train
+PyML.classifiers.svm.SVM.train
+PyML.classifiers.template.Template.train
+PyML.containers.baseDatasets.BaseDataSet.train
+PyML.preproc.preproc.Standardizer.train" class="py-name" href="#" onclick="return doclink('link-68', 'train', 'link-28');">train</a></tt><tt class="py-op">(</tt><tt class="py-name">selectedData</tt><tt class="py-op">)</tt> </tt>
+<a name="L239"></a><tt class="py-lineno">239</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-69" class="py-name"><a title="PyML.classifiers" class="py-name" href="#" onclick="return doclink('link-69', 'classifiers', 'link-61');">classifiers</a></tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt class="py-name">log</tt><tt class="py-op">.</tt><tt id="link-70" class="py-name"><a title="PyML.containers.datafunc.PySparseDataSet.numFeatures
+PyML.containers.datafunc.PyVectorDataSet.numFeatures" class="py-name" href="#" onclick="return doclink('link-70', 'numFeatures', 'link-40');">numFeatures</a></tt> <tt class="py-op">=</tt> <tt class="py-name">selectedData</tt><tt class="py-op">.</tt><tt id="link-71" class="py-name"><a title="PyML.containers.datafunc.PySparseDataSet.numFeatures
+PyML.containers.datafunc.PyVectorDataSet.numFeatures" class="py-name" href="#" onclick="return doclink('link-71', 'numFeatures', 'link-40');">numFeatures</a></tt> </tt>
+<a name="L240"></a><tt class="py-lineno">240</tt>  <tt class="py-line"> </tt>
+<a name="L241"></a><tt class="py-lineno">241</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt class="py-name">log</tt><tt class="py-op">.</tt><tt class="py-name">trainingTime</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-72" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.getTrainingTime" class="py-name" href="#" onclick="return doclink('link-72', 'getTrainingTime', 'link-31');">getTrainingTime</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L242"></a><tt class="py-lineno">242</tt>  <tt class="py-line"> </tt>
+<a name="L243"></a><tt class="py-lineno">243</tt>  <tt class="py-line"> </tt>
+<a name="L244"></a><tt class="py-lineno">244</tt>  <tt class="py-line"> </tt>
+<a name="AggregateClassifier"></a><div id="AggregateClassifier-def"><a name="L245"></a><tt class="py-lineno">245</tt> <a class="py-toggle" href="#" id="AggregateClassifier-toggle" onclick="return toggle('AggregateClassifier');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="PyML.classifiers.composite.AggregateClassifier-class.html">AggregateClassifier</a> <tt class="py-op">(</tt><tt class="py-base-class">Classifier</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="AggregateClassifier-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="AggregateClassifier-expanded"><a name="L246"></a><tt class="py-lineno">246</tt>  <tt class="py-line"> </tt>
+<a name="L247"></a><tt class="py-lineno">247</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L248"></a><tt class="py-lineno">248</tt>  <tt class="py-line"><tt class="py-docstring">    classifier combines the predictions of classifiers trained on</tt> </tt>
+<a name="L249"></a><tt class="py-lineno">249</tt>  <tt class="py-line"><tt class="py-docstring">    different datasets.</tt> </tt>
+<a name="L250"></a><tt class="py-lineno">250</tt>  <tt class="py-line"><tt class="py-docstring">    The datasets are presented as a DataAggregate dataset container.</tt> </tt>
+<a name="L251"></a><tt class="py-lineno">251</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L252"></a><tt class="py-lineno">252</tt>  <tt class="py-line"> </tt>
+<a name="AggregateClassifier.__init__"></a><div id="AggregateClassifier.__init__-def"><a name="L253"></a><tt class="py-lineno">253</tt> <a class="py-toggle" href="#" id="AggregateClassifier.__init__-toggle" onclick="return toggle('AggregateClassifier.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.composite.AggregateClassifier-class.html#__init__">__init__</a> <tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">arg</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="AggregateClassifier.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="AggregateClassifier.__init__-expanded"><a name="L254"></a><tt class="py-lineno">254</tt>  <tt class="py-line"> </tt>
+<a name="L255"></a><tt class="py-lineno">255</tt>  <tt class="py-line">        <tt id="link-73" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier" class="py-name" href="#" onclick="return doclink('link-73', 'Classifier', 'link-5');">Classifier</a></tt><tt class="py-op">.</tt><tt id="link-74" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.__init__
+PyML.classifiers.composite.AggregateClassifier.__init__
+PyML.classifiers.composite.Chain.__init__
+PyML.classifiers.composite.CompositeClassifier.__init__
+PyML.classifiers.composite.FeatureSelect.__init__
+PyML.classifiers.composite.FeatureSelectAll.__init__
+PyML.classifiers.ext.cgist.DoubleVector.__init__
+PyML.classifiers.ext.cgist.IntVector.__init__
+PyML.classifiers.ext.cgist.PySwigIterator.__init__
+PyML.classifiers.ext.csmo.DoubleVector.__init__
+PyML.classifiers.ext.csmo.IntVector.__init__
+PyML.classifiers.ext.csmo.PySwigIterator.__init__
+PyML.classifiers.ext.csvmodel.DoubleVector.__init__
+PyML.classifiers.ext.csvmodel.IntVector.__init__
+PyML.classifiers.ext.csvmodel.LinearSVModel.__init__
+PyML.classifiers.ext.csvmodel.LinearSparseSVModel.__init__
+PyML.classifiers.ext.csvmodel.PySwigIterator.__init__
+PyML.classifiers.ext.csvmodel.SVModel.__init__
+PyML.classifiers.ext.knn.DoubleVector.__init__
+PyML.classifiers.ext.knn.IntVector.__init__
+PyML.classifiers.ext.knn.KNN.__init__
+PyML.classifiers.ext.knn.PySwigIterator.__init__
+PyML.classifiers.ext.libsvm.DecisionFunction.__init__
+PyML.classifiers.ext.libsvm.PySwigIterator.__init__
+PyML.classifiers.ext.libsvm.doubleArray.__init__
+PyML.classifiers.ext.libsvm.intArray.__init__
+PyML.classifiers.ext.libsvm.svm_node.__init__
+PyML.classifiers.ext.libsvm.svm_parameter.__init__
+PyML.classifiers.ext.libsvm.svm_problem.__init__
+PyML.classifiers.knn.KNN.__init__
+PyML.classifiers.libsvmWrap.svmParameter.__init__
+PyML.classifiers.modelSelection.ModelSelector.__init__
+PyML.classifiers.modelSelection.Param.__init__
+PyML.classifiers.modelSelection.ParamGrid.__init__
+PyML.classifiers.modelSelection.SVMselect.__init__
+PyML.classifiers.ridgeRegression.RidgeRegression.__init__
+PyML.classifiers.svm.LinearSVModel.__init__
+PyML.classifiers.svm.SVC.__init__
+PyML.classifiers.svm.SVM.__init__
+PyML.classifiers.svm.SVModel.__init__
+PyML.classifiers.template.Template.__init__
+PyML.containers.aggregate.Aggregate.__init__
+PyML.containers.aggregate.DataAggregate.__init__
+PyML.containers.baseDatasets.BaseDataSet.__init__
+PyML.containers.baseDatasets.BaseVectorDataSet.__init__
+PyML.containers.ext.caggregate.Aggregate.__init__
+PyML.containers.ext.caggregate.DataSet.__init__
+PyML.containers.ext.caggregate.DoubleVector.__init__
+PyML.containers.ext.caggregate.IntVector.__init__
+PyML.containers.ext.caggregate.PySwigIterator.__init__
+PyML.containers.ext.ckernel.Cosine.__init__
+PyML.containers.ext.ckernel.DoubleVector.__init__
+PyML.containers.ext.ckernel.FloatVector.__init__
+PyML.containers.ext.ckernel.Gaussian.__init__
+PyML.containers.ext.ckernel.IntVector.__init__
+PyML.containers.ext.ckernel.Kernel.__init__
+PyML.containers.ext.ckernel.KernelMatrix.__init__
+PyML.containers.ext.ckernel.Linear.__init__
+PyML.containers.ext.ckernel.Polynomial.__init__
+PyML.containers.ext.ckernel.PySwigIterator.__init__
+PyML.containers.ext.ckerneldata.DataSet.__init__
+PyML.containers.ext.ckerneldata.DoubleVector.__init__
+PyML.containers.ext.ckerneldata.FloatVector.__init__
+PyML.containers.ext.ckerneldata.IntVector.__init__
+PyML.containers.ext.ckerneldata.KernelData.__init__
+PyML.containers.ext.ckerneldata.PySwigIterator.__init__
+PyML.containers.ext.cpairdataset.DataSet.__init__
+PyML.containers.ext.cpairdataset.DoubleVector.__init__
+PyML.containers.ext.cpairdataset.IntVector.__init__
+PyML.containers.ext.cpairdataset.PairDataSet.__init__
+PyML.containers.ext.cpairdataset.PairDataSetOrd.__init__
+PyML.containers.ext.cpairdataset.PairDataSetSum.__init__
+PyML.containers.ext.cpairdataset.PySwigIterator.__init__
+PyML.containers.ext.csequencedata.DataSet.__init__
+PyML.containers.ext.csequencedata.DoubleVector.__init__
+PyML.containers.ext.csequencedata.IntVector.__init__
+PyML.containers.ext.csequencedata.LongVector.__init__
+PyML.containers.ext.csequencedata.PySwigIterator.__init__
+PyML.containers.ext.csequencedata.SequenceData.__init__
+PyML.containers.ext.csequencedata.StringVector.__init__
+PyML.containers.ext.csparsedataset.DataSet.__init__
+PyML.containers.ext.csparsedataset.DoubleVector.__init__
+PyML.containers.ext.csparsedataset.FloatVector.__init__
+PyML.containers.ext.csparsedataset.IntVector.__init__
+PyML.containers.ext.csparsedataset.LongVector.__init__
+PyML.containers.ext.csparsedataset.PySwigIterator.__init__
+PyML.containers.ext.csparsedataset.SparseDataSet.__init__
+PyML.containers.ext.csparsedataset.StringVector.__init__
+PyML.containers.ext.csparsedataset.doubleArray.__init__
+PyML.containers.ext.csparsedataset.intArray.__init__
+PyML.containers.ext.csparsefeaturevector.Feature.__init__
+PyML.containers.ext.csparsefeaturevector.SparseFeatureVector.__init__
+PyML.containers.ext.cstringkernel.DoubleVector.__init__
+PyML.containers.ext.cstringkernel.IntVector.__init__
+PyML.containers.ext.cstringkernel.LongVector.__init__
+PyML.containers.ext.cstringkernel.PositionalKmer.__init__
+PyML.containers.ext.cstringkernel.PySwigIterator.__init__
+PyML.containers.ext.cstringkernel.StringKernel.__init__
+PyML.containers.ext.cstringkernel.StringVector.__init__
+PyML.containers.ext.cvectordataset.DataSet.__init__
+PyML.containers.ext.cvectordataset.DoubleVector.__init__
+PyML.containers.ext.cvectordataset.IntVector.__init__
+PyML.containers.ext.cvectordataset.LongVector.__init__
+PyML.containers.ext.cvectordataset.PySwigIterator.__init__
+PyML.containers.ext.cvectordataset.StringVector.__init__
+PyML.containers.ext.cvectordataset.VectorDataSet.__init__
+PyML.containers.ker.Cosine.__init__
+PyML.containers.ker.Gaussian.__init__
+PyML.containers.ker.Linear.__init__
+PyML.containers.ker.Polynomial.__init__
+PyML.containers.kernelData.KernelData.__init__
+PyML.containers.labels.Labels.__init__
+PyML.containers.pairData.PairDataSet.__init__
+PyML.containers.pairData.PairDataSetOrd.__init__
+PyML.containers.pairData.PairDataSetSum.__init__
+PyML.containers.pairData.SimplePairDataSet.__init__
+PyML.containers.parsers.CSVParser.__init__
+PyML.containers.parsers.Parser.__init__
+PyML.containers.parsers.SparseParser.__init__
+PyML.containers.sequenceData.SequenceData.__init__
+PyML.containers.vectorDatasets.BaseCVectorDataSet.__init__
+PyML.containers.vectorDatasets.SparseDataSet.__init__
+PyML.containers.vectorDatasets.VectorDataSet.__init__
+PyML.evaluators.assess.ClassificationResults.__init__
+PyML.evaluators.assess.ClassificationResultsContainer.__init__
+PyML.evaluators.assess.RegressionResults.__init__
+PyML.evaluators.assess.RegressionResultsContainer.__init__
+PyML.evaluators.assess.Results.__init__
+PyML.evaluators.assess.ResultsList.__init__
+PyML.feature_selection.featsel.BackwardSelector.__init__
+PyML.feature_selection.featsel.FeatureScore.__init__
+PyML.feature_selection.featsel.Filter.__init__
+PyML.feature_selection.featsel.MultiplicativeUpdate.__init__
+PyML.feature_selection.featsel.OneAgainstRestSelect.__init__
+PyML.feature_selection.featsel.RFE.__init__
+PyML.feature_selection.featsel.Random.__init__
+PyML.preproc.preproc.Correlator.__init__
+PyML.preproc.preproc.Standardizer.__init__" class="py-name" href="#" onclick="return doclink('link-74', '__init__', 'link-10');">__init__</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">)</tt> </tt>
+<a name="L256"></a><tt class="py-lineno">256</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">arg</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt> <tt class="py-op">==</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt> <tt class="py-op">:</tt> </tt>
+<a name="L257"></a><tt class="py-lineno">257</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-75" class="py-name"><a title="PyML.classifiers" class="py-name" href="#" onclick="return doclink('link-75', 'classifiers', 'link-61');">classifiers</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">(</tt><tt class="py-name">classifier</tt><tt class="py-op">)</tt> </tt>
+<a name="L258"></a><tt class="py-lineno">258</tt>  <tt class="py-line">                                <tt class="py-keyword">for</tt> <tt class="py-name">classifier</tt> <tt class="py-keyword">in</tt> <tt class="py-name">arg</tt><tt class="py-op">.</tt><tt id="link-76" class="py-name"><a title="PyML.classifiers" class="py-name" href="#" onclick="return doclink('link-76', 'classifiers', 'link-61');">classifiers</a></tt><tt class="py-op">]</tt> </tt>
+<a name="L259"></a><tt class="py-lineno">259</tt>  <tt class="py-line">        <tt class="py-keyword">elif</tt> <tt id="link-77" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.type
+PyML.containers.baseDatasets.BaseDataSet.type
+PyML.containers.ker.Kernel.type
+PyML.feature_selection.featsel.FeatureScorer.type
+PyML.feature_selection.featsel.FeatureSelector.type" class="py-name" href="#" onclick="return doclink('link-77', 'type', 'link-11');">type</a></tt><tt class="py-op">(</tt><tt class="py-name">arg</tt><tt class="py-op">)</tt> <tt class="py-op">==</tt> <tt id="link-78" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.type
+PyML.containers.baseDatasets.BaseDataSet.type
+PyML.containers.ker.Kernel.type
+PyML.feature_selection.featsel.FeatureScorer.type
+PyML.feature_selection.featsel.FeatureSelector.type" class="py-name" href="#" onclick="return doclink('link-78', 'type', 'link-11');">type</a></tt><tt class="py-op">(</tt><tt class="py-op">[</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L260"></a><tt class="py-lineno">260</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-79" class="py-name"><a title="PyML.classifiers" class="py-name" href="#" onclick="return doclink('link-79', 'classifiers', 'link-61');">classifiers</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">(</tt><tt class="py-name">classifier</tt><tt class="py-op">)</tt> </tt>
+<a name="L261"></a><tt class="py-lineno">261</tt>  <tt class="py-line">                                <tt class="py-keyword">for</tt> <tt class="py-name">classifier</tt> <tt class="py-keyword">in</tt> <tt class="py-name">arg</tt><tt class="py-op">]</tt> </tt>
+</div><a name="L262"></a><tt class="py-lineno">262</tt>  <tt class="py-line"> </tt>
+<a name="AggregateClassifier.train"></a><div id="AggregateClassifier.train-def"><a name="L263"></a><tt class="py-lineno">263</tt> <a class="py-toggle" href="#" id="AggregateClassifier.train-toggle" onclick="return toggle('AggregateClassifier.train');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.composite.AggregateClassifier-class.html#train">train</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">data</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-param">args</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="AggregateClassifier.train-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="AggregateClassifier.train-expanded"><a name="L264"></a><tt class="py-lineno">264</tt>  <tt class="py-line"> </tt>
+<a name="L265"></a><tt class="py-lineno">265</tt>  <tt class="py-line">        <tt id="link-80" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier" class="py-name" href="#" onclick="return doclink('link-80', 'Classifier', 'link-5');">Classifier</a></tt><tt class="py-op">.</tt><tt id="link-81" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.train
+PyML.classifiers.composite.AggregateClassifier.train
+PyML.classifiers.composite.Chain.train
+PyML.classifiers.composite.FeatureSelect.train
+PyML.classifiers.composite.FeatureSelectAll.train
+PyML.classifiers.ext.knn.KNN.train
+PyML.classifiers.knn.KNN.train
+PyML.classifiers.modelSelection.ModelSelector.train
+PyML.classifiers.modelSelection.Param.train
+PyML.classifiers.modelSelection.SVMselect.train
+PyML.classifiers.multi.OneAgainstOne.train
+PyML.classifiers.multi.OneAgainstRest.train
+PyML.classifiers.platt.Platt.train
+PyML.classifiers.ridgeRegression.RidgeRegression.train
+PyML.classifiers.svm.SVC.train
+PyML.classifiers.svm.SVM.train
+PyML.classifiers.template.Template.train
+PyML.containers.baseDatasets.BaseDataSet.train
+PyML.preproc.preproc.Standardizer.train" class="py-name" href="#" onclick="return doclink('link-81', 'train', 'link-28');">train</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">data</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-name">args</tt><tt class="py-op">)</tt> </tt>
+<a name="L266"></a><tt class="py-lineno">266</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-keyword">not</tt> <tt class="py-name">data</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">.</tt><tt class="py-name">__name__</tt> <tt class="py-op">==</tt> <tt class="py-string">'DataAggregate'</tt> <tt class="py-op">:</tt> </tt>
+<a name="L267"></a><tt class="py-lineno">267</tt>  <tt class="py-line">            <tt class="py-keyword">raise</tt> <tt class="py-name">ValueError</tt><tt class="py-op">,</tt> <tt class="py-string">'train requires a DataAggregate dataset'</tt> </tt>
+<a name="L268"></a><tt class="py-lineno">268</tt>  <tt class="py-line"> </tt>
+<a name="L269"></a><tt class="py-lineno">269</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-82" class="py-name"><a title="PyML.classifiers" class="py-name" href="#" onclick="return doclink('link-82', 'classifiers', 'link-61');">classifiers</a></tt><tt class="py-op">)</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L270"></a><tt class="py-lineno">270</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-83" class="py-name"><a title="PyML.classifiers" class="py-name" href="#" onclick="return doclink('link-83', 'classifiers', 'link-61');">classifiers</a></tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt id="link-84" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.train
+PyML.classifiers.composite.AggregateClassifier.train
+PyML.classifiers.composite.Chain.train
+PyML.classifiers.composite.FeatureSelect.train
+PyML.classifiers.composite.FeatureSelectAll.train
+PyML.classifiers.ext.knn.KNN.train
+PyML.classifiers.knn.KNN.train
+PyML.classifiers.modelSelection.ModelSelector.train
+PyML.classifiers.modelSelection.Param.train
+PyML.classifiers.modelSelection.SVMselect.train
+PyML.classifiers.multi.OneAgainstOne.train
+PyML.classifiers.multi.OneAgainstRest.train
+PyML.classifiers.platt.Platt.train
+PyML.classifiers.ridgeRegression.RidgeRegression.train
+PyML.classifiers.svm.SVC.train
+PyML.classifiers.svm.SVM.train
+PyML.classifiers.template.Template.train
+PyML.containers.baseDatasets.BaseDataSet.train
+PyML.preproc.preproc.Standardizer.train" class="py-name" href="#" onclick="return doclink('link-84', 'train', 'link-28');">train</a></tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">.</tt><tt class="py-name">datas</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-name">args</tt><tt class="py-op">)</tt> </tt>
+<a name="L271"></a><tt class="py-lineno">271</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">log</tt><tt class="py-op">.</tt><tt class="py-name">trainingTime</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-85" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.getTrainingTime" class="py-name" href="#" onclick="return doclink('link-85', 'getTrainingTime', 'link-31');">getTrainingTime</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L272"></a><tt class="py-lineno">272</tt>  <tt class="py-line">         </tt>
+<a name="AggregateClassifier.classify"></a><div id="AggregateClassifier.classify-def"><a name="L273"></a><tt class="py-lineno">273</tt> <a class="py-toggle" href="#" id="AggregateClassifier.classify-toggle" onclick="return toggle('AggregateClassifier.classify');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.composite.AggregateClassifier-class.html#classify">classify</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">data</tt><tt class="py-op">,</tt> <tt class="py-param">p</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="AggregateClassifier.classify-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="AggregateClassifier.classify-expanded"><a name="L274"></a><tt class="py-lineno">274</tt>  <tt class="py-line"> </tt>
+<a name="L275"></a><tt class="py-lineno">275</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-keyword">not</tt> <tt class="py-name">data</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">.</tt><tt class="py-name">__name__</tt> <tt class="py-op">==</tt> <tt class="py-string">'DataAggregate'</tt> <tt class="py-op">:</tt> </tt>
+<a name="L276"></a><tt class="py-lineno">276</tt>  <tt class="py-line">            <tt class="py-keyword">raise</tt> <tt class="py-name">ValueError</tt><tt class="py-op">,</tt> <tt class="py-string">'classify requires a DataAggregate dataset'</tt> </tt>
+<a name="L277"></a><tt class="py-lineno">277</tt>  <tt class="py-line"> </tt>
+<a name="L278"></a><tt class="py-lineno">278</tt>  <tt class="py-line">        <tt class="py-name">decisionFuncs</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-86" class="py-name"><a title="PyML.classifiers" class="py-name" href="#" onclick="return doclink('link-86', 'classifiers', 'link-61');">classifiers</a></tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt id="link-87" class="py-name"><a title="PyML.classifiers.composite.CompositeClassifier.decisionFunc
+PyML.classifiers.ext.csvmodel.LinearSVModel.decisionFunc
+PyML.classifiers.ext.csvmodel.LinearSparseSVModel.decisionFunc
+PyML.classifiers.ext.csvmodel.SVModel.decisionFunc
+PyML.classifiers.platt.Platt.decisionFunc
+PyML.classifiers.ridgeRegression.RidgeRegression.decisionFunc
+PyML.classifiers.svm.LinearSVModel.decisionFunc
+PyML.classifiers.svm.SVC.decisionFunc
+PyML.classifiers.svm.SVM.decisionFunc
+PyML.classifiers.svm.SVModel.decisionFunc
+PyML.classifiers.template.Template.decisionFunc" class="py-name" href="#" onclick="return doclink('link-87', 'decisionFunc', 'link-16');">decisionFunc</a></tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">.</tt><tt class="py-name">datas</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> <tt id="link-88" class="py-name" targets="Variable PyML.demo.demo.p=PyML.demo.demo-module.html#p"><a title="PyML.demo.demo.p" class="py-name" href="#" onclick="return doclink('link-88', 'p', 'link-88');">p</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L279"></a><tt class="py-lineno">279</tt>  <tt class="py-line">                         <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-89" class="py-name"><a title="PyML.classifiers" class="py-name" href="#" onclick="return doclink('link-89', 'classifiers', 'link-61');">classifiers</a></tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">]</tt> </tt>
+<a name="L280"></a><tt class="py-lineno">280</tt>  <tt class="py-line">        <tt class="py-comment">#decisionFunc = numpy.sum(decisionFuncs)</tt> </tt>
+<a name="L281"></a><tt class="py-lineno">281</tt>  <tt class="py-line"><tt class="py-comment"></tt>        <tt class="py-comment">#if decisionFunc &gt; 0 :</tt> </tt>
+<a name="L282"></a><tt class="py-lineno">282</tt>  <tt class="py-line"><tt class="py-comment"></tt>        <tt class="py-comment">#    return (1, decisionFunc)</tt> </tt>
+<a name="L283"></a><tt class="py-lineno">283</tt>  <tt class="py-line"><tt class="py-comment"></tt>        <tt class="py-comment">#else :</tt> </tt>
+<a name="L284"></a><tt class="py-lineno">284</tt>  <tt class="py-line"><tt class="py-comment"></tt>        <tt class="py-comment">#    return (0, decisionFunc)</tt> </tt>
+<a name="L285"></a><tt class="py-lineno">285</tt>  <tt class="py-line"><tt class="py-comment"></tt>        <tt class="py-keyword">if</tt> <tt class="py-name">decisionFuncs</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt> <tt class="py-op">&gt;</tt> <tt class="py-number">0</tt> <tt class="py-keyword">and</tt> <tt class="py-name">decisionFuncs</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt> <tt class="py-op">&gt;</tt> <tt class="py-number">0</tt> <tt class="py-op">:</tt> </tt>
+<a name="L286"></a><tt class="py-lineno">286</tt>  <tt class="py-line">            <tt class="py-keyword">return</tt> <tt class="py-number">1</tt><tt class="py-op">,</tt> <tt class="py-name">numpy</tt><tt class="py-op">.</tt><tt class="py-name">sum</tt><tt class="py-op">(</tt><tt class="py-name">decisionFuncs</tt><tt class="py-op">)</tt> </tt>
+<a name="L287"></a><tt class="py-lineno">287</tt>  <tt class="py-line">        <tt class="py-keyword">else</tt> <tt class="py-op">:</tt> </tt>
+<a name="L288"></a><tt class="py-lineno">288</tt>  <tt class="py-line">            <tt class="py-keyword">return</tt> <tt class="py-number">0</tt><tt class="py-op">,</tt> <tt class="py-name">min</tt><tt class="py-op">(</tt><tt class="py-name">decisionFuncs</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L289"></a><tt class="py-lineno">289</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pyml.sourceforge.net">PyML</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Fri May  2 12:39:42 2008
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

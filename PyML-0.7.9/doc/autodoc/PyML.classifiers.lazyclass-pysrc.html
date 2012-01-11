@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>PyML.classifiers.lazyclass</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pyml.sourceforge.net">PyML</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;PyML ::
+        <a href="PyML.classifiers-module.html">Package&nbsp;classifiers</a> ::
+        Module&nbsp;lazyclass
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="PyML.classifiers.lazyclass-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="PyML.classifiers.lazyclass-module.html">Module PyML.classifiers.lazyclass</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno"> 1</tt>  <tt class="py-line"> </tt>
+<a name="L2"></a><tt class="py-lineno"> 2</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">os</tt> </tt>
+<a name="L3"></a><tt class="py-lineno"> 3</tt>  <tt class="py-line"> </tt>
+<a name="L4"></a><tt class="py-lineno"> 4</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt id="link-0" class="py-name" targets="Module PyML.containers.datafunc=PyML.containers.datafunc-module.html"><a title="PyML.containers.datafunc" class="py-name" href="#" onclick="return doclink('link-0', 'datafunc', 'link-0');">datafunc</a></tt> </tt>
+<a name="L5"></a><tt class="py-lineno"> 5</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt id="link-1" class="py-name" targets="Module PyML.classifiers.svm=PyML.classifiers.svm-module.html"><a title="PyML.classifiers.svm" class="py-name" href="#" onclick="return doclink('link-1', 'svm', 'link-1');">svm</a></tt> </tt>
+<a name="L6"></a><tt class="py-lineno"> 6</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt id="link-2" class="py-name" targets="Package PyML.preproc=PyML.preproc-module.html,Module PyML.preproc.preproc=PyML.preproc.preproc-module.html,Method PyML.preproc.preproc.Standardizer.preproc()=PyML.preproc.preproc.Standardizer-class.html#preproc"><a title="PyML.preproc
+PyML.preproc.preproc
+PyML.preproc.preproc.Standardizer.preproc" class="py-name" href="#" onclick="return doclink('link-2', 'preproc', 'link-2');">preproc</a></tt> </tt>
+<a name="L7"></a><tt class="py-lineno"> 7</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt id="link-3" class="py-name" targets="Module PyML.classifiers.composite=PyML.classifiers.composite-module.html"><a title="PyML.classifiers.composite" class="py-name" href="#" onclick="return doclink('link-3', 'composite', 'link-3');">composite</a></tt> </tt>
+<a name="L8"></a><tt class="py-lineno"> 8</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt id="link-4" class="py-name" targets="Module PyML.classifiers.modelSelection=PyML.classifiers.modelSelection-module.html"><a title="PyML.classifiers.modelSelection" class="py-name" href="#" onclick="return doclink('link-4', 'modelSelection', 'link-4');">modelSelection</a></tt> </tt>
+<a name="L9"></a><tt class="py-lineno"> 9</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt id="link-5" class="py-name" targets="Module PyML.containers.ker=PyML.containers.ker-module.html"><a title="PyML.containers.ker" class="py-name" href="#" onclick="return doclink('link-5', 'ker', 'link-5');">ker</a></tt> </tt>
+<a name="L10"></a><tt class="py-lineno">10</tt>  <tt class="py-line"> </tt>
+<a name="rescale"></a><div id="rescale-def"><a name="L11"></a><tt class="py-lineno">11</tt> <a class="py-toggle" href="#" id="rescale-toggle" onclick="return toggle('rescale');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.lazyclass-module.html#rescale">rescale</a><tt class="py-op">(</tt><tt class="py-param">Clist</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-number">0.1</tt><tt class="py-op">,</tt> <tt class="py-number">1</tt><tt class="py-op">,</tt> <tt class="py-number">10</tt><tt class="py-op">,</tt> <tt class="py-number">100</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> <tt class="py-param">data</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-param">args</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="rescale-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="rescale-expanded"><a name="L12"></a><tt class="py-lineno">12</tt>  <tt class="py-line"> </tt>
+<a name="L13"></a><tt class="py-lineno">13</tt>  <tt class="py-line">    <tt class="py-name">chain</tt> <tt class="py-op">=</tt> <tt id="link-6" class="py-name"><a title="PyML.classifiers.composite" class="py-name" href="#" onclick="return doclink('link-6', 'composite', 'link-3');">composite</a></tt><tt class="py-op">.</tt><tt id="link-7" class="py-name" targets="Class PyML.classifiers.composite.Chain=PyML.classifiers.composite.Chain-class.html"><a title="PyML.classifiers.composite.Chain" class="py-name" href="#" onclick="return doclink('link-7', 'Chain', 'link-7');">Chain</a></tt><tt class="py-op">(</tt><tt class="py-op">[</tt><tt id="link-8" class="py-name"><a title="PyML.preproc
+PyML.preproc.preproc
+PyML.preproc.preproc.Standardizer.preproc" class="py-name" href="#" onclick="return doclink('link-8', 'preproc', 'link-2');">preproc</a></tt><tt class="py-op">.</tt><tt class="py-name">Rescale</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> <tt id="link-9" class="py-name"><a title="PyML.classifiers.svm" class="py-name" href="#" onclick="return doclink('link-9', 'svm', 'link-1');">svm</a></tt><tt class="py-op">.</tt><tt id="link-10" class="py-name" targets="Variable PyML.classifiers.SVM=PyML.classifiers-module.html#SVM,Class PyML.classifiers.svm.SVM=PyML.classifiers.svm.SVM-class.html"><a title="PyML.classifiers.SVM
+PyML.classifiers.svm.SVM" class="py-name" href="#" onclick="return doclink('link-10', 'SVM', 'link-10');">SVM</a></tt><tt class="py-op">(</tt><tt class="py-op">**</tt><tt class="py-name">args</tt><tt class="py-op">)</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L14"></a><tt class="py-lineno">14</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-name">Clist</tt> <tt class="py-keyword">is</tt> <tt class="py-keyword">not</tt> <tt class="py-name">None</tt> <tt class="py-op">:</tt> </tt>
+<a name="L15"></a><tt class="py-lineno">15</tt>  <tt class="py-line">        <tt class="py-name">param</tt> <tt class="py-op">=</tt> <tt id="link-11" class="py-name"><a title="PyML.classifiers.modelSelection" class="py-name" href="#" onclick="return doclink('link-11', 'modelSelection', 'link-4');">modelSelection</a></tt><tt class="py-op">.</tt><tt id="link-12" class="py-name" targets="Class PyML.classifiers.modelSelection.Param=PyML.classifiers.modelSelection.Param-class.html"><a title="PyML.classifiers.modelSelection.Param" class="py-name" href="#" onclick="return doclink('link-12', 'Param', 'link-12');">Param</a></tt><tt class="py-op">(</tt><tt class="py-name">chain</tt><tt class="py-op">,</tt> <tt class="py-string">'classifier.C'</tt><tt class="py-op">,</tt> <tt class="py-name">Clist</tt><tt class="py-op">)</tt> </tt>
+<a name="L16"></a><tt class="py-lineno">16</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt id="link-13" class="py-name"><a title="PyML.classifiers.modelSelection" class="py-name" href="#" onclick="return doclink('link-13', 'modelSelection', 'link-4');">modelSelection</a></tt><tt class="py-op">.</tt><tt id="link-14" class="py-name" targets="Class PyML.classifiers.modelSelection.ModelSelector=PyML.classifiers.modelSelection.ModelSelector-class.html"><a title="PyML.classifiers.modelSelection.ModelSelector" class="py-name" href="#" onclick="return doclink('link-14', 'ModelSelector', 'link-14');">ModelSelector</a></tt><tt class="py-op">(</tt><tt class="py-name">param</tt><tt class="py-op">)</tt> </tt>
+<a name="L17"></a><tt class="py-lineno">17</tt>  <tt class="py-line">    <tt class="py-keyword">else</tt> <tt class="py-op">:</tt> </tt>
+<a name="L18"></a><tt class="py-lineno">18</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">chain</tt> </tt>
+</div><a name="L19"></a><tt class="py-lineno">19</tt>  <tt class="py-line"> </tt>
+<a name="rescaleGaussian"></a><div id="rescaleGaussian-def"><a name="L20"></a><tt class="py-lineno">20</tt> <a class="py-toggle" href="#" id="rescaleGaussian-toggle" onclick="return toggle('rescaleGaussian');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.lazyclass-module.html#rescaleGaussian">rescaleGaussian</a><tt class="py-op">(</tt><tt class="py-param">gammaList</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-number">0.01</tt><tt class="py-op">,</tt> <tt class="py-number">0.05</tt><tt class="py-op">,</tt> <tt class="py-number">0.1</tt><tt class="py-op">,</tt> <tt class="py-number">0.3</tt><tt class="py-op">,</tt> <tt class="py-number">1</tt><tt class="py-op">,</tt> <tt class="py-number">2</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> <tt class="py-param">data</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-param">args</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="rescaleGaussian-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="rescaleGaussian-expanded"><a name="L21"></a><tt class="py-lineno">21</tt>  <tt class="py-line"> </tt>
+<a name="L22"></a><tt class="py-lineno">22</tt>  <tt class="py-line">    <tt class="py-name">k</tt> <tt class="py-op">=</tt> <tt id="link-15" class="py-name"><a title="PyML.containers.ker" class="py-name" href="#" onclick="return doclink('link-15', 'ker', 'link-5');">ker</a></tt><tt class="py-op">.</tt><tt id="link-16" class="py-name" targets="Class PyML.containers.ext.ckernel.Gaussian=PyML.containers.ext.ckernel.Gaussian-class.html,Class PyML.containers.ker.Gaussian=PyML.containers.ker.Gaussian-class.html"><a title="PyML.containers.ext.ckernel.Gaussian
+PyML.containers.ker.Gaussian" class="py-name" href="#" onclick="return doclink('link-16', 'Gaussian', 'link-16');">Gaussian</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L23"></a><tt class="py-lineno">23</tt>  <tt class="py-line">    <tt id="link-17" class="py-name" targets="Variable PyML.demo.demo.s=PyML.demo.demo-module.html#s"><a title="PyML.demo.demo.s" class="py-name" href="#" onclick="return doclink('link-17', 's', 'link-17');">s</a></tt><tt class="py-op">=</tt><tt id="link-18" class="py-name"><a title="PyML.classifiers.svm" class="py-name" href="#" onclick="return doclink('link-18', 'svm', 'link-1');">svm</a></tt><tt class="py-op">.</tt><tt id="link-19" class="py-name"><a title="PyML.classifiers.SVM
+PyML.classifiers.svm.SVM" class="py-name" href="#" onclick="return doclink('link-19', 'SVM', 'link-10');">SVM</a></tt><tt class="py-op">(</tt><tt class="py-name">k</tt><tt class="py-op">)</tt> </tt>
+<a name="L24"></a><tt class="py-lineno">24</tt>  <tt class="py-line">    <tt class="py-name">chain</tt> <tt class="py-op">=</tt> <tt id="link-20" class="py-name"><a title="PyML.classifiers.composite" class="py-name" href="#" onclick="return doclink('link-20', 'composite', 'link-3');">composite</a></tt><tt class="py-op">.</tt><tt id="link-21" class="py-name"><a title="PyML.classifiers.composite.Chain" class="py-name" href="#" onclick="return doclink('link-21', 'Chain', 'link-7');">Chain</a></tt><tt class="py-op">(</tt><tt class="py-op">[</tt><tt id="link-22" class="py-name"><a title="PyML.preproc
+PyML.preproc.preproc
+PyML.preproc.preproc.Standardizer.preproc" class="py-name" href="#" onclick="return doclink('link-22', 'preproc', 'link-2');">preproc</a></tt><tt class="py-op">.</tt><tt class="py-name">Rescale</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> <tt id="link-23" class="py-name"><a title="PyML.demo.demo.s" class="py-name" href="#" onclick="return doclink('link-23', 's', 'link-17');">s</a></tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L25"></a><tt class="py-lineno">25</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-name">gammaList</tt> <tt class="py-keyword">is</tt> <tt class="py-keyword">not</tt> <tt class="py-name">None</tt> <tt class="py-op">:</tt> </tt>
+<a name="L26"></a><tt class="py-lineno">26</tt>  <tt class="py-line">        <tt class="py-name">param</tt> <tt class="py-op">=</tt> <tt id="link-24" class="py-name"><a title="PyML.classifiers.modelSelection" class="py-name" href="#" onclick="return doclink('link-24', 'modelSelection', 'link-4');">modelSelection</a></tt><tt class="py-op">.</tt><tt id="link-25" class="py-name"><a title="PyML.classifiers.modelSelection.Param" class="py-name" href="#" onclick="return doclink('link-25', 'Param', 'link-12');">Param</a></tt><tt class="py-op">(</tt><tt class="py-name">chain</tt><tt class="py-op">,</tt> </tt>
+<a name="L27"></a><tt class="py-lineno">27</tt>  <tt class="py-line">                                     <tt class="py-string">'classifier.kernel.gamma'</tt><tt class="py-op">,</tt> <tt class="py-name">gammaList</tt><tt class="py-op">)</tt> </tt>
+<a name="L28"></a><tt class="py-lineno">28</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt id="link-26" class="py-name"><a title="PyML.classifiers.modelSelection" class="py-name" href="#" onclick="return doclink('link-26', 'modelSelection', 'link-4');">modelSelection</a></tt><tt class="py-op">.</tt><tt id="link-27" class="py-name"><a title="PyML.classifiers.modelSelection.ModelSelector" class="py-name" href="#" onclick="return doclink('link-27', 'ModelSelector', 'link-14');">ModelSelector</a></tt><tt class="py-op">(</tt><tt class="py-name">param</tt><tt class="py-op">)</tt> </tt>
+<a name="L29"></a><tt class="py-lineno">29</tt>  <tt class="py-line">    <tt class="py-keyword">else</tt> <tt class="py-op">:</tt> </tt>
+<a name="L30"></a><tt class="py-lineno">30</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">chain</tt> </tt>
+</div><a name="L31"></a><tt class="py-lineno">31</tt>  <tt class="py-line"> </tt>
+<a name="gaussianSelect"></a><div id="gaussianSelect-def"><a name="L32"></a><tt class="py-lineno">32</tt> <a class="py-toggle" href="#" id="gaussianSelect-toggle" onclick="return toggle('gaussianSelect');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.lazyclass-module.html#gaussianSelect">gaussianSelect</a><tt class="py-op">(</tt><tt class="py-param">gammaList</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-number">0.01</tt><tt class="py-op">,</tt> <tt class="py-number">0.05</tt><tt class="py-op">,</tt> <tt class="py-number">0.1</tt><tt class="py-op">,</tt> <tt class="py-number">0.3</tt><tt class="py-op">,</tt> <tt class="py-number">1</tt><tt class="py-op">,</tt> <tt class="py-number">2</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-param">args</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="gaussianSelect-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="gaussianSelect-expanded"><a name="L33"></a><tt class="py-lineno">33</tt>  <tt class="py-line"> </tt>
+<a name="L34"></a><tt class="py-lineno">34</tt>  <tt class="py-line">    <tt class="py-name">measure</tt> <tt class="py-op">=</tt> <tt class="py-string">'balancedSuccessRate'</tt> </tt>
+<a name="L35"></a><tt class="py-lineno">35</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-string">'measure'</tt> <tt class="py-keyword">in</tt> <tt class="py-name">args</tt> <tt class="py-op">:</tt> </tt>
+<a name="L36"></a><tt class="py-lineno">36</tt>  <tt class="py-line">        <tt class="py-name">measure</tt> <tt class="py-op">=</tt> <tt class="py-name">args</tt><tt class="py-op">[</tt><tt class="py-string">'measure'</tt><tt class="py-op">]</tt> </tt>
+<a name="L37"></a><tt class="py-lineno">37</tt>  <tt class="py-line">    <tt class="py-name">k</tt> <tt class="py-op">=</tt> <tt id="link-28" class="py-name"><a title="PyML.containers.ker" class="py-name" href="#" onclick="return doclink('link-28', 'ker', 'link-5');">ker</a></tt><tt class="py-op">.</tt><tt id="link-29" class="py-name"><a title="PyML.containers.ext.ckernel.Gaussian
+PyML.containers.ker.Gaussian" class="py-name" href="#" onclick="return doclink('link-29', 'Gaussian', 'link-16');">Gaussian</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L38"></a><tt class="py-lineno">38</tt>  <tt class="py-line">    <tt class="py-name">param</tt> <tt class="py-op">=</tt> <tt id="link-30" class="py-name"><a title="PyML.classifiers.modelSelection" class="py-name" href="#" onclick="return doclink('link-30', 'modelSelection', 'link-4');">modelSelection</a></tt><tt class="py-op">.</tt><tt id="link-31" class="py-name"><a title="PyML.classifiers.modelSelection.Param" class="py-name" href="#" onclick="return doclink('link-31', 'Param', 'link-12');">Param</a></tt><tt class="py-op">(</tt><tt id="link-32" class="py-name"><a title="PyML.classifiers.svm" class="py-name" href="#" onclick="return doclink('link-32', 'svm', 'link-1');">svm</a></tt><tt class="py-op">.</tt><tt id="link-33" class="py-name"><a title="PyML.classifiers.SVM
+PyML.classifiers.svm.SVM" class="py-name" href="#" onclick="return doclink('link-33', 'SVM', 'link-10');">SVM</a></tt><tt class="py-op">(</tt><tt class="py-name">k</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L39"></a><tt class="py-lineno">39</tt>  <tt class="py-line">                                 <tt class="py-string">'kernel.gamma'</tt><tt class="py-op">,</tt> <tt class="py-name">gammaList</tt><tt class="py-op">)</tt> </tt>
+<a name="L40"></a><tt class="py-lineno">40</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt id="link-34" class="py-name"><a title="PyML.classifiers.modelSelection" class="py-name" href="#" onclick="return doclink('link-34', 'modelSelection', 'link-4');">modelSelection</a></tt><tt class="py-op">.</tt><tt id="link-35" class="py-name"><a title="PyML.classifiers.modelSelection.ModelSelector" class="py-name" href="#" onclick="return doclink('link-35', 'ModelSelector', 'link-14');">ModelSelector</a></tt><tt class="py-op">(</tt><tt class="py-name">param</tt><tt class="py-op">,</tt> <tt class="py-name">measure</tt> <tt class="py-op">=</tt> <tt class="py-name">measure</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L41"></a><tt class="py-lineno">41</tt>  <tt class="py-line"> </tt>
+<a name="L42"></a><tt class="py-lineno">42</tt>  <tt class="py-line"> </tt>
+<a name="RF"></a><div id="RF-def"><a name="L43"></a><tt class="py-lineno">43</tt> <a class="py-toggle" href="#" id="RF-toggle" onclick="return toggle('RF');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.lazyclass-module.html#RF">RF</a><tt class="py-op">(</tt><tt class="py-param">data</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-param">args</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="RF-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="RF-expanded"><a name="L44"></a><tt class="py-lineno">44</tt>  <tt class="py-line"> </tt>
+<a name="L45"></a><tt class="py-lineno">45</tt>  <tt class="py-line">    <tt class="py-keyword">from</tt> <tt class="py-name">PyCode</tt><tt class="py-op">.</tt><tt class="py-name">PyML</tt> <tt class="py-keyword">import</tt> <tt class="py-name">randomForests2</tt> </tt>
+<a name="L46"></a><tt class="py-lineno">46</tt>  <tt class="py-line">    <tt class="py-name">rf</tt> <tt class="py-op">=</tt> <tt class="py-name">randomForests2</tt><tt class="py-op">.</tt><tt id="link-36" class="py-name" targets="Function PyML.classifiers.lazyclass.RF()=PyML.classifiers.lazyclass-module.html#RF"><a title="PyML.classifiers.lazyclass.RF" class="py-name" href="#" onclick="return doclink('link-36', 'RF', 'link-36');">RF</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L47"></a><tt class="py-lineno">47</tt>  <tt class="py-line"> </tt>
+<a name="L48"></a><tt class="py-lineno">48</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">rf</tt> </tt>
+</div><a name="L49"></a><tt class="py-lineno">49</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pyml.sourceforge.net">PyML</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Fri May  2 12:39:38 2008
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

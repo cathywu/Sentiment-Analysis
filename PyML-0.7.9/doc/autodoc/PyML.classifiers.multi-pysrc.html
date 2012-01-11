@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>PyML.classifiers.multi</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pyml.sourceforge.net">PyML</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;PyML ::
+        <a href="PyML.classifiers-module.html">Package&nbsp;classifiers</a> ::
+        Module&nbsp;multi
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="PyML.classifiers.multi-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="PyML.classifiers.multi-module.html">Module PyML.classifiers.multi</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno">  1</tt>  <tt class="py-line"> </tt>
+<a name="L2"></a><tt class="py-lineno">  2</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">numpy</tt> </tt>
+<a name="L3"></a><tt class="py-lineno">  3</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">os</tt> </tt>
+<a name="L4"></a><tt class="py-lineno">  4</tt>  <tt class="py-line"> </tt>
+<a name="L5"></a><tt class="py-lineno">  5</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">PyML</tt><tt class="py-op">.</tt><tt class="py-name">utils</tt> <tt class="py-keyword">import</tt> <tt class="py-name">misc</tt> </tt>
+<a name="L6"></a><tt class="py-lineno">  6</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-0" class="py-name" targets="Module PyML.classifiers.baseClassifiers=PyML.classifiers.baseClassifiers-module.html"><a title="PyML.classifiers.baseClassifiers" class="py-name" href="#" onclick="return doclink('link-0', 'baseClassifiers', 'link-0');">baseClassifiers</a></tt> <tt class="py-keyword">import</tt> <tt id="link-1" class="py-name" targets="Class PyML.classifiers.baseClassifiers.Classifier=PyML.classifiers.baseClassifiers.Classifier-class.html"><a title="PyML.classifiers.baseClassifiers.Classifier" class="py-name" href="#" onclick="return doclink('link-1', 'Classifier', 'link-1');">Classifier</a></tt> </tt>
+<a name="L7"></a><tt class="py-lineno">  7</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-2" class="py-name" targets="Module PyML.classifiers.composite=PyML.classifiers.composite-module.html"><a title="PyML.classifiers.composite" class="py-name" href="#" onclick="return doclink('link-2', 'composite', 'link-2');">composite</a></tt> <tt class="py-keyword">import</tt> <tt id="link-3" class="py-name" targets="Class PyML.classifiers.composite.CompositeClassifier=PyML.classifiers.composite.CompositeClassifier-class.html"><a title="PyML.classifiers.composite.CompositeClassifier" class="py-name" href="#" onclick="return doclink('link-3', 'CompositeClassifier', 'link-3');">CompositeClassifier</a></tt> </tt>
+<a name="L8"></a><tt class="py-lineno">  8</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">PyML</tt><tt class="py-op">.</tt><tt id="link-4" class="py-name" targets="Package PyML.evaluators=PyML.evaluators-module.html"><a title="PyML.evaluators" class="py-name" href="#" onclick="return doclink('link-4', 'evaluators', 'link-4');">evaluators</a></tt> <tt class="py-keyword">import</tt> <tt id="link-5" class="py-name" targets="Module PyML.evaluators.assess=PyML.evaluators.assess-module.html"><a title="PyML.evaluators.assess" class="py-name" href="#" onclick="return doclink('link-5', 'assess', 'link-5');">assess</a></tt> </tt>
+<a name="L9"></a><tt class="py-lineno">  9</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">PyML</tt><tt class="py-op">.</tt><tt id="link-6" class="py-name" targets="Package PyML.containers=PyML.containers-module.html"><a title="PyML.containers" class="py-name" href="#" onclick="return doclink('link-6', 'containers', 'link-6');">containers</a></tt><tt class="py-op">.</tt><tt id="link-7" class="py-name" targets="Module PyML.containers.labels=PyML.containers.labels-module.html"><a title="PyML.containers.labels" class="py-name" href="#" onclick="return doclink('link-7', 'labels', 'link-7');">labels</a></tt> <tt class="py-keyword">import</tt> <tt id="link-8" class="py-name" targets="Method PyML.containers.labels.Labels.oneAgainstRest()=PyML.containers.labels.Labels-class.html#oneAgainstRest,Function PyML.containers.labels.oneAgainstRest()=PyML.containers.labels-module.html#oneAgainstRest"><a title="PyML.containers.labels.Labels.oneAgainstRest
+PyML.containers.labels.oneAgainstRest" class="py-name" href="#" onclick="return doclink('link-8', 'oneAgainstRest', 'link-8');">oneAgainstRest</a></tt> </tt>
+<a name="L10"></a><tt class="py-lineno"> 10</tt>  <tt class="py-line"> </tt>
+<a name="L11"></a><tt class="py-lineno"> 11</tt>  <tt class="py-line"><tt class="py-string">"""classes for multi-class classification"""</tt> </tt>
+<a name="L12"></a><tt class="py-lineno"> 12</tt>  <tt class="py-line"> </tt>
+<a name="L13"></a><tt class="py-lineno"> 13</tt>  <tt class="py-line"><tt class="py-name">__docformat__</tt> <tt class="py-op">=</tt> <tt class="py-string">"restructuredtext en"</tt> </tt>
+<a name="L14"></a><tt class="py-lineno"> 14</tt>  <tt class="py-line"> </tt>
+<a name="OneAgainstOne"></a><div id="OneAgainstOne-def"><a name="L15"></a><tt class="py-lineno"> 15</tt> <a class="py-toggle" href="#" id="OneAgainstOne-toggle" onclick="return toggle('OneAgainstOne');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="PyML.classifiers.multi.OneAgainstOne-class.html">OneAgainstOne</a> <tt class="py-op">(</tt><tt class="py-base-class">CompositeClassifier</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="OneAgainstOne-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="OneAgainstOne-expanded"><a name="L16"></a><tt class="py-lineno"> 16</tt>  <tt class="py-line"> </tt>
+<a name="L17"></a><tt class="py-lineno"> 17</tt>  <tt class="py-line">    <tt class="py-docstring">'''One-against-one Multi-class classification</tt> </tt>
+<a name="L18"></a><tt class="py-lineno"> 18</tt>  <tt class="py-line"><tt class="py-docstring">    using a two class classifier.</tt> </tt>
+<a name="L19"></a><tt class="py-lineno"> 19</tt>  <tt class="py-line"><tt class="py-docstring">    </tt> </tt>
+<a name="L20"></a><tt class="py-lineno"> 20</tt>  <tt class="py-line"><tt class="py-docstring">    For a k class problem k(k-1) binary classes are trained for all</tt> </tt>
+<a name="L21"></a><tt class="py-lineno"> 21</tt>  <tt class="py-line"><tt class="py-docstring">    pairs of classes; an instance is classified to the class that</tt> </tt>
+<a name="L22"></a><tt class="py-lineno"> 22</tt>  <tt class="py-line"><tt class="py-docstring">    receives the highest number of votes; an instance is constructed</tt> </tt>
+<a name="L23"></a><tt class="py-lineno"> 23</tt>  <tt class="py-line"><tt class="py-docstring">    using a classifier that is used as a template for constructing</tt> </tt>
+<a name="L24"></a><tt class="py-lineno"> 24</tt>  <tt class="py-line"><tt class="py-docstring">    the actual classifiers.</tt> </tt>
+<a name="L25"></a><tt class="py-lineno"> 25</tt>  <tt class="py-line"><tt class="py-docstring">    '''</tt> </tt>
+<a name="L26"></a><tt class="py-lineno"> 26</tt>  <tt class="py-line"> </tt>
+<a name="OneAgainstOne.train"></a><div id="OneAgainstOne.train-def"><a name="L27"></a><tt class="py-lineno"> 27</tt> <a class="py-toggle" href="#" id="OneAgainstOne.train-toggle" onclick="return toggle('OneAgainstOne.train');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.multi.OneAgainstOne-class.html#train">train</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">data</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-param">args</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="OneAgainstOne.train-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="OneAgainstOne.train-expanded"><a name="L28"></a><tt class="py-lineno"> 28</tt>  <tt class="py-line">        <tt class="py-docstring">'''train k(k-1)/2 classifiers'''</tt> </tt>
+<a name="L29"></a><tt class="py-lineno"> 29</tt>  <tt class="py-line"> </tt>
+<a name="L30"></a><tt class="py-lineno"> 30</tt>  <tt class="py-line">        <tt id="link-9" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier" class="py-name" href="#" onclick="return doclink('link-9', 'Classifier', 'link-1');">Classifier</a></tt><tt class="py-op">.</tt><tt id="link-10" class="py-name" targets="Method PyML.classifiers.baseClassifiers.Classifier.train()=PyML.classifiers.baseClassifiers.Classifier-class.html#train,Method PyML.classifiers.composite.AggregateClassifier.train()=PyML.classifiers.composite.AggregateClassifier-class.html#train,Method PyML.classifiers.composite.Chain.train()=PyML.classifiers.composite.Chain-class.html#train,Method PyML.classifiers.composite.FeatureSelect.train()=PyML.classifiers.composite.FeatureSelect-class.html#train,Method PyML.classifiers.composite.FeatureSelectAll.train()=PyML.classifiers.composite.FeatureSelectAll-class.html#train,Method PyML.classifiers.ext.knn.KNN.train()=PyML.classifiers.ext.knn.KNN-class.html#train,Method PyML.classifiers.knn.KNN.train()=PyML.classifiers.knn.KNN-class.html#train,Method PyML.classifiers.modelSelection.ModelSelector.train()=PyML.classifiers.modelSelection.ModelSelector-class.html#train,Method PyML.classifiers.modelSelection.Param.train()=PyML.classifiers.modelSelection.Param-class.html#train,Method PyML.classifiers.modelSelection.SVMselect.train()=PyML.classifiers.modelSelection.SVMselect-class.html#train,Method PyML.classifiers.multi.OneAgainstOne.train()=PyML.classifiers.multi.OneAgainstOne-class.html#train,Method PyML.classifiers.multi.OneAgainstRest.train()=PyML.classifiers.multi.OneAgainstRest-class.html#train,Method PyML.classifiers.platt.Platt.train()=PyML.classifiers.platt.Platt-class.html#train,Method PyML.classifiers.ridgeRegression.RidgeRegression.train()=PyML.classifiers.ridgeRegression.RidgeRegression-class.html#train,Method PyML.classifiers.svm.SVC.train()=PyML.classifiers.svm.SVC-class.html#train,Method PyML.classifiers.svm.SVM.train()=PyML.classifiers.svm.SVM-class.html#train,Method PyML.classifiers.template.Template.train()=PyML.classifiers.template.Template-class.html#train,Method PyML.containers.baseDatasets.BaseDataSet.train()=PyML.containers.baseDatasets.BaseDataSet-class.html#train,Method PyML.preproc.preproc.Standardizer.train()=PyML.preproc.preproc.Standardizer-class.html#train"><a title="PyML.classifiers.baseClassifiers.Classifier.train
+PyML.classifiers.composite.AggregateClassifier.train
+PyML.classifiers.composite.Chain.train
+PyML.classifiers.composite.FeatureSelect.train
+PyML.classifiers.composite.FeatureSelectAll.train
+PyML.classifiers.ext.knn.KNN.train
+PyML.classifiers.knn.KNN.train
+PyML.classifiers.modelSelection.ModelSelector.train
+PyML.classifiers.modelSelection.Param.train
+PyML.classifiers.modelSelection.SVMselect.train
+PyML.classifiers.multi.OneAgainstOne.train
+PyML.classifiers.multi.OneAgainstRest.train
+PyML.classifiers.platt.Platt.train
+PyML.classifiers.ridgeRegression.RidgeRegression.train
+PyML.classifiers.svm.SVC.train
+PyML.classifiers.svm.SVM.train
+PyML.classifiers.template.Template.train
+PyML.containers.baseDatasets.BaseDataSet.train
+PyML.preproc.preproc.Standardizer.train" class="py-name" href="#" onclick="return doclink('link-10', 'train', 'link-10');">train</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">data</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-name">args</tt><tt class="py-op">)</tt> </tt>
+<a name="L31"></a><tt class="py-lineno"> 31</tt>  <tt class="py-line">        <tt class="py-name">numClasses</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-11" class="py-name"><a title="PyML.containers.labels" class="py-name" href="#" onclick="return doclink('link-11', 'labels', 'link-7');">labels</a></tt><tt class="py-op">.</tt><tt class="py-name">numClasses</tt> </tt>
+<a name="L32"></a><tt class="py-lineno"> 32</tt>  <tt class="py-line"> </tt>
+<a name="L33"></a><tt class="py-lineno"> 33</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">numClasses</tt> <tt class="py-op">&lt;=</tt> <tt class="py-number">2</tt><tt class="py-op">:</tt> </tt>
+<a name="L34"></a><tt class="py-lineno"> 34</tt>  <tt class="py-line">            <tt class="py-keyword">raise</tt> <tt class="py-name">ValueError</tt><tt class="py-op">,</tt> <tt class="py-string">'Not a multi class problem'</tt> </tt>
+<a name="L35"></a><tt class="py-lineno"> 35</tt>  <tt class="py-line"> </tt>
+<a name="L36"></a><tt class="py-lineno"> 36</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-12" class="py-name" targets="Package PyML.classifiers=PyML.classifiers-module.html"><a title="PyML.classifiers" class="py-name" href="#" onclick="return doclink('link-12', 'classifiers', 'link-12');">classifiers</a></tt> <tt class="py-op">=</tt> <tt class="py-name">misc</tt><tt class="py-op">.</tt><tt class="py-name">matrix</tt><tt class="py-op">(</tt><tt class="py-op">(</tt><tt class="py-name">numClasses</tt><tt class="py-op">,</tt> <tt class="py-name">numClasses</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L37"></a><tt class="py-lineno"> 37</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">numClasses</tt> <tt class="py-op">-</tt> <tt class="py-number">1</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L38"></a><tt class="py-lineno"> 38</tt>  <tt class="py-line">            <tt class="py-keyword">for</tt> <tt class="py-name">j</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">i</tt><tt class="py-op">+</tt><tt class="py-number">1</tt><tt class="py-op">,</tt> <tt class="py-name">numClasses</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L39"></a><tt class="py-lineno"> 39</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-13" class="py-name"><a title="PyML.classifiers" class="py-name" href="#" onclick="return doclink('link-13', 'classifiers', 'link-12');">classifiers</a></tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">j</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">)</tt> </tt>
+<a name="L40"></a><tt class="py-lineno"> 40</tt>  <tt class="py-line">                <tt class="py-name">dataij</tt><tt class="py-op">=</tt><tt class="py-name">data</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">,</tt> <tt id="link-14" class="py-name" targets="Variable PyML.classifiers.baseClassifiers.Classifier.deepcopy=PyML.classifiers.baseClassifiers.Classifier-class.html#deepcopy,Variable PyML.classifiers.composite.Chain.deepcopy=PyML.classifiers.composite.Chain-class.html#deepcopy,Variable PyML.classifiers.composite.CompositeClassifier.deepcopy=PyML.classifiers.composite.CompositeClassifier-class.html#deepcopy,Variable PyML.classifiers.composite.FeatureSelect.deepcopy=PyML.classifiers.composite.FeatureSelect-class.html#deepcopy,Variable PyML.classifiers.composite.FeatureSelectAll.deepcopy=PyML.classifiers.composite.FeatureSelectAll-class.html#deepcopy"><a title="PyML.classifiers.baseClassifiers.Classifier.deepcopy
+PyML.classifiers.composite.Chain.deepcopy
+PyML.classifiers.composite.CompositeClassifier.deepcopy
+PyML.classifiers.composite.FeatureSelect.deepcopy
+PyML.classifiers.composite.FeatureSelectAll.deepcopy" class="py-name" href="#" onclick="return doclink('link-14', 'deepcopy', 'link-14');">deepcopy</a></tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt id="link-15" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.deepcopy
+PyML.classifiers.composite.Chain.deepcopy
+PyML.classifiers.composite.CompositeClassifier.deepcopy
+PyML.classifiers.composite.FeatureSelect.deepcopy
+PyML.classifiers.composite.FeatureSelectAll.deepcopy" class="py-name" href="#" onclick="return doclink('link-15', 'deepcopy', 'link-14');">deepcopy</a></tt><tt class="py-op">,</tt> </tt>
+<a name="L41"></a><tt class="py-lineno"> 41</tt>  <tt class="py-line">                                      <tt class="py-name">classID</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">,</tt><tt class="py-name">j</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L42"></a><tt class="py-lineno"> 42</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-16" class="py-name"><a title="PyML.classifiers" class="py-name" href="#" onclick="return doclink('link-16', 'classifiers', 'link-12');">classifiers</a></tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">j</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt id="link-17" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.train
+PyML.classifiers.composite.AggregateClassifier.train
+PyML.classifiers.composite.Chain.train
+PyML.classifiers.composite.FeatureSelect.train
+PyML.classifiers.composite.FeatureSelectAll.train
+PyML.classifiers.ext.knn.KNN.train
+PyML.classifiers.knn.KNN.train
+PyML.classifiers.modelSelection.ModelSelector.train
+PyML.classifiers.modelSelection.Param.train
+PyML.classifiers.modelSelection.SVMselect.train
+PyML.classifiers.multi.OneAgainstOne.train
+PyML.classifiers.multi.OneAgainstRest.train
+PyML.classifiers.platt.Platt.train
+PyML.classifiers.ridgeRegression.RidgeRegression.train
+PyML.classifiers.svm.SVC.train
+PyML.classifiers.svm.SVM.train
+PyML.classifiers.template.Template.train
+PyML.containers.baseDatasets.BaseDataSet.train
+PyML.preproc.preproc.Standardizer.train" class="py-name" href="#" onclick="return doclink('link-17', 'train', 'link-10');">train</a></tt><tt class="py-op">(</tt><tt class="py-name">dataij</tt><tt class="py-op">)</tt> </tt>
+<a name="L43"></a><tt class="py-lineno"> 43</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">log</tt><tt class="py-op">.</tt><tt class="py-name">trainingTime</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-18" class="py-name" targets="Method PyML.classifiers.baseClassifiers.Classifier.getTrainingTime()=PyML.classifiers.baseClassifiers.Classifier-class.html#getTrainingTime"><a title="PyML.classifiers.baseClassifiers.Classifier.getTrainingTime" class="py-name" href="#" onclick="return doclink('link-18', 'getTrainingTime', 'link-18');">getTrainingTime</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt>                 </tt>
+</div><a name="L44"></a><tt class="py-lineno"> 44</tt>  <tt class="py-line"> </tt>
+<a name="OneAgainstOne.classify"></a><div id="OneAgainstOne.classify-def"><a name="L45"></a><tt class="py-lineno"> 45</tt> <a class="py-toggle" href="#" id="OneAgainstOne.classify-toggle" onclick="return toggle('OneAgainstOne.classify');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.multi.OneAgainstOne-class.html#classify">classify</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">data</tt><tt class="py-op">,</tt> <tt class="py-param">p</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="OneAgainstOne.classify-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="OneAgainstOne.classify-expanded"><a name="L46"></a><tt class="py-lineno"> 46</tt>  <tt class="py-line">        <tt class="py-docstring">'''Suppose that x is classified to class c, then the margin is</tt> </tt>
+<a name="L47"></a><tt class="py-lineno"> 47</tt>  <tt class="py-line"><tt class="py-docstring">        defined as the minimum margin found against the k-1 other classes</tt> </tt>
+<a name="L48"></a><tt class="py-lineno"> 48</tt>  <tt class="py-line"><tt class="py-docstring">        '''</tt> </tt>
+<a name="L49"></a><tt class="py-lineno"> 49</tt>  <tt class="py-line">         </tt>
+<a name="L50"></a><tt class="py-lineno"> 50</tt>  <tt class="py-line">        <tt class="py-name">numClasses</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-19" class="py-name"><a title="PyML.containers.labels" class="py-name" href="#" onclick="return doclink('link-19', 'labels', 'link-7');">labels</a></tt><tt class="py-op">.</tt><tt class="py-name">numClasses</tt> </tt>
+<a name="L51"></a><tt class="py-lineno"> 51</tt>  <tt class="py-line">        <tt id="link-20" class="py-name" targets="Variable PyML.demo.demo.r=PyML.demo.demo-module.html#r"><a title="PyML.demo.demo.r" class="py-name" href="#" onclick="return doclink('link-20', 'r', 'link-20');">r</a></tt> <tt class="py-op">=</tt> <tt class="py-name">numpy</tt><tt class="py-op">.</tt><tt class="py-name">zeros</tt><tt class="py-op">(</tt><tt class="py-op">(</tt><tt class="py-name">numClasses</tt><tt class="py-op">,</tt> <tt class="py-name">numClasses</tt><tt class="py-op">)</tt><tt class="py-op">,</tt><tt class="py-name">numpy</tt><tt class="py-op">.</tt><tt class="py-name">float_</tt><tt class="py-op">)</tt> </tt>
+<a name="L52"></a><tt class="py-lineno"> 52</tt>  <tt class="py-line">        <tt class="py-name">vote</tt> <tt class="py-op">=</tt> <tt class="py-name">numpy</tt><tt class="py-op">.</tt><tt class="py-name">zeros</tt><tt class="py-op">(</tt><tt class="py-name">numClasses</tt><tt class="py-op">)</tt> </tt>
+<a name="L53"></a><tt class="py-lineno"> 53</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">numClasses</tt> <tt class="py-op">-</tt> <tt class="py-number">1</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L54"></a><tt class="py-lineno"> 54</tt>  <tt class="py-line">            <tt class="py-keyword">for</tt> <tt class="py-name">j</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">i</tt><tt class="py-op">+</tt><tt class="py-number">1</tt><tt class="py-op">,</tt> <tt class="py-name">numClasses</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L55"></a><tt class="py-lineno"> 55</tt>  <tt class="py-line">                <tt id="link-21" class="py-name"><a title="PyML.demo.demo.r" class="py-name" href="#" onclick="return doclink('link-21', 'r', 'link-20');">r</a></tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">j</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-22" class="py-name"><a title="PyML.classifiers" class="py-name" href="#" onclick="return doclink('link-22', 'classifiers', 'link-12');">classifiers</a></tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">j</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt id="link-23" class="py-name" targets="Method PyML.classifiers.composite.CompositeClassifier.decisionFunc()=PyML.classifiers.composite.CompositeClassifier-class.html#decisionFunc,Method PyML.classifiers.ext.csvmodel.LinearSVModel.decisionFunc()=PyML.classifiers.ext.csvmodel.LinearSVModel-class.html#decisionFunc,Method PyML.classifiers.ext.csvmodel.LinearSparseSVModel.decisionFunc()=PyML.classifiers.ext.csvmodel.LinearSparseSVModel-class.html#decisionFunc,Method PyML.classifiers.ext.csvmodel.SVModel.decisionFunc()=PyML.classifiers.ext.csvmodel.SVModel-class.html#decisionFunc,Method PyML.classifiers.platt.Platt.decisionFunc()=PyML.classifiers.platt.Platt-class.html#decisionFunc,Method PyML.classifiers.ridgeRegression.RidgeRegression.decisionFunc()=PyML.classifiers.ridgeRegression.RidgeRegression-class.html#decisionFunc,Method PyML.classifiers.svm.LinearSVModel.decisionFunc()=PyML.classifiers.svm.LinearSVModel-class.html#decisionFunc,Method PyML.classifiers.svm.SVC.decisionFunc()=PyML.classifiers.svm.SVC-class.html#decisionFunc,Method PyML.classifiers.svm.SVM.decisionFunc()=PyML.classifiers.svm.SVM-class.html#decisionFunc,Method PyML.classifiers.svm.SVModel.decisionFunc()=PyML.classifiers.svm.SVModel-class.html#decisionFunc,Method PyML.classifiers.template.Template.decisionFunc()=PyML.classifiers.template.Template-class.html#decisionFunc"><a title="PyML.classifiers.composite.CompositeClassifier.decisionFunc
+PyML.classifiers.ext.csvmodel.LinearSVModel.decisionFunc
+PyML.classifiers.ext.csvmodel.LinearSparseSVModel.decisionFunc
+PyML.classifiers.ext.csvmodel.SVModel.decisionFunc
+PyML.classifiers.platt.Platt.decisionFunc
+PyML.classifiers.ridgeRegression.RidgeRegression.decisionFunc
+PyML.classifiers.svm.LinearSVModel.decisionFunc
+PyML.classifiers.svm.SVC.decisionFunc
+PyML.classifiers.svm.SVM.decisionFunc
+PyML.classifiers.svm.SVModel.decisionFunc
+PyML.classifiers.template.Template.decisionFunc" class="py-name" href="#" onclick="return doclink('link-23', 'decisionFunc', 'link-23');">decisionFunc</a></tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">,</tt> <tt id="link-24" class="py-name" targets="Variable PyML.demo.demo.p=PyML.demo.demo-module.html#p"><a title="PyML.demo.demo.p" class="py-name" href="#" onclick="return doclink('link-24', 'p', 'link-24');">p</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L56"></a><tt class="py-lineno"> 56</tt>  <tt class="py-line">                <tt class="py-comment"># afterwards I take the minimum or r, so assign:</tt> </tt>
+<a name="L57"></a><tt class="py-lineno"> 57</tt>  <tt class="py-line"><tt class="py-comment"></tt>                <tt id="link-25" class="py-name"><a title="PyML.demo.demo.r" class="py-name" href="#" onclick="return doclink('link-25', 'r', 'link-20');">r</a></tt><tt class="py-op">[</tt><tt class="py-name">j</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt id="link-26" class="py-name"><a title="PyML.demo.demo.r" class="py-name" href="#" onclick="return doclink('link-26', 'r', 'link-20');">r</a></tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">j</tt><tt class="py-op">]</tt>   </tt>
+<a name="L58"></a><tt class="py-lineno"> 58</tt>  <tt class="py-line">                <tt class="py-keyword">if</tt> <tt id="link-27" class="py-name"><a title="PyML.demo.demo.r" class="py-name" href="#" onclick="return doclink('link-27', 'r', 'link-20');">r</a></tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">j</tt><tt class="py-op">]</tt> <tt class="py-op">&gt;</tt> <tt class="py-number">0</tt> <tt class="py-op">:</tt> </tt>
+<a name="L59"></a><tt class="py-lineno"> 59</tt>  <tt class="py-line">                    <tt class="py-name">vote</tt><tt class="py-op">[</tt><tt class="py-name">j</tt><tt class="py-op">]</tt> <tt class="py-op">+=</tt> <tt class="py-number">1</tt> </tt>
+<a name="L60"></a><tt class="py-lineno"> 60</tt>  <tt class="py-line">                <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L61"></a><tt class="py-lineno"> 61</tt>  <tt class="py-line">                    <tt class="py-name">vote</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> <tt class="py-op">+=</tt> <tt class="py-number">1</tt> </tt>
+<a name="L62"></a><tt class="py-lineno"> 62</tt>  <tt class="py-line">                     </tt>
+<a name="L63"></a><tt class="py-lineno"> 63</tt>  <tt class="py-line">        <tt class="py-name">maxvote</tt> <tt class="py-op">=</tt> <tt class="py-name">numpy</tt><tt class="py-op">.</tt><tt class="py-name">argmax</tt><tt class="py-op">(</tt><tt class="py-name">vote</tt><tt class="py-op">)</tt> </tt>
+<a name="L64"></a><tt class="py-lineno"> 64</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">maxvote</tt><tt class="py-op">,</tt> <tt class="py-name">numpy</tt><tt class="py-op">.</tt><tt class="py-name">min</tt><tt class="py-op">(</tt><tt class="py-name">numpy</tt><tt class="py-op">.</tt><tt class="py-name">absolute</tt><tt class="py-op">(</tt><tt id="link-28" class="py-name"><a title="PyML.demo.demo.r" class="py-name" href="#" onclick="return doclink('link-28', 'r', 'link-20');">r</a></tt><tt class="py-op">[</tt><tt class="py-name">maxvote</tt><tt class="py-op">]</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L65"></a><tt class="py-lineno"> 65</tt>  <tt class="py-line"> </tt>
+<a name="OneAgainstOne.preproject"></a><div id="OneAgainstOne.preproject-def"><a name="L66"></a><tt class="py-lineno"> 66</tt> <a class="py-toggle" href="#" id="OneAgainstOne.preproject-toggle" onclick="return toggle('OneAgainstOne.preproject');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.multi.OneAgainstOne-class.html#preproject">preproject</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">data</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="OneAgainstOne.preproject-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="OneAgainstOne.preproject-expanded"><a name="L67"></a><tt class="py-lineno"> 67</tt>  <tt class="py-line"> </tt>
+<a name="L68"></a><tt class="py-lineno"> 68</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-29" class="py-name"><a title="PyML.containers.labels" class="py-name" href="#" onclick="return doclink('link-29', 'labels', 'link-7');">labels</a></tt><tt class="py-op">.</tt><tt class="py-name">numClasses</tt><tt class="py-op">-</tt><tt class="py-number">1</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L69"></a><tt class="py-lineno"> 69</tt>  <tt class="py-line">            <tt class="py-keyword">for</tt> <tt class="py-name">j</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">i</tt><tt class="py-op">+</tt><tt class="py-number">1</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-30" class="py-name"><a title="PyML.containers.labels" class="py-name" href="#" onclick="return doclink('link-30', 'labels', 'link-7');">labels</a></tt><tt class="py-op">.</tt><tt class="py-name">numClasses</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L70"></a><tt class="py-lineno"> 70</tt>  <tt class="py-line">                <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-31" class="py-name"><a title="PyML.classifiers" class="py-name" href="#" onclick="return doclink('link-31', 'classifiers', 'link-12');">classifiers</a></tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">j</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt id="link-32" class="py-name" targets="Method PyML.classifiers.composite.CompositeClassifier.preproject()=PyML.classifiers.composite.CompositeClassifier-class.html#preproject,Method PyML.classifiers.multi.OneAgainstOne.preproject()=PyML.classifiers.multi.OneAgainstOne-class.html#preproject,Method PyML.classifiers.multi.OneAgainstRest.preproject()=PyML.classifiers.multi.OneAgainstRest-class.html#preproject"><a title="PyML.classifiers.composite.CompositeClassifier.preproject
+PyML.classifiers.multi.OneAgainstOne.preproject
+PyML.classifiers.multi.OneAgainstRest.preproject" class="py-name" href="#" onclick="return doclink('link-32', 'preproject', 'link-32');">preproject</a></tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L71"></a><tt class="py-lineno"> 71</tt>  <tt class="py-line">         </tt>
+<a name="L72"></a><tt class="py-lineno"> 72</tt>  <tt class="py-line">    <tt id="link-33" class="py-name" targets="Method PyML.classifiers.baseClassifiers.IteratorClassifier.test()=PyML.classifiers.baseClassifiers.IteratorClassifier-class.html#test,Method PyML.classifiers.composite.Chain.test()=PyML.classifiers.composite.Chain-class.html#test,Variable PyML.classifiers.composite.CompositeClassifier.test=PyML.classifiers.composite.CompositeClassifier-class.html#test,Method PyML.classifiers.ext.knn.KNN.test()=PyML.classifiers.ext.knn.KNN-class.html#test,Method PyML.classifiers.knn.KNN.test()=PyML.classifiers.knn.KNN-class.html#test,Method PyML.containers.baseDatasets.BaseDataSet.test()=PyML.containers.baseDatasets.BaseDataSet-class.html#test,Function PyML.containers.parsers.test()=PyML.containers.parsers-module.html#test,Function PyML.demo.pyml_test.test()=PyML.demo.pyml_test-module.html#test,Module PyML.demo.test=PyML.demo.test-module.html,Function PyML.demo.test.test()=PyML.demo.test-module.html#test,Function PyML.evaluators.assess.test()=PyML.evaluators.assess-module.html#test,Method PyML.feature_selection.featsel.FeatureScorer.test()=PyML.feature_selection.featsel.FeatureScorer-class.html#test,Method PyML.feature_selection.featsel.FeatureSelector.test()=PyML.feature_selection.featsel.FeatureSelector-class.html#test,Method PyML.preproc.preproc.Standardizer.test()=PyML.preproc.preproc.Standardizer-class.html#test"><a title="PyML.classifiers.baseClassifiers.IteratorClassifier.test
+PyML.classifiers.composite.Chain.test
+PyML.classifiers.composite.CompositeClassifier.test
+PyML.classifiers.ext.knn.KNN.test
+PyML.classifiers.knn.KNN.test
+PyML.containers.baseDatasets.BaseDataSet.test
+PyML.containers.parsers.test
+PyML.demo.pyml_test.test
+PyML.demo.test
+PyML.demo.test.test
+PyML.evaluators.assess.test
+PyML.feature_selection.featsel.FeatureScorer.test
+PyML.feature_selection.featsel.FeatureSelector.test
+PyML.preproc.preproc.Standardizer.test" class="py-name" href="#" onclick="return doclink('link-33', 'test', 'link-33');">test</a></tt> <tt class="py-op">=</tt> <tt id="link-34" class="py-name"><a title="PyML.evaluators.assess" class="py-name" href="#" onclick="return doclink('link-34', 'assess', 'link-5');">assess</a></tt><tt class="py-op">.</tt><tt id="link-35" class="py-name"><a title="PyML.classifiers.baseClassifiers.IteratorClassifier.test
+PyML.classifiers.composite.Chain.test
+PyML.classifiers.composite.CompositeClassifier.test
+PyML.classifiers.ext.knn.KNN.test
+PyML.classifiers.knn.KNN.test
+PyML.containers.baseDatasets.BaseDataSet.test
+PyML.containers.parsers.test
+PyML.demo.pyml_test.test
+PyML.demo.test
+PyML.demo.test.test
+PyML.evaluators.assess.test
+PyML.feature_selection.featsel.FeatureScorer.test
+PyML.feature_selection.featsel.FeatureSelector.test
+PyML.preproc.preproc.Standardizer.test" class="py-name" href="#" onclick="return doclink('link-35', 'test', 'link-33');">test</a></tt> </tt>
+</div><a name="L73"></a><tt class="py-lineno"> 73</tt>  <tt class="py-line"> </tt>
+<a name="L74"></a><tt class="py-lineno"> 74</tt>  <tt class="py-line">     </tt>
+<a name="OneAgainstRest"></a><div id="OneAgainstRest-def"><a name="L75"></a><tt class="py-lineno"> 75</tt> <a class="py-toggle" href="#" id="OneAgainstRest-toggle" onclick="return toggle('OneAgainstRest');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="PyML.classifiers.multi.OneAgainstRest-class.html">OneAgainstRest</a> <tt class="py-op">(</tt><tt class="py-base-class">CompositeClassifier</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="OneAgainstRest-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="OneAgainstRest-expanded"><a name="L76"></a><tt class="py-lineno"> 76</tt>  <tt class="py-line"> </tt>
+<a name="L77"></a><tt class="py-lineno"> 77</tt>  <tt class="py-line">    <tt class="py-docstring">'''A one-against-the-rest multi-class classifier'''</tt> </tt>
+<a name="L78"></a><tt class="py-lineno"> 78</tt>  <tt class="py-line">     </tt>
+<a name="OneAgainstRest.train"></a><div id="OneAgainstRest.train-def"><a name="L79"></a><tt class="py-lineno"> 79</tt> <a class="py-toggle" href="#" id="OneAgainstRest.train-toggle" onclick="return toggle('OneAgainstRest.train');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.multi.OneAgainstRest-class.html#train">train</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">data</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-param">args</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="OneAgainstRest.train-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="OneAgainstRest.train-expanded"><a name="L80"></a><tt class="py-lineno"> 80</tt>  <tt class="py-line">        <tt class="py-docstring">'''train k classifiers'''</tt> </tt>
+<a name="L81"></a><tt class="py-lineno"> 81</tt>  <tt class="py-line"> </tt>
+<a name="L82"></a><tt class="py-lineno"> 82</tt>  <tt class="py-line">        <tt id="link-36" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier" class="py-name" href="#" onclick="return doclink('link-36', 'Classifier', 'link-1');">Classifier</a></tt><tt class="py-op">.</tt><tt id="link-37" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.train
+PyML.classifiers.composite.AggregateClassifier.train
+PyML.classifiers.composite.Chain.train
+PyML.classifiers.composite.FeatureSelect.train
+PyML.classifiers.composite.FeatureSelectAll.train
+PyML.classifiers.ext.knn.KNN.train
+PyML.classifiers.knn.KNN.train
+PyML.classifiers.modelSelection.ModelSelector.train
+PyML.classifiers.modelSelection.Param.train
+PyML.classifiers.modelSelection.SVMselect.train
+PyML.classifiers.multi.OneAgainstOne.train
+PyML.classifiers.multi.OneAgainstRest.train
+PyML.classifiers.platt.Platt.train
+PyML.classifiers.ridgeRegression.RidgeRegression.train
+PyML.classifiers.svm.SVC.train
+PyML.classifiers.svm.SVM.train
+PyML.classifiers.template.Template.train
+PyML.containers.baseDatasets.BaseDataSet.train
+PyML.preproc.preproc.Standardizer.train" class="py-name" href="#" onclick="return doclink('link-37', 'train', 'link-10');">train</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">,</tt> <tt class="py-name">data</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-name">args</tt><tt class="py-op">)</tt> </tt>
+<a name="L83"></a><tt class="py-lineno"> 83</tt>  <tt class="py-line"> </tt>
+<a name="L84"></a><tt class="py-lineno"> 84</tt>  <tt class="py-line">        <tt class="py-name">numClasses</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-38" class="py-name"><a title="PyML.containers.labels" class="py-name" href="#" onclick="return doclink('link-38', 'labels', 'link-7');">labels</a></tt><tt class="py-op">.</tt><tt class="py-name">numClasses</tt> </tt>
+<a name="L85"></a><tt class="py-lineno"> 85</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">numClasses</tt> <tt class="py-op">&lt;=</tt> <tt class="py-number">2</tt><tt class="py-op">:</tt> </tt>
+<a name="L86"></a><tt class="py-lineno"> 86</tt>  <tt class="py-line">            <tt class="py-keyword">raise</tt> <tt class="py-name">ValueError</tt><tt class="py-op">,</tt> <tt class="py-string">'Not a multi class problem'</tt> </tt>
+<a name="L87"></a><tt class="py-lineno"> 87</tt>  <tt class="py-line"> </tt>
+<a name="L88"></a><tt class="py-lineno"> 88</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-39" class="py-name"><a title="PyML.classifiers" class="py-name" href="#" onclick="return doclink('link-39', 'classifiers', 'link-12');">classifiers</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">)</tt> </tt>
+<a name="L89"></a><tt class="py-lineno"> 89</tt>  <tt class="py-line">                            <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">numClasses</tt><tt class="py-op">)</tt><tt class="py-op">]</tt> </tt>
+<a name="L90"></a><tt class="py-lineno"> 90</tt>  <tt class="py-line"> </tt>
+<a name="L91"></a><tt class="py-lineno"> 91</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">numClasses</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L92"></a><tt class="py-lineno"> 92</tt>  <tt class="py-line">            <tt class="py-comment"># make a copy of the data; this is done in case the classifier modifies the data</tt> </tt>
+<a name="L93"></a><tt class="py-lineno"> 93</tt>  <tt class="py-line"><tt class="py-comment"></tt>            <tt class="py-name">datai</tt> <tt class="py-op">=</tt> <tt class="py-name">data</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">,</tt> <tt id="link-40" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.deepcopy
+PyML.classifiers.composite.Chain.deepcopy
+PyML.classifiers.composite.CompositeClassifier.deepcopy
+PyML.classifiers.composite.FeatureSelect.deepcopy
+PyML.classifiers.composite.FeatureSelectAll.deepcopy" class="py-name" href="#" onclick="return doclink('link-40', 'deepcopy', 'link-14');">deepcopy</a></tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt id="link-41" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.deepcopy
+PyML.classifiers.composite.Chain.deepcopy
+PyML.classifiers.composite.CompositeClassifier.deepcopy
+PyML.classifiers.composite.FeatureSelect.deepcopy
+PyML.classifiers.composite.FeatureSelectAll.deepcopy" class="py-name" href="#" onclick="return doclink('link-41', 'deepcopy', 'link-14');">deepcopy</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L94"></a><tt class="py-lineno"> 94</tt>  <tt class="py-line">            <tt class="py-name">datai</tt> <tt class="py-op">=</tt>  <tt id="link-42" class="py-name"><a title="PyML.containers.labels.Labels.oneAgainstRest
+PyML.containers.labels.oneAgainstRest" class="py-name" href="#" onclick="return doclink('link-42', 'oneAgainstRest', 'link-8');">oneAgainstRest</a></tt><tt class="py-op">(</tt><tt class="py-name">datai</tt><tt class="py-op">,</tt> <tt class="py-name">data</tt><tt class="py-op">.</tt><tt id="link-43" class="py-name"><a title="PyML.containers.labels" class="py-name" href="#" onclick="return doclink('link-43', 'labels', 'link-7');">labels</a></tt><tt class="py-op">.</tt><tt class="py-name">classLabels</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L95"></a><tt class="py-lineno"> 95</tt>  <tt class="py-line">                                                        </tt>
+<a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-44" class="py-name"><a title="PyML.classifiers" class="py-name" href="#" onclick="return doclink('link-44', 'classifiers', 'link-12');">classifiers</a></tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt id="link-45" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.train
+PyML.classifiers.composite.AggregateClassifier.train
+PyML.classifiers.composite.Chain.train
+PyML.classifiers.composite.FeatureSelect.train
+PyML.classifiers.composite.FeatureSelectAll.train
+PyML.classifiers.ext.knn.KNN.train
+PyML.classifiers.knn.KNN.train
+PyML.classifiers.modelSelection.ModelSelector.train
+PyML.classifiers.modelSelection.Param.train
+PyML.classifiers.modelSelection.SVMselect.train
+PyML.classifiers.multi.OneAgainstOne.train
+PyML.classifiers.multi.OneAgainstRest.train
+PyML.classifiers.platt.Platt.train
+PyML.classifiers.ridgeRegression.RidgeRegression.train
+PyML.classifiers.svm.SVC.train
+PyML.classifiers.svm.SVM.train
+PyML.classifiers.template.Template.train
+PyML.containers.baseDatasets.BaseDataSet.train
+PyML.preproc.preproc.Standardizer.train" class="py-name" href="#" onclick="return doclink('link-45', 'train', 'link-10');">train</a></tt><tt class="py-op">(</tt><tt class="py-name">datai</tt><tt class="py-op">)</tt> </tt>
+<a name="L97"></a><tt class="py-lineno"> 97</tt>  <tt class="py-line"> </tt>
+<a name="L98"></a><tt class="py-lineno"> 98</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">log</tt><tt class="py-op">.</tt><tt class="py-name">trainingTime</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-46" class="py-name"><a title="PyML.classifiers.baseClassifiers.Classifier.getTrainingTime" class="py-name" href="#" onclick="return doclink('link-46', 'getTrainingTime', 'link-18');">getTrainingTime</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L99"></a><tt class="py-lineno"> 99</tt>  <tt class="py-line">         </tt>
+<a name="OneAgainstRest.classify"></a><div id="OneAgainstRest.classify-def"><a name="L100"></a><tt class="py-lineno">100</tt> <a class="py-toggle" href="#" id="OneAgainstRest.classify-toggle" onclick="return toggle('OneAgainstRest.classify');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.multi.OneAgainstRest-class.html#classify">classify</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">data</tt><tt class="py-op">,</tt> <tt class="py-param">i</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="OneAgainstRest.classify-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="OneAgainstRest.classify-expanded"><a name="L101"></a><tt class="py-lineno">101</tt>  <tt class="py-line"> </tt>
+<a name="L102"></a><tt class="py-lineno">102</tt>  <tt class="py-line">        <tt id="link-47" class="py-name"><a title="PyML.demo.demo.r" class="py-name" href="#" onclick="return doclink('link-47', 'r', 'link-20');">r</a></tt> <tt class="py-op">=</tt> <tt class="py-name">numpy</tt><tt class="py-op">.</tt><tt class="py-name">zeros</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-48" class="py-name"><a title="PyML.containers.labels" class="py-name" href="#" onclick="return doclink('link-48', 'labels', 'link-7');">labels</a></tt><tt class="py-op">.</tt><tt class="py-name">numClasses</tt><tt class="py-op">,</tt> <tt class="py-name">numpy</tt><tt class="py-op">.</tt><tt class="py-name">float_</tt><tt class="py-op">)</tt> </tt>
+<a name="L103"></a><tt class="py-lineno">103</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">j</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-49" class="py-name"><a title="PyML.containers.labels" class="py-name" href="#" onclick="return doclink('link-49', 'labels', 'link-7');">labels</a></tt><tt class="py-op">.</tt><tt class="py-name">numClasses</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L104"></a><tt class="py-lineno">104</tt>  <tt class="py-line">            <tt id="link-50" class="py-name"><a title="PyML.demo.demo.r" class="py-name" href="#" onclick="return doclink('link-50', 'r', 'link-20');">r</a></tt><tt class="py-op">[</tt><tt class="py-name">j</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-51" class="py-name"><a title="PyML.classifiers" class="py-name" href="#" onclick="return doclink('link-51', 'classifiers', 'link-12');">classifiers</a></tt><tt class="py-op">[</tt><tt class="py-name">j</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt id="link-52" class="py-name"><a title="PyML.classifiers.composite.CompositeClassifier.decisionFunc
+PyML.classifiers.ext.csvmodel.LinearSVModel.decisionFunc
+PyML.classifiers.ext.csvmodel.LinearSparseSVModel.decisionFunc
+PyML.classifiers.ext.csvmodel.SVModel.decisionFunc
+PyML.classifiers.platt.Platt.decisionFunc
+PyML.classifiers.ridgeRegression.RidgeRegression.decisionFunc
+PyML.classifiers.svm.LinearSVModel.decisionFunc
+PyML.classifiers.svm.SVC.decisionFunc
+PyML.classifiers.svm.SVM.decisionFunc
+PyML.classifiers.svm.SVModel.decisionFunc
+PyML.classifiers.template.Template.decisionFunc" class="py-name" href="#" onclick="return doclink('link-52', 'decisionFunc', 'link-23');">decisionFunc</a></tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">,</tt> <tt class="py-name">i</tt><tt class="py-op">)</tt> </tt>
+<a name="L105"></a><tt class="py-lineno">105</tt>  <tt class="py-line"> </tt>
+<a name="L106"></a><tt class="py-lineno">106</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">numpy</tt><tt class="py-op">.</tt><tt class="py-name">argmax</tt><tt class="py-op">(</tt><tt id="link-53" class="py-name"><a title="PyML.demo.demo.r" class="py-name" href="#" onclick="return doclink('link-53', 'r', 'link-20');">r</a></tt><tt class="py-op">)</tt><tt class="py-op">,</tt> <tt class="py-name">numpy</tt><tt class="py-op">.</tt><tt class="py-name">max</tt><tt class="py-op">(</tt><tt id="link-54" class="py-name"><a title="PyML.demo.demo.r" class="py-name" href="#" onclick="return doclink('link-54', 'r', 'link-20');">r</a></tt><tt class="py-op">)</tt> </tt>
+</div><a name="L107"></a><tt class="py-lineno">107</tt>  <tt class="py-line"> </tt>
+<a name="OneAgainstRest.preproject"></a><div id="OneAgainstRest.preproject-def"><a name="L108"></a><tt class="py-lineno">108</tt> <a class="py-toggle" href="#" id="OneAgainstRest.preproject-toggle" onclick="return toggle('OneAgainstRest.preproject');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.multi.OneAgainstRest-class.html#preproject">preproject</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">data</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="OneAgainstRest.preproject-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="OneAgainstRest.preproject-expanded"><a name="L109"></a><tt class="py-lineno">109</tt>  <tt class="py-line"> </tt>
+<a name="L110"></a><tt class="py-lineno">110</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-55" class="py-name"><a title="PyML.containers.labels" class="py-name" href="#" onclick="return doclink('link-55', 'labels', 'link-7');">labels</a></tt><tt class="py-op">.</tt><tt class="py-name">numClasses</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L111"></a><tt class="py-lineno">111</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-56" class="py-name"><a title="PyML.classifiers" class="py-name" href="#" onclick="return doclink('link-56', 'classifiers', 'link-12');">classifiers</a></tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt id="link-57" class="py-name"><a title="PyML.classifiers.composite.CompositeClassifier.preproject
+PyML.classifiers.multi.OneAgainstOne.preproject
+PyML.classifiers.multi.OneAgainstRest.preproject" class="py-name" href="#" onclick="return doclink('link-57', 'preproject', 'link-32');">preproject</a></tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L112"></a><tt class="py-lineno">112</tt>  <tt class="py-line"> </tt>
+<a name="L113"></a><tt class="py-lineno">113</tt>  <tt class="py-line">    <tt id="link-58" class="py-name"><a title="PyML.classifiers.baseClassifiers.IteratorClassifier.test
+PyML.classifiers.composite.Chain.test
+PyML.classifiers.composite.CompositeClassifier.test
+PyML.classifiers.ext.knn.KNN.test
+PyML.classifiers.knn.KNN.test
+PyML.containers.baseDatasets.BaseDataSet.test
+PyML.containers.parsers.test
+PyML.demo.pyml_test.test
+PyML.demo.test
+PyML.demo.test.test
+PyML.evaluators.assess.test
+PyML.feature_selection.featsel.FeatureScorer.test
+PyML.feature_selection.featsel.FeatureSelector.test
+PyML.preproc.preproc.Standardizer.test" class="py-name" href="#" onclick="return doclink('link-58', 'test', 'link-33');">test</a></tt> <tt class="py-op">=</tt> <tt id="link-59" class="py-name"><a title="PyML.evaluators.assess" class="py-name" href="#" onclick="return doclink('link-59', 'assess', 'link-5');">assess</a></tt><tt class="py-op">.</tt><tt id="link-60" class="py-name"><a title="PyML.classifiers.baseClassifiers.IteratorClassifier.test
+PyML.classifiers.composite.Chain.test
+PyML.classifiers.composite.CompositeClassifier.test
+PyML.classifiers.ext.knn.KNN.test
+PyML.classifiers.knn.KNN.test
+PyML.containers.baseDatasets.BaseDataSet.test
+PyML.containers.parsers.test
+PyML.demo.pyml_test.test
+PyML.demo.test
+PyML.demo.test.test
+PyML.evaluators.assess.test
+PyML.feature_selection.featsel.FeatureScorer.test
+PyML.feature_selection.featsel.FeatureSelector.test
+PyML.preproc.preproc.Standardizer.test" class="py-name" href="#" onclick="return doclink('link-60', 'test', 'link-33');">test</a></tt> </tt>
+</div><a name="L114"></a><tt class="py-lineno">114</tt>  <tt class="py-line"> </tt>
+<a name="L115"></a><tt class="py-lineno">115</tt>  <tt class="py-line"> </tt>
+<a name="allOneAgainstRest"></a><div id="allOneAgainstRest-def"><a name="L116"></a><tt class="py-lineno">116</tt> <a class="py-toggle" href="#" id="allOneAgainstRest-toggle" onclick="return toggle('allOneAgainstRest');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="PyML.classifiers.multi-module.html#allOneAgainstRest">allOneAgainstRest</a><tt class="py-op">(</tt><tt class="py-param">classifier</tt><tt class="py-op">,</tt> <tt class="py-param">data</tt><tt class="py-op">,</tt> <tt class="py-param">resultsFile</tt><tt class="py-op">,</tt> <tt class="py-param">numFolds</tt> <tt class="py-op">=</tt> <tt class="py-number">5</tt><tt class="py-op">,</tt> <tt class="py-param">minClassSize</tt> <tt class="py-op">=</tt> <tt class="py-number">8</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+</div><div id="allOneAgainstRest-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="allOneAgainstRest-expanded"><a name="L117"></a><tt class="py-lineno">117</tt>  <tt class="py-line"> </tt>
+<a name="L118"></a><tt class="py-lineno">118</tt>  <tt class="py-line">    <tt class="py-keyword">import</tt> <tt class="py-name">myio</tt> </tt>
+<a name="L119"></a><tt class="py-lineno">119</tt>  <tt class="py-line">    <tt id="link-61" class="py-name"><a title="PyML.containers.labels" class="py-name" href="#" onclick="return doclink('link-61', 'labels', 'link-7');">labels</a></tt> <tt class="py-op">=</tt> <tt class="py-name">data</tt><tt class="py-op">.</tt><tt id="link-62" class="py-name"><a title="PyML.containers.labels" class="py-name" href="#" onclick="return doclink('link-62', 'labels', 'link-7');">labels</a></tt> </tt>
+<a name="L120"></a><tt class="py-lineno">120</tt>  <tt class="py-line">     </tt>
+<a name="L121"></a><tt class="py-lineno">121</tt>  <tt class="py-line">    <tt id="link-63" class="py-name" targets="Variable PyML.demo.demo.results=PyML.demo.demo-module.html#results"><a title="PyML.demo.demo.results" class="py-name" href="#" onclick="return doclink('link-63', 'results', 'link-63');">results</a></tt> <tt class="py-op">=</tt> <tt class="py-op">{</tt><tt class="py-op">}</tt> </tt>
+<a name="L122"></a><tt class="py-lineno">122</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-name">os</tt><tt class="py-op">.</tt><tt class="py-name">path</tt><tt class="py-op">.</tt><tt class="py-name">exists</tt><tt class="py-op">(</tt><tt class="py-name">resultsFile</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> </tt>
+<a name="L123"></a><tt class="py-lineno">123</tt>  <tt class="py-line">        <tt id="link-64" class="py-name"><a title="PyML.demo.demo.results" class="py-name" href="#" onclick="return doclink('link-64', 'results', 'link-63');">results</a></tt> <tt class="py-op">=</tt> <tt id="link-65" class="py-name"><a title="PyML.evaluators.assess" class="py-name" href="#" onclick="return doclink('link-65', 'assess', 'link-5');">assess</a></tt><tt class="py-op">.</tt><tt id="link-66" class="py-name" targets="Function PyML.evaluators.assess.loadResults()=PyML.evaluators.assess-module.html#loadResults"><a title="PyML.evaluators.assess.loadResults" class="py-name" href="#" onclick="return doclink('link-66', 'loadResults', 'link-66');">loadResults</a></tt><tt class="py-op">(</tt><tt class="py-name">resultsFile</tt><tt class="py-op">)</tt> </tt>
+<a name="L124"></a><tt class="py-lineno">124</tt>  <tt class="py-line">     </tt>
+<a name="L125"></a><tt class="py-lineno">125</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">label</tt> <tt class="py-keyword">in</tt> <tt id="link-67" class="py-name"><a title="PyML.containers.labels" class="py-name" href="#" onclick="return doclink('link-67', 'labels', 'link-7');">labels</a></tt><tt class="py-op">.</tt><tt class="py-name">classLabels</tt> <tt class="py-op">:</tt> </tt>
+<a name="L126"></a><tt class="py-lineno">126</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">label</tt> <tt class="py-keyword">in</tt> <tt id="link-68" class="py-name"><a title="PyML.demo.demo.results" class="py-name" href="#" onclick="return doclink('link-68', 'results', 'link-63');">results</a></tt> <tt class="py-op">:</tt> <tt class="py-keyword">continue</tt> </tt>
+<a name="L127"></a><tt class="py-lineno">127</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-op">(</tt><tt class="py-name">minClassSize</tt> <tt class="py-keyword">is</tt> <tt class="py-keyword">not</tt> <tt class="py-name">None</tt> <tt class="py-keyword">and</tt> </tt>
+<a name="L128"></a><tt class="py-lineno">128</tt>  <tt class="py-line">            <tt id="link-69" class="py-name"><a title="PyML.containers.labels" class="py-name" href="#" onclick="return doclink('link-69', 'labels', 'link-7');">labels</a></tt><tt class="py-op">.</tt><tt class="py-name">classSize</tt><tt class="py-op">[</tt><tt id="link-70" class="py-name"><a title="PyML.containers.labels" class="py-name" href="#" onclick="return doclink('link-70', 'labels', 'link-7');">labels</a></tt><tt class="py-op">.</tt><tt class="py-name">classDict</tt><tt class="py-op">[</tt><tt class="py-name">label</tt><tt class="py-op">]</tt><tt class="py-op">]</tt> <tt class="py-op">&lt;</tt> <tt class="py-name">minClassSize</tt><tt class="py-op">)</tt> <tt class="py-op">:</tt> <tt class="py-keyword">continue</tt> </tt>
+<a name="L129"></a><tt class="py-lineno">129</tt>  <tt class="py-line">         </tt>
+<a name="L130"></a><tt class="py-lineno">130</tt>  <tt class="py-line">        <tt class="py-name">myio</tt><tt class="py-op">.</tt><tt class="py-name">log</tt><tt class="py-op">(</tt><tt class="py-string">'class: '</tt> <tt class="py-op">+</tt> <tt class="py-name">label</tt> <tt class="py-op">+</tt> <tt class="py-string">'\n'</tt><tt class="py-op">)</tt>         </tt>
+<a name="L131"></a><tt class="py-lineno">131</tt>  <tt class="py-line">        <tt class="py-name">data</tt> <tt class="py-op">=</tt> <tt id="link-71" class="py-name"><a title="PyML.containers.labels.Labels.oneAgainstRest
+PyML.containers.labels.oneAgainstRest" class="py-name" href="#" onclick="return doclink('link-71', 'oneAgainstRest', 'link-8');">oneAgainstRest</a></tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">,</tt> <tt class="py-name">label</tt><tt class="py-op">)</tt> </tt>
+<a name="L132"></a><tt class="py-lineno">132</tt>  <tt class="py-line">        <tt class="py-keyword">try</tt> <tt class="py-op">:</tt> </tt>
+<a name="L133"></a><tt class="py-lineno">133</tt>  <tt class="py-line">            <tt id="link-72" class="py-name"><a title="PyML.demo.demo.results" class="py-name" href="#" onclick="return doclink('link-72', 'results', 'link-63');">results</a></tt><tt class="py-op">[</tt><tt class="py-name">label</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">classifier</tt><tt class="py-op">.</tt><tt id="link-73" class="py-name" targets="Method PyML.classifiers.baseClassifiers.IteratorClassifier.stratifiedCV()=PyML.classifiers.baseClassifiers.IteratorClassifier-class.html#stratifiedCV,Function PyML.evaluators.assess.stratifiedCV()=PyML.evaluators.assess-module.html#stratifiedCV"><a title="PyML.classifiers.baseClassifiers.IteratorClassifier.stratifiedCV
+PyML.evaluators.assess.stratifiedCV" class="py-name" href="#" onclick="return doclink('link-73', 'stratifiedCV', 'link-73');">stratifiedCV</a></tt><tt class="py-op">(</tt><tt class="py-name">data</tt><tt class="py-op">,</tt> <tt id="link-74" class="py-name" targets="Variable PyML.evaluators.assess.Results.numFolds=PyML.evaluators.assess.Results-class.html#numFolds"><a title="PyML.evaluators.assess.Results.numFolds" class="py-name" href="#" onclick="return doclink('link-74', 'numFolds', 'link-74');">numFolds</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L134"></a><tt class="py-lineno">134</tt>  <tt class="py-line">        <tt class="py-keyword">except</tt> <tt class="py-op">:</tt> </tt>
+<a name="L135"></a><tt class="py-lineno">135</tt>  <tt class="py-line">            <tt id="link-75" class="py-name"><a title="PyML.demo.demo.results" class="py-name" href="#" onclick="return doclink('link-75', 'results', 'link-63');">results</a></tt><tt class="py-op">[</tt><tt class="py-name">label</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L136"></a><tt class="py-lineno">136</tt>  <tt class="py-line">        <tt id="link-76" class="py-name"><a title="PyML.evaluators.assess" class="py-name" href="#" onclick="return doclink('link-76', 'assess', 'link-5');">assess</a></tt><tt class="py-op">.</tt><tt id="link-77" class="py-name" targets="Function PyML.evaluators.assess.saveResultObjects()=PyML.evaluators.assess-module.html#saveResultObjects"><a title="PyML.evaluators.assess.saveResultObjects" class="py-name" href="#" onclick="return doclink('link-77', 'saveResultObjects', 'link-77');">saveResultObjects</a></tt><tt class="py-op">(</tt><tt id="link-78" class="py-name"><a title="PyML.demo.demo.results" class="py-name" href="#" onclick="return doclink('link-78', 'results', 'link-63');">results</a></tt><tt class="py-op">,</tt> <tt class="py-name">resultsFile</tt><tt class="py-op">)</tt> </tt>
+<a name="L137"></a><tt class="py-lineno">137</tt>  <tt class="py-line">        <tt class="py-name">data</tt><tt class="py-op">.</tt><tt id="link-79" class="py-name" targets="Method PyML.containers.baseDatasets.BaseDataSet.attachLabels()=PyML.containers.baseDatasets.BaseDataSet-class.html#attachLabels,Method PyML.containers.baseDatasets.WrapperDataSet.attachLabels()=PyML.containers.baseDatasets.WrapperDataSet-class.html#attachLabels"><a title="PyML.containers.baseDatasets.BaseDataSet.attachLabels
+PyML.containers.baseDatasets.WrapperDataSet.attachLabels" class="py-name" href="#" onclick="return doclink('link-79', 'attachLabels', 'link-79');">attachLabels</a></tt><tt class="py-op">(</tt><tt id="link-80" class="py-name"><a title="PyML.containers.labels" class="py-name" href="#" onclick="return doclink('link-80', 'labels', 'link-7');">labels</a></tt><tt class="py-op">)</tt> </tt>
+</div><a name="L138"></a><tt class="py-lineno">138</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pyml.sourceforge.net">PyML</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Fri May  2 12:39:33 2008
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

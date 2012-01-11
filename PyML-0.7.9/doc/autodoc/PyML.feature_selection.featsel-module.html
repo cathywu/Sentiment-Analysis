@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>PyML.feature_selection.featsel</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pyml.sourceforge.net">PyML</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;PyML ::
+        <a href="PyML.feature_selection-module.html">Package&nbsp;feature_selection</a> ::
+        Module&nbsp;featsel
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="PyML.feature_selection.featsel-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== MODULE DESCRIPTION ==================== -->
+<h1 class="epydoc">Module featsel</h1><p class="nomargin-top"><span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html">source&nbsp;code</a></span></p>
+<!-- ==================== CLASSES ==================== -->
+<a name="section-Classes"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Classes</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.feature_selection.featsel.FeatureSelector-class.html" class="summary-name">FeatureSelector</a><br />
+      api for feature selection objects
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.feature_selection.featsel.OneAgainstRestSelect-class.html" class="summary-name">OneAgainstRestSelect</a><br />
+      Use a two-class feature selection method for multi-class problem
+by doing feature selection in a one-against-the-rest manner, and
+returns the union of all the features selected.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.feature_selection.featsel.RFE-class.html" class="summary-name">RFE</a><br />
+      RFE (Recursive Feature Elimination) uses the vector <em>w</em> of an SVM for
+feature selection.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.feature_selection.featsel.MultiplicativeUpdate-class.html" class="summary-name">MultiplicativeUpdate</a><br />
+      Multiplicative update uses the vector w of an SVM to do feature selection.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.feature_selection.featsel.Random-class.html" class="summary-name">Random</a><br />
+      A feature selection method that keeps a random set of features
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.feature_selection.featsel.Filter-class.html" class="summary-name">Filter</a><br />
+      A simple feature selection method that filters features according
+to a feature score.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.feature_selection.featsel.FeatureScorer-class.html" class="summary-name">FeatureScorer</a><br />
+      base class for objects that have a 'score' function
+for scoring the features of a dataset
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.feature_selection.featsel.FeatureScore-class.html" class="summary-name">FeatureScore</a><br />
+      A class for scoring the features of a dataset
+USAGE:
+construction:
+f = FeatureScore(scoreName, mode = modeValue)
+or using copy construction :
+f = FeatureScore(otherFeatureScore)
+scoreName is the type of filter; available filters are:
+&quot;predictivity&quot;, &quot;oddsRatio&quot;, &quot;golub&quot;
+mode is one of the following:
+oneAgainstRest (default)
+oneAgainstOne
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="PyML.feature_selection.featsel.BackwardSelector-class.html" class="summary-name">BackwardSelector</a>
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTIONS ==================== -->
+<a name="section-Functions"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Functions</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="parseArgs"></a><span class="summary-sig-name">parseArgs</span>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">targetClass</span>,
+        <span class="summary-sig-arg">otherClass</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      parse arguments for a feature scoring function</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#parseArgs">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="singleFeatureSuccRate"></a><span class="summary-sig-name">singleFeatureSuccRate</span>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">targetClass</span>,
+        <span class="summary-sig-arg">otherClass</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">**args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#singleFeatureSuccRate">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.feature_selection.featsel-module.html#predictivity" class="summary-sig-name">predictivity</a>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">targetClass</span>,
+        <span class="summary-sig-arg">otherClass</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      A feature score for discrete data; the score for feature i is:
+s_i = P(Fi | C1) - P(Fi | C2),
+where P(Fi | C) is the estimated probability of Feature i being nonzero given
+the class variable
+This is estimated as:
+s_i = # of patterns in target class that have feature i /
+      no.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#predictivity">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="countDiff"></a><span class="summary-sig-name">countDiff</span>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">targetClass</span>,
+        <span class="summary-sig-arg">otherClass</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      A feature score for discrete data; the score for feature i is:
+s_i = (#(Fi | C ) - #(Fi | not C)) / #(Fi | C)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#countDiff">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="sensitivity"></a><span class="summary-sig-name">sensitivity</span>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">targetClass</span>,
+        <span class="summary-sig-arg">otherClass</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      A feature score for discrete data
+(alternatively, with a threshold it could be used for continuous data)
+s_i = #(Fi | C) / #(C)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#sensitivity">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="ppv"></a><span class="summary-sig-name">ppv</span>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">targetClass</span>,
+        <span class="summary-sig-arg">otherClass</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      A feature score for discrete data
+s_i = #(Fi | C) / #(Fi)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#ppv">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="ppvThreshold"></a><span class="summary-sig-name">ppvThreshold</span>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">targetClass</span>,
+        <span class="summary-sig-arg">otherClass</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      A feature score for discrete data
+s_i = #(Fi | C) / #(Fi) if #(Fi | C) &gt; threshold and 0 otherwise</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#ppvThreshold">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.feature_selection.featsel-module.html#specificity" class="summary-sig-name">specificity</a>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">targetClass</span>,
+        <span class="summary-sig-arg">otherClass</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      A feature score for discrete data
+s_i = #(Fi | C) / #(Fi)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#specificity">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="usefullness"></a><span class="summary-sig-name">usefullness</span>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">targetClass</span>,
+        <span class="summary-sig-arg">otherClass</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      A feature score for discrete data
+optional arguments:
+threshold
+fraction</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#usefullness">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="abundance"></a><span class="summary-sig-name">abundance</span>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">targetClass</span>,
+        <span class="summary-sig-arg">otherClass</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      Fraction of patterns that have a feature: A(F,C) = #(F | C) #(C)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#abundance">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="oddsRatio"></a><span class="summary-sig-name">oddsRatio</span>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">targetClass</span>,
+        <span class="summary-sig-arg">otherClass</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">**args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#oddsRatio">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="logOddsRatio"></a><span class="summary-sig-name">logOddsRatio</span>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">targetClass</span>,
+        <span class="summary-sig-arg">otherClass</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">**args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#logOddsRatio">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="relief"></a><span class="summary-sig-name">relief</span>(<span class="summary-sig-arg">data</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#relief">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="golub"></a><span class="summary-sig-name">golub</span>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">targetClass</span>,
+        <span class="summary-sig-arg">otherClass</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      The Golub feature score:
+s = (mu1 - mu2) / sqrt(sigma1^2 + sigma2^2)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#golub">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="succ"></a><span class="summary-sig-name">succ</span>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">targetClass</span>,
+        <span class="summary-sig-arg">otherClass</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      the score of feature j is the success rate of a classifier that
+classifies into the target class all points whose value of the feature
+are higher than some threshold (linear 1-d classifier).</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#succ">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="balancedSucc"></a><span class="summary-sig-name">balancedSucc</span>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">targetClass</span>,
+        <span class="summary-sig-arg">otherClass</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      the score of feature j is the success rate of a classifier that
+classifies into the target class all points whose value of the feature
+are higher than some threshold (linear 1-d classifier).</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#balancedSucc">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="roc"></a><span class="summary-sig-name">roc</span>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">targetClass</span>,
+        <span class="summary-sig-arg">otherClass</span>,
+        <span class="summary-sig-arg">**args</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#roc">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="featureCount"></a><span class="summary-sig-name">featureCount</span>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">*options</span>,
+        <span class="summary-sig-arg">**args</span>)</span><br />
+      returns a vector where component i gives the number of patterns where
+feature i is nonzero
+INPUTS:
+data - a dataset
+targetClass - class for which to count (optional, default behavior is
+to look at all patterns)
+Y - alternative label vector (optional)
+feature - either a feature or list of features - counts the number of
+patterns for which the feature or list of features is non-zero
+I - a list of indices on which to do feature count
+OPTIONS:
+&quot;complement&quot; - look at the complement of the target class</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#featureCount">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="featureMean"></a><span class="summary-sig-name">featureMean</span>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">targetClass</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">Y</span>=<span class="summary-sig-default">None</span>)</span><br />
+      returns a vector where component i is the mean of feature i
+INPUT:
+data - a dataset
+targetClass - class for which to take the mean (optional)
+Y - alternative label vector (optional)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#featureMean">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="featureStd"></a><span class="summary-sig-name">featureStd</span>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">targetClass</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">Y</span>=<span class="summary-sig-default">None</span>)</span><br />
+      returns a vector where component i is the standard deviation of feature i
+INPUT:
+data - a dataset
+targetClass - class for which to take the mean (optional)
+Y - alternative label vector (optional)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#featureStd">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="eliminateSparseFeatures"></a><span class="summary-sig-name">eliminateSparseFeatures</span>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">threshold</span>)</span><br />
+      removes from the data features whose feature count is below a threshold
+data - a dataset
+threshold - number of occurrences of the feature below which it will be
+eliminated</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#eliminateSparseFeatures">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.feature_selection.featsel-module.html#nonredundantFeatures" class="summary-sig-name">nonredundantFeatures</a>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">w</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Compute a set of nonredundant features for a 0/1 sparse dataset
+a feature is defined as redundant if there is another feature which has
+nonzero value for exactly the same patterns, and has a larger weight
+INPUT: a dataset and a list of weights for each feature in the data
+weights are optional.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#nonredundantFeatures">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="PyML.feature_selection.featsel-module.html#linearlySeparable" class="summary-sig-name">linearlySeparable</a>(<span class="summary-sig-arg">data</span>)</span><br />
+      returns 1 if data is linearly separable and 0 otherwise.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#linearlySeparable">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="extractNumFeatures"></a><span class="summary-sig-name">extractNumFeatures</span>(<span class="summary-sig-arg">resultsFileName</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#extractNumFeatures">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="weights2ranks"></a><span class="summary-sig-name">weights2ranks</span>(<span class="summary-sig-arg">weights</span>,
+        <span class="summary-sig-arg">data</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#weights2ranks">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="featureReport"></a><span class="summary-sig-name">featureReport</span>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">score</span>=<span class="summary-sig-default">'roc'</span>,
+        <span class="summary-sig-arg">targetClass</span>=<span class="summary-sig-default">1</span>,
+        <span class="summary-sig-arg">otherClass</span>=<span class="summary-sig-default">0</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#featureReport">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTION DETAILS ==================== -->
+<a name="section-FunctionDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Function Details</span></td>
+</tr>
+</table>
+<a name="predictivity"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">predictivity</span>(<span class="sig-arg">data</span>,
+        <span class="sig-arg">targetClass</span>,
+        <span class="sig-arg">otherClass</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">**args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#predictivity">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+A feature score for discrete data; the score for feature i is:
+s_i = P(Fi | C1) - P(Fi | C2),
+where P(Fi | C) is the estimated probability of Feature i being nonzero given
+the class variable
+This is estimated as:
+s_i = # of patterns in target class that have feature i /
+      no. of patterns in target class
+      -
+      # of patterns in other class that have feature i /
+      no. of patterns in other class
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="specificity"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">specificity</span>(<span class="sig-arg">data</span>,
+        <span class="sig-arg">targetClass</span>,
+        <span class="sig-arg">otherClass</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">**args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#specificity">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>A feature score for discrete data
+s_i = #(Fi | C) / #(Fi)</p>
+<p>or perhaps: 1 - #(Fi | not C) / #(not C)</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="nonredundantFeatures"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">nonredundantFeatures</span>(<span class="sig-arg">data</span>,
+        <span class="sig-arg">w</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#nonredundantFeatures">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  Compute a set of nonredundant features for a 0/1 sparse dataset
+a feature is defined as redundant if there is another feature which has
+nonzero value for exactly the same patterns, and has a larger weight
+INPUT: a dataset and a list of weights for each feature in the data
+weights are optional.
+OUTPUT: a list of redundant features
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="linearlySeparable"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">linearlySeparable</span>(<span class="sig-arg">data</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="PyML.feature_selection.featsel-pysrc.html#linearlySeparable">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  returns 1 if data is linearly separable and 0 otherwise.
+More specifically, it trains a soft margin SVM and checks if all
+training points are correclty classified
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a class="navbar" target="_top" href="http://pyml.sourceforge.net">PyML</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Fri May  2 12:39:26 2008
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
