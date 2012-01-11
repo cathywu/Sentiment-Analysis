@@ -1,0 +1,9 @@
+syntax: glob
+build
+*.patch
+*.pyc
+*.log
+*.so
+*.so.old
+*.swp
+*.dat
