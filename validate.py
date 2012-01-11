@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import classifier
 import data
 from numpy import *
@@ -31,9 +33,9 @@ def successrate(classif, testdata):
             success += 1
     return (success, count)
 
-
 if __name__ == "__main__":
     d = data.Data(data.DefDict((), {
+
                 (1,2,3) : (1,),
                 (3,3,1) : (0,),
                 (1,2,3) : (1,),
@@ -45,7 +47,6 @@ if __name__ == "__main__":
                 (1,5,3) : (1,),
                 (1,6,3) : (0,)
                 }))
-    classif = classifier.BayesClassifier
     print d.asMatrix()
     
     print "-----------"
