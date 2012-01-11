@@ -128,8 +128,16 @@ def test_model(model,n=3):
 fmap = FeatureMap()
 
 #if __name__ == "__main__":
-m = training_model(n=1)
-p = test_model(m,n=1)
+n = 1 # specifies n in n-grams
+
+# setup work (generate all the ngrams if they don't exist yet)
+import os
+if not os.path.isfile('pos_%sgram.dump' % n):
+    gen_all_ngrams()
+
+# run svm
+m = training_model(n=n)
+p = test_model(m,n=n)
 nresults = len(p)
 
 # plot positive labels
