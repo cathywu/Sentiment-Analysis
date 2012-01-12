@@ -39,7 +39,7 @@ def ngrams(n, s):
     lwr = s.lower()
     ws = words(lwr)
     current = collections.deque(ws[:n])
-    grams = data.DefDict(1)
+    grams = data.DefDict(0)
     for pos in range(n, len(ws)):
         grams[" ".join(current)] += 1
         current.popleft()
