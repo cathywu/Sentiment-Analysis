@@ -58,18 +58,17 @@ def ngrams_to_dictionary(grams):
     allgramset = set()
     allgramset = apply(allgramset.union, keysets)
     return allgramset
-    
 
-
-
-
-def ngrams_to_matrix(grams, classes):
+def ngrams_to_matrix(grams, classes, return_gramsdict=False):
+    """
+    Maps from list of raw gram frequencies and labels to a numerical matrix
+    of feature vectors, with option to also return the gramsdict for future
+    use
+    """
     print "Entering ngrams_to_matrix"
     keysets = [set(k) for k in grams]
     allgramset = set()
-    print "b"
     allgramset = apply(allgramset.union, keysets)
-    print "c"
     allgrams = list(allgramset)
     print "> Listed"
     vecs = []
@@ -78,13 +77,27 @@ def ngrams_to_matrix(grams, classes):
     for i in range(len(allgrams)):
         allgramsdict[allgrams[i]] = i
     for g, c in zip(grams, classes):
-        vec = ones(len(allgramsdict) + 1, dtype=uint16)
-        for i in g:
-            vec[allgramsdict[i]] = g[i]
-        vec[-1] = c
+        vec = grams_to_featurevector(allgramsdict, g, c)
         vecs.append(vec)
     print vstack(vecs).T.shape
-    return data.Data(vstack(vecs).T)
+    ret = data.Data(vstack(vecs).T)
+    if return_gramsdict:
+        return (ret,allgramsdict)
+    return ret
+
+def grams_to_featurevector(gramsdict, grams, label=None):
+    """
+    Maps from gram frequencies and label to numerical feature vector according
+    to some mapping, generated within or from ngrams_to_matrix()
+    """
+    if label:
+        vec = ones(len(gramsdict) + 1, dtype=uint16)
+        vec[-1] = label
+    else:
+        vec = ones(len(gramsdict), dtype=uint16)
+    for i in grams:
+        vec[gramsdict[i]] = grams[i]
+    return vec
 
 def ngrams_to_sparse(grams, classes):
     print "a"
@@ -131,10 +144,11 @@ def ngram_vector(n, s, dictionary, allgramsdict = {}):
 if __name__ == "__main__":
     print "Trigram example: %s" % ngrams(3, "Now is the time for all good men to not come to the aid of their party! Now is the time for all bad women to leave the aid of their country? This, being war, is bad")
     g1 = ngrams(1, "Hello how are you")
-    g2 = ngrams(1, "Are you feeling well")
-    g3 = ngrams(1, "Well hello there")
-
-
+    g2 = ngrams(1, "Well, are you feeling well")
+    g3 = ngrams(1, "Well hello there hello")
+    
     print "Unigram example: %s" % g3
-    print "Matrix example: %s" % ngrams_to_matrix([g1, g2, g3], [1, 2, 1]).asMatrix()
+    (data,gramsdict) = ngrams_to_matrix([g1, g2, g3], [1, 2, 1], return_gramsdict=True)
+    print "Matrix example: %s" % data.asMatrix()
+    print "Grams dict: %s" % gramsdict
 

@@ -91,22 +91,23 @@ class SparseBayesClassifier:
                 mx_cls = cls
         return mx_cls
 
-    
 class LinearSVMClassifier:
     def __init__(self, trainingset):
-        print "Creating dataset"
+        print "LinearSVM: Creating dataset"
         L = [str(i) for i in trainingset.asMatrix().T[-1]]
+        print "> L"
         X = trainingset.asMatrix().T[:-1]
-        data = SparseDataSet(X.T, L = L)
-        print data
+        print "> X"
+        data = SparseDataSet(X.T.tolist(), L=L)
+        print "> data"
         self.svm = svm.SVM()
         print "Training SVM"
         self.svm.train(data)
         
     def classify(self, point):
         L= array(['1.0', '0.0'])
-        X = SparseDataSet(array([point], dtype=uint16))
-        print "classifying"
+        X = SparseDataSet(array([point], dtype=uint16).tolist())
+        print "LinearSVM: Classifying"
         return self.svm.classify(X, 0)[0]
         
         
@@ -140,4 +141,4 @@ def test_svm():
 
 if __name__ == "__main__":
 
-    test_sparse_bayes()
+    test_svm()
