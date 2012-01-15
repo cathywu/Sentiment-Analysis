@@ -68,7 +68,7 @@ class MovieReviews:
 classif = classifier.BayesClassifier
 #classif = classifier.LinearSVMClassifier
 
-def test(n=1,dataset='',limit=None):
+def test(n=1,dataset='',limit=None, binary=False):
     # support multiple types of ngrams
     if type(n) != type([]):
         n = [n]
@@ -92,7 +92,7 @@ def test(n=1,dataset='',limit=None):
     testsize=800
 
     print "Building Classifier"
-    m = MovieReviews(classif, n, testsize, pos_dir, neg_dir, limit=limit)
+    m = MovieReviews(classif, n, testsize, pos_dir, neg_dir, binary=binary, limit=limit)
 
     print "Testset --> Feature Vectors"
     pos_tests = None
@@ -122,8 +122,9 @@ def test(n=1,dataset='',limit=None):
     print neg_results
         
 if __name__ == "__main__":
-    test(n=[1],dataset='',limit=[2633])
+    test(n=[1,2],dataset='',limit=[16165],binary=True)
 
+# with testsize = 800, no shuffling
 # [ns]      dataset     [limits]        binary  --> +results    -results
 # [2]       position    [114370]        0       --> 0.96        0.56
 # [1,2]     default     [0,0]           0       --> 0.96        0.56 
@@ -131,3 +132,7 @@ if __name__ == "__main__":
 # [1]       default     [16165]         0       --> 0.92        0.69
 # [2]       default     [16165]         0       --> 0.93        0.69
 # [1]       default     [2633]          0       --> 0.94        0.61
+# [1]       default     [2633]          1       --> 0.76        0.86
+# [1]       default     [16165]         1       --> 0.77        0.84
+# [2]       default     [16165]         1       --> 0.86        0.77
+# [1,2]     default     [16165]         1       --> 0.86        0.77

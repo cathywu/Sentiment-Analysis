@@ -6,7 +6,7 @@ from Indexes import Indexes
 import matplotlib.pyplot as plt
 from classifier import MaximumEntropyClassifier
 
-TRAIN_SIZE = 300
+TRAIN_SIZE = 800
 n = 1
 
 print "Maximum Entropy"
@@ -18,9 +18,9 @@ print "> determined Indices"
 ind.next()
 
 pos_grams = [ngrams.ngrams(n, open("pos/"+pos[i]).read()) for i in ind.get_pos_train_ind()]
-pos_collapsed_grams = ngrams.collapse_ngrams(pos_grams)
+pos_collapsed_grams = ngrams.top_ngrams(ngrams.collapse_ngrams(pos_grams),16165)
 neg_grams = [ngrams.ngrams(n, open("neg/"+neg[i]).read()) for i in ind.get_neg_train_ind()]
-neg_collapsed_grams = ngrams.collapse_ngrams(neg_grams)
+neg_collapsed_grams = ngrams.top_ngrams(ngrams.collapse_ngrams(neg_grams),16165)
 print "> collapsed grams"
 
 trainingset = [([k],'pos',v) for (k,v) in pos_collapsed_grams.iteritems()]

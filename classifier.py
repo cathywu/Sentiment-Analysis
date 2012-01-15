@@ -132,8 +132,8 @@ class MaximumEntropyClassifier:
         self.model.end_add_event()
         print "> Events added"
         
-        self.model.train(10)
-        self.model.train(100, 'gis', 2)
+        self.model.train(100)
+        #self.model.train(100, 'gis', 2)
         print "> Models trained"
 
     def classify(self, point, label='pos'):
