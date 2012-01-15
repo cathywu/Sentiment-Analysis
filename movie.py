@@ -21,7 +21,7 @@ NEG_ADJ_DIR="neg_adj"
 
 class MovieReviews:
     def __init__(self, clsf, n, testsize, pos_dir, neg_dir, binary=False, limit=None):
-        self.classifier = clsf()
+
         count = 0
         pos_files = os.listdir(pos_dir)[:testsize]
         neg_files = os.listdir(neg_dir)[:testsize]
@@ -56,8 +56,8 @@ class MovieReviews:
             features.update(ngrams.top_ngrams(ngrams.collapse_ngrams(featureslist),lim))
 
         print "Creating Index"
-        words = set(features)
-        self.classifier.addToIndex(words)
+        self.classifier = clsf(restrictFeatures = features)
+
         print "# features: %s" % self.classifier.nfeatures
 
         print "Making classifier"        
@@ -67,7 +67,6 @@ class MovieReviews:
         for i in self.neg_files:
             self.classifier.addFeatureVector(i, -1, binary=binary)
         self.classifier.compile()
-        print self.classifier.classes
 
 classif = classifier.BayesClassifier
 #classif = classifier.LinearSVMClassifier
@@ -100,7 +99,6 @@ def test(n=1,dataset='',limit=None, binary=False):
     testsize=800
     iterations=1
     ind = Indexes(mode='r',iterations=iterations,train_size=testsize)
-    print ind.get_pos_train_ind()
 
     for k in range(iterations):
         ind.next()
@@ -135,7 +133,7 @@ def test(n=1,dataset='',limit=None, binary=False):
         print neg_results
         
 if __name__ == "__main__":
-    test(n=[1],dataset='adjectives',limit=None,binary=True)
+    test(n=[1],dataset='adjectives',limit=[2633],binary=True)
 
 # with testsize = 800, no shuffling
 # [ns]      dataset         [limits]        binary  --> +results    -results

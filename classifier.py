@@ -8,6 +8,8 @@ from PyML.containers import *
 from maxent import MaxentModel
 from scipy.sparse import csr_matrix, lil_matrix, csc_matrix, issparse
 import sys
+from ngrams import *
+import tempfile
 
 """
 A classifier has a addFeatureVector method that takes a feature
@@ -16,8 +18,30 @@ like {"word1":4, "word2":2, ...} and has a classify method that
 takes in a new vector and returns a class
 """
 
-class OneClassifier:
+class Classifier:
+    def __init__(self):
+        self.nfeatures = 0
+        self.nvectors  = 0
+        self.index     = {}
 
+    def addToIndex(self, words):
+        self.compiled = False
+        words = set([i for i in words])
+        keys = set(self.index.keys())
+        words = words - keys
+        for w in words:
+            self.index[w] = self.nfeatures
+            self.nfeatures += 1
+            
+    def vectorFromDict (self, words):
+        self.addToIndex(words.keys())
+        vec = zeros(self.nfeatures)
+        for w in words:
+            vec[self.index[w]] = words[w]
+        return vec
+                
+            
+class OneClassifier:
     def addFeatureVector (self, vec, cls): 
         pass
     def classify(self, point):
@@ -32,31 +56,34 @@ class RandomClassifier:
         return random.randint(0,1)
 
 
-class BayesClassifier:
-    def __init__(self) :
-        self.classes = {}
-        self.nfeatures = 0
-        self.nvectors = 0
-        self.index   = {}
-        self.length = 0
+class BayesClassifier(Classifier):
+    def __init__(self, restrictFeatures = False) :
+        Classifier.__init__(self)
+        self.length    = 0
+        self.compiled  = True
+        self.classes   = {}
+        self.restrictFeatures = restrictFeatures
+        if restrictFeatures:
+            self.addToIndex(self.restrictFeatures)
 
     def addToIndex(self, words):
-        words = set([i for i in words])
-        keys = set(self.index.keys())
-        words = words - keys
-        
-        for w in words:
-            self.index[w] = self.nfeatures
-            self.nfeatures += 1
+        words = set(words) - set(self.index.keys())
         for cls in self.classes:
             self.classes[cls] = hstack((self.classes[cls], ones(len(words))))
+        Classifier.addToIndex(self, words)
+        
     def addFeatureVector(self, vec, cls, binary=False):
-
+        self.compiled = False
         if cls not in self.classes:
             self.classes[cls] = ones(self.nfeatures)
-            
+        if not self.restrictFeatures:
+            self.addToIndex(vec)
         for feature in vec:
+
+            if self.restrictFeatures and feature not in self.restrictFeatures:
+                continue
             if feature in self.index:
+
                 if binary:
                     self.classes[cls][self.index[feature]] += 1
                 else:
@@ -64,9 +91,14 @@ class BayesClassifier:
 
         self.nvectors += 1
         self.length += 1;
+
     def compile(self):
+        if self.compiled:
+            return
+        self.compiled = True
         self.normalized = self.classes
         self.lengths = {}
+        print self.nfeatures
         for i in range(self.nfeatures):
             total = 0
             for cls in self.classes:
@@ -82,6 +114,7 @@ class BayesClassifier:
                 self.normalized[cls][i] /= self.lengths[cls]
 
     def classify(self, vec):
+        self.compile()
         mx = -sys.maxint
         mx_cls = 0
         point = ones(self.nfeatures)
@@ -102,24 +135,42 @@ class BayesPresenceClassifier(BayesClassifier):
         return BayesClassifier.classify(self, point.clip(max=2))
 
 
-class LinearSVMClassifier:
-    def __init__(self, trainingset):
-        print "LinearSVM: Creating dataset"
-        L = [i for i in trainingset.asMatrix().T[-1]]
-        print "> L"
-        X = trainingset.asMatrix().T[:-1].T
-        print "> X"
-        data = SparseDataSet(X.tolist(), L=L) 
-        print "> data"
-        self.svm = svm.SVM()
-        print "Training SVM"
-        self.svm.train(data)
+class LinearSVMClassifier(Classifier):
+    def __init__(self):
+        Classifier.__init__(self)
+        self.file = tempfile.NamedTemporaryFile(delete=False)
+        self.filename = self.file.name
+        print self.filename
+        self.data = SparseDataSet(0)
+        self.svm = SVM(optimizer='liblinear')
+
+    def vectorToString(self, vec, cls):
+        return str(cls) + " " + " ".join([str(i) + ":" + str(vec[i])for i in vec]) + "\n"
+
+    def addFeatureVector(self, point, cls):
+        self.compiled = False
+        vec = self.vectorToString(point, cls)
+        self.file.write(vec)
         
-    def classify(self, point):
-        L= array(['1.0', '0.0'])
-        X = SparseDataSet(array([point], dtype=uint16).tolist())
-        print "LinearSVM: Classifying"
-        return self.svm.classify(X, 0)[0]
+    def compile(self):
+        if self.compiled == True:
+            return
+        self.compiled = True
+        self.file.close()
+        self.data = SparseDataSet(self.filename)
+#        self.svm.train(self.data)
+        self.file = open(self.filename)
+
+    def validate(self, n):
+#        self.compile()
+#        v = self.vectorFromDict(point)
+        
+#        outp = self.svm.test(v)
+        self.compile()
+        print self.data
+        outp = self.svm.cv(self.data, numFolds = n)
+        print outp
+
 
 class MaximumEntropyClassifier:
     def __init__(self, trainingset):
@@ -138,6 +189,7 @@ class MaximumEntropyClassifier:
 
     def classify(self, point, label='pos'):
         return self.model.eval(point, label)
+
         
         
 def test_bayes():
@@ -153,13 +205,13 @@ def test_bayes():
 
             
 def test_svm():
-    trainingset = data.Data(array([[2, 2, 2],
-                                   [1, 1, 2],
-                                   [1, 1, 2],
-                                   [0, 1, 0]], dtype=uint16).T)
-    bc = LinearSVMClassifier(trainingset)
-    print bc.classify(array([2, 2, 2], dtype=uint16))
-    print bc.classify(array([3, 1, 1], dtype=uint16))
+    trainingset = [ngrams(1, "foo foo bar baz"), ngrams(1, "foo foo bar bar baz baz"), ngrams(1,"foo foo bar baz")]
+    labels = [1, -1, -1]
+    lsc = LinearSVMClassifier(3)
+    for vec in zip(trainingset, labels):
+        lsc.addFeatureVector(vec[0], vec[1])
+    print lsc.classify(ngrams(1, "foo foo bar bar baz baz"))
+    print lsc.classify(ngrams(1, "foo foo foo bar baz"))
 
 def test_maxent():
     trainingset = [(['good'],'pos',1),

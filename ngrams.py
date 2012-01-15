@@ -11,6 +11,8 @@ def words(s):
     current = ""
     not_mode = False
     not_words = set(["not", "isn't", "doesn't"])
+    punctuation_map = {',':"COMMA", '.':"PERIOD", ':':"COLON", ';':"SEMI", '\'':"SINGLEQUOTE",
+                       '"':"DOUBLEQUOTE"}
     for i in s:
         if i.isalnum():
             current += i
@@ -24,7 +26,8 @@ def words(s):
                 not_mode = True
             current = ""
         else:
-            words.append(i)
+            if i in punctuation_map.keys():
+                words.append(punctuation_map[i])
             not_mode = False
             if not current:
                 continue
