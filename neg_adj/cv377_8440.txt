@@ -1,0 +1,11 @@
+on-board_JJ
+commercial_JJ
+psychotic_JJ
+new_JJ
+busy_JJ
+other_JJ
+embarrassing_JJ
+flying_JJ
+worthless_JJ
+hard_JJ
+brilliant_JJ

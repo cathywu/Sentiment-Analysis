@@ -1,0 +1,16 @@
+difficult_JJ
+hard_JJ
+bleak_JJ
+mere_JJ
+pure_JJ
+mere_JJ
+surviving_JJ
+ultimate_JJ
+easy_JJ
+confusing_JJ
+certain_JJ
+previous_JJ
+long_JJ
+easy_JJ
+complex_JJ
+depressing_JJ

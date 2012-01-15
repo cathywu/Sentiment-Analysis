@@ -1,0 +1,6 @@
+right_JJ
+drunk_JJ
+funny_JJ
+good_JJ
+away_JJ
+popular_JJ

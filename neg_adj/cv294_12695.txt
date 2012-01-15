@@ -1,0 +1,17 @@
+japanese_JJ
+jurassic_JJ
+new_JJ
+real_JJ
+entertaining_JJ
+old_JJ
+several-hundred_JJ
+tall_JJ
+funny_JJ
+horrendous_JJ
+dull_JJ
+unbelievable_JJ
+other_JJ
+just_JJ
+good_JJ
+fun_JJ
+cinematic_JJ

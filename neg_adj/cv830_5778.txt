@@ -1,0 +1,17 @@
+exciting_JJ
+dreadful_JJ
+big_JJ
+funny_JJ
+superfluous_JJ
+vaporized_JJ
+false_JJ
+open_JJ
+icy_JJ
+top-secret_JJ
+underground_JJ
+shady_JJ
+bad_JJ
+southern_JJ
+single_JJ
+shred_JJ
+imminent_JJ

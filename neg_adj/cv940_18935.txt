@@ -1,0 +1,11 @@
+bored_JJ
+cardboard_JJ
+cliched_JJ
+annoyed_JJ
+acting_JJ
+big_JJ
+pretty_JJ
+red_JJ
+predictable_JJ
+male_JJ
+sudden_JJ

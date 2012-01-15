@@ -1,0 +1,14 @@
+shagadellic_JJ
+smashing_JJ
+overlong_JJ
+interesting_JJ
+secret_JJ
+cryogenic_JJ
+evil_JJ
+present_JJ
+great_JJ
+potential_JJ
+hefty_JJ
+wrong_JJ
+good_JJ
+unmet_JJ

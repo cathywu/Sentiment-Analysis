@@ -1,0 +1,13 @@
+right_JJ
+different_JJ
+new_JJ
+obvious_JJ
+other_JJ
+small_JJ
+fictional_JJ
+good_JJ
+important_JJ
+young_JJ
+impressive_JJ
+interesting_JJ
+interesting_JJ

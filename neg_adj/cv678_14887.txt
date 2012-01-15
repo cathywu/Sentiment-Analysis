@@ -1,0 +1,17 @@
+raucous_JJ
+cuddly_JJ
+disconcerting_JJ
+mysterious_JJ
+spiritual_JJ
+desperate_JJ
+overnight_JJ
+budding_JJ
+promising_JJ
+slow_JJ
+overlong_JJ
+straight_JJ
+lifeless_JJ
+good_JJ
+hard_JJ
+spiritual_JJ
+interested_JJ

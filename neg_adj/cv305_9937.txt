@@ -1,0 +1,12 @@
+lush_JJ
+recent_JJ
+lesser_JJ
+young_JJ
+frightened_JJ
+real_JJ
+stunning_JJ
+photographic_JJ
+other_JJ
+hand-drawn_JJ
+royal_JJ
+concerned_JJ

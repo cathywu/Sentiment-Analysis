@@ -1,0 +1,12 @@
+proper_JJ
+new_JJ
+lousy_JJ
+western_JJ
+futuristic_JJ
+strangling_JJ
+matriarchal_JJ
+red_JJ
+hospitable_JJ
+matriarchal_JJ
+pretty_JJ
+intriguing_JJ

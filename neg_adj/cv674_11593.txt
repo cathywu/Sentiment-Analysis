@@ -1,0 +1,17 @@
+alive_JJ
+true_JJ
+hilarious_JJ
+old_JJ
+hair-brained_JJ
+quick_JJ
+granddaddy_JJ
+far-fetched_JJ
+goofy_JJ
+funny_JJ
+clean_JJ
+new_JJ
+old_JJ
+small_JJ
+original_JJ
+pale_JJ
+only_JJ

@@ -1,0 +1,14 @@
+confirmed_JJ
+old_JJ
+likely_JJ
+czech_JJ
+five-year_JJ
+old_JJ
+high_JJ
+comparable_JJ
+american_JJ
+golden_JJ
+foreign_JJ
+czech_JJ
+russian_JJ
+english_JJ

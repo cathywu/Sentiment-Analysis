@@ -1,0 +1,9 @@
+true_JJ
+british_JJ
+deep_JJ
+great_JJ
+wonderful_JJ
+acting_JJ
+bad_JJ
+thin_JJ
+upset_JJ

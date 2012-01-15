@@ -11,9 +11,12 @@ from operator import itemgetter
 POS_DIR="pos"
 POS_POSITION_DIR="pos_position"
 POS_PARTOFSPEECH_DIR="pos_tagged"
+POS_ADJ_DIR="pos_adj"
+
 NEG_DIR="neg"
 NEG_POSITION_DIR="neg_position"
 NEG_PARTOFSPEECH_DIR="neg_tagged"
+NEG_ADJ_DIR="neg_adj"
 
 class MovieReviews:
     def __init__(self, clsf, n, testsize, pos_dir, neg_dir, binary=False, limit=None):
@@ -86,6 +89,10 @@ def test(n=1,dataset='',limit=None, binary=False):
         print "Using movie dataset with position tagged"
         pos_dir = POS_POSITION_DIR
         neg_dir = NEG_POSITION_DIR
+    elif dataset=='adjectives':
+        print "Using movie dataset with adjectives only"
+        pos_dir = POS_ADJ_DIR
+        neg_dir = NEG_ADJ_DIR
     elif dataset=='yelp':
         pass
 
@@ -122,17 +129,21 @@ def test(n=1,dataset='',limit=None, binary=False):
     print neg_results
         
 if __name__ == "__main__":
-    test(n=[1,2],dataset='',limit=[16165],binary=True)
+    test(n=[1],dataset='adjectives',limit=[2633,16165],binary=False)
 
 # with testsize = 800, no shuffling
-# [ns]      dataset     [limits]        binary  --> +results    -results
-# [2]       position    [114370]        0       --> 0.96        0.56
-# [1,2]     default     [0,0]           0       --> 0.96        0.56 
-# [1,2]     default     [16165,16165]   0       --> 0.94        0.71
-# [1]       default     [16165]         0       --> 0.92        0.69
-# [2]       default     [16165]         0       --> 0.93        0.69
-# [1]       default     [2633]          0       --> 0.94        0.61
-# [1]       default     [2633]          1       --> 0.76        0.86
-# [1]       default     [16165]         1       --> 0.77        0.84
-# [2]       default     [16165]         1       --> 0.86        0.77
-# [1,2]     default     [16165]         1       --> 0.86        0.77
+# [ns]      dataset         [limits]        binary  --> +results    -results
+# [2]       position        [114370]        0       --> 0.96        0.56
+# [1,2]     default         [0,0]           0       --> 0.96        0.56 
+# [1,2]     default         [16165,16165]   0       --> 0.94        0.71
+# [1]       default         [16165]         0       --> 0.92        0.69
+# [2]       default         [16165]         0       --> 0.93        0.69
+# [1]       default         [2633]          0       --> 0.94        0.61
+# [1]       default         [2633]          1       --> 0.76        0.86
+# [1]       default         [16165]         1       --> 0.77        0.84
+# [2]       default         [16165]         1       --> 0.86        0.77
+# [1,2]     default         [16165,16165]   1       --> 0.89        0.81
+# [1,2]     partofspeech    [16165,16165]   1       --> 0.65        0.91
+# [1]       partofspeech    [16165,16165]   1       --> 0.67        0.91
+# [1]       adjectives      [2633]          1       --> 0.92        0.70
+# [1]       adjectives      [2633]          0       --> 0.97        0.54

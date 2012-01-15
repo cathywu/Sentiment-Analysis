@@ -1,0 +1,16 @@
+directed_JJ
+dinky_JJ
+little_JJ
+deep_JJ
+great_JJ
+american_JJ
+new_JJ
+said_JJ
+like_JJ
+nonstop_JJ
+ludicrous_JJ
+wonderful_JJ
+snazzy_JJ
+only_JJ
+real_JJ
+deep_JJ
