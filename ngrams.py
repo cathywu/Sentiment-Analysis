@@ -85,6 +85,18 @@ def ngrams_to_matrix(grams, classes, return_gramsdict=False):
         return (ret,allgramsdict)
     return ret
 
+def collapse_ngrams(grams):
+    """
+    Collapse a list of dict of grams into a single dict
+    """
+    print "Entering collapse_ngrams"
+    keysets = [set(k) for k in grams]
+    allgramset = set()
+    allgramset = apply(allgramset.union, keysets)
+    allgrams = list(allgramset)
+    collapsed = dict( (n, sum([gram.get(n, 0) for gram in grams])) for n in allgrams )
+    return collapsed
+
 def grams_to_featurevector(gramsdict, grams, label=None):
     """
     Maps from gram frequencies and label to numerical feature vector according
