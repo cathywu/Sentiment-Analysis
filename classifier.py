@@ -49,18 +49,18 @@ class BayesClassifier:
             self.nfeatures += 1
         for cls in self.classes:
             self.classes[cls] = hstack((self.classes[cls], ones(len(words))))
-    def addFeatureVector(self, vec, cls):
+    def addFeatureVector(self, vec, cls, binary=False):
 
         if cls not in self.classes:
             self.classes[cls] = ones(self.nfeatures)
             
         for feature in vec:
-            if feature not in self.index:
-                for cls in self.classes:                    
-                    self.classes[cls] = hstack((self.classes[cls], array([1])))
-                self.index[feature] = self.nfeatures
-                self.nfeatures += 1
-            self.classes[cls][self.index[feature]] += vec[feature]
+            if feature in self.index:
+                if binary:
+                    self.classes[cls][self.index[feature]] += 1
+                else:
+                    self.classes[cls][self.index[feature]] += vec[feature]
+
         self.nvectors += 1
         self.length += 1;
     def compile(self):
