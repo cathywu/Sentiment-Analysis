@@ -1,0 +1,15 @@
+bad_JJ
+good_JJ
+romantic_JJ
+married_JJ
+adequate_JJ
+leading_JJ
+able_JJ
+other_JJ
+pretty_JJ
+old_JJ
+fast_JJ
+humorous_JJ
+funny_JJ
+accelerating_JJ
+great_JJ

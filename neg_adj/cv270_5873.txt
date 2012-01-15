@@ -1,0 +1,17 @@
+multiplex_JJ
+bad_JJ
+quaid_JJ
+gotten_JJ
+plump_JJ
+funny_JJ
+great_JJ
+quaid_JJ
+good_JJ
+smart_JJ
+left_JJ
+great_JJ
+excellent_JJ
+average_JJ
+enjoyable_JJ
+poor_JJ
+unbearable_JJ

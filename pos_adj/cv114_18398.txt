@@ -1,0 +1,12 @@
+easy_JJ
+sentimental_JJ
+above_JJ
+costly_JJ
+long_JJ
+ordinary_JJ
+highly-strung_JJ
+fine_JJ
+fine_JJ
+nervous_JJ
+lesbian_JJ
+ideal_JJ

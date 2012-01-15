@@ -1,0 +1,15 @@
+martial_JJ
+unique_JJ
+self-produced_JJ
+martial_JJ
+practical_JJ
+familiar_JJ
+little_JJ
+famous_JJ
+english_JJ
+chinese_JJ
+american_JJ
+all-white_JJ
+american_JJ
+excellent_JJ
+unforgiven_JJ

@@ -3,6 +3,7 @@
 import collections
 import data
 from numpy import *
+from operator import itemgetter
 
 from scipy.sparse import lil_matrix, csr_matrix
 def words(s):
@@ -87,6 +88,25 @@ def ngrams_to_matrix(grams, classes, return_gramsdict=False):
     if return_gramsdict:
         return (ret,allgramsdict)
     return ret
+
+def collapse_ngrams(grams):
+    """
+    Collapse a list of dict of grams into a single dict
+    """
+    print "Entering collapse_ngrams"
+    collapsed = {}
+    for gram in grams:
+        for (key,value) in gram.iteritems():
+            if key in collapsed:
+                collapsed[key] += value
+            else:
+                collapsed[key] = value
+    return collapsed
+
+def top_ngrams(grams,limit=0):
+    if limit==0:
+        return grams
+    return dict( sorted(grams.iteritems(), key=itemgetter(1), reverse=True)[:limit] )
 
 def grams_to_featurevector(gramsdict, grams, label=None):
     """

@@ -1,0 +1,33 @@
+i_Q1 saw_Q1 this_Q1 film_Q1 on_Q1 christmas_Q1 day_Q1 expecting_Q1 an_Q1 upbeat_Q1 comedy_Q1 ._Q1 
+boy_Q1 was_Q1 i_Q1 in_Q1 for_Q1 a_Q1 christmas_Q1 dissapointment_Q1 !_Q1 
+after_Q1 an_Q1 hour_Q1 of_Q1 the_Q1 movie_Q1 ,_Q1 i_Q1 was_Q1 ready_Q1 to_Q1 change_Q1 rooms-into_Q1 another_Q1 theater_Q1 !_Q1 
+read_Q1 on_Q1 to_Q1 see_Q1 what_Q1 i_Q1 have_Q1 to_Q1 say_Q1 ._Q1 ._Q1 ._Q1 ._Q1 
+four_Q1 rooms_Q1 :_Q1 
+starring_Q1 :_Q1 tim_Q1 roth_Q1 ,_Q1 jennifer_Q1 beals_Q1 ,_Q1 antonio_Q1 banderas_Q1 ,_Q1 quentin_Q1 tarantino_Q1 ,_Q1 valeria_Q1 golino_Q1 ,_Q1 madonna_Q1 ,_Q1 bruce_Q1 willis_Q1 ,_Q1 marisa_Q1 tomei_Q1 ,_Q1 alicia_Q1 witt_Q1 ,_Q1 lili_Q1 taylor_Q1 ,_Q1 and_Q1 ione_Q1 skye_Q1 ._Q1 
+possible_Q1 stars_Q1 )_Q1 
+_Q1 "_Q1 four_Q1 rooms_Q1 "_Q1 was_Q1 supposed_Q1 to_Q1 be_Q1 one_Q1 of_Q1 the_Q1 biggest_Q1 hits_Q1 of_Q1 the_Q1 year_Q1 ._Q1 
+key_Q1 word_Q1 here_Q1 :_Q1 "_Q1 supposed_Q1 ._Q1 "_Q1 
+four_Q1 of_Q1 the_Q1 biggest_Q1 directors_Q1 in_Q1 hollywood_Q1 :_Q1 quentin_Q1 tarantino_Q1 ,_Q1 robert_Q1 rodriguez_Q1 ,_Q1 alexander_Q1 rockwell_Q1 ,_Q1 and_Q1 alison_Q23 anders_Q23 were_Q23 all_Q23 directing_Q23 one_Q23 big_Q23 film_Q23 with_Q23 a_Q23 big_Q23 and_Q23 popular_Q23 cast_Q23 ._Q23 
+i_Q23 guess_Q23 it_Q23 was_Q23 all_Q23 just_Q23 too_Q23 much_Q23 because_Q23 this_Q23 turned_Q23 out_Q23 to_Q23 be_Q23 the_Q23 biggest_Q23 flop_Q23 of_Q23 the_Q23 year_Q23 and_Q23 it_Q23 could_Q23 of_Q23 been_Q23 great_Q23 ._Q23 
+the_Q23 plot_Q23 :_Q23 it's_Q23 new_Q23 years_Q23 eve_Q23 and_Q23 it's_Q23 a_Q23 bellboy's_Q23 first_Q23 day_Q23 on_Q23 the_Q23 job_Q23 ._Q23 
+he_Q23 encounters_Q23 many_Q23 mysterious_Q23 and_Q23 kinky_Q23 hotel_Q23 guests_Q23 as_Q23 he_Q23 tries_Q23 to_Q23 handle_Q23 all_Q23 his_Q23 own_Q23 problems_Q23 ._Q23 
+tarantino_Q23 told_Q23 his_Q23 directors_Q23 this_Q23 plot_Q23 ,_Q23 and_Q23 each_Q23 of_Q23 them_Q23 wrote_Q23 a_Q23 script_Q23 ._Q23 
+it_Q23 turned_Q23 out_Q23 each_Q23 of_Q23 them_Q23 had_Q23 written_Q23 a_Q23 dark_Q23 comedy_Q23 ._Q23 
+anders_Q23 wrote_Q23 and_Q23 directed_Q23 the_Q23 tale_Q23 about_Q23 a_Q23 coven_Q23 of_Q23 witches_Q23 (_Q23 madonna_Q23 ,_Q23 valeria_Q23 golino_Q23 ,_Q23 alicia_Q23 witt_Q23 ,_Q23 and_Q23 ione_Q23 skye_Q23 )_Q23 ,_Q23 which_Q23 was_Q23 the_Q23 worst_Q23 one_Q23 out_Q23 of_Q23 all_Q23 of_Q23 them_Q23 ._Q23 
+the_Q23 second_Q23 room_Q23 (_Q23 jennifer_Q23 beals_Q23 )_Q23 was_Q23 better_Q23 ,_Q23 but_Q23 lacking_Q23 in_Q23 plot_Q23 ._Q23 
+this_Q23 room_Q23 was_Q23 about_Q23 a_Q23 man_Q23 who_Q23 accuses_Q23 every_Q23 man_Q23 of_Q23 sleeping_Q23 with_Q23 his_Q23 wife_Q23 ._Q23 
+the_Q23 third_Q23 room_Q23 (_Q23 antonio_Q23 banderas_Q23 )_Q23 was_Q23 the_Q23 best_Q23 roomm_Q23 ,_Q23 about_Q23 two_Q23 rambunctous_Q23 kids_Q23 that_Q23 trash_Q23 a_Q23 hotel_Q23 suite_Q23 ._Q23 
+the_Q23 final_Q23 one_Q23 (_Q23 tarantino_Q23 ,_Q23 willis_Q23 )_Q23 was_Q23 about_Q23 a_Q23 movie_Q23 star_Q23 wanting_Q23 the_Q23 bellboy_Q23 to_Q23 chop_Q23 off_Q23 someone's_Q23 finger_Q23 ._Q23 
+the_Q23 movie_Q23 was_Q23 just_Q23 plain_Q23 trash_Q23 ._Q23 
+there_Q23 was_Q23 nothing_Q23 here_Q23 that_Q23 even_Q23 makes_Q23 up_Q23 a_Q23 quality_Q23 film_Q23 ._Q23 
+it_Q23 was_Q23 not_Q23 funny_Q23 ,_Q23 and_Q23 i_Q23 didn't_Q23 hear_Q23 one_Q23 laugh_Q23 in_Q23 the_Q23 theater_Q23 throughout_Q23 the_Q23 whole_Q23 film_Q23 ._Q23 
+tim_Q23 roth_Q23 is_Q23 horrible_Q23 as_Q23 the_Q23 bumbling_Q23 and_Q23 mumbling_Q23 bellboy_Q23 ,_Q23 and_Q23 he_Q23 ruins_Q23 every_Q23 joke_Q23 in_Q23 the_Q23 film_Q23 ._Q4 
+the_Q4 supporting_Q4 cast_Q4 loses_Q4 meaning_Q4 to_Q4 the_Q4 word_Q4 support_Q4 and_Q4 the_Q4 only_Q4 mentionable_Q4 actors/actresses_Q4 are_Q4 antonio_Q4 banderas_Q4 and_Q4 jennifer_Q4 beals_Q4 ._Q4 
+marisa_Q4 tomei_Q4 appears_Q4 in_Q4 a_Q4 stupid_Q4 cameo_Q4 role_Q4 ._Q4 
+this_Q4 movie_Q4 is_Q4 the_Q4 worst_Q4 film_Q4 of_Q4 the_Q4 year_Q4 and_Q4 the_Q4 film_Q4 could_Q4 have_Q4 been_Q4 great_Q4 ,_Q4 perhaps_Q4 like_Q4 a_Q4 more_Q4 upbeat_Q4 "_Q4 plaza_Q4 suite_Q4 ,_Q4 "_Q4 but_Q4 it_Q4 wasn't_Q4 ._Q4 
+as_Q4 trashy_Q4 as_Q4 it_Q4 was_Q4 ,_Q4 some_Q4 people_Q4 will_Q4 call_Q4 it_Q4 classic_Q4 ._Q4 
+do_Q4 you_Q4 call_Q4 a_Q4 man_Q4 chopping_Q4 off_Q4 a_Q4 finger_Q4 with_Q4 madonna's_Q4 chest_Q4 showing_Q4 a_Q4 classic_Q4 film_Q4 ?_Q4 
+look_Q4 for_Q4 more_Q4 of_Q4 ken's_Q4 kritic_Q4 korner_Q4 coming_Q4 soon_Q4 !_Q4 
+please_Q4 check_Q4 the_Q4 newsgroups_Q4 under_Q4 the_Q4 movie_Q4 reviews_Q4 section_Q4 for_Q4 updated_Q4 reviews_Q4 ._Q4 
+p_Q4 ._Q4 s_Q4 ._Q4 "_Q4 four_Q4 rooms_Q4 "_Q4 made_Q4 number_Q4 1_Q4 on_Q4 my_Q4 top_Q4 ten_Q4 worst_Q4 list_Q4 of_Q4 1995_Q4 ._Q4 
+_Q4 

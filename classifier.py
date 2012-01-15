@@ -5,6 +5,7 @@ import data
 from numpy import *
 from PyML import *
 from PyML.containers import *
+from maxent import MaxentModel
 from scipy.sparse import csr_matrix, lil_matrix, csc_matrix, issparse
 import sys
 from ngrams import *
@@ -56,24 +57,40 @@ class RandomClassifier:
 
 
 class BayesClassifier(Classifier):
-    def __init__(self) :
+    def __init__(self, restrictFeatures = False) :
         Classifier.__init__(self)
         self.length    = 0
         self.compiled  = True
         self.classes   = {}
+        self.restrictFeatures = restrictFeatures
+        if restrictFeatures:
+            self.nfeatures = len(self.restrictFeatures)
+            self.restrictFeatures = set(restrictFeatures)
+            for i in self.restrictFeatures:
+                self.addToIndex(i)
     def addToIndex(self, words):
         words = set(words) - set(self.index.keys())
         for cls in self.classes:
             self.classes[cls] = hstack((self.classes[cls], ones(len(words))))
         Classifier.addToIndex(self, words)
         
-    def addFeatureVector(self, vec, cls):
+    def addFeatureVector(self, vec, cls, binary=False):
         self.compiled = False
         if cls not in self.classes:
             self.classes[cls] = ones(self.nfeatures)
-        self.addToIndex(vec)
+        if not self.restrictFeatures:
+            self.addToIndex(vec)
         for feature in vec:
-            self.classes[cls][self.index[feature]] += vec[feature]
+
+            if self.restrictFeatures and feature not in self.restrictFeatures:
+                continue
+            if feature in self.index:
+
+                if binary:
+                    self.classes[cls][self.index[feature]] += 1
+                else:
+                    self.classes[cls][self.index[feature]] += vec[feature]
+
         self.nvectors += 1
         self.length += 1;
     def compile(self):
@@ -154,6 +171,25 @@ class LinearSVMClassifier(Classifier):
         outp = self.svm.cv(self.data, numFolds = n)
         print outp
 
+
+class MaximumEntropyClassifier:
+    def __init__(self, trainingset):
+        print "MaximumEntropy: Creating model"
+        self.model = MaxentModel()
+        self.model.verbose = 1
+        self.model.begin_add_event()
+        for (gram,label,value) in trainingset:
+            self.model.add_event(gram,label,value)
+        self.model.end_add_event()
+        print "> Events added"
+        
+        self.model.train(100)
+        #self.model.train(100, 'gis', 2)
+        print "> Models trained"
+
+    def classify(self, point, label='pos'):
+        return self.model.eval(point, label)
+
         
         
 def test_bayes():
@@ -177,5 +213,19 @@ def test_svm():
     print lsc.classify(ngrams(1, "foo foo bar bar baz baz"))
     print lsc.classify(ngrams(1, "foo foo foo bar baz"))
 
+def test_maxent():
+    trainingset = [(['good'],'pos',1),
+                   (['wonderful'],'pos',1),
+                   (['ugly'],'neg',1),
+                   (['terrible','ick'],'neg',1)]
+    m = MaximumEntropyClassifier(trainingset)
+    
+    print "other label: %s" % m.classify(['mmm'],'otherlabel') # other label
+    print "OOD: %s" % m.classify(['mmm'],'pos') # OOD
+    print "ick: %s" % m.classify(['ick'],'pos')
+    print "mmm awesome good: %s" % m.classify(['mmm','awesome','good'],'pos')
+    print "mmm terrible good: %s" % m.classify(['mmm','terrible','good'],'pos')
+    print "wonderful terrible good: %s" % m.classify(['wonderful','terrible','good'],'pos')
+
 if __name__ == "__main__":
-    test_svm()
+    test_maxent()

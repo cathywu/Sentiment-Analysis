@@ -1,0 +1,16 @@
+rare_JJ
+dying_JJ
+hard_JJ
+wet_JJ
+sloppy_JJ
+warm_JJ
+reassuring_JJ
+true_JJ
+sweet_JJ
+wonderful_JJ
+high_JJ
+professional_JJ
+hard_JJ
+possible_JJ
+true_JJ
+enjoyable_JJ

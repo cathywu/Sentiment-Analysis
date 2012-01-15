@@ -1,0 +1,27 @@
+do_Q1 you_Q1 want_Q1 to_Q1 know_Q1 the_Q1 truth_Q1 about_Q1 cats_Q1 and_Q1 dogs_Q1 ?_Q1 
+do_Q1 you_Q1 ?_Q1 
+well_Q1 ,_Q1 as_Q1 this_Q1 movie_Q1 shows_Q1 us_Q1 ,_Q1 they_Q1 make_Q1 good_Q1 companions_Q1 but_Q1 pale_Q1 in_Q1 comparison_Q1 to_Q1 the_Q1 joy_Q1 and_Q1 fulfillment_Q1 romantic_Q1 relationships_Q1 can_Q1 bring_Q1 ._Q1 
+unfortunately_Q1 ,_Q1 there's_Q1 a_Q1 giant_Q1 roadblock_Q1 set_Q1 up_Q1 in_Q1 our_Q1 culture_Q1 that_Q1 only_Q1 certain_Q1 people_Q1 can_Q1 get_Q1 through_Q1 while_Q1 the_Q1 rest_Q1 of_Q1 us_Q1 mill_Q1 around_Q1 outside_Q1 ,_Q1 feeling_Q1 sorry_Q1 for_Q1 ourselves_Q1 ._Q1 
+a_Q1 checkpoint_Q1 beautiful_Q1 kind_Q1 of_Q1 thing_Q1 ,_Q1 and_Q1 janeane_Q1 garafolo's_Q1 character_Q1 abby_Q1 relates_Q1 to_Q1 it_Q1 well_Q1 ._Q1 
+like_Q1 a_Q1 certain_Q1 oversized_Q1 teenage_Q1 movie_Q1 critic_Q1 ,_Q1 she_Q1 is_Q1 intelligent_Q1 and_Q1 has_Q1 a_Q1 great_Q1 sense_Q1 of_Q1 humor_Q1 but_Q1 strikes_Q1 out_Q1 with_Q1 the_Q1 opposite_Q1 sex_Q1 because_Q1 she_Q1 sees_Q1 herself_Q1 as_Q1 physically_Q1 unattractive_Q1 ,_Q1 and_Q1 the_Q1 men_Q1 seem_Q1 to_Q1 be_Q1 backing_Q1 her_Q1 up_Q1 on_Q1 that_Q1 ._Q1 
+meanwhile_Q1 ,_Q1 her_Q23 gorgeous_Q23 neighbor_Q23 nora_Q23 (_Q23 uma_Q23 thurman_Q23 ._Q23 ._Q23 ._Q23 
+uma_Q23 being_Q23 the_Q23 only_Q23 woman's_Q23 name_Q23 worse_Q23 than_Q23 nora_Q23 )_Q23 attracts_Q23 men_Q23 like_Q23 flies_Q23 ._Q23 
+as_Q23 abby_Q23 tells_Q23 her_Q23 ,_Q23 "_Q23 you_Q23 burp_Q23 and_Q23 they_Q23 think_Q23 it's_Q23 cute_Q23 ._Q23 
+you_Q23 barf_Q23 and_Q23 they_Q23 line_Q23 up_Q23 to_Q23 hold_Q23 your_Q23 hair_Q23 back_Q23 ._Q23 "_Q23 
+but_Q23 nora's_Q23 down_Q23 on_Q23 herself_Q23 for_Q23 being_Q23 too_Q23 shallow_Q23 and_Q23 superficial_Q23 ._Q23 
+we_Q23 all_Q23 have_Q23 our_Q23 prwhen_Q23 a_Q23 man_Q23 calls_Q23 in_Q23 to_Q23 veterinarian_Q23 abby's_Q23 talk_Q23 radio_Q23 show_Q23 wanting_Q23 to_Q23 know_Q23 how_Q23 to_Q23 get_Q23 the_Q23 roller_Q23 skates_Q23 off_Q23 his_Q23 basset_Q23 hound_Q23 ._Q23 
+_Q23 (_Q23 oh_Q23 come_Q23 on_Q23 ,_Q23 any_Q23 idiot_Q23 knows_Q23 how_Q23 to_Q23 handle_Q23 that_Q23 problem_Q23 !_Q23 )_Q23 
+he_Q23 likes_Q23 her_Q23 personality_Q23 and_Q23 professional_Q23 demeanor_Q23 and_Q23 asks_Q23 to_Q23 meet_Q23 her_Q23 in_Q23 person_Q23 ._Q23 
+abby_Q23 ,_Q23 though_Q23 ,_Q23 knows_Q23 her_Q23 body_Q23 doesn't_Q23 match_Q23 her_Q23 personality_Q23 and_Q23 that_Q23 she_Q23 probably_Q23 won't_Q23 have_Q23 a_Q23 chance_Q23 with_Q23 him_Q23 once_Q23 he_Q23 sees_Q23 her_Q23 ._Q23 
+so_Q23 she_Q23 gives_Q23 him_Q23 nora's_Q23 body_Q23 description_Q23 and_Q23 stands_Q23 him_Q23 up_Q23 ._Q23 
+nora_Q23 happens_Q23 to_Q23 be_Q23 in_Q23 the_Q23 studio_Q23 the_Q23 next_Q23 day_Q23 when_Q23 the_Q23 dog_Q23 man_Q23 comes_Q23 by_Q23 and_Q23 abby_Q23 asks_Q23 her_Q23 for_Q23 a_Q23 big_Q23 favor_Q23 ._Q23 
+she_Q23 goes_Q23 along_Q23 with_Q23 the_Q23 masquerade_Q23 and_Q23 the_Q23 three_Q23 of_Q23 them_Q23 head_Q23 out_Q23 for_Q23 a_Q23 night_Q23 of_Q23 fun_Q23 ,_Q23 abby_Q23 assuming_Q23 the_Q23 role_Q23 of_Q23 a_Q23 goat_Q23 cheese_Q23 farmer_Q23 named_Q23 donna_Q23 ._Q23 
+the_Q23 dog_Q23 man_Q23 finds_Q23 out_Q23 even_Q23 though_Q23 this_Q23 girl_Q23 is_Q23 beautiful_Q23 ,_Q23 she's_Q23 not_Q23 quite_Q23 as_Q23 intellectual_Q23 or_Q23 confident_Q23 about_Q23 herself_Q23 in_Q23 person_Q23 ,_Q23 but_Q23 he_Q23 doesn't_Q23 suspect_Q23 anything_Q23 ,_Q23 realizing_Q23 he's_Q23 not_Q23 living_Q23 in_Q23 a_Q23 "_Q23 three's_Q23 company_Q23 "_Q23 episode_Q23 ._Q23 
+the_Q23 charade_Q23 continues_Q23 ,_Q23 with_Q23 abby_Q23 furthering_Q23 the_Q23 relationship_Q23 over_Q23 the_Q23 phone_Q23 (_Q23 including_Q23 a_Q23 decidedly_Q23 unnecessary_Q4 phone_Q4 sex/masturbation_Q4 sequence_Q4 )_Q4 and_Q4 nora_Q4 furthering_Q4 it_Q4 in_Q4 person_Q4 ,_Q4 while_Q4 eventually_Q4 finding_Q4 herself_Q4 attracted_Q4 to_Q4 the_Q4 dog_Q4 man_Q4 ._Q4 
+like_Q4 sleepless_Q4 in_Q4 seattle_Q4 ,_Q4 this_Q4 comedy/romance_Q4 is_Q4 predictable_Q4 all_Q4 the_Q4 way_Q4 through_Q4 ,_Q4 but_Q4 we_Q4 care_Q4 enough_Q4 about_Q4 the_Q4 characters_Q4 that_Q4 we_Q4 root_Q4 them_Q4 on_Q4 and_Q4 will_Q4 the_Q4 romance_Q4 to_Q4 blossom_Q4 ._Q4 
+the_Q4 truth_Q4 about_Q4 cats_Q4 and_Q4 dogs_Q4 isn't_Q4 quite_Q4 as_Q4 entertaining_Q4 as_Q4 i_Q4 was_Q4 expecting_Q4 it_Q4 to_Q4 be_Q4 ,_Q4 but_Q4 it_Q4 handles_Q4 well_Q4 a_Q4 theme_Q4 i_Q4 could_Q4 identify_Q4 with_Q4 ._Q4 
+the_Q4 thing_Q4 is_Q4 ,_Q4 i_Q4 find_Q4 janeane_Q4 garafolo_Q4 rather_Q4 attractive_Q4 ._Q4 
+she's_Q4 no_Q4 uma_Q4 but_Q4 i'm_Q4 sure_Q4 in_Q4 real_Q4 life_Q4 she'd_Q4 have_Q4 no_Q4 problems_Q4 attracting_Q4 men_Q4 ._Q4 
+i_Q4 ,_Q4 on_Q4 the_Q4 other_Q4 hand_Q4 ,_Q4 couldn't_Q4 attract_Q4 a_Q4 man_Q4 to_Q4 save_Q4 my_Q4 life_Q4 ._Q4 ._Q4 ._Q4 
+and_Q4 am_Q4 rather_Q4 proud_Q4 of_Q4 that_Q4 fact_Q4 ._Q4 
+_Q4 

@@ -1,0 +1,35 @@
+ingredients_Q1 :_Q1 james_Q1 bond_Q1 ,_Q1 scuba_Q1 scene_Q1 ,_Q1 car_Q1 controlled_Q1 by_Q1 cellular_Q1 telephone_Q1 
+synopsis_Q1 :_Q1 warped_Q1 media_Q1 tycoon_Q1 elliot_Q1 carver_Q1 (_Q1 jonathan_Q1 pryce_Q1 )_Q1 plots_Q1 to_Q1 start_Q1 a_Q1 war_Q1 between_Q1 britain_Q1 and_Q1 china_Q1 in_Q1 order_Q1 to_Q1 boost_Q1 ratings_Q1 by_Q1 using_Q1 a_Q1 'stealth_Q1 ship'_Q1 to_Q1 fire_Q1 a_Q1 captured_Q1 british_Q1 missile_Q1 at_Q1 the_Q1 city_Q1 of_Q1 beijing_Q1 ._Q1 
+super-agent_Q1 james_Q1 bond_Q1 (_Q1 pierce_Q1 brosnan_Q1 )_Q1 uses_Q1 trick_Q1 gadgets_Q1 ,_Q1 pluck_Q1 ,_Q1 and_Q1 charm_Q1 in_Q1 order_Q1 to_Q1 foil_Q1 carver's_Q1 scheme_Q1 ._Q1 
+this_Q1 time_Q1 bond_Q1 teams_Q1 up_Q1 with_Q1 top_Q1 female_Q1 agent_Q1 wai_Q1 lin_Q1 from_Q1 china_Q1 (_Q1 michelle_Q1 yeoh_Q1 )_Q1 ._Q1 
+the_Q1 film_Q1 contains_Q1 fights_Q1 ,_Q1 chases_Q1 ,_Q1 gadgets_Q1 ,_Q1 and_Q1 comedic_Q1 moments_Q1 ._Q1 
+opinion_Q1 :_Q1 it_Q1 does_Q1 not_Q1 have_Q1 a_Q1 casino_Q1 scene_Q1 or_Q1 a_Q1 ski_Q1 scene_Q1 ,_Q1 but_Q1 tomorrow_Q1 never_Q1 dies_Q1 is_Q1 nevertheless_Q1 a_Q1 solid_Q1 ,_Q1 enjoyable_Q1 bond_Q1 movie_Q1 ._Q1 
+it_Q1 neither_Q1 stands_Q1 out_Q1 nor_Q1 disappoints_Q1 ._Q1 
+in_Q1 old_Q1 bond_Q1 movies_Q1 bond_Q1 sometimes_Q1 teamed_Q1 up_Q1 with_Q1 american_Q1 cia_Q1 agent_Q1 felix_Q1 leiter_Q1 ._Q1 
+tomorrow_Q1 never_Q1 dies_Q1 introduces_Q1 a_Q1 new_Q1 character_Q1 in_Q1 the_Q1 form_Q23 of_Q23 chinese_Q23 agent_Q23 wai_Q23 lin_Q23 ._Q23 
+like_Q23 leiter's_Q23 character_Q23 ,_Q23 wai_Q23 lin_Q23 would_Q23 be_Q23 a_Q23 sure_Q23 bet_Q23 for_Q23 a_Q23 cameo_Q23 in_Q23 a_Q23 later_Q23 bond_Q23 movie_Q23 ._Q23 
+stars_Q23 :_Q23 michelle_Q23 yeoh_Q23 was_Q23 born_Q23 a_Q23 leo_Q23 in_Q23 the_Q23 western_Q23 zodiac_Q23 in_Q23 the_Q23 year_Q23 of_Q23 the_Q23 tiger_Q23 on_Q23 the_Q23 asian_Q23 astrology_Q23 calendar_Q23 ._Q23 
+i_Q23 dont_Q23 believe_Q23 in_Q23 horoscopes_Q23 ._Q23 
+but_Q23 at_Q23 an_Q23 airport_Q23 i_Q23 once_Q23 browsed_Q23 an_Q23 astrology_Q23 book_Q23 with_Q23 a_Q23 section_Q23 on_Q23 leo_Q23 tigers_Q23 (_Q23 lts_Q23 )_Q23 ._Q23 
+_Q23 "_Q23 leo_Q23 tigers_Q23 prefer_Q23 enough_Q23 solitude_Q23 to_Q23 grow_Q23 at_Q23 their_Q23 own_Q23 pace_Q23 ._Q23 
+lts_Q23 are_Q23 unbelievably_Q23 courageous_Q23 when_Q23 facing_Q23 adversity_Q23 ._Q23 
+the_Q23 lt_Q23 is_Q23 also_Q23 classy_Q23 ,_Q23 and_Q23 has_Q23 an_Q23 excellent_Q23 sense_Q23 of_Q23 refinement_Q23 ,_Q23 but_Q23 she_Q23 sees_Q23 herself_Q23 as_Q23 an_Q23 adventurer_Q23 ,_Q23 and_Q23 prefers_Q23 freedom_Q23 of_Q23 movement_Q23 rather_Q23 than_Q23 flashy_Q23 status_Q23 symbols_Q23 ._Q23 
+this_Q23 person_Q23 loves_Q23 family_Q23 and_Q23 friends_Q23 with_Q23 a_Q23 fierce_Q23 loyalty_Q23 ._Q23 
+she_Q23 delights_Q23 in_Q23 siblings_Q23 ,_Q23 nephews_Q23 ,_Q23 nieces_Q23 and_Q23 extended_Q23 family_Q23 -_Q23 -_Q23 but_Q23 she_Q23 must_Q23 have_Q23 her_Q23 personal_Q23 freedom_Q23 to_Q23 come_Q23 and_Q23 go_Q23 as_Q23 she_Q23 pleases_Q23 ._Q23 
+sometimes_Q23 annoyance_Q23 at_Q23 injustice_Q23 drives_Q23 her_Q23 to_Q23 take_Q23 up_Q23 one_Q23 or_Q23 two_Q23 causes_Q23 ._Q23 
+in_Q23 love_Q23 life_Q23 ,_Q23 the_Q23 lt_Q23 has_Q23 an_Q23 unfortunate_Q23 mental_Q23 block_Q23 against_Q23 committing_Q23 to_Q23 any_Q23 partner_Q23 who_Q23 is_Q23 less_Q23 powerful_Q23 than_Q23 she_Q23 ._Q23 "_Q23 
+in_Q23 real_Q23 life_Q23 ,_Q23 michelle_Q23 yeoh_Q23 is_Q23 asia's_Q23 top_Q23 female_Q23 star_Q23 ._Q23 
+like_Q23 jackie_Q23 chan_Q23 ,_Q23 she_Q23 does_Q23 her_Q23 own_Q23 stunts_Q23 ._Q23 
+she_Q23 was_Q23 born_Q23 in_Q23 malaysia_Q23 -_Q23 -_Q23 a_Q23 country_Q23 of_Q23 many_Q23 languages_Q23 -_Q23 -_Q23 and_Q23 her_Q23 primary_Q23 language_Q23 (_Q23 the_Q23 language_Q23 she_Q23 speaks_Q23 in_Q23 her_Q23 sleep_Q23 )_Q23 is_Q23 english_Q23 ._Q23 
+she_Q23 was_Q23 taught_Q23 malay_Q23 in_Q23 school_Q23 ,_Q23 and_Q23 learned_Q23 cantonese_Q23 from_Q23 bilingual_Q23 parents_Q23 ._Q23 
+as_Q23 an_Q23 athlete_Q23 michelle_Q23 represented_Q23 malaysia_Q23 internationally_Q23 ._Q23 
+she_Q23 enjoyed_Q23 squash_Q23 ,_Q23 diving_Q23 ,_Q23 swimming_Q23 ,_Q23 and_Q23 rugby_Q23 ._Q23 
+she_Q23 studied_Q23 ballet_Q23 at_Q23 the_Q23 royal_Q23 academy_Q23 of_Q23 dance_Q23 in_Q23 london_Q23 ,_Q23 but_Q23 switched_Q23 to_Q23 drama_Q23 after_Q23 a_Q23 spinal_Q23 injury_Q23 ._Q23 
+in_Q23 1983_Q23 she_Q23 won_Q23 the_Q23 miss_Q23 malaysia_Q23 pageant_Q23 -_Q23 -_Q23 without_Q23 really_Q23 intending_Q23 to_Q23 ,_Q23 since_Q23 a_Q23 family_Q4 member_Q4 had_Q4 entered_Q4 her_Q4 in_Q4 the_Q4 contest_Q4 without_Q4 her_Q4 knowledge_Q4 ._Q4 
+notoriety_Q4 from_Q4 the_Q4 contest_Q4 led_Q4 eventually_Q4 to_Q4 a_Q4 movie_Q4 career_Q4 as_Q4 an_Q4 action_Q4 heroine_Q4 ._Q4 
+michelle_Q4 has_Q4 survived_Q4 a_Q4 divorce_Q4 with_Q4 asian_Q4 retail_Q4 tycoon_Q4 dickson_Q4 poon_Q4 ;_Q4 a_Q4 nearly_Q4 fatal_Q4 stunt_Q4 accident_Q4 falling_Q4 from_Q4 a_Q4 freeway_Q4 overpass_Q4 which_Q4 put_Q4 her_Q4 in_Q4 the_Q4 hospital_Q4 for_Q4 three_Q4 months_Q4 ,_Q4 and_Q4 ;_Q4 a_Q4 retirement_Q4 from_Q4 the_Q4 movies_Q4 ._Q4 
+her_Q4 comeback_Q4 from_Q4 retirement_Q4 ,_Q4 supercop_Q4 (_Q4 1992_Q4 )_Q4 became_Q4 the_Q4 top_Q4 grossing_Q4 film_Q4 in_Q4 asia_Q4 that_Q4 year_Q4 ._Q4 
+it_Q4 is_Q4 not_Q4 clear_Q4 what_Q4 michelles_Q4 martial_Q4 arts_Q4 style_Q4 is_Q4 ,_Q4 but_Q4 it_Q4 may_Q4 be_Q4 a_Q4 theatrical_Q4 version_Q4 of_Q4 wing_Q4 chun_Q4 ._Q4 
+of_Q4 her_Q4 character_Q4 wai_Q4 lin_Q4 in_Q4 tomorrow_Q4 never_Q4 dies_Q4 ,_Q4 michelle_Q4 says_Q4 ,_Q4 "_Q4 wai_Q4 lin_Q4 is_Q4 the_Q4 first_Q4 bond_Q4 girl_Q4 who_Q4 is_Q4 on_Q4 a_Q4 par_Q4 with_Q4 bond_Q4 ,_Q4 someone_Q4 who_Q4 can_Q4 match_Q4 up_Q4 with_Q4 him_Q4 mentally_Q4 and_Q4 physically_Q4 ._Q4 "_Q4 
+my_Q4 own_Q4 opinion_Q4 is_Q4 that_Q4 casting_Q4 michelle_Q4 yeoh_Q4 as_Q4 agent_Q4 wai_Q4 lin_Q4 was_Q4 an_Q4 excellent_Q4 choice_Q4 ._Q4 
+_Q4 

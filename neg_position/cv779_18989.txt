@@ -1,0 +1,11 @@
+9_Q1 :_Q1 its_Q1 pathetic_Q1 attempt_Q1 at_Q1 "_Q1 improving_Q1 "_Q1 on_Q1 a_Q1 shakespeare_Q1 classic_Q1 ._Q1 
+8_Q1 :_Q1 its_Q1 just_Q1 another_Q1 piece_Q1 of_Q1 teen_Q1 fluff_Q1 ._Q23 
+7_Q23 :_Q23 kids_Q23 in_Q23 high_Q23 school_Q23 are_Q23 not_Q23 that_Q23 witty_Q23 ._Q23 
+6_Q23 :_Q23 the_Q23 wittiness_Q23 is_Q23 not_Q23 witty_Q23 enough_Q23 ._Q23 
+5_Q23 :_Q23 the_Q23 comedy_Q23 is_Q23 not_Q23 funny_Q23 ._Q23 
+4_Q23 :_Q23 the_Q23 acting_Q23 is_Q23 poor_Q23 ._Q23 
+3_Q23 :_Q23 the_Q23 music_Q23 ._Q23 
+2_Q23 :_Q23 the_Q23 poster_Q23 ._Q23 
+1_Q23 :_Q23 its_Q4 worse_Q4 than_Q4 she's_Q4 all_Q4 that_Q4 !_Q4 
+10=a_Q4 classic_Q4 9=borderline_Q4 classic_Q4 8=excellent_Q4 7=good_Q4 6=better_Q4 than_Q4 average_Q4 5=average_Q4 4=disappointing_Q4 3=poor_Q4 2=awful_Q4 1=a_Q4 crap_Q4 classic_Q4 
+_Q4 

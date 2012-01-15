@@ -1,0 +1,14 @@
+interesting_JJ
+funny_JJ
+quick_JJ
+quick_JJ
+lemmon_JJ
+new_JJ
+positive_JJ
+dead_JJ
+exceptional_JJ
+lemmon_JJ
+good_JJ
+other_JJ
+old_JJ
+distinquished_JJ

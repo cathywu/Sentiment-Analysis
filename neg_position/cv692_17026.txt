@@ -1,0 +1,26 @@
+attention_Q1 moviegoers_Q1 :_Q1 you_Q1 are_Q1 about_Q1 to_Q1 enter_Q1 a_Q1 meaning-free_Q1 zone_Q1 ._Q1 
+should_Q1 the_Q1 sound_Q1 system_Q1 malfunction_Q1 during_Q1 your_Q1 viewing_Q1 of_Q1 200_Q1 cigarettes_Q1 ,_Q1 do_Q1 not_Q1 panic_Q1 ._Q1 
+the_Q1 film_Q1 will_Q1 work_Q1 just_Q1 as_Q1 well_Q1 as_Q1 a_Q1 silent_Q1 movie_Q1 ._Q1 
+chronicling_Q1 the_Q1 meaningless_Q1 lives_Q1 of_Q1 vain_Q1 ,_Q1 yuppie_Q1 types_Q1 ,_Q1 the_Q1 movie_Q1 covers_Q1 the_Q1 same_Q1 ground_Q1 as_Q1 the_Q1 wilt_Q1 stillman_Q1 films_Q1 (_Q1 last_Q1 days_Q1 of_Q1 disco_Q1 ,_Q1 barcelona_Q1 and_Q1 metropolitan_Q1 )_Q1 but_Q1 without_Q1 any_Q1 of_Q1 his_Q1 acerbic_Q1 wit_Q1 and_Q1 the_Q1 inviting_Q1 style_Q1 of_Q1 his_Q1 writing_Q1 ._Q1 
+first-time_Q1 writer_Q1 shana_Q1 larsen_Q1 makes_Q1 the_Q1 mistake_Q1 of_Q1 creating_Q1 a_Q1 couple_Q1 of_Q1 dozen_Q1 characters_Q1 and_Q1 not_Q1 giving_Q1 any_Q1 of_Q1 them_Q1 any_Q1 depth_Q1 ._Q1 
+there_Q1 isn't_Q1 one_Q1 of_Q1 these_Q1 characters_Q1 worth_Q1 caring_Q1 about_Q1 ._Q1 
+the_Q1 movie_Q1 features_Q1 such_Q1 a_Q1 cornucopia_Q1 of_Q1 hot_Q1 young_Q1 stars_Q1 that_Q1 it_Q1 looks_Q1 like_Q1 a_Q1 celluloid_Q1 version_Q1 of_Q1 "_Q1 people_Q1 magazine_Q1 ._Q1 "_Q1 
+among_Q1 others_Q1 ,_Q1 the_Q1 movie_Q1 features_Q23 :_Q23 ben_Q23 affleck_Q23 ,_Q23 casey_Q23 affleck_Q23 ,_Q23 david_Q23 chappelle_Q23 ,_Q23 janeane_Q23 garofalo_Q23 ,_Q23 gaby_Q23 hoffmann_Q23 ,_Q23 catherine_Q23 kellner_Q23 ,_Q23 courtney_Q23 love_Q23 ,_Q23 jay_Q23 mohr_Q23 ,_Q23 martha_Q23 plimpton_Q23 ,_Q23 christina_Q23 ricci_Q23 and_Q23 paul_Q23 rudd_Q23 ._Q23 
+and_Q23 unlike_Q23 people_Q23 magazine_Q23 ,_Q23 the_Q23 people_Q23 speak_Q23 ,_Q23 not_Q23 that_Q23 they_Q23 have_Q23 anything_Q23 interesting_Q23 to_Q23 say_Q23 ._Q23 
+it's_Q23 new_Q23 year's_Q23 eve_Q23 in_Q23 1981_Q23 ,_Q23 and_Q23 monica_Q23 (_Q23 martha_Q23 plimpton_Q23 )_Q23 is_Q23 preparing_Q23 her_Q23 big_Q23 party_Q23 ._Q23 
+structured_Q23 as_Q23 a_Q23 series_Q23 of_Q23 relatively_Q23 unrelated_Q23 stories_Q23 about_Q23 her_Q23 guests_Q23 on_Q23 the_Q23 way_Q23 to_Q23 the_Q23 party_Q23 ,_Q23 director_Q23 risa_Q23 bramon_Q23 garcia_Q23 flits_Q23 back_Q23 and_Q23 forth_Q23 among_Q23 her_Q23 stars_Q23 ._Q23 
+monica's_Q23 apartment_Q23 is_Q23 in_Q23 "_Q23 noho_Q23 ,_Q23 "_Q23 an_Q23 area_Q23 that_Q23 one_Q23 of_Q23 the_Q23 guests_Q23 describes_Q23 as_Q23 "_Q23 so_Q23 cool_Q23 ,_Q23 all_Q23 of_Q23 the_Q23 poor_Q23 people_Q23 live_Q23 there_Q23 ._Q23 "_Q23 
+typical_Q23 of_Q23 the_Q23 shallow_Q23 couples_Q23 in_Q23 the_Q23 movie_Q23 are_Q23 kevin_Q23 (_Q23 paul_Q23 rudd_Q23 )_Q23 and_Q23 his_Q23 friend_Q23 and_Q23 would-be_Q23 sexual_Q23 partner_Q23 lucy_Q23 (_Q23 courtney_Q23 love_Q23 )_Q23 ._Q23 
+they_Q23 argue_Q23 about_Q23 whether_Q23 lucy_Q23 is_Q23 a_Q23 slut_Q23 or_Q23 not_Q23 since_Q23 she_Q23 sleeps_Q23 with_Q23 everyone_Q23 ,_Q23 except_Q23 him_Q23 ,_Q23 of_Q23 course_Q23 ._Q23 
+she_Q23 dares_Q23 him_Q23 to_Q23 go_Q23 immediately_Q23 to_Q23 a_Q23 bathroom_Q23 stall_Q23 and_Q23 have_Q23 sex_Q23 with_Q23 her_Q23 ,_Q23 which_Q23 turns_Q23 out_Q23 to_Q23 be_Q23 neither_Q23 erotic_Q23 ,_Q23 funny_Q23 or_Q23 successful_Q23 --_Q23 rather_Q23 like_Q23 the_Q23 rest_Q23 of_Q23 the_Q23 story_Q23 ._Q23 
+the_Q23 movie_Q23 gets_Q23 its_Q23 title_Q23 from_Q23 the_Q23 carton_Q23 of_Q23 cigarettes_Q23 that_Q23 lucy_Q23 gives_Q23 kevin_Q23 for_Q23 his_Q23 new_Q23 year's_Q23 eve_Q23 birthday_Q23 ._Q23 
+_Q23 "_Q23 cigarettes_Q23 are_Q23 a_Q23 shield_Q23 against_Q23 emotional_Q23 interaction_Q23 with_Q23 other_Q23 people_Q23 ,_Q23 "_Q23 kevin_Q23 later_Q23 tells_Q23 lucy_Q23 in_Q23 a_Q23 snippet_Q23 of_Q23 dialog_Q23 that_Q23 sounds_Q23 profound_Q23 only_Q23 outside_Q23 the_Q23 context_Q23 of_Q23 the_Q23 movie_Q23 ._Q23 
+another_Q23 character_Q23 ,_Q23 played_Q23 by_Q23 jay_Q23 mohr_Q23 ,_Q23 has_Q23 a_Q23 problem_Q23 with_Q23 his_Q23 sexual_Q23 triumphs_Q23 ._Q23 
+every_Q23 woman_Q23 he_Q23 beds_Q23 falls_Q23 deeply_Q23 in_Q23 love_Q23 with_Q4 him_Q4 by_Q4 the_Q4 next_Q4 morning_Q4 ._Q4 
+when_Q4 his_Q4 latest_Q4 conquest_Q4 tells_Q4 him_Q4 of_Q4 her_Q4 affection_Q4 for_Q4 him_Q4 ,_Q4 his_Q4 response_Q4 is_Q4 "_Q4 i_Q4 like_Q4 a_Q4 lot_Q4 of_Q4 people_Q4 ._Q4 "_Q4 
+as_Q4 the_Q4 movie_Q4 finally_Q4 draws_Q4 to_Q4 a_Q4 close_Q4 ,_Q4 the_Q4 characters_Q4 awaken_Q4 from_Q4 their_Q4 post-party_Q4 game_Q4 of_Q4 musical_Q4 beds_Q4 ._Q4 
+some_Q4 have_Q4 passed_Q4 out_Q4 early_Q4 from_Q4 alcohol_Q4 abuse_Q4 and_Q4 remember_Q4 little_Q4 ,_Q4 while_Q4 others_Q4 actually_Q4 have_Q4 some_Q4 clue_Q4 as_Q4 to_Q4 what_Q4 happened_Q4 ._Q4 
+the_Q4 movie_Q4 itself_Q4 is_Q4 so_Q4 forgettable_Q4 that_Q4 by_Q4 the_Q4 time_Q4 you_Q4 reach_Q4 your_Q4 car_Q4 in_Q4 the_Q4 parking_Q4 lot_Q4 ,_Q4 all_Q4 trace_Q4 of_Q4 the_Q4 film_Q4 will_Q4 have_Q4 vanished_Q4 from_Q4 your_Q4 mind_Q4 ,_Q4 which_Q4 is_Q4 probably_Q4 the_Q4 best_Q4 thing_Q4 that_Q4 can_Q4 be_Q4 said_Q4 about_Q4 the_Q4 movie_Q4 ._Q4 
+200_Q4 cigarettes_Q4 runs_Q4 1_Q4 :_Q4 40_Q4 ._Q4 
+it_Q4 is_Q4 rated_Q4 r_Q4 for_Q4 profanity_Q4 ,_Q4 sex_Q4 and_Q4 one_Q4 dope_Q4 smoking_Q4 scene_Q4 and_Q4 would_Q4 be_Q4 acceptable_Q4 for_Q4 older_Q4 teenagers_Q4 ._Q4 
+_Q4 

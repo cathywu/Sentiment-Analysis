@@ -1,0 +1,16 @@
+synopsis_Q1 :_Q1 bobby_Q1 garfield_Q1 (_Q1 yelchin_Q1 )_Q1 lives_Q1 in_Q1 a_Q1 small_Q1 town_Q1 with_Q1 his_Q1 mirthless_Q1 widowed_Q1 mother_Q1 (_Q1 hope_Q1 davis_Q1 )_Q1 ._Q1 
+bobby's_Q1 world_Q1 revolves_Q1 around_Q1 his_Q1 friends_Q1 ,_Q1 especially_Q1 the_Q1 spritely_Q1 carol_Q1 (_Q1 boorem_Q1 )_Q1 ._Q1 
+then_Q1 one_Q1 day_Q1 ,_Q1 a_Q1 new_Q1 boarder_Q1 arrives_Q1 at_Q1 bobby's_Q1 house_Q1 ._Q1 
+ted_Q1 brautigan_Q1 (_Q1 hopkins_Q1 )_Q1 is_Q1 an_Q1 enigmatic_Q1 man_Q1 to_Q1 whom_Q1 bobby_Q1 takes_Q1 an_Q1 immediate_Q1 liking_Q1 ._Q1 
+as_Q1 the_Q1 bond_Q1 between_Q1 bobby_Q1 and_Q1 ted_Q1 deepens_Q1 ,_Q1 bobby_Q1 becomes_Q1 privy_Q1 to_Q1 ted's_Q1 great_Q1 secret_Q1 ,_Q1 an_Q1 event_Q1 which_Q1 will_Q1 change_Q1 both_Q1 of_Q1 their_Q1 lives_Q1 forever_Q23 ._Q23 
+review_Q23 :_Q23 a_Q23 small_Q23 but_Q23 enchanting_Q23 movie_Q23 ,_Q23 "_Q23 hearts_Q23 in_Q23 atlantis_Q23 "_Q23 easily_Q23 recalls_Q23 another_Q23 king-inspired_Q23 coming-of-age_Q23 film_Q23 ,_Q23 "_Q23 stand_Q23 by_Q23 me_Q23 "_Q23 ,_Q23 both_Q23 in_Q23 terms_Q23 of_Q23 its_Q23 setting_Q23 and_Q23 the_Q23 sentiment_Q23 it_Q23 conveys_Q23 ._Q23 
+_Q23 "_Q23 hearts_Q23 "_Q23 is_Q23 a_Q23 tribute_Q23 to_Q23 the_Q23 magic_Q23 of_Q23 childhood_Q23 ,_Q23 to_Q23 those_Q23 summers_Q23 when_Q23 the_Q23 days_Q23 seem_Q23 neverending_Q23 ,_Q23 and_Q23 nothing_Q23 means_Q23 more_Q23 than_Q23 your_Q23 closest_Q23 friends_Q23 ._Q23 
+unlike_Q23 "_Q23 stand_Q23 by_Q23 me_Q23 "_Q23 ,_Q23 there_Q23 is_Q23 a_Q23 supernatural_Q23 element_Q23 to_Q23 "_Q23 hearts_Q23 "_Q23 ,_Q23 but_Q23 although_Q23 it_Q23 is_Q23 key_Q23 to_Q23 the_Q23 plot_Q23 ,_Q23 it_Q23 is_Q23 not_Q23 prominent_Q23 ._Q23 
+like_Q23 "_Q23 stand_Q23 by_Q23 me_Q23 "_Q23 ,_Q23 this_Q23 is_Q23 a_Q23 mostly_Q23 character-driven_Q23 film_Q23 ,_Q23 and_Q23 as_Q23 such_Q23 it_Q23 benefits_Q23 greatly_Q23 from_Q23 superb_Q23 casting_Q23 ._Q23 
+yelchin_Q23 is_Q23 very_Q23 good_Q23 as_Q23 bobby_Q23 ,_Q23 finding_Q23 a_Q23 good_Q23 mix_Q23 of_Q23 innocence_Q23 and_Q23 resignation_Q23 ._Q23 
+more_Q23 splendid_Q23 still_Q23 is_Q23 boorem_Q23 ,_Q23 whom_Q23 i_Q23 praised_Q23 highly_Q23 for_Q23 her_Q23 work_Q23 in_Q23 "_Q23 along_Q23 came_Q23 a_Q23 spider_Q23 "_Q23 and_Q23 who_Q23 is_Q23 simply_Q23 radiant_Q23 here_Q23 as_Q23 carol_Q23 ._Q23 
+and_Q23 then_Q23 there_Q23 is_Q23 hopkins_Q23 ,_Q23 who_Q23 despite_Q23 playing_Q23 such_Q23 a_Q23 quiet_Q23 ,_Q23 introspective_Q4 character_Q4 as_Q4 ted_Q4 ,_Q4 nonetheless_Q4 commands_Q4 our_Q4 attention_Q4 every_Q4 time_Q4 he_Q4 is_Q4 onscreen_Q4 ._Q4 
+less_Q4 successful_Q4 is_Q4 davis_Q4 ,_Q4 whose_Q4 strident_Q4 elizabeth_Q4 comes_Q4 across_Q4 as_Q4 overly_Q4 cartoonish_Q4 ._Q4 
+i_Q4 also_Q4 found_Q4 it_Q4 odd_Q4 that_Q4 bobby_Q4 and_Q4 carol's_Q4 other_Q4 friend_Q4 ,_Q4 sully_Q4 (_Q4 whose_Q4 death_Q4 as_Q4 an_Q4 adult_Q4 sets_Q4 up_Q4 the_Q4 movie's_Q4 flashback_Q4 framing_Q4 device_Q4 )_Q4 ,_Q4 is_Q4 paid_Q4 virtually_Q4 no_Q4 attention_Q4 ._Q4 
+but_Q4 hicks'_Q4 direction_Q4 is_Q4 lovely_Q4 without_Q4 being_Q4 cloying_Q4 ,_Q4 and_Q4 despite_Q4 the_Q4 movie's_Q4 general_Q4 lack_Q4 of_Q4 incident_Q4 ,_Q4 it_Q4 never_Q4 ceases_Q4 to_Q4 weave_Q4 its_Q4 spell_Q4 over_Q4 the_Q4 audience_Q4 ._Q4 
+_Q4 

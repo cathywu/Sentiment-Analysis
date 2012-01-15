@@ -1,0 +1,68 @@
+do_Q1 film_Q1 critics_Q1 have_Q1 morals_Q1 ?_Q1 
+are_Q1 there_Q1 any_Q1 unwritten_Q1 laws_Q1 an_Q1 ethical_Q1 movie_Q1 critic_Q1 would_Q1 or_Q1 should_Q1 follow_Q1 ?_Q1 
+naturally_Q1 we_Q1 don't_Q1 want_Q1 to_Q1 go_Q1 into_Q1 a_Q1 film_Q1 with_Q1 any_Q1 preconceived_Q1 notions_Q1 ,_Q1 which_Q1 is_Q1 pretty_Q1 tough_Q1 but_Q1 something_Q1 we_Q1 all_Q1 have_Q1 to_Q1 accomplish_Q1 ._Q1 
+secondly_Q1 ,_Q1 and_Q1 along_Q1 the_Q1 same_Q1 line_Q1 ,_Q1 we_Q1 can't_Q1 prejudge_Q1 a_Q1 film_Q1 because_Q1 of_Q1 it's_Q1 stars_Q1 ,_Q1 director_Q1 ,_Q1 etc_Q1 ._Q1 the_Q1 difference_Q1 ?_Q1 
+well_Q1 ,_Q1 in_Q1 the_Q1 first_Q1 one_Q1 ,_Q1 we'd_Q1 go_Q1 into_Q1 a_Q1 film_Q1 thinking_Q1 it's_Q1 going_Q1 to_Q1 be_Q1 dumb_Q1 or_Q1 it's_Q1 going_Q1 to_Q1 be_Q1 good_Q1 ,_Q1 and_Q1 that_Q1 would_Q1 affect_Q1 our_Q1 viewing_Q1 (_Q1 that_Q1 movie_Q1 sounds_Q1 and_Q1 looks_Q1 dumb_Q1 ,_Q1 so_Q1 i'm_Q1 not_Q1 expecting_Q1 much_Q1 )_Q1 ._Q1 
+on_Q1 the_Q1 second_Q1 hand_Q1 ,_Q1 we're_Q1 simply_Q1 assuming_Q1 it_Q1 will_Q1 be_Q1 bad_Q1 or_Q1 good_Q1 because_Q1 of_Q1 a_Q1 personal_Q1 "_Q1 grudge_Q1 "_Q1 against_Q1 the_Q1 film_Q1 company_Q1 (_Q1 it's_Q1 made_Q1 by_Q1 disney_Q1 ?_Q1 
+oh_Q1 ,_Q1 it's_Q1 just_Q1 a_Q1 merchandising_Q1 ploy_Q1 then_Q1 )_Q1 ,_Q1 the_Q1 actors_Q1 (_Q1 jim_Q1 carrey's_Q1 in_Q1 it_Q1 ?_Q1 
+it's_Q1 gonna_Q1 stink_Q1 !_Q1 )_Q1 ,_Q1 or_Q1 the_Q1 director_Q1 (_Q1 who_Q1 ?_Q1 
+can't_Q1 be_Q1 that_Q1 good_Q1 )_Q1 ._Q1 
+this_Q1 is_Q1 more_Q1 of_Q1 a_Q1 biased_Q1 viewpoint_Q1 as_Q1 opposed_Q1 to_Q1 a_Q1 first_Q1 impression_Q1 viewpoint_Q1 ._Q1 
+make_Q1 sense_Q1 ?_Q1 
+ok_Q1 ,_Q1 but_Q1 what_Q1 about_Q1 comparing_Q1 ?_Q1 
+isn't_Q1 that_Q1 kind_Q1 of_Q1 along_Q1 the_Q1 same_Q1 lines_Q1 ?_Q1 
+when_Q1 we_Q1 compare_Q1 a_Q1 certain_Q1 actor_Q1 or_Q1 director_Q1 or_Q1 even_Q1 composer's_Q1 credibility_Q1 in_Q1 one_Q1 film_Q1 to_Q1 another_Q1 they_Q1 were_Q1 involved_Q1 in_Q1 ,_Q1 is_Q1 that_Q1 really_Q1 fair_Q1 ?_Q1 
+sure_Q1 ,_Q1 in_Q1 sequels_Q1 you_Q1 can_Q1 expect_Q1 and_Q1 accept_Q1 comparisons_Q1 a_Q1 lot_Q1 more_Q1 ,_Q1 but_Q1 what_Q1 about_Q1 jackie_Q1 brown_Q1 ,_Q1 for_Q1 example_Q1 ?_Q1 
+is_Q1 it_Q1 fair_Q1 for_Q1 me_Q1 to_Q1 take_Q1 the_Q1 review_Q1 and_Q1 turn_Q1 it_Q1 into_Q1 a_Q1 comparison_Q1 of_Q1 pulp_Q1 fiction_Q1 ,_Q1 just_Q1 because_Q1 quentin_Q1 tarantino_Q1 directed_Q1 and_Q1 wrote_Q1 the_Q1 screenplay_Q1 for_Q1 both_Q1 ?_Q1 
+i_Q1 think_Q1 it_Q1 is_Q1 ,_Q1 and_Q1 i'll_Q1 tell_Q1 you_Q1 why_Q1 ._Q1 
+a_Q1 good_Q1 critic_Q1 should_Q1 be_Q1 able_Q1 to_Q1 view_Q1 the_Q1 film_Q1 from_Q1 the_Q1 "_Q1 average_Q1 joe_Q1 (_Q1 or_Q1 jane_Q1 )_Q1 "_Q1 viewpoint_Q1 ,_Q1 while_Q1 still_Q1 taking_Q1 into_Q1 account_Q1 the_Q1 artistic_Q1 integrity_Q1 behind_Q1 the_Q1 film_Q1 ._Q1 
+sometimes_Q1 that_Q1 can_Q1 be_Q1 tough_Q1 ._Q1 
+_Q1 "_Q1 the_Q1 acting_Q1 was_Q1 superb_Q1 ,_Q1 but_Q1 i_Q1 was_Q1 bored_Q1 "_Q1 or_Q1 "_Q1 i_Q1 loved_Q1 it_Q1 !_Q1 !_Q1 
+it_Q1 was_Q1 sooooo_Q1 cheezy_Q1 !_Q1 "_Q1 
+might_Q1 be_Q1 used_Q1 to_Q1 describe_Q1 a_Q1 film_Q1 ._Q1 
+these_Q1 are_Q1 contradictions_Q1 ,_Q1 and_Q1 a_Q1 critic_Q1 has_Q1 to_Q1 weigh_Q1 both_Q1 sides_Q1 and_Q23 come_Q23 to_Q23 a_Q23 suitable_Q23 balanced_Q23 critique_Q23 ._Q23 
+but_Q23 which_Q23 is_Q23 more_Q23 important_Q23 ?_Q23 
+and_Q23 which_Q23 is_Q23 better_Q23 ?_Q23 
+an_Q23 extremely_Q23 well_Q23 shot_Q23 and_Q23 acted_Q23 film_Q23 that_Q23 is_Q23 boring_Q23 ,_Q23 or_Q23 a_Q23 really_Q23 amateurish_Q23 film_Q23 that_Q23 you_Q23 wanna_Q23 go_Q23 back_Q23 to_Q23 again_Q23 and_Q23 again_Q23 ?_Q23 
+getting_Q23 back_Q23 to_Q23 the_Q23 point_Q23 ,_Q23 my_Q23 philosophy_Q23 on_Q23 comparing_Q23 films_Q23 being_Q23 fair_Q23 works_Q23 because_Q23 we're_Q23 reflecting_Q23 what_Q23 the_Q23 public_Q23 wants_Q23 to_Q23 know_Q23 anyway_Q23 ._Q23 
+every_Q23 average_Q23 person_Q23 out_Q23 there_Q23 who's_Q23 interested_Q23 in_Q23 this_Q23 film_Q23 is_Q23 likely_Q23 to_Q23 ask_Q23 "_Q23 how_Q23 does_Q23 it_Q23 compare_Q23 to_Q23 pulp_Q23 fiction_Q23 ?_Q23 "_Q23 
+and_Q23 so_Q23 ,_Q23 as_Q23 a_Q23 critic_Q23 ,_Q23 i'm_Q23 already_Q23 responsible_Q23 to_Q23 ask_Q23 that_Q23 same_Q23 question_Q23 ._Q23 
+jackie_Q23 brown_Q23 stars_Q23 pam_Q23 grier_Q23 ,_Q23 the_Q23 "_Q23 blaxploitation_Q23 "_Q23 heroine_Q23 from_Q23 the_Q23 1970's_Q23 ,_Q23 who_Q23 is_Q23 likely_Q23 to_Q23 make_Q23 a_Q23 big_Q23 comeback_Q23 thanks_Q23 to_Q23 her_Q23 role_Q23 as_Q23 the_Q23 title_Q23 character_Q23 ._Q23 
+tarantino's_Q23 pulp_Q23 fiction_Q23 is_Q23 in_Q23 big_Q23 part_Q23 responsible_Q23 for_Q23 john_Q23 travolta's_Q23 sudden_Q23 revival_Q23 in_Q23 the_Q23 movie_Q23 industry_Q23 ,_Q23 and_Q23 with_Q23 talks_Q23 of_Q23 an_Q23 oscar_Q23 nomination_Q23 ,_Q23 the_Q23 same_Q23 is_Q23 likely_Q23 to_Q23 happen_Q23 for_Q23 grier_Q23 ._Q23 
+_Q23 (_Q23 we've_Q23 made_Q23 it_Q23 thru_Q23 comparison_Q23 #1_Q23 !_Q23 )_Q23 jackie_Q23 is_Q23 a_Q23 44-year-old_Q23 airline_Q23 stewardess_Q23 who_Q23 brings_Q23 in_Q23 extra_Q23 cash_Q23 ,_Q23 and_Q23 probably_Q23 her_Q23 main_Q23 revenue_Q23 ,_Q23 by_Q23 smuggling_Q23 large_Q23 sums_Q23 of_Q23 money_Q23 into_Q23 the_Q23 united_Q23 states_Q23 for_Q23 ordell_Q23 robbie_Q23 (_Q23 pulp_Q23 fiction's_Q23 samuel_Q23 l_Q23 ._Q23 jackson_Q23 and_Q23 comparison_Q23 #2_Q23 )_Q23 ._Q23 
+ordell_Q23 is_Q23 in_Q23 the_Q23 illegal_Q23 firearms_Q23 business_Q23 and_Q23 has_Q23 enlisted_Q23 the_Q23 aid_Q23 of_Q23 louis_Q23 gara_Q23 (_Q23 robert_Q23 de_Q23 niro_Q23 )_Q23 ,_Q23 a_Q23 bank_Q23 robber_Q23 who_Q23 just_Q23 got_Q23 out_Q23 of_Q23 prison_Q23 after_Q23 serving_Q23 four_Q23 years_Q23 ,_Q23 to_Q23 help_Q23 him_Q23 accomplish_Q23 a_Q23 scheme_Q23 worth_Q23 a_Q23 half-_Q23 million_Q23 dollars_Q23 ._Q23 
+trouble_Q23 arises_Q23 when_Q23 jackie_Q23 is_Q23 stopped_Q23 by_Q23 atf_Q23 agent_Q23 ray_Q23 nicolet_Q23 (_Q23 michael_Q23 keaton_Q23 )_Q23 and_Q23 taken_Q23 into_Q23 custody_Q23 for_Q23 possession_Q23 of_Q23 narcotics_Q23 ,_Q23 as_Q23 well_Q23 as_Q23 having_Q23 more_Q23 money_Q23 than_Q23 is_Q23 allowed_Q23 in_Q23 an_Q23 airport_Q23 without_Q23 being_Q23 claimed_Q23 ._Q23 
+naturally_Q23 this_Q23 proves_Q23 an_Q23 obstacle_Q23 to_Q23 ordell's_Q23 plans_Q23 and_Q23 ,_Q23 not_Q23 as_Q23 friendly_Q23 intended_Q23 as_Q23 we'd_Q23 hope_Q23 ,_Q23 he_Q23 posts_Q23 jackie's_Q23 bail_Q23 after_Q23 she_Q23 is_Q23 put_Q23 behind_Q23 bars_Q23 ._Q23 
+the_Q23 thing_Q23 is_Q23 ,_Q23 ordell_Q23 is_Q23 in_Q23 this_Q23 for_Q23 no_Q23 one_Q23 more_Q23 than_Q23 himself_Q23 ,_Q23 and_Q23 as_Q23 we_Q23 learn_Q23 from_Q23 his_Q23 previous_Q23 actions_Q23 ,_Q23 he's_Q23 willing_Q23 to_Q23 kill_Q23 anyone_Q23 who_Q23 stands_Q23 in_Q23 the_Q23 way_Q23 ._Q23 
+jackie_Q23 finds_Q23 herself_Q23 in_Q23 a_Q23 tight_Q23 squeeze_Q23 ._Q23 
+ordell_Q23 won't_Q23 think_Q23 twice_Q23 about_Q23 taking_Q23 her_Q23 out_Q23 if_Q23 she_Q23 fails_Q23 to_Q23 help_Q23 him_Q23 as_Q23 she's_Q23 always_Q23 done_Q23 ,_Q23 yet_Q23 at_Q23 the_Q23 same_Q23 time_Q23 ,_Q23 a_Q23 compromise_Q23 with_Q23 the_Q23 authorities_Q23 would_Q23 be_Q23 in_Q23 order_Q23 if_Q23 evidence_Q23 against_Q23 ordell_Q23 was_Q23 provided_Q23 ._Q23 
+it_Q23 comes_Q23 down_Q23 to_Q23 a_Q23 simple_Q23 question_Q23 :_Q23 would_Q23 jackie_Q23 rather_Q23 face_Q23 ordell_Q23 or_Q23 prison_Q23 ?_Q23 
+what_Q23 ensues_Q23 is_Q23 a_Q23 rich_Q23 and_Q23 intriguing_Q23 example_Q23 of_Q23 storytelling_Q23 as_Q23 we_Q23 question_Q23 who_Q23 jackie_Q23 is_Q23 really_Q23 out_Q23 to_Q23 help_Q23 :_Q23 the_Q23 law_Q23 ,_Q23 ordell_Q23 ,_Q23 or_Q23 maybe_Q23 just_Q23 herself_Q23 ._Q23 
+coming_Q23 into_Q23 play_Q23 is_Q23 another_Q23 70's_Q23 veteran_Q23 ,_Q23 robert_Q23 forster_Q23 as_Q23 jackie's_Q23 bail_Q23 bondsmen_Q23 max_Q23 cherry_Q23 ._Q23 
+max's_Q23 obvious_Q23 fondness_Q23 for_Q23 jackie_Q23 will_Q23 become_Q23 a_Q23 major_Q23 benefactor_Q23 in_Q23 her_Q23 fight_Q23 to_Q23 beat_Q23 both_Q23 sides_Q23 of_Q23 the_Q23 system_Q23 ,_Q23 and_Q23 forster_Q23 plays_Q23 him_Q23 with_Q23 subtle_Q23 charm_Q23 that_Q23 adds_Q23 depth_Q23 to_Q23 unbrewed_Q23 romance_Q23 ._Q23 
+also_Q23 involved_Q23 is_Q23 ordell's_Q23 "_Q23 surfer_Q23 girl_Q23 "_Q23 girlfriend_Q23 melanie_Q23 (_Q23 bridget_Q23 fonda_Q23 )_Q23 ,_Q23 a_Q23 ditzy_Q23 sun-_Q23 bleached_Q23 babe_Q23 who_Q23 spends_Q23 her_Q23 time_Q23 watching_Q23 tv_Q23 with_Q23 a_Q23 bong_Q23 in_Q23 hand_Q23 ._Q23 
+fonda_Q23 does_Q23 the_Q23 best_Q23 she_Q23 can_Q23 with_Q23 an_Q23 essentially_Q23 thin_Q23 role_Q23 ,_Q23 but_Q23 there's_Q23 nothing_Q23 more_Q23 to_Q23 her_Q23 ,_Q23 and_Q23 therefore_Q23 ,_Q23 she_Q23 becomes_Q23 a_Q23 tossable_Q23 addition_Q23 to_Q23 an_Q23 otherwise_Q23 flourishing_Q23 bouquet_Q23 of_Q23 characters_Q23 ._Q23 
+de_Q23 niro_Q23 is_Q23 also_Q23 wasted_Q23 in_Q23 his_Q23 role_Q23 as_Q23 a_Q23 quiet_Q23 nobody_Q23 crook_Q23 out_Q23 to_Q23 score_Q23 a_Q23 few_Q23 bucks_Q23 for_Q23 himself_Q23 ._Q23 
+de_Q23 niro_Q23 is_Q23 a_Q23 brilliant_Q23 actor_Q23 ,_Q23 but_Q23 a_Q23 character_Q23 who_Q23 hardly_Q23 ever_Q23 speaks_Q23 doesn't_Q23 need_Q23 a_Q23 de_Q23 niro_Q23 to_Q23 play_Q23 him_Q23 ._Q23 
+compared_Q23 to_Q23 pulp_Q23 fiction_Q23 (_Q23 comparison_Q23 #3_Q23 )_Q23 ,_Q23 the_Q23 characters_Q23 in_Q23 jackie_Q23 brown_Q23 and_Q23 very_Q23 thin_Q23 and_Q23 replaceable_Q23 ._Q23 
+in_Q23 pulp_Q23 fiction_Q23 ,_Q23 even_Q23 the_Q23 small_Q23 ,_Q23 seemingly_Q23 irrelevant_Q23 characters_Q23 were_Q23 wonderful_Q23 ,_Q23 complete_Q23 ,_Q23 and_Q23 lifelike_Q23 ,_Q23 whereas_Q23 jackie_Q23 brown_Q23 has_Q23 such_Q23 common_Q23 figures_Q23 that_Q23 it_Q23 wouldn't_Q23 have_Q23 suffered_Q23 much_Q23 with_Q23 a_Q23 lesser_Q23 talented_Q23 cast_Q23 ,_Q23 the_Q23 exception_Q23 being_Q23 grier_Q23 ._Q23 
+tarantino_Q23 wrote_Q23 this_Q23 script_Q23 with_Q23 grier_Q23 specifically_Q23 in_Q23 mind_Q23 ,_Q23 so_Q23 to_Q23 say_Q23 that_Q23 she_Q23 is_Q23 made_Q23 for_Q23 this_Q23 role_Q23 is_Q23 a_Q23 reversed_Q23 truth_Q23 ._Q23 
+sadly_Q23 ,_Q23 grier_Q23 too_Q23 could_Q23 have_Q23 received_Q23 a_Q23 bit_Q23 more_Q23 attention_Q23 ,_Q23 especially_Q23 when_Q23 the_Q23 story_Q23 is_Q23 all_Q23 about_Q23 her_Q23 newly-jarred_Q23 perception_Q23 of_Q23 life_Q23 ._Q23 
+jackson_Q23 teams_Q23 up_Q23 with_Q23 tarantino_Q23 again_Q23 ,_Q23 but_Q23 the_Q23 chemical_Q23 reaction_Q23 isn't_Q23 as_Q23 awesome_Q23 as_Q23 the_Q23 first_Q23 time_Q23 ._Q23 
+jules_Q23 was_Q23 the_Q23 rambling_Q23 ,_Q23 bible-quoting_Q23 hitman_Q23 in_Q23 pulp_Q23 fiction_Q23 ,_Q23 and_Q23 jackson_Q23 is_Q23 the_Q23 only_Q23 person_Q23 who_Q4 could_Q4 have_Q4 pulled_Q4 it_Q4 off_Q4 ._Q4 
+and_Q4 although_Q4 jackson_Q4 is_Q4 really_Q4 ,_Q4 really_Q4 good_Q4 in_Q4 jackie_Q4 brown_Q4 ,_Q4 i_Q4 don't_Q4 think_Q4 he's_Q4 quite_Q4 as_Q4 irreplaceable_Q4 ._Q4 
+in_Q4 fact_Q4 ,_Q4 maybe_Q4 a_Q4 new_Q4 face_Q4 would_Q4 have_Q4 been_Q4 better_Q4 ._Q4 
+jackson_Q4 could've_Q4 remained_Q4 tarantino's_Q4 jules_Q4 ,_Q4 and_Q4 a_Q4 new_Q4 guy_Q4 could_Q4 have_Q4 become_Q4 ordell_Q4 ,_Q4 forever_Q4 to_Q4 remain_Q4 so_Q4 in_Q4 our_Q4 memories_Q4 ._Q4 
+sadly_Q4 ,_Q4 these_Q4 characters_Q4 are_Q4 too_Q4 much_Q4 the_Q4 same_Q4 ,_Q4 except_Q4 ordell_Q4 just_Q4 isn't_Q4 as_Q4 impressive_Q4 ,_Q4 and_Q4 putting_Q4 this_Q4 in_Q4 the_Q4 hands_Q4 of_Q4 jackson_Q4 once_Q4 again_Q4 is_Q4 only_Q4 going_Q4 to_Q4 deter_Q4 from_Q4 our_Q4 fond_Q4 recollections_Q4 of_Q4 jules_Q4 ._Q4 
+another_Q4 problem_Q4 is_Q4 that_Q4 ordell_Q4 is_Q4 way_Q4 too_Q4 focused_Q4 on_Q4 in_Q4 the_Q4 beginning_Q4 ._Q4 
+this_Q4 is_Q4 grier's_Q4 film_Q4 ,_Q4 so_Q4 why_Q4 spend_Q4 so_Q4 long_Q4 getting_Q4 to_Q4 know_Q4 a_Q4 man_Q4 who_Q4 will_Q4 become_Q4 more_Q4 of_Q4 a_Q4 supporting_Q4 character_Q4 as_Q4 the_Q4 film_Q4 progresses_Q4 ?_Q4 
+it_Q4 not_Q4 only_Q4 makes_Q4 the_Q4 movie_Q4 feel_Q4 a_Q4 little_Q4 too_Q4 slanted_Q4 ,_Q4 but_Q4 it_Q4 makes_Q4 for_Q4 a_Q4 slow_Q4 beginning_Q4 because_Q4 we_Q4 have_Q4 to_Q4 take_Q4 longer_Q4 getting_Q4 to_Q4 the_Q4 meat_Q4 of_Q4 the_Q4 story_Q4 ._Q4 
+it_Q4 is_Q4 likely_Q4 that_Q4 those_Q4 pouring_Q4 into_Q4 the_Q4 theater_Q4 to_Q4 see_Q4 this_Q4 film_Q4 are_Q4 going_Q4 to_Q4 be_Q4 those_Q4 anxious_Q4 to_Q4 partake_Q4 of_Q4 tarantino's_Q4 quirky_Q4 dialogue_Q4 and_Q4 eccentric_Q4 directing_Q4 style_Q4 ,_Q4 and_Q4 not_Q4 so_Q4 much_Q4 those_Q4 interested_Q4 in_Q4 seeing_Q4 a_Q4 silver_Q4 screen_Q4 adaption_Q4 of_Q4 elmore_Q4 leonard's_Q4 novel_Q4 "_Q4 rum_Q4 punch_Q4 "_Q4 ._Q4 
+for_Q4 those_Q4 movie-goers_Q4 ,_Q4 don't_Q4 expect_Q4 another_Q4 pulp_Q4 fiction_Q4 and_Q4 you'll_Q4 be_Q4 satisfied_Q4 ,_Q4 for_Q4 the_Q4 script_Q4 oozes_Q4 with_Q4 the_Q4 familiar_Q4 brash_Q4 qualities_Q4 that_Q4 has_Q4 made_Q4 tarantino_Q4 an_Q4 icon_Q4 of_Q4 90's_Q4 film-_Q4 making_Q4 ._Q4 
+the_Q4 directing_Q4 has_Q4 toned_Q4 down_Q4 a_Q4 bit_Q4 ,_Q4 however_Q4 ,_Q4 yet_Q4 we're_Q4 still_Q4 reminded_Q4 that_Q4 this_Q4 is_Q4 tarantino's_Q4 movie_Q4 thanks_Q4 to_Q4 odd_Q4 split-screen_Q4 story-telling_Q4 devices_Q4 and_Q4 scenes_Q4 being_Q4 replayed_Q4 multiple_Q4 times_Q4 from_Q4 different_Q4 viewpoints_Q4 ._Q4 
+so_Q4 getting_Q4 back_Q4 to_Q4 the_Q4 question_Q4 that_Q4 i_Q4 began_Q4 with_Q4 ,_Q4 this_Q4 isn't_Q4 pulp_Q4 fiction_Q4 at_Q4 all_Q4 ._Q4 
+it's_Q4 good_Q4 ,_Q4 but_Q4 it_Q4 isn't_Q4 anything_Q4 that_Q4 made_Q4 pulp_Q4 fiction_Q4 such_Q4 a_Q4 revolutionary_Q4 effort_Q4 in_Q4 the_Q4 first_Q4 place_Q4 ._Q4 
+this_Q4 is_Q4 a_Q4 more_Q4 conservative_Q4 tarantino_Q4 ,_Q4 but_Q4 not_Q4 one_Q4 that_Q4 won't_Q4 satiate_Q4 true_Q4 fans_Q4 ._Q4 
+if_Q4 you_Q4 can_Q4 realize_Q4 that_Q4 this_Q4 isn't_Q4 going_Q4 to_Q4 knock_Q4 your_Q4 socks_Q4 off_Q4 ,_Q4 then_Q4 you'll_Q4 be_Q4 happy_Q4 to_Q4 at_Q4 least_Q4 let_Q4 it_Q4 massage_Q4 your_Q4 feet_Q4 ._Q4 
+after_Q4 all_Q4 ,_Q4 we_Q4 all_Q4 know_Q4 how_Q4 much_Q4 tarantino_Q4 loves_Q4 that_Q4 particular_Q4 part_Q4 of_Q4 the_Q4 human_Q4 anatomy_Q4 ._Q4 
+_Q4 

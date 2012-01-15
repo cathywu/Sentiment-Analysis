@@ -1,0 +1,17 @@
+this_DT
+film_NN
+is_BEZ
+extraordinarily_RB
+horrendous_JJ
+and_CC
+i'm_???
+not_XNOT
+going_VBG
+to_TO
+waste_VB
+any_DT
+more_DT
+words_NNS
+on_IN
+it_PP
+._.

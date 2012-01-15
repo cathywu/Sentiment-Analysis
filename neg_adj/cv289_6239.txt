@@ -1,0 +1,11 @@
+fair_JJ
+epic_JJ
+historical_JJ
+big_JJ
+beautiful_JJ
+overblown_JJ
+basic_JJ
+ludicrous_JJ
+acting_JJ
+favorite_JJ
+agile_JJ

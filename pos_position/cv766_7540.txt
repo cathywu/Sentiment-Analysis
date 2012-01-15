@@ -1,0 +1,25 @@
+quiz_Q1 show_Q1 ,_Q1 an_Q1 almost_Q1 perfectly_Q1 accurate_Q1 true_Q1 story_Q1 ,_Q1 is_Q1 based_Q1 upon_Q1 the_Q1 events_Q1 of_Q1 the_Q1 popular_Q1 television_Q1 show_Q1 of_Q1 the_Q1 mid-50's_Q1 ,_Q1 "_Q1 twenty-one_Q1 "_Q1 ._Q1 
+on_Q1 this_Q1 trivial_Q1 game_Q1 show_Q1 ,_Q1 contestants_Q1 were_Q1 placed_Q1 in_Q1 isolation_Q1 booths_Q1 and_Q1 then_Q1 answered_Q1 questions_Q1 corresponding_Q1 to_Q1 a_Q1 category_Q1 of_Q1 their_Q1 choice_Q1 ,_Q1 on_Q1 which_Q1 they_Q1 wagered_Q1 an_Q1 amount_Q1 of_Q1 points_Q1 on_Q1 ._Q1 
+the_Q1 game_Q1 went_Q1 on_Q1 until_Q1 a_Q1 player_Q1 reached_Q1 twenty_Q1 one_Q1 points_Q1 on_Q1 felt_Q1 they_Q1 had_Q1 earned_Q1 enough_Q1 points_Q1 to_Q1 win_Q1 ._Q1 
+but_Q1 ,_Q1 after_Q1 ratings_Q1 began_Q1 to_Q1 fall_Q1 when_Q1 players_Q1 were_Q1 struggling_Q1 to_Q1 break_Q1 the_Q1 zero_Q1 mark_Q1 ,_Q1 the_Q1 producers_Q1 decided_Q1 to_Q1 fix_Q1 the_Q1 game_Q1 by_Q1 giving_Q1 the_Q1 answers_Q1 to_Q1 a_Q1 contestant_Q1 before_Q1 the_Q1 game_Q1 began_Q1 ._Q1 
+quiz_Q1 show_Q1 illustrates_Q1 the_Q1 true_Q1 stories_Q1 of_Q1 two_Q1 particular_Q1 contestants_Q1 ,_Q1 herbie_Q1 stempel_Q1 and_Q1 charles_Q1 van_Q1 doren_Q1 ._Q1 
+stempel_Q1 (_Q1 john_Q1 turturro_Q1 )_Q23 ,_Q23 a_Q23 former_Q23 g_Q23 ._Q23 i_Q23 ._Q23 
+and_Q23 your_Q23 jewish_Q23 man_Q23 raising_Q23 a_Q23 family_Q23 ._Q23 
+stempel_Q23 has_Q23 been_Q23 the_Q23 reigning_Q23 champion_Q23 on_Q23 "_Q23 twenty-one_Q23 "_Q23 for_Q23 many_Q23 weeks_Q23 and_Q23 has_Q23 accumulated_Q23 thousands_Q23 of_Q23 dollars_Q23 ._Q23 
+in_Q23 his_Q23 mind_Q23 ,_Q23 he_Q23 is_Q23 the_Q23 best_Q23 thing_Q23 on_Q23 television_Q23 and_Q23 the_Q23 people_Q23 love_Q23 him_Q23 ._Q23 
+although_Q23 ,_Q23 in_Q23 the_Q23 mind_Q23 of_Q23 the_Q23 show's_Q23 producers_Q23 ,_Q23 herbie_Q23 stempel_Q23 is_Q23 getting_Q23 old_Q23 ._Q23 
+dan_Q23 enright_Q23 (_Q23 david_Q23 paymer_Q23 )_Q23 ,_Q23 in_Q23 particular_Q23 ,_Q23 feels_Q23 that_Q23 the_Q23 people_Q23 are_Q23 tired_Q23 of_Q23 seeing_Q23 a_Q23 "_Q23 jewish_Q23 guy_Q23 from_Q23 queens_Q23 with_Q23 bad_Q23 teeth_Q23 "_Q23 and_Q23 that_Q23 the_Q23 kids_Q23 need_Q23 someone_Q23 better_Q23 to_Q23 look_Q23 up_Q23 to_Q23 ._Q23 
+therefore_Q23 ,_Q23 they_Q23 need_Q23 to_Q23 find_Q23 another_Q23 contestant_Q23 whom_Q23 would_Q23 be_Q23 a_Q23 worthy_Q23 role_Q23 model_Q23 and_Q23 the_Q23 people_Q23 will_Q23 look_Q23 up_Q23 to_Q23 and_Q23 cheer_Q23 to_Q23 win_Q23 ._Q23 
+someone_Q23 who_Q23 can_Q23 defeat_Q23 stempel_Q23 ,_Q23 even_Q23 if_Q23 they_Q23 have_Q23 to_Q23 resort_Q23 to_Q23 cheating_Q23 ._Q23 
+enter_Q23 charles_Q23 van_Q23 doren_Q23 (_Q23 ralph_Q23 fiennes_Q23 )_Q23 ,_Q23 a_Q23 well-educated_Q23 professor_Q23 from_Q23 a_Q23 widely_Q23 recognized_Q23 family_Q23 ._Q23 
+van_Q23 doren_Q23 had_Q23 decided_Q23 to_Q23 try_Q23 out_Q23 for_Q23 the_Q23 game_Q23 show_Q23 "_Q23 tic_Q23 tac_Q23 dough_Q23 "_Q23 because_Q23 his_Q23 friends_Q23 thought_Q23 he_Q23 would_Q23 be_Q23 good_Q23 at_Q23 that_Q23 sort_Q23 of_Q23 thing_Q23 ._Q23 
+but_Q23 when_Q23 albert_Q23 freedman_Q23 (_Q23 hank_Q23 azaria_Q23 )_Q23 ,_Q23 enright's_Q23 assistant_Q23 ,_Q23 spots_Q23 van_Q23 doren_Q23 ,_Q23 the_Q23 two_Q23 decide_Q23 that_Q23 they_Q23 have_Q23 found_Q23 their_Q23 soon-to-be-ruler_Q23 of_Q23 the_Q23 "_Q23 twenty-one_Q23 "_Q23 kingdom_Q23 ._Q23 
+van_Q23 doren_Q23 is_Q23 not_Q23 too_Q23 keen_Q23 on_Q23 the_Q23 idea_Q23 of_Q23 receiving_Q23 the_Q23 answers_Q23 ahead_Q23 of_Q23 time_Q23 ,_Q23 so_Q23 enright_Q23 tells_Q23 stempel_Q23 that_Q23 he_Q23 is_Q23 going_Q23 to_Q23 give_Q23 the_Q23 wrong_Q23 answer_Q23 ,_Q23 on_Q23 purpose_Q23 ,_Q23 in_Q23 order_Q23 to_Q23 lose_Q23 the_Q23 game_Q23 ._Q23 
+after_Q23 stempel_Q23 loses_Q23 the_Q23 "_Q23 throne_Q23 "_Q23 to_Q23 van_Q23 doren_Q23 ,_Q23 he_Q4 starts_Q4 to_Q4 feel_Q4 cheated_Q4 (_Q4 which_Q4 he_Q4 should_Q4 )_Q4 ._Q4 
+meanwhile_Q4 ,_Q4 on_Q4 his_Q4 own_Q4 ,_Q4 dick_Q4 goodwin_Q4 (_Q4 rob_Q4 morrow_Q4 )_Q4 ,_Q4 a_Q4 harvard_Q4 law_Q4 graduate_Q4 ,_Q4 has_Q4 decided_Q4 to_Q4 start_Q4 an_Q4 investigation_Q4 on_Q4 "_Q4 twenty-one_Q4 "_Q4 to_Q4 try_Q4 and_Q4 find_Q4 out_Q4 if_Q4 there_Q4 have_Q4 been_Q4 any_Q4 wrongdoings_Q4 ._Q4 
+his_Q4 investigation_Q4 yields_Q4 shocking_Q4 results_Q4 and_Q4 leads_Q4 to_Q4 a_Q4 trial_Q4 for_Q4 enright_Q4 and_Q4 the_Q4 others_Q4 involved_Q4 ._Q4 
+quiz_Q4 show_Q4 is_Q4 an_Q4 extremely_Q4 well_Q4 done_Q4 movie_Q4 ,_Q4 and_Q4 robert_Q4 redford's_Q4 direction_Q4 is_Q4 especially_Q4 superb_Q4 ._Q4 
+the_Q4 performances_Q4 turned_Q4 in_Q4 by_Q4 john_Q4 turturro_Q4 ,_Q4 ralph_Q4 fiennes_Q4 ,_Q4 and_Q4 rob_Q4 morrow_Q4 are_Q4 very_Q4 good_Q4 ,_Q4 although_Q4 it_Q4 seems_Q4 that_Q4 turturro_Q4 stands_Q4 out_Q4 more_Q4 than_Q4 any_Q4 ._Q4 
+quiz_Q4 show_Q4 is_Q4 also_Q4 very_Q4 precise_Q4 when_Q4 it_Q4 comes_Q4 to_Q4 explicating_Q4 the_Q4 true_Q4 events_Q4 that_Q4 inspired_Q4 the_Q4 film_Q4 ._Q4 
+definitely_Q4 a_Q4 film_Q4 you_Q4 should_Q4 not_Q4 miss_Q4 ._Q4 
+_Q4 

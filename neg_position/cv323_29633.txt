@@ -1,0 +1,36 @@
+plot_Q1 :_Q1 a_Q1 rich_Q1 psychiatrist_Q1 with_Q1 a_Q1 great_Q1 home_Q1 life_Q1 gets_Q1 his_Q1 cute_Q1 daughter_Q1 kidnapped_Q1 by_Q1 some_Q1 bad_Q1 guys_Q1 who_Q1 want_Q1 him_Q1 to_Q1 extract_Q1 some_Q1 information_Q1 from_Q1 the_Q1 mind_Q1 of_Q1 one_Q1 of_Q1 his_Q1 nutty_Q1 patients_Q1 ._Q1 
+of_Q1 course_Q1 ,_Q1 the_Q1 patient_Q1 is_Q1 not_Q1 cooperative_Q1 and_Q1 the_Q1 doctor_Q1 only_Q1 has_Q1 a_Q1 few_Q1 hours_Q1 to_Q1 comply_Q1 with_Q1 their_Q1 demands_Q1 ,_Q1 before_Q1 they_Q1 kill_Q1 his_Q1 daughter_Q1 ._Q1 
+pretty_Q1 good_Q1 premise_Q1 ,_Q1 no_Q1 ?_Q1 
+critique_Q1 :_Q1 if_Q1 you're_Q1 not_Q1 a_Q1 fan_Q1 of_Q1 movies_Q1 packed_Q1 with_Q1 plot_Q1 holes_Q1 ,_Q1 inconsistencies_Q1 and_Q1 yes_Q1 ,_Q1 even_Q1 more_Q1 plot_Q1 holes_Q1 ,_Q1 heed_Q1 my_Q1 words_Q1 and_Q1 skip_Q1 this_Q1 hollow_Q1 thriller_Q1 ._Q1 
+and_Q1 i_Q1 don't_Q1 like_Q1 saying_Q1 that_Q1 either_Q1 ,_Q1 since_Q1 this_Q1 film_Q1 actually_Q1 had_Q1 some_Q1 potential_Q1 and_Q1 started_Q1 off_Q1 pretty_Q1 well_Q1 ._Q1 
+sure_Q1 ,_Q1 the_Q1 story_Q1 is_Q1 basically_Q1 just_Q1 an_Q1 amalgamation_Q1 of_Q1 ransom_Q1 ,_Q1 primal_Q1 fear_Q1 and_Q1 nick_Q1 of_Q1 time_Q1 pureed_Q1 into_Q1 one_Q1 ,_Q1 but_Q1 the_Q1 whole_Q1 "_Q1 psychiatrist_Q1 working_Q1 against_Q1 the_Q1 clock_Q1 "_Q1 thing_Q1 ,_Q1 actually_Q1 had_Q1 me_Q1 engaged_Q1 at_Q1 first_Q1 ._Q1 
+but_Q1 it's_Q1 at_Q1 about_Q1 the_Q1 halfway_Q1 mark_Q1 of_Q1 this_Q1 movie_Q1 ,_Q1 that_Q1 the_Q1 bottom_Q1 drops_Q1 out_Q1 and_Q1 all_Q1 that_Q1 we're_Q1 left_Q1 with_Q1 are_Q1 a_Q1 lot_Q1 of_Q1 questions_Q1 and_Q1 very_Q1 few_Q1 plausible_Q1 answers_Q1 ._Q1 
+we_Q1 get_Q1 the_Q1 overly_Q1 smart_Q1 kid_Q1 who_Q1 manages_Q1 to_Q1 "_Q1 pull_Q1 one_Q1 "_Q1 over_Q23 on_Q23 the_Q23 bad_Q23 guys_Q23 ._Q23 
+we_Q23 get_Q23 a_Q23 weak_Q23 woman_Q23 with_Q23 her_Q23 leg_Q23 in_Q23 a_Q23 cast_Q23 beating_Q23 the_Q23 crap_Q23 out_Q23 of_Q23 a_Q23 tough_Q23 bad_Q23 guy_Q23 ._Q23 
+we_Q23 get_Q23 douglas'_Q23 character_Q23 ,_Q23 a_Q23 new_Q23 york_Q23 uppedity_Q23 psychiatrist_Q23 ,_Q23 suddenly_Q23 turning_Q23 into_Q23 an_Q23 action_Q23 hero_Q23 ,_Q23 with_Q23 moves_Q23 and_Q23 attitude_Q23 to_Q23 boot_Q23 ._Q23 
+and_Q23 what_Q23 about_Q23 the_Q23 film's_Q23 main_Q23 plot_Q23 point_Q23 ?_Q23 
+why_Q23 would_Q23 the_Q23 bad_Q23 guys_Q23 still_Q23 give_Q23 a_Q23 crap_Q23 about_Q23 this_Q23 thing_Q23 after_Q23 10_Q23 years_Q23 ,_Q23 and_Q23 even_Q23 more_Q23 so_Q23 ,_Q23 why_Q23 would_Q23 they_Q23 only_Q23 give_Q23 the_Q23 shrink_Q23 until_Q23 the_Q23 day's_Q23 end_Q23 to_Q23 do_Q23 his_Q23 part_Q23 ?_Q23 
+_Q23 (_Q23 you_Q23 waited_Q23 10_Q23 years_Q23 ,_Q23 what's_Q23 another_Q23 few_Q23 days_Q23 ?_Q23 -_Q23 or_Q23 why_Q23 not_Q23 set_Q23 up_Q23 another_Q23 heist_Q23 instead_Q23 ?_Q23 )_Q23 ._Q23 
+i'll_Q23 tell_Q23 you_Q23 why_Q23 ,_Q23 it's_Q23 because_Q23 we_Q23 wouldn't_Q23 have_Q23 a_Q23 (_Q23 bad_Q23 )_Q23 movie_Q23 otherwise_Q23 ,_Q23 that's_Q23 why_Q23 !_Q23 
+and_Q23 many_Q23 ,_Q23 many_Q23 more_Q23 ._Q23 
+ugh_Q23 ,_Q23 whatever_Q23 the_Q23 case_Q23 ,_Q23 it_Q23 was_Q23 just_Q23 about_Q23 the_Q23 time_Q23 that_Q23 douglas'_Q23 character_Q23 suddenly_Q23 removed_Q23 murphy's_Q23 character_Q23 from_Q23 the_Q23 mental_Q23 home_Q23 (_Q23 and_Q23 how_Q23 come_Q23 she_Q23 went_Q23 with_Q23 him_Q23 so_Q23 nicely_Q23 ?_Q23 
+i_Q23 thought_Q23 she_Q23 didn't_Q23 trust_Q23 him_Q23 )_Q23 ,_Q23 that_Q23 i_Q23 turned_Q23 to_Q23 my_Q23 buddy_Q23 and_Q23 asked_Q23 when_Q23 the_Q23 movie_Q23 had_Q23 turned_Q23 into_Q23 a_Q23 joke_Q23 ._Q23 
+and_Q23 a_Q23 few_Q23 bogus_Q23 chase_Q23 and_Q23 action_Q23 sequences_Q23 later_Q23 ,_Q23 we_Q23 were_Q23 left_Q23 with_Q23 a_Q23 long-winded_Q23 ending_Q23 that_Q23 did_Q23 little_Q23 to_Q23 answer_Q23 any_Q23 other_Q23 questions_Q23 i_Q23 might've_Q23 still_Q23 had_Q23 ,_Q23 and_Q23 actually_Q23 brought_Q23 up_Q23 even_Q23 more_Q23 contradictions_Q23 ._Q23 
+badly_Q23 put_Q23 together_Q23 ,_Q23 this_Q23 movie_Q23 features_Q23 some_Q23 decent_Q23 acting_Q23 ,_Q23 some_Q23 nice_Q23 cinematography_Q23 and_Q23 an_Q23 initially_Q23 interesting_Q23 premise_Q23 ,_Q23 but_Q23 loses_Q23 it_Q23 all_Q23 in_Q23 a_Q23 haze_Q23 of_Q23 plot_Q23 miscues_Q23 which_Q23 ultimately_Q23 leave_Q23 you_Q23 with_Q23 little_Q23 care_Q23 for_Q23 anyone_Q23 ._Q23 
+in_Q23 fact_Q23 ,_Q23 if_Q23 it_Q23 wasn't_Q23 for_Q23 brittany_Q23 murphy's_Q23 excellent_Q23 portrayal_Q23 of_Q23 a_Q23 traumatized_Q23 teen_Q23 ,_Q23 jennifer_Q23 esposito's_Q23 embarrassing_Q23 performance_Q23 as_Q23 a_Q23 police_Q23 woman_Q23 (_Q23 yeah_Q23 ,_Q23 right_Q23 !_Q23 
+watching_Q23 her_Q23 delivering_Q23 lines_Q23 was_Q23 the_Q23 funniest_Q23 part_Q23 of_Q23 this_Q23 flick-_Q23 but_Q23 it_Q23 wasn't_Q23 supposed_Q23 to_Q23 be_Q23 )_Q23 and_Q23 michael_Q23 douglas'_Q23 cool_Q23 "_Q23 regular_Q23 guy_Q23 "_Q23 part_Q23 ,_Q23 there_Q23 would_Q23 be_Q23 little_Q23 reason_Q23 to_Q23 remain_Q23 seated_Q23 until_Q23 the_Q23 end_Q23 of_Q23 this_Q23 picture_Q23 ._Q23 
+incidentally_Q23 ,_Q23 can_Q23 anyone_Q23 please_Q23 give_Q23 me_Q23 one_Q23 good_Q23 reason_Q23 why_Q23 esposito's_Q23 character_Q23 was_Q23 in_Q23 this_Q23 movie_Q23 in_Q23 the_Q23 first_Q23 place_Q23 ?_Q23 
+she_Q23 was_Q23 completely_Q23 superfluous_Q23 ._Q23 
+and_Q23 on_Q23 top_Q23 of_Q23 all_Q23 that_Q23 ,_Q23 by_Q23 the_Q23 end_Q23 of_Q23 this_Q23 flick_Q23 ,_Q23 the_Q23 director_Q23 seems_Q23 to_Q23 have_Q23 realized_Q23 how_Q23 dumb_Q23 the_Q23 audience_Q23 must_Q23 be_Q23 to_Q23 have_Q23 bought_Q23 most_Q23 of_Q23 the_Q23 garbage_Q23 that_Q23 he'd_Q23 been_Q23 shoveling_Q4 out_Q4 for_Q4 the_Q4 hour_Q4 and_Q4 a_Q4 half_Q4 prior_Q4 ,_Q4 and_Q4 decides_Q4 to_Q4 add_Q4 insult_Q4 to_Q4 injury_Q4 by_Q4 flashing_Q4 back_Q4 to_Q4 an_Q4 earlier_Q4 character's_Q4 death_Q4 when_Q4 one_Q4 of_Q4 the_Q4 bad_Q4 guys_Q4 dies_Q4 ,_Q4 just_Q4 so_Q4 we_Q4 know_Q4 (_Q4 as_Q4 an_Q4 audience_Q4 )_Q4 ,_Q4 that_Q4 the_Q4 two_Q4 are_Q4 interrelated_Q4 somehow_Q4 ._Q4 
+ooooh_Q4 ,_Q4 thanks_Q4 ,_Q4 mr_Q4 ._Q4 fleder_Q4 ._Q4 ._Q4 ._Q4 i_Q4 
+appreciate_Q4 the_Q4 spoon-feeding_Q4 ,_Q4 dude_Q4 ._Q4 ._Q4 ._Q4 yum_Q4 ,_Q4 
+yum_Q4 ._Q4 ._Q4 ._Q4 but_Q4 
+how_Q4 about_Q4 explaining_Q4 every_Q4 other_Q4 plot_Q4 point_Q4 in_Q4 your_Q4 film_Q4 that_Q4 made_Q4 no_Q4 sense_Q4 ?_Q4 
+whatever_Q4 ._Q4 
+either_Q4 way_Q4 ,_Q4 i_Q4 don't_Q4 give_Q4 a_Q4 rat's_Q4 ass_Q4 because_Q4 this_Q4 movie_Q4 is_Q4 a_Q4 dog_Q4 and_Q4 that's_Q4 unfortunate_Q4 because_Q4 it_Q4 actually_Q4 did_Q4 have_Q4 some_Q4 good_Q4 points_Q4 going_Q4 for_Q4 it_Q4 ._Q4 
+see_Q4 it_Q4 if_Q4 you_Q4 like_Q4 dumb_Q4 thrillers_Q4 ._Q4 
+incidentally_Q4 ,_Q4 if_Q4 you_Q4 appreciated_Q4 along_Q4 came_Q4 a_Q4 spider_Q4 ,_Q4 you_Q4 will_Q4 likely_Q4 enjoy_Q4 this_Q4 film_Q4 as_Q4 well_Q4 ._Q4 
+they_Q4 both_Q4 start_Q4 off_Q4 with_Q4 interesting_Q4 premises_Q4 ,_Q4 only_Q4 to_Q4 toss_Q4 all_Q4 logic_Q4 and_Q4 sense_Q4 out_Q4 the_Q4 window_Q4 about_Q4 halfway_Q4 through_Q4 ._Q4 
+where's_Q4 joblo_Q4 coming_Q4 from_Q4 ?_Q4 
+along_Q4 came_Q4 a_Q4 spider_Q4 (_Q4 4/10_Q4 )_Q4 -_Q4 girl_Q4 ,_Q4 interrupted_Q4 (_Q4 5/10_Q4 )_Q4 -_Q4 kiss_Q4 the_Q4 girls_Q4 (_Q4 7/10_Q4 )_Q4 -_Q4 primal_Q4 fear_Q4 (_Q4 7/10_Q4 )_Q4 --_Q4 seven_Q4 (_Q4 10/10_Q4 )_Q4 
+_Q4 

@@ -1,0 +1,13 @@
+worthy_JJ
+good_JJ
+long_JJ
+thurman_JJ
+ineffective_JJ
+repetitive_JJ
+bloated_JJ
+confusing_JJ
+garish_JJ
+overlit_JJ
+comparable_JJ
+trashy_JJ
+real_JJ

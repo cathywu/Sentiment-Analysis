@@ -1,0 +1,13 @@
+local_JJ
+classic_JJ
+watchable_JJ
+american_JJ
+political_JJ
+various_JJ
+ingred_JJ
+annoyed_JJ
+acting_JJ
+political_JJ
+classic_JJ
+good_JJ
+classic_JJ
