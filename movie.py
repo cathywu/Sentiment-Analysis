@@ -33,11 +33,11 @@ class MovieReviews:
         for i in self.neg_files:
             self.classifier.addFeatureVector(i, -1)
         self.classifier.compile()
-        print self.classifier.classes
-classif = classifier.BayesClassifier
-#classif = classifier.LinearSVMClassifier
+
+#classif = classifier.BayesClassifier
+classif = classifier.LinearSVMClassifier
 def test():
-    testsize=800
+    testsize=1000
     n = 1
     print "Building Classifier"
     m = MovieReviews(classif, n, testsize)
@@ -46,12 +46,13 @@ def test():
                       for i in os.listdir("pos")][testsize:]
     neg_tests = [ngrams.ngrams(n, open("neg/"+i).read()) 
                       for i in os.listdir("neg")][testsize:]
-    pos_results = [m.classifier.classify(i) for i in pos_tests]
-    print pos_results
-    print len([i for i in pos_results if i == 1])
-    neg_results = [m.classifier.classify(i) for i in neg_tests]
-    print neg_results
-    print len([i for i in neg_results if i == -1])
+    m.classifier.validate(3)
+    # pos_results = [m.classifier.classify(i) for i in pos_tests]
+    # print pos_results
+    # print len([i for i in pos_results if i == 1])
+    # neg_results = [m.classifier.classify(i) for i in neg_tests]
+    # print neg_results
+    # print len([i for i in neg_results if i == -1])
         
 if __name__ == "__main__":
     test()
