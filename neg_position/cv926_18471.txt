@@ -1,0 +1,83 @@
+star_Q1 wars_Q1 :_Q1 ?_Q1 episode_Q1 i_Q1 --_Q1 the_Q1 phantom_Q1 menace_Q1 (_Q1 1999_Q1 )_Q1 
+director_Q1 :_Q1 george_Q1 lucas_Q1 cast_Q1 :_Q1 liam_Q1 neeson_Q1 ,_Q1 ewan_Q1 mcgregor_Q1 ,_Q1 natalie_Q1 portman_Q1 ,_Q1 jake_Q1 lloyd_Q1 ,_Q1 ian_Q1 mcdiarmid_Q1 ,_Q1 samuel_Q1 l_Q1 ._Q1 jackson_Q1 ,_Q1 oliver_Q1 ford_Q1 davies_Q1 ,_Q1 terence_Q1 stamp_Q1 ,_Q1 pernilla_Q1 august_Q1 ,_Q1 frank_Q1 oz_Q1 ,_Q1 ahmed_Q1 best_Q1 ,_Q1 kenny_Q1 baker_Q1 ,_Q1 anthony_Q1 daniels_Q1 screenplay_Q1 :_Q1 george_Q1 lucas_Q1 producers_Q1 :_Q1 rick_Q1 mccallum_Q1 runtime_Q1 :_Q1 131_Q1 min_Q1 ._Q1 
+us_Q1 distribution_Q1 :_Q1 20th_Q1 century_Q1 fox_Q1 rated_Q1 pg_Q1 :_Q1 mild_Q1 violence_Q1 ,_Q1 thematic_Q1 elements_Q1 
+copyright_Q1 1999_Q1 nathaniel_Q1 r_Q1 ._Q1 atcheson_Q1 
+a_Q1 fellow_Q1 critic_Q1 once_Q1 stated_Q1 his_Q1 belief_Q1 that_Q1 a_Q1 reviewer_Q1 should_Q1 not_Q1 speak_Q1 of_Q1 himself_Q1 in_Q1 his_Q1 own_Q1 review_Q1 ._Q1 
+i've_Q1 attempted_Q1 to_Q1 obey_Q1 this_Q1 rule_Q1 in_Q1 recent_Q1 months_Q1 ,_Q1 but_Q1 to_Q1 do_Q1 so_Q1 would_Q1 be_Q1 impossible_Q1 in_Q1 this_Q1 case_Q1 ._Q1 
+the_Q1 fact_Q1 is_Q1 ,_Q1 nearly_Q1 every_Q1 person_Q1 who_Q1 goes_Q1 to_Q1 see_Q1 the_Q1 phantom_Q1 menace_Q1 brings_Q1 baggage_Q1 in_Q1 with_Q1 them_Q1 ._Q1 
+the_Q1 original_Q1 star_Q1 wars_Q1 trilogy_Q1 means_Q1 so_Q1 much_Q1 to_Q1 so_Q1 many_Q1 people_Q1 ._Q1 
+for_Q1 me_Q1 ,_Q1 they_Q1 calibrated_Q1 my_Q1 creativity_Q1 as_Q1 a_Q1 child_Q1 ;_Q1 they_Q1 are_Q1 masterful_Q1 ,_Q1 original_Q1 works_Q1 of_Q1 art_Q1 that_Q1 mix_Q1 moving_Q1 stories_Q1 with_Q1 what_Q1 were_Q1 astonishing_Q1 special_Q1 effects_Q1 at_Q1 the_Q1 time_Q1 (_Q1 and_Q1 they_Q1 still_Q1 hold_Q1 up_Q1 pretty_Q1 darn_Q1 well_Q1 )_Q1 ._Q1 
+i_Q1 am_Q1 too_Q1 young_Q1 to_Q1 have_Q1 seen_Q1 star_Q1 wars_Q1 in_Q1 the_Q1 theater_Q1 during_Q1 its_Q1 original_Q1 release_Q1 ,_Q1 but_Q1 that_Q1 doesn't_Q1 make_Q1 me_Q1 any_Q1 less_Q1 dedicated_Q1 to_Q1 it_Q1 ._Q1 
+on_Q1 the_Q1 contrary_Q1 ,_Q1 the_Q1 star_Q1 wars_Q1 trilogy_Q1 --_Q1 and_Q1 the_Q1 empire_Q1 strikes_Q1 back_Q1 in_Q1 particular_Q1 --_Q1 are_Q1 three_Q1 items_Q1 on_Q1 a_Q1 very_Q1 short_Q1 list_Q1 of_Q1 why_Q1 i_Q1 love_Q1 movies_Q1 ._Q1 
+when_Q1 i_Q1 heard_Q1 that_Q1 george_Q1 lucas_Q1 would_Q1 be_Q1 making_Q1 the_Q1 first_Q1 trilogy_Q1 in_Q1 the_Q1 nine-film_Q1 series_Q1 ,_Q1 i_Q1 got_Q1 exited_Q1 ._Q1 
+when_Q1 i_Q1 first_Q1 saw_Q1 screenshots_Q1 from_Q1 the_Q1 film_Q1 ,_Q1 well_Q1 over_Q1 a_Q1 year_Q1 ago_Q1 ,_Q1 i_Q1 embarked_Q1 on_Q1 a_Q1 year-long_Q1 drool_Q1 of_Q1 anticipation_Q1 ._Q1 
+and_Q1 when_Q1 the_Q1 first_Q1 previews_Q1 were_Q1 released_Q1 last_Q1 thanksgiving_Q1 ,_Q1 i_Q1 was_Q1 ready_Q1 to_Q1 see_Q1 the_Q1 film_Q1 ._Q1 
+but_Q1 then_Q1 there_Q1 was_Q1 the_Q1 hype_Q1 ,_Q1 the_Q1 insane_Q1 marketing_Q1 campaign_Q1 ,_Q1 and_Q1 lucasfilm's_Q1 secretive_Q1 snobbery_Q1 over_Q1 the_Q1 picture_Q1 ._Q1 
+in_Q1 the_Q1 last_Q1 weeks_Q1 before_Q1 the_Q1 picture_Q1 opened_Q1 ,_Q1 while_Q1 multitudes_Q1 of_Q1 fans_Q1 waited_Q1 outside_Q1 of_Q1 theaters_Q1 and_Q1 stood_Q1 in_Q1 the_Q1 boiling_Q1 sun_Q1 days_Q1 in_Q1 advance_Q1 just_Q1 to_Q1 be_Q1 the_Q1 first_Q1 ones_Q1 in_Q1 the_Q1 theater_Q1 ,_Q1 i_Q1 was_Q1 tired_Q1 of_Q1 hearing_Q1 about_Q1 it_Q1 ._Q1 
+i_Q1 was_Q1 tired_Q1 of_Q1 seeing_Q1 cardboard_Q1 cut-outs_Q1 of_Q1 the_Q1 characters_Q1 whenever_Q1 i_Q1 went_Q1 to_Q1 kfc_Q1 or_Q1 taco_Q1 bell_Q1 ._Q1 
+i_Q1 just_Q1 wanted_Q23 to_Q23 see_Q23 the_Q23 movie_Q23 ._Q23 
+reader_Q23 ,_Q23 do_Q23 not_Q23 misunderstand_Q23 ._Q23 
+i_Q23 did_Q23 not_Q23 have_Q23 an_Q23 anti-hype_Q23 reaction_Q23 ._Q23 
+the_Q23 hype_Q23 was_Q23 unavoidable_Q23 ._Q23 
+i_Q23 understand_Q23 and_Q23 accept_Q23 the_Q23 hype_Q23 --_Q23 it's_Q23 just_Q23 what_Q23 happens_Q23 when_Q23 the_Q23 prequel_Q23 to_Q23 the_Q23 most_Q23 widely_Q23 beloved_Q23 films_Q23 of_Q23 all_Q23 time_Q23 get_Q23 released_Q23 ._Q23 
+five_Q23 minutes_Q23 into_Q23 the_Q23 phantom_Q23 menace_Q23 ,_Q23 i_Q23 knew_Q23 there_Q23 was_Q23 a_Q23 problem_Q23 ._Q23 
+_Q23 "_Q23 who_Q23 are_Q23 these_Q23 jedi_Q23 knights_Q23 ?_Q23 "_Q23 
+i_Q23 asked_Q23 ._Q23 
+_Q23 "_Q23 why_Q23 are_Q23 they_Q23 churning_Q23 out_Q23 stale_Q23 dialogue_Q23 with_Q23 machine-gun_Q23 rapidity_Q23 ?_Q23 "_Q23 
+_Q23 "_Q23 why_Q23 aren't_Q23 these_Q23 characters_Q23 being_Q23 developed_Q23 before_Q23 their_Q23 adventures_Q23 ?_Q23 "_Q23 
+_Q23 "_Q23 why_Q23 is_Q23 there_Q23 a_Q23 special_Q23 effects_Q23 shot_Q23 in_Q23 nearly_Q23 every_Q23 frame_Q23 of_Q23 the_Q23 entire_Q23 film_Q23 ?_Q23 "_Q23 
+these_Q23 were_Q23 just_Q23 some_Q23 of_Q23 my_Q23 questions_Q23 early_Q23 on_Q23 ._Q23 
+later_Q23 ,_Q23 i_Q23 asked_Q23 ,_Q23 "_Q23 where's_Q23 the_Q23 magic_Q23 of_Q23 the_Q23 first_Q23 three_Q23 films_Q23 ?_Q23 "_Q23 
+and_Q23 "_Q23 why_Q23 am_Q23 i_Q23 looking_Q23 at_Q23 my_Q23 watch_Q23 every_Q23 fifteen_Q23 minutes_Q23 ?_Q23 '_Q23 
+by_Q23 the_Q23 end_Q23 of_Q23 the_Q23 film_Q23 ,_Q23 i_Q23 was_Q23 tired_Q23 ,_Q23 maddened_Q23 ,_Q23 and_Q23 depressed_Q23 ._Q23 
+george_Q23 lucas_Q23 has_Q23 funneled_Q23 his_Q23 own_Q23 wonderful_Q23 movies_Q23 into_Q23 a_Q23 pointless_Q23 ,_Q23 mindless_Q23 ,_Q23 summer_Q23 blockbuster_Q23 ._Q23 
+the_Q23 phantom_Q23 menace_Q23 is_Q23 no_Q23 star_Q23 wars_Q23 film_Q23 ._Q23 
+take_Q23 away_Q23 the_Q23 title_Q23 and_Q23 the_Q23 jedi_Q23 talk_Q23 and_Q23 the_Q23 force_Q23 ,_Q23 and_Q23 you're_Q23 left_Q23 with_Q23 what_Q23 is_Q23 easily_Q23 one_Q23 of_Q23 the_Q23 most_Q23 vacuous_Q23 special_Q23 effects_Q23 movies_Q23 of_Q23 all_Q23 time_Q23 ._Q23 
+it's_Q23 an_Q23 embarrassment_Q23 ._Q23 
+i_Q23 looked_Q23 desperately_Q23 for_Q23 a_Q23 scene_Q23 in_Q23 which_Q23 a_Q23 character_Q23 is_Q23 explored_Q23 ,_Q23 or_Q23 a_Q23 new_Q23 theme_Q23 is_Q23 examined_Q23 ,_Q23 or_Q23 a_Q23 special_Q23 effects_Q23 shot_Q23 isn't_Q23 used_Q23 ._Q23 
+there_Q23 are_Q23 a_Q23 few_Q23 of_Q23 each_Q23 ,_Q23 but_Q23 they're_Q23 all_Q23 token_Q23 attempts_Q23 ._Q23 
+the_Q23 fact_Q23 is_Q23 ,_Q23 george_Q23 lucas_Q23 has_Q23 created_Q23 what_Q23 is_Q23 simultaneously_Q23 an_Q23 abysmally_Q23 bad_Q23 excuse_Q23 for_Q23 a_Q23 movie_Q23 and_Q23 a_Q23 pretty_Q23 good_Q23 showcase_Q23 for_Q23 digital_Q23 effects_Q23 ._Q23 
+this_Q23 is_Q23 not_Q23 what_Q23 i_Q23 wanted_Q23 to_Q23 see_Q23 ._Q23 
+i_Q23 didn't_Q23 want_Q23 to_Q23 leave_Q23 the_Q23 phantom_Q23 menace_Q23 with_Q23 a_Q23 headache_Q23 and_Q23 a_Q23 bitter_Q23 taste_Q23 in_Q23 my_Q23 mouth_Q23 ,_Q23 but_Q23 i_Q23 did_Q23 ._Q23 
+the_Q23 story_Q23 centers_Q23 mostly_Q23 around_Q23 qui-gon_Q23 jinn_Q23 (_Q23 liam_Q23 neeson_Q23 ,_Q23 looking_Q23 lost_Q23 and_Q23 confused_Q23 )_Q23 and_Q23 his_Q23 apprentice_Q23 ,_Q23 obi-wan_Q23 kenobi_Q23 (_Q23 ewan_Q23 mcgregor_Q23 ,_Q23 who_Q23 scarcely_Q23 has_Q23 a_Q23 line_Q23 in_Q23 the_Q23 film_Q23 )_Q23 and_Q23 their_Q23 attempts_Q23 to_Q23 liberate_Q23 the_Q23 people_Q23 of_Q23 the_Q23 planet_Q23 naboo_Q23 ._Q23 
+naboo_Q23 is_Q23 the_Q23 victim_Q23 of_Q23 a_Q23 bureaucratic_Q23 war_Q23 with_Q23 the_Q23 trade_Q23 federation_Q23 ;_Q23 their_Q23 contact_Q23 on_Q23 naboo_Q23 is_Q23 queen_Q23 amidala_Q23 (_Q23 natalie_Q23 portman_Q23 )_Q23 ,_Q23 the_Q23 teenage_Q23 ruler_Q23 who_Q23 truly_Q23 cares_Q23 for_Q23 her_Q23 people_Q23 ._Q23 
+after_Q23 picking_Q23 up_Q23 jar_Q23 jar_Q23 binks_Q23 (_Q23 a_Q23 completely_Q23 cgi_Q23 character_Q23 ,_Q23 voiced_Q23 by_Q23 ahmed_Q23 best_Q23 )_Q23 ,_Q23 they_Q23 head_Q23 to_Q23 tatooine_Q23 ,_Q23 where_Q23 they_Q23 meet_Q23 young_Q23 anakin_Q23 skywalker_Q23 (_Q23 jake_Q23 lloyd_Q23 )_Q23 and_Q23 his_Q23 mother_Q23 (_Q23 pernilla_Q23 august_Q23 )_Q23 ._Q23 
+qui-gon_Q23 knows_Q23 that_Q23 the_Q23 force_Q23 is_Q23 strong_Q23 with_Q23 young_Q23 anakin_Q23 ,_Q23 and_Q23 so_Q23 the_Q23 jedi_Q23 knights_Q23 take_Q23 the_Q23 boy_Q23 with_Q23 them_Q23 on_Q23 their_Q23 journeys_Q23 ._Q23 
+the_Q23 bad_Q23 guys_Q23 are_Q23 darth_Q23 maul_Q23 and_Q23 darth_Q23 sidious_Q23 ,_Q23 neither_Q23 of_Q23 whom_Q23 have_Q23 enough_Q23 lines_Q23 to_Q23 register_Q23 as_Q23 characters_Q23 ._Q23 
+there_Q23 isn't_Q23 anything_Q23 particularly_Q23 wrong_Q23 with_Q23 this_Q23 story_Q23 when_Q23 looking_Q23 at_Q23 it_Q23 in_Q23 synopsis_Q23 form_Q23 ._Q23 
+the_Q23 way_Q23 lucas_Q23 has_Q23 handled_Q23 it_Q23 ,_Q23 however_Q23 ,_Q23 it_Q23 unsatisfactory_Q23 ._Q23 
+first_Q23 of_Q23 all_Q23 ,_Q23 we_Q23 don't_Q23 learn_Q23 one_Q23 single_Q23 thing_Q23 about_Q23 qui-gon_Q23 jinn_Q23 ._Q23 
+not_Q23 one_Q23 thing_Q23 ._Q23 
+what_Q23 was_Q23 his_Q23 life_Q23 like_Q23 before_Q23 this_Q23 film_Q23 ?_Q23 
+well_Q23 ,_Q23 i_Q23 imagine_Q23 he_Q23 didn't_Q23 have_Q23 one_Q23 ._Q23 
+that's_Q23 why_Q23 he_Q23 feels_Q23 like_Q23 a_Q23 plot_Q23 device_Q23 ._Q23 
+this_Q23 probably_Q23 explains_Q23 why_Q23 neeson_Q23 looks_Q23 so_Q23 hopeless_Q23 in_Q23 the_Q23 role_Q23 ,_Q23 and_Q23 why_Q23 he's_Q23 recently_Q23 retired_Q23 from_Q23 film_Q23 (_Q23 i_Q23 don't_Q23 blame_Q23 him_Q23 ,_Q23 honestly_Q23 )_Q23 ._Q23 
+obi-wan_Q23 ,_Q23 a_Q23 character_Q23 i_Q23 was_Q23 really_Q23 looking_Q23 forward_Q23 to_Q23 learning_Q23 more_Q23 about_Q23 ,_Q23 is_Q23 even_Q23 less_Q23 interesting_Q23 ._Q23 
+mcgregor_Q23 has_Q23 just_Q23 a_Q23 few_Q23 lines_Q23 ,_Q23 so_Q23 anyone_Q23 hoping_Q23 to_Q23 see_Q23 the_Q23 engaging_Q23 young_Q23 actor_Q23 in_Q23 a_Q23 great_Q23 performance_Q23 is_Q23 urged_Q23 to_Q23 look_Q23 elsewhere_Q23 ._Q23 
+since_Q23 these_Q23 two_Q23 men_Q23 are_Q23 the_Q23 focus_Q23 of_Q23 the_Q23 phantom_Q23 menace_Q23 ,_Q23 lucas_Q23 has_Q23 served_Q23 us_Q23 a_Q23 big_Q23 emotional_Q23 void_Q23 as_Q23 the_Q23 centerpiece_Q23 of_Q23 his_Q23 movie_Q23 ._Q23 
+things_Q23 start_Q23 to_Q23 pick_Q23 up_Q23 when_Q23 our_Q23 characters_Q23 reach_Q23 tatooine_Q23 ;_Q23 young_Q23 anakin_Q23 is_Q23 perhaps_Q23 the_Q23 only_Q23 truly_Q23 fleshed-out_Q23 character_Q23 in_Q23 the_Q23 film_Q23 ,_Q23 and_Q23 lloyd_Q23 does_Q23 a_Q23 thoughtful_Q23 job_Q23 with_Q23 the_Q23 role_Q23 ._Q23 
+i_Q23 was_Q23 also_Q23 hugely_Q23 impressed_Q23 with_Q23 the_Q23 sand_Q23 speeder_Q23 scene_Q23 ;_Q23 rarely_Q23 is_Q23 an_Q23 action_Q23 sequence_Q23 so_Q23 fast_Q23 and_Q23 so_Q23 exciting_Q23 ._Q23 
+and_Q23 when_Q23 anakin_Q23 says_Q23 goodbye_Q23 to_Q23 his_Q23 mother_Q23 ,_Q23 i_Q23 found_Q23 it_Q23 moving_Q23 ._Q23 
+also_Q23 fairly_Q23 good_Q23 is_Q23 portman_Q23 ,_Q23 and_Q23 she_Q23 manages_Q23 to_Q23 give_Q23 a_Q23 little_Q23 depth_Q23 to_Q23 a_Q23 character_Q23 where_Q23 no_Q23 depth_Q23 has_Q23 been_Q23 written_Q23 ._Q23 
+jar_Q23 jar_Q23 binks_Q23 is_Q23 one_Q23 of_Q23 the_Q23 most_Q23 annoying_Q23 characters_Q23 i've_Q23 ever_Q23 had_Q23 to_Q23 endure_Q23 ,_Q23 but_Q23 he's_Q23 more_Q23 interesting_Q23 than_Q23 most_Q23 of_Q23 the_Q23 humans_Q23 ._Q23 
+as_Q23 soon_Q23 as_Q23 the_Q23 relatively-brief_Q23 segment_Q23 on_Q23 tatooine_Q23 is_Q23 over_Q23 ,_Q23 it's_Q23 back_Q23 to_Q23 the_Q23 mind-numbing_Q23 special_Q23 effects_Q23 and_Q23 depthless_Q23 action_Q23 scenes_Q23 ._Q23 
+i've_Q23 seen_Q23 many_Q23 movies_Q23 that_Q23 qualify_Q23 as_Q23 "_Q23 special_Q23 effects_Q4 extravaganzas_Q4 ,_Q4 "_Q4 but_Q4 the_Q4 phantom_Q4 menace_Q4 is_Q4 the_Q4 first_Q4 one_Q4 i've_Q4 seen_Q4 that_Q4 had_Q4 me_Q4 sick_Q4 of_Q4 the_Q4 special_Q4 effects_Q4 fifteen_Q4 minutes_Q4 into_Q4 the_Q4 movie_Q4 ._Q4 
+the_Q4 reason_Q4 is_Q4 obvious_Q4 :_Q4 george_Q4 lucas_Q4 has_Q4 no_Q4 restraint_Q4 ._Q4 
+i_Q4 can't_Q4 say_Q4 that_Q4 i_Q4 didn't_Q4 find_Q4 the_Q4 effects_Q4 original_Q4 ,_Q4 because_Q4 i_Q4 did_Q4 --_Q4 the_Q4 final_Q4 battle_Q4 between_Q4 darth_Q4 maul_Q4 ,_Q4 obi-wan_Q4 ,_Q4 and_Q4 qui-gon_Q4 is_Q4 visually_Q4 exceptional_Q4 ,_Q4 as_Q4 is_Q4 most_Q4 of_Q4 the_Q4 film_Q4 ._Q4 
+but_Q4 i_Q4 also_Q4 found_Q4 the_Q4 effects_Q4 deadening_Q4 and_Q4 tiresome_Q4 ._Q4 
+my_Q4 breaking_Q4 point_Q4 was_Q4 near_Q4 the_Q4 end_Q4 of_Q4 the_Q4 picture_Q4 ,_Q4 as_Q4 anakin_Q4 is_Q4 getting_Q4 questioned_Q4 by_Q4 yoda_Q4 and_Q4 the_Q4 other_Q4 jedi_Q4 masters_Q4 ;_Q4 in_Q4 the_Q4 background_Q4 ,_Q4 we_Q4 see_Q4 hundreds_Q4 of_Q4 digital_Q4 spaceships_Q4 flying_Q4 around_Q4 through_Q4 a_Q4 digital_Q4 sky_Q4 ,_Q4 and_Q4 i_Q4 wanted_Q4 that_Q4 to_Q4 go_Q4 away_Q4 ._Q4 
+can't_Q4 we_Q4 have_Q4 one_Q4 stinking_Q4 scene_Q4 that_Q4 isn't_Q4 bursting_Q4 at_Q4 the_Q4 seems_Q4 with_Q4 a_Q4 special_Q4 effects_Q4 shot_Q4 ?_Q4 
+i_Q4 got_Q4 so_Q4 sick_Q4 of_Q4 looking_Q4 at_Q4 the_Q4 cgi_Q4 characters_Q4 and_Q4 spaceships_Q4 and_Q4 planets_Q4 and_Q4 backgrounds_Q4 that_Q4 i_Q4 really_Q4 just_Q4 wanted_Q4 to_Q4 go_Q4 outside_Q4 and_Q4 look_Q4 at_Q4 a_Q4 physical_Q4 landscape_Q4 for_Q4 a_Q4 few_Q4 hours_Q4 ._Q4 
+and_Q4 then_Q4 there's_Q4 the_Q4 question_Q4 of_Q4 magic_Q4 ._Q4 
+what_Q4 was_Q4 lost_Q4 in_Q4 the_Q4 sixteen_Q4 years_Q4 between_Q4 the_Q4 phantom_Q4 menace_Q4 and_Q4 return_Q4 of_Q4 the_Q4 jedi_Q4 ?_Q4 
+i_Q4 have_Q4 a_Q4 feeling_Q4 that_Q4 lucas_Q4 was_Q4 so_Q4 focused_Q4 on_Q4 how_Q4 his_Q4 movie_Q4 looked_Q4 that_Q4 he_Q4 forgot_Q4 entirely_Q4 the_Q4 way_Q4 it_Q4 should_Q4 feel_Q4 ._Q4 
+john_Q4 williams'_Q4 familiar_Q4 score_Q4 is_Q4 no_Q4 help_Q4 ,_Q4 nor_Q4 is_Q4 lucas'_Q4 direction_Q4 ._Q4 
+i_Q4 think_Q4 it_Q4 comes_Q4 right_Q4 down_Q4 to_Q4 characters_Q4 :_Q4 there_Q4 are_Q4 none_Q4 here_Q4 ._Q4 
+i_Q4 longed_Q4 for_Q4 the_Q4 magnetic_Q4 presence_Q4 of_Q4 han_Q4 ,_Q4 luke_Q4 ,_Q4 and_Q4 leia_Q4 ,_Q4 but_Q4 i_Q4 got_Q4 no_Q4 such_Q4 thing_Q4 ._Q4 
+and_Q4 what_Q4 about_Q4 the_Q4 ridiculous_Q4 expectations_Q4 ?_Q4 
+mine_Q4 weren't_Q4 that_Q4 high_Q4 ;_Q4 i_Q4 simply_Q4 wanted_Q4 a_Q4 film_Q4 that_Q4 showed_Q4 me_Q4 the_Q4 roots_Q4 of_Q4 the_Q4 films_Q4 that_Q4 i_Q4 grew_Q4 up_Q4 loving_Q4 ,_Q4 a_Q4 story_Q4 that_Q4 had_Q4 a_Q4 few_Q4 characters_Q4 and_Q4 a_Q4 few_Q4 great_Q4 special_Q4 effects_Q4 ._Q4 
+instead_Q4 ,_Q4 i_Q4 got_Q4 two_Q4 hours_Q4 and_Q4 fifteen_Q4 minutes_Q4 of_Q4 a_Q4 lifeless_Q4 and_Q4 imaginative_Q4 computer_Q4 graphics_Q4 show_Q4 ._Q4 
+i_Q4 don't_Q4 hate_Q4 the_Q4 phantom_Q4 menace_Q4 as_Q4 much_Q4 as_Q4 i_Q4 resent_Q4 it_Q4 :_Q4 i'd_Q4 like_Q4 to_Q4 forget_Q4 that_Q4 it_Q4 exists_Q4 ,_Q4 and_Q4 yet_Q4 i_Q4 can't_Q4 ._Q4 
+it's_Q4 here_Q4 to_Q4 stay_Q4 ._Q4 
+i_Q4 can_Q4 only_Q4 hope_Q4 that_Q4 episodes_Q4 ii_Q4 and_Q4 iii_Q4 have_Q4 something_Q4 of_Q4 substance_Q4 in_Q4 them_Q4 ,_Q4 because_Q4 if_Q4 they_Q4 don't_Q4 ,_Q4 then_Q4 lucas_Q4 will_Q4 have_Q4 pulled_Q4 off_Q4 the_Q4 impossible_Q4 task_Q4 of_Q4 destroying_Q4 his_Q4 own_Q4 indestructible_Q4 series_Q4 ._Q4 
+_Q4 

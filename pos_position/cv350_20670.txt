@@ -1,0 +1,17 @@
+synopsis_Q1 :_Q1 upper_Q1 middle_Q1 class_Q1 ,_Q1 suburban_Q1 family_Q1 man_Q1 lester_Q1 (_Q1 kevin_Q1 spacey_Q1 )_Q1 realizes_Q1 that_Q1 he_Q1 is_Q1 just_Q1 going_Q1 through_Q1 the_Q1 motions_Q1 :_Q1 he_Q1 is_Q1 unable_Q1 to_Q1 feel_Q1 passion_Q1 ;_Q1 he_Q1 is_Q1 soulless_Q1 ,_Q1 cynical_Q1 ,_Q1 and_Q1 no_Q1 longer_Q1 able_Q1 to_Q1 feel_Q1 the_Q1 edge_Q1 between_Q1 success_Q1 and_Q1 failure_Q1 ._Q1 
+everyone_Q1 else_Q1 around_Q1 him_Q1 has_Q1 similar_Q1 symptoms_Q1 ._Q1 
+lester's_Q1 unassertive_Q1 daughter_Q1 jane_Q1 (_Q1 thora_Q1 birch_Q1 )_Q1 is_Q1 too_Q1 lethargic_Q1 to_Q1 change_Q1 her_Q1 world_Q1 ,_Q1 yet_Q1 all_Q1 too_Q1 ready_Q1 to_Q1 whine_Q1 and_Q1 complain_Q1 ._Q1 
+his_Q1 wife_Q1 carolyn_Q1 (_Q1 annette_Q1 bening_Q1 )_Q1 is_Q1 reduced_Q1 to_Q1 keeping_Q1 up_Q1 appearances_Q1 and_Q1 reciting_Q1 commercialist_Q23 slogans_Q23 ._Q23 
+and_Q23 these_Q23 are_Q23 people_Q23 with_Q23 a_Q23 big_Q23 house_Q23 and_Q23 a_Q23 decent_Q23 standard_Q23 of_Q23 living_Q23 ._Q23 
+the_Q23 only_Q23 person_Q23 who_Q23 seems_Q23 able_Q23 to_Q23 appreciate_Q23 beauty_Q23 and_Q23 freedom_Q23 and_Q23 life_Q23 is_Q23 the_Q23 person_Q23 most_Q23 deprived_Q23 of_Q23 it_Q23 :_Q23 a_Q23 dope-dealing_Q23 teen_Q23 from_Q23 across_Q23 the_Q23 street_Q23 who_Q23 is_Q23 practically_Q23 imprisoned_Q23 by_Q23 a_Q23 domineering_Q23 ,_Q23 bullying_Q23 father_Q23 ._Q23 
+when_Q23 lester_Q23 embarks_Q23 on_Q23 a_Q23 mad_Q23 scramble_Q23 to_Q23 feel_Q23 the_Q23 edge_Q23 again_Q23 ,_Q23 the_Q23 fact_Q23 that_Q23 he_Q23 has_Q23 quit_Q23 his_Q23 job_Q23 to_Q23 feel_Q23 what_Q23 it's_Q23 like_Q23 -_Q23 -_Q23 and_Q23 his_Q23 newfound_Q23 interest_Q23 in_Q23 exercise_Q23 to_Q23 impress_Q23 a_Q23 teenage_Q23 girl_Q23 -_Q23 -_Q23 ruffle_Q23 a_Q23 lot_Q23 of_Q23 feathers_Q23 in_Q23 the_Q23 family_Q23 ._Q23 
+will_Q23 lester_Q23 regain_Q23 his_Q23 ability_Q23 to_Q23 appreciate_Q23 life_Q23 ?_Q23 
+opinion_Q23 :_Q23 people_Q23 say_Q23 it_Q23 all_Q23 the_Q23 time_Q23 :_Q23 you_Q23 never_Q23 appreciate_Q23 good_Q23 health_Q23 until_Q23 it's_Q23 gone_Q23 ._Q23 
+likewise_Q23 ,_Q23 people_Q23 raised_Q23 in_Q23 fabulously_Q23 pampered_Q23 prosperity_Q23 can_Q23 become_Q23 unhappy_Q23 and_Q23 spiteful_Q23 over_Q23 the_Q23 dumbest_Q23 ,_Q23 most_Q23 inconsequential_Q23 problems_Q23 ,_Q23 simply_Q23 because_Q23 they_Q23 have_Q23 no_Q23 clue_Q23 how_Q23 good_Q23 they_Q23 have_Q23 it_Q23 ._Q23 
+sometimes_Q23 it_Q23 takes_Q23 a_Q23 near_Q23 fall_Q23 -_Q23 -_Q23 accidentally_Q23 or_Q23 through_Q23 deliberate_Q23 fasting_Q23 -_Q23 -_Q23 to_Q23 move_Q23 out_Q23 of_Q23 apathy_Q23 and_Q23 reclaim_Q23 your_Q23 ability_Q23 to_Q23 challenge_Q23 the_Q23 world_Q23 ._Q23 
+the_Q4 deprivation/appreciation_Q4 cycle_Q4 is_Q4 a_Q4 major_Q4 theme_Q4 of_Q4 american_Q4 beauty_Q4 ._Q4 
+american_Q4 beauty_Q4 is_Q4 a_Q4 non-formula_Q4 ,_Q4 intelligent_Q4 and_Q4 articulate_Q4 movie_Q4 that_Q4 offers_Q4 fantastic_Q4 performances_Q4 by_Q4 everyone_Q4 in_Q4 the_Q4 cast_Q4 ,_Q4 especially_Q4 kevin_Q4 spacey_Q4 ,_Q4 who_Q4 is_Q4 simply_Q4 gosh_Q4 darn_Q4 amazing_Q4 this_Q4 movie_Q4 ._Q4 
+the_Q4 thing_Q4 i_Q4 like_Q4 about_Q4 american_Q4 beauty_Q4 is_Q4 that_Q4 there_Q4 is_Q4 no_Q4 sentimental_Q4 music_Q4 ,_Q4 no_Q4 hospital_Q4 scene_Q4 nor_Q4 any_Q4 overly_Q4 dramatic_Q4 hokum_Q4 ._Q4 
+the_Q4 movie_Q4 entertains_Q4 and_Q4 offers_Q4 brilliant_Q4 performances_Q4 just_Q4 as_Q4 is_Q4 ._Q4 
+if_Q4 you_Q4 are_Q4 in_Q4 the_Q4 mood_Q4 for_Q4 a_Q4 thoughtful_Q4 ,_Q4 non-formula_Q4 flick_Q4 ,_Q4 i_Q4 highly_Q4 recommend_Q4 american_Q4 beauty_Q4 ._Q4 
+_Q4 

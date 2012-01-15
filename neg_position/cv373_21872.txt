@@ -1,0 +1,43 @@
+warning_Q1 :_Q1 may_Q1 contain_Q1 slight_Q1 mild_Q1 spoilers_Q1 ._Q1 
+rated_Q1 :_Q1 r_Q1 for_Q1 intense_Q1 violence/gore_Q1 ,_Q1 some_Q1 strong_Q1 sexuality_Q1 and_Q1 language_Q1 ._Q1 
+starring_Q1 :_Q1 arnold_Q1 schwarzeneggar_Q1 ,_Q1 robin_Q1 tunney_Q1 ,_Q1 rod_Q1 stieger_Q1 ,_Q1 gabriel_Q1 byrne_Q1 ._Q1 
+running_Q1 time_Q1 :_Q1 132_Q1 minutes_Q1 
+we_Q1 go_Q1 into_Q1 a_Q1 movie_Q1 theater_Q1 ,_Q1 boom_Q1 !_Q1 
+the_Q1 lights_Q1 go_Q1 down_Q1 ,_Q1 our_Q1 hearts_Q1 race_Q1 ,_Q1 we_Q1 go_Q1 through_Q1 ten_Q1 minutes_Q1 of_Q1 preview_Q1 and_Q1 finally_Q1 the_Q1 movie_Q1 we've_Q1 been_Q1 waiting_Q1 to_Q1 see_Q1 for_Q1 a_Q1 long_Q1 time_Q1 comes_Q1 on_Q1 ._Q1 
+we_Q1 sit_Q1 there_Q1 ,_Q1 watch_Q1 in_Q1 disbelief_Q1 that_Q1 this_Q1 movie_Q1 is_Q1 as_Q1 bad_Q1 as_Q1 it_Q1 is_Q1 ._Q1 
+why_Q1 shouldn't_Q1 i_Q1 have_Q1 know_Q1 what_Q1 i_Q1 was_Q1 getting_Q1 myself_Q1 into_Q1 ._Q1 
+again_Q1 like_Q1 this_Q1 past_Q1 summers_Q1 hit_Q1 "_Q1 stigmata_Q1 "_Q1 ,_Q1 "_Q1 end_Q1 of_Q1 days_Q1 "_Q1 may_Q1 be_Q1 worse_Q1 ._Q1 
+it's_Q1 not_Q1 like_Q1 this_Q1 is_Q1 any_Q1 kind_Q1 of_Q1 original_Q1 idea_Q1 ,_Q1 it_Q1 just_Q1 throws_Q1 in_Q1 some_Q1 "_Q1 rosemary's_Q1 baby_Q1 "_Q1 ,_Q1 along_Q1 with_Q1 "_Q1 the_Q1 devil's_Q1 advocate_Q1 "_Q1 a_Q1 little_Q1 "_Q1 exorcist_Q1 "_Q1 and_Q1 some_Q1 "_Q1 stigmata_Q1 "_Q1 here_Q1 and_Q1 there_Q1 ._Q1 
+whala_Q1 you_Q1 have_Q1 "_Q1 end_Q1 of_Q1 days_Q1 "_Q1 a_Q1 movie_Q1 that_Q1 is_Q1 extremely_Q1 disappointing_Q1 and_Q1 by_Q1 the_Q1 previews_Q1 made_Q1 it_Q1 look_Q1 terrific_Q1 ._Q1 
+sadly_Q1 but_Q1 truly_Q1 again_Q1 like_Q1 most_Q1 recent_Q1 films_Q1 ,_Q1 all_Q1 the_Q1 good_Q1 parts_Q1 are_Q1 in_Q1 the_Q1 trailers_Q1 ._Q1 
+the_Q1 plot_Q1 which_Q1 is_Q1 very_Q1 confusing_Q1 at_Q1 times_Q1 is_Q1 also_Q1 very_Q1 ludicrous_Q1 and_Q1 the_Q1 movie_Q1 is_Q1 destined_Q1 to_Q1 be_Q1 a_Q1 hit_Q1 in_Q1 the_Q1 first_Q23 weekend_Q23 ,_Q23 and_Q23 flop_Q23 in_Q23 the_Q23 next_Q23 ._Q23 
+jericho_Q23 cane_Q23 (_Q23 arnold_Q23 schwarzneggar_Q23 in_Q23 hit_Q23 typical_Q23 macho_Q23 role_Q23 )_Q23 is_Q23 a_Q23 cop_Q23 who_Q23 finds_Q23 out_Q23 that_Q23 he_Q23 is_Q23 chosen_Q23 to_Q23 track_Q23 down_Q23 satan_Q23 (_Q23 living_Q23 in_Q23 gabriel_Q23 byrnes_Q23 body_Q23 )_Q23 and_Q23 stop_Q23 him_Q23 from_Q23 impregnating_Q23 christine_Q23 york_Q23 (_Q23 robin_Q23 tunney_Q23 )_Q23 because_Q23 if_Q23 he_Q23 does_Q23 ,_Q23 and_Q23 she_Q23 gives_Q23 birth_Q23 all_Q23 existence_Q23 as_Q23 we_Q23 know_Q23 it_Q23 will_Q23 cease_Q23 to_Q23 exist_Q23 ._Q23 
+he_Q23 has_Q23 to_Q23 do_Q23 this_Q23 before_Q23 it_Q23 turns_Q23 into_Q23 the_Q23 year_Q23 2000_Q23 ,_Q23 and_Q23 strangely_Q23 he's_Q23 trying_Q23 to_Q23 fight_Q23 him_Q23 5_Q23 minutes_Q23 before_Q23 2000_Q23 comes_Q23 ._Q23 
+he_Q23 seeks_Q23 help_Q23 from_Q23 the_Q23 catholic_Q23 church_Q23 and_Q23 help_Q23 from_Q23 rod_Q23 stieger_Q23 (_Q23 in_Q23 a_Q23 terrific_Q23 role_Q23 )_Q23 and_Q23 tries_Q23 to_Q23 save_Q23 this_Q23 girl_Q23 leading_Q23 to_Q23 an_Q23 ending_Q23 that's_Q23 satisfying_Q23 ,_Q23 but_Q23 turns_Q23 into_Q23 a_Q23 typical_Q23 action_Q23 movie_Q23 ._Q23 
+that's_Q23 pretty_Q23 much_Q23 it_Q23 on_Q23 plot_Q23 ._Q23 
+it_Q23 does_Q23 have_Q23 the_Q23 razzle_Q23 and_Q23 dazzle_Q23 of_Q23 a_Q23 great_Q23 action_Q23 movie_Q23 ,_Q23 and_Q23 with_Q23 the_Q23 100m_Q23 dollar_Q23 budget_Q23 parts_Q23 seem_Q23 to_Q23 show_Q23 it_Q23 ,_Q23 parts_Q23 you_Q23 have_Q23 to_Q23 wonder_Q23 where_Q23 all_Q23 the_Q23 money_Q23 went_Q23 ._Q23 
+as_Q23 for_Q23 arnie_Q23 ?_Q23 
+good_Q23 role_Q23 ,_Q23 ok_Q23 performance_Q23 ._Q23 
+i_Q23 think_Q23 since_Q23 he_Q23 is_Q23 getting_Q23 a_Q23 little_Q23 older_Q23 he_Q23 is_Q23 held_Q23 back_Q23 a_Q23 lot_Q23 of_Q23 his_Q23 stunts_Q23 ._Q23 
+the_Q23 thing_Q23 that_Q23 disappointed_Q23 me_Q23 was_Q23 the_Q23 fact_Q23 that_Q23 there_Q23 was_Q23 nothing_Q23 to_Q23 the_Q23 film_Q23 ._Q23 
+in_Q23 the_Q23 trailers_Q23 it_Q23 looks_Q23 like_Q23 a_Q23 good_Q23 scary_Q23 ,_Q23 action_Q23 film_Q23 and_Q23 ends_Q23 up_Q23 being_Q23 a_Q23 boring_Q23 ,_Q23 long_Q23 and_Q23 preposterous_Q23 drama_Q23 that_Q23 leads_Q23 into_Q23 something_Q23 else_Q23 that_Q23 leaves_Q23 us_Q23 with_Q23 questions_Q23 ._Q23 
+gabriel_Q23 byrnes_Q23 (_Q23 who_Q23 ironically_Q23 played_Q23 a_Q23 priest_Q23 in_Q23 "_Q23 stigmata_Q23 "_Q23 )_Q23 here_Q23 plays_Q23 satan_Q23 and_Q23 gives_Q23 a_Q23 good_Q23 performance_Q23 but_Q23 again_Q23 seems_Q23 held_Q23 back_Q23 and_Q23 not_Q23 into_Q23 his_Q23 character_Q23 ._Q23 
+two_Q23 years_Q23 back_Q23 al_Q23 pacino_Q23 gave_Q23 a_Q23 terrific_Q23 performance_Q23 in_Q23 the_Q23 fun_Q23 "_Q23 the_Q23 devil's_Q23 advocate_Q23 "_Q23 and_Q23 here_Q23 it_Q23 seems_Q23 like_Q23 the_Q23 idea_Q23 of_Q23 him_Q23 is_Q23 in_Q23 the_Q23 character_Q23 also_Q23 ._Q23 
+robin_Q23 tunney_Q23 (_Q23 great_Q23 performance_Q23 as_Q23 always_Q23 )_Q23 plays_Q23 satan's_Q23 main_Q23 person_Q23 whom_Q23 he_Q23 wants_Q23 to_Q23 impregnate_Q23 to_Q23 carry_Q23 his_Q23 child_Q23 ._Q23 
+of_Q23 course_Q23 rod_Q23 stieger_Q23 gives_Q23 another_Q23 great_Q23 performance_Q23 which_Q23 really_Q23 isn't_Q23 nothing_Q23 new_Q23 ._Q23 
+the_Q23 direction_Q23 by_Q23 peter_Q23 hyams_Q23 is_Q23 at_Q23 times_Q23 a_Q23 bit_Q23 overblown_Q23 ,_Q23 though_Q23 not_Q23 nearly_Q23 as_Q23 the_Q23 visual_Q23 style_Q23 was_Q23 in_Q23 "_Q23 stigmata_Q23 "_Q23 ._Q23 
+here_Q23 we_Q23 are_Q23 given_Q23 great_Q23 camera_Q23 work_Q23 ,_Q23 and_Q23 some_Q23 great_Q23 scenes_Q23 that_Q23 are_Q23 terrifically_Q23 directed_Q23 but_Q23 sadly_Q23 just_Q23 don't_Q23 work_Q23 in_Q23 this_Q23 movie_Q23 ._Q23 
+the_Q23 script_Q23 written_Q23 by_Q23 andrew_Q23 marlowe_Q23 has_Q23 a_Q23 few_Q23 witty_Q23 lines_Q23 ,_Q23 but_Q23 again_Q23 the_Q23 movie_Q23 is_Q23 all_Q23 style_Q23 and_Q23 no_Q23 substance_Q23 and_Q23 by_Q23 the_Q23 ending_Q23 finale_Q23 climax_Q23 i_Q23 was_Q23 ready_Q23 to_Q23 go_Q23 home_Q23 ._Q23 
+only_Q23 a_Q23 few_Q23 things_Q23 work_Q23 here_Q23 and_Q23 those_Q23 are_Q23 a_Q23 few_Q23 of_Q23 the_Q23 performances_Q23 ,_Q23 the_Q23 writing_Q23 and_Q23 visual_Q23 style_Q23 ,_Q23 but_Q23 the_Q23 storyline_Q23 and_Q23 the_Q23 finished_Q4 product_Q4 don't_Q4 work_Q4 as_Q4 well_Q4 ._Q4 
+the_Q4 sad_Q4 thing_Q4 is_Q4 that_Q4 "_Q4 end_Q4 of_Q4 days_Q4 "_Q4 had_Q4 so_Q4 many_Q4 things_Q4 going_Q4 for_Q4 it_Q4 ._Q4 
+the_Q4 plot_Q4 could_Q4 have_Q4 been_Q4 more_Q4 organized_Q4 ,_Q4 the_Q4 action_Q4 scenes_Q4 could_Q4 have_Q4 been_Q4 more_Q4 brainy_Q4 and_Q4 less_Q4 mind-numbing_Q4 ._Q4 
+at_Q4 times_Q4 it_Q4 seems_Q4 like_Q4 "_Q4 armageddon_Q4 "_Q4 and_Q4 started_Q4 to_Q4 get_Q4 old_Q4 and_Q4 tiresome_Q4 ._Q4 
+hollywood_Q4 is_Q4 running_Q4 out_Q4 of_Q4 ideas_Q4 bad_Q4 ,_Q4 and_Q4 like_Q4 i've_Q4 always_Q4 said_Q4 before_Q4 needs_Q4 new_Q4 ones_Q4 ._Q4 
+even_Q4 with_Q4 its_Q4 100m_Q4 budget_Q4 "_Q4 end_Q4 of_Q4 days_Q4 "_Q4 is_Q4 less_Q4 than_Q4 pleasing_Q4 ._Q4 
+in_Q4 fact_Q4 the_Q4 100m_Q4 dollar_Q4 budget_Q4 is_Q4 at_Q4 least_Q4 30m_Q4 over_Q4 ,_Q4 and_Q4 easily_Q4 could_Q4 have_Q4 had_Q4 a_Q4 70m_Q4 budget_Q4 ._Q4 
+maybe_Q4 i_Q4 sound_Q4 crazy_Q4 ,_Q4 but_Q4 i_Q4 am_Q4 really_Q4 looking_Q4 forward_Q4 to_Q4 the_Q4 new_Q4 exorcist_Q4 film_Q4 ,_Q4 and_Q4 hope_Q4 that_Q4 they_Q4 make_Q4 it_Q4 as_Q4 good_Q4 as_Q4 the_Q4 original_Q4 ._Q4 
+we_Q4 need_Q4 to_Q4 get_Q4 new_Q4 ideas_Q4 and_Q4 stop_Q4 recycling_Q4 old_Q4 ones_Q4 just_Q4 to_Q4 make_Q4 money_Q4 at_Q4 the_Q4 box-office_Q4 ._Q4 
+we_Q4 need_Q4 to_Q4 get_Q4 more_Q4 films_Q4 like_Q4 "_Q4 the_Q4 blair_Q4 witch_Q4 project_Q4 "_Q4 that_Q4 could_Q4 scare_Q4 people_Q4 to_Q4 death_Q4 ,_Q4 while_Q4 people_Q4 thinking_Q4 well_Q4 what_Q4 exactly_Q4 is_Q4 scaring_Q4 them_Q4 and_Q4 how_Q4 do_Q4 i_Q4 know_Q4 that_Q4 it_Q4 is_Q4 in_Q4 fact_Q4 the_Q4 blair_Q4 witch_Q4 ._Q4 
+overblown_Q4 effects_Q4 ,_Q4 stupid_Q4 and_Q4 thin_Q4 plot-line_Q4 ,_Q4 good_Q4 performances_Q4 ,_Q4 disappointing_Q4 ._Q4 ._Q4 ._Q4 ._Q4 umm_Q4 
+yup_Q4 those_Q4 pretty_Q4 much_Q4 describe_Q4 "_Q4 end_Q4 of_Q4 days_Q4 "_Q4 ._Q4 
+_Q4 

@@ -1,0 +1,52 @@
+in_Q1 the_Q1 company_Q1 of_Q1 men_Q1 made_Q1 a_Q1 splash_Q1 at_Q1 the_Q1 sundance_Q1 film_Q1 festival_Q1 because_Q1 ,_Q1 in_Q1 a_Q1 year_Q1 plagued_Q1 by_Q1 brothers_Q1 mcmullen-style_Q1 ,_Q1 earnestly_Q1 shallow_Q1 gen-x_Q1 angst_Q1 pictures_Q1 ,_Q1 it_Q1 seemed_Q1 to_Q1 be_Q1 actually_Q1 about_Q1 something_Q1 ._Q1 
+it_Q1 angered_Q1 people_Q1 ,_Q1 started_Q1 arguments_Q1 outside_Q1 the_Q1 theater_Q1 ,_Q1 riled_Q1 things_Q1 up_Q1 ._Q1 
+it_Q1 ignited_Q1 a_Q1 spark_Q1 of_Q1 excitement_Q1 in_Q1 what_Q1 otherwise_Q1 has_Q1 been_Q1 a_Q1 disappointing_Q1 year_Q1 for_Q1 independent_Q1 film_Q1 ._Q1 
+having_Q1 endured_Q1 my_Q1 share_Q1 of_Q1 the_Q1 hype_Q1 ,_Q1 i_Q1 waited_Q1 calmly_Q1 for_Q1 men_Q1 to_Q1 reach_Q1 the_Q1 hinterlands_Q1 wherein_Q1 i_Q1 reside_Q1 ,_Q1 and_Q1 then_Q1 checked_Q1 in_Q1 to_Q1 see_Q1 what_Q1 all_Q1 the_Q1 fuss_Q1 was_Q1 about_Q1 ._Q1 
+does_Q1 men_Q1 live_Q1 up_Q1 to_Q1 its_Q1 press_Q1 ?_Q1 
+well_Q1 ,_Q1 yes_Q1 it_Q1 does_Q1 ._Q1 
+and_Q1 it_Q1 may_Q1 make_Q1 you_Q1 think_Q1 twice_Q1 before_Q1 you_Q1 consider_Q1 dating_Q1 anyone_Q1 your_Q1 office_Q1 ._Q1 
+for_Q1 the_Q1 uninitiated_Q1 ,_Q1 newcomers_Q1 aaron_Q1 eckhart_Q1 and_Q1 matt_Q1 malloy_Q1 play_Q1 chad_Q1 and_Q1 howard_Q1 ,_Q1 two_Q1 corporate_Q1 drones_Q1 who_Q1 are_Q1 dispatched_Q1 by_Q1 their_Q1 nameless_Q1 company_Q1 to_Q1 a_Q1 remote_Q1 branch_Q1 office_Q1 for_Q1 a_Q1 six_Q1 week_Q1 assignment_Q1 ._Q1 
+chad_Q1 and_Q1 howard_Q1 are_Q1 archetypes_Q1 ,_Q1 examples_Q1 of_Q1 which_Q1 you_Q1 can_Q1 no_Q1 doubt_Q1 find_Q1 in_Q1 your_Q1 own_Q1 place_Q1 of_Q1 business_Q1 ._Q1 
+chad_Q1 is_Q1 the_Q1 blond_Q1 golden_Q1 boy_Q1 ,_Q1 genetically_Q1 engineered_Q1 for_Q1 success_Q1 ,_Q1 the_Q1 natural_Q1 charmer_Q1 who_Q1 seems_Q1 to_Q1 glide_Q1 effortlessly_Q1 up_Q1 the_Q1 corporate_Q1 ladder_Q1 ._Q1 
+howard_Q1 is_Q1 chad's_Q1 boss_Q1 ,_Q1 but_Q1 he_Q1 is_Q1 weaker_Q1 of_Q1 will_Q1 ,_Q1 the_Q1 clumsy_Q1 practitioner_Q1 of_Q1 office_Q1 politics_Q1 who_Q1 has_Q1 achieved_Q1 his_Q1 position_Q1 through_Q1 dogged_Q1 persistence_Q1 rather_Q1 than_Q1 raw_Q1 talent_Q1 ._Q1 
+we_Q1 first_Q1 meet_Q1 them_Q1 awaiting_Q1 their_Q1 flight_Q1 in_Q1 a_Q1 drab_Q1 airport_Q1 lounge_Q1 ._Q1 
+there_Q1 chad_Q1 suggests_Q1 a_Q1 scheme_Q1 worthy_Q1 of_Q1 a_Q1 shakespearean_Q1 villain_Q1 :_Q1 he_Q1 and_Q1 howard_Q1 will_Q1 find_Q1 a_Q23 vulnerable_Q23 single_Q23 woman_Q23 at_Q23 the_Q23 branch_Q23 office_Q23 ,_Q23 woo_Q23 her_Q23 simultaneously_Q23 ,_Q23 win_Q23 her_Q23 love_Q23 ,_Q23 and_Q23 then_Q23 dump_Q23 her_Q23 ._Q23 
+the_Q23 reason_Q23 ?_Q23 
+both_Q23 men_Q23 have_Q23 recently_Q23 been_Q23 dumped_Q23 themselves_Q23 ,_Q23 and_Q23 chad_Q23 sees_Q23 an_Q23 easy_Q23 route_Q23 to_Q23 revenge_Q23 against_Q23 the_Q23 fairer_Q23 sex_Q23 ._Q23 
+_Q23 "_Q23 it'll_Q23 restore_Q23 a_Q23 little_Q23 dignity_Q23 to_Q23 our_Q23 lives_Q23 ,_Q23 "_Q23 he_Q23 says_Q23 ._Q23 
+howard_Q23 ,_Q23 helpless_Q23 against_Q23 the_Q23 force_Q23 of_Q23 chad's_Q23 will_Q23 ,_Q23 agrees_Q23 to_Q23 the_Q23 plan_Q23 ._Q23 
+they_Q23 quickly_Q23 spot_Q23 their_Q23 prey_Q23 in_Q23 the_Q23 form_Q23 of_Q23 christine_Q23 (_Q23 stacy_Q23 edwards_Q23 )_Q23 ,_Q23 a_Q23 fragile_Q23 deaf_Q23 woman_Q23 working_Q23 as_Q23 a_Q23 temp_Q23 ._Q23 
+chad_Q23 moves_Q23 in_Q23 for_Q23 the_Q23 kill_Q23 ,_Q23 flashing_Q23 his_Q23 golden_Q23 boy_Q23 smile_Q23 ,_Q23 plying_Q23 christine_Q23 with_Q23 lunch_Q23 ,_Q23 then_Q23 flowers_Q23 ,_Q23 then_Q23 dinner_Q23 ._Q23 
+howard_Q23 follows_Q23 suit_Q23 ,_Q23 though_Q23 his_Q23 efforts_Q23 are_Q23 in_Q23 contrast_Q23 ham-handed_Q23 and_Q23 desperate_Q23 ._Q23 
+flattered_Q23 to_Q23 have_Q23 the_Q23 attention_Q23 of_Q23 two_Q23 eligible_Q23 men_Q23 ,_Q23 christine_Q23 dates_Q23 them_Q23 both_Q23 ._Q23 
+you_Q23 can_Q23 guess_Q23 which_Q23 one_Q23 she_Q23 falls_Q23 for_Q23 ._Q23 
+soon_Q23 a_Q23 tragic_Q23 lovers'_Q23 triangle_Q23 develops_Q23 :_Q23 christine_Q23 loves_Q23 chad_Q23 ,_Q23 chad_Q23 loves_Q23 himself_Q23 ,_Q23 and_Q23 howard_Q23 loves_Q23 christine_Q23 on_Q23 the_Q23 grounds_Q23 that_Q23 ,_Q23 since_Q23 she's_Q23 handicapped_Q23 and_Q23 shy_Q23 ,_Q23 she_Q23 just_Q23 might_Q23 be_Q23 wretched_Q23 and_Q23 lonely_Q23 enough_Q23 to_Q23 settle_Q23 for_Q23 him_Q23 ._Q23 
+adult_Q23 social_Q23 interaction_Q23 never_Q23 really_Q23 progresses_Q23 beyond_Q23 the_Q23 level_Q23 of_Q23 junior_Q23 high_Q23 ,_Q23 does_Q23 it_Q23 ?_Q23 
+in_Q23 chad_Q23 ,_Q23 writer/director_Q23 labute_Q23 and_Q23 actor_Q23 eckhart_Q23 have_Q23 created_Q23 one_Q23 of_Q23 the_Q23 most_Q23 chilling_Q23 monsters_Q23 ever_Q23 committed_Q23 to_Q23 film-hannibal_Q23 lector_Q23 may_Q23 eat_Q23 human_Q23 flesh_Q23 ,_Q23 but_Q23 chad_Q23 is_Q23 an_Q23 eater_Q23 of_Q23 souls_Q23 ._Q23 
+his_Q23 evil_Q23 is_Q23 as_Q23 subtle_Q23 as_Q23 a_Q23 viper's_Q23 ,_Q23 and_Q23 as_Q23 easy_Q23 as_Q23 his_Q23 smile_Q23 ._Q23 
+we_Q23 watch_Q23 in_Q23 stunned_Q23 disbelief_Q23 as_Q23 he_Q23 back-stabs_Q23 coworkers_Q23 ,_Q23 humiliates_Q23 his_Q23 subordinates_Q23 ,_Q23 and_Q23 works_Q23 his_Q23 deadly_Q23 venom_Q23 into_Q23 christine's_Q23 heart_Q23 ._Q23 
+his_Q23 character_Q23 would_Q23 be_Q23 a_Q23 joke_Q23 if_Q23 he_Q23 wasn't_Q23 so_Q23 chillingly_Q23 real-_Q23 all_Q23 of_Q23 us_Q23 have_Q23 worked_Q23 with_Q23 a_Q23 chad_Q23 ,_Q23 and_Q23 some_Q23 of_Q23 us_Q23 may_Q23 be_Q23 him_Q23 ._Q23 
+he's_Q23 the_Q23 guy_Q23 who_Q23 takes_Q23 your_Q23 job_Q23 and_Q23 then_Q23 laughs_Q23 at_Q23 you_Q23 for_Q23 your_Q23 weakness_Q23 ._Q23 
+if_Q23 one_Q23 of_Q23 his_Q23 co-workers_Q23 should_Q23 happen_Q23 to_Q23 go_Q23 postal_Q23 and_Q23 walk_Q23 into_Q23 the_Q23 office_Q23 with_Q23 a_Q23 bag_Q23 full_Q23 of_Q23 handguns_Q23 ,_Q23 he_Q23 had_Q23 best_Q23 have_Q23 his_Q23 escape_Q23 route_Q23 clearly_Q23 in_Q23 mind_Q23 ._Q23 
+politics_Q23 is_Q23 his_Q23 game_Q23 ,_Q23 and_Q23 the_Q23 modern_Q23 cubicle-filled_Q23 office_Q23 is_Q23 his_Q23 playground_Q23 ._Q23 
+men_Q23 wears_Q23 the_Q23 guise_Q23 of_Q23 a_Q23 black_Q23 comedy_Q23 ,_Q23 but_Q23 it_Q23 functions_Q23 best_Q23 as_Q23 allegory_Q23 ._Q23 
+the_Q23 most_Q23 controversial_Q23 moment_Q23 in_Q23 the_Q23 film_Q23 happens_Q23 when_Q23 chad_Q23 humiliates_Q23 a_Q23 black_Q23 temp_Q23 by_Q23 asking_Q23 him_Q23 how_Q23 badly_Q23 he_Q23 wants_Q23 to_Q23 succeed_Q23 in_Q23 the_Q23 company_Q23 ,_Q23 then_Q23 forces_Q23 him_Q23 to_Q23 prove_Q23 it_Q23 in_Q23 a_Q23 manner_Q23 i_Q23 won't_Q23 describe_Q23 ._Q23 
+the_Q23 scene_Q23 is_Q23 charged_Q23 with_Q23 racism_Q23 and_Q23 fraught_Q23 with_Q23 peril_Q23 ._Q23 
+could_Q23 it_Q23 happen_Q23 in_Q23 the_Q23 real_Q23 world_Q23 ?_Q23 
+probably_Q23 not_Q23 ._Q23 
+taken_Q23 as_Q23 allegory_Q23 ,_Q23 however_Q23 ,_Q23 it_Q23 is_Q23 representative_Q23 of_Q23 the_Q23 treatment_Q23 of_Q23 the_Q23 meek_Q23 by_Q23 the_Q23 powerful_Q23 in_Q23 all_Q23 facets_Q23 of_Q23 society_Q23 ._Q23 
+maybe_Q23 it's_Q23 just_Q23 the_Q23 english_Q23 major_Q23 in_Q23 me_Q23 ,_Q23 but_Q23 chad_Q23 ,_Q23 in_Q23 his_Q23 motiveless_Q23 cruelty_Q23 towards_Q23 christine_Q23 and_Q23 his_Q23 careful_Q23 manipulation_Q23 of_Q23 howard_Q23 ,_Q23 can_Q23 be_Q23 seen_Q23 as_Q23 a_Q23 symbol_Q23 of_Q23 unbridled_Q23 capitalism_Q23 ,_Q23 of_Q23 greed_Q23 without_Q23 conscience_Q23 ._Q23 
+the_Q23 entire_Q23 film_Q23 is_Q23 a_Q23 metaphor_Q23 for_Q23 social_Q23 darwinism-_Q23 only_Q23 the_Q23 strong_Q23 will_Q23 survive_Q23 ._Q23 
+the_Q23 marvel_Q23 of_Q23 labute's_Q23 multi-layered_Q23 script_Q23 is_Q4 that_Q4 it_Q4 can_Q4 disturb_Q4 each_Q4 member_Q4 of_Q4 its_Q4 audience_Q4 in_Q4 an_Q4 entirely_Q4 different_Q4 way_Q4 ._Q4 
+but_Q4 does_Q4 the_Q4 film_Q4 work_Q4 as_Q4 entertainment_Q4 ?_Q4 
+its_Q4 darned_Q4 funny_Q4 in_Q4 spots_Q4 ,_Q4 particularly_Q4 in_Q4 the_Q4 men's_Q4 room_Q4 scenes_Q4 ,_Q4 which_Q4 demonstrate_Q4 the_Q4 lengths_Q4 to_Q4 which_Q4 guys_Q4 will_Q4 go_Q4 to_Q4 hold_Q4 a_Q4 conversation_Q4 while_Q4 engaged_Q4 in_Q4 the_Q4 most_Q4 basic_Q4 of_Q4 bodily_Q4 functions_Q4 ._Q4 
+it_Q4 works_Q4 less_Q4 well_Q4 as_Q4 drama_Q4 ,_Q4 since_Q4 by_Q4 necessity_Q4 the_Q4 characters_Q4 in_Q4 an_Q4 allegory_Q4 tend_Q4 to_Q4 be_Q4 flat_Q4 ciphers_Q4 ._Q4 
+stacy_Q4 edwards_Q4 gives_Q4 a_Q4 measured_Q4 dignity_Q4 to_Q4 christine_Q4 ,_Q4 and_Q4 succeeds_Q4 in_Q4 making_Q4 us_Q4 care_Q4 for_Q4 her_Q4 ,_Q4 but_Q4 by_Q4 the_Q4 end_Q4 of_Q4 the_Q4 film_Q4 we_Q4 still_Q4 know_Q4 nothing_Q4 about_Q4 her_Q4 ._Q4 
+likewise_Q4 ,_Q4 chad_Q4 and_Q4 howard_Q4 are_Q4 simply_Q4 the_Q4 sum_Q4 of_Q4 their_Q4 actions_Q4 ._Q4 
+by_Q4 the_Q4 end_Q4 of_Q4 the_Q4 film_Q4 you'll_Q4 feel_Q4 as_Q4 if_Q4 you've_Q4 met_Q4 a_Q4 genuine_Q4 monster_Q4 in_Q4 chad_Q4 ;_Q4 perhaps_Q4 we_Q4 can_Q4 also_Q4 classify_Q4 men_Q4 as_Q4 a_Q4 horror_Q4 film_Q4 ._Q4 
+certainly_Q4 those_Q4 expecting_Q4 a_Q4 conventional_Q4 hollywood_Q4 resolution_Q4 to_Q4 the_Q4 story_Q4 will_Q4 walk_Q4 away_Q4 disappointed_Q4 ._Q4 
+but_Q4 the_Q4 picture_Q4 is_Q4 often_Q4 mesmerizing_Q4 ,_Q4 and_Q4 the_Q4 script_Q4 is_Q4 a_Q4 work_Q4 of_Q4 fine_Q4 craftsmanship_Q4 ,_Q4 which_Q4 makes_Q4 it_Q4 well_Q4 worth_Q4 your_Q4 time_Q4 ._Q4 
+like_Q4 all_Q4 good_Q4 films_Q4 ,_Q4 it_Q4 offers_Q4 a_Q4 myriad_Q4 of_Q4 parallels_Q4 to_Q4 the_Q4 outside_Q4 world_Q4 ._Q4 
+while_Q4 watching_Q4 chad_Q4 in_Q4 his_Q4 moment_Q4 of_Q4 triumph_Q4 ,_Q4 i_Q4 couldn't_Q4 help_Q4 but_Q4 think_Q4 that_Q4 bill_Q4 gates_Q4 must_Q4 have_Q4 felt_Q4 the_Q4 same_Q4 sort_Q4 of_Q4 cold_Q4 ,_Q4 merciless_Q4 satisfaction_Q4 when_Q4 he_Q4 finally_Q4 stuck_Q4 it_Q4 to_Q4 steve_Q4 jobs_Q4 ._Q4 
+there_Q4 may_Q4 be_Q4 a_Q4 little_Q4 bit_Q4 of_Q4 chad_Q4 in_Q4 all_Q4 of_Q4 us_Q4 ,_Q4 but_Q4 some_Q4 of_Q4 us_Q4 have_Q4 taken_Q4 chad-ness_Q4 to_Q4 the_Q4 level_Q4 of_Q4 art_Q4 ._Q4 
+_Q4 

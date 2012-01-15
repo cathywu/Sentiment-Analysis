@@ -1,0 +1,38 @@
+pitch_Q1 black_Q1 is_Q1 a_Q1 sheep_Q1 in_Q1 wolf's_Q1 clothing_Q1 ._Q1 
+it_Q1 is_Q1 full_Q1 of_Q1 darkness_Q1 ,_Q1 danger_Q1 and_Q1 violence_Q1 and_Q1 if_Q1 you_Q1 buy_Q1 into_Q1 the_Q1 marketing_Q1 hype_Q1 ,_Q1 an_Q1 unsettling_Q1 and_Q1 scary_Q1 film_Q1 going_Q1 experience_Q1 ._Q1 
+don't_Q1 be_Q1 fooled_Q1 ._Q1 
+pitch_Q1 black_Q1 is_Q1 a_Q1 morality_Q1 play_Q1 masquerading_Q1 as_Q1 a_Q1 scare-fest_Q1 ._Q1 
+it_Q1 starts_Q1 off_Q1 with_Q1 blistering_Q1 intensity_Q1 ._Q1 
+a_Q1 cargo_Q1 spaceship_Q1 crash_Q1 lands_Q1 on_Q1 a_Q1 planet_Q1 apparently_Q1 leeched_Q1 of_Q1 life_Q1 by_Q1 the_Q1 scorching_Q1 heat_Q1 of_Q1 three_Q1 suns_Q1 ._Q1 
+among_Q1 the_Q1 survivors_Q1 is_Q1 fry_Q1 (_Q1 mitchell_Q1 )_Q1 ,_Q1 the_Q1 ship's_Q1 pilot_Q1 ,_Q1 who_Q1 spends_Q1 the_Q1 film_Q1 wrestling_Q1 with_Q1 the_Q1 fact_Q1 that_Q1 she_Q1 tried_Q1 to_Q1 jettison_Q1 the_Q1 other_Q1 passengers_Q1 in_Q1 her_Q1 effort_Q1 to_Q1 land_Q1 the_Q1 craft_Q1 safely_Q1 ._Q1 
+there_Q1 is_Q1 imam_Q1 (_Q1 david_Q1 )_Q1 ,_Q1 an_Q1 islamic_Q1 leader_Q1 whose_Q1 faith_Q1 in_Q1 his_Q1 god_Q1 is_Q1 tested_Q1 repeatedly_Q1 throughout_Q1 the_Q1 film_Q1 ._Q1 
+there_Q1 is_Q1 a_Q1 law_Q1 enforcement_Q1 officer_Q1 in_Q1 the_Q1 form_Q1 of_Q1 johns_Q1 (_Q1 hauser_Q1 )_Q1 ,_Q1 who_Q1 attacks_Q1 every_Q1 situation_Q1 with_Q1 square_Q1 jawed_Q1 authoritarian_Q1 zeal_Q1 ._Q1 
+and_Q1 there_Q1 is_Q1 riddick_Q1 (_Q1 diesel_Q1 )_Q1 ,_Q1 a_Q1 menacing_Q1 ,_Q1 muscle-bound_Q1 convicted_Q1 murderer_Q1 who's_Q1 being_Q1 brought_Q1 back_Q1 to_Q23 justice_Q23 by_Q23 johns_Q23 ._Q23 
+the_Q23 group_Q23 quickly_Q23 sizes_Q23 up_Q23 the_Q23 situation_Q23 and_Q23 each_Q23 other_Q23 ._Q23 
+confident_Q23 in_Q23 their_Q23 assessment_Q23 of_Q23 matters_Q23 ,_Q23 a_Q23 plan_Q23 is_Q23 set_Q23 in_Q23 motion_Q23 to_Q23 escape_Q23 their_Q23 hellish_Q23 environment_Q23 ._Q23 
+those_Q23 plans_Q23 are_Q23 shredded_Q23 by_Q23 the_Q23 appearance_Q23 of_Q23 one_Q23 of_Q23 the_Q23 planet's_Q23 wildlife_Q23 ,_Q23 a_Q23 predatory_Q23 ,_Q23 sometimes_Q23 winged_Q23 ,_Q23 species_Q23 that_Q23 enjoys_Q23 the_Q23 taste_Q23 of_Q23 blood_Q23 and_Q23 flesh_Q23 ._Q23 
+fortunately_Q23 ,_Q23 the_Q23 creatures_Q23 are_Q23 light_Q23 sensitive_Q23 and_Q23 are_Q23 forced_Q23 to_Q23 live_Q23 in_Q23 networks_Q23 of_Q23 catacombs_Q23 under_Q23 the_Q23 planet's_Q23 surface_Q23 ._Q23 
+unfortunately_Q23 ,_Q23 the_Q23 group_Q23 has_Q23 managed_Q23 to_Q23 land_Q23 on_Q23 the_Q23 planet_Q23 moments_Q23 before_Q23 an_Q23 eclipse_Q23 is_Q23 about_Q23 to_Q23 occur_Q23 ,_Q23 taking_Q23 away_Q23 their_Q23 one_Q23 protection_Q23 from_Q23 the_Q23 monsters_Q23 ._Q23 
+the_Q23 group's_Q23 savior_Q23 comes_Q23 in_Q23 the_Q23 form_Q23 of_Q23 johns_Q23 ,_Q23 whose_Q23 decisive_Q23 leadership_Q23 looks_Q23 to_Q23 deliver_Q23 them_Q23 from_Q23 purgatory_Q23 ._Q23 
+or_Q23 does_Q23 it_Q23 ?_Q23 
+pitch_Q23 black_Q23 deviates_Q23 from_Q23 the_Q23 standard_Q23 sci-fi_Q23 fare_Q23 by_Q23 avoiding_Q23 some_Q23 of_Q23 the_Q23 stock_Q23 "_Q23 escape_Q23 the_Q23 boogieman_Q23 "_Q23 conflicts_Q23 the_Q23 genre_Q23 typically_Q23 serves_Q23 up_Q23 ._Q23 
+just_Q23 as_Q23 the_Q23 planet_Q23 gave_Q23 a_Q23 false_Q23 facade_Q23 of_Q23 lifelessness_Q23 ,_Q23 first_Q23 appearances_Q23 given_Q23 by_Q23 the_Q23 survivors_Q23 proves_Q23 to_Q23 be_Q23 just_Q23 as_Q23 false_Q23 ._Q23 
+the_Q23 excitement_Q23 of_Q23 the_Q23 film_Q23 comes_Q23 not_Q23 from_Q23 the_Q23 danger_Q23 posed_Q23 by_Q23 the_Q23 creatures_Q23 ,_Q23 but_Q23 rather_Q23 from_Q23 watching_Q23 the_Q23 shifting_Q23 allegiances_Q23 and_Q23 emotional_Q23 growth_Q23 of_Q23 the_Q23 characters_Q23 as_Q23 the_Q23 planet_Q23 serves_Q23 as_Q23 a_Q23 deus_Q23 ex_Q23 machina_Q23 of_Q23 sorts_Q23 to_Q23 catalyze_Q23 emotional_Q23 growth_Q23 ._Q23 
+a_Q23 recurrent_Q23 theme_Q23 runs_Q23 throughout_Q23 the_Q23 movie_Q23 of_Q23 faith_Q23 ,_Q23 whether_Q23 it_Q23 be_Q23 religious_Q23 or_Q23 in_Q23 a_Q23 person_Q23 ,_Q23 and_Q23 how_Q23 that_Q23 powers_Q23 their_Q23 motivations_Q23 ._Q23 
+i_Q23 found_Q23 it_Q23 telling_Q23 that_Q23 an_Q23 accidental_Q23 death_Q23 occurs_Q23 early_Q23 on_Q23 due_Q23 to_Q23 the_Q23 misperception_Q23 of_Q23 a_Q23 self_Q23 professed_Q23 atheist_Q23 ._Q23 
+conversely_Q23 ,_Q23 imam_Q23 constantly_Q23 contributes_Q23 any_Q23 good_Q23 fortune_Q23 to_Q23 allah_Q23 ._Q23 
+one_Q23 by_Q23 one_Q23 ,_Q23 his_Q23 perceived_Q23 heaven_Q23 sent_Q23 blessings_Q23 are_Q23 taken_Q23 away_Q23 and_Q23 crushed_Q23 ._Q23 
+imam_Q23 is_Q23 forced_Q23 to_Q23 reassess_Q23 his_Q23 faith_Q23 ._Q23 
+another_Q23 character_Q23 expresses_Q23 belief_Q23 in_Q23 god_Q23 ,_Q23 along_Q23 with_Q23 a_Q23 life_Q23 long_Q23 hate_Q23 ._Q23 
+yet_Q23 another_Q23 character_Q23 makes_Q23 a_Q23 decision_Q23 that_Q23 echoes_Q23 the_Q23 sentiments_Q23 of_Q23 christ_Q23 about_Q23 selflessness_Q23 and_Q23 has_Q23 lasting_Q23 repercussions_Q23 for_Q23 several_Q23 of_Q23 group_Q23 ._Q23 
+it_Q23 is_Q23 a_Q23 fascinating_Q23 character_Q23 study_Q23 hiding_Q23 under_Q23 the_Q23 guise_Q23 of_Q4 a_Q4 scare_Q4 flick_Q4 ._Q4 
+special_Q4 mention_Q4 should_Q4 be_Q4 made_Q4 of_Q4 vin_Q4 diesel_Q4 ,_Q4 who_Q4 intriguingly_Q4 conveys_Q4 feral_Q4 menace_Q4 combined_Q4 with_Q4 a_Q4 truly_Q4 mesmerizing_Q4 presence_Q4 ._Q4 
+his_Q4 character_Q4 could_Q4 have_Q4 easily_Q4 slipped_Q4 into_Q4 a_Q4 parody_Q4 of_Q4 the_Q4 baddass_Q4 killing_Q4 machine_Q4 ,_Q4 but_Q4 twohy_Q4 and_Q4 diesel_Q4 add_Q4 surprising_Q4 depth_Q4 to_Q4 riddick_Q4 ._Q4 
+they_Q4 can_Q4 be_Q4 excused_Q4 for_Q4 the_Q4 two_Q4 or_Q4 three_Q4 shwarzenegger-like_Q4 catch_Q4 phrases_Q4 that_Q4 growl_Q4 their_Q4 way_Q4 out_Q4 of_Q4 diesel's_Q4 mouth_Q4 ._Q4 
+the_Q4 movie_Q4 has_Q4 its_Q4 flaws_Q4 that_Q4 can_Q4 be_Q4 nitpicked_Q4 ._Q4 
+the_Q4 creatures_Q4 do_Q4 look_Q4 derivative_Q4 of_Q4 the_Q4 ones_Q4 in_Q4 alien_Q4 ._Q4 
+the_Q4 dialogue_Q4 isn't_Q4 the_Q4 freshest_Q4 at_Q4 times_Q4 ,_Q4 reminiscent_Q4 of_Q4 a_Q4 bad_Q4 comic_Q4 book_Q4 ._Q4 
+yes_Q4 ,_Q4 the_Q4 appearance_Q4 of_Q4 riddick's_Q4 vision_Q4 skills_Q4 are_Q4 more_Q4 than_Q4 a_Q4 little_Q4 timely_Q4 considering_Q4 the_Q4 situation_Q4 ._Q4 
+these_Q4 trappings_Q4 are_Q4 on_Q4 the_Q4 periphery_Q4 of_Q4 the_Q4 story_Q4 twohy_Q4 is_Q4 really_Q4 trying_Q4 to_Q4 tell_Q4 ._Q4 
+twohy_Q4 may_Q4 have_Q4 lured_Q4 you_Q4 in_Q4 under_Q4 the_Q4 pretense_Q4 of_Q4 scaring_Q4 you_Q4 with_Q4 film_Q4 fabricated_Q4 boogieman_Q4 ,_Q4 but_Q4 he_Q4 shows_Q4 the_Q4 real_Q4 boogieman_Q4 to_Q4 be_Q4 the_Q4 prejudices_Q4 and_Q4 beliefs_Q4 we_Q4 use_Q4 to_Q4 direct_Q4 decisions_Q4 in_Q4 our_Q4 lives_Q4 ._Q4 
+_Q4 

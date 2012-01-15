@@ -1,0 +1,35 @@
+shakespeare_Q1 in_Q1 love_Q1 is_Q1 quite_Q1 possibly_Q1 the_Q1 most_Q1 enjoyable_Q1 period_Q1 piece_Q1 ever_Q1 made_Q1 for_Q1 the_Q1 silver_Q1 screen_Q1 ._Q1 
+it_Q1 is_Q1 both_Q1 humorous_Q1 and_Q1 romantic_Q1 in_Q1 a_Q1 very_Q1 unique_Q1 blend_Q1 that_Q1 can_Q1 successfully_Q1 entertain_Q1 any_Q1 audience_Q1 for_Q1 the_Q1 nearly_Q1 2_Q1 and_Q1 and_Q1 a_Q1 half_Q1 hours_Q1 that_Q1 it_Q1 occupies_Q1 ._Q1 
+that_Q1 is_Q1 ,_Q1 however_Q1 ,_Q1 not_Q1 to_Q1 say_Q1 it_Q1 is_Q1 a_Q1 good_Q1 film_Q1 ,_Q1 a_Q1 quality_Q1 production_Q1 or_Q1 anything_Q1 of_Q1 the_Q1 sort_Q1 ._Q1 
+shakespeare_Q1 in_Q1 love_Q1 is_Q1 an_Q1 incredibly_Q1 cheap_Q1 illusion_Q1 that_Q1 truly_Q1 pans_Q1 out_Q1 to_Q1 be_Q1 very_Q1 little_Q1 quality_Q1 or_Q1 original_Q1 work_Q1 ._Q1 
+the_Q1 finest_Q1 sign_Q1 of_Q1 this_Q1 may_Q1 be_Q1 the_Q1 plot_Q1 ,_Q1 in_Q1 looking_Q1 back_Q1 ,_Q1 there_Q1 seems_Q1 to_Q1 be_Q1 little_Q1 more_Q1 than_Q1 a_Q1 thin_Q1 ,_Q1 predictable_Q1 plot_Q1 that_Q1 is_Q1 only_Q1 carried_Q1 by_Q1 the_Q1 portrayal_Q1 of_Q1 people_Q1 that_Q1 we_Q1 revere_Q1 in_Q1 our_Q1 history_Q1 books_Q1 ._Q1 
+philip_Q1 henslowe_Q1 (_Q1 geoffrey_Q1 rush_Q1 )_Q1 owns_Q1 1_Q1 of_Q1 the_Q1 2_Q1 theatres_Q1 in_Q1 london_Q1 ._Q1 
+it_Q1 is_Q1 at_Q1 the_Q1 peak_Q1 of_Q1 the_Q1 royal_Q1 theatre_Q1 era_Q1 ,_Q1 and_Q1 queen_Q1 elizabeth_Q1 (_Q1 the_Q1 recently_Q1 damed_Q1 judi_Q1 dench_Q1 ,_Q1 by_Q1 ,_Q1 appropriately_Q1 enough_Q1 ,_Q1 queen_Q1 elizabeth_Q1 ii_Q1 )_Q1 is_Q1 very_Q1 much_Q1 a_Q1 fan_Q1 ._Q1 
+however_Q1 ,_Q1 to_Q1 directly_Q1 quote_Q1 the_Q1 film_Q1 ,_Q1 he_Q1 has_Q1 "_Q1 cash_Q23 flow_Q23 problems_Q23 ._Q23 "_Q23 
+through_Q23 a_Q23 long_Q23 set_Q23 of_Q23 events_Q23 ,_Q23 it_Q23 becomes_Q23 apparent_Q23 that_Q23 his_Q23 entire_Q23 life_Q23 is_Q23 dependent_Q23 on_Q23 his_Q23 next_Q23 show_Q23 doing_Q23 well_Q23 enough_Q23 to_Q23 pay_Q23 off_Q23 his_Q23 debts_Q23 ._Q23 
+so_Q23 ,_Q23 mr_Q23 ._Q23 henslowe_Q23 employs_Q23 the_Q23 young_Q23 playwright_Q23 ,_Q23 william_Q23 shakespeare_Q23 (_Q23 joseph_Q23 fiennes_Q23 )_Q23 to_Q23 pen_Q23 a_Q23 comedic_Q23 production_Q23 ._Q23 
+however_Q23 ,_Q23 the_Q23 young_Q23 writer_Q23 has_Q23 a_Q23 severe_Q23 case_Q23 of_Q23 writer's_Q23 block_Q23 ,_Q23 and_Q23 blames_Q23 it_Q23 on_Q23 the_Q23 fact_Q23 that_Q23 his_Q23 love_Q23 life_Q23 is_Q23 struggling_Q23 as_Q23 well_Q23 ._Q23 
+he_Q23 has_Q23 the_Q23 title_Q23 in_Q23 mind_Q23 ,_Q23 romeo_Q23 and_Q23 ethel_Q23 ,_Q23 the_Q23 pirate's_Q23 daughter_Q23 (_Q23 even_Q23 that_Q23 joke_Q23 loses_Q23 steam_Q23 after_Q23 a_Q23 while_Q23 )_Q23 but_Q23 can't_Q23 seem_Q23 to_Q23 put_Q23 words_Q23 to_Q23 paper_Q23 ._Q23 
+then_Q23 ,_Q23 as_Q23 only_Q23 hollywood_Q23 could_Q23 have_Q23 it_Q23 ,_Q23 through_Q23 a_Q23 long_Q23 set_Q23 of_Q23 twisted_Q23 events_Q23 ,_Q23 he_Q23 meets_Q23 viola_Q23 de_Q23 lesseps_Q23 (_Q23 gwyneth_Q23 paltrow_Q23 )_Q23 and_Q23 falls_Q23 madly_Q23 in_Q23 love_Q23 ,_Q23 thus_Q23 curing_Q23 his_Q23 writer's_Q23 block_Q23 ._Q23 
+there_Q23 are_Q23 many_Q23 other_Q23 little_Q23 issues_Q23 that_Q23 mr_Q23 ._Q23 henslowe_Q23 encounters_Q23 ,_Q23 but_Q23 they_Q23 all_Q23 pan_Q23 out_Q23 to_Q23 be_Q23 much_Q23 ado_Q23 about_Q23 nothing_Q23 ._Q23 
+the_Q23 first_Q23 realization_Q23 that_Q23 i_Q23 reached_Q23 in_Q23 watching_Q23 this_Q23 film_Q23 is_Q23 that_Q23 one_Q23 of_Q23 the_Q23 messages_Q23 given_Q23 is_Q23 that_Q23 a_Q23 show_Q23 should_Q23 not_Q23 always_Q23 be_Q23 credited_Q23 to_Q23 it's_Q23 author_Q23 ._Q23 
+ironically_Q23 ,_Q23 that_Q23 couldn't_Q23 be_Q23 truer_Q23 here_Q23 ._Q23 
+the_Q23 great_Q23 scenes_Q23 that_Q23 will_Q23 sweep_Q23 audiences_Q23 away_Q23 are_Q23 not_Q23 the_Q23 scenes_Q23 that_Q23 fit_Q23 in_Q23 the_Q23 plot_Q23 ,_Q23 but_Q23 rather_Q23 the_Q23 recitals_Q23 of_Q23 shakespearean_Q23 lines_Q23 by_Q23 actors_Q23 playing_Q23 actors_Q23 ._Q23 
+one_Q23 of_Q23 the_Q23 most_Q23 breathtaking_Q23 moments_Q23 in_Q23 this_Q23 film_Q23 does_Q23 not_Q23 involve_Q23 the_Q23 character_Q23 of_Q23 shakespeare_Q23 or_Q23 queen_Q23 elizabeth_Q23 or_Q23 even_Q23 the_Q23 theatre_Q23 owner_Q23 ,_Q23 but_Q23 rather_Q23 2_Q23 young_Q23 children_Q23 named_Q23 romeo_Q23 and_Q23 juliet_Q23 who_Q23 chose_Q23 to_Q23 end_Q23 their_Q23 own_Q23 lives_Q23 in_Q23 the_Q23 name_Q23 of_Q23 love_Q23 ._Q23 
+so_Q23 it_Q23 is_Q23 that_Q23 i_Q23 am_Q23 offended_Q23 by_Q23 the_Q23 fact_Q23 that_Q23 marc_Q23 norman_Q23 and_Q23 tom_Q23 stoppard_Q23 are_Q23 credited_Q23 with_Q23 writing_Q23 this_Q23 production_Q23 ,_Q23 and_Q23 the_Q23 name_Q23 william_Q23 shakespeare_Q23 is_Q23 no_Q23 were_Q23 to_Q23 be_Q23 seen_Q23 beyond_Q23 a_Q23 character's_Q23 name_Q23 in_Q23 the_Q23 credits_Q23 ._Q23 
+the_Q23 acting_Q23 in_Q23 this_Q23 entertaining_Q23 yet_Q23 poor_Q23 film_Q23 is_Q23 often_Q23 thin_Q23 to_Q23 the_Q23 point_Q23 that_Q23 it_Q23 would_Q23 not_Q23 have_Q23 survived_Q23 even_Q23 in_Q23 queen_Q23 elizabeth's_Q23 theatres_Q23 ._Q23 
+joseph_Q23 fiennes_Q23 may_Q23 just_Q23 be_Q23 the_Q23 worst_Q23 of_Q23 fall_Q23 though_Q23 ._Q23 
+he_Q23 is_Q23 tragically_Q23 unbelievable_Q23 and_Q23 comically_Q23 bad_Q23 ._Q23 
+gwyneth_Q23 paltrow_Q23 is_Q23 little_Q23 more_Q23 than_Q23 satisfactory_Q23 in_Q23 her_Q23 lead_Q23 position_Q23 as_Q23 well_Q23 ._Q23 
+however_Q23 ,_Q4 the_Q4 supporting_Q4 cast_Q4 does_Q4 almost_Q4 save_Q4 the_Q4 day_Q4 ._Q4 
+geoffrey_Q4 rush_Q4 is_Q4 nothing_Q4 short_Q4 of_Q4 incredible_Q4 and_Q4 judi_Q4 dench_Q4 is_Q4 breathtaking_Q4 ._Q4 
+they_Q4 both_Q4 seem_Q4 to_Q4 have_Q4 shown_Q4 that_Q4 as_Q4 proven_Q4 actors_Q4 they_Q4 could_Q4 survive_Q4 in_Q4 this_Q4 film_Q4 of_Q4 weak_Q4 links_Q4 ._Q4 
+you_Q4 will_Q4 also_Q4 find_Q4 a_Q4 very_Q4 good_Q4 performance_Q4 by_Q4 ben_Q4 affleck_Q4 in_Q4 his_Q4 first_Q4 real_Q4 role_Q4 since_Q4 good_Q4 will_Q4 hunting_Q4 (_Q4 no_Q4 ,_Q4 armageddon_Q4 doesn't_Q4 qualify_Q4 as_Q4 real_Q4 acting_Q4 ._Q4 )_Q4 ._Q4 
+and_Q4 rupert_Q4 everett_Q4 was_Q4 cute_Q4 in_Q4 his_Q4 small_Q4 part_Q4 as_Q4 well_Q4 ._Q4 
+but_Q4 not_Q4 even_Q4 they_Q4 could_Q4 save_Q4 this_Q4 sad_Q4 excuse_Q4 for_Q4 a_Q4 film_Q4 ,_Q4 so_Q4 it_Q4 remains_Q4 plagued_Q4 by_Q4 poor_Q4 performances_Q4 ._Q4 
+when_Q4 all_Q4 is_Q4 said_Q4 and_Q4 done_Q4 ,_Q4 shakespeare_Q4 in_Q4 love_Q4 is_Q4 only_Q4 worth_Q4 the_Q4 trip_Q4 if_Q4 you_Q4 want_Q4 to_Q4 be_Q4 entertained_Q4 ._Q4 
+however_Q4 ,_Q4 as_Q4 the_Q4 film_Q4 so_Q4 kindly_Q4 pointed_Q4 out_Q4 ,_Q4 entertainment_Q4 may_Q4 be_Q4 fun_Q4 ,_Q4 but_Q4 it_Q4 isn't_Q4 necessarily_Q4 quality_Q4 ._Q4 
+and_Q4 this_Q4 certainly_Q4 isn't_Q4 quality_Q4 ._Q4 
+perhaps_Q4 this_Q4 may_Q4 be_Q4 best_Q4 compared_Q4 to_Q4 a_Q4 john_Q4 grisham_Q4 novel_Q4 ,_Q4 as_Q4 a_Q4 dear_Q4 friend_Q4 of_Q4 mine_Q4 often_Q4 does_Q4 compare_Q4 things_Q4 to_Q4 his_Q4 work_Q4 ._Q4 
+simply_Q4 put_Q4 ,_Q4 it_Q4 is_Q4 far-fetched_Q4 ,_Q4 poorly_Q4 crafted_Q4 ,_Q4 but_Q4 very_Q4 entertaining_Q4 ._Q4 
+_Q4 

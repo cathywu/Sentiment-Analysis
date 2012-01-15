@@ -1,0 +1,26 @@
+ingredients_Q1 :_Q1 starving_Q1 artist_Q1 lusting_Q1 after_Q1 a_Q1 beautiful_Q1 woman_Q1 from_Q1 his_Q1 childhood_Q1 
+synopsis_Q1 :_Q1 great_Q1 expectations_Q1 (_Q1 1998_Q1 )_Q1 is_Q1 a_Q1 modernized_Q1 version_Q1 of_Q1 a_Q1 charles_Q1 dickens_Q1 novel_Q1 ._Q1 
+in_Q1 the_Q1 original_Q1 charles_Q1 dickens_Q1 classic_Q1 an_Q1 orphan_Q1 boy_Q1 named_Q1 pip_Q1 learns_Q1 about_Q1 life_Q1 through_Q1 his_Q1 friendship_Q1 with_Q1 an_Q1 escaped_Q1 convict_Q1 ,_Q1 his_Q1 relationship_Q1 with_Q1 a_Q1 bitter_Q1 old_Q1 lady_Q1 named_Q1 miss_Q1 havisham_Q1 ,_Q1 and_Q1 his_Q1 hopeless_Q1 lifetime_Q1 infatuation_Q1 with_Q1 havisham's_Q1 snobbish_Q1 adopted_Q1 daughter_Q1 ,_Q1 estella_Q1 ._Q1 
+the_Q1 gist_Q1 of_Q1 the_Q1 story_Q1 is_Q1 that_Q1 an_Q1 anonymous_Q1 benefactor_Q1 sends_Q1 pip_Q1 to_Q1 london_Q1 for_Q1 pip_Q1 to_Q1 become_Q1 an_Q1 upper_Q1 class_Q1 "_Q1 gentleman_Q1 ._Q1 "_Q1 
+pip_Q1 leaves_Q1 for_Q1 london_Q1 with_Q1 "_Q1 great_Q1 expectations_Q1 "_Q1 to_Q1 be_Q1 groomed_Q1 into_Q1 a_Q1 gentleman_Q1 so_Q1 that_Q1 he_Q1 can_Q1 one_Q1 day_Q1 be_Q1 classy_Q1 enough_Q1 to_Q1 marry_Q1 estella_Q1 ._Q1 
+but_Q1 life_Q1 has_Q1 a_Q1 way_Q1 of_Q1 complicating_Q1 things_Q1 ._Q1 
+pip_Q1 becomes_Q1 an_Q23 arrogant_Q23 s_Q23 ._Q23 o_Q23 ._Q23 b_Q23 ._Q23 
+until_Q23 he_Q23 learns_Q23 just_Q23 who_Q23 his_Q23 secret_Q23 benefactor_Q23 is_Q23 ._Q23 
+in_Q23 this_Q23 new_Q23 1998_Q23 version_Q23 of_Q23 great_Q23 expectations_Q23 a_Q23 poor_Q23 florida_Q23 lad_Q23 named_Q23 finn_Q23 (_Q23 ethan_Q23 hawke_Q23 )_Q23 with_Q23 a_Q23 talent_Q23 for_Q23 drawing_Q23 has_Q23 an_Q23 early_Q23 memory_Q23 of_Q23 helping_Q23 an_Q23 escaped_Q23 convict_Q23 (_Q23 robert_Q23 de_Q23 niro_Q23 )_Q23 ._Q23 
+but_Q23 soon_Q23 the_Q23 focus_Q23 of_Q23 finn's_Q23 life_Q23 becomes_Q23 romance_Q23 ,_Q23 as_Q23 he_Q23 develops_Q23 a_Q23 lifelong_Q23 infatuation_Q23 with_Q23 estella_Q23 (_Q23 gwyneth_Q23 paltrow_Q23 )_Q23 ,_Q23 an_Q23 upper_Q23 crust_Q23 girl_Q23 with_Q23 some_Q23 psychological_Q23 and_Q23 emotional_Q23 issues_Q23 due_Q23 to_Q23 being_Q23 raised_Q23 in_Q23 a_Q23 dysfunctional_Q23 environment_Q23 ._Q23 
+estella_Q23 was_Q23 raised_Q23 in_Q23 wealth_Q23 by_Q23 ms_Q23 ._Q23 dinsmoor_Q23 (_Q23 anne_Q23 bancroft_Q23 )_Q23 ,_Q23 an_Q23 eccentric_Q23 ,_Q23 aged_Q23 and_Q23 embittered_Q23 ,_Q23 man-hating_Q23 single_Q23 aunt_Q23 whose_Q23 groom_Q23 left_Q23 her_Q23 abandoned_Q23 at_Q23 the_Q23 altar_Q23 on_Q23 the_Q23 day_Q23 of_Q23 her_Q23 marriage_Q23 ._Q23 
+this_Q23 causes_Q23 estella_Q23 to_Q23 'fear_Q23 the_Q23 daylight'_Q23 of_Q23 relationships_Q23 ,_Q23 but_Q23 finn_Q23 thinks_Q23 it's_Q23 just_Q23 a_Q23 case_Q23 of_Q23 snobbery_Q23 ._Q23 
+when_Q23 finn_Q23 becomes_Q23 a_Q23 young_Q23 man_Q23 ,_Q23 an_Q23 anonymous_Q23 benefactor_Q23 sets_Q23 finn_Q23 up_Q23 in_Q23 new_Q23 york_Q23 with_Q23 the_Q23 connections_Q23 and_Q23 publicity_Q23 to_Q23 be_Q23 groomed_Q23 into_Q23 a_Q23 famous_Q23 artist_Q23 ._Q23 
+finn_Q23 leaves_Q23 florida_Q23 with_Q23 "_Q23 great_Q23 expectations_Q23 "_Q23 to_Q23 be_Q23 a_Q23 successful_Q23 artist_Q23 so_Q23 that_Q23 some_Q23 day_Q23 he_Q23 might_Q23 become_Q23 classy_Q23 enough_Q23 to_Q23 marry_Q23 the_Q23 snobbish_Q23 estella_Q23 ._Q23 
+what_Q23 will_Q23 happen_Q23 to_Q23 all_Q23 of_Q23 finn's_Q23 "_Q23 great_Q23 expectations_Q23 ?_Q23 "_Q23 
+opinion_Q23 :_Q23 if_Q23 you're_Q23 looking_Q23 for_Q23 a_Q23 romance_Q23 with_Q23 a_Q23 happy_Q23 ending_Q23 ,_Q23 look_Q23 no_Q23 further_Q23 ;_Q23 you've_Q23 found_Q23 one_Q23 here_Q23 ._Q23 
+ethan_Q23 hawke_Q23 is_Q23 romantic_Q23 lead_Q23 ._Q23 
+_Q23 (_Q23 he_Q23 romanced_Q23 winona_Q23 ryder_Q23 in_Q23 reality_Q23 bites_Q23 ._Q23 
+he_Q23 romanced_Q23 julie_Q23 delpy_Q23 in_Q23 before_Q23 sunrise_Q23 ._Q23 
+he_Q23 romanced_Q23 uma_Q23 thurman_Q23 in_Q23 gattaca_Q23 ._Q23 
+now_Q23 in_Q4 great_Q4 expectations_Q4 he_Q4 gets_Q4 to_Q4 chase_Q4 gwyneth_Q4 paltrow_Q4 ,_Q4 a_Q4 rail-thin_Q4 blonde_Q4 ._Q4 )_Q4 
+hawke_Q4 plays_Q4 a_Q4 lovestruck_Q4 ,_Q4 earnest_Q4 and_Q4 unchanged_Q4 finn_Q4 throughout_Q4 the_Q4 film_Q4 ._Q4 
+meanwhile_Q4 paltrow_Q4 portrays_Q4 estella_Q4 as_Q4 alternating_Q4 between_Q4 infuriating_Q4 tease_Q4 and_Q4 ice_Q4 princess_Q4 ;_Q4 estella's_Q4 whole_Q4 purpose_Q4 is_Q4 to_Q4 get_Q4 men_Q4 to_Q4 fall_Q4 in_Q4 love_Q4 and_Q4 then_Q4 hurt_Q4 them_Q4 rather_Q4 than_Q4 become_Q4 intimate_Q4 ._Q4 
+anne_Q4 bancroft_Q4 goes_Q4 a_Q4 little_Q4 overboard_Q4 as_Q4 the_Q4 deranged_Q4 and_Q4 pessimistic_Q4 ms_Q4 ._Q4 dinsmoor_Q4 ,_Q4 while_Q4 robert_Q4 de_Q4 niro_Q4 carries_Q4 off_Q4 the_Q4 convict_Q4 part_Q4 suitably_Q4 ._Q4 
+the_Q4 difference_Q4 between_Q4 the_Q4 classic_Q4 dickens_Q4 novel_Q4 and_Q4 this_Q4 1998_Q4 adaptation_Q4 is_Q4 that_Q4 the_Q4 dickens_Q4 novel_Q4 is_Q4 ripe_Q4 with_Q4 deep_Q4 and_Q4 timeless_Q4 themes_Q4 about_Q4 class_Q4 struggle_Q4 and_Q4 love_Q4 ,_Q4 whereas_Q4 great_Q4 expectations_Q4 (_Q4 1998_Q4 )_Q4 is_Q4 more_Q4 artsy_Q4 ,_Q4 less_Q4 complicated_Q4 story_Q4 about_Q4 a_Q4 1990s_Q4 artist_Q4 dealing_Q4 with_Q4 a_Q4 lifetime_Q4 tease_Q4 ._Q4 
+_Q4 

@@ -1,0 +1,37 @@
+ingredients_Q1 :_Q1 lost_Q1 parrot_Q1 trying_Q1 to_Q1 get_Q1 home_Q1 ,_Q1 friends_Q1 
+synopsis_Q1 :_Q1 a_Q1 russian_Q1 janitor_Q1 named_Q1 misha_Q1 (_Q1 tony_Q1 shalhoub_Q1 )_Q1 discovers_Q1 a_Q1 little_Q1 old_Q1 parrot_Q1 languishing_Q1 in_Q1 the_Q1 basement_Q1 of_Q1 a_Q1 science_Q1 research_Q1 facility_Q1 ._Q1 
+_Q1 "_Q1 paulie_Q1 the_Q1 talking_Q1 parrot_Q1 "_Q1 (_Q1 the_Q1 voice_Q1 of_Q1 jay_Q1 mohr_Q1 )_Q1 soon_Q1 regales_Q1 misha_Q1 with_Q1 his_Q1 life_Q1 story_Q1 ._Q1 
+as_Q1 a_Q1 young_Q1 bird_Q1 paulie_Q1 is_Q1 raised_Q1 by_Q1 marie_Q1 (_Q1 hallie_Q1 kate_Q1 eisenberg_Q1 )_Q1 ,_Q1 a_Q1 little_Q1 girl_Q1 with_Q1 a_Q1 speech_Q1 impediment_Q1 ._Q1 
+by_Q1 attending_Q1 marie's_Q1 speech_Q1 lessons_Q1 ,_Q1 paulie_Q1 learns_Q1 to_Q1 act/speak_Q1 like_Q1 a_Q1 regular_Q1 person_Q1 ._Q1 
+unfortunately_Q1 ,_Q1 after_Q1 being_Q1 unfairly_Q1 blamed_Q1 for_Q1 an_Q1 accident_Q1 ,_Q1 paulie_Q1 is_Q1 taken_Q1 to_Q1 a_Q1 pawn_Q1 shop_Q1 and_Q1 sold_Q1 ._Q1 
+paulie's_Q1 biggest_Q1 wish_Q1 is_Q1 to_Q1 return_Q1 to_Q1 marie_Q1 ._Q1 
+many_Q1 years_Q1 later_Q1 ,_Q1 and_Q1 after_Q1 a_Q1 succession_Q1 of_Q1 memorable_Q1 owners_Q1 (_Q1 gena_Q1 rowlands_Q1 ,_Q1 cheech_Q1 marin_Q1 ,_Q1 and_Q1 jay_Q1 mohr_Q1 )_Q1 ,_Q1 paulie_Q1 falls_Q1 in_Q1 with_Q1 a_Q1 bad_Q1 crowd_Q1 and_Q1 is_Q1 apprehended_Q1 in_Q1 los_Q1 angeles_Q1 trying_Q1 to_Q1 steal_Q1 jewelry_Q1 ._Q23 
+he_Q23 is_Q23 sent_Q23 to_Q23 a_Q23 cruel_Q23 research_Q23 facility_Q23 ,_Q23 where_Q23 he_Q23 refuses_Q23 to_Q23 participate_Q23 and_Q23 is_Q23 imprisoned_Q23 the_Q23 basement_Q23 ._Q23 
+will_Q23 misha_Q23 help_Q23 paulie_Q23 get_Q23 back_Q23 to_Q23 marie_Q23 ?_Q23 
+opinion_Q23 :_Q23 every_Q23 time_Q23 people_Q23 watch_Q23 movies_Q23 that_Q23 portray_Q23 animals_Q23 as_Q23 beings_Q23 with_Q23 cute_Q23 human_Q23 personalities_Q23 ,_Q23 some_Q23 well-meaning_Q23 audience_Q23 members_Q23 go_Q23 out_Q23 next_Q23 christmas_Q23 or_Q23 birthday_Q23 and_Q23 buy_Q23 a_Q23 dalmatian_Q23 or_Q23 whatever_Q23 creature_Q23 is_Q23 currently_Q23 popular_Q23 ._Q23 
+soon_Q23 enough_Q23 ,_Q23 "_Q23 birthday_Q23 kid_Q23 "_Q23 loses_Q23 interest_Q23 and_Q23 the_Q23 purchased_Q23 pup_Q23 ends_Q23 up_Q23 at_Q23 the_Q23 local_Q23 pound_Q23 ,_Q23 a_Q23 victim_Q23 of_Q23 neglect_Q23 ._Q23 
+my_Q23 sister_Q23 owns_Q23 a_Q23 real_Q23 paulie_Q23 :_Q23 it_Q23 thinks_Q23 like_Q23 a_Q23 parrot_Q23 ,_Q23 bites_Q23 like_Q23 a_Q23 parrot_Q23 ,_Q23 and_Q23 requires_Q23 as_Q23 much_Q23 attention_Q23 as_Q23 a_Q23 newborn_Q23 human_Q23 infant_Q23 ._Q23 
+please_Q23 think_Q23 twice_Q23 before_Q23 buying_Q23 one_Q23 ._Q23 
+okay_Q23 ._Q23 back_Q23 to_Q23 the_Q23 story_Q23 ._Q23 
+in_Q23 movies_Q23 ,_Q23 parrots_Q23 usually_Q23 play_Q23 support_Q23 characters_Q23 ,_Q23 but_Q23 paulie_Q23 might_Q23 be_Q23 the_Q23 first_Q23 movie_Q23 where_Q23 the_Q23 (_Q23 animatronic_Q23 )_Q23 bird_Q23 gets_Q23 main_Q23 billing_Q23 ._Q23 
+paulie_Q23 ,_Q23 like_Q23 those_Q23 side_Q23 characters_Q23 in_Q23 disney_Q23 cartoons_Q23 ,_Q23 is_Q23 cute_Q23 and_Q23 sassy_Q23 ,_Q23 a_Q23 strutting_Q23 ,_Q23 miniature_Q23 human_Q23 ._Q23 
+actually_Q23 ,_Q23 paulie_Q23 is_Q23 the_Q23 voice_Q23 of_Q23 jay_Q23 mohr_Q23 (_Q23 he_Q23 played_Q23 jennifer_Q23 aniston's_Q23 boyfriend_Q23 on_Q23 picture_Q23 perfect_Q23 )_Q23 doing_Q23 his_Q23 best_Q23 buddy_Q23 hackett_Q23 impression_Q23 (_Q23 which_Q23 is_Q23 interesting_Q23 ,_Q23 since_Q23 hackett_Q23 himself_Q23 cameos_Q23 as_Q23 the_Q23 pawn_Q23 shop_Q23 owner_Q23 ,_Q23 and_Q23 mohr_Q23 doubles_Q23 as_Q23 a_Q23 customer_Q23 )_Q23 ._Q23 
+paulie_Q23 is_Q23 for_Q23 kids_Q23 ._Q23 
+while_Q23 watching_Q23 paulie_Q23 you_Q23 hear_Q23 little_Q23 tykes_Q23 in_Q23 the_Q23 theater_Q23 laughing_Q23 hysterically_Q23 when_Q23 paulie_Q23 calls_Q23 the_Q23 cat_Q23 a_Q23 "_Q23 stupid_Q23 furball_Q23 ._Q23 "_Q23 
+sometimes_Q23 ,_Q23 however_Q23 ,_Q23 there_Q23 are_Q23 statements_Q23 the_Q23 kids_Q23 don't_Q23 get_Q23 ._Q23 
+for_Q23 example_Q23 ,_Q23 when_Q23 paulie's_Q23 elderly_Q23 owner_Q23 ivy_Q23 (_Q23 gena_Q23 rowlands_Q23 )_Q23 dies_Q23 ,_Q23 paulie_Q23 explains_Q23 ,_Q23 "_Q23 well_Q23 ,_Q23 one_Q23 day_Q23 ,_Q23 the_Q23 cat_Q23 got_Q23 her_Q23 ._Q23 "_Q23 
+and_Q23 you_Q23 hear_Q23 kids_Q23 exclaim_Q23 ,_Q23 "_Q23 what_Q23 cat_Q23 ?_Q23 !_Q23 "_Q23 
+imagine_Q23 lassie_Q23 come_Q23 home_Q23 ,_Q23 except_Q23 with_Q23 a_Q23 doll-sized_Q23 human_Q23 dressed_Q23 as_Q23 a_Q23 bird_Q23 ,_Q23 and_Q23 you'll_Q23 have_Q23 a_Q23 good_Q23 idea_Q4 of_Q4 the_Q4 plot_Q4 and_Q4 characterization_Q4 ._Q4 
+bird_Q4 tries_Q4 to_Q4 get_Q4 home_Q4 ._Q4 
+bird_Q4 meets_Q4 elderly_Q4 friend_Q4 ._Q4 
+bird_Q4 loses_Q4 elderly_Q4 friend_Q4 ._Q4 
+bird_Q4 meets_Q4 eccentric_Q4 friend_Q4 ._Q4 
+bird_Q4 loses_Q4 eccentric_Q4 friend_Q4 ._Q4 
+bird_Q4 meets_Q4 bad_Q4 influence_Q4 ._Q4 
+and_Q4 so_Q4 on_Q4 and_Q4 so_Q4 forth_Q4 ,_Q4 with_Q4 paulie_Q4 meeting_Q4 friends_Q4 and_Q4 saying_Q4 goodbye_Q4 at_Q4 a_Q4 meandering_Q4 pace_Q4 until_Q4 he_Q4 finally_Q4 makes_Q4 it_Q4 back_Q4 to_Q4 marie_Q4 (_Q4 trini_Q4 alvarado_Q4 )_Q4 ._Q4 
+the_Q4 bottom_Q4 line_Q4 ?_Q4 
+break_Q4 out_Q4 the_Q4 popcorn_Q4 money_Q4 ,_Q4 moms_Q4 and_Q4 dads_Q4 ._Q4 
+paulie_Q4 may_Q4 be_Q4 the_Q4 low_Q4 end_Q4 version_Q4 of_Q4 lassie_Q4 ,_Q4 bambi_Q4 ,_Q4 or_Q4 babe_Q4 ,_Q4 but_Q4 he'll_Q4 do_Q4 ._Q4 
+sometimes_Q4 the_Q4 wisecracks_Q4 go_Q4 over_Q4 their_Q4 heads_Q4 ,_Q4 but_Q4 i'm_Q4 sure_Q4 youngsters_Q4 can_Q4 appreciate_Q4 a_Q4 story_Q4 about_Q4 a_Q4 little_Q4 person_Q4 (_Q4 paulie_Q4 )_Q4 trying_Q4 to_Q4 get_Q4 home_Q4 ,_Q4 meeting_Q4 friends_Q4 and_Q4 experiencing_Q4 moral_Q4 lessons_Q4 on_Q4 the_Q4 way_Q4 ._Q4 
+and_Q4 good_Q4 luck_Q4 explaining_Q4 what_Q4 it_Q4 means_Q4 when_Q4 paulie_Q4 says_Q4 of_Q4 ivy_Q4 ,_Q4 "_Q4 well_Q4 ,_Q4 one_Q4 day_Q4 ,_Q4 the_Q4 cat_Q4 got_Q4 her_Q4 ._Q4 "_Q4 
+_Q4 

@@ -1,0 +1,48 @@
+warner_Q1 brothers_Q1 ;_Q1 rated_Q1 pg-13_Q1 (_Q1 mild_Q1 violence_Q1 ,_Q1 sexual_Q1 situations_Q1 )_Q1 ;_Q1 132_Q1 minutes_Q1 
+director_Q1 :_Q1 luis_Q1 mandoki_Q1 
+screenplay_Q1 :_Q1 gerald_Q1 di_Q1 pego_Q1 (_Q1 from_Q1 the_Q1 novel_Q1 by_Q1 nicholas_Q1 sparks_Q1 )_Q1 
+cast_Q1 :_Q1 kevin_Q1 costner_Q1 ,_Q1 robin_Q1 wright-penn_Q1 ,_Q1 paul_Q1 newman_Q1 ,_Q1 illeana_Q1 douglas_Q1 ,_Q1 robbie_Q1 coltrane_Q1 ,_Q1 jesse_Q1 james_Q1 ,_Q1 john_Q1 savage_Q1 ._Q1 
+review_Q1 by_Q1 :_Q1 geoff_Q1 berkshire_Q1 
+i'm_Q1 not_Q1 an_Q1 overly_Q1 cynical_Q1 guy_Q1 ._Q1 
+there_Q1 have_Q1 been_Q1 many_Q1 glossy_Q1 hollywood_Q1 romances_Q1 that_Q1 have_Q1 carried_Q1 me_Q1 away_Q1 with_Q1 their_Q1 romanticism_Q1 over_Q1 the_Q1 years_Q1 ._Q1 
+however_Q1 ,_Q1 i_Q1 have_Q1 my_Q1 limits_Q1 and_Q1 i_Q1 also_Q1 have_Q1 standards_Q1 ._Q1 
+this_Q1 brings_Q1 us_Q1 to_Q1 the_Q1 subject_Q1 at_Q1 hand_Q1 :_Q1 message_Q1 in_Q1 a_Q1 bottle_Q1 ,_Q1 the_Q1 big_Q1 ticket_Q1 romance_Q1 that_Q1 warner_Q1 brothers'_Q1 unleashed_Q1 upon_Q1 the_Q1 movie_Q1 going_Q1 public_Q1 just_Q1 in_Q1 time_Q1 for_Q1 valentine's_Q1 day_Q1 ._Q1 
+the_Q1 story_Q1 ,_Q1 what_Q1 little_Q1 of_Q1 it_Q1 that_Q1 there_Q1 is_Q1 ,_Q1 involves_Q1 boring_Q1 chicago_Q1 tribune_Q1 reporter_Q1 theresa_Q1 osborne_Q1 (_Q1 robin_Q1 wright-penn_Q1 )_Q1 dealing_Q1 with_Q1 her_Q1 recent_Q1 divorce_Q1 and_Q1 trying_Q1 to_Q1 raise_Q1 her_Q1 young_Q1 son_Q1 jason_Q1 (_Q1 jesse_Q1 james_Q1 )_Q1 ._Q1 
+during_Q1 a_Q1 brief_Q1 stay_Q1 somewhere_Q1 in_Q1 new_Q1 england_Q1 she_Q1 finds_Q1 the_Q1 titular_Q1 message_Q1 in_Q1 a_Q1 bottle_Q1 while_Q1 on_Q1 a_Q1 morning_Q1 run_Q1 by_Q1 the_Q1 ocean_Q1 ._Q1 
+the_Q1 letter_Q1 ,_Q1 written_Q1 to_Q1 a_Q1 mystery_Q1 woman_Q1 named_Q1 catherine_Q1 ,_Q1 instantly_Q1 captivates_Q1 her_Q1 ._Q1 
+upon_Q1 her_Q1 return_Q1 ,_Q1 theresa_Q1 shares_Q1 it_Q1 with_Q1 her_Q1 best_Q1 friend_Q1 lina_Q1 (_Q1 illeana_Q1 douglas_Q1 )_Q1 ,_Q1 her_Q1 boss_Q1 charlie_Q1 (_Q1 robbie_Q1 coltrane_Q1 )_Q1 ,_Q1 and_Q1 the_Q1 entire_Q1 city_Q1 of_Q1 chicago_Q1 (_Q1 the_Q23 newspaper_Q23 publishes_Q23 an_Q23 article_Q23 about_Q23 it_Q23 )_Q23 ._Q23 
+it_Q23 turns_Q23 out_Q23 that_Q23 the_Q23 message_Q23 was_Q23 written_Q23 by_Q23 grieving_Q23 widower_Q23 garret_Q23 blake_Q23 (_Q23 kevin_Q23 costner_Q23 )_Q23 and_Q23 so_Q23 theresa_Q23 travels_Q23 to_Q23 north_Q23 carolina_Q23 and_Q23 tracks_Q23 him_Q23 down_Q23 ._Q23 
+he_Q23 turns_Q23 out_Q23 to_Q23 have_Q23 a_Q23 colorful_Q23 father_Q23 (_Q23 paul_Q23 newman_Q23 )_Q23 but_Q23 is_Q23 otherwise_Q23 perfectly_Q23 dull_Q23 and_Q23 overly_Q23 obsessed_Q23 with_Q23 sailing_Q23 ._Q23 
+this_Q23 is_Q23 somehow_Q23 attractive_Q23 to_Q23 theresa_Q23 and_Q23 the_Q23 two_Q23 begin_Q23 their_Q23 awkward_Q23 courtship_Q23 ._Q23 
+of_Q23 course_Q23 she_Q23 doesn't_Q23 tell_Q23 him_Q23 that_Q23 she_Q23 found_Q23 his_Q23 letter_Q23 ,_Q23 she_Q23 wants_Q23 to_Q23 but_Q23 the_Q23 rules_Q23 of_Q23 this_Q23 type_Q23 of_Q23 film_Q23 require_Q23 him_Q23 to_Q23 find_Q23 out_Q23 later_Q23 (_Q23 preferably_Q23 right_Q23 after_Q23 they_Q23 first_Q23 make_Q23 love_Q23 )_Q23 ._Q23 
+this_Q23 way_Q23 garret_Q23 can_Q23 get_Q23 very_Q23 angry_Q23 and_Q23 the_Q23 relationship_Q23 can_Q23 be_Q23 threatened_Q23 ._Q23 
+the_Q23 discovery_Q23 of_Q23 the_Q23 message_Q23 and_Q23 garret's_Q23 discovery_Q23 that_Q23 theresa_Q23 discovered_Q23 the_Q23 message_Q23 are_Q23 really_Q23 the_Q23 only_Q23 two_Q23 noteworthy_Q23 events_Q23 that_Q23 happen_Q23 during_Q23 the_Q23 nearly_Q23 two_Q23 and_Q23 a_Q23 quarter_Q23 hour_Q23 running_Q23 time_Q23 of_Q23 this_Q23 film_Q23 ._Q23 
+there's_Q23 a_Q23 truly_Q23 lame_Q23 subplot_Q23 about_Q23 garret's_Q23 relationship_Q23 with_Q23 his_Q23 dead_Q23 wife's_Q23 family_Q23 (_Q23 he_Q23 gets_Q23 into_Q23 a_Q23 bar_Q23 fight_Q23 with_Q23 her_Q23 brother_Q23 ,_Q23 played_Q23 by_Q23 john_Q23 savage_Q23 )_Q23 and_Q23 then_Q23 the_Q23 necessary_Q23 tear-jerking_Q23 ending_Q23 ._Q23 
+a_Q23 fun_Q23 way_Q23 to_Q23 pass_Q23 the_Q23 time_Q23 is_Q23 to_Q23 take_Q23 bets_Q23 on_Q23 exactly_Q23 who_Q23 will_Q23 die_Q23 ,_Q23 although_Q23 it_Q23 becomes_Q23 pretty_Q23 clear_Q23 by_Q23 the_Q23 second_Q23 reel_Q23 ._Q23 
+the_Q23 actual_Q23 death_Q23 sequence_Q23 is_Q23 one_Q23 of_Q23 the_Q23 most_Q23 ridiculously_Q23 forced_Q23 ,_Q23 and_Q23 unintentionally_Q23 humorous_Q23 ,_Q23 sequences_Q23 filmed_Q23 since_Q23 ._Q23 ._Q23 ._Q23 
+well_Q23 ,_Q23 since_Q23 costner's_Q23 the_Q23 postman_Q23 (_Q23 1997_Q23 )_Q23 ._Q23 
+message_Q23 in_Q23 a_Q23 bottle_Q23 is_Q23 one_Q23 slow_Q23 moving_Q23 film_Q23 ._Q23 
+last_Q23 year_Q23 audiences_Q23 were_Q23 offered_Q23 endurance_Q23 tests_Q23 such_Q23 as_Q23 the_Q23 horse_Q23 whisperer_Q23 and_Q23 meet_Q23 joe_Q23 black_Q23 but_Q23 both_Q23 of_Q23 those_Q23 films_Q23 resemble_Q23 jerry_Q23 bruckheimer_Q23 productions_Q23 next_Q23 to_Q23 this_Q23 ._Q23 
+they_Q23 also_Q23 had_Q23 redeeming_Q23 qualities_Q23 in_Q23 the_Q23 form_Q23 of_Q23 quality_Q23 performances_Q23 and_Q23 some_Q23 stand_Q23 out_Q23 technical_Q23 work_Q23 ._Q23 
+message_Q23 in_Q23 a_Q23 bottle_Q23 has_Q23 a_Q23 decent_Q23 enough_Q23 cast_Q23 but_Q23 they're_Q23 fighting_Q23 the_Q23 material_Q23 all_Q23 the_Q23 way_Q23 ,_Q23 and_Q23 losing_Q23 badly_Q23 ._Q23 
+costner_Q23 and_Q23 ,_Q23 especially_Q23 ,_Q23 wright-penn_Q23 are_Q23 both_Q23 likable_Q23 and_Q23 attractive_Q23 enough_Q23 to_Q23 cheer_Q23 for_Q23 but_Q23 their_Q23 characters_Q23 are_Q23 simply_Q23 too_Q23 boring_Q23 ._Q23 
+they_Q23 also_Q23 fail_Q23 to_Q23 generate_Q23 any_Q23 kind_Q23 of_Q23 real_Q23 romantic_Q23 chemistry_Q23 ._Q23 
+the_Q23 supporting_Q23 players_Q23 are_Q23 given_Q23 very_Q23 little_Q23 to_Q23 do_Q23 ._Q23 
+the_Q23 reliable_Q23 douglas_Q23 is_Q23 particularly_Q23 wasted_Q23 ._Q23 
+old_Q23 pro_Q23 newman_Q23 gives_Q23 his_Q23 all_Q23 and_Q23 occasionally_Q23 threatens_Q23 to_Q23 kick_Q23 some_Q23 life_Q23 into_Q23 this_Q23 dead_Q23 horse_Q23 of_Q23 a_Q23 film_Q23 ._Q23 
+a_Q23 confrontational_Q23 scene_Q23 he_Q23 has_Q23 with_Q23 costner_Q23 near_Q23 the_Q23 end_Q23 is_Q23 especially_Q23 well_Q23 played_Q23 ._Q23 
+however_Q23 ,_Q23 too_Q23 frequently_Q23 he_Q23 just_Q23 reminds_Q23 us_Q23 how_Q23 unexciting_Q23 our_Q23 lead_Q23 characters_Q23 are_Q23 ._Q23 
+the_Q23 film_Q23 is_Q23 very_Q23 polished_Q23 on_Q23 the_Q23 technical_Q23 side_Q23 to_Q23 be_Q23 sure_Q23 but_Q23 it_Q23 only_Q23 works_Q23 to_Q23 undercut_Q23 the_Q23 story_Q23 ._Q23 
+gabriel_Q23 yared_Q23 ,_Q23 who_Q23 previously_Q23 set_Q23 the_Q23 romantic_Q23 moods_Q23 of_Q23 the_Q23 english_Q23 patient_Q23 (_Q23 1996_Q23 )_Q23 and_Q23 city_Q23 of_Q23 angels_Q23 (_Q23 1998_Q23 )_Q23 with_Q23 his_Q23 scores_Q23 ,_Q4 overdoes_Q4 it_Q4 a_Q4 bit_Q4 here_Q4 ._Q4 
+caleb_Q4 deschanel's_Q4 camera_Q4 makes_Q4 everything_Q4 look_Q4 a_Q4 little_Q4 too_Q4 beautiful_Q4 ._Q4 
+do_Q4 the_Q4 offices_Q4 of_Q4 the_Q4 chicago_Q4 tribune_Q4 really_Q4 need_Q4 to_Q4 look_Q4 heavenly_Q4 ?_Q4 
+the_Q4 editing_Q4 by_Q4 steven_Q4 weisberg_Q4 is_Q4 troubling_Q4 not_Q4 only_Q4 considering_Q4 all_Q4 that_Q4 could_Q4 have_Q4 been_Q4 cut_Q4 out_Q4 but_Q4 is_Q4 also_Q4 simply_Q4 messy_Q4 at_Q4 times_Q4 ._Q4 
+the_Q4 real_Q4 offender_Q4 here_Q4 is_Q4 screenwriter_Q4 gerald_Q4 di_Q4 pego_Q4 ._Q4 
+working_Q4 from_Q4 a_Q4 best-_Q4 selling_Q4 novel_Q4 by_Q4 nicholas_Q4 sparks_Q4 (_Q4 which_Q4 i_Q4 have_Q4 not_Q4 read_Q4 but_Q4 have_Q4 been_Q4 told_Q4 is_Q4 on_Q4 the_Q4 same_Q4 literary_Q4 level_Q4 as_Q4 the_Q4 bridges_Q4 of_Q4 madison_Q4 county_Q4 )_Q4 ,_Q4 di_Q4 pego_Q4 creates_Q4 one_Q4 of_Q4 the_Q4 most_Q4 uninspired_Q4 scripts_Q4 of_Q4 recent_Q4 times_Q4 ._Q4 
+its_Q4 strict_Q4 adherence_Q4 to_Q4 clich_Q4 ?_Q4 s_Q4 brings_Q4 to_Q4 mind_Q4 such_Q4 disasters_Q4 as_Q4 i_Q4 still_Q4 know_Q4 what_Q4 you_Q4 did_Q4 last_Q4 summer_Q4 (_Q4 1998_Q4 )_Q4 ._Q4 
+there_Q4 simply_Q4 isn't_Q4 an_Q4 original_Q4 scene_Q4 in_Q4 this_Q4 film_Q4 ._Q4 
+the_Q4 dialogue_Q4 is_Q4 rarely_Q4 better_Q4 than_Q4 laughable_Q4 and_Q4 this_Q4 is_Q4 only_Q4 accentuated_Q4 by_Q4 the_Q4 excessively_Q4 long_Q4 pauses_Q4 every_Q4 character_Q4 takes_Q4 while_Q4 speaking_Q4 ._Q4 
+this_Q4 is_Q4 director_Q4 mandoki's_Q4 first_Q4 film_Q4 since_Q4 when_Q4 a_Q4 man_Q4 loves_Q4 a_Q4 woman_Q4 (_Q4 1994_Q4 )_Q4 ,_Q4 the_Q4 solid_Q4 meg_Q4 ryan/andy_Q4 garcia_Q4 romance_Q4 ._Q4 
+he's_Q4 simply_Q4 going_Q4 through_Q4 the_Q4 motions_Q4 with_Q4 this_Q4 ._Q4 
+message_Q4 in_Q4 a_Q4 bottle_Q4 is_Q4 easily_Q4 the_Q4 worst_Q4 of_Q4 the_Q4 several_Q4 romantic_Q4 offerings_Q4 available_Q4 in_Q4 theaters_Q4 at_Q4 the_Q4 moment_Q4 and_Q4 vies_Q4 with_Q4 what_Q4 dreams_Q4 may_Q4 come_Q4 (_Q4 1998_Q4 )_Q4 as_Q4 one_Q4 of_Q4 the_Q4 most_Q4 misguided_Q4 romances_Q4 of_Q4 the_Q4 decade_Q4 ._Q4 
+_Q4 

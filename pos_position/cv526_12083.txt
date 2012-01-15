@@ -1,0 +1,39 @@
+ingredients_Q1 :_Q1 london_Q1 gal_Q1 ,_Q1 fate_Q1 ,_Q1 true_Q1 love_Q1 ,_Q1 running_Q1 joke_Q1 about_Q1 monty_Q1 python's_Q1 spanish_Q1 inquisition_Q1 
+synopsis_Q1 :_Q1 american_Q1 actress_Q1 gwyneth_Q1 paltrow_Q1 with_Q1 dark_Q1 hair_Q1 ,_Q1 playing_Q1 a_Q1 londoner_Q1 ?_Q1 
+believe_Q1 it_Q1 ._Q1 
+sliding_Q1 doors_Q1 is_Q1 a_Q1 love_Q1 'what_Q1 if'_Q1 story_Q1 ._Q1 
+the_Q1 gimmick_Q1 is_Q1 that_Q1 it's_Q1 really_Q1 two_Q1 stories_Q1 :_Q1 the_Q1 film_Q1 follows_Q1 the_Q1 life_Q1 of_Q1 helen_Q1 (_Q1 gwyneth_Q1 paltrow_Q1 )_Q1 down_Q1 two_Q1 directions_Q1 ._Q1 
+in_Q1 the_Q1 beginning_Q1 ,_Q1 likeable_Q1 gal_Q1 'helen'_Q1 (_Q1 gwyneth_Q1 paltrow_Q1 )_Q1 gets_Q1 unexpectedly_Q1 fired_Q1 from_Q1 her_Q1 advertising_Q1 job_Q1 ._Q1 
+so_Q1 she_Q1 goes_Q1 into_Q1 the_Q1 subway_Q1 train_Q1 station_Q1 meaning_Q1 to_Q1 return_Q1 home_Q1 early_Q1 to_Q1 her_Q1 apartment_Q1 and_Q1 her_Q1 sleeping_Q1 live-in_Q1 lover_Q1 gerry_Q1 (_Q1 john_Q1 lynch_Q1 )_Q1 ._Q1 
+helen_Q1 doesn't_Q1 know_Q1 it_Q1 ,_Q1 but_Q1 she_Q1 is_Q1 at_Q1 a_Q1 fateful_Q1 junction_Q1 in_Q1 life_Q1 :_Q1 1_Q1 )_Q1 if_Q1 she_Q1 enters_Q1 through_Q1 the_Q1 sliding_Q1 door_Q1 of_Q1 a_Q1 london_Q1 subway_Q1 train_Q1 her_Q1 life_Q1 takes_Q1 one_Q1 path_Q1 with_Q1 one_Q1 future_Q1 2_Q1 )_Q1 if_Q1 she_Q1 stays_Q1 on_Q1 the_Q1 platform_Q1 her_Q1 life_Q1 takes_Q1 another_Q1 path_Q1 with_Q1 a_Q1 different_Q1 future_Q1 ._Q1 
+the_Q1 film_Q1 shows_Q1 what_Q1 happens_Q1 in_Q1 both_Q1 paths_Q1 ,_Q1 switching_Q1 back_Q1 and_Q1 forth_Q1 between_Q1 intertwined_Q1 ,_Q1 parallel_Q1 stories_Q1 ._Q1 
+in_Q1 story_Q1 one_Q23 ,_Q23 helen_Q23 meets_Q23 a_Q23 charming_Q23 and_Q23 talkative_Q23 monty_Q23 python_Q23 fan_Q23 named_Q23 james_Q23 (_Q23 john_Q23 hannah_Q23 )_Q23 on_Q23 the_Q23 train_Q23 ._Q23 
+arriving_Q23 home_Q23 early_Q23 ,_Q23 she_Q23 discovers_Q23 that_Q23 her_Q23 live-in_Q23 ,_Q23 gerry_Q23 (_Q23 john_Q23 lynch_Q23 )_Q23 ,_Q23 is_Q23 having_Q23 sex_Q23 with_Q23 his_Q23 former_Q23 lover_Q23 lydia_Q23 (_Q23 jeanne_Q23 tripplehorn_Q23 )_Q23 ._Q23 
+this_Q23 leads_Q23 to_Q23 a_Q23 life_Q23 where_Q23 helen_Q23 moves_Q23 out_Q23 ._Q23 
+helen's_Q23 winsome_Q23 new_Q23 friend_Q23 james_Q23 helps_Q23 her_Q23 recover_Q23 from_Q23 a_Q23 broken_Q23 heart_Q23 ,_Q23 and_Q23 encourages_Q23 her_Q23 to_Q23 start_Q23 her_Q23 own_Q23 business_Q23 ._Q23 
+in_Q23 story_Q23 two_Q23 ,_Q23 helen_Q23 experiences_Q23 a_Q23 different_Q23 fate_Q23 ._Q23 
+she_Q23 misses_Q23 the_Q23 train_Q23 ,_Q23 never_Q23 meets_Q23 james_Q23 ,_Q23 and_Q23 doesn't_Q23 get_Q23 home_Q23 early_Q23 enough_Q23 to_Q23 discover_Q23 gerry's_Q23 infidelity_Q23 ._Q23 
+in_Q23 this_Q23 new_Q23 life_Q23 ,_Q23 helen_Q23 takes_Q23 up_Q23 odd_Q23 menial_Q23 jobs_Q23 ,_Q23 and_Q23 faces_Q23 the_Q23 constant_Q23 sneaking_Q23 suspicion_Q23 that_Q23 all_Q23 is_Q23 not_Q23 right_Q23 with_Q23 her_Q23 relationship_Q23 with_Q23 gerry_Q23 ._Q23 
+will_Q23 the_Q23 truth_Q23 of_Q23 the_Q23 heart_Q23 finally_Q23 work_Q23 its_Q23 way_Q23 through_Q23 a_Q23 number_Q23 of_Q23 problems_Q23 and_Q23 setbacks_Q23 in_Q23 both_Q23 scenarios_Q23 ?_Q23 
+opinion_Q23 :_Q23 rejoice_Q23 all_Q23 ye_Q23 monty_Q23 python_Q23 fans_Q23 ,_Q23 gwyneth_Q23 paltrow_Q23 fans_Q23 ,_Q23 and_Q23 watchers_Q23 of_Q23 quirky_Q23 romance_Q23 flicks_Q23 ._Q23 
+at_Q23 last_Q23 here's_Q23 proof_Q23 that_Q23 there's_Q23 still_Q23 creativity_Q23 in_Q23 1990s_Q23 filmmaking_Q23 ._Q23 
+sliding_Q23 doors_Q23 is_Q23 refreshingly_Q23 different_Q23 from_Q23 anything_Q23 this_Q23 year_Q23 ._Q23 
+not_Q23 only_Q23 is_Q23 it_Q23 a_Q23 well-acted_Q23 ,_Q23 heartwarming_Q23 film_Q23 ,_Q23 but_Q23 it's_Q23 also_Q23 easily_Q23 gwyneth_Q23 paltrow's_Q23 best_Q23 recent_Q23 performance_Q23 ._Q23 
+when_Q23 helen_Q23 (_Q23 paltrow_Q23 )_Q23 screams_Q23 that_Q23 her_Q23 unfaithful_Q23 boyfriend_Q23 is_Q23 a_Q23 'shagging_Q23 wanker_Q23 ,_Q23 '_Q23 (_Q23 a_Q23 british_Q23 phrase_Q23 better_Q23 left_Q23 untranslated_Q23 )_Q23 she_Q23 sounds_Q23 like_Q23 she_Q23 knows_Q23 what_Q23 she's_Q23 talking_Q23 about_Q23 !_Q23 
+nor_Q23 does_Q23 sliding_Q23 doors_Q23 go_Q23 overboard_Q23 with_Q23 formulaic_Q23 true_Q23 love_Q23 or_Q23 other_Q23 stereotypes_Q23 ._Q23 
+nobody_Q23 scrambles_Q23 around_Q23 in_Q23 danger_Q23 ,_Q23 screaming_Q23 ,_Q23 "_Q23 i_Q23 will_Q23 find_Q23 you_Q23 no_Q23 matter_Q23 what_Q23 ,_Q23 my_Q23 darling_Q23 !_Q23 "_Q23 
+when_Q23 helen_Q23 finds_Q23 herself_Q23 on_Q23 a_Q23 boat_Q23 in_Q23 the_Q23 starlight_Q23 with_Q23 james_Q23 ,_Q23 she_Q23 doesn't_Q23 take_Q23 the_Q23 easy_Q23 way_Q23 out_Q23 and_Q23 leap_Q23 into_Q23 his_Q23 arms_Q23 ,_Q23 since_Q23 she's_Q23 supposed_Q23 to_Q23 be_Q23 recovering_Q23 from_Q23 heartache_Q23 ._Q23 
+and_Q23 handsome_Q23 live-in_Q23 boyfriend_Q23 gerry_Q23 isn't_Q23 the_Q23 stereotypical_Q23 screen_Q23 hunk_Q23 (_Q23 either_Q23 a_Q23 stud_Q23 or_Q23 a_Q23 snob_Q23 )_Q23 ._Q23 
+instead_Q23 he's_Q23 a_Q23 nervous_Q23 and_Q23 indecisive_Q23 ,_Q23 almost_Q23 helpless_Q23 hunk_Q23 ._Q23 
+another_Q23 example_Q23 :_Q23 when_Q23 one_Q23 of_Q23 the_Q23 protagonists_Q23 lies_Q23 wounded_Q23 in_Q23 a_Q23 hospital_Q23 ,_Q23 sliding_Q23 doors_Q23 gives_Q23 us_Q23 neither_Q23 the_Q23 'hospital_Q23 miracle'_Q23 nor_Q4 a_Q4 maudlin_Q4 tragedy_Q4 but_Q4 surprises_Q4 us_Q4 with_Q4 a_Q4 third_Q4 variation_Q4 ._Q4 
+in_Q4 other_Q4 words_Q4 ,_Q4 all_Q4 of_Q4 the_Q4 characters_Q4 seem_Q4 non-stereotyped_Q4 ,_Q4 human_Q4 ,_Q4 and_Q4 local_Q4 ._Q4 
+there_Q4 are_Q4 minor_Q4 inconveniences_Q4 ._Q4 
+since_Q4 sliding_Q4 doors_Q4 switches_Q4 back_Q4 and_Q4 forth_Q4 between_Q4 two_Q4 possible_Q4 fates_Q4 ,_Q4 it's_Q4 occasionally_Q4 difficult_Q4 to_Q4 distinguish_Q4 between_Q4 the_Q4 two_Q4 ._Q4 
+distinguishing_Q4 between_Q4 the_Q4 two_Q4 stories_Q4 isn't_Q4 a_Q4 problem_Q4 in_Q4 the_Q4 scenes_Q4 containing_Q4 paltrow_Q4 ,_Q4 who_Q4 sports_Q4 two_Q4 different_Q4 hairstyles_Q4 ._Q4 
+but_Q4 in_Q4 scenes_Q4 containing_Q4 only_Q4 lydia_Q4 and_Q4 gerry_Q4 ,_Q4 who_Q4 look_Q4 the_Q4 same_Q4 in_Q4 both_Q4 stories_Q4 ,_Q4 it's_Q4 slightly_Q4 confusing_Q4 ._Q4 
+also_Q4 ,_Q4 quite_Q4 a_Q4 few_Q4 snappy_Q4 comebacks_Q4 referring_Q4 to_Q4 american_Q4 pop_Q4 culture_Q4 (_Q4 seinfeld_Q4 ,_Q4 woody_Q4 allen_Q4 ,_Q4 etc_Q4 ._Q4 )_Q4 are_Q4 spoken_Q4 by_Q4 the_Q4 british_Q4 characters_Q4 ._Q4 
+but_Q4 these_Q4 seem_Q4 slightly_Q4 forced_Q4 ,_Q4 given_Q4 that_Q4 the_Q4 remaining_Q4 dialogue_Q4 is_Q4 predominantly_Q4 british_Q4 slang_Q4 ._Q4 
+possibly_Q4 an_Q4 attempt_Q4 by_Q4 the_Q4 screenwriter_Q4 to_Q4 balance_Q4 the_Q4 british_Q4 so_Q4 that_Q4 american_Q4 audiences_Q4 can_Q4 feel_Q4 more_Q4 comfortable_Q4 ?_Q4 
+sliding_Q4 doors_Q4 is_Q4 a_Q4 charming_Q4 ,_Q4 quirky_Q4 ,_Q4 original_Q4 ,_Q4 happy_Q4 romance_Q4 with_Q4 a_Q4 little_Q4 'philosophy_Q4 of_Q4 fate'_Q4 thrown_Q4 in_Q4 ._Q4 
+monty_Q4 python_Q4 and_Q4 the_Q4 meaning_Q4 of_Q4 fate_Q4 ,_Q4 anybody_Q4 ?_Q4 
+_Q4 
