@@ -5,6 +5,7 @@ import data
 from numpy import *
 from PyML import *
 from PyML.containers import *
+from maxent import MaxentModel
 from scipy.sparse import csr_matrix, lil_matrix, csc_matrix, issparse
 import sys
 
@@ -119,6 +120,24 @@ class LinearSVMClassifier:
         X = SparseDataSet(array([point], dtype=uint16).tolist())
         print "LinearSVM: Classifying"
         return self.svm.classify(X, 0)[0]
+
+class MaximumEntropyClassifier:
+    def __init__(self, trainingset):
+        print "MaximumEntropy: Creating model"
+        self.model = MaxentModel()
+        self.model.verbose = 1
+        self.model.begin_add_event()
+        for (gram,label,value) in trainingset:
+            self.model.add_event(gram,label,value)
+        self.model.end_add_event()
+        print "> Events added"
+        
+        self.model.train(10)
+        self.model.train(100, 'gis', 2)
+        print "> Models trained"
+
+    def classify(self, point, label='pos'):
+        return self.model.eval(point, label)
         
         
 def test_bayes():
@@ -142,5 +161,19 @@ def test_svm():
     print bc.classify(array([2, 2, 2], dtype=uint16))
     print bc.classify(array([3, 1, 1], dtype=uint16))
 
+def test_maxent():
+    trainingset = [(['good'],'pos',1),
+                   (['wonderful'],'pos',1),
+                   (['ugly'],'neg',1),
+                   (['terrible','ick'],'neg',1)]
+    m = MaximumEntropyClassifier(trainingset)
+    
+    print "other label: %s" % m.classify(['mmm'],'otherlabel') # other label
+    print "OOD: %s" % m.classify(['mmm'],'pos') # OOD
+    print "ick: %s" % m.classify(['ick'],'pos')
+    print "mmm awesome good: %s" % m.classify(['mmm','awesome','good'],'pos')
+    print "mmm terrible good: %s" % m.classify(['mmm','terrible','good'],'pos')
+    print "wonderful terrible good: %s" % m.classify(['wonderful','terrible','good'],'pos')
+
 if __name__ == "__main__":
-    test_svm()
+    test_maxent()

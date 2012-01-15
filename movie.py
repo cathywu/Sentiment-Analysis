@@ -114,11 +114,11 @@ def test(n=1,dataset='',limit=None):
     print "Testing"
     pos_results = [m.classifier.classify(i) for i in pos_tests]
     pos_correct = len([i for i in pos_results if i == 1])
-    print "Positive: %s of %s, %s percent" % (pos_correct,len(pos_tests),(float(pos_correct)/len(pos_tests)))
+    print "Positive: %s of %s, %s accuracy" % (pos_correct,len(pos_tests),(float(pos_correct)/len(pos_tests)))
     print pos_results
     neg_results = [m.classifier.classify(i) for i in neg_tests]
     neg_correct = len([i for i in neg_results if i == -1])
-    print "Negative: %s of %s, %s percent" % (neg_correct,len(neg_tests),(float(neg_correct)/len(neg_tests)))
+    print "Negative: %s of %s, %s accuracy" % (neg_correct,len(neg_tests),(float(neg_correct)/len(neg_tests)))
     print neg_results
         
 if __name__ == "__main__":
