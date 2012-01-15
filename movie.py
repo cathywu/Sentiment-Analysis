@@ -7,6 +7,7 @@ import classifier
 import os
 from numpy import *
 from operator import itemgetter
+from Indexes import Indexes
 
 POS_DIR="pos"
 POS_POSITION_DIR="pos_position"
@@ -97,39 +98,44 @@ def test(n=1,dataset='',limit=None, binary=False):
         pass
 
     testsize=800
+    iterations=1
+    ind = Indexes(mode='r',iterations=iterations,train_size=testsize)
+    print ind.get_pos_train_ind()
 
-    print "Building Classifier"
-    m = MovieReviews(classif, n, testsize, pos_dir, neg_dir, binary=binary, limit=limit)
+    for k in range(iterations):
+        ind.next()
+        print "Building Classifier"
+        m = MovieReviews(classif, n, testsize, pos_dir, neg_dir, binary=binary, limit=limit)
 
-    print "Testset --> Feature Vectors"
-    pos_tests = None
-    neg_tests = None
-    for j in n:
-        if pos_tests and neg_tests:
-            files = os.listdir(pos_dir)[testsize:]
-            for i in range(len(files)):
-                pos_tests[i].update(ngrams.ngrams(j, open("%s/%s" % (pos_dir,files[i])).read()))
-            files = os.listdir(neg_dir)[testsize:]
-            for i in range(len(files)):
-                neg_tests[i].update(ngrams.ngrams(j, open("%s/%s" % (neg_dir,files[i])).read()))
-        else:
-            pos_tests = [ngrams.ngrams(j, open("%s/%s" % (pos_dir,i)).read()) 
-                              for i in os.listdir(pos_dir)[testsize:]]
-            neg_tests = [ngrams.ngrams(j, open("%s/%s" % (neg_dir,i)).read()) 
-                              for i in os.listdir(neg_dir)[testsize:]]
+        print "Testset --> Feature Vectors"
+        pos_tests = None
+        neg_tests = None
+        for j in n:
+            if pos_tests and neg_tests:
+                files = os.listdir(pos_dir)[testsize:]
+                for i in range(len(files)):
+                    pos_tests[i].update(ngrams.ngrams(j, open("%s/%s" % (pos_dir,files[i])).read()))
+                files = os.listdir(neg_dir)[testsize:]
+                for i in range(len(files)):
+                    neg_tests[i].update(ngrams.ngrams(j, open("%s/%s" % (neg_dir,files[i])).read()))
+            else:
+                pos_tests = [ngrams.ngrams(j, open("%s/%s" % (pos_dir,i)).read()) 
+                                  for i in os.listdir(pos_dir)[testsize:]]
+                neg_tests = [ngrams.ngrams(j, open("%s/%s" % (neg_dir,i)).read()) 
+                                  for i in os.listdir(neg_dir)[testsize:]]
 
-    print "Testing"
-    pos_results = [m.classifier.classify(i) for i in pos_tests]
-    pos_correct = len([i for i in pos_results if i == 1])
-    print "Positive: %s of %s, %s accuracy" % (pos_correct,len(pos_tests),(float(pos_correct)/len(pos_tests)))
-    print pos_results
-    neg_results = [m.classifier.classify(i) for i in neg_tests]
-    neg_correct = len([i for i in neg_results if i == -1])
-    print "Negative: %s of %s, %s accuracy" % (neg_correct,len(neg_tests),(float(neg_correct)/len(neg_tests)))
-    print neg_results
+        print "Testing"
+        pos_results = [m.classifier.classify(i) for i in pos_tests]
+        pos_correct = len([i for i in pos_results if i == 1])
+        print "Positive: %s of %s, %s accuracy" % (pos_correct,len(pos_tests),(float(pos_correct)/len(pos_tests)))
+        print pos_results
+        neg_results = [m.classifier.classify(i) for i in neg_tests]
+        neg_correct = len([i for i in neg_results if i == -1])
+        print "Negative: %s of %s, %s accuracy" % (neg_correct,len(neg_tests),(float(neg_correct)/len(neg_tests)))
+        print neg_results
         
 if __name__ == "__main__":
-    test(n=[1],dataset='adjectives',limit=[2633,16165],binary=False)
+    test(n=[1],dataset='adjectives',limit=None,binary=True)
 
 # with testsize = 800, no shuffling
 # [ns]      dataset         [limits]        binary  --> +results    -results
@@ -147,3 +153,4 @@ if __name__ == "__main__":
 # [1]       partofspeech    [16165,16165]   1       --> 0.67        0.91
 # [1]       adjectives      [2633]          1       --> 0.92        0.70
 # [1]       adjectives      [2633]          0       --> 0.97        0.54
+# [1]       default         [40183]         1       --> 0.83        0.79
