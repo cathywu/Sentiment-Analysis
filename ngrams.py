@@ -93,7 +93,6 @@ def collapse_ngrams(grams):
     """
     Collapse a list of dict of grams into a single dict
     """
-    print "Entering collapse_ngrams"
     collapsed = {}
     for gram in grams:
         for (key,value) in gram.iteritems():

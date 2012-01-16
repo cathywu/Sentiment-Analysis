@@ -98,7 +98,6 @@ class BayesClassifier(Classifier):
         self.compiled = True
         self.normalized = self.classes
         self.lengths = {}
-        print self.nfeatures
         for i in range(self.nfeatures):
             total = 0
             for cls in self.classes:

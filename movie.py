@@ -20,11 +20,13 @@ NEG_PARTOFSPEECH_DIR="neg_tagged"
 NEG_ADJ_DIR="neg_adj"
 
 class MovieReviews:
-    def __init__(self, clsf, n, testsize, pos_dir, neg_dir, binary=False, limit=None):
+    def __init__(self, clsf, n, ind, pos_dir, neg_dir, binary=False, limit=None):
 
         count = 0
-        pos_files = os.listdir(pos_dir)[:testsize]
-        neg_files = os.listdir(neg_dir)[:testsize]
+        pos_files = os.listdir(pos_dir)
+        pos_files = [pos_files[i] for i in ind.get_pos_train_ind()]
+        neg_files = os.listdir(neg_dir)
+        neg_files = [neg_files[i] for i in ind.get_neg_train_ind()]
         features = {}
 
         self.pos_files = [{} for f in pos_files]
@@ -38,29 +40,29 @@ class MovieReviews:
         if limit and (type(limit) != type([])):
             limit = [limit]
 
-        print "Reading files"
+        # Reading files
         for (j,lim) in zip(n,limit):
-            all_grams = [ngrams.ngrams(j, open("%s/%s" % (pos_dir,i)).read()) 
-                         for i in os.listdir(pos_dir)[:testsize]]
+            all_grams = [ngrams.ngrams(j, open("%s/%s" % (pos_dir,f)).read()) 
+                         for f in pos_files]
             for i in range(len(pos_files)):
                 self.pos_files[i].update(all_grams[i])
             featureslist = all_grams
 
-            all_grams = [ngrams.ngrams(j, open("%s/%s" % (neg_dir,i)).read()) 
-                         for i in os.listdir(neg_dir)[:testsize]]
+            all_grams = [ngrams.ngrams(j, open("%s/%s" % (neg_dir,f)).read()) 
+                         for f in neg_files]
             for i in range(len(neg_files)):
                 self.neg_files[i].update(all_grams[i])
             featureslist.extend(all_grams)
 
-            print "Collapsing, limiting ngrams"
+            # Collapsing, limiting ngrams
             features.update(ngrams.top_ngrams(ngrams.collapse_ngrams(featureslist),lim))
 
-        print "Creating Index"
+        # Creating Index
         self.classifier = clsf(restrictFeatures = features)
 
         print "# features: %s" % self.classifier.nfeatures
 
-        print "Making classifier"        
+        # Making classifier
         for i in self.pos_files:
             count += 1
             self.classifier.addFeatureVector(i, 1, binary=binary)
@@ -97,43 +99,43 @@ def test(n=1,dataset='',limit=None, binary=False):
         pass
 
     testsize=800
-    iterations=1
-    ind = Indexes(mode='r',iterations=iterations,train_size=testsize)
+    iterations=3
+    pos_files = os.listdir(pos_dir)
+    neg_files = os.listdir(neg_dir)
+    ind = Indexes(mode='k',iterations=iterations,train_size=testsize)
 
     for k in range(iterations):
         ind.next()
-        print "Building Classifier"
-        m = MovieReviews(classif, n, testsize, pos_dir, neg_dir, binary=binary, limit=limit)
+        # Building Classifier
+        m = MovieReviews(classif, n, ind, pos_dir, neg_dir, binary=binary, limit=limit)
 
-        print "Testset --> Feature Vectors"
+        # Testset --> Feature Vectors
         pos_tests = None
         neg_tests = None
         for j in n:
             if pos_tests and neg_tests:
-                files = os.listdir(pos_dir)[testsize:]
+                files = [pos_files[i] for i in ind.get_pos_train_ind()]
                 for i in range(len(files)):
                     pos_tests[i].update(ngrams.ngrams(j, open("%s/%s" % (pos_dir,files[i])).read()))
-                files = os.listdir(neg_dir)[testsize:]
+                files = [neg_files[i] for i in ind.get_neg_train_ind()]
                 for i in range(len(files)):
                     neg_tests[i].update(ngrams.ngrams(j, open("%s/%s" % (neg_dir,files[i])).read()))
             else:
-                pos_tests = [ngrams.ngrams(j, open("%s/%s" % (pos_dir,i)).read()) 
-                                  for i in os.listdir(pos_dir)[testsize:]]
-                neg_tests = [ngrams.ngrams(j, open("%s/%s" % (neg_dir,i)).read()) 
-                                  for i in os.listdir(neg_dir)[testsize:]]
+                pos_tests = [ngrams.ngrams(j, open("%s/%s" % (pos_dir,pos_files[i])).read()) 
+                                  for i in ind.get_pos_train_ind()]
+                neg_tests = [ngrams.ngrams(j, open("%s/%s" % (neg_dir,neg_files[i])).read()) 
+                                  for i in ind.get_neg_train_ind()]
 
-        print "Testing"
+        # Testing
         pos_results = [m.classifier.classify(i) for i in pos_tests]
         pos_correct = len([i for i in pos_results if i == 1])
         print "Positive: %s of %s, %s accuracy" % (pos_correct,len(pos_tests),(float(pos_correct)/len(pos_tests)))
-        print pos_results
         neg_results = [m.classifier.classify(i) for i in neg_tests]
         neg_correct = len([i for i in neg_results if i == -1])
         print "Negative: %s of %s, %s accuracy" % (neg_correct,len(neg_tests),(float(neg_correct)/len(neg_tests)))
-        print neg_results
-        
+ 
 if __name__ == "__main__":
-    test(n=[1],dataset='adjectives',limit=[2633],binary=True)
+    test(n=[1],dataset='',limit=[16165],binary=True)
 
 # with testsize = 800, no shuffling
 # [ns]      dataset         [limits]        binary  --> +results    -results
