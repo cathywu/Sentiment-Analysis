@@ -1,0 +1,66 @@
+
+=======
+
+Introduction
+
+This README v1.0 (June, 2004) for the v1.0 subjectivity dataset comes
+from the URL
+http://www.cs.cornell.edu/people/pabo/movie-review-data .
+
+=======
+
+Citation Info 
+
+This data was first used in Bo Pang and Lillian Lee,
+``A Sentimental Education: Sentiment Analysis Using Subjectivity Summarization 
+Based on Minimum Cuts'', Proceedings of the ACL, 2004.
+
+@InProceedings{Pang+Lee:04a,
+  author =       {Bo Pang and Lillian Lee},
+  title =        {A Sentimental Education: Sentiment Analysis Using Subjectivity Summarization Based on Minimum Cuts},
+  booktitle =    "Proceedings of the ACL",
+  year =         2004
+}
+
+=======
+
+Data Format Summary 
+
+- rotten_imdb.tar.gz: contains this readme and two data files that
+  were used in the experiments described in Pang/Lee ACL 2004.
+
+  Specifically: 
+
+  * quote.tok.gt9.5000 contains 5000 subjective sentences (or snippets);
+
+  * plot.tok.gt9.5000 contains 5000 objective sentences.  
+
+  Each line in these two files corresponds to a single sentence or
+  snippet; all sentences (or snippets) are down-cased.  Only sentences
+  or snippets containing at least 10 tokens were included.  The
+  sentences and snippets were labeled automatically, as described
+  below (see section "Label Decision").
+  	 
+- subjectivity_html.tar.gz: The original source files from which the
+  extracted, processed, labeled, length-filtered, and (randomly)
+  selected data in rotten_imdb.tar.gz was derived.
+
+  Specifically:
+
+  The starting points for data acquisition were snippets of movie
+  reviews from Rotten Tomatoes (http://www.rottentomatoes.com/) and
+  plot summaries for movies from the Internet Movie Database
+  (http://www.imdb.com).  The html files under the folder "subj" are
+  webpages containing Rotten Tomatoes snippets; the html files under
+  the folder "obj" are pages containing IMDb plot summaries. The
+  sentences/snippets in rotten_imdb.tar.gz represent a processed
+  subset of these files.
+   
+=======
+
+Label Decision 
+
+We assumed that all snippets from the Rotten Tomatoes pages are
+subjective, and all sentences from IMDb plot summaries are objective.
+This is mostly true; but plot summaries can occasionally contain
+subjective sentences that are mis-labeled as objective.
