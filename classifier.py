@@ -10,6 +10,7 @@ from scipy.sparse import csr_matrix, lil_matrix, csc_matrix, issparse
 import sys
 from ngrams import *
 import tempfile
+import os
 
 """
 A classifier has a addFeatureVector method that takes a feature
@@ -142,9 +143,14 @@ class LinearSVMClassifier(Classifier):
         print self.filename
         self.data = SparseDataSet(0)
         self.svm = SVM(optimizer='liblinear')
+        self.restrictFeatures = restrictFeatures
 
-    def vectorToString(self, vec, cls):
-        return str(cls) + " " + " ".join([str(i) + ":" + str(vec[i])for i in vec]) + "\n"
+    def vectorToString(self, vec, cls = False):
+        # granted, this is kind of silly
+        # creates a string of the format "[class if point is labeled] feature1:value1 feature2:value2..."
+        # where the only allowed features are the ones in restrictFeatures, if we're restricting the features
+        return ((str(cls) + " ") if cls else "") + " ".join([str(i) + ":" + str(vec[i]) 
+                                                                 for i in vec if (not self.restrictFeatures) or (i in self.restrictFeatures)]) + "\n"
 
     def addFeatureVector(self, point, cls, binary=False):
         self.compiled = False
@@ -157,19 +163,23 @@ class LinearSVMClassifier(Classifier):
         self.compiled = True
         self.file.close()
         self.data = SparseDataSet(self.filename)
-#        self.svm.train(self.data)
         self.file = open(self.filename)
+        self.svm.train(self.data)
 
     def validate(self, n):
-#        self.compile()
-#        v = self.vectorFromDict(point)
-        
-#        outp = self.svm.test(v)
         self.compile()
         print self.data
         outp = self.svm.cv(self.data, numFolds = n)
         print outp
-
+    def classify(self, pt):
+        self.compile()
+        f = tempfile.NamedTemporaryFile(delete=False)
+        fname = f.name
+        f.write(self.vectorToString(pt))
+        f.close()        
+        data = SparseDataSet(fname)
+        os.remove(fname)
+        return self.svm.test(data, verbose=0).getPredictedLabels()[0]
 
 class MaximumEntropyClassifier(Classifier):
     def __init__(self, restrictFeatures=False):

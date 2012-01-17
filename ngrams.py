@@ -51,10 +51,10 @@ def ngrams(n, s):
     grams[" ".join(current)] += 1
     return grams
 
-def ngrams_range(b, e, s):
+def ngrams_range(ns, s):
     g = {}
-    for i in range(b, e+1):
-        g.update(ngrams(i, s))
+    for n in ns:
+        g.update(ngrams(n, s))
     return g
 
 def ngrams_to_dictionary(grams):

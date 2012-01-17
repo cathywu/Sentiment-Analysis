@@ -24,19 +24,22 @@ class TestConfiguration:
         self.count = 0
         self.n = n
         self.index = ind
-        self.pos_dir = pos_dir
-        self.neg_dir = neg_dir
         self.binary = binary
         self.limit = limit if limit else [0 for i in n]
         self.clsf = clsf
 
         # filenames needed for this test configuration used
         pos_files = os.listdir(pos_dir)
-        self.pos_train_data = [pos_files[i] for i in self.index.get_pos_train_ind()]
-        self.pos_test_data = [pos_files[i] for i in self.index.get_pos_test_ind()]
+        self.pos_train_data = [open("%s/%s" % (pos_dir, pos_files[i])).read() \
+                                   for i in self.index.get_pos_train_ind()]
+        self.pos_test_data = [open("%s/%s" % (pos_dir, pos_files[i])).read() \
+                                  for i in self.index.get_pos_test_ind()]
+
         neg_files = os.listdir(neg_dir)
-        self.neg_train_data = [neg_files[i] for i in self.index.get_neg_train_ind()]
-        self.neg_test_data = [neg_files[i] for i in self.index.get_neg_test_ind()]
+        self.neg_train_data = [open("%s/%s" % (neg_dir, neg_files[i])).read() \
+                                   for i in self.index.get_neg_train_ind()]
+        self.neg_test_data = [open("%s/%s" % (neg_dir, neg_files[i])).read() \
+                                  for i in self.index.get_neg_test_ind()]
         self.features = {}
 
     def train(self):
@@ -45,21 +48,20 @@ class TestConfiguration:
 
         # Reading files
         for (j,lim) in zip(self.n,self.limit):
-            all_grams = [ngrams.ngrams(j, open("%s/%s" % (self.pos_dir,f)).read()) 
-                         for f in self.pos_train_data]
+            all_grams = [ngrams.ngrams(j, f) for f in self.pos_train_data]
             for i in range(len(self.pos_train_data)):
                 pos_train[i].update(all_grams[i])
             featureslist = all_grams
 
-            all_grams = [ngrams.ngrams(j, open("%s/%s" % (self.neg_dir,f)).read()) 
-                         for f in self.neg_train_data]
+            all_grams = [ngrams.ngrams(j, f) for f in self.neg_train_data]
             for i in range(len(self.neg_train_data)):
                 neg_train[i].update(all_grams[i])
             featureslist.extend(all_grams)
 
             # Collapsing, limiting ngrams
             self.features.update(ngrams.top_ngrams(ngrams.collapse_ngrams(
-                featureslist),lim))
+                        featureslist),lim))
+
 
         # Creating Index
         self.classifier = self.clsf(restrictFeatures = self.features)
@@ -80,45 +82,29 @@ class TestConfiguration:
         # Testset --> Feature Vectors
         for j in self.n:
             for i in range(len(self.pos_test_data)):
-                pos_tests[i].update(ngrams.ngrams(j, open("%s/%s" %
-                    (self.pos_dir,self.pos_test_data[i])).read()))
+                pos_tests[i].update(ngrams.ngrams(j, self.pos_test_data[i]))
             for i in range(len(self.neg_test_data)):
-                neg_tests[i].update(ngrams.ngrams(j, open("%s/%s" %
-                    (self.neg_dir,self.neg_test_data[i])).read()))
+                neg_tests[i].update(ngrams.ngrams(j, self.neg_test_data[i]))
 
         # Testing
         pos_results = [self.classifier.classify(i) for i in pos_tests]
-        pos_correct = len([i for i in pos_results if i >= 1])
+        pos_correct = len([i for i in pos_results if int(i) == 1])
         print "Positive: %s of %s, %s accuracy" % (pos_correct,len(pos_tests),
                 (float(pos_correct)/len(pos_tests)))
         #print pos_results
         neg_results = [self.classifier.classify(i) for i in neg_tests]
-        neg_correct = len([i for i in neg_results if i == -1])
+        neg_correct = len([i for i in neg_results if int(i) == -1])
         print "Negative: %s of %s, %s accuracy" % (neg_correct,len(neg_tests),
                 (float(neg_correct)/len(neg_tests)))
         #print neg_results
 
+
 def select_dataset(dataset):
-    # select dataset
-    if dataset=='default':
-        print "Using normal untagged movie dataset"
-        pos_dir = POS_DIR
-        neg_dir = NEG_DIR
-    elif dataset=='partofspeech':
-        print "Using movie dataset with part of speech tagged"
-        pos_dir = POS_PARTOFSPEECH_DIR
-        neg_dir = NEG_PARTOFSPEECH_DIR
-    elif dataset=='position':
-        print "Using movie dataset with position tagged"
-        pos_dir = POS_POSITION_DIR
-        neg_dir = NEG_POSITION_DIR
-    elif dataset=='adjectives':
-        print "Using movie dataset with adjectives only"
-        pos_dir = POS_ADJ_DIR
-        neg_dir = NEG_ADJ_DIR
-    elif dataset=='yelp':
-        pass
-    return (pos_dir, neg_dir)
+    return {'default':(POS_DIR, NEG_DIR), #untagged
+            'partofspeech':(POS_PARTOFSPEECH_DIR, NEG_PARTOFSPEECH_DIR), #part of speech tagged
+            'position':(POS_POSITION_DIR, NEG_POSITION_DIR), #position tagged
+            'adjectives':(POS_ADJ_DIR, NEG_ADJ_DIR) #adjectives tagged
+            }[dataset]
 
 def test_bayes(n=1, train_size=500, iterations=1, dataset='', limit=None, binary=False):
     classif = classifier.BayesClassifier
@@ -140,7 +126,7 @@ def test_svm(n=1, train_size=500, iterations=1, dataset='', limit=None, binary=F
         ind.next()
         m = TestConfiguration(classif, n, ind, pos_dir, neg_dir, binary=binary, limit=limit)
         m.train()
-        #m.test()
+        m.test()
 
     #print "Testing"
     #pos_tests = [ngrams.ngrams(n, open("pos/"+i).read()) 
@@ -163,8 +149,8 @@ def test_maxent(n=1, train_size=500, iterations=1, dataset='', limit=None, binar
 
 if __name__ == "__main__":
     #test_bayes(n=[1],train_size=800,iterations=3,dataset='position',limit=[16165],binary=True)
-    m = test_maxent(n=[1],train_size=800,iterations=3,dataset='default',limit=[16165],binary=True)
-    #test_svm(n=[1],train_size=800,iterations=3,dataset='partofspeech',limit=[16165],binary=True)
+    #test_maxent(n=[1],train_size=800,iterations=3,dataset='default',limit=[16165],binary=True)
+    test_svm(n=[1],train_size=800,iterations=3,dataset='default',limit=[16165],binary=True)
 
 # with train_size = 800, no shuffling, bayes classifier
 # [ns]      dataset         [limits]        binary  --> +results    -results

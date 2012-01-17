@@ -189,8 +189,8 @@ class SparseParser (Parser) :
             pos = nextPos
             line = self._fileHandle.readline()
             i +=1
-            if i % 100 == 0 and i > 0 :
-                print 'scanned',i,'patterns'
+#            if i % 100 == 0 and i > 0 :
+#                print 'scanned',i,'patterns'
         
         self._featureDict = {}
         self._featureDict2 = {}
@@ -412,8 +412,8 @@ class CSVParser (Parser):
             pos += len(line)
             line = self._fileHandle.readline()
             i +=1
-            if i % 1000 == 0 and i > 0 :
-                print 'scanned',i,'patterns'
+#           if i % 1000 == 0 and i > 0 :
+#                print 'scanned',i,'patterns'
 
         self._address = address
         if self._featureID is None :
