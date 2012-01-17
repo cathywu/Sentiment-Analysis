@@ -62,7 +62,6 @@ class TestConfiguration:
             self.features.update(ngrams.top_ngrams(ngrams.collapse_ngrams(
                         featureslist),lim))
 
-
         # Creating Index
         self.classifier = self.clsf(restrictFeatures = self.features)
         print "# features: %s" % self.classifier.nfeatures
@@ -91,13 +90,10 @@ class TestConfiguration:
         pos_correct = len([i for i in pos_results if int(i) == 1])
         print "Positive: %s of %s, %s accuracy" % (pos_correct,len(pos_tests),
                 (float(pos_correct)/len(pos_tests)))
-        #print pos_results
         neg_results = [self.classifier.classify(i) for i in neg_tests]
         neg_correct = len([i for i in neg_results if int(i) == -1])
         print "Negative: %s of %s, %s accuracy" % (neg_correct,len(neg_tests),
                 (float(neg_correct)/len(neg_tests)))
-        #print neg_results
-
 
 def select_dataset(dataset):
     return {'default':(POS_DIR, NEG_DIR), #untagged
@@ -106,51 +102,23 @@ def select_dataset(dataset):
             'adjectives':(POS_ADJ_DIR, NEG_ADJ_DIR) #adjectives tagged
             }[dataset]
 
-def test_bayes(n=1, train_size=500, iterations=1, dataset='', limit=None, binary=False):
-    classif = classifier.BayesClassifier
+def test(classif, n=1, train_size=500, mode='k', iterations=1, dataset='', limit=None, binary=False):
     (pos_dir, neg_dir) = select_dataset(dataset)
-    ind = Indexes(mode='k',iterations=iterations,train_size=train_size)
+    ind = Indexes(mode=mode,iterations=iterations,train_size=train_size)
 
     for k in range(iterations):
         ind.next()
         m = TestConfiguration(classif, n, ind, pos_dir, neg_dir, binary=binary, limit=limit)
         m.train()
         m.test()
-
-def test_svm(n=1, train_size=500, iterations=1, dataset='', limit=None, binary=False):
-    classif = classifier.LinearSVMClassifier
-    (pos_dir, neg_dir) = select_dataset(dataset)
-    ind = Indexes(mode='k',iterations=iterations,train_size=train_size)
-
-    for k in range(iterations):
-        ind.next()
-        m = TestConfiguration(classif, n, ind, pos_dir, neg_dir, binary=binary, limit=limit)
-        m.train()
-        m.test()
-
-    #print "Testing"
-    #pos_tests = [ngrams.ngrams(n, open("pos/"+i).read()) 
-    #                  for i in os.listdir("pos")][testsize:]
-    #neg_tests = [ngrams.ngrams(n, open("neg/"+i).read()) 
-    #                  for i in os.listdir("neg")][testsize:]
-    #m.classifier.validate(3)
-
-def test_maxent(n=1, train_size=500, iterations=1, dataset='', limit=None, binary=False):
-    classif = classifier.MaximumEntropyClassifier
-    (pos_dir, neg_dir) = select_dataset(dataset)
-    ind = Indexes(mode='k',iterations=iterations,train_size=train_size)
-
-    for k in range(iterations):
-        ind.next()
-        m = TestConfiguration(classif, n, ind, pos_dir, neg_dir, binary=binary, limit=limit)
-        m.train()
-        m.test()
-
 
 if __name__ == "__main__":
-    #test_bayes(n=[1],train_size=800,iterations=3,dataset='position',limit=[16165],binary=True)
-    #test_svm(n=[1],train_size=800,iterations=3,dataset='default',limit=[16165],binary=True)
-    test_maxent(n=[1],train_size=800,iterations=3,dataset='default',limit=[16165],binary=True)
+    #test(classifier.BayesClassifier,n=[1],train_size=800,mode='k',
+    #     iterations=3,dataset='position',limit=[16165],binary=True)
+    #test(classifier.LinearSVMClassifier,n=[2],train_size=800,mode='k',
+    #     iterations=3,dataset='default',limit=[16165],binary=True)
+    test(classifier.MaximumEntropyClassifier,n=[1],train_size=800,mode='k',
+         iterations=3,dataset='default',limit=[16165],binary=True)
 
 # with train_size = 800, no shuffling, bayes classifier
 # [ns]      dataset         [limits]        binary  --> +results    -results
