@@ -20,16 +20,7 @@ class Yelp:
                 f = codecs.open("yelp/" + str(i) + "star/file" + str(j), 'w', encoding="ascii", errors="ignore")
                 f.write(self.stars[i][j])
                 f.close()
-    def rate(self, classifier, n, dictionary):
-        outputs = []
-        for group in self.stars:
-            classes = DefDict(0)
-            print "Rating group", group
-            for rev in self.stars[group]:
-                vec = ngrams.ngram_vector(n, rev, dictionary)
-                classes[classifier.classify(vec)] += 1                            
-            outputs.append(classes)
-        return outputs
+
     
 if __name__ == "__main__":
     #m = movie.MovieReviews(classifier.BayesPresenceClassifier, 2)
@@ -37,4 +28,3 @@ if __name__ == "__main__":
     y = Yelp("yelp/json_ascii")
     print "Saving"
     y.save()
-#    print y.rate(m.classifier, 2, m.dictionary)

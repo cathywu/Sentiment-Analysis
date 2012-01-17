@@ -12,7 +12,7 @@ def words(s):
     not_mode = False
     not_words = set(["not", "isn't", "doesn't"])
     punctuation_map = {',':"COMMA", '.':"PERIOD", ':':"COLON", ';':"SEMI", '\'':"SINGLEQUOTE",
-                       '"':"DOUBLEQUOTE"}
+                       '"':"DOUBLEQUOTE", '?':"QUESTION"}
     for i in s:
         if i.isalnum():
             current += i
@@ -121,47 +121,18 @@ def grams_to_featurevector(gramsdict, grams, label=None):
         vec[gramsdict[i]] = grams[i]
     return vec
 
-def ngrams_to_sparse(grams, classes):
-    print "a"
-    keysets = [set(k) for k in grams]
-    allgramset = set()
-    print "b"
-    allgramset = apply(allgramset.union, keysets)
-    print "c"
-    allgrams = list(allgramset)
-    print "d"
-    vecs = []
-    print "e"
-    allgramsdict = {}
-    for i in range(len(allgrams)):
-        allgramsdict[allgrams[i]] = i
-    print "f"
-    mat = lil_matrix((len(allgrams), len(grams)))
-    print "g"
-    for g in range(len(grams)):
-        for i in range(len(grams[g])):
-            if grams[g][i] > 1:
-                mat[allgramsdict[grams[g][i]], g] = grams[g][allgrams[i]] - 1
-        mat[g, -1] = classes[g]
-    return data.Data(mat.tocsr())
-        
-    
 
-def gen_indexdict(dictionary):
-    allgramsdict = {}
-    for i in range(len(dictionary)):
-        allgramsdict[dictionary[i]] = i
-    return allgramsdict
-    
-def ngram_vector(n, s, dictionary, allgramsdict = {}):
-    grams = ngrams(n, s)
-    if len(allgramsdict) == 0:
-        allgramsdict = gen_indexdict(dictionary)
-    vec = ones(len(dictionary), dtype=uint16)
-    for g in grams:
-        if g in allgramsdict:
-            vec[allgramsdict[g]] = grams[g]
-    return array(vec)
+def ngrams_to_idf(ngrams):
+    presence = [g.keys() for g in ngrams]
+    docfreq = {}
+    for i in presence:
+        for word in i:
+            if word not in docfreq:
+                docfreq[word] = 1
+            docfreq[word] += 1
+    return data.DefDict(log(float(len(ngrams))), 
+                        dict([(i, log(float(len(ngrams))/docfreq[i])) for i in docfreq]))
+
         
 if __name__ == "__main__":
     print "Trigram example: %s" % ngrams(3, "Now is the time for all good men to not come to the aid of their party! Now is the time for all bad women to leave the aid of their country? This, being war, is bad")
@@ -173,4 +144,3 @@ if __name__ == "__main__":
     (data,gramsdict) = ngrams_to_matrix([g1, g2, g3], [1, 2, 1], return_gramsdict=True)
     print "Matrix example: %s" % data.asMatrix()
     print "Grams dict: %s" % gramsdict
-
