@@ -149,7 +149,7 @@ class LinearSVMClassifier(Classifier):
         # granted, this is kind of silly
         # creates a string of the format "[class if point is labeled] feature1:value1 feature2:value2..."
         # where the only allowed features are the ones in restrictFeatures, if we're restricting the features
-        return ((str(cls) + " ") if cls else "") + " ".join([str(i) + ":" + str(vec[i]) 
+        return ((str(cls) + " ") if cls else "") + " ".join(["-".join(str(i).split()) + ":" + str(vec[i]) 
                                                                  for i in vec if (not self.restrictFeatures) or (i in self.restrictFeatures)]) + "\n"
 
     def addFeatureVector(self, point, cls, binary=False):
