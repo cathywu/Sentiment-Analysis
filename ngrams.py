@@ -130,8 +130,8 @@ def ngrams_to_idf(ngrams):
             if word not in docfreq:
                 docfreq[word] = 1
             docfreq[word] += 1
-    return data.DefDict(log(float(len(ngrams))), 
-                        dict([(i, log(float(len(ngrams))/docfreq[i])) for i in docfreq]))
+    return data.DefDict(float(len(ngrams)), 
+                        dict([(i, float(len(ngrams))/log(float(docfreq[i]))) for i in docfreq]))
 
         
 if __name__ == "__main__":

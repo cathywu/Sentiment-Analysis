@@ -128,9 +128,10 @@ def test(classif, n=1, train_size=500, mode='k', iterations=1, dataset='', limit
     print "Positive:", round((pos_correct/iterations)*100), "%"
     print "Negative:", round((neg_correct/iterations)*100), "%"
     print "Total:", round((neg_correct + pos_correct)/(2*iterations)*100), "%"
+
 if __name__ == "__main__":
     test(classifier.BayesClassifier,n=[1],train_size=800,mode='k',
-         iterations=3,dataset='position',limit=[16165],binary=True, idf=False)
+         iterations=3,dataset='position',limit=[16165],binary=False, idf=True)
     #test(classifier.LinearSVMClassifier,n=[2],train_size=800,mode='k',
     #     iterations=3,dataset='default',limit=[16165],binary=False, idf=True)
     #test(classifier.MaximumEntropyClassifier,n=[1],train_size=800,mode='k',
