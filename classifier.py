@@ -171,24 +171,38 @@ class LinearSVMClassifier(Classifier):
         print outp
 
 
-class MaximumEntropyClassifier:
-    def __init__(self, trainingset):
+class MaximumEntropyClassifier(Classifier):
+    def __init__(self, restrictFeatures=False):
+        Classifier.__init__(self)
         print "MaximumEntropy: Creating model"
         self.model = MaxentModel()
         self.model.verbose = 1
+        self.restrictFeatures = restrictFeatures
         self.model.begin_add_event()
-        for (gram,label,value) in trainingset:
-            self.model.add_event(gram,label,value)
-        self.model.end_add_event()
-        print "> Events added"
+
+    def addToIndex(self, trainingset):
+        for (vec,cls) in trainingset:
+            self.addFeatureVector(vec,cls)
         
-        self.model.train(100)
+    def addFeatureVector(self, vec, cls, value=1, binary=False):
+        for key in vec.keys():
+            if key not in self.restrictFeatures:
+                del vec[key]
+        context = vec.keys()
+        label = "%s" % cls
+        self.model.add_event(context,label,value)
+
+    def compile(self):
+        self.model.end_add_event()
+        self.model.train(30, "lbfgs", 2, 1E-03)
         #self.model.train(100, 'gis', 2)
         print "> Models trained"
 
-    def classify(self, point, label='pos'):
-        return self.model.eval(point, label)
-
+    def classify(self, point, label='1'):
+        result = self.model.eval(point.keys(), label)
+        if result >= 0.5:
+            return 1
+        return -1
         
         
 def test_bayes():
@@ -227,4 +241,4 @@ def test_maxent():
     print "wonderful terrible good: %s" % m.classify(['wonderful','terrible','good'],'pos')
 
 if __name__ == "__main__":
-    test_svm()
+    test_maxent()

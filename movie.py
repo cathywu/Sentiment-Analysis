@@ -88,13 +88,15 @@ class TestConfiguration:
 
         # Testing
         pos_results = [self.classifier.classify(i) for i in pos_tests]
-        pos_correct = len([i for i in pos_results if i == 1])
+        pos_correct = len([i for i in pos_results if i >= 1])
         print "Positive: %s of %s, %s accuracy" % (pos_correct,len(pos_tests),
                 (float(pos_correct)/len(pos_tests)))
+        #print pos_results
         neg_results = [self.classifier.classify(i) for i in neg_tests]
         neg_correct = len([i for i in neg_results if i == -1])
         print "Negative: %s of %s, %s accuracy" % (neg_correct,len(neg_tests),
                 (float(neg_correct)/len(neg_tests)))
+        #print neg_results
 
 def select_dataset(dataset):
     # select dataset
@@ -147,11 +149,24 @@ def test_svm(n=1, train_size=500, iterations=1, dataset='', limit=None, binary=F
     #                  for i in os.listdir("neg")][testsize:]
     #m.classifier.validate(3)
 
+def test_maxent(n=1, train_size=500, iterations=1, dataset='', limit=None, binary=False):
+    classif = classifier.MaximumEntropyClassifier
+    (pos_dir, neg_dir) = select_dataset(dataset)
+    ind = Indexes(mode='k',iterations=iterations,train_size=train_size)
+
+    for k in range(iterations):
+        ind.next()
+        m = TestConfiguration(classif, n, ind, pos_dir, neg_dir, binary=binary, limit=limit)
+        m.train()
+        m.test()
+
+
 if __name__ == "__main__":
-    test_bayes(n=[1],train_size=800,iterations=3,dataset='position',limit=[16165],binary=True)
+    #test_bayes(n=[1],train_size=800,iterations=3,dataset='position',limit=[16165],binary=True)
+    m = test_maxent(n=[1],train_size=800,iterations=3,dataset='default',limit=[16165],binary=True)
     #test_svm(n=[1],train_size=800,iterations=3,dataset='partofspeech',limit=[16165],binary=True)
 
-# with trainsize = 800, no shuffling
+# with train_size = 800, no shuffling, bayes classifier
 # [ns]      dataset         [limits]        binary  --> +results    -results
 # [2]       position        [114370]        0       --> 0.96        0.56
 # [1,2]     default         [0,0]           0       --> 0.96        0.56 
