@@ -135,7 +135,7 @@ class BayesPresenceClassifier(BayesClassifier):
 
 
 class LinearSVMClassifier(Classifier):
-    def __init__(self):
+    def __init__(self, restrictFeatures=False):
         Classifier.__init__(self)
         self.file = tempfile.NamedTemporaryFile(delete=False)
         self.filename = self.file.name
@@ -146,7 +146,7 @@ class LinearSVMClassifier(Classifier):
     def vectorToString(self, vec, cls):
         return str(cls) + " " + " ".join([str(i) + ":" + str(vec[i])for i in vec]) + "\n"
 
-    def addFeatureVector(self, point, cls):
+    def addFeatureVector(self, point, cls, binary=False):
         self.compiled = False
         vec = self.vectorToString(point, cls)
         self.file.write(vec)
@@ -206,7 +206,7 @@ def test_bayes():
 def test_svm():
     trainingset = [ngrams(1, "foo foo bar baz"), ngrams(1, "foo foo bar bar baz baz"), ngrams(1,"foo foo bar baz")]
     labels = [1, -1, -1]
-    lsc = LinearSVMClassifier(3)
+    lsc = LinearSVMClassifier()
     for vec in zip(trainingset, labels):
         lsc.addFeatureVector(vec[0], vec[1])
     print lsc.classify(ngrams(1, "foo foo bar bar baz baz"))
@@ -227,4 +227,4 @@ def test_maxent():
     print "wonderful terrible good: %s" % m.classify(['wonderful','terrible','good'],'pos')
 
 if __name__ == "__main__":
-    test_maxent()
+    test_svm()
