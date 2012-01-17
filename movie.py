@@ -149,8 +149,8 @@ def test_maxent(n=1, train_size=500, iterations=1, dataset='', limit=None, binar
 
 if __name__ == "__main__":
     #test_bayes(n=[1],train_size=800,iterations=3,dataset='position',limit=[16165],binary=True)
-    #test_maxent(n=[1],train_size=800,iterations=3,dataset='default',limit=[16165],binary=True)
-    test_svm(n=[1],train_size=800,iterations=3,dataset='default',limit=[16165],binary=True)
+    #test_svm(n=[1],train_size=800,iterations=3,dataset='default',limit=[16165],binary=True)
+    test_maxent(n=[1],train_size=800,iterations=3,dataset='default',limit=[16165],binary=True)
 
 # with train_size = 800, no shuffling, bayes classifier
 # [ns]      dataset         [limits]        binary  --> +results    -results
