@@ -19,125 +19,124 @@ NEG_POSITION_DIR="neg_position"
 NEG_PARTOFSPEECH_DIR="neg_tagged"
 NEG_ADJ_DIR="neg_adj"
 
-class MovieReviews:
-    def getTopNgrams(self, all_files, n, limit):
-        return ngrams.top_ngrams(ngrams.ngrams(n, " ".join((open(i).read() for i in all_files))), limit)
-
+class TestConfiguration:
     def __init__(self, clsf, n, ind, pos_dir, neg_dir, binary=False, limit=None):
+        self.count = 0
+        self.n = n
+        self.index = ind
+        self.binary = binary
+        self.limit = limit if limit else [0 for i in n]
+        self.clsf = clsf
 
-        count = 0
+        # filenames needed for this test configuration used
         pos_files = os.listdir(pos_dir)
-        pos_files = [pos_files[i] for i in ind.get_pos_train_ind()]
+        self.pos_train_data = [open("%s/%s" % (pos_dir, pos_files[i])).read() \
+                                   for i in self.index.get_pos_train_ind()]
+        self.pos_test_data = [open("%s/%s" % (pos_dir, pos_files[i])).read() \
+                                  for i in self.index.get_pos_test_ind()]
+
         neg_files = os.listdir(neg_dir)
-        neg_files = [neg_files[i] for i in ind.get_neg_train_ind()]
-        features = {}
+        self.neg_train_data = [open("%s/%s" % (neg_dir, neg_files[i])).read() \
+                                   for i in self.index.get_neg_train_ind()]
+        self.neg_test_data = [open("%s/%s" % (neg_dir, neg_files[i])).read() \
+                                  for i in self.index.get_neg_test_ind()]
+        self.features = {}
 
-        self.pos_files = [{} for f in pos_files]
-        self.neg_files = [{} for f in neg_files]
+    def train(self):
+        pos_train = [{} for f in self.pos_train_data]
+        neg_train = [{} for f in self.neg_train_data]
 
-        # support multiple types of ngrams and limiting of ngrams
-        if type(n) != type([]):
-            n = [n]
-        if not limit:
-            limit = [0 for i in n]
-        if limit and (type(limit) != type([])):
-            limit = [limit]
-        allfiles = ["%s/%s" % (pos_dir, f) for f in pos_files] \
-            + ["%s/%s" % (neg_dir, f) for f in neg_files]
         # Reading files
-        for (j,lim) in zip(n,limit):
-            features.update(self.getTopNgrams(allfiles, j, lim))
-            all_grams = [ngrams.ngrams(j, open("%s/%s" % (pos_dir,f)).read()) 
-                         for f in pos_files]
-            for i in range(len(pos_files)):
-                self.pos_files[i].update(all_grams[i])
+        for (j,lim) in zip(self.n,self.limit):
+            all_grams = [ngrams.ngrams(j, f) for f in self.pos_train_data]
+            for i in range(len(self.pos_train_data)):
+                pos_train[i].update(all_grams[i])
+            featureslist = all_grams
 
-            all_grams = [ngrams.ngrams(j, open("%s/%s" % (neg_dir,f)).read()) 
-                         for f in neg_files]
-            for i in range(len(neg_files)):
-                self.neg_files[i].update(all_grams[i])
+            all_grams = [ngrams.ngrams(j, f) for f in self.neg_train_data]
+            for i in range(len(self.neg_train_data)):
+                neg_train[i].update(all_grams[i])
+            featureslist.extend(all_grams)
+
+            # Collapsing, limiting ngrams
+            self.features.update(ngrams.top_ngrams(ngrams.collapse_ngrams(
+                        featureslist),lim))
+
 
         # Creating Index
-        self.classifier = clsf(restrictFeatures = features)
-
+        self.classifier = self.clsf(restrictFeatures = self.features)
         print "# features: %s" % self.classifier.nfeatures
 
         # Making classifier
-        for i in self.pos_files:
-            count += 1
-            self.classifier.addFeatureVector(i, 1, binary=binary)
-        for i in self.neg_files:
-            self.classifier.addFeatureVector(i, -1, binary=binary)
+        for i in pos_train:
+            self.count += 1
+            self.classifier.addFeatureVector(i, 1, binary=self.binary)
+        for i in neg_train:
+            self.classifier.addFeatureVector(i, -1, binary=self.binary)
         self.classifier.compile()
 
-classif = classifier.BayesClassifier
-#classif = classifier.LinearSVMClassifier
+    def test(self):
+        pos_tests = [{} for f in self.pos_test_data]
+        neg_tests = [{} for f in self.neg_test_data]
 
-def test(n=1,dataset='',limit=None, binary=False):
-    # support multiple types of ngrams
-    if type(n) != type([]):
-        n = [n]
+        # Testset --> Feature Vectors
+        for j in self.n:
+            for i in range(len(self.pos_test_data)):
+                pos_tests[i].update(ngrams.ngrams(j, self.pos_test_data[i]))
+            for i in range(len(self.neg_test_data)):
+                neg_tests[i].update(ngrams.ngrams(j, self.neg_test_data[i]))
 
-    # select dataset
-    if dataset=='':
-        print "Using normal untagged movie dataset"
-        pos_dir = POS_DIR
-        neg_dir = NEG_DIR
-    elif dataset=='partofspeech':
-        print "Using movie dataset with part of speech tagged"
-        pos_dir = POS_PARTOFSPEECH_DIR
-        neg_dir = NEG_PARTOFSPEECH_DIR
-    elif dataset=='position':
-        print "Using movie dataset with position tagged"
-        pos_dir = POS_POSITION_DIR
-        neg_dir = NEG_POSITION_DIR
-    elif dataset=='adjectives':
-        print "Using movie dataset with adjectives only"
-        pos_dir = POS_ADJ_DIR
-        neg_dir = NEG_ADJ_DIR
-    elif dataset=='yelp':
-        pass
+        # Testing
+        pos_results = [self.classifier.classify(i) for i in pos_tests]
+        pos_correct = len([i for i in pos_results if i == 1])
+        print "Positive: %s of %s, %s accuracy" % (pos_correct,len(pos_tests),
+                (float(pos_correct)/len(pos_tests)))
+        neg_results = [self.classifier.classify(i) for i in neg_tests]
+        neg_correct = len([i for i in neg_results if i == -1])
+        print "Negative: %s of %s, %s accuracy" % (neg_correct,len(neg_tests),
+                (float(neg_correct)/len(neg_tests)))
 
-    testsize=800
-    iterations=3
-    pos_files = os.listdir(pos_dir)
-    neg_files = os.listdir(neg_dir)
-    ind = Indexes(mode='k',iterations=iterations,train_size=testsize)
+def select_dataset(dataset):
+    return {'default':(POS_DIR, NEG_DIR), #untagged
+            'partofspeech':(POS_PARTOFSPEECH_DIR, NEG_PARTOFSPEECH_DIR), #part of speech tagged
+            'position':(POS_POSITION_DIR, NEG_POSITION_DIR), #position tagged
+            'adjectives':(POS_ADJ_DIR, NEG_ADJ_DIR) #adjectives tagged
+            }[dataset]
+
+def test_bayes(n=1, train_size=500, iterations=1, dataset='', limit=None, binary=False):
+    classif = classifier.BayesClassifier
+    (pos_dir, neg_dir) = select_dataset(dataset)
+    ind = Indexes(mode='k',iterations=iterations,train_size=train_size)
 
     for k in range(iterations):
         ind.next()
-        # Building Classifier
-        m = MovieReviews(classif, n, ind, pos_dir, neg_dir, binary=binary, limit=limit)
+        m = TestConfiguration(classif, n, ind, pos_dir, neg_dir, binary=binary, limit=limit)
+        m.train()
+        m.test()
 
-        # Testset --> Feature Vectors
-        pos_tests = None
-        neg_tests = None
-        for j in n:
-            if pos_tests and neg_tests:
-                files = [pos_files[i] for i in ind.get_pos_train_ind()]
-                for i in range(len(files)):
-                    pos_tests[i].update(ngrams.ngrams(j, open("%s/%s" % (pos_dir,files[i])).read()))
-                files = [neg_files[i] for i in ind.get_neg_train_ind()]
-                for i in range(len(files)):
-                    neg_tests[i].update(ngrams.ngrams(j, open("%s/%s" % (neg_dir,files[i])).read()))
-            else:
-                pos_tests = [ngrams.ngrams(j, open("%s/%s" % (pos_dir,pos_files[i])).read()) 
-                                  for i in ind.get_pos_train_ind()]
-                neg_tests = [ngrams.ngrams(j, open("%s/%s" % (neg_dir,neg_files[i])).read()) 
-                                  for i in ind.get_neg_train_ind()]
+def test_svm(n=1, train_size=500, iterations=1, dataset='', limit=None, binary=False):
+    classif = classifier.LinearSVMClassifier
+    (pos_dir, neg_dir) = select_dataset(dataset)
+    ind = Indexes(mode='k',iterations=iterations,train_size=train_size)
 
-        # Testing
-        pos_results = [m.classifier.classify(i) for i in pos_tests]
-        pos_correct = len([i for i in pos_results if i == 1])
-        print "Positive: %s of %s, %s accuracy" % (pos_correct,len(pos_tests),(float(pos_correct)/len(pos_tests)))
-        neg_results = [m.classifier.classify(i) for i in neg_tests]
-        neg_correct = len([i for i in neg_results if i == -1])
-        print "Negative: %s of %s, %s accuracy" % (neg_correct,len(neg_tests),(float(neg_correct)/len(neg_tests)))
- 
+    for k in range(iterations):
+        ind.next()
+        m = TestConfiguration(classif, n, ind, pos_dir, neg_dir, binary=binary, limit=limit)
+        m.train()
+        #m.test()
+
+    #print "Testing"
+    #pos_tests = [ngrams.ngrams(n, open("pos/"+i).read()) 
+    #                  for i in os.listdir("pos")][testsize:]
+    #neg_tests = [ngrams.ngrams(n, open("neg/"+i).read()) 
+    #                  for i in os.listdir("neg")][testsize:]
+    #m.classifier.validate(3)
+
 if __name__ == "__main__":
-    test(n=[1],dataset='',limit=[16165],binary=True)
+    test_bayes(n=[1],train_size=800,iterations=3,dataset='position',limit=[16165],binary=True)
+    #test_svm(n=[1],train_size=800,iterations=3,dataset='partofspeech',limit=[16165],binary=True)
 
-# with testsize = 800, no shuffling
+# with trainsize = 800, no shuffling
 # [ns]      dataset         [limits]        binary  --> +results    -results
 # [2]       position        [114370]        0       --> 0.96        0.56
 # [1,2]     default         [0,0]           0       --> 0.96        0.56 

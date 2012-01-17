@@ -10,6 +10,7 @@ from scipy.sparse import csr_matrix, lil_matrix, csc_matrix, issparse
 import sys
 from ngrams import *
 import tempfile
+import os
 
 """
 A classifier has a addFeatureVector method that takes a feature
@@ -135,18 +136,23 @@ class BayesPresenceClassifier(BayesClassifier):
 
 
 class LinearSVMClassifier(Classifier):
-    def __init__(self):
+    def __init__(self, restrictFeatures=False):
         Classifier.__init__(self)
         self.file = tempfile.NamedTemporaryFile(delete=False)
         self.filename = self.file.name
         print self.filename
         self.data = SparseDataSet(0)
         self.svm = SVM(optimizer='liblinear')
+        self.restrictFeatures = restrictFeatures
 
-    def vectorToString(self, vec, cls):
-        return str(cls) + " " + " ".join([str(i) + ":" + str(vec[i])for i in vec]) + "\n"
+    def vectorToString(self, vec, cls = False):
+        # granted, this is kind of silly
+        # creates a string of the format "[class if point is labeled] feature1:value1 feature2:value2..."
+        # where the only allowed features are the ones in restrictFeatures, if we're restricting the features
+        return ((str(cls) + " ") if cls else "") + " ".join([str(i) + ":" + str(vec[i]) 
+                                                                 for i in vec if (not self.restrictFeatures) or (i in self.restrictFeatures)]) + "\n"
 
-    def addFeatureVector(self, point, cls):
+    def addFeatureVector(self, point, cls, binary=False):
         self.compiled = False
         vec = self.vectorToString(point, cls)
         self.file.write(vec)
@@ -157,19 +163,23 @@ class LinearSVMClassifier(Classifier):
         self.compiled = True
         self.file.close()
         self.data = SparseDataSet(self.filename)
-#        self.svm.train(self.data)
         self.file = open(self.filename)
+        self.svm.train(self.data)
 
     def validate(self, n):
-#        self.compile()
-#        v = self.vectorFromDict(point)
-        
-#        outp = self.svm.test(v)
         self.compile()
         print self.data
         outp = self.svm.cv(self.data, numFolds = n)
         print outp
-
+    def classify(self, pt):
+        self.compile()
+        f = tempfile.NamedTemporaryFile(delete=False)
+        fname = f.name
+        f.write(self.vectorToString(pt))
+        f.close()        
+        data = SparseDataSet(fname)
+        os.remove(fname)
+        return self.svm.test(data).getPredictedLabels()[0]
 
 class MaximumEntropyClassifier:
     def __init__(self, trainingset):
@@ -206,7 +216,7 @@ def test_bayes():
 def test_svm():
     trainingset = [ngrams(1, "foo foo bar baz"), ngrams(1, "foo foo bar bar baz baz"), ngrams(1,"foo foo bar baz")]
     labels = [1, -1, -1]
-    lsc = LinearSVMClassifier(3)
+    lsc = LinearSVMClassifier()
     for vec in zip(trainingset, labels):
         lsc.addFeatureVector(vec[0], vec[1])
     print lsc.classify(ngrams(1, "foo foo bar bar baz baz"))
@@ -227,4 +237,4 @@ def test_maxent():
     print "wonderful terrible good: %s" % m.classify(['wonderful','terrible','good'],'pos')
 
 if __name__ == "__main__":
-    test_maxent()
+    test_svm()
