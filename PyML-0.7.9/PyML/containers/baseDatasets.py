@@ -240,8 +240,8 @@ class BaseVectorDataSet (BaseDataSet) :
         for x in parser :
             self.addPattern(x, i)
             i += 1
-            if i % 100 == 0 :
-                print 'read',i,'patterns'
+#            if i % 100 == 0 :
+#                print 'read',i,'patterns'
 
         # postprocessing:
         L = parser._labels
@@ -256,7 +256,7 @@ class BaseVectorDataSet (BaseDataSet) :
         self.updateFeatureDict()
 
         self.featureIDcompute()
-        print 'read', len(self), 'patterns'
+#        print 'read', len(self), 'patterns'
 
         if 'labelsFile' in args :
             self.attachLabels(Labels(args['labelsFile'], **args))

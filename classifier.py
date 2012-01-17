@@ -179,7 +179,7 @@ class LinearSVMClassifier(Classifier):
         f.close()        
         data = SparseDataSet(fname)
         os.remove(fname)
-        return self.svm.test(data).getPredictedLabels()[0]
+        return self.svm.test(data, verbose=0).getPredictedLabels()[0]
 
 class MaximumEntropyClassifier:
     def __init__(self, trainingset):

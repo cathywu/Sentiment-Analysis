@@ -88,13 +88,14 @@ class TestConfiguration:
 
         # Testing
         pos_results = [self.classifier.classify(i) for i in pos_tests]
-        pos_correct = len([i for i in pos_results if i == 1])
+        pos_correct = len([i for i in pos_results if int(i) == 1])
         print "Positive: %s of %s, %s accuracy" % (pos_correct,len(pos_tests),
                 (float(pos_correct)/len(pos_tests)))
         neg_results = [self.classifier.classify(i) for i in neg_tests]
-        neg_correct = len([i for i in neg_results if i == -1])
+        neg_correct = len([i for i in neg_results if int(i) == -1])
         print "Negative: %s of %s, %s accuracy" % (neg_correct,len(neg_tests),
                 (float(neg_correct)/len(neg_tests)))
+
 
 def select_dataset(dataset):
     return {'default':(POS_DIR, NEG_DIR), #untagged
@@ -123,7 +124,7 @@ def test_svm(n=1, train_size=500, iterations=1, dataset='', limit=None, binary=F
         ind.next()
         m = TestConfiguration(classif, n, ind, pos_dir, neg_dir, binary=binary, limit=limit)
         m.train()
-        #m.test()
+        m.test()
 
     #print "Testing"
     #pos_tests = [ngrams.ngrams(n, open("pos/"+i).read()) 
@@ -133,8 +134,8 @@ def test_svm(n=1, train_size=500, iterations=1, dataset='', limit=None, binary=F
     #m.classifier.validate(3)
 
 if __name__ == "__main__":
-    test_bayes(n=[1],train_size=800,iterations=3,dataset='position',limit=[16165],binary=True)
-    #test_svm(n=[1],train_size=800,iterations=3,dataset='partofspeech',limit=[16165],binary=True)
+    #test_bayes(n=[1],train_size=800,iterations=3,dataset='position',limit=[16165],binary=True)
+    test_svm(n=[1],train_size=800,iterations=3,dataset='default',limit=[16165],binary=True)
 
 # with trainsize = 800, no shuffling
 # [ns]      dataset         [limits]        binary  --> +results    -results
