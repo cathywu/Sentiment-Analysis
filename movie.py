@@ -20,6 +20,9 @@ NEG_PARTOFSPEECH_DIR="neg_tagged"
 NEG_ADJ_DIR="neg_adj"
 
 class MovieReviews:
+    def getTopNgrams(self, all_files, n, limit):
+        return ngrams.top_ngrams(ngrams.ngrams(n, " ".join((open(i).read() for i in all_files))), limit)
+
     def __init__(self, clsf, n, ind, pos_dir, neg_dir, binary=False, limit=None):
 
         count = 0
@@ -39,23 +42,20 @@ class MovieReviews:
             limit = [0 for i in n]
         if limit and (type(limit) != type([])):
             limit = [limit]
-
+        allfiles = ["%s/%s" % (pos_dir, f) for f in pos_files] \
+            + ["%s/%s" % (neg_dir, f) for f in neg_files]
         # Reading files
         for (j,lim) in zip(n,limit):
+            features.update(self.getTopNgrams(allfiles, j, lim))
             all_grams = [ngrams.ngrams(j, open("%s/%s" % (pos_dir,f)).read()) 
                          for f in pos_files]
             for i in range(len(pos_files)):
                 self.pos_files[i].update(all_grams[i])
-            featureslist = all_grams
 
             all_grams = [ngrams.ngrams(j, open("%s/%s" % (neg_dir,f)).read()) 
                          for f in neg_files]
             for i in range(len(neg_files)):
                 self.neg_files[i].update(all_grams[i])
-            featureslist.extend(all_grams)
-
-            # Collapsing, limiting ngrams
-            features.update(ngrams.top_ngrams(ngrams.collapse_ngrams(featureslist),lim))
 
         # Creating Index
         self.classifier = clsf(restrictFeatures = features)
