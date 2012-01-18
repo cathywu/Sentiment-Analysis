@@ -20,13 +20,14 @@ NEG_PARTOFSPEECH_DIR="neg_tagged"
 NEG_ADJ_DIR="neg_adj"
 
 class TestConfiguration:
-    def __init__(self, clsf, n, ind, pos_dir, neg_dir, binary=False, limit=None):
+    def __init__(self, clsf, n, ind, pos_dir, neg_dir, binary=False, limit=None, idf=False):
         self.count = 0
         self.n = n
         self.index = ind
         self.binary = binary
         self.limit = limit if limit else [0 for i in n]
         self.clsf = clsf
+        self.idf = idf
 
         # filenames needed for this test configuration used
         pos_files = os.listdir(pos_dir)
@@ -45,7 +46,7 @@ class TestConfiguration:
     def train(self):
         pos_train = [{} for f in self.pos_train_data]
         neg_train = [{} for f in self.neg_train_data]
-
+        
         # Reading files
         for (j,lim) in zip(self.n,self.limit):
             all_grams = [ngrams.ngrams(j, f) for f in self.pos_train_data]
@@ -65,7 +66,17 @@ class TestConfiguration:
         # Creating Index
         self.classifier = self.clsf(restrictFeatures = self.features)
         print "# features: %s" % self.classifier.nfeatures
-
+        
+        if self.idf:
+            print "Using TF-IDF"
+            idf = ngrams.ngrams_to_idf(pos_train + neg_train)
+            for i in range(len(pos_train)):
+                for j in pos_train[i]:
+                    pos_train[i][j] = pos_train[i][j] * idf[j]
+            for i in range(len(neg_train)):
+                for j in neg_train[i]:
+                    neg_train[i][j] = neg_train[i][j] * idf[j]
+                            
         # Making classifier
         for i in pos_train:
             self.count += 1
@@ -94,7 +105,7 @@ class TestConfiguration:
         neg_correct = len([i for i in neg_results if int(i) == -1])
         print "Negative: %s of %s, %s accuracy" % (neg_correct,len(neg_tests),
                 (float(neg_correct)/len(neg_tests)))
-
+        return (float(pos_correct)/len(pos_tests), float(neg_correct)/len(neg_tests))
 def select_dataset(dataset):
     return {'default':(POS_DIR, NEG_DIR), #untagged
             'partofspeech':(POS_PARTOFSPEECH_DIR, NEG_PARTOFSPEECH_DIR), #part of speech tagged
@@ -102,21 +113,27 @@ def select_dataset(dataset):
             'adjectives':(POS_ADJ_DIR, NEG_ADJ_DIR) #adjectives tagged
             }[dataset]
 
-def test(classif, n=1, train_size=500, mode='k', iterations=1, dataset='', limit=None, binary=False):
+def test(classif, n=1, train_size=500, mode='k', iterations=1, dataset='', limit=None, binary=False, idf=False):
     (pos_dir, neg_dir) = select_dataset(dataset)
     ind = Indexes(mode=mode,iterations=iterations,train_size=train_size)
-
+    (pos_correct, neg_correct) = (0,0)
     for k in range(iterations):
         ind.next()
-        m = TestConfiguration(classif, n, ind, pos_dir, neg_dir, binary=binary, limit=limit)
+        m = TestConfiguration(classif, n, ind, pos_dir, neg_dir, binary=binary, limit=limit, idf=idf)
         m.train()
-        m.test()
+        (pos, neg) = m.test()
+        pos_correct += pos
+        neg_correct += neg
+    print "Results:"
+    print "Positive:", round((pos_correct/iterations)*100), "%"
+    print "Negative:", round((neg_correct/iterations)*100), "%"
+    print "Total:", round((neg_correct + pos_correct)/(2*iterations)*100), "%"
 
 if __name__ == "__main__":
-    #test(classifier.BayesClassifier,n=[1],train_size=800,mode='k',
-    #     iterations=3,dataset='position',limit=[16165],binary=True)
-    test(classifier.LinearSVMClassifier,n=[2],train_size=800,mode='k',
-         iterations=3,dataset='default',limit=[16165],binary=True)
+    test(classifier.BayesClassifier,n=[1],train_size=800,mode='k',
+         iterations=3,dataset='position',limit=[16165],binary=False, idf=True)
+    #test(classifier.LinearSVMClassifier,n=[2],train_size=800,mode='k',
+    #     iterations=3,dataset='default',limit=[16165],binary=False, idf=True)
     #test(classifier.MaximumEntropyClassifier,n=[1],train_size=800,mode='k',
     #     iterations=3,dataset='default',limit=[16165],binary=True)
 
