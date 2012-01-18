@@ -19,8 +19,11 @@ NEG_POSITION_DIR="neg_position"
 NEG_PARTOFSPEECH_DIR="neg_tagged"
 NEG_ADJ_DIR="neg_adj"
 
+YELP_DIR = "yelp/default"
+
 class TestConfiguration:
-    def __init__(self, clsf, n, ind, pos_dir, neg_dir, binary=False, limit=None, idf=False):
+    def __init__(self, clsf, n, ind, pos_dir, neg_dir, test_dir=None,
+                 binary=False, limit=None, idf=False):
         self.count = 0
         self.n = n
         self.index = ind
@@ -28,6 +31,7 @@ class TestConfiguration:
         self.limit = limit if limit else [0 for i in n]
         self.clsf = clsf
         self.idf = idf
+        self.test_dir = test_dir
 
         # filenames needed for this test configuration used
         pos_files = os.listdir(pos_dir)
@@ -86,6 +90,21 @@ class TestConfiguration:
         self.classifier.compile()
 
     def test(self):
+        if self.test_dir:
+            print "Testing with %s" % self.test_dir
+            ntest = len(os.listdir(self.test_dir))
+            tests = [{} for i in range(ntest)]
+            test_files = os.listdir(self.test_dir)
+            for i in range(ntest):
+                for j in self.n:
+                    tests[i].update(ngrams.ngrams(j, open("%s/%s" % (
+                        self.test_dir,test_files[i])).read()))
+            results = [self.classifier.classify(i) for i in tests]
+            correct = len([i for i in results if int(i) == 1])
+            print "Positive: %s of %s, %s accuracy" % (correct,len(tests),
+                    (float(correct)/len(tests)))
+            return (float(correct)/len(tests),0) #TODO this is messy
+
         pos_tests = [{} for f in self.pos_test_data]
         neg_tests = [{} for f in self.neg_test_data]
 
@@ -111,6 +130,8 @@ class MajorityVotingTester():
     def __init__(self):
         self.classifiers = []
     def addClassifer(self):
+        pass
+
 def select_dataset(dataset):
     return {'default':(POS_DIR, NEG_DIR), #untagged
             'partofspeech':(POS_PARTOFSPEECH_DIR, NEG_PARTOFSPEECH_DIR), #part of speech tagged
@@ -118,13 +139,30 @@ def select_dataset(dataset):
             'adjectives':(POS_ADJ_DIR, NEG_ADJ_DIR) #adjectives tagged
             }[dataset]
 
-def test(classif, n=1, train_size=500, mode='k', iterations=1, dataset='', limit=None, binary=False, idf=False):
+def select_extradata(dataset,stars):
+    return {'default':("%s/%sstar" % (YELP_DIR,stars)), #yelp untagged
+            'partofspeech':("%s/%sstar_tagged" % (YELP_DIR,stars)), #yelp part of speech tagged
+            'position':("%s/%sstar_position" % (YELP_DIR,stars)), #yelp position tagged
+            'adjectives':("%s/%sstar_adj" % (YELP_DIR,stars)), #yelp adjectives only
+            }[dataset]
+
+def test(classif, n=1, train_size=500, mode='k', iterations=1, dataset='',
+         extra_dataset=None, limit=None, binary=False, idf=False):
     (pos_dir, neg_dir) = select_dataset(dataset)
+    if extra_dataset:
+        mode='d'
+        iterations=1
+        train_size = 1000
+        test_dir = select_extradata(dataset,extra_dataset)
+    else:
+        test_dir = None
+
     ind = Indexes(mode=mode,iterations=iterations,train_size=train_size)
     (pos_correct, neg_correct) = (0,0)
     for k in range(iterations):
         ind.next()
-        m = TestConfiguration(classif, n, ind, pos_dir, neg_dir, binary=binary, limit=limit, idf=idf)
+        m = TestConfiguration(classif, n, ind, pos_dir, neg_dir, idf=idf,
+                              test_dir=test_dir, binary=binary, limit=limit)
         m.train()
         (pos, neg) = m.test()
         pos_correct += pos
@@ -135,37 +173,37 @@ def test(classif, n=1, train_size=500, mode='k', iterations=1, dataset='', limit
     print "Total:", round((neg_correct + pos_correct)/(2*iterations)*100), "%"
 
 if __name__ == "__main__":
-    #test(classifier.BayesClassifier,n=[1],train_size=800,mode='k',
-    #     iterations=3,dataset='position',limit=[16165],binary=False, idf=True)
+    test(classifier.BayesClassifier,n=[1],train_size=800,mode='k',iterations=3,
+            dataset='position',extra_dataset=3,limit=[16165],binary=False, idf=False)
     #test(classifier.LinearSVMClassifier,n=[2],train_size=800,mode='k',
     #     iterations=3,dataset='default',limit=[16165],binary=False, idf=True)
     #test(classifier.MaximumEntropyClassifier,n=[1],train_size=800,mode='k',
     #     iterations=3,dataset='default',limit=[16165],binary=True)
 
-    mvc = classifier.MajorityVotingClassifier()
-    ind = Indexes(mode='k',iterations=3,train_size=800)
-    ind.next()
-    print ind
-    (pos_dir, neg_dir) = select_dataset('default')
-    m = TestConfiguration(classifier.BayesClassifier, [1], ind, pos_dir, neg_dir, binary=False, limit=[16165], idf=False)
-    m.train()
-    mvc.addClassifier(m.classifier)
+    #mvc = classifier.MajorityVotingClassifier()
+    #ind = Indexes(mode='k',iterations=3,train_size=800)
+    #ind.next()
+    #print ind
+    #(pos_dir, neg_dir) = select_dataset('default')
+    #m = TestConfiguration(classifier.BayesClassifier, [1], ind, pos_dir, neg_dir, binary=False, limit=[16165], idf=False)
+    #m.train()
+    #mvc.addClassifier(m.classifier)
 
-    (pos_dir, neg_dir) = select_dataset('default')
-    m = TestConfiguration(classifier.LinearSVMClassifier, [1], ind, pos_dir, neg_dir, binary=False, limit=[16165], idf=False)
-    m.train()
-    mvc.addClassifier(m.classifier)
+    #(pos_dir, neg_dir) = select_dataset('default')
+    #m = TestConfiguration(classifier.LinearSVMClassifier, [1], ind, pos_dir, neg_dir, binary=False, limit=[16165], idf=False)
+    #m.train()
+    #mvc.addClassifier(m.classifier)
 
 
-    (pos_dir, neg_dir) = select_dataset('default')
-    m = TestConfiguration(classifier.LinearSVMClassifier, [2], ind, pos_dir, neg_dir, binary=False, limit=[16165], idf=False)
-    m.train()
-    mvc.addClassifier(m.classifier)
+    #(pos_dir, neg_dir) = select_dataset('default')
+    #m = TestConfiguration(classifier.LinearSVMClassifier, [2], ind, pos_dir, neg_dir, binary=False, limit=[16165], idf=False)
+    #m.train()
+    #mvc.addClassifier(m.classifier)
 
-    
-    m.classifier = mvc
-    m.test()
-    exit()
+    #
+    #m.classifier = mvc
+    #m.test()
+    #exit()
 
 
 
