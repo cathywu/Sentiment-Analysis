@@ -304,7 +304,7 @@ class CSVParser (Parser):
             self._first = 0
         else :
             self._first = max(self.idColumn, self.labelsColumn) + 1
-        print 'label at ', self.labelsColumn
+#        print 'label at ', self.labelsColumn
 
     def check(self) :
         """very loose checking of the format of the file:
@@ -327,7 +327,7 @@ class CSVParser (Parser):
         else :
             self.delim = None
         #line,pos = self.skipHeader(line,pos)
-        print 'delimiter', self.delim
+#        print 'delimiter', self.delim
 
         # a file that does not contain a ":" is assumed to be in
         # CSV format

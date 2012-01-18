@@ -106,6 +106,11 @@ class TestConfiguration:
         print "Negative: %s of %s, %s accuracy" % (neg_correct,len(neg_tests),
                 (float(neg_correct)/len(neg_tests)))
         return (float(pos_correct)/len(pos_tests), float(neg_correct)/len(neg_tests))
+
+class MajorityVotingTester():
+    def __init__(self):
+        self.classifiers = []
+    def addClassifer(self):
 def select_dataset(dataset):
     return {'default':(POS_DIR, NEG_DIR), #untagged
             'partofspeech':(POS_PARTOFSPEECH_DIR, NEG_PARTOFSPEECH_DIR), #part of speech tagged
@@ -130,12 +135,39 @@ def test(classif, n=1, train_size=500, mode='k', iterations=1, dataset='', limit
     print "Total:", round((neg_correct + pos_correct)/(2*iterations)*100), "%"
 
 if __name__ == "__main__":
-    test(classifier.BayesClassifier,n=[1],train_size=800,mode='k',
-         iterations=3,dataset='position',limit=[16165],binary=False, idf=True)
+    #test(classifier.BayesClassifier,n=[1],train_size=800,mode='k',
+    #     iterations=3,dataset='position',limit=[16165],binary=False, idf=True)
     #test(classifier.LinearSVMClassifier,n=[2],train_size=800,mode='k',
     #     iterations=3,dataset='default',limit=[16165],binary=False, idf=True)
     #test(classifier.MaximumEntropyClassifier,n=[1],train_size=800,mode='k',
     #     iterations=3,dataset='default',limit=[16165],binary=True)
+
+    mvc = classifier.MajorityVotingClassifier()
+    ind = Indexes(mode='k',iterations=3,train_size=800)
+    ind.next()
+    print ind
+    (pos_dir, neg_dir) = select_dataset('default')
+    m = TestConfiguration(classifier.BayesClassifier, [1], ind, pos_dir, neg_dir, binary=False, limit=[16165], idf=False)
+    m.train()
+    mvc.addClassifier(m.classifier)
+
+    (pos_dir, neg_dir) = select_dataset('default')
+    m = TestConfiguration(classifier.LinearSVMClassifier, [1], ind, pos_dir, neg_dir, binary=False, limit=[16165], idf=False)
+    m.train()
+    mvc.addClassifier(m.classifier)
+
+
+    (pos_dir, neg_dir) = select_dataset('default')
+    m = TestConfiguration(classifier.LinearSVMClassifier, [2], ind, pos_dir, neg_dir, binary=False, limit=[16165], idf=False)
+    m.train()
+    mvc.addClassifier(m.classifier)
+
+    
+    m.classifier = mvc
+    m.test()
+    exit()
+
+
 
 # with train_size = 800, no shuffling, bayes classifier
 # [ns]      dataset         [limits]        binary  --> +results    -results

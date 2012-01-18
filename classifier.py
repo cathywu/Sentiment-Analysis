@@ -179,7 +179,7 @@ class LinearSVMClassifier(Classifier):
         f.close()        
         data = SparseDataSet(fname)
         os.remove(fname)
-        return self.svm.test(data, verbose=0).getPredictedLabels()[0]
+        return int(self.svm.test(data, verbose=0).getPredictedLabels()[0])
 
 class MaximumEntropyClassifier(Classifier):
     def __init__(self, restrictFeatures=False):
@@ -213,7 +213,36 @@ class MaximumEntropyClassifier(Classifier):
         if result >= 0.5:
             return 1
         return -1
-        
+
+class MajorityVotingClassifier(Classifier):
+    def __init__(self):
+        self.classifiers = []
+        self.reliabilities = []
+
+    def addClassifier(self, classifier, train_files, test_files = [], reliability=1):
+        self.classifiers.append(classifier)
+        self.reliability.append(reliability)
+
+    def addFeatureVector(self, vec):
+        for cls in self.classifiers:
+            cls.addFeatureVector(vec)
+
+    def classify(self, vec):
+        results = {}
+        for cls in self.classifiers:
+            r = cls.classify(vec)
+            if r not in results:
+                results[r] = 1
+            else:
+                results[r] += 1
+        mx = 0
+        mxarg = 0
+
+        for r in results:
+            if results[r] > mx:
+                mxarg = r
+                mx = results[r]
+        return mxarg
         
 def test_bayes():
     trainingset = array([[2, 2, 2, 1],
