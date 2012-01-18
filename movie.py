@@ -32,8 +32,27 @@ class TestConfiguration:
         self.clsf = clsf
         self.idf = idf
         self.test_dir = test_dir
+        self.pos_dir = pos_dir
+        self.neg_dir = neg_dir
 
         # filenames needed for this test configuration used
+        pos_files = os.listdir(pos_dir)
+        self.pos_train_data = [open("%s/%s" % (pos_dir, pos_files[i])).read() \
+                                   for i in self.index.get_pos_train_ind()]
+        self.pos_test_data = [open("%s/%s" % (pos_dir, pos_files[i])).read() \
+                                  for i in self.index.get_pos_test_ind()]
+
+        neg_files = os.listdir(neg_dir)
+        self.neg_train_data = [open("%s/%s" % (neg_dir, neg_files[i])).read() \
+                                   for i in self.index.get_neg_train_ind()]
+        self.neg_test_data = [open("%s/%s" % (neg_dir, neg_files[i])).read() \
+                                  for i in self.index.get_neg_test_ind()]
+        self.features = {}
+    def set_index(self, ind):
+        self.index = ind
+        pos_dir = self.pos_dir
+        neg_dir = self.neg_dir
+
         pos_files = os.listdir(pos_dir)
         self.pos_train_data = [open("%s/%s" % (pos_dir, pos_files[i])).read() \
                                    for i in self.index.get_pos_train_ind()]
@@ -128,9 +147,68 @@ class TestConfiguration:
 
 class MajorityVotingTester():
     def __init__(self):
-        self.classifiers = []
-    def addClassifer(self):
-        pass
+        self.testers = []
+    def addClassifier(self, c):
+        self.testers.append(c)
+    def train(self):
+        [x.train() for x in self.testers]
+    def set_index(self, ind):
+        [x.set_index(ind) for x in self.testers]
+    def crossValidate(self, iterations, mode='k', train_size=500):
+        ind = Indexes(mode=mode, iterations=iterations, train_size=train_size)
+        pos_correct = 0
+        neg_correct = 0
+        for k in range(iterations):
+            ind.next()
+            self.set_index(ind)
+            self.train()
+            (pos, neg) = self.test()
+            pos_correct += pos
+            neg_correct += neg
+        print "Results:"
+        print "Positive:", round((pos_correct/iterations)*100), "%"
+        print "Negative:", round((neg_correct/iterations)*100), "%"
+        print "Total:", round((neg_correct + pos_correct)/(2*iterations)*100), "%"
+
+            
+    def test(self):
+        pos_test_votes = False
+        neg_test_votes = False
+        for t in self.testers:
+            pos_tests = [{} for f in t.pos_test_data]
+            neg_tests = [{} for f in t.neg_test_data]
+            for j in t.n:
+                for i in range(len(t.pos_test_data)):
+                    pos_tests[i].update(ngrams.ngrams(j, t.pos_test_data[i]))
+                for i in range(len(t.neg_test_data)):
+                    neg_tests[i].update(ngrams.ngrams(j, t.neg_test_data[i]))
+            pos_results = [t.classifier.classify(i) for i in pos_tests]
+            neg_results = [t.classifier.classify(i) for i in neg_tests]
+            if not pos_test_votes:
+                pos_test_votes = pos_results
+            else:
+                for i in range(len(pos_test_votes)):
+                    pos_test_votes[i] += pos_results[i]
+            if not neg_test_votes:
+                neg_test_votes = neg_results
+            else:
+                for i in range(len(neg_test_votes)):
+                    neg_test_votes[i] += neg_results[i]
+        pos_correct = 0
+        neg_correct = 0
+        for i in pos_test_votes:
+            if i > 0:
+                pos_correct += 1
+        for i in neg_test_votes:
+            if i < 0:
+                neg_correct += 1
+
+        print "Positive: %s of %s, %s accuracy" % (pos_correct,len(pos_test_votes),
+                (float(pos_correct)/len(pos_test_votes)))
+
+        print "Negative: %s of %s, %s accuracy" % (neg_correct,len(neg_test_votes),
+                (float(neg_correct)/len(neg_test_votes)))
+        return (float(pos_correct)/len(pos_test_votes), float(neg_correct)/len(neg_test_votes))
 
 def select_dataset(dataset):
     return {'default':(POS_DIR, NEG_DIR), #untagged
@@ -180,30 +258,27 @@ if __name__ == "__main__":
     #test(classifier.MaximumEntropyClassifier,n=[1],train_size=800,mode='k',
     #     iterations=3,dataset='default',limit=[16165],binary=True)
 
-    #mvc = classifier.MajorityVotingClassifier()
-    #ind = Indexes(mode='k',iterations=3,train_size=800)
-    #ind.next()
-    #print ind
-    #(pos_dir, neg_dir) = select_dataset('default')
-    #m = TestConfiguration(classifier.BayesClassifier, [1], ind, pos_dir, neg_dir, binary=False, limit=[16165], idf=False)
-    #m.train()
-    #mvc.addClassifier(m.classifier)
+    mvc = MajorityVotingTester()
+    ind = Indexes(mode='k',iterations=3,train_size=800)
+    ind.next()
+    print ind
+    (pos_dir, neg_dir) = select_dataset('default')
+    m1 = TestConfiguration(classifier.BayesClassifier, [1], ind, pos_dir, neg_dir, binary=False, limit=[16165], idf=False)
+    mvc.addClassifier(m1)
 
-    #(pos_dir, neg_dir) = select_dataset('default')
-    #m = TestConfiguration(classifier.LinearSVMClassifier, [1], ind, pos_dir, neg_dir, binary=False, limit=[16165], idf=False)
-    #m.train()
-    #mvc.addClassifier(m.classifier)
+    (pos_dir, neg_dir) = select_dataset('default')
+    m2 = TestConfiguration(classifier.LinearSVMClassifier, [1], ind, pos_dir, neg_dir, binary=False, limit=[16165], idf=False)
+    mvc.addClassifier(m2)
 
 
-    #(pos_dir, neg_dir) = select_dataset('default')
-    #m = TestConfiguration(classifier.LinearSVMClassifier, [2], ind, pos_dir, neg_dir, binary=False, limit=[16165], idf=False)
-    #m.train()
-    #mvc.addClassifier(m.classifier)
+    (pos_dir, neg_dir) = select_dataset('default')
+    m3 = TestConfiguration(classifier.LinearSVMClassifier, [2], ind, pos_dir, neg_dir, binary=False, limit=[16165], idf=False)
+    mvc.addClassifier(m3)
 
-    #
-    #m.classifier = mvc
-    #m.test()
-    #exit()
+    
+    mvc.train()
+    mvc.crossValidate(3)
+    exit()
 
 
 
