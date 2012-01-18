@@ -235,6 +235,17 @@ def test(classif, n=1, train_size=500, mode='k', iterations=1, dataset='',
     else:
         test_dir = None
 
+    print "TEST CONFIGURATION"
+    print "dataset: %(dataset)s, stars: %(extra_dataset)s \nn: %(n)s, limit: %(limit)s, binary: %(binary)s, \nmode: %(mode)s, iterations: %(iterations)s, idf: %(idf)s" % {'n':n,
+            'train_size':train_size,
+            'mode':mode,
+            'iterations':iterations,
+            'dataset':dataset,
+            'extra_dataset':extra_dataset,
+            'limit':limit,
+            'binary':binary,
+            'idf':idf}
+
     ind = Indexes(mode=mode,iterations=iterations,train_size=train_size)
     (pos_correct, neg_correct) = (0,0)
     for k in range(iterations):
@@ -252,33 +263,33 @@ def test(classif, n=1, train_size=500, mode='k', iterations=1, dataset='',
 
 if __name__ == "__main__":
     test(classifier.BayesClassifier,n=[1],train_size=800,mode='k',iterations=3,
-            dataset='position',extra_dataset=3,limit=[16165],binary=False, idf=False)
+            dataset='position',extra_dataset=1,limit=[16165],binary=False, idf=False)
     #test(classifier.LinearSVMClassifier,n=[2],train_size=800,mode='k',
     #     iterations=3,dataset='default',limit=[16165],binary=False, idf=True)
     #test(classifier.MaximumEntropyClassifier,n=[1],train_size=800,mode='k',
     #     iterations=3,dataset='default',limit=[16165],binary=True)
 
-    mvc = MajorityVotingTester()
-    ind = Indexes(mode='k',iterations=3,train_size=800)
-    ind.next()
-    print ind
-    (pos_dir, neg_dir) = select_dataset('default')
-    m1 = TestConfiguration(classifier.BayesClassifier, [1], ind, pos_dir, neg_dir, binary=False, limit=[16165], idf=False)
-    mvc.addClassifier(m1)
+    #mvc = MajorityVotingTester()
+    #ind = Indexes(mode='k',iterations=3,train_size=800)
+    #ind.next()
+    #print ind
+    #(pos_dir, neg_dir) = select_dataset('default')
+    #m1 = TestConfiguration(classifier.BayesClassifier, [1], ind, pos_dir, neg_dir, binary=False, limit=[16165], idf=False)
+    #mvc.addClassifier(m1)
 
-    (pos_dir, neg_dir) = select_dataset('default')
-    m2 = TestConfiguration(classifier.LinearSVMClassifier, [1], ind, pos_dir, neg_dir, binary=False, limit=[16165], idf=False)
-    mvc.addClassifier(m2)
+    #(pos_dir, neg_dir) = select_dataset('default')
+    #m2 = TestConfiguration(classifier.LinearSVMClassifier, [1], ind, pos_dir, neg_dir, binary=False, limit=[16165], idf=False)
+    #mvc.addClassifier(m2)
 
 
-    (pos_dir, neg_dir) = select_dataset('default')
-    m3 = TestConfiguration(classifier.LinearSVMClassifier, [2], ind, pos_dir, neg_dir, binary=False, limit=[16165], idf=False)
-    mvc.addClassifier(m3)
+    #(pos_dir, neg_dir) = select_dataset('default')
+    #m3 = TestConfiguration(classifier.LinearSVMClassifier, [2], ind, pos_dir, neg_dir, binary=False, limit=[16165], idf=False)
+    #mvc.addClassifier(m3)
 
-    
-    mvc.train()
-    mvc.crossValidate(3)
-    exit()
+    #
+    #mvc.train()
+    #mvc.crossValidate(3)
+    #exit()
 
 
 
