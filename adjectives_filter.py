@@ -18,5 +18,13 @@ def filter_adj(olddir, newdir):
         w.close()
 
 if __name__ == "__main__":
-    filter_adj(POSPOS_DIR,POSADJ_DIR)
-    filter_adj(NEGPOS_DIR,NEGADJ_DIR)
+    # usage: python adjectives_filter.py -d neg
+    # usage: python adjectives_filter.py -d yelp/default/1star
+    from optparse import OptionParser
+    parser = OptionParser()
+    parser.add_option("-d", "--dir", dest="directory")
+    (options, args) = parser.parse_args()
+
+    olddir = "%s_tagged" % options.directory
+    newdir = "%s_adj" % options.directory
+    filter_adj(olddir,newdir)

@@ -1,11 +1,6 @@
 #!/usr/bin/python
 import os
 
-POS_DIR = "pos"
-NEG_DIR = "neg"
-POSTAGGED_DIR = "pos_position"
-NEGTAGGED_DIR = "neg_position"
-
 def tagfiles(olddir, newdir):
     if not os.path.isdir(newdir):
         os.mkdir(newdir)
@@ -23,5 +18,13 @@ def tagfiles(olddir, newdir):
         w.close()
 
 if __name__ == "__main__":
-    tagfiles(POS_DIR,POSTAGGED_DIR)
-    tagfiles(NEG_DIR,NEGTAGGED_DIR)
+    # usage: python position_tagger.py -d neg
+    # usage: python position_tagger.py -d yelp/default/1star
+    from optparse import OptionParser
+    parser = OptionParser()
+    parser.add_option("-d", "--dir", dest="directory")
+    (options, args) = parser.parse_args()
+
+    olddir = options.directory
+    newdir = "%s_position" % olddir
+    tagfiles(olddir, newdir)
