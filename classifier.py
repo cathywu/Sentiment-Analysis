@@ -60,6 +60,7 @@ class RandomClassifier:
 class BayesClassifier(Classifier):
     def __init__(self, restrictFeatures = False) :
         Classifier.__init__(self)
+        print "Bayes: Creating model"
         self.length    = 0
         self.compiled  = True
         self.classes   = {}
@@ -138,6 +139,7 @@ class BayesPresenceClassifier(BayesClassifier):
 class LinearSVMClassifier(Classifier):
     def __init__(self, restrictFeatures=False):
         Classifier.__init__(self)
+        print "LinearSVM: Creating model"
         self.file = tempfile.NamedTemporaryFile(delete=False)
         self.filename = self.file.name
         print self.filename
@@ -145,16 +147,23 @@ class LinearSVMClassifier(Classifier):
         self.svm = SVM(optimizer='liblinear')
         self.restrictFeatures = restrictFeatures
 
-    def vectorToString(self, vec, cls = False):
+    def vectorToString(self, vec, cls = False, binary=False):
         # granted, this is kind of silly
         # creates a string of the format "[class if point is labeled] feature1:value1 feature2:value2..."
         # where the only allowed features are the ones in restrictFeatures, if we're restricting the features
-        return ((str(cls) + " ") if cls else "") + " ".join(["-".join(str(i).split()) + ":" + str(vec[i]) 
-                                                                 for i in vec if (not self.restrictFeatures) or (i in self.restrictFeatures)]) + "\n"
+        if binary:
+            return ((str(cls) + " ") if cls else "") +
+                    " ".join(["-".join(str(i).split()) + ":1" 
+                    for i in vec if (not self.restrictFeatures) or 
+                    (i in self.restrictFeatures)]) + "\n"
+        return ((str(cls) + " ") if cls else "") +
+                " ".join(["-".join(str(i).split()) + ":" + str(vec[i]) 
+                for i in vec if (not self.restrictFeatures) or 
+                (i in self.restrictFeatures)]) + "\n"
 
     def addFeatureVector(self, point, cls, binary=False):
         self.compiled = False
-        vec = self.vectorToString(point, cls)
+        vec = self.vectorToString(point, cls, binary=binary)
         self.file.write(vec)
         
     def compile(self):

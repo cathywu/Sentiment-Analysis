@@ -22,7 +22,7 @@ NEG_ADJ_DIR="neg_adj"
 YELP_DIR = "yelp/default"
 
 class TestConfiguration:
-    def __init__(self, clsf, n, ind, pos_dir, neg_dir, test_dir=None,
+    def __init__(self, clsf, n, ind, pos_dir, neg_dir, test_set=None,
                  binary=False, limit=None, idf=False):
         self.count = 0
         self.n = n
@@ -31,7 +31,7 @@ class TestConfiguration:
         self.limit = limit if limit else [0 for i in n]
         self.clsf = clsf
         self.idf = idf
-        self.test_dir = test_dir
+        self.test_set = True if test_set else False
         self.pos_dir = pos_dir
         self.neg_dir = neg_dir
 
@@ -109,20 +109,22 @@ class TestConfiguration:
         self.classifier.compile()
 
     def test(self):
-        if self.test_dir:
-            print "Testing with %s" % self.test_dir
-            ntest = len(os.listdir(self.test_dir))
-            tests = [{} for i in range(ntest)]
-            test_files = os.listdir(self.test_dir)
-            for i in range(ntest):
-                for j in self.n:
-                    tests[i].update(ngrams.ngrams(j, open("%s/%s" % (
-                        self.test_dir,test_files[i])).read()))
-            results = [self.classifier.classify(i) for i in tests]
-            correct = len([i for i in results if int(i) == 1])
-            print "Positive: %s of %s, %s accuracy" % (correct,len(tests),
-                    (float(correct)/len(tests)))
-            return (float(correct)/len(tests),0) #TODO this is messy
+        if self.test_set:
+            for s in range(1,6):
+                self.test_dir = select_extradata(self.test_set,s)
+                print "Testing with %s" % self.test_dir
+                test_files = os.listdir(self.test_dir)
+                ntest = len(test_files)
+                tests = [{} for i in range(ntest)]
+                for i in range(ntest):
+                    for j in self.n:
+                        tests[i].update(ngrams.ngrams(j, open("%s/%s" % (
+                            self.test_dir,test_files[i])).read()))
+                results = [self.classifier.classify(i) for i in tests]
+                correct = len([i for i in results if int(i) == 1])
+                print "%s Stars, Positive: %s of %s, %s accuracy" % (s,correct,len(tests),
+                        (float(correct)/len(tests)))
+            return (0,0) # return dummy values when testing on external data
 
         pos_tests = [{} for f in self.pos_test_data]
         neg_tests = [{} for f in self.neg_test_data]
@@ -231,9 +233,9 @@ def test(classif, n=1, train_size=500, mode='k', iterations=1, dataset='',
         mode='d'
         iterations=1
         train_size = 1000
-        test_dir = select_extradata(dataset,extra_dataset)
+        test_set = dataset
     else:
-        test_dir = None
+        test_set = None
 
     print "TEST CONFIGURATION"
     print "dataset: %(dataset)s, stars: %(extra_dataset)s \nn: %(n)s, limit: %(limit)s, binary: %(binary)s, \nmode: %(mode)s, iterations: %(iterations)s, idf: %(idf)s" % {'n':n,
@@ -251,7 +253,7 @@ def test(classif, n=1, train_size=500, mode='k', iterations=1, dataset='',
     for k in range(iterations):
         ind.next()
         m = TestConfiguration(classif, n, ind, pos_dir, neg_dir, idf=idf,
-                              test_dir=test_dir, binary=binary, limit=limit)
+                              test_set=test_set, binary=binary, limit=limit)
         m.train()
         (pos, neg) = m.test()
         pos_correct += pos
@@ -262,7 +264,6 @@ def test(classif, n=1, train_size=500, mode='k', iterations=1, dataset='',
     print "Total:", round((neg_correct + pos_correct)/(2*iterations)*100), "%"
 
 if __name__ == "__main__":
-
     n = [2]
     dataset = 'partofspeech'
     limit = [16165]
@@ -288,7 +289,6 @@ if __name__ == "__main__":
     #     iterations=3,dataset='default',limit=[16165],binary=False, idf=True)
     #test(classifier.MaximumEntropyClassifier,n=[1],train_size=800,mode='k',
     #     iterations=3,dataset='default',limit=[16165],binary=True)
-
     #mvc = MajorityVotingTester()
     #ind = Indexes(mode='k',iterations=3,train_size=800)
     #ind.next()
