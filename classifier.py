@@ -184,11 +184,11 @@ class LinearSVMClassifier(Classifier):
         print self.data
         outp = self.svm.cv(self.data, numFolds = n)
         print outp
-    def classify(self, pt):
+    def classify(self, pt, binary = False):
         self.compile()
         f = tempfile.NamedTemporaryFile(delete=False)
         fname = f.name
-        f.write(self.vectorToString(pt, binary = self.binary))
+        f.write(self.vectorToString(pt, binary = binary))
         f.close()        
         data = SparseDataSet(fname)
         os.remove(fname)
@@ -222,7 +222,7 @@ class MaximumEntropyClassifier(Classifier):
         #self.model.train(100, 'gis', 2)
         print "> Models trained"
 
-    def classify(self, point, label='1'):
+    def classify(self, point, label='1', binary=False):
         result = self.model.eval(point.keys(), label)
         if result >= 0.5:
             return 1
