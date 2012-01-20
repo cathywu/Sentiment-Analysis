@@ -31,7 +31,7 @@ class TestConfiguration:
         self.limit = limit if limit else [0 for i in n]
         self.clsf = clsf
         self.idf = idf
-        self.test_set = True if test_set else False
+        self.test_set = test_set
         self.pos_dir = pos_dir
         self.neg_dir = neg_dir
 
@@ -273,8 +273,8 @@ if __name__ == "__main__":
     #        dataset='default',extra_dataset=1,limit=[16165],binary=True, idf=False)
     #test(classifier.MaximumEntropyClassifier,n=[1],train_size=800,mode='k',iterations=3,
     #        dataset='default',extra_dataset=1,limit=[16165],binary=False, idf=False)
-    test(classifier.LinearSVMClassifier,n=[1],train_size=800,mode='k',iterations=3,
-            dataset='default',extra_dataset=1,limit=[16165],binary=True, idf=False)
+    #test(classifier.LinearSVMClassifier,n=[1],train_size=800,mode='k',iterations=3,
+    #        dataset='default',extra_dataset=1,limit=[16165],binary=True, idf=False)
     #
     #test(classifier.BayesClassifier,n=[1],train_size=800,mode='k',iterations=3,
     #        dataset='default',extra_dataset=1,limit=None,binary=True, idf=False)
@@ -283,40 +283,40 @@ if __name__ == "__main__":
     #BORKED#test(classifier.LinearSVMClassifier,n=[1],train_size=800,mode='k',iterations=3,
     #BORKED#        dataset='default',extra_dataset=1,limit=None,binary=True, idf=False)
 
-    test(classifier.BayesClassifier,n=[2],train_size=800,mode='k',iterations=3,
-            dataset='default',extra_dataset=1,limit=[16165],binary=True, idf=False)
-    test(classifier.MaximumEntropyClassifier,n=[2],train_size=800,mode='k',iterations=3,
-            dataset='default',extra_dataset=1,limit=[16165],binary=False, idf=False)
-    test(classifier.LinearSVMClassifier,n=[2],train_size=800,mode='k',iterations=3,
-            dataset='default',extra_dataset=1,limit=[16165],binary=True, idf=False)
+    #test(classifier.BayesClassifier,n=[2],train_size=800,mode='k',iterations=3,
+    #        dataset='default',extra_dataset=1,limit=[16165],binary=True, idf=False)
+    #test(classifier.MaximumEntropyClassifier,n=[2],train_size=800,mode='k',iterations=3,
+    #        dataset='default',extra_dataset=1,limit=[16165],binary=False, idf=False)
+    #test(classifier.LinearSVMClassifier,n=[2],train_size=800,mode='k',iterations=3,
+    #        dataset='default',extra_dataset=1,limit=[16165],binary=True, idf=False)
     
-    test(classifier.BayesClassifier,n=[1,2],train_size=800,mode='k',iterations=3,
-            dataset='default',extra_dataset=1,limit=[16165,16165],binary=True, idf=False)
-    test(classifier.MaximumEntropyClassifier,n=[1,2],train_size=800,mode='k',iterations=3,
-            dataset='default',extra_dataset=1,limit=[16165,16165],binary=False, idf=False)
-    test(classifier.LinearSVMClassifier,n=[1,2],train_size=800,mode='k',iterations=3,
-            dataset='default',extra_dataset=1,limit=[16165,16165],binary=True, idf=False)
+    #test(classifier.BayesClassifier,n=[1,2],train_size=800,mode='k',iterations=3,
+    #        dataset='default',extra_dataset=1,limit=[16165,16165],binary=True, idf=False)
+    #test(classifier.MaximumEntropyClassifier,n=[1,2],train_size=800,mode='k',iterations=3,
+    #        dataset='default',extra_dataset=1,limit=[16165,16165],binary=False, idf=False)
+    #test(classifier.LinearSVMClassifier,n=[1,2],train_size=800,mode='k',iterations=3,
+    #        dataset='default',extra_dataset=1,limit=[16165,16165],binary=True, idf=False)
     
-    test(classifier.BayesClassifier,n=[1],train_size=800,mode='k',iterations=3,
-            dataset='partofspeech',extra_dataset=1,limit=None,binary=True, idf=False)
-    test(classifier.MaximumEntropyClassifier,n=[1],train_size=800,mode='k',iterations=3,
-            dataset='partofspeech',extra_dataset=1,limit=None,binary=False, idf=False)
-    test(classifier.LinearSVMClassifier,n=[1],train_size=800,mode='k',iterations=3,
-            dataset='partofspeech',extra_dataset=1,limit=None,binary=True, idf=False)
+    #test(classifier.BayesClassifier,n=[1],train_size=800,mode='k',iterations=3,
+    #        dataset='partofspeech',extra_dataset=1,limit=None,binary=True, idf=False)
+    #test(classifier.MaximumEntropyClassifier,n=[1],train_size=800,mode='k',iterations=3,
+    #        dataset='partofspeech',extra_dataset=1,limit=None,binary=False, idf=False)
+    #BORKED#test(classifier.LinearSVMClassifier,n=[1],train_size=800,mode='k',iterations=3,
+    #BORKED#        dataset='partofspeech',extra_dataset=1,limit=None,binary=True, idf=False)
 
-    test(classifier.BayesClassifier,n=[1],train_size=800,mode='k',iterations=3,
-            dataset='adjectives',extra_dataset=1,limit=None,binary=True, idf=False)
-    test(classifier.MaximumEntropyClassifier,n=[1],train_size=800,mode='k',iterations=3,
-            dataset='adjectives',extra_dataset=1,limit=None,binary=False, idf=False)
-    test(classifier.LinearSVMClassifier,n=[1],train_size=800,mode='k',iterations=3,
-            dataset='adjectives',extra_dataset=1,limit=None,binary=True, idf=False)
+    #test(classifier.BayesClassifier,n=[1],train_size=800,mode='k',iterations=3,
+    #        dataset='adjectives',extra_dataset=1,limit=None,binary=True, idf=False)
+    #test(classifier.MaximumEntropyClassifier,n=[1],train_size=800,mode='k',iterations=3,
+    #        dataset='adjectives',extra_dataset=1,limit=None,binary=False, idf=False)
+    #test(classifier.LinearSVMClassifier,n=[1],train_size=800,mode='k',iterations=3,
+    #        dataset='adjectives',extra_dataset=1,limit=None,binary=True, idf=False)
 
-    test(classifier.BayesClassifier,n=[1],train_size=800,mode='k',iterations=3,
-            dataset='position',extra_dataset=1,limit=None,binary=True, idf=False)
-    test(classifier.MaximumEntropyClassifier,n=[1],train_size=800,mode='k',iterations=3,
-            dataset='position',extra_dataset=1,limit=None,binary=False, idf=False)
-    test(classifier.LinearSVMClassifier,n=[1],train_size=800,mode='k',iterations=3,
-            dataset='position',extra_dataset=1,limit=None,binary=True, idf=False)
+    #test(classifier.BayesClassifier,n=[1],train_size=800,mode='k',iterations=3,
+    #        dataset='position',extra_dataset=1,limit=None,binary=True, idf=False)
+    #test(classifier.MaximumEntropyClassifier,n=[1],train_size=800,mode='k',iterations=3,
+    #        dataset='position',extra_dataset=1,limit=None,binary=False, idf=False)
+    #BORKED#test(classifier.LinearSVMClassifier,n=[1],train_size=800,mode='k',iterations=3,
+    #BORKED#        dataset='position',extra_dataset=1,limit=None,binary=True, idf=False)
 
     #mvc = MajorityVotingTester()
     #ind = Indexes(mode='k',iterations=3,train_size=800)
