@@ -119,7 +119,6 @@ class BayesClassifier(Classifier):
         mx = -sys.maxint
         mx_cls = 0
         point = ones(self.nfeatures)
-
         for feature in vec:
             if feature in self.index:
                 if binary:
@@ -149,12 +148,13 @@ class LinearSVMClassifier(Classifier):
         self.data = SparseDataSet(0)
         self.svm = SVM(optimizer='liblinear')
         self.restrictFeatures = restrictFeatures
-
+        self.binary = False
     def vectorToString(self, vec, cls = False, binary=False):
         # granted, this is kind of silly
         # creates a string of the format "[class if point is labeled] feature1:value1 feature2:value2..."
         # where the only allowed features are the ones in restrictFeatures, if we're restricting the features
         if binary:
+            self.binary = True
             return ((str(cls) + " ") if cls else "") + \
                     " ".join(["-".join(str(i).split()) + ":1" 
                     for i in vec if (not self.restrictFeatures) or 
@@ -177,7 +177,8 @@ class LinearSVMClassifier(Classifier):
         self.data = SparseDataSet(self.filename)
         self.file = open(self.filename)
         self.svm.train(self.data)
-
+        print self.data
+#        self.validate(3)
     def validate(self, n):
         self.compile()
         print self.data
@@ -187,11 +188,12 @@ class LinearSVMClassifier(Classifier):
         self.compile()
         f = tempfile.NamedTemporaryFile(delete=False)
         fname = f.name
-        f.write(self.vectorToString(pt))
+        f.write(self.vectorToString(pt, binary = self.binary))
         f.close()        
         data = SparseDataSet(fname)
         os.remove(fname)
-        return int(self.svm.test(data, verbose=0).getPredictedLabels()[0])
+        r = self.svm.test(data, verbose=0).getPredictedLabels()[0]
+        return int(r)
 
 class MaximumEntropyClassifier(Classifier):
     def __init__(self, restrictFeatures=False):
