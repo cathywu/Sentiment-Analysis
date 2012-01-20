@@ -15,6 +15,7 @@ attractive_JJ
 young_JJ
 thurman_JJ
 major_JJ
+smaller_JJR
 terrific_JJ
 young_JJ
 married_JJ

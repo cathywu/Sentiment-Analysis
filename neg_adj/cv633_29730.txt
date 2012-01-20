@@ -23,6 +23,7 @@ absurd_JJ
 other_JJ
 incredible_JJ
 adorable_JJ
+worse_JJR
 bored_JJ
 incredible_JJ
 fine_JJ

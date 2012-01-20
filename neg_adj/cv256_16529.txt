@@ -35,6 +35,7 @@ misleading_JJ
 reborn_JJ
 cool_JJ
 terrific_JJ
+longer_JJR
 sick_JJ
 basic_JJ
 bad_JJ
@@ -79,6 +80,7 @@ bloody_JJ
 unconvincing_JJ
 reborn_JJ
 bad_JJ
+worse_JJR
 reborn_JJ
 creative_JJ
 all-time_JJ
@@ -90,4 +92,5 @@ little_JJ
 sure_JJ
 even_JJ
 young_JJ
+better_JJR
 spent_JJ

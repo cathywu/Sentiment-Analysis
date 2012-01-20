@@ -9,6 +9,7 @@ endless_JJ
 difficult_JJ
 overhyped_JJ
 phantom_JJ
+better_JJR
 backpedal_JJ
 wan_JJ
 young_JJ
@@ -19,6 +20,7 @@ free_JJ
 phantom_JJ
 literal_JJ
 various_JJ
+lower_JJR
 common_JJ
 weak_JJ
 poor_JJ
@@ -35,6 +37,7 @@ special_JJ
 amazing_JJ
 incredible_JJ
 new_JJ
+higher_JJR
 previous_JJ
 reluctant_JJ
 computer-generated_JJ

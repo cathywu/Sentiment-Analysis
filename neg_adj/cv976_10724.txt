@@ -22,6 +22,7 @@ contrasting_JJ
 true_JJ
 public_JJ
 wrong_JJ
+better_JJR
 clean_JJ
 sober_JJ
 awful_JJ

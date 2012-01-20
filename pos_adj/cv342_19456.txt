@@ -1,5 +1,6 @@
 sweeping_JJ
 speculative_JJ
+better_JJR
 other_JJ
 futuristic_JJ
 tiny_JJ

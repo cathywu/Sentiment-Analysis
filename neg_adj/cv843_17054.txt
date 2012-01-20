@@ -1,5 +1,6 @@
 reese_JJ
 woodbine_JJ
+worse_JJR
 modern_JJ
 red_JJ
 red_JJ
@@ -19,6 +20,7 @@ major_JJ
 short_JJ
 simple_JJ
 necessary_JJ
+bigger_JJR
 reese_JJ
 great_JJ
 great_JJ

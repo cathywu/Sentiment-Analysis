@@ -6,6 +6,7 @@ little_JJ
 nervous_JJ
 silly_JJ
 wrong_JJ
+happier_JJR
 other_JJ
 great_JJ
 hillarous_JJ

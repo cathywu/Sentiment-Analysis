@@ -37,6 +37,7 @@ interesting_JJ
 philosophical_JJ
 real_JJ
 real_JJ
+harsher_JJR
 grim_JJ
 true_JJ
 live_JJ

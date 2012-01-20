@@ -1,6 +1,9 @@
+worse_JJR
 short-term_JJ
+earlier_JJR
 apparent_JJ
 written_JJ
+higher_JJR
 envious_JJ
 brilliant_JJ
 involved_JJ

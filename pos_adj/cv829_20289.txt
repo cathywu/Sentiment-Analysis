@@ -18,6 +18,7 @@ funny_JJ
 bleak_JJ
 potential_JJ
 authentic_JJ
+brighter_JJR
 charming_JJ
 nice_JJ
 supporting_JJ

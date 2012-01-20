@@ -30,6 +30,7 @@ bad_JJ
 sympathetic_JJ
 whole_JJ
 acting_JJ
+greater_JJR
 bland_JJ
 ineffective_JJ
 bad_JJ

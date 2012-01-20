@@ -31,6 +31,7 @@ cruel_JJ
 unfair_JJ
 lesser_JJ
 turned_JJ
+smarter_JJR
 great_JJ
 typical_JJ
 interesting_JJ

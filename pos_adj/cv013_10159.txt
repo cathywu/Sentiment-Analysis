@@ -19,6 +19,7 @@ dramatic_JJ
 final_JJ
 various_JJ
 fictional_JJ
+easier_JJR
 real_JJ
 purposeful_JJ
 clear-cut_JJ

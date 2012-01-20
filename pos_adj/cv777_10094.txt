@@ -70,6 +70,7 @@ prominent_JJ
 hard_JJ
 different_JJ
 physical_JJ
+easier_JJR
 theatrical_JJ
 recent_JJ
 rough_JJ

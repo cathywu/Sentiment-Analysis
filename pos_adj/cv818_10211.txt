@@ -44,6 +44,7 @@ caught_JJ
 united_JJ
 federal_JJ
 official_JJ
+longer_JJR
 sure_JJ
 necessary_JJ
 united_JJ
@@ -64,6 +65,7 @@ underused_JJ
 looking_JJ
 middle-aged_JJ
 long_JJ
+heavier_JJR
 whole_JJ
 recent_JJ
 bound_JJ

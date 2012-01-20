@@ -9,6 +9,7 @@ above_JJ
 typical_JJ
 recent_JJ
 glorified_JJ
+bigger_JJR
 predictable_JJ
 single_JJ
 cute_JJ

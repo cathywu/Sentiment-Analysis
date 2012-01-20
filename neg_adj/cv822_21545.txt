@@ -6,8 +6,10 @@ american_JJ
 mysterious_JJ
 small_JJ
 creepy_JJ
+smarter_JJR
 vicious_JJ
 little_JJ
+better_JJR
 uninitiated_JJ
 close_JJ
 personal_JJ

@@ -36,6 +36,7 @@ oblivious_JJ
 true_JJ
 intriguing_JJ
 neo_JJ
+better_JJR
 bewildered_JJ
 competent_JJ
 good_JJ
@@ -48,6 +49,7 @@ interesting_JJ
 fishburne_JJ
 surprising_JJ
 certain_JJ
+further_JJR
 extensive_JJ
 artificial_JJ
 good_JJ

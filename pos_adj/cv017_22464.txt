@@ -2,6 +2,7 @@ ultimate_JJ
 good_JJ
 evil_JJ
 excellent_JJ
+deeper_JJR
 real_JJ
 excellent_JJ
 memorable_JJ
@@ -28,6 +29,7 @@ clever_JJ
 small_JJ
 great_JJ
 equal_JJ
+better_JJR
 long_JJ
 dark_JJ
 neo_JJ
@@ -40,6 +42,7 @@ perfect_JJ
 unfair_JJ
 other_JJ
 thunderous_JJ
+longer_JJR
 supporting_JJ
 aging_JJ
 final_JJ

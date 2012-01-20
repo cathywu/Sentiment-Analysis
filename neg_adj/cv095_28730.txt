@@ -15,6 +15,7 @@ autobiographical_JJ
 green_JJ
 sure_JJ
 complex_JJ
+easier_JJR
 hard_JJ
 green_JJ
 green_JJ
@@ -26,6 +27,7 @@ paraplegic_JJ
 turned_JJ
 exposed_JJ
 coagulate_JJ
+younger_JJR
 freddy_JJ
 green_JJ
 infamous_JJ

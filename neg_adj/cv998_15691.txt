@@ -15,6 +15,7 @@ wooden_JJ
 roman_JJ
 catholic_JJ
 powerful_JJ
+better_JJR
 unscary_JJ
 suspenseful_JJ
 whole_JJ

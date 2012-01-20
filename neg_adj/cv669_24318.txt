@@ -59,5 +59,7 @@ pathetic_JJ
 two-hour_JJ
 commercial_JJ
 entertaining_JJ
+funnier_JJR
 diverse_JJ
+hotter_JJR
 hour-long_JJ

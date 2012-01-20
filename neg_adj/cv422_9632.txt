@@ -1,4 +1,7 @@
+older_JJR
+simpler_JJR
 only_JJ
+lower_JJR
 special_JJ
 wooden_JJ
 choppy_JJ
@@ -12,6 +15,7 @@ big_JJ
 only_JJ
 simple_JJ
 disappointing_JJ
+shorter_JJR
 special_JJ
 small_JJ
 long_JJ
@@ -24,5 +28,6 @@ approachable_JJ
 small_JJ
 young_JJ
 appealing_JJ
+better_JJR
 little_JJ
 avid_JJ

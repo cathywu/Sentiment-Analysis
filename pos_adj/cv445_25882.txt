@@ -46,6 +46,7 @@ palestinian_JJ
 new_JJ
 japanese_JJ
 unlawful_JJ
+greater_JJR
 good_JJ
 arab-american_JJ
 unnecessary_JJ
@@ -62,6 +63,7 @@ ethnic_JJ
 unfair_JJ
 military_JJ
 determined_JJ
+stronger_JJR
 usual_JJ
 enjoyable_JJ
 believable_JJ

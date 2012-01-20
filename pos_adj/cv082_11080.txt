@@ -7,6 +7,7 @@ brilliant_JJ
 bonifant_JJ
 good_JJ
 mean_JJ
+richer_JJR
 pleased_JJ
 whole_JJ
 early_JJ
@@ -22,4 +23,5 @@ special_JJ
 superfluous_JJ
 very_JJ
 well_JJ
+better_JJR
 excercise_JJ

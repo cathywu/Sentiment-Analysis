@@ -1,5 +1,6 @@
 easy_JJ
 funny_JJ
+funnier_JJR
 ironic_JJ
 inane_JJ
 fun_JJ

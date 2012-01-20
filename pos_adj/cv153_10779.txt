@@ -16,8 +16,10 @@ gay_JJ
 prime_JJ
 jr_JJ
 gay_JJ
+better_JJR
 tired_JJ
 verbal_JJ
+earlier_JJR
 interesting_JJ
 overnight_JJ
 little_JJ

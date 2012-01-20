@@ -12,6 +12,7 @@ entire_JJ
 collapsing_JJ
 other_JJ
 devastate_JJ
+longer_JJR
 other_JJ
 different_JJ
 organized_JJ

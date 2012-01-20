@@ -4,6 +4,7 @@ universal_JJ
 relevant_JJ
 entire_JJ
 recent_JJ
+better_JJR
 other_JJ
 ageing_JJ
 other_JJ
@@ -17,9 +18,12 @@ martial_JJ
 universal_JJ
 poor_JJ
 complete_JJ
+older_JJR
 good_JJ
 tried_JJ
+newer_JJR
 universal_JJ
+newer_JJR
 poor_JJ
 amazing_JJ
 sole_JJ
@@ -31,6 +35,8 @@ muscular_JJ
 human_JJ
 following_JJ
 human_JJ
+tougher_JJR
+fiercer_JJR
 trying_JJ
 alive_JJ
 near-indestructible_JJ
@@ -47,6 +53,7 @@ laughable_JJ
 good_JJ
 useless_JJ
 specific_JJ
+better_JJR
 useless_JJ
 single_JJ
 universal_JJ
@@ -59,6 +66,7 @@ evident_JJ
 flying_JJ
 old_JJ
 slow_JJ
+younger_JJR
 martial_JJ
 decent_JJ
 sure_JJ
@@ -69,3 +77,4 @@ aforementioned_JJ
 entire_JJ
 only_JJ
 universal_JJ
+better_JJR

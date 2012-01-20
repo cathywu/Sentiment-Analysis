@@ -29,6 +29,8 @@ wonderful_JJ
 dark_JJ
 small_JJ
 following_JJ
+weaker_JJR
+better-known_JJR
 upsetting_JJ
 related_JJ
 due_JJ
@@ -39,6 +41,7 @@ appetizing_JJ
 certain_JJ
 public_JJ
 dark_JJ
+bigger_JJR
 elegant_JJ
 fantastical_JJ
 fortunate_JJ

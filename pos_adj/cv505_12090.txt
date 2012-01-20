@@ -82,7 +82,9 @@ great_JJ
 sure_JJ
 complete_JJ
 perfect_JJ
+younger_JJR
 fat_JJ
+older_JJR
 normal_JJ
 lasting_JJ
 earned_JJ

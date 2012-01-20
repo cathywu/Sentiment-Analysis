@@ -29,11 +29,13 @@ eccentric_JJ
 encouraging_JJ
 british_JJ
 real_JJ
+younger_JJR
 human_JJ
 short_JJ
 outstanding_JJ
 weird_JJ
 bizarre_JJ
+dapper_JJR
 cool_JJ
 unexpected_JJ
 hilarious_JJ
@@ -55,5 +57,6 @@ special_JJ
 high_JJ
 only_JJ
 weak_JJ
+tighter_JJR
 minor_JJ
 cool_JJ

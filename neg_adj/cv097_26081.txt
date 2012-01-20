@@ -39,6 +39,7 @@ public_JJ
 long_JJ
 overdue_JJ
 public_JJ
+better_JJR
 received_JJ
 late_JJ
 common_JJ
@@ -46,6 +47,7 @@ public_JJ
 quaint_JJ
 cornish_JJ
 middle-aged_JJ
+bigger_JJR
 enormous_JJ
 comfortable_JJ
 old_JJ

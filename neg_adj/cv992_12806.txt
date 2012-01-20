@@ -40,6 +40,7 @@ interested_JJ
 outrun_JJ
 wild_JJ
 safe_JJ
+further_JJR
 stupid_JJ
 obvious_JJ
 subtle_JJ
@@ -76,3 +77,4 @@ interested_JJ
 unique_JJ
 disappointed_JJ
 only_JJ
+better_JJR

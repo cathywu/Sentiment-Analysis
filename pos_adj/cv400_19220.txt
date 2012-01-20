@@ -1,6 +1,7 @@
 happy_JJ
 american_JJ
 sick_JJ
+lower_JJR
 american_JJ
 only_JJ
 real_JJ

@@ -4,6 +4,7 @@ muddled_JJ
 incoherent_JJ
 interesting_JJ
 certain_JJ
+caper_JJR
 happy-go-lucky_JJ
 rich_JJ
 young_JJ
@@ -21,6 +22,7 @@ jerky_JJ
 impossible_JJ
 dizzying_JJ
 due_JJ
+faster_JJR
 weird_JJ
 defiant_JJ
 lasting_JJ

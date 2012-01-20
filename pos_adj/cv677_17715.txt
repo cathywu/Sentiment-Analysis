@@ -15,6 +15,7 @@ big_JJ
 disappointed_JJ
 intriguing_JJ
 delightful_JJ
+later_JJR
 small_JJ
 crummy_JJ
 long_JJ

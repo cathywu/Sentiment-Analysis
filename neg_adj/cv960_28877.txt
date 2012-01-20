@@ -1,4 +1,5 @@
 jurassic_JJ
+longer_JJR
 sexy_JJ
 interested_JJ
 notorious_JJ
@@ -28,6 +29,7 @@ jurassic_JJ
 new_JJ
 extreme_JJ
 stupid_JJ
+longer_JJR
 new_JJ
 murky_JJ
 machete_JJ

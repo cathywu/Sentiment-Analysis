@@ -42,3 +42,4 @@ entire_JJ
 pure_JJ
 true_JJ
 online_JJ
+better_JJR

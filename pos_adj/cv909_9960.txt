@@ -3,10 +3,13 @@ soviet_JJ
 western_JJ
 united_JJ
 friendly_JJ
+longer_JJR
 communist_JJ
+longer_JJR
 easy_JJ
 bad_JJ
 new_JJ
+longer_JJR
 russian_JJ
 foreign_JJ
 russian_JJ
@@ -30,6 +33,7 @@ numerous_JJ
 various_JJ
 inevitable_JJ
 original_JJ
+better_JJR
 current_JJ
 pivotal_JJ
 obscure_JJ

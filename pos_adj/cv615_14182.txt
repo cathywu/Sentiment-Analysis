@@ -1,6 +1,7 @@
 hot_JJ
 brilliant_JJ
 clever_JJ
+wilder_JJR
 stunning_JJ
 vast_JJ
 lemmon_JJ
@@ -14,6 +15,7 @@ lemmon_JJ
 brown_JJ
 pure_JJ
 complicated_JJ
+further_JJR
 italian_JJ
 hysterical_JJ
 josephine_JJ
@@ -28,6 +30,7 @@ hysterical_JJ
 rational_JJ
 lemmon_JJ
 crazy_JJ
+wilder_JJR
 brown_JJ
 hilarious_JJ
 comedic_JJ
@@ -35,16 +38,22 @@ lemmon_JJ
 eccentric_JJ
 set-piece_JJ
 flawless_JJ
+wilder_JJR
+wilder_JJR
 stunning_JJ
 social_JJ
 riotous_JJ
+wilder_JJR
 utter_JJ
 dying_JJ
 final_JJ
 incredible_JJ
+wilder_JJR
 dead_JJ
 wrong_JJ
 perfect_JJ
+wilder_JJR
 disastrously_JJ
 funny_JJ
 perfect_JJ
+wilder_JJR

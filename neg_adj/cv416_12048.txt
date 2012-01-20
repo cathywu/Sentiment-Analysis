@@ -8,6 +8,7 @@ difficult_JJ
 original_JJ
 fabricate_JJ
 bad_JJ
+worse_JJR
 open_JJ
 alien_JJ
 hybrid_JJ

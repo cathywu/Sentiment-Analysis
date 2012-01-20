@@ -9,6 +9,7 @@ american_JJ
 multiplex_JJ
 thin_JJ
 bad_JJ
+longer_JJR
 wrong_JJ
 local_JJ
 enduring_JJ

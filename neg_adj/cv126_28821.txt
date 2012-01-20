@@ -13,6 +13,7 @@ great_JJ
 quirky_JJ
 bland_JJ
 uninteresting_JJ
+further_JJR
 funny_JJ
 green_JJ
 funny_JJ

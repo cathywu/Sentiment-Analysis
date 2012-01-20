@@ -10,6 +10,7 @@ supreme_JJ
 right_JJ
 small_JJ
 compelling_JJ
+larger_JJR
 collective_JJ
 oppressive_JJ
 rocky_JJ
@@ -17,6 +18,7 @@ clear_JJ
 present_JJ
 long_JJ
 worried_JJ
+younger_JJR
 americanised_JJ
 individual_JJ
 parliamentary_JJ
@@ -32,6 +34,7 @@ natural_JJ
 outrageous_JJ
 convincing_JJ
 nihilistic_JJ
+ex-stripper_JJR
 real_JJ
 jerky_JJ
 great_JJ

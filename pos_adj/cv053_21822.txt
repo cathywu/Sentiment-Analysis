@@ -14,6 +14,7 @@ male_JJ
 hindu_JJ
 muslim_JJ
 hindu_JJ
+older_JJR
 married_JJ
 beautiful_JJ
 previous_JJ
@@ -28,6 +29,7 @@ barbed_JJ
 little_JJ
 other_JJ
 spoken_JJ
+darker_JJR
 bitter_JJ
 easy_JJ
 mass_JJ
@@ -84,3 +86,4 @@ particular_JJ
 nuclear_JJ
 nuclear_JJ
 other_JJ
+better_JJR

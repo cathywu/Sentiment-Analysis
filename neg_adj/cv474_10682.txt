@@ -19,6 +19,7 @@ uninspired_JJ
 bad_JJ
 poor_JJ
 alone_JJ
+worse_JJR
 touching_JJ
 early_JJ
 tiny_JJ

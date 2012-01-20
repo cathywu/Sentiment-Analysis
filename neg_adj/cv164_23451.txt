@@ -18,6 +18,8 @@ redundant_JJ
 sporadic_JJ
 midler_JJ
 other_JJ
+further_JJR
+deeper_JJR
 burly_JJ
 female_JJ
 forced_JJ
@@ -25,6 +27,7 @@ chief_JJ
 chief_JJ
 bland_JJ
 dutiful_JJ
+higher_JJR
 married_JJ
 reptilian_JJ
 betrothed_JJ

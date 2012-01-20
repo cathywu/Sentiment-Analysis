@@ -23,6 +23,7 @@ different_JJ
 little_JJ
 long_JJ
 little_JJ
+longer_JJR
 different_JJ
 interesting_JJ
 frustrating_JJ

@@ -34,6 +34,7 @@ needless_JJ
 extraneous_JJ
 little_JJ
 good_JJ
+funnier_JJR
 strong_JJ
 senseless_JJ
 manic_JJ

@@ -17,6 +17,7 @@ convicted_JJ
 spoiling_JJ
 vital_JJ
 informative_JJ
+further_JJR
 inane_JJ
 elementary_JJ
 average_JJ

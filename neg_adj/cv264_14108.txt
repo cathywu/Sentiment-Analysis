@@ -2,6 +2,7 @@ late_JJ
 infamous_JJ
 new_JJ
 easy_JJ
+easier_JJR
 resulting_JJ
 promising_JJ
 hot_JJ

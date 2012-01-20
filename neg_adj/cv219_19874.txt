@@ -43,6 +43,7 @@ wild_JJ
 wild_JJ
 huge_JJ
 diabolical_JJ
+lower_JJR
 dry_JJ
 witty_JJ
 southern_JJ

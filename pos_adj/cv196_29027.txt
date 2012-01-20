@@ -41,6 +41,7 @@ main_JJ
 sexy_JJ
 missy_JJ
 long_JJ
+funnier_JJR
 pink_JJ
 clam-shaped_JJ
 high_JJ
@@ -53,4 +54,5 @@ crude_JJ
 sexual_JJ
 acceptable_JJ
 high_JJ
+older_JJR
 united_JJ

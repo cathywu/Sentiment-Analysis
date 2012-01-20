@@ -4,8 +4,11 @@ novel_JJ
 head-to-head_JJ
 anticipated_JJ
 strategic_JJ
+smaller_JJR
 unassuming_JJ
+slower_JJR
 old_JJ
+better_JJR
 late_JJ
 big_JJ
 epic_JJ

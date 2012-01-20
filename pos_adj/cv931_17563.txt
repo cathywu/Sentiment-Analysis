@@ -18,6 +18,7 @@ strong_JJ
 weak_JJ
 good_JJ
 dramatic_JJ
+smaller_JJR
 dignified_JJ
 noble_JJ
 memorable_JJ

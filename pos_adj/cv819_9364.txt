@@ -41,6 +41,7 @@ powerful_JJ
 other_JJ
 promising_JJ
 dramatic_JJ
+better_JJR
 possible_JJ
 original_JJ
 female_JJ
@@ -57,6 +58,7 @@ essential_JJ
 good_JJ
 good_JJ
 suspenseful_JJ
+better_JJR
 losing_JJ
 terrific_JJ
 sure_JJ

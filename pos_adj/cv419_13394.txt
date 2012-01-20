@@ -5,6 +5,7 @@ one-dimensional_JJ
 contrived_JJ
 hard_JJ
 bad_JJ
+better_JJR
 pretty_JJ
 bizarre_JJ
 little_JJ

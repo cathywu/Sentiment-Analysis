@@ -43,3 +43,4 @@ miniature_JJ
 hopeful_JJ
 serious_JJ
 potential_JJ
+better_JJR

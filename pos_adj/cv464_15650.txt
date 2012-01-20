@@ -12,6 +12,7 @@ witty_JJ
 marvellous_JJ
 other_JJ
 little_JJ
+better_JJR
 excellent_JJ
 bad_JJ
 dimensional_JJ

@@ -6,6 +6,7 @@ corny_JJ
 ludicrous_JJ
 bad_JJ
 other_JJ
+higher_JJR
 relative_JJ
 amused_JJ
 other_JJ
@@ -18,6 +19,7 @@ other_JJ
 insulting_JJ
 adequate_JJ
 good_JJ
+better_JJR
 brusque_JJ
 young_JJ
 consecutive_JJ

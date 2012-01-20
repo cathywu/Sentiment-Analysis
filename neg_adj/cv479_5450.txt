@@ -35,10 +35,12 @@ little_JJ
 awful_JJ
 miraculous_JJ
 comedic_JJ
+funnier_JJR
 sympathetic_JJ
 actual_JJ
 comedic_JJ
 misguided_JJ
+easier_JJR
 nice_JJ
 black_JJ
 whole_JJ

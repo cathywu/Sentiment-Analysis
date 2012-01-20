@@ -1,5 +1,6 @@
 large_JJ
 overcome_JJ
+better_JJR
 pretty_JJ
 damn_JJ
 good_JJ

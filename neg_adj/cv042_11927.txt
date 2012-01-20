@@ -45,3 +45,4 @@ high_JJ
 explicit_JJ
 pervasive_JJ
 appropriate_JJ
+younger_JJR

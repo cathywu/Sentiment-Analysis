@@ -19,6 +19,7 @@ smart_JJ
 joint_JJ
 raging_JJ
 bad_JJ
+worse_JJR
 final_JJ
 old_JJ
 bored_JJ
@@ -41,6 +42,7 @@ passive_JJ
 young_JJ
 bad_JJ
 long_JJ
+worse_JJR
 big_JJ
 strong_JJ
 passive_JJ
@@ -52,6 +54,7 @@ well-shot_JJ
 old_JJ
 cut-and-paste_JJ
 spare_JJ
+better_JJR
 similar_JJ
 earnest_JJ
 cream_JJ

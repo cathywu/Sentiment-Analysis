@@ -13,6 +13,7 @@ lonely_JJ
 despondent_JJ
 young_JJ
 tough_JJ
+later_JJR
 ill_JJ
 trusty_JJ
 young_JJ
@@ -51,6 +52,7 @@ quirky_JJ
 clever_JJ
 interesting_JJ
 provocative_JJ
+further_JJR
 inspired_JJ
 nude_JJ
 actual_JJ

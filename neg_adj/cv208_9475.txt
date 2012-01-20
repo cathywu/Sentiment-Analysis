@@ -40,6 +40,7 @@ false_JJ
 three-dimensional_JJ
 human_JJ
 interesting_JJ
+better_JJR
 eccentric_JJ
 quirky_JJ
 reminiscent_JJ
@@ -53,6 +54,7 @@ second-rate_JJ
 well_JJ
 basic_JJ
 solid_JJ
+worse_JJR
 long_JJ
 winding_JJ
 intelligent_JJ

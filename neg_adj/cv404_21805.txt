@@ -9,6 +9,7 @@ long_JJ
 lost_JJ
 understandable_JJ
 previous_JJ
+older_JJR
 strange_JJ
 supposed_JJ
 unclear_JJ

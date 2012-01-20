@@ -22,6 +22,7 @@ suspicious_JJ
 cinematic_JJ
 major_JJ
 due_JJ
+closer_JJR
 original_JJ
 new_JJ
 great_JJ
@@ -54,6 +55,7 @@ numerous_JJ
 dominant_JJ
 graphic_JJ
 real_JJ
+deeper_JJR
 technical_JJ
 central_JJ
 central_JJ

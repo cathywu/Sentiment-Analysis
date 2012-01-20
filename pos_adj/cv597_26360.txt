@@ -102,6 +102,7 @@ ambitious_JJ
 hidden_JJ
 main_JJ
 left_JJ
+lower_JJR
 left_JJ
 supposed_JJ
 similar_JJ
@@ -110,6 +111,7 @@ white_JJ
 color_JJ
 musical_JJ
 supposed_JJ
+better_JJR
 vast_JJ
 faithful_JJ
 enjoyable_JJ
@@ -121,6 +123,7 @@ cold_JJ
 entire_JJ
 old_JJ
 great_JJ
+longer_JJR
 simple_JJ
 open_JJ
 good_JJ

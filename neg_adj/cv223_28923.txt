@@ -12,14 +12,17 @@ pretty_JJ
 bland_JJ
 expressive_JJ
 final_JJ
+younger_JJR
 white_JJ
 athletic_JJ
 attractive_JJ
 indistinct_JJ
 black_JJ
+taller_JJR
 aging_JJ
 bald_JJ
 general_JJ
+worse_JJR
 sarcastic_JJ
 great_JJ
 twisted_JJ
@@ -59,6 +62,7 @@ desperate_JJ
 remaining_JJ
 little_JJ
 confining_JJ
+longer_JJR
 communicating_JJ
 deep_JJ
 wise_JJ
@@ -89,3 +93,4 @@ expressive_JJ
 old_JJ
 contemporary_JJ
 outer_JJ
+better_JJR

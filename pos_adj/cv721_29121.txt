@@ -25,6 +25,7 @@ mute_JJ
 aging_JJ
 agreeable_JJ
 apparent_JJ
+worse_JJR
 jittery_JJ
 new_JJ
 whole_JJ

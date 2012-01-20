@@ -54,6 +54,7 @@ little_JJ
 other_JJ
 deviant_JJ
 noble_JJ
+greater_JJR
 realistic_JJ
 jovial_JJ
 gorgeous_JJ
@@ -81,6 +82,7 @@ level_JJ
 drunken_JJ
 american_JJ
 sharp_JJ
+earlier_JJR
 obvious_JJ
 fun_JJ
 unfamiliar_JJ

@@ -61,6 +61,7 @@ human_JJ
 slight_JJ
 young_JJ
 mischievous_JJ
+older_JJR
 retired_JJ
 young_JJ
 chinese_JJ

@@ -20,7 +20,9 @@ criminal_JJ
 spotless_JJ
 racial_JJ
 leading_JJ
+younger_JJR
 race-motivated_JJ
+younger_JJR
 famous_JJ
 ideological_JJ
 intellectual_JJ
@@ -33,6 +35,7 @@ enraptured_JJ
 awful_JJ
 inappropriate_JJ
 american_JJ
+bigger_JJR
 brutal_JJ
 ecstatic_JJ
 little_JJ
@@ -53,6 +56,8 @@ unchained_JJ
 violent_JJ
 overall_JJ
 oscar-worthy_JJ
+older_JJR
+younger_JJR
 bold_JJ
 daring_JJ
 ugly_JJ

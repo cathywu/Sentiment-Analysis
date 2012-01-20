@@ -29,6 +29,7 @@ high_JJ
 humorous_JJ
 interesting_JJ
 predictable_JJ
+younger_JJR
 opposite_JJ
 new_JJ
 rare_JJ
@@ -48,6 +49,7 @@ total_JJ
 following_JJ
 high_JJ
 general_JJ
+worse_JJR
 painful_JJ
 very_JJ
 black_JJ

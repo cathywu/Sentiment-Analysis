@@ -9,6 +9,7 @@ american_JJ
 unsophisticated_JJ
 willing_JJ
 final_JJ
+closer_JJR
 souped_JJ
 two-hour_JJ
 long_JJ

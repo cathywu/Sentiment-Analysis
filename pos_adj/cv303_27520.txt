@@ -59,6 +59,7 @@ convincing_JJ
 difficult_JJ
 often-criticized_JJ
 acting_JJ
+better_JJR
 slow_JJ
 young_JJ
 only_JJ

@@ -4,6 +4,7 @@ expensive_JJ
 special_JJ
 embarrassing_JJ
 ideal_JJ
+younger_JJR
 likely_JJ
 sweeping_JJ
 appalling_JJ
@@ -63,6 +64,7 @@ slight_JJ
 tired_JJ
 favorite_JJ
 martian_JJ
+smaller_JJR
 marvelously_JJ
 chief_JJ
 dabney_JJ

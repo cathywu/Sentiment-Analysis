@@ -24,6 +24,7 @@ respectful_JJ
 western_JJ
 foster_JJ
 mature_JJ
+younger_JJR
 foster_JJ
 hypnotic_JJ
 textured_JJ

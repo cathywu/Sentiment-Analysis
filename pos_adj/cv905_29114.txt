@@ -68,3 +68,4 @@ imaginative_JJ
 fast_JJ
 steady_JJ
 contemporary_JJ
+bigger_JJR

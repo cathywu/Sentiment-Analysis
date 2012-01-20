@@ -58,10 +58,12 @@ sensitive_JJ
 great_JJ
 undeveloped_JJ
 internal_JJ
+stronger_JJR
 possible_JJ
 accepted_JJ
 cast_JJ
 sammy_JJ
+better_JJR
 integral_JJ
 supposed_JJ
 sammy_JJ

@@ -30,6 +30,7 @@ happy_JJ
 growing_JJ
 bloody_JJ
 loose_JJ
+bigger_JJR
 talented_JJ
 incredible_JJ
 incredible_JJ

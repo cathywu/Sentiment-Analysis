@@ -16,7 +16,10 @@ responsible_JJ
 wild_JJ
 preferred_JJ
 mischievous_JJ
+better_JJR
+roper_JJR
 tense_JJ
+roper_JJR
 confused_JJ
 unkempt_JJ
 young_JJ
@@ -32,8 +35,11 @@ significant_JJ
 other_JJ
 good_JJ
 new_JJ
+roper_JJR
 little_JJ
 insignificant_JJ
+roper_JJR
+roper_JJR
 nice_JJ
 maturing_JJ
 new_JJ
@@ -47,10 +53,12 @@ classic_JJ
 old_JJ
 physical_JJ
 arrogant_JJ
+longer_JJR
 good_JJ
 other_JJ
 great_JJ
 maturing_JJ
+later_JJR
 growing_JJ
 buddy_JJ
 dry_JJ

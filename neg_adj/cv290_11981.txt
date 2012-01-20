@@ -32,4 +32,5 @@ hefty_JJ
 muresan_JJ
 pathetic_JJ
 proven_JJ
+funnier_JJR
 formulaic_JJ

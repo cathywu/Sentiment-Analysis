@@ -5,6 +5,7 @@ huge_JJ
 reminiscent_JJ
 general_JJ
 american_JJ
+larger_JJR
 entertaining_JJ
 contrived_JJ
 big_JJ
@@ -57,6 +58,7 @@ morose_JJ
 bitter_JJ
 accurate_JJ
 difficult_JJ
+richer_JJR
 fast_JJ
 terrific_JJ
 vibrant_JJ

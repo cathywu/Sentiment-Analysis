@@ -21,6 +21,7 @@ wondrous_JJ
 fine_JJ
 supporting_JJ
 loving_JJ
+better_JJR
 crazy_JJ
 impressive_JJ
 burning_JJ

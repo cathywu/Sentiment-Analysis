@@ -15,6 +15,7 @@ private_JJ
 detailed_JJ
 young_JJ
 other_JJ
+paratrooper_JJR
 hellish_JJ
 great_JJ
 savage_JJ
@@ -45,6 +46,7 @@ relentless_JJ
 private_JJ
 private_JJ
 realistic_JJ
+better_JJR
 realistic_JJ
 realistic_JJ
 particular_JJ
@@ -59,6 +61,7 @@ little_JJ
 inexplicable_JJ
 due_JJ
 intense_JJ
+bigger_JJR
 afraid_JJ
 clear_JJ
 emotional_JJ

@@ -15,6 +15,7 @@ other_JJ
 ridiculous_JJ
 countless_JJ
 other_JJ
+better_JJR
 other_JJ
 all-time_JJ
 favorite_JJ
@@ -34,13 +35,16 @@ supposed_JJ
 upset_JJ
 deep_JJ
 extreme_JJ
+worse_JJR
 real_JJ
 emotional_JJ
 supposed_JJ
+smarter_JJR
 translucent_JJ
 conehead_JJ
 kitty-faced_JJ
 cartoonish_JJ
+worse_JJR
 brief_JJ
 late_JJ
 early_JJ
@@ -50,3 +54,5 @@ quick_JJ
 sure_JJ
 huge_JJ
 red_JJ
+better_JJR
+worse_JJR

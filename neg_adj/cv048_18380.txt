@@ -24,6 +24,8 @@ tolerable_JJ
 tough_JJ
 orthodox_JJ
 jewish_JJ
+better_JJR
+worse_JJR
 formulaic_JJ
 red_JJ
 italian_JJ

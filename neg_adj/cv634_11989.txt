@@ -50,6 +50,7 @@ melodramatic_JJ
 powerful_JJ
 romantic_JJ
 philosophical_JJ
+longer_JJR
 cheap_JJ
 happy-go-lucky_JJ
 fallen_JJ

@@ -1,4 +1,5 @@
 heavily-hyped_JJ
+better_JJR
 central_JJ
 teenage_JJ
 common_JJ
@@ -29,6 +30,7 @@ high_JJ
 successful_JJ
 inevitable_JJ
 refreshing_JJ
+better_JJR
 recognizable_JJ
 polar_JJ
 opposite_JJ

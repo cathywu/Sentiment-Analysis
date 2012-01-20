@@ -3,6 +3,7 @@ transcended_JJ
 commercial_JJ
 critical_JJ
 limited_JJ
+greater_JJR
 late_JJ
 sad_JJ
 live_JJ

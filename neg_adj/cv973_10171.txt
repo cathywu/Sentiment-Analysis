@@ -14,6 +14,7 @@ cold_JJ
 hearted_JJ
 contradictory_JJ
 new_JJ
+longer_JJR
 dark_JJ
 adoptive_JJ
 vain_JJ
@@ -27,14 +28,17 @@ reserved_JJ
 charismatic_JJ
 batman_JJ
 believable_JJ
+later_JJR
 related_JJ
 traditional_JJ
 rising_JJ
 good_JJ
+better_JJR
 talented_JJ
 young_JJ
 commercial_JJ
 rediculous_JJ
+taller_JJR
 unbelievable_JJ
 ludicrous_JJ
 growing_JJ

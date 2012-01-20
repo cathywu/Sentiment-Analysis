@@ -16,6 +16,7 @@ formulaic_JJ
 romantic_JJ
 unpromising_JJ
 directorial_JJ
+worse_JJR
 funny_JJ
 juvenile_JJ
 appealing_JJ
@@ -42,6 +43,7 @@ blind_JJ
 shy_JJ
 rocky_JJ
 awkward_JJ
+worse_JJR
 swanky_JJ
 quiet_JJ
 one-hundred_JJ
@@ -62,3 +64,4 @@ broken_JJ
 added_JJ
 enjoyable_JJ
 unintentional_JJ
+better_JJR

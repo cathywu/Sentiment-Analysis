@@ -8,6 +8,7 @@ broad_JJ
 sometime_JJ
 high_JJ
 rich_JJ
+casper_JJR
 dizzy_JJ
 dizzy_JJ
 military_JJ
@@ -18,6 +19,7 @@ intertwining_JJ
 romantic_JJ
 one-dimensional_JJ
 trite_JJ
+better_JJR
 one-dimensional_JJ
 trite_JJ
 different_JJ

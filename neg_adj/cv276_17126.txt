@@ -44,6 +44,7 @@ other_JJ
 other_JJ
 other_JJ
 final_JJ
+longer_JJR
 able_JJ
 other_JJ
 awful_JJ
@@ -59,5 +60,6 @@ wooden_JJ
 interacting_JJ
 great_JJ
 capable_JJ
+better_JJR
 capable_JJ
 american_JJ

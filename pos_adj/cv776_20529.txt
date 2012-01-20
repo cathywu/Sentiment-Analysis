@@ -21,6 +21,7 @@ terrific_JJ
 visual_JJ
 confused_JJ
 strange_JJ
+further_JJR
 stunning_JJ
 bright_JJ
 slow_JJ
@@ -43,4 +44,6 @@ human_JJ
 easy_JJ
 dark_JJ
 compelling_JJ
+stronger_JJR
+better_JJR
 free_JJ

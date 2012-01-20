@@ -60,6 +60,7 @@ dusty_JJ
 opposite_JJ
 poignant_JJ
 face-to-face_JJ
+younger_JJR
 ugly_JJ
 old_JJ
 reignited_JJ

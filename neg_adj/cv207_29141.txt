@@ -14,6 +14,7 @@ concerned_JJ
 fair_JJ
 original_JJ
 bad_JJ
+worse_JJR
 lurid_JJ
 wary_JJ
 local_JJ

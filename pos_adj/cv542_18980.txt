@@ -5,6 +5,7 @@ beautiful_JJ
 ugly_JJ
 obnoxious_JJ
 beautiful_JJ
+finer_JJR
 lucky_JJ
 beautiful_JJ
 new_JJ

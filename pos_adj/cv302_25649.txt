@@ -1,6 +1,7 @@
 aggressive_JJ
 bleak_JJ
 interracial_JJ
+later_JJR
 thuggish_JJ
 nazi_JJ
 horrible_JJ

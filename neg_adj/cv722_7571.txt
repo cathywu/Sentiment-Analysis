@@ -4,6 +4,7 @@ high_JJ
 disgruntled_JJ
 pedagogical_JJ
 fake_JJ
+higher_JJR
 high_JJ
 certain_JJ
 whole_JJ
@@ -26,6 +27,7 @@ boring_JJ
 short_JJ
 actual_JJ
 pretty_JJ
+bigger_JJR
 foul_JJ
 flying_JJ
 creaky_JJ

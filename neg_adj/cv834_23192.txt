@@ -16,6 +16,7 @@ even_JJ
 wrong_JJ
 nonexistent_JJ
 alcoholic_JJ
+older_JJR
 self-titled_JJ
 maddy_JJ
 maddy_JJ
@@ -40,15 +41,18 @@ impending_JJ
 other_JJ
 playful_JJ
 versatile_JJ
+further_JJR
 various_JJ
 romantic_JJ
 high-profile_JJ
 good_JJ
 drunken_JJ
 effective_JJ
+better_JJR
 feeble_JJ
 little_JJ
 far-fetched_JJ
+older_JJR
 brief_JJ
 senior_JJ
 poor_JJ

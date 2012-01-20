@@ -20,6 +20,7 @@ catholic_JJ
 dead_JJ
 new_JJ
 stigmata_JJ
+worse_JJR
 good_JJ
 interesting_JJ
 sure_JJ
@@ -58,6 +59,7 @@ religious_JJ
 silly_JJ
 dramatic_JJ
 pretty_JJ
+worse_JJR
 dull_JJ
 loud_JJ
 incomprehensible_JJ

@@ -17,6 +17,7 @@ wealthy_JJ
 lower-class_JJ
 good_JJ
 poor_JJ
+later_JJR
 mysterious_JJ
 beautiful_JJ
 eager_JJ
@@ -29,6 +30,7 @@ bad_JJ
 other_JJ
 kindly_JJ
 sweet_JJ
+worse_JJR
 nasty_JJ
 cold_JJ
 freezing_JJ
@@ -38,6 +40,7 @@ able_JJ
 fateful_JJ
 delightful_JJ
 sure_JJ
+older_JJR
 sophisticated_JJ
 surprised_JJ
 other_JJ
@@ -59,6 +62,8 @@ adorable_JJ
 young_JJ
 whole_JJ
 madyline_JJ
+younger_JJR
+older_JJR
 good_JJ
 ideal_JJ
 charming_JJ
@@ -79,6 +84,7 @@ special_JJ
 commercial_JJ
 delightful_JJ
 generous_JJ
+better_JJR
 appealing_JJ
 young_JJ
 other_JJ
@@ -100,12 +106,14 @@ other_JJ
 then_JJ
 bad_JJ
 sure_JJ
+better_JJR
 other_JJ
 good_JJ
 low-key_JJ
 touching_JJ
 looking_JJ
 family-style_JJ
+further_JJR
 charming_JJ
 big_JJ
 long_JJ

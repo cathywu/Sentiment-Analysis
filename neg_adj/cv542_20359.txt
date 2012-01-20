@@ -30,6 +30,7 @@ entire_JJ
 confused_JJ
 threatened_JJ
 elevate_JJ
+greater_JJR
 other_JJ
 real_JJ
 little_JJ

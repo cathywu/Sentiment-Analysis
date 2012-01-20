@@ -42,6 +42,7 @@ personal_JJ
 upper_JJ
 actual_JJ
 main_JJ
+harder_JJR
 wry_JJ
 real_JJ
 intercut_JJ

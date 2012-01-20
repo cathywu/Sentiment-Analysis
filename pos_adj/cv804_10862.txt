@@ -25,6 +25,7 @@ poor_JJ
 albanian_JJ
 different_JJ
 computer-enhanced_JJ
+later_JJR
 ordinary_JJ
 smart_JJ
 funny_JJ

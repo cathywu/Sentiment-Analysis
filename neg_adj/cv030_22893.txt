@@ -11,6 +11,7 @@ various_JJ
 different_JJ
 unsuccessful_JJ
 dull_JJ
+worse_JJR
 social_JJ
 other_JJ
 confusing_JJ

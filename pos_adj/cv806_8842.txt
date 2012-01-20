@@ -21,6 +21,8 @@ basic_JJ
 futuristic_JJ
 real_JJ
 new_JJ
+thicker_JJR
+higher_JJR
 evil_JJ
 fair_JJ
 evil_JJ

@@ -9,6 +9,7 @@ biblical_JJ
 bad_JJ
 special_JJ
 big_JJ
+bigger_JJR
 usual_JJ
 odd_JJ
 impossible_JJ
@@ -18,6 +19,7 @@ impossible_JJ
 unfortunate_JJ
 unavoidable_JJ
 worldwide_JJ
+cheaper_JJR
 thoughtful_JJ
 cheap_JJ
 thoughtless_JJ

@@ -55,6 +55,7 @@ main_JJ
 convincing_JJ
 follow-up_JJ
 real_JJ
+later_JJR
 extraneous_JJ
 bad_JJ
 marvelous_JJ

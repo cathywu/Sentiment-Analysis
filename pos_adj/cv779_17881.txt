@@ -12,6 +12,7 @@ private_JJ
 thin_JJ
 private_JJ
 good_JJ
+better_JJR
 long_JJ
 sure_JJ
 perfect_JJ

@@ -37,6 +37,7 @@ lucky_JJ
 meaty_JJ
 tried_JJ
 little_JJ
+harder_JJR
 pretty_JJ
 decent_JJ
 other_JJ

@@ -36,6 +36,7 @@ greedy_JJ
 lovable_JJ
 big_JJ
 supporting_JJ
+better_JJR
 civil_JJ
 underrated_JJ
 leading_JJ

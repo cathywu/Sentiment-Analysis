@@ -13,6 +13,7 @@ particular_JJ
 decent_JJ
 pale_JJ
 hilarious_JJ
+better_JJR
 loud_JJ
 late_JJ
 early_JJ

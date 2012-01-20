@@ -41,3 +41,4 @@ good_JJ
 scary_JJ
 worrying_JJ
 website_JJ
+better_JJR

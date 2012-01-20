@@ -38,3 +38,4 @@ overall_JJ
 big_JJ
 directed_JJ
 funny_JJ
+better_JJR

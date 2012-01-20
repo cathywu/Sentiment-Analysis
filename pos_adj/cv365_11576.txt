@@ -2,6 +2,7 @@ happy_JJ
 other_JJ
 extra_JJ
 happy_JJ
+funnier_JJR
 genuine_JJ
 emotional_JJ
 irrelevant_JJ

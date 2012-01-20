@@ -3,6 +3,7 @@ glad_JJ
 avid_JJ
 two-hour_JJ
 special_JJ
+thicker_JJR
 satisfying_JJ
 terrific_JJ
 unfamiliar_JJ
@@ -28,6 +29,7 @@ small_JJ
 minor_JJ
 utilize_JJ
 suspenseful_JJ
+better_JJR
 recent_JJ
 special_JJ
 good_JJ

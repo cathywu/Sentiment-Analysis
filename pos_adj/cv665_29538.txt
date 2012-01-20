@@ -51,5 +51,6 @@ black_JJ
 scary_JJ
 easy_JJ
 visual_JJ
+deeper_JJR
 metaphysical_JJ
 metaphysical_JJ

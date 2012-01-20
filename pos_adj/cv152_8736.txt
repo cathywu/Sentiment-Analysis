@@ -8,6 +8,7 @@ novel_JJ
 american_JJ
 musical_JJ
 western_JJ
+better_JJR
 generous_JJ
 confrontational_JJ
 vicious_JJ

@@ -67,6 +67,7 @@ various_JJ
 strange_JJ
 scary_JJ
 seasoned_JJ
+better_JJR
 cheap_JJ
 unnecessary_JJ
 storyline_JJ

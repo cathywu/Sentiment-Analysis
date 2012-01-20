@@ -1,6 +1,7 @@
 dead_JJ
 heavy_JJ
 obscure_JJ
+worse_JJR
 english_JJ
 french_JJ
 attractive_JJ

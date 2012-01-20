@@ -60,4 +60,5 @@ new_JJ
 british_JJ
 familiar_JJ
 western_JJ
+further_JJR
 high-powered_JJ

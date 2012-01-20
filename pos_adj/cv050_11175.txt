@@ -5,6 +5,7 @@ decked_JJ
 fictional_JJ
 clean-cut_JJ
 silly_JJ
+further_JJR
 quick_JJ
 freshman_JJ
 universal_JJ

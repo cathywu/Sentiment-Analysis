@@ -10,6 +10,7 @@ prolonged_JJ
 vicious_JJ
 pretentious_JJ
 bitter_JJ
+further_JJR
 racial_JJ
 heavy-handed_JJ
 disenfranchised_JJ
@@ -28,6 +29,7 @@ left_JJ
 deserted_JJ
 dead_JJ
 would-be_JJ
+younger_JJR
 dark_JJ
 stylish_JJ
 expensive_JJ

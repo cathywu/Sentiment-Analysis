@@ -35,6 +35,7 @@ encouraging_JJ
 unremarkable_JJ
 consistent_JJ
 energetic_JJ
+quieter_JJR
 successful_JJ
 haughty_JJ
 spare_JJ

@@ -12,6 +12,7 @@ mundane_JJ
 poignant_JJ
 clever_JJ
 therapist_JJ
+easier_JJR
 bored_JJ
 resistant_JJ
 academic_JJ
@@ -58,5 +59,6 @@ formulaic_JJ
 supposed_JJ
 emotional_JJ
 good_JJ
+better_JJR
 personal_JJ
 right_JJ

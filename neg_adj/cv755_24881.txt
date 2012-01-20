@@ -48,6 +48,8 @@ upper-class_JJ
 snooty_JJ
 bureaucratic_JJ
 scary_JJ
+better_JJR
+better_JJR
 dumb_JJ
 good_JJ
 entertaining_JJ

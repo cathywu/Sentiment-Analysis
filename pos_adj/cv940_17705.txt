@@ -19,6 +19,7 @@ early_JJ
 exciting_JJ
 unassuming_JJ
 right_JJ
+longer_JJR
 negative_JJ
 little_JJ
 trampled_JJ

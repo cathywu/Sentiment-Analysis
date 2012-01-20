@@ -8,6 +8,7 @@ late_JJ
 intelligent_JJ
 solar_JJ
 long-distance_JJ
+younger_JJR
 powerful_JJ
 extra_JJ
 terrestrial_JJ

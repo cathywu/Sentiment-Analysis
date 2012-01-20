@@ -4,6 +4,7 @@ good_JJ
 old_JJ
 wrong_JJ
 even_JJ
+longer_JJR
 human_JJ
 great_JJ
 simple_JJ
@@ -50,8 +51,10 @@ low-angle_JJ
 similar_JJ
 effective_JJ
 previous_JJ
+better_JJR
 complex_JJ
 short_JJ
+further_JJR
 graceful_JJ
 stamping_JJ
 selfish_JJ
@@ -90,6 +93,7 @@ great_JJ
 old_JJ
 high_JJ
 cruel_JJ
+further_JJR
 brilliant_JJ
 contemporary_JJ
 wonderful_JJ

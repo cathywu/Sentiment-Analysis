@@ -21,6 +21,7 @@ alive_JJ
 leading_JJ
 great_JJ
 special_JJ
+better_JJR
 special_JJ
 great_JJ
 tough_JJ

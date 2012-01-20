@@ -28,6 +28,7 @@ simple_JJ
 national_JJ
 directorial_JJ
 fair_JJ
+better_JJR
 known_JJ
 lean_JJ
 decent_JJ
@@ -35,6 +36,7 @@ historical_JJ
 new_JJ
 refreshing_JJ
 noticeable_JJ
+older_JJR
 medieval_JJ
 picturesque_JJ
 splendid_JJ
@@ -58,6 +60,7 @@ sensitive_JJ
 different_JJ
 previous_JJ
 historical_JJ
+larger_JJR
 mythical_JJ
 superhuman_JJ
 late_JJ
@@ -84,6 +87,7 @@ evil_JJ
 medieval_JJ
 effective_JJ
 contemporary_JJ
+later_JJR
 famous_JJ
 general_JJ
 good_JJ
@@ -130,6 +134,7 @@ fashionable_JJ
 various_JJ
 national_JJ
 oppressed_JJ
+better_JJR
 national_JJ
 radical_JJ
 willing_JJ

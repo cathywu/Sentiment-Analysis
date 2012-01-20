@@ -11,6 +11,7 @@ asian_JJ
 rival_JJ
 chinese_JJ
 black_JJ
+further_JJR
 respective_JJ
 dead_JJ
 exact_JJ

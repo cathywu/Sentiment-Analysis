@@ -27,6 +27,7 @@ memorable_JJ
 successful_JJ
 psychotic_JJ
 awful_JJ
+larger_JJR
 bad_JJ
 punchline_JJ
 inane_JJ
@@ -42,6 +43,7 @@ brain-dead_JJ
 right_JJ
 sorry_JJ
 overdone_JJ
+better_JJR
 exaggerated_JJ
 funny_JJ
 obvious_JJ

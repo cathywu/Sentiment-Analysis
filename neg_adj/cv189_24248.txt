@@ -36,6 +36,7 @@ mysterious_JJ
 surprising_JJ
 hard_JJ
 lost_JJ
+better_JJR
 american_JJ
 classic_JJ
 other_JJ

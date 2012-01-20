@@ -25,6 +25,7 @@ plausible_JJ
 cold_JJ
 sure_JJ
 nice_JJ
+greater_JJR
 original_JJ
 little_JJ
 tacked_JJ

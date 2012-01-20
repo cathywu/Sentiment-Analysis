@@ -11,6 +11,7 @@ exalted_JJ
 unable_JJ
 growing_JJ
 horrifying_JJ
+longer_JJR
 powerless_JJ
 quiet_JJ
 stationary_JJ
@@ -25,6 +26,7 @@ angry_JJ
 short_JJ
 vulnerable_JJ
 powerless_JJ
+greater_JJR
 unjustifiable_JJ
 behavior_JJ
 left_JJ

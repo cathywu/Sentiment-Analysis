@@ -58,6 +58,7 @@ solemn_JJ
 proverb_JJ
 mere_JJ
 potential_JJ
+larger_JJR
 true_JJ
 natural_JJ
 generalized_JJ

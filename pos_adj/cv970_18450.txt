@@ -46,6 +46,7 @@ mechanical_JJ
 phantom_JJ
 hour-long_JJ
 central_JJ
+smaller_JJR
 extraneous_JJ
 other_JJ
 integral_JJ
@@ -55,6 +56,7 @@ central_JJ
 tight_JJ
 given_JJ
 phantom_JJ
+stronger_JJR
 bright_JJ
 phantom_JJ
 whimsical_JJ

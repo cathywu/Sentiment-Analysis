@@ -13,7 +13,9 @@ bad_JJ
 wrong_JJ
 desperate_JJ
 enticing_JJ
+better_JJR
 single_JJ
+worse_JJR
 only_JJ
 compatible_JJ
 violent_JJ

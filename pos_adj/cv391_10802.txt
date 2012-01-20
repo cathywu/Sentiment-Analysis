@@ -89,6 +89,7 @@ known_JJ
 teenage_JJ
 deniro-like_JJ
 capable_JJ
+bigger_JJR
 pretty_JJ
 intriguing_JJ
 bizarre_JJ

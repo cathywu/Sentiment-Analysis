@@ -18,6 +18,7 @@ stupid_JJ
 boring_JJ
 absolute_JJ
 various_JJ
+funnier_JJR
 complete_JJ
 real_JJ
 public_JJ

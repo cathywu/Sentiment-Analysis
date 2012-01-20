@@ -52,6 +52,7 @@ other_JJ
 dry_JJ
 unrecognizable_JJ
 exceptional_JJ
+younger_JJR
 enamoured_JJ
 well_JJ
 scrappy_JJ

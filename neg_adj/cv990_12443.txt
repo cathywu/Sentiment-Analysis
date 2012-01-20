@@ -18,6 +18,7 @@ interesting_JJ
 nice_JJ
 certain_JJ
 specific_JJ
+better_JJR
 good_JJ
 experienced_JJ
 new_JJ

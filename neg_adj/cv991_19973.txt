@@ -49,6 +49,7 @@ animated_JJ
 animated_JJ
 favorite_JJ
 animated_JJ
+easier_JJR
 winning_JJ
 magical_JJ
 interesting_JJ

@@ -3,6 +3,7 @@ personal_JJ
 wise_JJ
 great_JJ
 proven_JJ
+bigger_JJR
 ordinary_JJ
 successful_JJ
 dazzling_JJ

@@ -51,6 +51,7 @@ stupid_JJ
 stupid_JJ
 underground_JJ
 even_JJ
+worse_JJR
 secondary_JJ
 bad_JJ
 good_JJ

@@ -34,8 +34,11 @@ open_JJ
 scrabble_JJ
 faithful_JJ
 unperturbed_JJ
+further_JJR
 southern_JJ
+funnier_JJR
 enjoyable_JJ
+darker_JJR
 disturbing_JJ
 overrated_JJ
 slight_JJ

@@ -1,3 +1,4 @@
+older_JJR
 shared_JJ
 possible_JJ
 fascinating_JJ
@@ -11,6 +12,7 @@ drunk_JJ
 reese_JJ
 prime_JJ
 odd_JJ
+worse_JJR
 dying_JJ
 live_JJ
 exciting_JJ
@@ -41,6 +43,7 @@ clean_JJ
 desperate_JJ
 low-key_JJ
 believable_JJ
+older_JJR
 one-dimensional_JJ
 old_JJ
 buddy_JJ
@@ -55,7 +58,11 @@ hopeless_JJ
 only_JJ
 towering_JJ
 supposed_JJ
+better_JJR
 second-rate_JJ
 second-rate_JJ
+better_JJR
+better_JJR
 little_JJ
+nicer_JJR
 different_JJ

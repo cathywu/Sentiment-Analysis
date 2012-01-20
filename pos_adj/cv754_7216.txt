@@ -5,6 +5,7 @@ czech_JJ
 five-year_JJ
 old_JJ
 high_JJ
+higher_JJR
 comparable_JJ
 american_JJ
 golden_JJ

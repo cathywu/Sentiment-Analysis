@@ -10,6 +10,7 @@ large_JJ
 infatuated_JJ
 tall_JJ
 handsome_JJ
+younger_JJR
 dirty_JJ
 old_JJ
 young_JJ

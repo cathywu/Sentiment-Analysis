@@ -4,8 +4,10 @@ memorable_JJ
 slow_JJ
 local_JJ
 obvious_JJ
+better_JJR
 then_JJ
 old_JJ
 capable_JJ
+better_JJR
 excellent_JJ
 good_JJ

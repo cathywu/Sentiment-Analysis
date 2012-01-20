@@ -11,6 +11,7 @@ incredible_JJ
 very_JJ
 british_JJ
 supporting_JJ
+smaller_JJR
 close_JJ
 good_JJ
 close_JJ
@@ -25,5 +26,6 @@ infamous_JJ
 recut_JJ
 whole_JJ
 piggy_JJ
+better_JJR
 certain_JJ
 great_JJ

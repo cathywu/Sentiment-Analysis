@@ -52,10 +52,12 @@ grand_JJ
 countercultural_JJ
 fortunate_JJ
 able_JJ
+better_JJR
 easy_JJ
 easy_JJ
 only_JJ
 innocent_JJ
+older_JJR
 splendid_JJ
 vacuous_JJ
 gorgeous_JJ
@@ -74,6 +76,7 @@ single_JJ
 vibrant_JJ
 mystical_JJ
 deep_JJ
+better_JJR
 hashish_JJ
 assured_JJ
 mystical_JJ
@@ -84,6 +87,7 @@ little_JJ
 precocious_JJ
 lovable_JJ
 key_JJ
+longer_JJR
 freudian_JJ
 sudden_JJ
 right_JJ

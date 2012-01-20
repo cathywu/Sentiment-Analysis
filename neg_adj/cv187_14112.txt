@@ -1,6 +1,7 @@
 dull_JJ
 uninspired_JJ
 boring_JJ
+greater_JJR
 lyrical_JJ
 flowing_JJ
 lovely_JJ
@@ -63,6 +64,7 @@ energetic_JJ
 talented_JJ
 young_JJ
 endearing_JJ
+deeper_JJR
 cardboard_JJ
 sheer_JJ
 good_JJ

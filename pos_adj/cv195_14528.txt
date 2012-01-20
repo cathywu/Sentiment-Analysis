@@ -15,6 +15,7 @@ multiple_JJ
 dark_JJ
 realistic_JJ
 tense_JJ
+better_JJR
 outstanding_JJ
 ex-spy_JJ
 shady_JJ

@@ -6,8 +6,10 @@ obsessive_JJ
 unavoidable_JJ
 lost_JJ
 sacrilegious_JJ
+better_JJR
 sinuous_JJ
 original_JJ
+older_JJR
 written_JJ
 dreadful_JJ
 major_JJ

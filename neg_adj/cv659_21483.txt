@@ -31,6 +31,7 @@ minor_JJ
 willing_JJ
 wacky_JJ
 acknowledged_JJ
+better_JJR
 shallow_JJ
 materialistic_JJ
 draconian_JJ
@@ -50,6 +51,7 @@ randy_JJ
 affectionate_JJ
 impossible_JJ
 live_JJ
+better_JJR
 funny_JJ
 sweet_JJ
 foregone_JJ

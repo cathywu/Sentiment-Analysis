@@ -21,6 +21,7 @@ emotional_JJ
 funny_JJ
 close_JJ
 embarrassing_JJ
+better_JJR
 off_JJ
 fine_JJ
 comedian_JJ

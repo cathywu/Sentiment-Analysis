@@ -42,3 +42,4 @@ funny_JJ
 promising_JJ
 associate_JJ
 senseless_JJ
+older_JJR

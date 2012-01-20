@@ -27,6 +27,7 @@ other_JJ
 fell_JJ
 wet_JJ
 evil_JJ
+better_JJR
 inevitable_JJ
 other_JJ
 evil_JJ

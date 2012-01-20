@@ -7,6 +7,7 @@ notorious_JJ
 banal_JJ
 american_JJ
 charasmatic_JJ
+younger_JJR
 trusty_JJ
 civil_JJ
 occupying_JJ

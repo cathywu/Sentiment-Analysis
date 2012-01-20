@@ -7,6 +7,7 @@ young_JJ
 young_JJ
 black_JJ
 entertaining_JJ
+deeper_JJR
 zany_JJ
 special_JJ
 hard_JJ

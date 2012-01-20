@@ -32,6 +32,7 @@ old_JJ
 high-priced_JJ
 endless_JJ
 lovely_JJ
+later_JJR
 hot_JJ
 unable_JJ
 reliable_JJ

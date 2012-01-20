@@ -34,10 +34,12 @@ poor_JJ
 poor_JJ
 shining_JJ
 all-out_JJ
+further_JJR
 great_JJ
 sick_JJ
 bad_JJ
 asleep_JJ
+better_JJR
 known_JJ
 turned_JJ
 welcome_JJ
@@ -51,4 +53,5 @@ manchurian_JJ
 general_JJ
 good_JJ
 original_JJ
+younger_JJR
 purple_JJ

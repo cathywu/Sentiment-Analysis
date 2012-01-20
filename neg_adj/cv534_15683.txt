@@ -18,6 +18,7 @@ fun_JJ
 different_JJ
 protracted_JJ
 cliched_JJ
+older_JJR
 struggling_JJ
 awake_JJ
 plotline_JJ

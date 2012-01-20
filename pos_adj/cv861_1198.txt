@@ -20,6 +20,7 @@ plain_JJ
 sincere_JJ
 perfect_JJ
 little_JJ
+faster_JJR
 good_JJ
 big_JJ
 big_JJ

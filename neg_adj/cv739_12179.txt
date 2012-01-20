@@ -37,3 +37,4 @@ bearable_JJ
 spanish_JJ
 english_JJ
 acceptable_JJ
+older_JJR

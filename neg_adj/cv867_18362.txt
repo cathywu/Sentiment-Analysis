@@ -38,7 +38,9 @@ honest_JJ
 real_JJ
 little_JJ
 uninteresting_JJ
+worse_JJR
 real_JJ
+better_JJR
 interesting_JJ
 different_JJ
 impressive_JJ
@@ -61,3 +63,4 @@ melancholic_JJ
 political_JJ
 bad_JJ
 unpleasant_JJ
+better_JJR

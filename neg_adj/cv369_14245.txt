@@ -30,6 +30,7 @@ roman_JJ
 pathetic_JJ
 true_JJ
 laughable_JJ
+worse_JJR
 usual_JJ
 early_JJ
 funny_JJ

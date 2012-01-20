@@ -25,6 +25,7 @@ uncanny_JJ
 everyday_JJ
 growing_JJ
 old_JJ
+longer_JJR
 new_JJ
 horrible_JJ
 new_JJ
@@ -39,9 +40,11 @@ controlling_JJ
 grand_JJ
 poetic_JJ
 good_JJ
+shorter_JJR
 elegant_JJ
 palpable_JJ
 sheer_JJ
+further_JJR
 natural_JJ
 born_JJ
 new_JJ
@@ -86,4 +89,5 @@ moving_JJ
 erotic_JJ
 sweaty_JJ
 grinding_JJ
+longer_JJR
 melodramatic_JJ

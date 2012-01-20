@@ -44,6 +44,7 @@ empty_JJ
 glam_JJ
 bizarre_JJ
 admirable_JJ
+worse_JJR
 stoned_JJ
 apathetic_JJ
 critical_JJ
@@ -58,4 +59,5 @@ regretful_JJ
 chemically-induced_JJ
 addictive_JJ
 vegas-style_JJ
+higher_JJR
 sure_JJ

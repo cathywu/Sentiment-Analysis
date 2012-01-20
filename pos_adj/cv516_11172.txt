@@ -14,6 +14,7 @@ high_JJ
 ready_JJ
 armed_JJ
 whole_JJ
+casper_JJR
 ready_JJ
 dizzy_JJ
 possible_JJ

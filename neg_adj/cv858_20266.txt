@@ -6,6 +6,7 @@ particular_JJ
 different_JJ
 small_JJ
 little_JJ
+smaller_JJR
 particular_JJ
 pretty_JJ
 angry_JJ

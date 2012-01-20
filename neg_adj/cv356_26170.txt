@@ -6,6 +6,7 @@ flawed_JJ
 entertaining_JJ
 unofficial_JJ
 dreadful_JJ
+brighter_JJR
 dubious_JJ
 overpraised_JJ
 new_JJ
@@ -84,6 +85,7 @@ opposing_JJ
 mainstream_JJ
 female_JJ
 flat_JJ
+closer_JJR
 imaginary_JJ
 exact_JJ
 kinnear_JJ

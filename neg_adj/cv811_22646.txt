@@ -22,6 +22,7 @@ participating_JJ
 strange_JJ
 original_JJ
 big_JJ
+larger_JJR
 original_JJ
 real_JJ
 special_JJ

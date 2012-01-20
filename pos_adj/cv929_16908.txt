@@ -46,6 +46,7 @@ intriguing_JJ
 shocking_JJ
 great_JJ
 brilliant_JJ
+longer_JJR
 grotesquely_JJ
 obese_JJ
 small_JJ
@@ -75,6 +76,7 @@ unexpected_JJ
 realistic_JJ
 technical_JJ
 unobtrusive_JJ
+better_JJR
 sinister_JJ
 right_JJ
 tough_JJ

@@ -42,6 +42,7 @@ dental_JJ
 important_JJ
 resourceful_JJ
 supposed_JJ
+better_JJR
 functional_JJ
 large_JJ
 story-line_JJ

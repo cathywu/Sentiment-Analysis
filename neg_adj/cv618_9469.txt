@@ -19,6 +19,7 @@ shocking_JJ
 tragic_JJ
 appealing_JJ
 improving_JJ
+better_JJR
 early_JJ
 considerable_JJ
 alien_JJ

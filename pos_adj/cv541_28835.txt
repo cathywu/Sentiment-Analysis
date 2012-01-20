@@ -64,3 +64,4 @@ attractive_JJ
 speaking_JJ
 attractive_JJ
 attracting_JJ
+older_JJR

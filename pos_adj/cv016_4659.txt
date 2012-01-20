@@ -13,6 +13,7 @@ ensuing_JJ
 good_JJ
 little_JJ
 subdued_JJ
+quieter_JJR
 previous_JJ
 usual_JJ
 good_JJ

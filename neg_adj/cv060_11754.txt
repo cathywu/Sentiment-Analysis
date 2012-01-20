@@ -21,6 +21,7 @@ bad_JJ
 great_JJ
 humanitarian_JJ
 little_JJ
+better_JJR
 poor_JJ
 humanitarian_JJ
 squalid_JJ
@@ -32,6 +33,7 @@ different_JJ
 naive_JJ
 american_JJ
 present_JJ
+better_JJR
 pretty_JJ
 bad_JJ
 wrong_JJ
@@ -46,3 +48,4 @@ mysterious_JJ
 damian_JJ
 late_JJ
 small_JJ
+bigger_JJR

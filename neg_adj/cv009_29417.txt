@@ -40,6 +40,7 @@ shoddy_JJ
 banal_JJ
 plentiful_JJ
 hanging_JJ
+older_JJR
 certain_JJ
 boring_JJ
 acting_JJ

@@ -59,6 +59,7 @@ only_JJ
 real_JJ
 beautiful_JJ
 young_JJ
+further_JJR
 new_JJ
 cheerful_JJ
 naive_JJ

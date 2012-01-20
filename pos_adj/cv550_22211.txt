@@ -32,6 +32,7 @@ pretty_JJ
 good_JJ
 reluctant_JJ
 real_JJ
+worse_JJR
 young_JJ
 good_JJ
 acting_JJ
@@ -43,6 +44,7 @@ recycled_JJ
 other_JJ
 impossible_JJ
 pop_JJ
+worse_JJR
 predictable_JJ
 difficult_JJ
 qualified_JJ

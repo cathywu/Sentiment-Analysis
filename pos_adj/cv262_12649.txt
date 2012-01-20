@@ -22,6 +22,7 @@ like_JJ
 other_JJ
 political_JJ
 liberating_JJ
+longer_JJR
 restricted_JJ
 burping_JJ
 generic_JJ

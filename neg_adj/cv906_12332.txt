@@ -1,4 +1,5 @@
 hard_JJ
+harder_JJR
 troubled_JJ
 whole_JJ
 smart_JJ
@@ -22,6 +23,7 @@ depressed_JJ
 extra_JJ
 good_JJ
 new_JJ
+better_JJR
 popcorn_JJ
 happy_JJ
 hard_JJ

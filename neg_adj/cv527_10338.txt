@@ -49,6 +49,7 @@ likable_JJ
 mighty_JJ
 aphrodite_JJ
 different--black_JJ
+brighter_JJR
 previous_JJ
 complete_JJ
 elaborate_JJ

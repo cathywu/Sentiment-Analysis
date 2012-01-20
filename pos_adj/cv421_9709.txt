@@ -42,6 +42,7 @@ short_JJ
 immediate_JJ
 gory_JJ
 funny_JJ
+casper_JJR
 interested_JJ
 classmate_JJ
 dizzy_JJ
@@ -53,6 +54,7 @@ certain_JJ
 psychic_JJ
 mobile_JJ
 main_JJ
+better_JJR
 special_JJ
 funny_JJ
 hard_JJ
@@ -74,6 +76,7 @@ beautiful_JJ
 superficial_JJ
 successful_JJ
 clear_JJ
+casper_JJR
 chiseled_JJ
 facial_JJ
 tan_JJ

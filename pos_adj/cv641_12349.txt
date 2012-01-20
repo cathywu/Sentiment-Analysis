@@ -21,6 +21,7 @@ eager_JJ
 young_JJ
 medical_JJ
 good_JJ
+deeper_JJR
 other_JJ
 rational_JJ
 young_JJ

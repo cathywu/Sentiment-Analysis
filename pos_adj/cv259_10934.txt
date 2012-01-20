@@ -26,6 +26,7 @@ failed_JJ
 only_JJ
 new_JJ
 repetitive_JJ
+slower_JJR
 little_JJ
 large_JJ
 interesting_JJ
@@ -38,5 +39,6 @@ ordinary_JJ
 good_JJ
 entertaining_JJ
 classic_JJ
+better_JJR
 little_JJ
 reverse_JJ

@@ -13,6 +13,7 @@ only_JJ
 would-be_JJ
 young_JJ
 other_JJ
+older_JJR
 dark_JJ
 jolly_JJ
 wrong_JJ

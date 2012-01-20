@@ -31,5 +31,7 @@ inspired_JJ
 needless_JJ
 disturbing_JJ
 lovely_JJ
+easier_JJR
 new_JJ
 revealing_JJ
+better_JJR

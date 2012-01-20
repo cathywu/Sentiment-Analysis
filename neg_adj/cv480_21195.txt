@@ -23,6 +23,7 @@ previous_JJ
 slim_JJ
 brilliant_JJ
 young_JJ
+longer_JJR
 capable_JJ
 unique_JJ
 extraordinary_JJ
@@ -56,3 +57,4 @@ different_JJ
 mean_JJ
 bizarre_JJ
 sure_JJ
+stronger_JJR

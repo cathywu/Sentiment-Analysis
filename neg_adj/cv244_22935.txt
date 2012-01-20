@@ -79,3 +79,4 @@ supposed_JJ
 steaming_JJ
 unholy_JJ
 similar_JJ
+funnier_JJR

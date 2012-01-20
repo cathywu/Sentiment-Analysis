@@ -5,6 +5,7 @@ whole_JJ
 whole_JJ
 levine_JJ
 old_JJ
+further_JJR
 large_JJ
 attacking_JJ
 green_JJ
@@ -15,6 +16,7 @@ funny_JJ
 funny_JJ
 useless_JJ
 good_JJ
+funnier_JJR
 american_JJ
 amusing_JJ
 beautiful_JJ

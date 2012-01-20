@@ -59,6 +59,7 @@ impressive_JJ
 hollow_JJ
 good_JJ
 decent_JJ
+better_JJR
 true_JJ
 scary_JJ
 stupid_JJ

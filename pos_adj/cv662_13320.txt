@@ -34,6 +34,7 @@ christian_JJ
 extra_JJ
 full_JJ
 non-linear_JJ
+earlier_JJR
 smooth_JJ
 calculated_JJ
 entire_JJ

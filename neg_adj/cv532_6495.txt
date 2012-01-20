@@ -1,3 +1,4 @@
+older_JJR
 able_JJ
 lemmon_JJ
 ing_JJ
@@ -15,6 +16,7 @@ applauding_JJ
 atrocious_JJ
 tiresome_JJ
 terrible_JJ
+worse_JJR
 lemmon_JJ
 funny_JJ
 marching_JJ

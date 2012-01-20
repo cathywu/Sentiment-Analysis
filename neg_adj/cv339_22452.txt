@@ -13,6 +13,7 @@ bad_JJ
 bad_JJ
 entertaining_JJ
 haunted_JJ
+better_JJR
 recent_JJ
 haunted_JJ
 classic_JJ
@@ -42,3 +43,6 @@ standard_JJ
 haunted_JJ
 left_JJ
 second-run_JJ
+better_JJR
+better_JJR
+better_JJR

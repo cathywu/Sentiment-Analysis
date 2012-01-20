@@ -9,9 +9,11 @@ unreleased_JJ
 able_JJ
 young_JJ
 happy_JJ
+better_JJR
 stupid_JJ
 mechanical_JJ
 remote_JJ
+worse_JJR
 psychopathic_JJ
 full_JJ
 entire_JJ
@@ -21,5 +23,6 @@ wrong_JJ
 remote_JJ
 bad_JJ
 bad_JJ
+worse_JJR
 good_JJ
 acting_JJ

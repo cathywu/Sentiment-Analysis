@@ -10,6 +10,7 @@ depressed_JJ
 recent_JJ
 haunted_JJ
 terrible_JJ
+better_JJR
 only_JJ
 happy_JJ
 favorite_JJ
@@ -34,8 +35,10 @@ flawed_JJ
 interesting_JJ
 original_JJ
 subtle_JJ
+older_JJR
 great_JJ
 brilliant_JJ
+better_JJR
 humanistic_JJ
 surprised_JJ
 sympathetic_JJ

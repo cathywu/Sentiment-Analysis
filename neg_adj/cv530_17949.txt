@@ -31,6 +31,7 @@ spectacular_JJ
 fascinating_JJ
 other_JJ
 flat_JJ
+worse_JJR
 minor_JJ
 unnecessary_JJ
 irritating_JJ

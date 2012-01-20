@@ -25,6 +25,7 @@ lax_JJ
 buddy_JJ
 high_JJ
 relic_JJ
+worse_JJR
 even_JJ
 live_JJ
 shaky_JJ

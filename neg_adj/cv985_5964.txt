@@ -21,6 +21,7 @@ main_JJ
 able_JJ
 very_JJ
 believeable_JJ
+better_JJR
 boring_JJ
 real_JJ
 fine_JJ

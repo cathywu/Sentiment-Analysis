@@ -13,6 +13,7 @@ possible_JJ
 great_JJ
 questionable_JJ
 questionable_JJ
+better_JJR
 good_JJ
 well-constructed_JJ
 unpublished_JJ
@@ -64,6 +65,7 @@ sure_JJ
 late_JJ
 secure_JJ
 bad_JJ
+worse_JJR
 familiar_JJ
 apparent_JJ
 crucial_JJ
@@ -79,6 +81,8 @@ ubiquitous_JJ
 clever_JJ
 mere_JJ
 mortal_JJ
+better_JJR
+worse_JJR
 countless_JJ
 existential_JJ
 successful_JJ

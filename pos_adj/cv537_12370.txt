@@ -18,6 +18,7 @@ personal_JJ
 ambitious_JJ
 distraught_JJ
 maximilian_JJ
+younger_JJR
 snicker-worthy_JJ
 paramount_JJ
 high-profile_JJ
@@ -34,6 +35,7 @@ twofold_JJ
 heavy-handed_JJ
 melodramatic_JJ
 numerous_JJ
+better_JJR
 fit_JJ
 rubin_JJ
 formulaic_JJ

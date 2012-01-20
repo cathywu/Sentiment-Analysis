@@ -79,6 +79,7 @@ interesting_JJ
 distinctive_JJ
 inner_JJ
 superficial_JJ
+deeper_JJR
 political_JJ
 free_JJ
 touching_JJ

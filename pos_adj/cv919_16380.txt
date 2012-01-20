@@ -1,8 +1,10 @@
 american_JJ
 postapocalyptic_JJ
+better_JJR
 western_JJ
 peaceful_JJ
 familiar_JJ
+greater_JJR
 american_JJ
 due_JJ
 isolated_JJ

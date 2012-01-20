@@ -23,6 +23,7 @@ old_JJ
 sure_JJ
 nice_JJ
 long_JJ
+worse_JJR
 broad_JJ
 bad_JJ
 maximum_JJ

@@ -50,3 +50,5 @@ robotic_JJ
 nice_JJ
 eerie_JJ
 silent_JJ
+better_JJR
+darker_JJR

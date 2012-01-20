@@ -29,5 +29,6 @@ tolerable_JJ
 ready_JJ
 directed_JJ
 written_JJ
+fuller_JJR
 running_JJ
 available_JJ

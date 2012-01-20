@@ -15,6 +15,7 @@ paranoid_JJ
 haunted_JJ
 bad_JJ
 able_JJ
+phifer_JJR
 after_JJ
 jr_JJ
 original_JJ

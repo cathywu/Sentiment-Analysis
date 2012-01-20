@@ -11,6 +11,7 @@ experimental_JJ
 possible_JJ
 reachable_JJ
 impressive_JJ
+truer_JJR
 ferocious_JJ
 tight_JJ
 undefined_JJ

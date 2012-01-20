@@ -25,10 +25,12 @@ original_JJ
 pretty_JJ
 large_JJ
 decent_JJ
+darker_JJR
 armed_JJ
 large_JJ
 japanese_JJ
 japanese_JJ
 other_JJ
+easier_JJR
 crowded_JJ
 special_JJ

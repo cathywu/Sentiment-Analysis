@@ -5,6 +5,7 @@ cynical_JJ
 romantic_JJ
 exact_JJ
 opposite_JJ
+capper_JJR
 distinct_JJ
 true_JJ
 true_JJ

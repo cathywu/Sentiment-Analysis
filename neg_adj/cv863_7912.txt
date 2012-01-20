@@ -3,6 +3,7 @@ ridiculous_JJ
 bad_JJ
 anti-climactic_JJ
 intriguing_JJ
+later_JJR
 inane_JJ
 useless_JJ
 present_JJ

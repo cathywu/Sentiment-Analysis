@@ -16,6 +16,7 @@ english_JJ
 structured_JJ
 terrible_JJ
 happy_JJ
+finer_JJR
 real_JJ
 snobbish_JJ
 single-minded_JJ
@@ -32,6 +33,7 @@ wizened_JJ
 odd_JJ
 brief_JJ
 bland_JJ
+better_JJR
 other_JJ
 developed_JJ
 welcome_JJ
@@ -42,6 +44,7 @@ true_JJ
 grating_JJ
 simplistic_JJ
 bored_JJ
+shorter_JJR
 restless_JJ
 disappointed_JJ
 familiar_JJ
@@ -60,3 +63,4 @@ english_JJ
 wrong_JJ
 short_JJ
 simplistic_JJ
+younger_JJR

@@ -3,6 +3,7 @@ suspicious_JJ
 welcome_JJ
 loud_JJ
 one-dimensional_JJ
+better_JJR
 whole_JJ
 new_JJ
 autobiographical_JJ

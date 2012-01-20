@@ -4,6 +4,7 @@ fond_JJ
 original_JJ
 magnetic_JJ
 dominant_JJ
+darker_JJR
 original_JJ
 heavy_JJ
 sanctimonious_JJ

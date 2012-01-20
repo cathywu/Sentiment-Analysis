@@ -60,6 +60,7 @@ insecure_JJ
 nervous_JJ
 vague_JJ
 good_JJ
+earlier_JJR
 liberated_JJ
 effective_JJ
 male_JJ

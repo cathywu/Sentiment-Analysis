@@ -19,6 +19,7 @@ supernatural_JJ
 single_JJ
 common_JJ
 frightening_JJ
+worse_JJR
 dead_JJ
 unknown_JJ
 innocent_JJ

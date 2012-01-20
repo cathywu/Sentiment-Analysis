@@ -38,6 +38,7 @@ romantic_JJ
 intelligent_JJ
 even_JJ
 final_JJ
+better_JJR
 similar_JJ
 false_JJ
 wonderful_JJ

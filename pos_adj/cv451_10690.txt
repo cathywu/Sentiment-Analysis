@@ -36,6 +36,7 @@ available_JJ
 local_JJ
 united_JJ
 real_JJ
+larger_JJR
 humanitarian_JJ
 right_JJ
 brief_JJ

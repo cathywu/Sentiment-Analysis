@@ -57,6 +57,7 @@ likeable_JJ
 extreme_JJ
 robust_JJ
 substantial_JJ
+better_JJR
 definitive_JJ
 paramount_JJ
 bad_JJ

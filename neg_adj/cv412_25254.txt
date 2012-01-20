@@ -32,6 +32,7 @@ complicated_JJ
 wrong_JJ
 instrumental_JJ
 rollicking_JJ
+earlier_JJR
 funny_JJ
 outrageous_JJ
 newsmagazine_JJ
@@ -42,6 +43,7 @@ real_JJ
 surprising_JJ
 irene_JJ
 subtle_JJ
+bigger_JJR
 offensive_JJ
 mental_JJ
 fresh_JJ
@@ -53,6 +55,7 @@ predictable_JJ
 different_JJ
 outrageous_JJ
 obvious_JJ
+longer_JJR
 funny_JJ
 gross_JJ
 milked_JJ
@@ -62,8 +65,10 @@ mixon_JJ
 funny_JJ
 burly_JJ
 black_JJ
+higher_JJR
 too-pleasant_JJ
 still_JJ
+funnier_JJR
 bad_JJ
 amusing_JJ
 irene_JJ
@@ -82,6 +87,7 @@ great_JJ
 funny_JJ
 meaningful_JJ
 supporting_JJ
+better_JJR
 strong_JJ
 female_JJ
 intelligent_JJ

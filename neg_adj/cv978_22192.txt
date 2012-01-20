@@ -29,6 +29,7 @@ diffuse_JJ
 self-righteous_JJ
 eloquent_JJ
 other_JJ
+younger_JJR
 classic_JJ
 mournful_JJ
 strong_JJ

@@ -2,6 +2,7 @@ romantic_JJ
 vain_JJ
 flirtatious_JJ
 beautiful_JJ
+easier_JJR
 wet_JJ
 spare_JJ
 unnecessary_JJ

@@ -43,7 +43,10 @@ free_JJ
 nice_JJ
 repetitive_JJ
 whole_JJ
+brighter_JJR
 robbin_JJ
 masterful_JJ
 reminiscent_JJ
+smoother_JJR
+better_JJR
 true_JJ

@@ -55,6 +55,7 @@ new_JJ
 polar_JJ
 flawed_JJ
 entire_JJ
+darker_JJR
 cynical_JJ
 cinematic_JJ
 interesting_JJ

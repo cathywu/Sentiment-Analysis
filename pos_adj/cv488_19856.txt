@@ -10,6 +10,7 @@ eight-year-old_JJ
 dead_JJ
 lifeless_JJ
 regular_JJ
+earlier_JJR
 able_JJ
 frightened_JJ
 unwilling_JJ

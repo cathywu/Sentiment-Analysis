@@ -43,6 +43,7 @@ clever_JJ
 whodunit_JJ
 changed_JJ
 only_JJ
+smarter_JJR
 shadowy_JJ
 extreme_JJ
 thunderous_JJ

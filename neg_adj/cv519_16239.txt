@@ -17,3 +17,4 @@ bad_JJ
 high_JJ
 classic_JJ
 alternate_JJ
+shorter_JJR

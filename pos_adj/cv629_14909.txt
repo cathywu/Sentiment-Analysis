@@ -1,4 +1,5 @@
 unavoidable_JJ
+better_JJR
 mistake-free_JJ
 different_JJ
 envisioned_JJ
@@ -28,6 +29,8 @@ wondrous_JJ
 certain_JJ
 asian_JJ
 jr_JJ
+stronger_JJR
+greater_JJR
 beautiful_JJ
 well_JJ
 emotional_JJ

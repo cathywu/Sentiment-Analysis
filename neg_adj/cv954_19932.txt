@@ -7,6 +7,7 @@ watergate_JJ
 liddy_JJ
 infamous_JJ
 liddy_JJ
+later_JJR
 white_JJ
 official_JJ
 presidential_JJ
@@ -22,8 +23,10 @@ bad_JJ
 supposed_JJ
 high_JJ
 other_JJ
+smarter_JJR
 likely_JJ
 juvenile_JJ
+younger_JJR
 major_JJ
 watergate_JJ
 subtle_JJ
@@ -52,6 +55,7 @@ excellent_JJ
 poor_JJ
 great_JJ
 juvenile_JJ
+smarter_JJR
 wonderful_JJ
 naive_JJ
 funny_JJ

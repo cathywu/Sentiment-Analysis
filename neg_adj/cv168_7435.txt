@@ -20,6 +20,7 @@ cruel_JJ
 black_JJ
 romantic_JJ
 supposed_JJ
+easier_JJR
 unlikeable_JJ
 emotional_JJ
 irrelevant_JJ

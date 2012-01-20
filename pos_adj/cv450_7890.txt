@@ -2,12 +2,14 @@ gripping_JJ
 brilliant_JJ
 cuban_JJ
 respected_JJ
+earlier_JJR
 united_JJ
 criminal_JJ
 cocky_JJ
 right_JJ
 organized_JJ
 frank_JJ
+greater_JJR
 respected_JJ
 violent_JJ
 great_JJ

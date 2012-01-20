@@ -25,6 +25,7 @@ late_JJ
 sordid_JJ
 general_JJ
 sexual_JJ
+longer_JJR
 necessary_JJ
 negligible_JJ
 dramatic_JJ
@@ -46,12 +47,14 @@ local_JJ
 colored_JJ
 sexual_JJ
 winning_JJ
+bigger_JJR
 so-called_JJ
 difficult_JJ
 criminal_JJ
 stupid_JJ
 idiotic_JJ
 lucky_JJ
+longer_JJR
 vital_JJ
 general_JJ
 heavy_JJ

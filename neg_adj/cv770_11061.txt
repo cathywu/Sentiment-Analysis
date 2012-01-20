@@ -32,6 +32,7 @@ radiant_JJ
 blonde_JJ
 young_JJ
 rich_JJ
+older_JJR
 staged_JJ
 teenage_JJ
 old_JJ
@@ -52,6 +53,7 @@ miserable_JJ
 goofy_JJ
 jr_JJ
 steamy_JJ
+worse_JJR
 bad_JJ
 minor_JJ
 pathetic_JJ

@@ -5,6 +5,7 @@ live_JJ
 privileged_JJ
 stern_JJ
 patriarchal_JJ
+lower_JJR
 fanciful_JJ
 private_JJ
 beautiful_JJ
@@ -25,6 +26,7 @@ introspective_JJ
 difficult_JJ
 central_JJ
 old_JJ
+better_JJR
 social_JJ
 fond_JJ
 well_JJ

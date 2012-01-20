@@ -13,6 +13,7 @@ other_JJ
 incorrect_JJ
 young_JJ
 guilty_JJ
+younger_JJR
 guilty_JJ
 involved_JJ
 trusted_JJ
@@ -36,6 +37,7 @@ romantic_JJ
 one-dimensional_JJ
 awkward_JJ
 insincere_JJ
+worse_JJR
 fake_JJ
 little_JJ
 sexual_JJ

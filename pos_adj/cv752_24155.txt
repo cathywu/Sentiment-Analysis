@@ -43,6 +43,7 @@ impressive_JJ
 directorial_JJ
 sheepish_JJ
 likable_JJ
+zipper_JJR
 firm_JJ
 funny_JJ
 fully-ripened_JJ

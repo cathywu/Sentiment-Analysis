@@ -2,6 +2,7 @@ new_JJ
 triumphant_JJ
 special_JJ
 big_JJ
+greater_JJR
 original_JJ
 compelling_JJ
 phantom_JJ
@@ -35,6 +36,7 @@ familiar_JJ
 previous_JJ
 due_JJ
 utter_JJ
+higher_JJR
 visual_JJ
 acting_JJ
 straightforward_JJ
@@ -62,6 +64,7 @@ silent_JJ
 original_JJ
 original_JJ
 sheer_JJ
+greater_JJR
 remarkable_JJ
 gigantic_JJ
 complete_JJ

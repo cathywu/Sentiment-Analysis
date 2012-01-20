@@ -48,4 +48,5 @@ divine_JJ
 other_JJ
 deadly_JJ
 excellent_JJ
+better_JJR
 bad_JJ

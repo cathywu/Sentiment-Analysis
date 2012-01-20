@@ -14,6 +14,7 @@ impressive_JJ
 coherent_JJ
 long_JJ
 implausible_JJ
+better_JJR
 nice_JJ
 sarcastic_JJ
 rough_JJ

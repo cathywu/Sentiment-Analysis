@@ -90,6 +90,7 @@ vaccine_JJ
 full_JJ
 peeling_JJ
 fearless_JJ
+larger_JJR
 critic-proof_JJ
 commercial_JJ
 easy_JJ

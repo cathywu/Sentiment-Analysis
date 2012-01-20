@@ -18,6 +18,7 @@ ignorant_JJ
 obsolete_JJ
 ubiquitous_JJ
 steady_JJ
+better_JJR
 fresh_JJ
 favorite_JJ
 stable_JJ

@@ -1,4 +1,5 @@
 respective_JJ
+higher_JJR
 super_JJ
 mortal_JJ
 silly_JJ

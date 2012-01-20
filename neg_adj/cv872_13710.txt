@@ -9,6 +9,7 @@ capable_JJ
 main_JJ
 other_JJ
 popular_JJ
+younger_JJR
 original_JJ
 new_JJ
 deadly_JJ

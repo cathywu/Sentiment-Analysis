@@ -14,7 +14,9 @@ daily_JJ
 new_JJ
 civil_JJ
 realistic_JJ
+tougher_JJR
 trained_JJ
+tougher_JJR
 uncompromising_JJ
 clear_JJ
 wrong_JJ

@@ -33,6 +33,7 @@ real_JJ
 bad_JJ
 poor_JJ
 identical_JJ
+worse_JJR
 gross_JJ
 other_JJ
 chaotic_JJ

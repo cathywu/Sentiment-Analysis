@@ -21,6 +21,7 @@ would-be_JJ
 dark_JJ
 hideous_JJ
 full_JJ
+worse_JJR
 nasty_JJ
 far_JJ
 good_JJ
@@ -31,6 +32,8 @@ relaxing_JJ
 american_JJ
 mindless_JJ
 classless_JJ
+better_JJR
+better_JJR
 surrounding_JJ
 previous_JJ
 memorable_JJ

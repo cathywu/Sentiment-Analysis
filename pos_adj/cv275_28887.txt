@@ -64,6 +64,7 @@ robust_JJ
 tender_JJ
 thin_JJ
 upper_JJ
+larger_JJR
 buffoonish_JJ
 sure_JJ
 following_JJ

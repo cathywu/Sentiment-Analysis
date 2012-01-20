@@ -1,5 +1,6 @@
 inseparable_JJ
 other_JJ
+further_JJR
 familiar_JJ
 lethal_JJ
 expectant_JJ

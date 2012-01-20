@@ -13,6 +13,7 @@ woody_JJ
 old-fashioned_JJ
 new_JJ
 hired_JJ
+greater_JJR
 other_JJ
 hypnotic_JJ
 magician_JJ
@@ -54,6 +55,7 @@ insecure_JJ
 macho_JJ
 pretty_JJ
 hypnotized_JJ
+bigger_JJR
 sick_JJ
 late_JJ
 sorry_JJ
@@ -74,6 +76,7 @@ real_JJ
 solid_JJ
 close_JJ
 dinky_JJ
+better_JJR
 cute_JJ
 zippy_JJ
 satisfying_JJ

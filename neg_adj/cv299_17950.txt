@@ -12,6 +12,7 @@ jerky_JJ
 hideous_JJ
 lazy_JJ
 fun_JJ
+earlier_JJR
 acting_JJ
 terrible_JJ
 boring_JJ
@@ -23,6 +24,7 @@ excellent_JJ
 true_JJ
 great_JJ
 enjoyable_JJ
+better_JJR
 wasted_JJ
 clever_JJ
 pathetic_JJ

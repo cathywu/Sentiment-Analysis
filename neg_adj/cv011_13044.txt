@@ -10,6 +10,7 @@ roman_JJ
 catholic_JJ
 popular_JJ
 leary_JJ
+easier_JJR
 said_JJ
 wrong_JJ
 tiny_JJ

@@ -49,4 +49,5 @@ necessary_JJ
 ultimate_JJ
 integral_JJ
 aforementioned_JJ
+better_JJR
 certain_JJ

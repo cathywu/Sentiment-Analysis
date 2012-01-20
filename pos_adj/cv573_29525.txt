@@ -43,6 +43,7 @@ deep_JJ
 novel_JJ
 blank_JJ
 scandalous_JJ
+older_JJR
 contemporary_JJ
 deep_JJ
 absent_JJ

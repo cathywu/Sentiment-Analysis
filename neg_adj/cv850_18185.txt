@@ -19,9 +19,11 @@ spectacular_JJ
 conventional_JJ
 main_JJ
 inferior_JJ
+worse_JJR
 complicated_JJ
 northern_JJ
 cheap_JJ
+cheaper_JJR
 full_JJ
 main_JJ
 single_JJ

@@ -23,6 +23,7 @@ dramatic_JJ
 weak_JJ
 beguiling_JJ
 other_JJ
+further_JJR
 gratuitous_JJ
 old_JJ
 reliable_JJ

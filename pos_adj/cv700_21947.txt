@@ -35,10 +35,13 @@ ridiculous_JJ
 disjointed_JJ
 buddy_JJ
 confused_JJ
+earlier_JJR
 big_JJ
 distinct_JJ
 beautiful_JJ
 nifty_JJ
+better_JJR
+bigger_JJR
 previous_JJ
 nice_JJ
 russian_JJ
@@ -62,6 +65,7 @@ emotional_JJ
 deep_JJ
 good_JJ
 limited_JJ
+higher_JJR
 pompous_JJ
 cleese_JJ
 fair_JJ

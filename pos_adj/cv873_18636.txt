@@ -45,6 +45,7 @@ large_JJ
 content_JJ
 interesting_JJ
 memorable_JJ
+better_JJR
 toned_JJ
 other_JJ
 full_JJ

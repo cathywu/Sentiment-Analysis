@@ -15,10 +15,13 @@ alive_JJ
 dead_JJ
 symbolic_JJ
 obvious_JJ
+deeper_JJR
+deeper_JJR
 missing_JJ
 obvious_JJ
 subtle_JJ
 meaningful_JJ
+better_JJR
 nice_JJ
 cold_JJ
 cold_JJ

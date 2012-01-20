@@ -1,3 +1,4 @@
+older_JJR
 great_JJ
 improved_JJ
 intriguing_JJ
@@ -7,6 +8,7 @@ original_JJ
 big_JJ
 bad_JJ
 original_JJ
+closer_JJR
 good_JJ
 cinematic_JJ
 bland_JJ
@@ -39,6 +41,7 @@ amusing_JJ
 dull_JJ
 boring_JJ
 uninteresting_JJ
+longer_JJR
 new_JJ
 teenage_JJ
 exciting_JJ
@@ -53,6 +56,7 @@ bad_JJ
 other_JJ
 spare_JJ
 intriguing_JJ
+longer_JJR
 alluring_JJ
 horrible_JJ
 cool_JJ

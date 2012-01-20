@@ -46,6 +46,8 @@ post-war_JJ
 dead_JJ
 silent_JJ
 typical_JJ
+larger_JJR
+larger_JJR
 silent_JJ
 silent_JJ
 loose_JJ

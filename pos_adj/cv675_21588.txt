@@ -79,3 +79,4 @@ cluttered_JJ
 contemporary_JJ
 real_JJ
 metaphysical_JJ
+truer_JJR

@@ -1,3 +1,4 @@
+greater_JJR
 projecting_JJ
 bad_JJ
 good-natured_JJ
@@ -28,6 +29,7 @@ black_JJ
 dyed_JJ
 white_JJ
 similar_JJ
+easier_JJR
 messed_JJ
 artistic_JJ
 beautiful_JJ
@@ -90,6 +92,7 @@ low-key_JJ
 chuckle-worthy_JJ
 great_JJ
 long_JJ
+broader_JJR
 blind_JJ
 incessant_JJ
 ineffective_JJ

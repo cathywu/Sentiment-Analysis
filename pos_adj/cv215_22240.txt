@@ -19,6 +19,7 @@ amazing_JJ
 subtle_JJ
 physical_JJ
 miserly_JJ
+smaller_JJR
 long_JJ
 universal_JJ
 callous_JJ

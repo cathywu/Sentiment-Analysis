@@ -40,6 +40,7 @@ multi-dimensional_JJ
 main_JJ
 well_JJ
 written_JJ
+better_JJR
 impressive_JJ
 final_JJ
 exhilarating_JJ

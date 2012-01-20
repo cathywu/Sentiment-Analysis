@@ -9,10 +9,12 @@ comical_JJ
 perceptive_JJ
 due_JJ
 fortunate_JJ
+sharper_JJR
 weak_JJ
 claustral_JJ
 inept_JJ
 weak_JJ
+weaker_JJR
 pushy_JJ
 small_JJ
 cross-country_JJ
@@ -23,6 +25,7 @@ humdrum_JJ
 used_JJ
 predictable_JJ
 sweet_JJ
+greener_JJR
 good_JJ
 precious_JJ
 unruly_JJ

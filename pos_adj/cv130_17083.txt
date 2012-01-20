@@ -27,3 +27,4 @@ american_JJ
 excessive_JJ
 modern_JJ
 classic_JJ
+greater_JJR

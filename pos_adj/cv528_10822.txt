@@ -38,6 +38,7 @@ recent_JJ
 classic_JJ
 current_JJ
 great_JJ
+better_JJR
 even-handed_JJ
 sure_JJ
 spoof_JJ

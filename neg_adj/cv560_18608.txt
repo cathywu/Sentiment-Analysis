@@ -2,6 +2,7 @@ great_JJ
 lost_JJ
 due_JJ
 awesome_JJ
+lower_JJR
 naked_JJ
 present_JJ
 martian_JJ

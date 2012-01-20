@@ -1,7 +1,9 @@
+longer_JJR
 able_JJ
 good_JJ
 sad_JJ
 smoking_JJ
+worse_JJR
 bad_JJ
 overall_JJ
 thin_JJ

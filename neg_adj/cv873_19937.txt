@@ -26,11 +26,15 @@ bi-sexual_JJ
 strange_JJ
 poor_JJ
 bad_JJ
+better_JJR
+bigger_JJR
+better_JJR
 wise_JJ
 original_JJ
 haunted_JJ
 terrifying_JJ
 frightening_JJ
 original_JJ
+newer_JJR
 psychological_JJ
 original_JJ

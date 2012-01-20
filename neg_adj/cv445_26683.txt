@@ -4,6 +4,7 @@ flying_JJ
 good_JJ
 scary_JJ
 easy_JJ
+larger_JJR
 reputable_JJ
 early_JJ
 theatrical_JJ

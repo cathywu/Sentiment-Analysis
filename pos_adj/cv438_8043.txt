@@ -10,6 +10,7 @@ unseen_JJ
 vile_JJ
 excellent_JJ
 cocky_JJ
+better_JJR
 wise_JJ
 killed_JJ
 great_JJ

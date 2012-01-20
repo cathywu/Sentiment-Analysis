@@ -49,6 +49,7 @@ quiet_JJ
 physical_JJ
 soft_JJ
 layered_JJ
+better_JJR
 recent_JJ
 meaningful_JJ
 supporting_JJ

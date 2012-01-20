@@ -7,6 +7,7 @@ fabulous_JJ
 compelling_JJ
 unspecified_JJ
 following_JJ
+earlier_JJR
 fast_JJ
 perfect_JJ
 worthless_JJ
@@ -58,6 +59,7 @@ unexpected_JJ
 spectacular_JJ
 accessible_JJ
 interesting_JJ
+older_JJR
 big_JJ
 ancient_JJ
 intelligent_JJ

@@ -19,16 +19,19 @@ believable_JJ
 developed_JJ
 terrific_JJ
 stellar_JJ
+better_JJR
 bad_JJ
 confusing_JJ
 believable_JJ
 whole_JJ
 new_JJ
 able_JJ
+better_JJR
 provocative_JJ
 slow_JJ
 only_JJ
 major_JJ
+better_JJR
 amazed_JJ
 colored_JJ
 non-colored_JJ
@@ -37,6 +40,7 @@ private_JJ
 little_JJ
 long_JJ
 long_JJ
+longer_JJR
 perfect_JJ
 good_JJ
 consistent_JJ
@@ -45,3 +49,4 @@ pleasant_JJ
 provocative_JJ
 light-hearted_JJ
 important_JJ
+shorter_JJR

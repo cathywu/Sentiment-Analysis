@@ -8,11 +8,13 @@ real_JJ
 lone_JJ
 euphoric_JJ
 outside_JJ
+further_JJR
 freudian_JJ
 obscure_JJ
 traditional_JJ
 surpass_JJ
 proverbial_JJ
+higher_JJR
 amazing_JJ
 opaque_JJ
 early_JJ

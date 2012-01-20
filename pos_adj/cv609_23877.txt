@@ -58,6 +58,8 @@ big_JJ
 vernacular_JJ
 rich_JJ
 particular_JJ
+smaller_JJR
+better_JJR
 gay_JJ
 calm_JJ
 jr_JJ

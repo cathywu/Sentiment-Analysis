@@ -32,6 +32,7 @@ eccentric_JJ
 rebellious_JJ
 rambunctious_JJ
 moonstruck_JJ
+larger_JJR
 keen_JJ
 absurd_JJ
 human_JJ

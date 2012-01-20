@@ -14,6 +14,7 @@ superb_JJ
 soppy_JJ
 dramatic_JJ
 gritty_JJ
+better_JJR
 fine_JJ
 watchable_JJ
 reinforcing_JJ

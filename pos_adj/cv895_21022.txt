@@ -34,6 +34,7 @@ political_JJ
 personal_JJ
 young_JJ
 great_JJ
+easier_JJR
 sexual_JJ
 no-nonsense_JJ
 suburban_JJ

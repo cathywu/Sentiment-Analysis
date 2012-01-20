@@ -42,6 +42,7 @@ old_JJ
 ready_JJ
 beloved_JJ
 flat_JJ
+later_JJR
 beloved_JJ
 difficult_JJ
 long_JJ
@@ -87,6 +88,7 @@ sensible_JJ
 sane_JJ
 great_JJ
 wacky_JJ
+tougher_JJR
 beloved_JJ
 well_JJ
 little_JJ

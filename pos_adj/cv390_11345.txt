@@ -7,6 +7,7 @@ normal_JJ
 lovely_JJ
 sexy_JJ
 asthmatic_JJ
+worse_JJR
 obsessive_JJ
 compulsive_JJ
 gay_JJ

@@ -21,6 +21,7 @@ altman_JJ
 female_JJ
 central_JJ
 other_JJ
+older_JJR
 experienced_JJ
 rich_JJ
 cherry-red_JJ

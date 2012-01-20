@@ -42,6 +42,7 @@ good_JJ
 real_JJ
 mistaken_JJ
 painful_JJ
+better_JJR
 damn_JJ
 meteorite_JJ
 religious_JJ

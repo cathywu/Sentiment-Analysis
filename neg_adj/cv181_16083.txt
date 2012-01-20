@@ -25,6 +25,7 @@ heavy_JJ
 appropriate_JJ
 high_JJ
 demographic_JJ
+further_JJR
 understandable_JJ
 reluctant_JJ
 other_JJ

@@ -3,6 +3,7 @@ biological_JJ
 oldish_JJ
 motley_JJ
 unlikely_JJ
+faster_JJR
 witty_JJ
 funny_JJ
 sensible_JJ
@@ -43,5 +44,6 @@ catastrophic_JJ
 essential_JJ
 essential_JJ
 dysfunctional_JJ
+further_JJR
 essential_JJ
 manic_JJ

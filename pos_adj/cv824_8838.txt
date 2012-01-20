@@ -23,7 +23,9 @@ evil_JJ
 general_JJ
 traitorous_JJ
 evil_JJ
+larger_JJR
 star-studded_JJ
 magic_JJ
+larger_JJR
 young_JJ
 old_JJ

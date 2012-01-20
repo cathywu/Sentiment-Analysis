@@ -33,6 +33,7 @@ sound_JJ
 realistic_JJ
 amazed_JJ
 amateurish_JJ
+better_JJR
 fine_JJ
 little_JJ
 natural_JJ

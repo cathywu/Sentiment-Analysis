@@ -14,6 +14,7 @@ little_JJ
 honest_JJ
 average_JJ
 little_JJ
+later_JJR
 fine_JJ
 overwhelming_JJ
 ok_JJ
@@ -21,6 +22,7 @@ sexy_JJ
 french_JJ
 good_JJ
 supporting_JJ
+better_JJR
 normal_JJ
 average_JJ
 professional_JJ

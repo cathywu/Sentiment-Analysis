@@ -56,7 +56,9 @@ known_JJ
 powdered_JJ
 thompson-based_JJ
 turned_JJ
+smaller_JJR
 rolling_JJ
 tried_JJ
 uncompleted_JJ
 divine_JJ
+viper_JJR

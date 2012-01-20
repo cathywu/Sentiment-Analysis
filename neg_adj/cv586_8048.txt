@@ -3,6 +3,7 @@ expected_JJ
 watchable_JJ
 entire_JJ
 self-effacing_JJ
+worse_JJR
 mediocre_JJ
 shallow_JJ
 preposterous_JJ
@@ -12,6 +13,7 @@ cryogenically_JJ
 frozen_JJ
 maniacal_JJ
 brooding_JJ
+thicker_JJR
 unintelligible_JJ
 understandable_JJ
 competent_JJ
@@ -64,6 +66,7 @@ early_JJ
 pointless_JJ
 garish_JJ
 loud_JJ
+worse_JJR
 comic_JJ
 unbearable_JJ
 true_JJ

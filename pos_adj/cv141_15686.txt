@@ -40,6 +40,7 @@ surprising_JJ
 little_JJ
 wacky_JJ
 perfect_JJ
+further_JJR
 clear_JJ
 bad_JJ
 violent_JJ

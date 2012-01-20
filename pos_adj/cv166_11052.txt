@@ -32,6 +32,7 @@ outer_JJ
 profound_JJ
 new_JJ
 long_JJ
+further_JJR
 deep_JJ
 new_JJ
 appropriate_JJ
@@ -41,6 +42,7 @@ solid_JJ
 leading_JJ
 personal_JJ
 important_JJ
+higher_JJR
 uncertain_JJ
 modern_JJ
 right_JJ

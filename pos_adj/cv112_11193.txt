@@ -70,10 +70,12 @@ fake_JJ
 fair_JJ
 little_JJ
 public_JJ
+tighter_JJR
 four-star_JJ
 classic_JJ
 american_JJ
 domestic_JJ
 real_JJ
+further_JJR
 real_JJ
 talented_JJ

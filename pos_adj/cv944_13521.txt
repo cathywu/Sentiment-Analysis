@@ -16,7 +16,9 @@ ambitious_JJ
 pulled_JJ
 imminent_JJ
 maximillian_JJ
+younger_JJR
 one-year_JJ
+later_JJR
 american_JJ
 small_JJ
 young_JJ
@@ -24,6 +26,7 @@ ageing_JJ
 nuclear_JJ
 current_JJ
 experienced_JJ
+younger_JJR
 due_JJ
 other_JJ
 confident_JJ

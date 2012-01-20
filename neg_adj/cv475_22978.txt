@@ -5,6 +5,7 @@ on-line_JJ
 cool_JJ
 major_JJ
 afraid_JJ
+bigger_JJR
 whodunit_JJ
 dismal_JJ
 beloved_JJ
@@ -44,6 +45,7 @@ silly_JJ
 previous_JJ
 tidy_JJ
 incomprehensible_JJ
+tighter_JJR
 lazy_JJ
 silent_JJ
 akin_JJ
@@ -52,6 +54,7 @@ well-timed_JJ
 craven_JJ
 randy_JJ
 sheer_JJ
+weaker_JJR
 occasional_JJ
 sweeping_JJ
 pale_JJ

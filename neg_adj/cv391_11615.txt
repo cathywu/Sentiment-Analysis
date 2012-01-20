@@ -28,6 +28,7 @@ imaginable_JJ
 shocked_JJ
 new_JJ
 underdeveloped_JJ
+slower_JJR
 acting_JJ
 reminiscent_JJ
 good_JJ
@@ -39,6 +40,7 @@ comedic_JJ
 whole_JJ
 subtle_JJ
 exact_JJ
+better_JJR
 good_JJ
 eye-full_JJ
 wild_JJ
@@ -46,6 +48,7 @@ delightful_JJ
 juvenile_JJ
 laughable_JJ
 high_JJ
+older_JJR
 teenage_JJ
 supposed_JJ
 guilty_JJ

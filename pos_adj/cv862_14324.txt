@@ -41,6 +41,7 @@ likable_JJ
 dear_JJ
 emotional_JJ
 whole_JJ
+daper_JJR
 cunning_JJ
 cocky_JJ
 southern_JJ

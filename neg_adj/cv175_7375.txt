@@ -49,6 +49,7 @@ whole_JJ
 stupid_JJ
 final_JJ
 ham-handed_JJ
+longer_JJR
 even_JJ
 definitive_JJ
 key_JJ

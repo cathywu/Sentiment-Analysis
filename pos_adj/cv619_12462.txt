@@ -16,6 +16,7 @@ high_JJ
 fun-loving_JJ
 energetic_JJ
 innocent_JJ
+simpler_JJR
 thin_JJ
 romantic_JJ
 overall_JJ

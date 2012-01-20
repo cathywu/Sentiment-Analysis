@@ -55,4 +55,5 @@ hard_JJ
 certain_JJ
 immoralistic_JJ
 bad_JJ
+longer_JJR
 apparent_JJ

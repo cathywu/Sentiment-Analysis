@@ -46,6 +46,7 @@ little_JJ
 fine_JJ
 irritating_JJ
 supporting_JJ
+longer_JJR
 generic_JJ
 favorite_JJ
 easy_JJ

@@ -6,9 +6,11 @@ digimon_JJ
 wrong_JJ
 away_JJ
 entertaining_JJ
+better_JJR
 disposable_JJ
 real_JJ
 inc_JJ
+better_JJR
 young_JJ
 pint-sized_JJ
 diabolical_JJ
@@ -20,6 +22,7 @@ pessimistic_JJ
 social_JJ
 grey_JJ
 secret_JJ
+better_JJR
 other_JJ
 red-hot_JJ
 polar-opposite_JJ

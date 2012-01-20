@@ -37,6 +37,7 @@ successful_JJ
 typical_JJ
 kimmy_JJ
 snooty_JJ
+smarter_JJR
 kimmy_JJ
 sweet_JJ
 sincere_JJ

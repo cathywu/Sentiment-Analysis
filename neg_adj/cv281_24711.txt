@@ -29,6 +29,7 @@ frightening_JJ
 scary_JJ
 urban_JJ
 sure_JJ
+longer_JJR
 idiotic_JJ
 super-hyped_JJ
 good_JJ
@@ -120,4 +121,5 @@ only_JJ
 vicarious_JJ
 urban_JJ
 entertaining_JJ
+better_JJR
 entire_JJ

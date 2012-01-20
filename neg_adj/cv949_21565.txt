@@ -18,6 +18,7 @@ following_JJ
 nice_JJ
 ugly_JJ
 bogus_JJ
+super-duper_JJR
 smart_JJ
 big_JJ
 red_JJ
@@ -32,6 +33,7 @@ hard_JJ
 good_JJ
 violent_JJ
 small_JJ
+lower_JJR
 big_JJ
 awkward_JJ
 guilty_JJ

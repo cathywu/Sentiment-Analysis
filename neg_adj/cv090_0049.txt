@@ -44,6 +44,7 @@ pied_JJ
 appropriate_JJ
 political_JJ
 economic_JJ
+better_JJR
 good_JJ
 human_JJ
 glad_JJ
@@ -55,6 +56,7 @@ real_JJ
 cheerful_JJ
 wee_JJ
 unstable_JJ
+larger_JJR
 fascinated_JJ
 wooden_JJ
 german_JJ
@@ -92,6 +94,7 @@ difficult_JJ
 golden_JJ
 classic_JJ
 tender_JJ
+better_JJR
 good_JJ
 sepia-colored_JJ
 looking_JJ

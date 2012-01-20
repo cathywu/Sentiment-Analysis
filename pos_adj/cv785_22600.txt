@@ -60,6 +60,7 @@ first-rate_JJ
 old_JJ
 slight_JJ
 stinky_JJ
+better_JJR
 impressive_JJ
 human_JJ
 soft_JJ

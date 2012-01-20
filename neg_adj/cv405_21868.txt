@@ -1,5 +1,6 @@
 late_JJ
 sloppy_JJ
+worse_JJR
 hard_JJ
 expensive_JJ
 true_JJ
@@ -9,6 +10,7 @@ trusty_JJ
 absurd_JJ
 right_JJ
 weak_JJ
+better_JJR
 other_JJ
 sleepy_JJ
 sure_JJ
@@ -21,6 +23,7 @@ long_JJ
 super_JJ
 invisible_JJ
 overpriced_JJ
+better_JJR
 pitiful_JJ
 sure_JJ
 poor_JJ

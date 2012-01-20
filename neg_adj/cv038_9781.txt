@@ -33,6 +33,7 @@ bad_JJ
 curious_JJ
 hurricaine_JJ
 hateful_JJ
+better_JJR
 other_JJ
 great_JJ
 tight_JJ

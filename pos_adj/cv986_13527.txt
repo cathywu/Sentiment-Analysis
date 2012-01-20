@@ -1,6 +1,7 @@
 prior_JJ
 stupid_JJ
 profitable_JJ
+larger_JJR
 user-friendly_JJ
 certain_JJ
 adequate_JJ
@@ -42,6 +43,7 @@ right_JJ
 spotless_JJ
 confused_JJ
 clear_JJ
+later_JJR
 unlike_JJ
 important_JJ
 vital_JJ
@@ -51,6 +53,7 @@ crucial_JJ
 blond_JJ
 big_JJ
 emotional_JJ
+higher_JJR
 other_JJ
 excited_JJ
 cool_JJ

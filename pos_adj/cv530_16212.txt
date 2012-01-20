@@ -16,6 +16,7 @@ present_JJ
 intrinsic_JJ
 dynamic_JJ
 effective_JJ
+greater_JJR
 limited_JJ
 top-down_JJ
 omniscient_JJ

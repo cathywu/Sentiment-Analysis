@@ -53,6 +53,7 @@ female_JJ
 predictable_JJ
 familiar_JJ
 general_JJ
+greater_JJR
 other_JJ
 mysterious_JJ
 unnecessary_JJ
@@ -60,3 +61,4 @@ silly_JJ
 general_JJ
 terrible_JJ
 certain_JJ
+better_JJR

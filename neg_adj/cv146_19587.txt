@@ -56,5 +56,6 @@ unmistakable_JJ
 whole_JJ
 cloaked_JJ
 airy_JJ
+smarter_JJR
 enjoyable_JJ
 new_JJ

@@ -24,6 +24,7 @@ increasing_JJ
 afraid_JJ
 afraid_JJ
 good_JJ
+funnier_JJR
 believable_JJ
 technical_JJ
 expected_JJ

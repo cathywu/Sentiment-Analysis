@@ -40,6 +40,7 @@ favorite_JJ
 other_JJ
 touching_JJ
 present_JJ
+better_JJR
 entertaining_JJ
 wide_JJ
 awake_JJ

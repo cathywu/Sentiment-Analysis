@@ -38,6 +38,7 @@ gritty_JJ
 close_JJ
 recent_JJ
 serious_JJ
+wiser_JJR
 hardened_JJ
 criminal_JJ
 bad_JJ

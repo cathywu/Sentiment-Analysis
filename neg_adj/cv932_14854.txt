@@ -14,6 +14,7 @@ commercial_JJ
 unexplained_JJ
 sour_JJ
 heart-warming_JJ
+worse_JJR
 insipid_JJ
 willing_JJ
 old_JJ
@@ -25,6 +26,7 @@ hilarious_JJ
 subdued_JJ
 overly-long_JJ
 recent_JJ
+better_JJR
 only_JJ
 little_JJ
 shaved-headed_JJ

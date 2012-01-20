@@ -16,6 +16,7 @@ bad_JJ
 good_JJ
 sudden_JJ
 apparent_JJ
+longer_JJR
 interested_JJ
 available_JJ
 constant_JJ
@@ -27,6 +28,7 @@ possible_JJ
 insulting_JJ
 competent_JJ
 decent_JJ
+smaller_JJR
 supporting_JJ
 convincing_JJ
 romantic_JJ

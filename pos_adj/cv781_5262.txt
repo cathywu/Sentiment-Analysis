@@ -4,6 +4,7 @@ old_JJ
 rampant_JJ
 private_JJ
 inc_JJ
+worse_JJR
 savage_JJ
 precinct_JJ
 graphic_JJ

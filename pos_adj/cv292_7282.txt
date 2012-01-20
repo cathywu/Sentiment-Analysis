@@ -16,6 +16,7 @@ electric_JJ
 piggy_JJ
 other_JJ
 little_JJ
+better_JJR
 funny_JJ
 able_JJ
 fun_JJ

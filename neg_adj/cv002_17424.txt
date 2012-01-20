@@ -27,6 +27,7 @@ nice_JJ
 teenage_JJ
 american_JJ
 juvenile_JJ
+older_JJR
 hard_JJ
 predictable_JJ
 likely_JJ

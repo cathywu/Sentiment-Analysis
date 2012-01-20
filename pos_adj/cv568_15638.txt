@@ -6,10 +6,12 @@ wise_JJ
 different_JJ
 pauline_JJ
 wise_JJ
+older_JJR
 old_JJ
 high_JJ
 atkine_JJ
 interested_JJ
+older_JJR
 seductive_JJ
 pascal_JJ
 pauline_JJ

@@ -21,6 +21,7 @@ miserable_JJ
 convinced_JJ
 unconvincing_JJ
 unnecessary_JJ
+better_JJR
 popular_JJ
 jr_JJ
 bad_JJ
@@ -34,7 +35,9 @@ offensive_JJ
 long_JJ
 entertaining_JJ
 good_JJ
+slower_JJR
 informercial_JJ
+worse_JJR
 bad_JJ
 telling_JJ
 happy_JJ

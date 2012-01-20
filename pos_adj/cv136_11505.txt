@@ -50,6 +50,7 @@ powerful-but-anonymous_JJ
 true_JJ
 frustrating_JJ
 supporting_JJ
+better_JJR
 political_JJ
 outside_JJ
 outside_JJ
@@ -77,4 +78,5 @@ funny_JJ
 serious_JJ
 american_JJ
 political_JJ
+greater_JJR
 national_JJ

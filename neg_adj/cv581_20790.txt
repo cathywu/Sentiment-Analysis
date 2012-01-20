@@ -34,6 +34,7 @@ fancy_JJ
 bad_JJ
 stiff_JJ
 tired_JJ
+better_JJR
 beautiful_JJ
 olympic_JJ
 even_JJ

@@ -11,8 +11,10 @@ slow_JJ
 rising_JJ
 young_JJ
 good_JJ
+better_JJR
 poor_JJ
 involved_JJ
+better_JJR
 poor_JJ
 birdy_JJ
 national_JJ
@@ -32,6 +34,7 @@ birdy_JJ
 sentimental_JJ
 jr_JJ
 beautiful_JJ
+earlier_JJR
 eccentric_JJ
 great_JJ
 full_JJ

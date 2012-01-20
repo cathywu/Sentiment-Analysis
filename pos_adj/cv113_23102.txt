@@ -28,6 +28,7 @@ forceful_JJ
 parallel_JJ
 intercut_JJ
 impossible_JJ
+better_JJR
 specific_JJ
 relevant_JJ
 nice_JJ
@@ -45,6 +46,7 @@ new_JJ
 hungarian_JJ
 specific_JJ
 new_JJ
+greater_JJR
 glad_JJ
 careful_JJ
 other_JJ

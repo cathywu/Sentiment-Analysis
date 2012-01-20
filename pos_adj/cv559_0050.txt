@@ -33,6 +33,7 @@ particular_JJ
 mythic_JJ
 real_JJ
 original_JJ
+stronger_JJR
 envious_JJ
 unusual_JJ
 basic_JJ

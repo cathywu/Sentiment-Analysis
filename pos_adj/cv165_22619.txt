@@ -24,6 +24,7 @@ anxious_JJ
 disaffected_JJ
 real_JJ
 angry_JJ
+better_JJR
 popular_JJ
 current_JJ
 single_JJ
@@ -57,9 +58,11 @@ actual_JJ
 biblical_JJ
 natural_JJ
 unfortunate_JJ
+smaller_JJR
 high_JJ
 long_JJ
 possible_JJ
+greater_JJR
 unlikely_JJ
 alive_JJ
 clear_JJ

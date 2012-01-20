@@ -51,3 +51,5 @@ pathetic_JJ
 nice_JJ
 just_JJ
 good_JJ
+better_JJR
+better_JJR

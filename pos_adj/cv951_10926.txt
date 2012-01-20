@@ -20,6 +20,7 @@ overweight_JJ
 overly-officious_JJ
 suicidal_JJ
 additional_JJ
+older_JJR
 full_JJ
 young_JJ
 well-endowed_JJ
@@ -38,6 +39,7 @@ inspiring_JJ
 nice_JJ
 upbeat_JJ
 other_JJ
+better_JJR
 individual_JJ
 interesting_JJ
 funny_JJ

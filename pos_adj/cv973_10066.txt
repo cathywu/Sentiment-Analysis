@@ -27,6 +27,7 @@ able_JJ
 great_JJ
 great_JJ
 hilarious_JJ
+longer_JJR
 fresh_JJ
 great_JJ
 iced_JJ
@@ -35,6 +36,7 @@ named_JJ
 surprised_JJ
 good_JJ
 supposed_JJ
+smaller_JJR
 familiar_JJ
 employing_JJ
 non_JJ
@@ -58,6 +60,7 @@ mad_JJ
 only_JJ
 acting_JJ
 good_JJ
+younger_JJR
 exposed_JJ
 only_JJ
 solid_JJ

@@ -36,6 +36,7 @@ bored_JJ
 good_JJ
 drunk_JJ
 even_JJ
+worse_JJR
 drunk_JJ
 likeable_JJ
 gorgeous_JJ

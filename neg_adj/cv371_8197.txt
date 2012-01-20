@@ -19,6 +19,7 @@ ridiculous_JJ
 great_JJ
 full_JJ
 basic_JJ
+higher_JJR
 ridulous_JJ
 original_JJ
 original_JJ

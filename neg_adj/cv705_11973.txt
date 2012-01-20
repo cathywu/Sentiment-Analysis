@@ -1,5 +1,8 @@
 possible_JJ
 typical_JJ
+worse_JJR
+better_JJR
+smarter_JJR
 modern_JJ
 startling_JJ
 appropriate_JJ

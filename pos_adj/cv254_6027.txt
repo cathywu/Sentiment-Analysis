@@ -13,6 +13,7 @@ curious_JJ
 pretty_JJ
 big_JJ
 blue_JJ
+older_JJR
 rich_JJ
 striking_JJ
 blue_JJ

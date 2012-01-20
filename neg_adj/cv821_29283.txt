@@ -6,6 +6,7 @@ moronic_JJ
 substandard_JJ
 social_JJ
 over-protective_JJ
+hyper_JJR
 religious_JJ
 sweet-natured_JJ
 flimsy_JJ

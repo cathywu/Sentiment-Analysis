@@ -1,4 +1,6 @@
 enduring_JJ
+bigger_JJR
+blacker_JJR
 mean_JJ
 sure_JJ
 hard_JJ
@@ -8,6 +10,7 @@ complete_JJ
 ludicrous_JJ
 predictable_JJ
 offensive_JJ
+worse_JJR
 late_JJ
 autobiographical_JJ
 young_JJ
@@ -28,6 +31,7 @@ just_JJ
 fun_JJ
 weepy_JJ
 dramatic_JJ
+better_JJR
 brief_JJ
 effeminate_JJ
 wacky_JJ
@@ -36,6 +40,7 @@ good_JJ
 wide-eyed_JJ
 frozen_JJ
 scared_JJ
+worse_JJR
 hackneyed_JJ
 virginal_JJ
 impossible_JJ

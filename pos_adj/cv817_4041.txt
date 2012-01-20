@@ -25,6 +25,7 @@ verhoeven_JJ
 positive_JJ
 good_JJ
 great_JJ
+better_JJR
 negative_JJ
 socially-acceptable_JJ
 recent_JJ
@@ -70,6 +71,7 @@ limited_JJ
 desperate_JJ
 live_JJ
 limited_JJ
+better_JJR
 little_JJ
 essential_JJ
 solid_JJ

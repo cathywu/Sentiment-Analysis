@@ -20,6 +20,7 @@ capitalize_JJ
 mainstream_JJ
 shallow_JJ
 little-known_JJ
+bigger_JJR
 substantial_JJ
 continuous_JJ
 concerned_JJ

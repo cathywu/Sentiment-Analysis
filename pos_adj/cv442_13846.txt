@@ -1,6 +1,7 @@
 free_JJ
 good_JJ
 glorified_JJ
+darker_JJR
 exciting_JJ
 general_JJ
 easy_JJ

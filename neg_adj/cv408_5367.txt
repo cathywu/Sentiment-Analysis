@@ -5,6 +5,7 @@ late_JJ
 fancy_JJ
 impressive_JJ
 french_JJ
+worse_JJR
 directed_JJ
 lynch_JJ
 incomprehensible_JJ
@@ -18,6 +19,7 @@ main_JJ
 nonsensical_JJ
 brief_JJ
 maclachlan_JJ
+later_JJR
 familiar_JJ
 distinctive_JJ
 musical_JJ

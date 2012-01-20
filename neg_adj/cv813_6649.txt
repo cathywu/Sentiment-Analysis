@@ -37,10 +37,12 @@ used_JJ
 fishy_JJ
 present_JJ
 gradual_JJ
+larger_JJR
 crooked_JJ
 chemical_JJ
 pretty_JJ
 other_JJ
+hotter_JJR
 other_JJ
 fair_JJ
 disastrous_JJ
@@ -84,6 +86,7 @@ little_JJ
 niggling_JJ
 funny_JJ
 easy_JJ
+easier_JJR
 just_JJ
 fast_JJ
 flying_JJ

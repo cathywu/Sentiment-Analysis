@@ -34,6 +34,7 @@ exact_JJ
 recurring_JJ
 new_JJ
 loquacious_JJ
+flatter_JJR
 mighty_JJ
 interesting_JJ
 desperate_JJ

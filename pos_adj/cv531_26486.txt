@@ -15,6 +15,7 @@ murdered_JJ
 english_JJ
 terrible_JJ
 lasting_JJ
+longer_JJR
 free_JJ
 english_JJ
 wise_JJ
@@ -25,6 +26,7 @@ royal_JJ
 english_JJ
 direct_JJ
 amazing_JJ
+calmer_JJR
 dreamy_JJ
 symbolic_JJ
 pure_JJ

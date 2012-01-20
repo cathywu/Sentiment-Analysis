@@ -21,6 +21,7 @@ big_JJ
 breasted_JJ
 young_JJ
 nazi_JJ
+later_JJR
 unrelated_JJ
 honest_JJ
 awful_JJ
@@ -29,6 +30,7 @@ all-girl_JJ
 due_JJ
 sure_JJ
 bad_JJ
+worse_JJR
 big_JJ
 free_JJ
 flowing_JJ
@@ -46,9 +48,11 @@ funny_JJ
 wrong_JJ
 big_JJ
 possible_JJ
+smarter_JJR
 big_JJ
 able_JJ
 bad_JJ
+worse_JJR
 wretched_JJ
 wretched_JJ
 serious_JJ
@@ -78,6 +82,7 @@ good_JJ
 double_JJ
 just_JJ
 nude_JJ
+better_JJR
 hazardous_JJ
 common_JJ
 extreme_JJ

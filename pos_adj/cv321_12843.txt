@@ -19,6 +19,8 @@ goofy_JJ
 invading_JJ
 intimate_JJ
 intended_JJ
+better_JJR
+smaller_JJR
 pivotal_JJ
 svengalian_JJ
 clear_JJ

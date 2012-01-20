@@ -2,6 +2,7 @@ upper_JJ
 suburban_JJ
 unable_JJ
 cynical_JJ
+longer_JJR
 able_JJ
 similar_JJ
 unassertive_JJ

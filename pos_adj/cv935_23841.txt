@@ -21,6 +21,7 @@ great_JJ
 little_JJ
 evil_JJ
 black_JJ
+lighter_JJR
 above_JJ
 evil_JJ
 strong_JJ

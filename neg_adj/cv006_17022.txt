@@ -18,6 +18,7 @@ ridiculous_JJ
 self-righteous_JJ
 whole_JJ
 unpleasant_JJ
+further_JJR
 private_JJ
 hired_JJ
 wealthy_JJ
@@ -26,6 +27,7 @@ safe_JJ
 young_JJ
 specialized_JJ
 easy_JJ
+deeper_JJR
 obsessed_JJ
 little_JJ
 flickering_JJ

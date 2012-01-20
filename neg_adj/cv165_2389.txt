@@ -5,6 +5,7 @@ stolen_JJ
 missing_JJ
 short_JJ
 official_JJ
+greater_JJR
 funny_JJ
 pretty_JJ
 harmless_JJ

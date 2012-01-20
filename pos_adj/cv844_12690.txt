@@ -70,6 +70,7 @@ bad_JJ
 incompetent_JJ
 doggy_JJ
 contemporary_JJ
+better_JJR
 inner-city_JJ
 cool_JJ
 other_JJ

@@ -28,6 +28,7 @@ deep_JJ
 strange_JJ
 civilian_JJ
 russian_JJ
+worse_JJR
 nervous_JJ
 international_JJ
 possible_JJ

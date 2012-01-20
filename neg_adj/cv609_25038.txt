@@ -15,6 +15,7 @@ new_JJ
 evil_JJ
 true_JJ
 new_JJ
+stronger_JJR
 recent_JJ
 able_JJ
 new_JJ
@@ -27,6 +28,7 @@ arty_JJ
 following_JJ
 intercut_JJ
 strange_JJ
+further_JJR
 bizarre_JJ
 floating_JJ
 pointless_JJ

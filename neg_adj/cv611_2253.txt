@@ -29,3 +29,4 @@ special_JJ
 poor_JJ
 offensive_JJ
 unambitious_JJ
+better_JJR

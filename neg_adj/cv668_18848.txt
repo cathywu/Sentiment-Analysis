@@ -13,6 +13,7 @@ reformed_JJ
 likely_JJ
 talented_JJ
 deserving_JJ
+better_JJR
 standard_JJ
 would-be_JJ
 internal_JJ
@@ -30,6 +31,7 @@ so-called_JJ
 private_JJ
 loose_JJ
 poor_JJ
+higher_JJR
 bad_JJ
 stupid_JJ
 spiffy_JJ

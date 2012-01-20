@@ -16,6 +16,7 @@ jumbled_JJ
 loud_JJ
 bad_JJ
 high_JJ
+worse_JJR
 deserved_JJ
 easy_JJ
 good_JJ

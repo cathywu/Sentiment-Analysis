@@ -9,6 +9,7 @@ sophisticated_JJ
 real_JJ
 old-fashioned_JJ
 old-fashioned_JJ
+younger_JJR
 old_JJ
 traditional_JJ
 magical_JJ

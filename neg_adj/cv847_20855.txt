@@ -33,6 +33,7 @@ skewed_JJ
 wide_JJ
 open_JJ
 unique_JJ
+deeper_JJR
 other_JJ
 real_JJ
 underlying_JJ

@@ -19,6 +19,7 @@ good_JJ
 good_JJ
 serious_JJ
 good_JJ
+lower_JJR
 big_JJ
 slimy_JJ
 said_JJ

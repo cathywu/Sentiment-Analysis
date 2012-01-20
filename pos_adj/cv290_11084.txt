@@ -17,6 +17,7 @@ naval_JJ
 legal_JJ
 free_JJ
 spanish_JJ
+further_JJR
 simple_JJ
 legal_JJ
 political_JJ
@@ -28,6 +29,7 @@ sympathetic_JJ
 new_JJ
 supreme_JJ
 little-known_JJ
+darker_JJR
 supreme_JJ
 easy_JJ
 jurassic_JJ

@@ -49,6 +49,7 @@ natural_JJ
 ideal_JJ
 catholic_JJ
 other_JJ
+closer_JJR
 other_JJ
 unchallenged_JJ
 repressive_JJ
@@ -56,6 +57,7 @@ systematic_JJ
 mystic_JJ
 evil_JJ
 necessary_JJ
+further_JJR
 authoritarian_JJ
 leading_JJ
 destructive_JJ

@@ -45,6 +45,7 @@ hilarious_JJ
 funny_JJ
 comedic_JJ
 happy_JJ
+further_JJR
 leading_JJ
 romantic_JJ
 previous_JJ

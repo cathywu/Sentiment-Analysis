@@ -36,6 +36,7 @@ frightening_JJ
 sparkling_JJ
 different_JJ
 dark_JJ
+darker_JJR
 serious_JJ
 entertaining_JJ
 potential_JJ
@@ -86,6 +87,7 @@ different_JJ
 confused_JJ
 detached_JJ
 everyday_JJ
+longer_JJR
 able_JJ
 real_JJ
 dark_JJ

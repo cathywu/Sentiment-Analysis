@@ -1,4 +1,5 @@
 big_JJ
+truer_JJR
 lousy_JJ
 predictable_JJ
 elementary_JJ
@@ -45,6 +46,7 @@ obsessed_JJ
 thick_JJ
 jonny_JJ
 perfect_JJ
+tighter_JJR
 true_JJ
 tolerable_JJ
 alien_JJ

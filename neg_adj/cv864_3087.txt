@@ -16,6 +16,7 @@ efficient_JJ
 isolated_JJ
 crooked_JJ
 young_JJ
+closer_JJR
 vulnerable_JJ
 popular_JJ
 french_JJ
@@ -36,6 +37,7 @@ haunted_JJ
 desperate_JJ
 emotional_JJ
 wrong_JJ
+better_JJR
 trying_JJ
 feeble_JJ
 embarrassing_JJ

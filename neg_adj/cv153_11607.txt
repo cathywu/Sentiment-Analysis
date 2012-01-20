@@ -1,6 +1,7 @@
 superficial_JJ
 superficial_JJ
 superficial_JJ
+deeper_JJR
 real_JJ
 blonde_JJ
 real_JJ
@@ -28,5 +29,7 @@ sympathetic_JJ
 boring_JJ
 modine_JJ
 pathetic_JJ
+stronger_JJR
 struggling_JJ
+stronger_JJR
 just_JJ

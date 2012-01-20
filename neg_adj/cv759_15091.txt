@@ -23,6 +23,7 @@ central_JJ
 fictional_JJ
 early_JJ
 mean_JJ
+worse_JJR
 sure_JJ
 new_JJ
 tired_JJ
@@ -37,6 +38,7 @@ bad_JJ
 particular_JJ
 cool_JJ
 mythic_JJ
+larger_JJR
 mythic_JJ
 simple_JJ
 dead_JJ
@@ -48,3 +50,4 @@ logical_JJ
 consistent_JJ
 dramatic_JJ
 burned_JJ
+better_JJR

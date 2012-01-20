@@ -49,9 +49,11 @@ guilty_JJ
 white_JJ
 liberal_JJ
 little_JJ
+further_JJR
 misguided_JJ
 good_JJ
 saccharine_JJ
+better_JJR
 final_JJ
 cynical_JJ
 hopeful_JJ
@@ -86,6 +88,7 @@ nuanced_JJ
 unforced_JJ
 divisive_JJ
 acting_JJ
+broader_JJR
 intimate_JJ
 little_JJ
 intellectual_JJ

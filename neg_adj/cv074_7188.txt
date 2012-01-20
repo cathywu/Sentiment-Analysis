@@ -10,10 +10,13 @@ stupid_JJ
 apparent_JJ
 semi-naked_JJ
 accused_JJ
+older_JJR
 classic_JJ
 sexual_JJ
 filthy_JJ
 rich_JJ
+older_JJR
+worse_JJR
 above_JJ
 old_JJ
 darned_JJ
@@ -29,6 +32,7 @@ kinky_JJ
 explicit_JJ
 important_JJ
 dull_JJ
+worse_JJR
 dull_JJ
 recycled_JJ
 other_JJ

@@ -20,6 +20,7 @@ other_JJ
 random_JJ
 evident_JJ
 fancy_JJ
+better_JJR
 interesting_JJ
 traditional_JJ
 hackneyed_JJ

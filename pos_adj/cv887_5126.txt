@@ -47,6 +47,7 @@ impossible_JJ
 lofty_JJ
 various_JJ
 rich_JJ
+earlier_JJR
 great_JJ
 cultural_JJ
 native_JJ
@@ -76,4 +77,6 @@ eclectic_JJ
 bouncy_JJ
 whimsical_JJ
 visual_JJ
+heavier_JJR
+deeper_JJR
 moral_JJ

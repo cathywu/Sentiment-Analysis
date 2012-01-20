@@ -5,6 +5,7 @@ genuine_JJ
 married_JJ
 ready_JJ
 good_JJ
+greener_JJR
 other_JJ
 only_JJ
 hilarious_JJ

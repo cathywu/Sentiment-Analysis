@@ -87,11 +87,13 @@ realistic_JJ
 supposed_JJ
 other_JJ
 pop_JJ
+deeper_JJR
 unlike_JJ
 other_JJ
 immoral_JJ
 immortal_JJ
 supposed_JJ
 open_JJ
+better_JJR
 timeless_JJ
 modern_JJ

@@ -3,6 +3,7 @@ stunning_JJ
 rival_JJ
 multi-million_JJ
 rival_JJ
+younger_JJR
 fancy_JJ
 possible_JJ
 memorable_JJ
@@ -14,7 +15,9 @@ spectacular_JJ
 perfect_JJ
 little_JJ
 convincing_JJ
+younger_JJR
 ingenious_JJ
 clever_JJ
 storyline_JJ
+younger_JJR
 great_JJ

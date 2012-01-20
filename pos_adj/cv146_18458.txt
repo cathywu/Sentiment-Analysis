@@ -37,6 +37,7 @@ universal_JJ
 sure_JJ
 ruling_JJ
 likely_JJ
+longer_JJR
 complex_JJ
 fascinating_JJ
 subtle_JJ
@@ -55,6 +56,7 @@ detailed_JJ
 short_JJ
 possible_JJ
 complete_JJ
+further_JJR
 necessary_JJ
 vast_JJ
 individual_JJ
@@ -71,6 +73,7 @@ obvious_JJ
 following_JJ
 strange_JJ
 mythical_JJ
+older_JJR
 human_JJ
 black_JJ
 sidious_JJ

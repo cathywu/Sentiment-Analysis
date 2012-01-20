@@ -17,14 +17,18 @@ urban_JJ
 red-lit_JJ
 rain-soaked_JJ
 cheap_JJ
+closer_JJR
 glaring_JJ
+better_JJR
 decent_JJ
 cool_JJ
 awful_JJ
 frightful_JJ
 quick_JJ
+better_JJR
 good_JJ
 friendly_JJ
+funnier_JJR
 well_JJ
 scrappy_JJ
 small_JJ
@@ -42,3 +46,4 @@ remarkable_JJ
 healthy_JJ
 surprising_JJ
 appropriate_JJ
+better_JJR

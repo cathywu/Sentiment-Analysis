@@ -9,6 +9,8 @@ small-scale_JJ
 generic_JJ
 storyline_JJ
 non-stop_JJ
+worse_JJR
+flatter_JJR
 interesting_JJ
 inventive_JJ
 old_JJ
@@ -25,3 +27,4 @@ final_JJ
 safe_JJ
 good_JJ
 loyal_JJ
+better_JJR

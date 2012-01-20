@@ -32,6 +32,7 @@ tan_JJ
 hormonal_JJ
 old_JJ
 lucky_JJ
+better_JJR
 random_JJ
 competent_JJ
 imaginative_JJ

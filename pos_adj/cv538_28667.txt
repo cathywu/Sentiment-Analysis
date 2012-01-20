@@ -33,6 +33,7 @@ unique_JJ
 funny_JJ
 gritty_JJ
 large_JJ
+caper_JJR
 earthy_JJ
 criminal_JJ
 large_JJ

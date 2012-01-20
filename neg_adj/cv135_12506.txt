@@ -40,5 +40,6 @@ deep_JJ
 wasted_JJ
 moving_JJ
 good_JJ
+greater_JJR
 average_JJ
 overall_JJ

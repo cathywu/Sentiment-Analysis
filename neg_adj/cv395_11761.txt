@@ -22,6 +22,7 @@ supposed_JJ
 stupid_JJ
 dumb_JJ
 different_JJ
+simpler_JJR
 accurate_JJ
 hideous_JJ
 central_JJ
@@ -36,4 +37,5 @@ countless_JJ
 rolling_JJ
 constant_JJ
 other_JJ
+better_JJR
 good_JJ

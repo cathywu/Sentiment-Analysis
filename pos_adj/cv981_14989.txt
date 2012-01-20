@@ -38,6 +38,7 @@ verbal_JJ
 plausible_JJ
 bankrupt_JJ
 apt_JJ
+richer_JJR
 usual_JJ
 famous_JJ
 popular_JJ

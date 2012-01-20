@@ -7,6 +7,7 @@ wealthy_JJ
 clear_JJ
 noisy_JJ
 old_JJ
+worse_JJR
 loud_JJ
 good_JJ
 old_JJ

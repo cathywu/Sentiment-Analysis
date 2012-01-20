@@ -26,6 +26,7 @@ goodnatured_JJ
 naive_JJ
 lost_JJ
 right_JJ
+funnier_JJR
 perfect_JJ
 repulsive_JJ
 french_JJ
@@ -34,4 +35,5 @@ shocking_JJ
 non_JJ
 french_JJ
 bad_JJ
+worse_JJR
 pleasant_JJ

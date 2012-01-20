@@ -18,6 +18,8 @@ new_JJ
 basic_JJ
 big_JJ
 elaborate_JJ
+better_JJR
+worse_JJR
 basic_JJ
 absent_JJ
 minded_JJ
@@ -41,6 +43,7 @@ long_JJ
 cheap_JJ
 quick_JJ
 general_JJ
+earlier_JJR
 released_JJ
 awful_JJ
 french_JJ
@@ -67,6 +70,7 @@ okay_JJ
 brilliant_JJ
 general_JJ
 little_JJ
+hyper_JJR
 other_JJ
 sad_JJ
 bad_JJ
@@ -77,6 +81,7 @@ animated_JJ
 recent_JJ
 good_JJ
 great_JJ
+worse_JJR
 pathetic_JJ
 new_JJ
 entertaining_JJ

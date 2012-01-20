@@ -34,7 +34,9 @@ mocking_JJ
 insulting_JJ
 nutty_JJ
 well_JJ
+better_JJR
 private_JJ
+better_JJR
 reasonable_JJ
 realistic_JJ
 impressive_JJ

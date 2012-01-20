@@ -5,6 +5,7 @@ odd_JJ
 married_JJ
 old_JJ
 wading_JJ
+longer_JJR
 familiar_JJ
 reese_JJ
 distrustful_JJ

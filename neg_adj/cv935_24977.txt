@@ -29,6 +29,7 @@ traceable_JJ
 strong_JJ
 main_JJ
 alternate_JJ
+closer_JJR
 big_JJ
 ridiculous_JJ
 other_JJ

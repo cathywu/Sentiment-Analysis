@@ -41,6 +41,7 @@ funny_JJ
 running_JJ
 short_JJ
 abrupt_JJ
+longer_JJR
 satisfying_JJ
 long_JJ
 small_JJ

@@ -31,6 +31,7 @@ sheer_JJ
 maximum_JJ
 interesting_JJ
 minor_JJ
+overeager_JJR
 new_JJ
 keeken_JJ
 important_JJ
@@ -68,6 +69,7 @@ other_JJ
 initial_JJ
 left_JJ
 short_JJ
+better_JJR
 lasting_JJ
 good_JJ
 maximum_JJ

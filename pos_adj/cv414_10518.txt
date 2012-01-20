@@ -51,6 +51,7 @@ frantic_JJ
 long_JJ
 just_JJ
 overall_JJ
+worse_JJR
 other_JJ
 able_JJ
 offensive_JJ

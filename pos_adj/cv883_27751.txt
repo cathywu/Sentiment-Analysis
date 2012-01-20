@@ -11,6 +11,7 @@ real-estate_JJ
 prosperous_JJ
 high_JJ
 left_JJ
+kidnapper_JJR
 grieving_JJ
 expensive_JJ
 young_JJ

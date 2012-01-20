@@ -1,6 +1,7 @@
 young_JJ
 sammy_JJ
 other_JJ
+worse_JJR
 animated_JJ
 white_JJ
 popular_JJ
@@ -27,6 +28,7 @@ capable_JJ
 poor_JJ
 insipid_JJ
 sugary_JJ
+better_JJR
 big_JJ
 real_JJ
 small_JJ

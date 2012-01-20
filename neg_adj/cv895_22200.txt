@@ -1,9 +1,12 @@
 quirky_JJ
 intertwined_JJ
 unusual_JJ
+greater_JJR
 hard_JJ
 short_JJ
+better_JJR
 bright_JJ
+better_JJR
 sick_JJ
 nice_JJ
 good_JJ

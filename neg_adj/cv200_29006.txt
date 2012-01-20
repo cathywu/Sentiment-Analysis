@@ -58,12 +58,14 @@ attractive_JJ
 close_JJ
 high_JJ
 political_JJ
+better_JJR
 previous_JJ
 usual_JJ
 attractive_JJ
 long_JJ
 human_JJ
 sympathetic_JJ
+further_JJR
 human_JJ
 reversed_JJ
 important_JJ
@@ -77,10 +79,12 @@ spotty_JJ
 close_JJ
 general_JJ
 improved_JJ
+jaw-dropper_JJR
 realistic_JJ
 believable_JJ
 flexible_JJ
 good_JJ
+higher_JJR
 assisted_JJ
 incredible_JJ
 flying_JJ

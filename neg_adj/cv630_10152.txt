@@ -1,5 +1,6 @@
 old_JJ
 mortal_JJ
+better_JJR
 special_JJ
 bad_JJ
 acting_JJ
@@ -18,6 +19,7 @@ good_JJ
 stupid_JJ
 inner_JJ
 underground_JJ
+later_JJR
 red_JJ
 american_JJ
 medical_JJ

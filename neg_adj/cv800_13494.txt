@@ -4,7 +4,9 @@ uninspired_JJ
 scared_JJ
 classic_JJ
 pre-med_JJ
+higher_JJR
 obvious_JJ
+better_JJR
 recreational_JJ
 bloody_JJ
 skeptical_JJ
@@ -20,5 +22,6 @@ famous_JJ
 magician_JJ
 laid_JJ
 visual_JJ
+worse_JJR
 cinematic_JJ
 equivalent_JJ

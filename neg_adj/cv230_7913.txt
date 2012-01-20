@@ -29,6 +29,7 @@ peaceful_JJ
 interesting_JJ
 armed_JJ
 stupid_JJ
+later_JJR
 nice_JJ
 belligerent_JJ
 white_JJ

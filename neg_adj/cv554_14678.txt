@@ -18,6 +18,7 @@ absurd_JJ
 late_JJ
 visual_JJ
 lives--for_JJ
+better_JJR
 live_JJ
 entire_JJ
 ugly_JJ

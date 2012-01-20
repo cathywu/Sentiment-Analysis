@@ -35,3 +35,4 @@ single_JJ
 fast_JJ
 joint_JJ
 boring_JJ
+better_JJR

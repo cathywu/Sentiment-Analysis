@@ -44,6 +44,7 @@ cracked_JJ
 little_JJ
 fake_JJ
 terrible_JJ
+nicer_JJR
 ludicrous_JJ
 vivid_JJ
 soundmix_JJ

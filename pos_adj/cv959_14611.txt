@@ -25,6 +25,7 @@ good_JJ
 slight_JJ
 male_JJ
 long_JJ
+tighter_JJR
 silly_JJ
 running_JJ
 slight_JJ

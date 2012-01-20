@@ -23,6 +23,7 @@ potential_JJ
 short_JJ
 full-length_JJ
 long_JJ
+smoother_JJR
 serious_JJ
 bad_JJ
 abysmal_JJ

@@ -64,3 +64,4 @@ low-key_JJ
 loving_JJ
 unrealistic_JJ
 able_JJ
+worse_JJR

@@ -32,6 +32,7 @@ concerned_JJ
 tricky_JJ
 good_JJ
 bad_JJ
+better_JJR
 wonderful_JJ
 little_JJ
 fine_JJ

@@ -10,6 +10,7 @@ entire_JJ
 ill-fated_JJ
 new_JJ
 failed_JJ
+stronger_JJR
 solid_JJ
 witty_JJ
 ideal_JJ

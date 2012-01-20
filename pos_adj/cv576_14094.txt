@@ -11,6 +11,7 @@ fantastical_JJ
 realistic_JJ
 believable_JJ
 interesting_JJ
+larger_JJR
 masked_JJ
 traditional_JJ
 main_JJ

@@ -47,6 +47,7 @@ other_JJ
 able_JJ
 flying_JJ
 little_JJ
+higher_JJR
 straight_JJ
 explosive_JJ
 entire_JJ
@@ -55,6 +56,7 @@ good_JJ
 unexciting_JJ
 atrocious_JJ
 bad_JJ
+worse_JJR
 acting_JJ
 asleep_JJ
 bright_JJ

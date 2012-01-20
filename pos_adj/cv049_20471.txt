@@ -22,3 +22,4 @@ breathtaking_JJ
 effective_JJ
 running_JJ
 long_JJ
+better_JJR

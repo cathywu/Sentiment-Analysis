@@ -17,6 +17,7 @@ trese_JJ
 un-virginal_JJ
 selected_JJ
 profound_JJ
+funnier_JJR
 unfamiliar_JJ
 contrived_JJ
 ultimate_JJ

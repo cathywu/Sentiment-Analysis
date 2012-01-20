@@ -24,6 +24,7 @@ combined_JJ
 ultimate_JJ
 super_JJ
 united_JJ
+further_JJR
 little_JJ
 jumbled_JJ
 unfunny_JJ

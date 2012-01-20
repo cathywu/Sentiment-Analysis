@@ -5,6 +5,7 @@ good_JJ
 mighty_JJ
 good_JJ
 crazy_JJ
+better_JJR
 original_JJ
 speedy_JJ
 main_JJ

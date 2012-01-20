@@ -13,6 +13,7 @@ good_JJ
 overall_JJ
 good_JJ
 cute_JJ
+longer_JJR
 bad_JJ
 funny_JJ
 interesting_JJ

@@ -87,6 +87,7 @@ floating_JJ
 thin_JJ
 involved_JJ
 little_JJ
+deeper_JJR
 narrow_JJ
 select_JJ
 key_JJ

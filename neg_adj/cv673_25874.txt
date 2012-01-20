@@ -1,10 +1,12 @@
 favorite_JJ
 strong_JJ
 visceral_JJ
+bigger_JJR
 familiar_JJ
 weak_JJ
 dull_JJ
 retired_JJ
+younger_JJR
 big_JJ
 old_JJ
 bad_JJ
@@ -17,6 +19,7 @@ long_JJ
 high_JJ
 brilliant_JJ
 simple_JJ
+deeper_JJR
 other_JJ
 light_JJ
 fun_JJ
@@ -30,5 +33,6 @@ bad_JJ
 good_JJ
 dead_JJ
 major_JJ
+better_JJR
 real_JJ
 superficial_JJ

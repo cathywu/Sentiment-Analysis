@@ -29,6 +29,8 @@ human_JJ
 drastic_JJ
 dangerous_JJ
 new_JJ
+longer_JJR
+better_JJR
 little_JJ
 new_JJ
 huge_JJ

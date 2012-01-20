@@ -15,6 +15,7 @@ bad_JJ
 important_JJ
 toxic_JJ
 young_JJ
+older_JJR
 various_JJ
 big_JJ
 sly_JJ

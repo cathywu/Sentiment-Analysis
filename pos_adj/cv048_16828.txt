@@ -3,6 +3,7 @@ cool_JJ
 bright_JJ
 invisible_JJ
 cool_JJ
+simpler_JJR
 single_JJ
 white_JJ
 advanced_JJ

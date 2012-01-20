@@ -12,6 +12,7 @@ commendable_JJ
 exceptional_JJ
 masterful_JJ
 powerful_JJ
+younger_JJR
 convincing_JJ
 full_JJ
 greedy_JJ

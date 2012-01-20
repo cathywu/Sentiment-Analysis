@@ -13,6 +13,7 @@ drunken_JJ
 suicidal_JJ
 difficult_JJ
 emotional_JJ
+better_JJR
 bad_JJ
 shocking_JJ
 malicious_JJ

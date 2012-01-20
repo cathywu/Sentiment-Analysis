@@ -35,6 +35,7 @@ impressive_JJ
 dark_JJ
 deep_JJ
 rich_JJ
+earlier_JJR
 deep_JJ
 red_JJ
 sleek_JJ
@@ -74,6 +75,7 @@ implausible_JJ
 bizarre_JJ
 personal_JJ
 fuzzy_JJ
+better_JJR
 concealed_JJ
 sudden_JJ
 murderous_JJ

@@ -41,6 +41,7 @@ wild_JJ
 oversexed_JJ
 short_JJ
 sorry_JJ
+shorter_JJR
 pure_JJ
 effective_JJ
 full_JJ
@@ -78,6 +79,7 @@ sporting_JJ
 blond_JJ
 vengeful_JJ
 interesting_JJ
+greater_JJR
 given_JJ
 wild_JJ
 entertaining_JJ

@@ -1,6 +1,7 @@
 usual_JJ
 usual_JJ
 intelligent_JJ
+earlier_JJR
 new_JJ
 usual_JJ
 good_JJ

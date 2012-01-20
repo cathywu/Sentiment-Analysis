@@ -24,6 +24,7 @@ precise_JJ
 poor_JJ
 vague_JJ
 humanize_JJ
+worse_JJR
 thoughtful_JJ
 involved_JJ
 mainstream_JJ

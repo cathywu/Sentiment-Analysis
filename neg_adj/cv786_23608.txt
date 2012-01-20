@@ -9,6 +9,7 @@ sure_JJ
 proud_JJ
 dramatic_JJ
 silly_JJ
+deeper_JJR
 cliched_JJ
 divided_JJ
 spectacular_JJ

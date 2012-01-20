@@ -28,6 +28,7 @@ monetary_JJ
 moronic_JJ
 willing_JJ
 due_JJ
+cheaper_JJR
 local_JJ
 appropriate_JJ
 agricultural_JJ
@@ -36,5 +37,6 @@ repetitive_JJ
 international_JJ
 united_JJ
 sole_JJ
+better_JJR
 jamaican_JJ
 foreign_JJ

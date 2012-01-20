@@ -42,6 +42,7 @@ spare_JJ
 pervasive_JJ
 sure_JJ
 competent_JJ
+better_JJR
 musical_JJ
 big_JJ
 muted_JJ
@@ -91,3 +92,4 @@ ubiquitous_JJ
 available_JJ
 running_JJ
 solid_JJ
+better_JJR

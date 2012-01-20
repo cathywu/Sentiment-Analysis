@@ -15,6 +15,7 @@ creepy_JJ
 black_JJ
 recent_JJ
 effective_JJ
+further_JJR
 committed_JJ
 cinematic_JJ
 generic_JJ
@@ -31,6 +32,7 @@ present_JJ
 entertaining_JJ
 sexual_JJ
 little_JJ
+worse_JJR
 right_JJ
 real_JJ
 flawless_JJ

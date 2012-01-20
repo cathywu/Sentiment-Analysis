@@ -40,6 +40,7 @@ impossible_JJ
 busy_JJ
 realistic_JJ
 complementary_JJ
+further_JJR
 woody_JJ
 woody_JJ
 original_JJ
@@ -73,6 +74,8 @@ other_JJ
 short_JJ
 woody_JJ
 furious_JJ
+bigger_JJR
+better_JJR
 stagnant_JJ
 new_JJ
 rewarding_JJ

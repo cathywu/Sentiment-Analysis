@@ -76,4 +76,5 @@ minor_JJ
 captivating_JJ
 live_JJ
 merciless_JJ
+weaker_JJR
 financial_JJ

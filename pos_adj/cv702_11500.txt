@@ -32,6 +32,7 @@ needless_JJ
 unexpected_JJ
 involved_JJ
 little_JJ
+better_JJR
 unstable_JJ
 receiving_JJ
 other_JJ

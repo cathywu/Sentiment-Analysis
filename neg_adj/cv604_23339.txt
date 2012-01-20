@@ -12,6 +12,8 @@ interesting_JJ
 original_JJ
 involved_JJ
 small_JJ
+further_JJR
+better_JJR
 very_JJ
 interesting_JJ
 interesting_JJ

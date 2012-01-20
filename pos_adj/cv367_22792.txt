@@ -13,6 +13,7 @@ deep_JJ
 lasting_JJ
 great_JJ
 english_JJ
+better_JJR
 descriptive_JJ
 typical_JJ
 well_JJ

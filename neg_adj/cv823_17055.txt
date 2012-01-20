@@ -26,6 +26,7 @@ attractive_JJ
 little_JJ
 pink_JJ
 pink_JJ
+bigger_JJR
 little_JJ
 attractive_JJ
 local_JJ
@@ -35,6 +36,7 @@ new_JJ
 cheap_JJ
 tiny_JJ
 simple_JJ
+smaller_JJR
 big_JJ
 supporting_JJ
 other_JJ

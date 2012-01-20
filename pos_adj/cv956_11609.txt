@@ -35,6 +35,7 @@ central_JJ
 flawed_JJ
 illicit_JJ
 falling_JJ
+better_JJR
 idealized_JJ
 powerless_JJ
 other_JJ

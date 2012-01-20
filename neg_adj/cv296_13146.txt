@@ -2,6 +2,7 @@ old_JJ
 new_JJ
 mysterious_JJ
 enhanced_JJ
+bigger_JJR
 ready_JJ
 gory_JJ
 massive_JJ
@@ -15,6 +16,7 @@ exciting_JJ
 intelligent_JJ
 right_JJ
 weak_JJ
+better_JJR
 infuriating_JJ
 average_JJ
 good_JJ

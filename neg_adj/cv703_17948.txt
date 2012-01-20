@@ -21,6 +21,7 @@ other_JJ
 authentic_JJ
 inadequate_JJ
 thin_JJ
+skinnier_JJR
 precise_JJ
 sure_JJ
 one-dimensional_JJ

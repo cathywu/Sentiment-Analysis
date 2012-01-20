@@ -14,6 +14,7 @@ realistic_JJ
 american_JJ
 high_JJ
 proud_JJ
+younger_JJR
 high_JJ
 high_JJ
 respected_JJ

@@ -2,6 +2,7 @@ fundamental_JJ
 slow_JJ
 plain_JJ
 uninteresting_JJ
+ex-newspaper_JJR
 mysterious_JJ
 fake_JJ
 stingy_JJ
@@ -28,7 +29,9 @@ sexy_JJ
 old_JJ
 bad_JJ
 supporting_JJ
+stronger_JJR
 meaningless_JJ
 slow_JJ
 given_JJ
+better_JJR
 classic_JJ

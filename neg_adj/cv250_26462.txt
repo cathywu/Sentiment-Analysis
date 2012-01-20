@@ -37,6 +37,7 @@ good_JJ
 bad_JJ
 close_JJ
 good_JJ
+longer_JJR
 charmed_JJ
 musical_JJ
 corny_JJ

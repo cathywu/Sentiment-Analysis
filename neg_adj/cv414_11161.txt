@@ -11,6 +11,7 @@ new_JJ
 new_JJ
 previous_JJ
 headstrong_JJ
+younger_JJR
 nine-year-old_JJ
 stunning_JJ
 new_JJ

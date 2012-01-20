@@ -4,6 +4,7 @@ infamous_JJ
 important_JJ
 other_JJ
 anticlimactic_JJ
+worse_JJR
 familiar_JJ
 anticlimactic_JJ
 real_JJ
@@ -59,6 +60,8 @@ true_JJ
 similar_JJ
 overall_JJ
 unfair_JJ
+better_JJR
+worse_JJR
 faithful_JJ
 pretty_JJ
 amazing_JJ

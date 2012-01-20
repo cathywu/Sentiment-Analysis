@@ -11,6 +11,7 @@ honest_JJ
 unimpressed_JJ
 ready_JJ
 due_JJ
+worse_JJR
 trying_JJ
 amazing_JJ
 recognizable_JJ

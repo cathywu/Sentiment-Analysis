@@ -36,6 +36,7 @@ serious_JJ
 artistic_JJ
 industrial_JJ
 late_JJ
+bigger_JJR
 strange_JJ
 great_JJ
 bleak_JJ
@@ -92,6 +93,7 @@ obvious_JJ
 classic_JJ
 hidden_JJ
 other_JJ
+further_JJR
 collective_JJ
 subconscious_JJ
 western_JJ
@@ -124,6 +126,7 @@ human_JJ
 main_JJ
 main_JJ
 three-dimensional_JJ
+further_JJR
 important_JJ
 initial_JJ
 new_JJ
@@ -134,6 +137,7 @@ special_JJ
 impressive_JJ
 special_JJ
 brilliant_JJ
+newer_JJR
 lucky_JJ
 original_JJ
 immune_JJ

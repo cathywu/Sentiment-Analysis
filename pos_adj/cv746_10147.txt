@@ -4,6 +4,7 @@ vague_JJ
 good_JJ
 general_JJ
 great_JJ
+better_JJR
 fresh_JJ
 sinister_JJ
 subversive_JJ
@@ -51,11 +52,13 @@ emotional_JJ
 delicious_JJ
 other_JJ
 superb_JJ
+higher_JJR
 staggering_JJ
 new_JJ
 large_JJ
 original_JJ
 original_JJ
+funnier_JJR
 dear_JJ
 subtle_JJ
 usual_JJ

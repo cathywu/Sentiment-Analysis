@@ -58,4 +58,5 @@ different_JJ
 dark_JJ
 introspective_JJ
 clear_JJ
+better_JJR
 key_JJ

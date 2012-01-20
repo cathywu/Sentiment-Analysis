@@ -1,3 +1,5 @@
+longer_JJR
+warmer_JJR
 inferior_JJ
 lost_JJ
 optimistic_JJ
@@ -49,6 +51,7 @@ dumb_JJ
 destructive_JJ
 special_JJ
 shallow_JJ
+further_JJR
 climactic_JJ
 main_JJ
 real_JJ

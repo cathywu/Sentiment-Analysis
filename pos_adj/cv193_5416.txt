@@ -13,6 +13,7 @@ racial_JJ
 mexican_JJ
 optimistic_JJ
 entire_JJ
+shorter_JJR
 other_JJ
 real_JJ
 personal_JJ

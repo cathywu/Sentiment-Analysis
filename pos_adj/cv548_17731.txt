@@ -68,6 +68,7 @@ trite_JJ
 improbable_JJ
 above_JJ
 crazed_JJ
+longer_JJR
 responsible_JJ
 long_JJ
 entire_JJ

@@ -24,6 +24,8 @@ unknown_JJ
 impressive_JJ
 enigmatic_JJ
 egg-shaped_JJ
+younger_JJR
+stronger_JJR
 mad_JJ
 honest_JJ
 interesting_JJ

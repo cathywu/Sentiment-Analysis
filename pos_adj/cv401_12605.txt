@@ -41,6 +41,7 @@ enjoyable_JJ
 gratuitous_JJ
 sure_JJ
 far_JJ
+worse_JJR
 other_JJ
 shocking_JJ
 graphic_JJ

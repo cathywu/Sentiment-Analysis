@@ -38,6 +38,8 @@ helgenberger_JJ
 respectable_JJ
 involved_JJ
 original_JJ
+stronger_JJR
+stronger_JJR
 strong_JJ
 surprised_JJ
 historical_JJ
@@ -83,10 +85,12 @@ limited_JJ
 impressive_JJ
 fun_JJ
 plain_JJ
+better_JJR
 appealing_JJ
 nice_JJ
 cynic_JJ
 small_JJ
+better_JJR
 incapable_JJ
 enjoyable_JJ
 effective_JJ

@@ -24,10 +24,12 @@ fallible_JJ
 capable_JJ
 inner_JJ
 legal_JJ
+higher_JJR
 spectacular_JJ
 rich_JJ
 beautiful_JJ
 wonderful_JJ
+better_JJR
 famous_JJ
 deep_JJ
 intellectual_JJ
@@ -50,6 +52,7 @@ strong_JJ
 useless_JJ
 good_JJ
 old_JJ
+younger_JJR
 parallel_JJ
 interesting_JJ
 developed_JJ
@@ -67,6 +70,8 @@ free_JJ
 powerful_JJ
 wealthy_JJ
 helpless_JJ
+deeper_JJR
+deeper_JJR
 directed_JJ
 powerful_JJ
 long_JJ

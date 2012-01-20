@@ -20,7 +20,9 @@ big_JJ
 funny_JJ
 geeky_JJ
 bad_JJ
+better_JJR
 supposed_JJ
+younger_JJR
 nerdy_JJ
 funny_JJ
 popular_JJ

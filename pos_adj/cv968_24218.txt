@@ -10,6 +10,8 @@ eventual_JJ
 catchy_JJ
 post-cannibal_JJ
 musical_JJ
+bigger_JJR
+longer_JJR
 uncut_JJ
 inherent_JJ
 pre-_JJ
@@ -25,6 +27,8 @@ hard_JJ
 other_JJ
 embarrassing_JJ
 public_JJ
+bigger_JJR
+longer_JJR
 uncut_JJ
 released_JJ
 available_JJ
@@ -46,6 +50,7 @@ free_JJ
 noticeable_JJ
 matt_JJ
 lemmy_JJ
+firmer_JJR
 easy_JJ
 good_JJ
 entire_JJ

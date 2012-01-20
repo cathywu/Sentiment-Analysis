@@ -19,6 +19,7 @@ emotional_JJ
 weary_JJ
 exceptional_JJ
 wrong_JJ
+beekeeper_JJR
 busy_JJ
 challenging_JJ
 unsettled_JJ

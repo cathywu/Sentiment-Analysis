@@ -14,6 +14,7 @@ working_JJ
 false_JJ
 adequate_JJ
 waspy_JJ
+better_JJR
 fit_JJ
 chinatown_JJ
 silly_JJ

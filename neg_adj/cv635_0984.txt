@@ -31,6 +31,7 @@ bad_JJ
 obsessed_JJ
 good_JJ
 powerful_JJ
+better_JJR
 unconvincing_JJ
 evil_JJ
 stupid_JJ

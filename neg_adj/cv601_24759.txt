@@ -5,6 +5,7 @@ advanced_JJ
 bad_JJ
 weird_JJ
 safe_JJ
+worse_JJR
 blue_JJ
 great_JJ
 alien_JJ

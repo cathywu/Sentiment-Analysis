@@ -1,5 +1,6 @@
 tough_JJ
 professional_JJ
+better_JJR
 reliable_JJ
 promising_JJ
 private_JJ

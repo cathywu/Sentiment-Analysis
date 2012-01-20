@@ -51,10 +51,12 @@ major_JJ
 pathetic_JJ
 heartless_JJ
 outdid_JJ
+worse_JJR
 big_JJ
 boring_JJ
 rubin_JJ
 simplistic_JJ
+worse_JJR
 promising_JJ
 deadly_JJ
 full_JJ
@@ -94,6 +96,7 @@ emotional_JJ
 big_JJ
 bad_JJ
 naked_JJ
+stronger_JJR
 energetic_JJ
 fun_JJ
 good_JJ
@@ -102,8 +105,10 @@ acknowledgeable_JJ
 strong_JJ
 maximilian_JJ
 nice_JJ
+better_JJR
 shallow_JJ
 remarkable_JJ
+better_JJR
 special_JJ
 good_JJ
 limited_JJ

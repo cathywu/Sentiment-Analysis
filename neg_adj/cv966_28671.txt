@@ -55,3 +55,4 @@ big_JJ
 opulent_JJ
 lavish_JJ
 long_JJ
+better_JJR

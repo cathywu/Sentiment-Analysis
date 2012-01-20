@@ -46,6 +46,7 @@ baked_JJ
 less-than-original_JJ
 unwise_JJ
 dumb_JJ
+greater_JJR
 artificial_JJ
 amusing_JJ
 american_JJ

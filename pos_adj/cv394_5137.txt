@@ -2,8 +2,10 @@ imaginative_JJ
 twisted_JJ
 dying_JJ
 satirical_JJ
+higher_JJR
 deceased_JJ
 worthy_JJ
+higher_JJR
 torn_JJ
 funny_JJ
 poignant_JJ

@@ -16,6 +16,7 @@ handicapped_JJ
 overweight_JJ
 small_JJ
 free_JJ
+longer_JJR
 live_JJ
 entire_JJ
 other_JJ

@@ -5,6 +5,7 @@ regular_JJ
 hard-working_JJ
 stiff_JJ
 decent_JJ
+better_JJR
 paying_JJ
 wrong_JJ
 married_JJ
@@ -37,6 +38,7 @@ accused_JJ
 guilty_JJ
 pious_JJ
 strong_JJ
+weaker_JJR
 wild_JJ
 short_JJ
 small_JJ

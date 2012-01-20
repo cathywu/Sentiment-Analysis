@@ -28,6 +28,7 @@ female_JJ
 severed_JJ
 flying_JJ
 even_JJ
+harder_JJR
 contrived_JJ
 female_JJ
 cellular_JJ

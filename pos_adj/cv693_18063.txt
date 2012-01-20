@@ -48,6 +48,7 @@ bad_JJ
 real_JJ
 good_JJ
 usual_JJ
+better_JJR
 other_JJ
 shakespearean_JJ
 little_JJ

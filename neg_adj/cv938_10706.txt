@@ -34,6 +34,7 @@ illegal_JJ
 great_JJ
 secure_JJ
 fake_JJ
+better_JJR
 fake_JJ
 good_JJ
 fake_JJ

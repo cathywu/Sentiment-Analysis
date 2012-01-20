@@ -10,6 +10,7 @@ kinnear_JJ
 little_JJ
 sinister_JJ
 amazing_JJ
+better_JJR
 blue_JJ
 furious_JJ
 sure_JJ

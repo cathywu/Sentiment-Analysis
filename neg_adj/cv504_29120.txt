@@ -9,6 +9,8 @@ original_JJ
 warm_JJ
 pleasant_JJ
 growing_JJ
+older_JJR
+wiser_JJR
 fresh_JJ
 obnoxious_JJ
 usual_JJ

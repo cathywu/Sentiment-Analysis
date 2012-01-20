@@ -33,6 +33,7 @@ american_JJ
 canadian_JJ
 recent_JJ
 sweet_JJ
+better_JJR
 boring_JJ
 afraid_JJ
 fine_JJ

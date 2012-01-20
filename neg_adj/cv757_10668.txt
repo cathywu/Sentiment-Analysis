@@ -19,6 +19,7 @@ armored_JJ
 stuck_JJ
 raging_JJ
 christian_JJ
+better_JJR
 tender_JJ
 untamed_JJ
 dead_JJ

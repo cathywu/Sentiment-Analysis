@@ -20,6 +20,7 @@ numerous_JJ
 intergalactic_JJ
 obsolete_JJ
 new_JJ
+stronger_JJR
 left_JJ
 dead_JJ
 new_JJ
@@ -52,6 +53,7 @@ little_JJ
 beautiful_JJ
 living_JJ
 harsh_JJ
+longer_JJR
 unarmed_JJ
 caine_JJ
 human_JJ

@@ -55,6 +55,8 @@ flaccid_JJ
 special_JJ
 ineffective_JJ
 early_JJ
+better_JJR
+casper_JJR
 supernatural_JJ
 buffy_JJ
 real_JJ

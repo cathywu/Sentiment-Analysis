@@ -15,6 +15,7 @@ young_JJ
 familiar_JJ
 tactic_JJ
 milky_JJ
+faster_JJR
 sonic_JJ
 good_JJ
 old_JJ

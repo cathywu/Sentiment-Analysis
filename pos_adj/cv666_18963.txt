@@ -32,6 +32,7 @@ despicable_JJ
 other_JJ
 wrong_JJ
 convinced_JJ
+worse_JJR
 sorry_JJ
 soaring_JJ
 deep_JJ

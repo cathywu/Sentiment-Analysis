@@ -78,6 +78,7 @@ emotional_JJ
 leading_JJ
 original_JJ
 false_JJ
+harsher_JJR
 original_JJ
 minimal_JJ
 coveted_JJ

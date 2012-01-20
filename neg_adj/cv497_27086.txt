@@ -2,6 +2,7 @@ sporting_JJ
 australian_JJ
 so-called_JJ
 convincing_JJ
+better_JJR
 3-year_JJ
 large_JJ
 booming_JJ
@@ -17,6 +18,7 @@ burning_JJ
 poor_JJ
 postal_JJ
 poor_JJ
+lower_JJR
 british_JJ
 trusted_JJ
 alive_JJ
@@ -25,5 +27,7 @@ dry_JJ
 british_JJ
 australian_JJ
 shrill_JJ
+better_JJR
 mad_JJ
+truer_JJR
 daring_JJ

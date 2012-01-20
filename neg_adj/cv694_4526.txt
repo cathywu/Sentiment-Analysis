@@ -2,6 +2,7 @@ difficult_JJ
 hard_JJ
 bleak_JJ
 mere_JJ
+longer_JJR
 pure_JJ
 mere_JJ
 surviving_JJ

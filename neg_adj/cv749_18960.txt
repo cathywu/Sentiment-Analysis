@@ -6,6 +6,7 @@ sexual_JJ
 ham-handed_JJ
 offensive_JJ
 pseudo-depth_JJ
+worse_JJR
 interesting_JJ
 sympathetic_JJ
 ridiculous_JJ

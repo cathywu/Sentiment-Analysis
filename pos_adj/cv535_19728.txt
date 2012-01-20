@@ -1,10 +1,12 @@
 curious_JJ
 whole_JJ
+better_JJR
 pivotal_JJ
 cute_JJ
 old_JJ
 cute_JJ
 precious_JJ
+better_JJR
 whole_JJ
 low_JJ
 supernatural_JJ

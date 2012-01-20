@@ -2,6 +2,7 @@ dutch_JJ
 mega_JJ
 total_JJ
 special_JJ
+better_JJR
 quaid_JJ
 beautiful_JJ
 quaid_JJ

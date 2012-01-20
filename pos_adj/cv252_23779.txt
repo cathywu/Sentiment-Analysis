@@ -36,9 +36,11 @@ old_JJ
 indian_JJ
 weendigo_JJ
 insatiable_JJ
+stronger_JJR
 sickening_JJ
 healthy_JJ
 whole_JJ
+older_JJR
 disappointed_JJ
 raw_JJ
 wonderful_JJ
@@ -81,6 +83,7 @@ lonely_JJ
 live_JJ
 frightening_JJ
 shocking_JJ
+deeper_JJR
 strange_JJ
 psychological_JJ
 great_JJ

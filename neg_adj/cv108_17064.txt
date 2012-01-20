@@ -7,6 +7,7 @@ embarrassing_JJ
 long_JJ
 zany_JJ
 present_JJ
+stronger_JJR
 rebellious_JJ
 dark_JJ
 abusive_JJ
@@ -38,3 +39,4 @@ practical_JJ
 contrived_JJ
 clumsy_JJ
 practical_JJ
+worse_JJR

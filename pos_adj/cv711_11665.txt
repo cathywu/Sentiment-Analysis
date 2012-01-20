@@ -35,6 +35,7 @@ crippled_JJ
 betrayed_JJ
 alone_JJ
 dying_JJ
+further_JJR
 complicated_JJ
 involved_JJ
 loving_JJ
@@ -49,6 +50,7 @@ sweet_JJ
 short_JJ
 miraculous_JJ
 headlong_JJ
+deeper_JJR
 pitiful_JJ
 monetary_JJ
 human_JJ
@@ -76,6 +78,7 @@ egoyan_JJ
 visual_JJ
 aural_JJ
 thematic_JJ
+earlier_JJR
 multiple_JJ
 whole_JJ
 distant_JJ

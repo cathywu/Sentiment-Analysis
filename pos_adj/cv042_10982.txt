@@ -12,6 +12,7 @@ long_JJ
 proud_JJ
 amazed_JJ
 little_JJ
+bigger_JJR
 interested_JJ
 long_JJ
 old_JJ
@@ -42,6 +43,7 @@ good_JJ
 sentimental_JJ
 straight_JJ
 subtle_JJ
+larger_JJR
 small_JJ
 good_JJ
 good_JJ

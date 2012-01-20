@@ -56,9 +56,11 @@ bad_JJ
 good_JJ
 manipulative_JJ
 touching_JJ
+later_JJR
 final_JJ
 old_JJ
 impassioned_JJ
+earlier_JJR
 real_JJ
 worthy_JJ
 modern_JJ

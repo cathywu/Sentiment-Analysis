@@ -32,6 +32,7 @@ whole_JJ
 good_JJ
 wrong_JJ
 wonderful_JJ
+better_JJR
 supposed_JJ
 scared_JJ
 supposed_JJ

@@ -25,10 +25,12 @@ common_JJ
 obvious_JJ
 drunken_JJ
 deep_JJ
+worse_JJR
 idle_JJ
 rich_JJ
 odious_JJ
 eager_JJ
+lower_JJR
 close_JJ
 easy_JJ
 heavy-handed_JJ

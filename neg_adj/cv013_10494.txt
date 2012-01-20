@@ -56,6 +56,7 @@ litefoot_JJ
 mystical_JJ
 huge_JJ
 following_JJ
+worse_JJR
 convincing_JJ
 martial_JJ
 believable_JJ

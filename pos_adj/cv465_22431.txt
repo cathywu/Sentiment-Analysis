@@ -9,6 +9,8 @@ universal_JJ
 social_JJ
 strong_JJ
 popular_JJ
+older_JJR
+newer_JJR
 different_JJ
 stark_JJ
 strong_JJ

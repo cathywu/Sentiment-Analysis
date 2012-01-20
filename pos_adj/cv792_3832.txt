@@ -5,6 +5,7 @@ achievable_JJ
 magical_JJ
 british_JJ
 improved_JJ
+better_JJR
 complex_JJ
 capable_JJ
 real-time_JJ
@@ -27,6 +28,7 @@ previous_JJ
 mundane_JJ
 plotline_JJ
 leading_JJ
+further_JJR
 ruined_JJ
 mediocre_JJ
 recent_JJ

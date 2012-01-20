@@ -6,6 +6,7 @@ new_JJ
 familiar_JJ
 intelligent_JJ
 jurassic_JJ
+better_JJR
 immediate_JJ
 lost_JJ
 jurassic_JJ
@@ -21,6 +22,7 @@ ludicrous_JJ
 overextended_JJ
 jurassic_JJ
 desperate_JJ
+longer_JJR
 exciting_JJ
 first-time_JJ
 aerial_JJ

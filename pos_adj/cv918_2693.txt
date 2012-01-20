@@ -33,6 +33,7 @@ steely_JJ
 lighthearted_JJ
 stoic_JJ
 fun_JJ
+tougher_JJR
 perfect_JJ
 quaid_JJ
 tubercular_JJ

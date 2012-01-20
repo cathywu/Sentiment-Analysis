@@ -3,6 +3,7 @@ accurate_JJ
 mean_JJ
 cinematic_JJ
 organised_JJ
+stronger_JJR
 differing_JJ
 various_JJ
 close_JJ
@@ -26,6 +27,7 @@ occasional_JJ
 consistent_JJ
 tacky_JJ
 coloured_JJ
+earlier_JJR
 similar_JJ
 american_JJ
 feeble_JJ

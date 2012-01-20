@@ -36,6 +36,7 @@ alien_JJ
 good_JJ
 original_JJ
 unpredictable_JJ
+bigger_JJR
 simple_JJ
 numerous_JJ
 gross_JJ

@@ -11,6 +11,7 @@ violent_JJ
 paranoid_JJ
 early_JJ
 bloody_JJ
+longer_JJR
 powerless_JJ
 respective_JJ
 bleak_JJ

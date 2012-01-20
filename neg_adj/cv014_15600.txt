@@ -24,6 +24,7 @@ shakespearean_JJ
 free_JJ
 wonderful_JJ
 early_JJ
+faster_JJR
 nice_JJ
 interesting_JJ
 other_JJ

@@ -36,4 +36,5 @@ complicated_JJ
 non-existent_JJ
 live_JJ
 dead_JJ
+better_JJR
 unsuccessful_JJ

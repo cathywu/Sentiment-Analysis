@@ -4,6 +4,7 @@ exclusive_JJ
 struggling_JJ
 acting_JJ
 current_JJ
+worse_JJR
 pitiful_JJ
 underwater_JJ
 massive_JJ

@@ -41,6 +41,7 @@ supposed_JJ
 corporate_JJ
 big_JJ
 just_JJ
+smarter_JJR
 content_JJ
 shocked_JJ
 numerous_JJ
@@ -63,6 +64,7 @@ absolute_JJ
 running_JJ
 stupid_JJ
 illogical_JJ
+better_JJR
 inept_JJ
 only_JJ
 fast_JJ

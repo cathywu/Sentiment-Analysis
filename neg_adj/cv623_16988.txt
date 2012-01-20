@@ -37,6 +37,7 @@ big_JJ
 possible_JJ
 sick_JJ
 large_JJ
+larger_JJR
 little_JJ
 only_JJ
 stylish_JJ
@@ -49,6 +50,7 @@ disgusting_JJ
 fascinating_JJ
 twisted_JJ
 innate_JJ
+better_JJR
 capable_JJ
 frightening_JJ
 young_JJ
@@ -85,6 +87,7 @@ uncertain_JJ
 runaway_JJ
 appropriate_JJ
 blue-toned_JJ
+better_JJR
 other_JJ
 rough_JJ
 wide_JJ

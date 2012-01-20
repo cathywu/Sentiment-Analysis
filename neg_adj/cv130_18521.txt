@@ -14,6 +14,7 @@ involved_JJ
 forced_JJ
 bad_JJ
 cruel_JJ
+worse_JJR
 kumble_JJ
 written_JJ
 open_JJ

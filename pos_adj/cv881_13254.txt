@@ -10,4 +10,5 @@ important_JJ
 young_JJ
 impressive_JJ
 interesting_JJ
+earlier_JJR
 interesting_JJ

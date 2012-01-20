@@ -50,3 +50,4 @@ needless_JJ
 depressing_JJ
 honest_JJ
 happy_JJ
+better_JJR

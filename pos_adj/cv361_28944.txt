@@ -5,6 +5,7 @@ accomplished_JJ
 back_JJ
 full_JJ
 rugged_JJ
+younger_JJR
 traditional_JJ
 scots-irish_JJ
 english_JJ

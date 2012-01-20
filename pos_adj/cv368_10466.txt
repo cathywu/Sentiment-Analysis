@@ -8,7 +8,9 @@ present_JJ
 old_JJ
 stunning_JJ
 mesmerized_JJ
+longer_JJR
 true_JJ
+truer_JJR
 hard_JJ
 favorite_JJ
 true_JJ
@@ -30,6 +32,7 @@ arrogant_JJ
 young_JJ
 italian_JJ
 overjoyed_JJ
+better_JJR
 classic_JJ
 sappy_JJ
 sweet_JJ
@@ -40,6 +43,7 @@ enigmatic_JJ
 brown_JJ
 talented_JJ
 extra_JJ
+easier_JJR
 slow_JJ
 amazing_JJ
 heroic_JJ

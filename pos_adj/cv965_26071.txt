@@ -20,6 +20,7 @@ chidduck_JJ
 feared_JJ
 eerie_JJ
 high_JJ
+higher_JJR
 unusual_JJ
 outrun_JJ
 chidduck_JJ

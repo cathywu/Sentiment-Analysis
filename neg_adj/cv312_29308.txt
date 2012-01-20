@@ -30,6 +30,7 @@ big_JJ
 painstaking_JJ
 female_JJ
 talented_JJ
+better_JJR
 real_JJ
 silent_JJ
 true_JJ

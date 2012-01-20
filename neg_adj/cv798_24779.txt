@@ -8,6 +8,7 @@ nagging_JJ
 late_JJ
 severe_JJ
 worried_JJ
+older_JJR
 agonizing_JJ
 bitter_JJ
 attractive_JJ

@@ -47,6 +47,7 @@ good_JJ
 tame_JJ
 mean_JJ
 non-traditional_JJ
+better_JJR
 regressive_JJ
 futuristic_JJ
 good_JJ

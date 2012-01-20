@@ -26,6 +26,7 @@ low_JJ
 deaf_JJ
 new_JJ
 even_JJ
+worse_JJR
 certain_JJ
 bored_JJ
 ready_JJ

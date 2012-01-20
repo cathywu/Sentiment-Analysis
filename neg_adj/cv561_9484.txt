@@ -24,6 +24,7 @@ military_JJ
 little_JJ
 buxom_JJ
 principal_JJ
+smaller_JJR
 pointless_JJ
 flying_JJ
 married_JJ

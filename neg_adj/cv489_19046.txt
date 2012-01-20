@@ -45,6 +45,7 @@ necessary_JJ
 other_JJ
 little_JJ
 cocky_JJ
+later_JJR
 extra_JJ
 cool_JJ
 general_JJ
@@ -70,6 +71,7 @@ professional_JJ
 illegal_JJ
 hard_JJ
 good_JJ
+worse_JJR
 general_JJ
 young_JJ
 female_JJ

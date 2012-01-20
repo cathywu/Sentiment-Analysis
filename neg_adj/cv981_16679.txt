@@ -51,3 +51,4 @@ exact_JJ
 similar_JJ
 similar_JJ
 romantic_JJ
+better_JJR

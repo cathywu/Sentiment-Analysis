@@ -55,6 +55,7 @@ tense_JJ
 thrilling_JJ
 entire_JJ
 small_JJ
+earlier_JJR
 final_JJ
 cool_JJ
 lovely_JJ

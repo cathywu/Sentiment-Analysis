@@ -1,6 +1,7 @@
 welcome_JJ
 cinematic_JJ
 accessible_JJ
+younger_JJR
 vast_JJ
 familiar_JJ
 prime_JJ
@@ -14,6 +15,7 @@ tragic_JJ
 high_JJ
 private_JJ
 prep_JJ
+phifer_JJR
 general_JJ
 brable_JJ
 dean_JJ
@@ -39,6 +41,7 @@ eroding_JJ
 shelved_JJ
 cocky_JJ
 self-assured_JJ
+darker_JJR
 defensive_JJ
 black_JJ
 growing_JJ

@@ -34,6 +34,7 @@ musical_JJ
 entire_JJ
 useless_JJ
 unfunny_JJ
+funnier_JJR
 beautiful_JJ
 intelligent_JJ
 single_JJ
@@ -68,5 +69,6 @@ old_JJ
 married_JJ
 correspondant_JJ
 nutty_JJ
+earlier_JJR
 dumb_JJ
 unfortunate_JJ

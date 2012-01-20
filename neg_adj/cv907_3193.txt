@@ -59,4 +59,5 @@ civilized_JJ
 previous_JJ
 clean_JJ
 speechless_JJ
+better_JJR
 thin_JJ

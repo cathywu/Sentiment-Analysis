@@ -5,6 +5,7 @@ hard-luck_JJ
 good_JJ
 climactic_JJ
 big_JJ
+bigger_JJR
 cinematic_JJ
 aforementioned_JJ
 gross_JJ
@@ -26,6 +27,7 @@ other_JJ
 surprised_JJ
 amusing_JJ
 rolling_JJ
+younger_JJR
 emotional_JJ
 tactic_JJ
 despicable_JJ
@@ -34,6 +36,7 @@ down-on-his-luck_JJ
 long_JJ
 supposed_JJ
 glowing_JJ
+better_JJR
 bad_JJ
 evil_JJ
 scummy_JJ

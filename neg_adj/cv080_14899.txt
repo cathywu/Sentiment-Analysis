@@ -14,6 +14,7 @@ immense_JJ
 sliding_JJ
 unconvincing_JJ
 little_JJ
+younger_JJR
 meaty_JJ
 hard_JJ
 creepy_JJ
@@ -21,6 +22,7 @@ shifty_JJ
 quick_JJ
 interesting_JJ
 mediocre_JJ
+better_JJR
 single_JJ
 hackneyed_JJ
 ruthless_JJ

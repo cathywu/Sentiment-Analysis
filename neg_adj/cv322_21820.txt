@@ -26,6 +26,7 @@ real_JJ
 sloppy_JJ
 acting_JJ
 notable_JJ
+better_JJR
 quirky_JJ
 awake_JJ
 sleepy_JJ

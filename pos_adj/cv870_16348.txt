@@ -3,6 +3,7 @@ stunning_JJ
 interesting_JJ
 well-written_JJ
 vignettes-styled_JJ
+clearer_JJR
 fine_JJ
 emotional_JJ
 effective_JJ
@@ -17,15 +18,18 @@ lonely_JJ
 young_JJ
 failed_JJ
 married_JJ
+older_JJR
 secret_JJ
 dying_JJ
 related_JJ
+younger_JJR
 married_JJ
 little_JJ
 distinct_JJ
 different_JJ
 good_JJ
 solid_JJ
+older_JJR
 aging_JJ
 great_JJ
 wonderful_JJ

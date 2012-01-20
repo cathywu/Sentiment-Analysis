@@ -5,6 +5,7 @@ sure_JJ
 pretty_JJ
 good_JJ
 overall_JJ
+lower_JJR
 big_JJ
 outfits_JJ
 minor_JJ

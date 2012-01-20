@@ -16,6 +16,7 @@ mocking_JJ
 silky_JJ
 right_JJ
 actual_JJ
+later_JJR
 introductory_JJ
 numerous_JJ
 spicy_JJ
@@ -62,6 +63,8 @@ innocent_JJ
 lesser_JJ
 remaining_JJ
 little_JJ
+harder_JJR
+fuller_JJR
 scary_JJ
 late_JJ
 following_JJ

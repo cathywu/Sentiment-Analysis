@@ -8,6 +8,7 @@ charnel_JJ
 spare_JJ
 steaming_JJ
 effectful_JJ
+quieter_JJR
 thoughtful_JJ
 real_JJ
 disappointed_JJ
@@ -95,7 +96,10 @@ attributable_JJ
 following_JJ
 tragic_JJ
 evil_JJ
+better_JJR
 previous_JJ
+stronger_JJR
+stronger_JJR
 perfect_JJ
 pushy_JJ
 effective_JJ

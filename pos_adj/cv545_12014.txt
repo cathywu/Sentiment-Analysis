@@ -16,6 +16,7 @@ east-west_JJ
 upper_JJ
 hedonistic_JJ
 constant_JJ
+lower_JJR
 wealthy_JJ
 aristocratic_JJ
 rich_JJ

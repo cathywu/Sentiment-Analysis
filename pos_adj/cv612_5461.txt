@@ -34,6 +34,7 @@ right_JJ
 drunken_JJ
 remarkable_JJ
 above_JJ
+better_JJR
 martial_JJ
 surprised_JJ
 drunken_JJ
@@ -48,6 +49,7 @@ chinese_JJ
 very_JJ
 little_JJ
 wrong_JJ
+better_JJR
 fei-hong_JJ
 drunken_JJ
 hazy_JJ
@@ -77,6 +79,7 @@ caught_JJ
 evil_JJ
 timely_JJ
 general_JJ
+later_JJR
 drunken_JJ
 comedic_JJ
 fei-hong_JJ
@@ -92,7 +95,9 @@ primary_JJ
 martial_JJ
 drunken_JJ
 drunk_JJ
+further_JJR
 drunken_JJ
+better_JJR
 intoxicated_JJ
 fine_JJ
 drunk_JJ
@@ -113,6 +118,7 @@ hot_JJ
 american_JJ
 faked_JJ
 drunken_JJ
+better_JJR
 heroic_JJ
 rumble_JJ
 first-rate_JJ
@@ -132,6 +138,7 @@ old_JJ
 crisp_JJ
 clear_JJ
 worthy_JJ
+wider_JJR
 whole_JJ
 utter_JJ
 american_JJ

@@ -7,6 +7,7 @@ sticking_JJ
 new_JJ
 other_JJ
 vile_JJ
+hopper_JJR
 upset_JJ
 double_JJ
 successful_JJ

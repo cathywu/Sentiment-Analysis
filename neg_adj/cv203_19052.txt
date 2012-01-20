@@ -14,6 +14,7 @@ innocent_JJ
 bad_JJ
 behavior_JJ
 big_JJ
+bigger_JJR
 involved_JJ
 fat_JJ
 big_JJ

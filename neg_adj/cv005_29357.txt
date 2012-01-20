@@ -12,6 +12,7 @@ novel_JJ
 good_JJ
 good_JJ
 earth-normal_JJ
+easier_JJR
 advanced_JJ
 little_JJ
 female_JJ
@@ -45,10 +46,14 @@ boring_JJ
 standard_JJ
 haunted_JJ
 great_JJ
+newer_JJR
 unimpressive_JJ
 digital_JJ
 short_JJ
 red_JJ
+better_JJR
+better_JJR
+better_JJR
 following_JJ
 classic_JJ
 precinct_JJ

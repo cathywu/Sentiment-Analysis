@@ -18,6 +18,7 @@ prominent_JJ
 motley_JJ
 twisted_JJ
 big_JJ
+greater_JJR
 major_JJ
 heavy_JJ
 original_JJ
@@ -45,6 +46,7 @@ solid_JJ
 central_JJ
 energetic_JJ
 live_JJ
+heavier_JJR
 true_JJ
 famous_JJ
 girlfight_JJ

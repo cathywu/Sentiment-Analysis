@@ -7,6 +7,7 @@ downtown_JJ
 following_JJ
 favorite_JJ
 unscathed_JJ
+worse_JJR
 multiple_JJ
 clear_JJ
 simple_JJ

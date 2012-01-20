@@ -17,6 +17,7 @@ cocky_JJ
 young_JJ
 similar_JJ
 other_JJ
+better_JJR
 different_JJ
 larger-than-life_JJ
 individual_JJ

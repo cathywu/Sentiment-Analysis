@@ -19,6 +19,7 @@ blonde_JJ
 easy_JJ
 handsome_JJ
 intelligent_JJ
+longer_JJR
 marine_JJ
 good_JJ
 hard_JJ

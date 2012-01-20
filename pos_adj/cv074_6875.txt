@@ -27,6 +27,7 @@ indeterminate_JJ
 distant_JJ
 slow_JJ
 drunken_JJ
+tighter_JJR
 drunken_JJ
 seattle_JJ
 asian_JJ
@@ -54,8 +55,10 @@ good_JJ
 embarrassing_JJ
 fei-hong_JJ
 pretty_JJ
+further_JJR
 chagrinned_JJ
 unhappy_JJ
+further_JJR
 annoyed_JJ
 harsh_JJ
 fei-hong_JJ

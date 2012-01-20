@@ -11,6 +11,7 @@ coherent_JJ
 confusing_JJ
 gaping_JJ
 illogical_JJ
+better_JJR
 pretty_JJ
 right_JJ
 storyline_JJ

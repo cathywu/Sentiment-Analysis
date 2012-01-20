@@ -6,7 +6,9 @@ silly_JJ
 spoof_JJ
 dull_JJ
 difficult_JJ
+better_JJR
 terrible_JJ
+worse_JJR
 pleasant_JJ
 usual_JJ
 confused_JJ
@@ -15,10 +17,13 @@ rare_JJ
 flimsy_JJ
 missing_JJ
 solar_JJ
+closer_JJR
 stereotypical_JJ
+stronger_JJR
 useful_JJ
 weak_JJ
 equal_JJ
+worse_JJR
 total_JJ
 whole_JJ
 ludicrous_JJ

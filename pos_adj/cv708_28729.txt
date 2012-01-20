@@ -42,6 +42,7 @@ good_JJ
 supercilious_JJ
 height-challenged_JJ
 energetic_JJ
+better_JJR
 proven_JJ
 terrific_JJ
 vocal_JJ

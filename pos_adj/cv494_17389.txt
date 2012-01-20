@@ -2,6 +2,8 @@ retrospective_JJ
 lean_JJ
 american_JJ
 angry_JJ
+wilder_JJR
+better_JJR
 british_JJ
 japanese_JJ
 japanese_JJ

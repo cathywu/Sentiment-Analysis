@@ -47,6 +47,7 @@ horrible_JJ
 optimistic_JJ
 gullible_JJ
 bleak_JJ
+worse_JJR
 satirical_JJ
 small_JJ
 changing_JJ

@@ -49,3 +49,4 @@ racist_JJ
 bright_JJ
 hilarious_JJ
 irrelevant_JJ
+bigger_JJR
