@@ -14,7 +14,7 @@ def words(s):
     punctuation_map = {',':"COMMA", '.':"PERIOD", ':':"COLON", ';':"SEMI", '\'':"SINGLEQUOTE",
                        '"':"DOUBLEQUOTE", '?':"QUESTION"}
     for i in s:
-        if i.isalnum():
+        if i.isalnum() or (i == '_'):
             current += i
         elif i.isspace():
             if not current:

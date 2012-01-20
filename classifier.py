@@ -114,7 +114,7 @@ class BayesClassifier(Classifier):
             for i in range(self.nfeatures):
                 self.normalized[cls][i] /= self.lengths[cls]
 
-    def classify(self, vec):
+    def classify(self, vec, binary=False):
         self.compile()
         mx = -sys.maxint
         mx_cls = 0
@@ -122,7 +122,10 @@ class BayesClassifier(Classifier):
 
         for feature in vec:
             if feature in self.index:
-                point[self.index[feature]] += vec[feature]
+                if binary:
+                    point[self.index[feature]] += 1
+                else:
+                    point[self.index[feature]] += vec[feature]
         for cls in self.classes:
             dotprod = dot(log(self.classes[cls]), log(point)) - log(self.lengths[cls])
             if dotprod > mx:

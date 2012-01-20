@@ -120,7 +120,7 @@ class TestConfiguration:
                     for j in self.n:
                         tests[i].update(ngrams.ngrams(j, open("%s/%s" % (
                             self.test_dir,test_files[i])).read()))
-                results = [self.classifier.classify(i) for i in tests]
+                results = [self.classifier.classify(i,binary=self.binary) for i in tests]
                 correct = len([i for i in results if int(i) == 1])
                 print "%s Stars, Positive: %s of %s, %s accuracy" % (s,correct,len(tests),
                         (float(correct)/len(tests)))
@@ -137,11 +137,11 @@ class TestConfiguration:
                 neg_tests[i].update(ngrams.ngrams(j, self.neg_test_data[i]))
 
         # Testing
-        pos_results = [self.classifier.classify(i) for i in pos_tests]
+        pos_results = [self.classifier.classify(i,binary=self.binary) for i in pos_tests]
         pos_correct = len([i for i in pos_results if int(i) == 1])
         print "Positive: %s of %s, %s accuracy" % (pos_correct,len(pos_tests),
                 (float(pos_correct)/len(pos_tests)))
-        neg_results = [self.classifier.classify(i) for i in neg_tests]
+        neg_results = [self.classifier.classify(i,binary=self.binary) for i in neg_tests]
         neg_correct = len([i for i in neg_results if int(i) == -1])
         print "Negative: %s of %s, %s accuracy" % (neg_correct,len(neg_tests),
                 (float(neg_correct)/len(neg_tests)))
@@ -264,59 +264,25 @@ def test(classif, n=1, train_size=500, mode='k', iterations=1, dataset='',
     print "Total:", round((neg_correct + pos_correct)/(2*iterations)*100), "%"
 
 if __name__ == "__main__":
-    #test(classifier.BayesClassifier,n=[1],train_size=800,mode='k',iterations=3,
-    #        dataset='default',extra_dataset=1,limit=[16165],binary=False, idf=False)
-    #test(classifier.LinearSVMClassifier,n=[1],train_size=800,mode='k',iterations=3,
-    #        dataset='default',extra_dataset=1,limit=[16165],binary=False, idf=False)
 
-    #test(classifier.BayesClassifier,n=[1],train_size=800,mode='k',iterations=3,
-    #        dataset='default',extra_dataset=1,limit=[16165],binary=True, idf=False)
-    #test(classifier.MaximumEntropyClassifier,n=[1],train_size=800,mode='k',iterations=3,
-    #        dataset='default',extra_dataset=1,limit=[16165],binary=False, idf=False)
-    #test(classifier.LinearSVMClassifier,n=[1],train_size=800,mode='k',iterations=3,
-    #        dataset='default',extra_dataset=1,limit=[16165],binary=True, idf=False)
-    #
-    #test(classifier.BayesClassifier,n=[1],train_size=800,mode='k',iterations=3,
-    #        dataset='default',extra_dataset=1,limit=None,binary=True, idf=False)
-    #test(classifier.MaximumEntropyClassifier,n=[1],train_size=800,mode='k',iterations=3,
-    #        dataset='default',extra_dataset=1,limit=None,binary=False, idf=False)
-    #BORKED#test(classifier.LinearSVMClassifier,n=[1],train_size=800,mode='k',iterations=3,
-    #BORKED#        dataset='default',extra_dataset=1,limit=None,binary=True, idf=False)
+    n = [1]
+    dataset = 'partofspeech'
+    limit = [16165]
+    binary = True
+    idf = False
 
-    #test(classifier.BayesClassifier,n=[2],train_size=800,mode='k',iterations=3,
-    #        dataset='default',extra_dataset=1,limit=[16165],binary=True, idf=False)
-    #test(classifier.MaximumEntropyClassifier,n=[2],train_size=800,mode='k',iterations=3,
-    #        dataset='default',extra_dataset=1,limit=[16165],binary=False, idf=False)
-    #test(classifier.LinearSVMClassifier,n=[2],train_size=800,mode='k',iterations=3,
-    #        dataset='default',extra_dataset=1,limit=[16165],binary=True, idf=False)
+    train_size = 800
+    mode = 'k'
+    iterations = 3
+    extra_dataset=3
     
-    #test(classifier.BayesClassifier,n=[1,2],train_size=800,mode='k',iterations=3,
-    #        dataset='default',extra_dataset=1,limit=[16165,16165],binary=True, idf=False)
-    #test(classifier.MaximumEntropyClassifier,n=[1,2],train_size=800,mode='k',iterations=3,
-    #        dataset='default',extra_dataset=1,limit=[16165,16165],binary=False, idf=False)
-    #test(classifier.LinearSVMClassifier,n=[1,2],train_size=800,mode='k',iterations=3,
-    #        dataset='default',extra_dataset=1,limit=[16165,16165],binary=True, idf=False)
-    
-    #test(classifier.BayesClassifier,n=[1],train_size=800,mode='k',iterations=3,
-    #        dataset='partofspeech',extra_dataset=1,limit=None,binary=True, idf=False)
-    #test(classifier.MaximumEntropyClassifier,n=[1],train_size=800,mode='k',iterations=3,
-    #        dataset='partofspeech',extra_dataset=1,limit=None,binary=False, idf=False)
-    #BORKED#test(classifier.LinearSVMClassifier,n=[1],train_size=800,mode='k',iterations=3,
-    #BORKED#        dataset='partofspeech',extra_dataset=1,limit=None,binary=True, idf=False)
-
-    #test(classifier.BayesClassifier,n=[1],train_size=800,mode='k',iterations=3,
-    #        dataset='adjectives',extra_dataset=1,limit=None,binary=True, idf=False)
-    #test(classifier.MaximumEntropyClassifier,n=[1],train_size=800,mode='k',iterations=3,
-    #        dataset='adjectives',extra_dataset=1,limit=None,binary=False, idf=False)
-    #test(classifier.LinearSVMClassifier,n=[1],train_size=800,mode='k',iterations=3,
-    #        dataset='adjectives',extra_dataset=1,limit=None,binary=True, idf=False)
-
-    #test(classifier.BayesClassifier,n=[1],train_size=800,mode='k',iterations=3,
-    #        dataset='position',extra_dataset=1,limit=None,binary=True, idf=False)
-    #test(classifier.MaximumEntropyClassifier,n=[1],train_size=800,mode='k',iterations=3,
-    #        dataset='position',extra_dataset=1,limit=None,binary=False, idf=False)
-    #BORKED#test(classifier.LinearSVMClassifier,n=[1],train_size=800,mode='k',iterations=3,
-    #BORKED#        dataset='position',extra_dataset=1,limit=None,binary=True, idf=False)
+    print "Bayes:"
+    test(classifier.BayesClassifier,n=n,train_size=train_size,mode=mode,iterations=iterations,
+            dataset=dataset,extra_dataset=extra_dataset,limit=limit,binary=binary, idf=idf)
+    print "MaxEnt:"
+    test(classifier.MaximumEntropyClassifier,n=n,train_size=train_size,mode=mode,iterations=iterations, dataset=dataset,extra_dataset=extra_dataset,limit=limit,binary=binary, idf=idf)
+    print "SVM:"
+    test(classifier.LinearSVMClassifier,n=n,train_size=train_size,mode=mode,iterations=iterations, dataset=dataset,extra_dataset=extra_dataset,limit=limit,binary=binary, idf=idf)
 
     #mvc = MajorityVotingTester()
     #ind = Indexes(mode='k',iterations=3,train_size=800)
@@ -342,6 +308,7 @@ if __name__ == "__main__":
 
 
 
+
 # with train_size = 800, no shuffling, bayes classifier
 # [ns]      dataset         [limits]        binary  --> +results    -results
 # [2]       position        [114370]        0       --> 0.96        0.56
@@ -357,5 +324,4 @@ if __name__ == "__main__":
 # [1,2]     partofspeech    [16165,16165]   1       --> 0.65        0.91
 # [1]       partofspeech    [16165,16165]   1       --> 0.67        0.91
 # [1]       adjectives      [2633]          1       --> 0.92        0.70
-# [1]       adjectives      [2633]          0       --> 0.97        0.54
-# [1]       default         [40183]         1       --> 0.83        0.79
+# [1]       adjectives      [2633]          0       --> 0.97        0.54# [1]       default         [40183]         1       --> 0.83        0.79
