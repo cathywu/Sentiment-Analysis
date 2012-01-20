@@ -1,11 +1,6 @@
 #!/usr/bin/python
 import os
 
-POSPOS_DIR = "pos_tagged"
-NEGPOS_DIR = "neg_tagged"
-POSADJ_DIR = "pos_adj"
-NEGADJ_DIR = "neg_adj"
-
 def filter_adj(olddir, newdir):
     if not os.path.isdir(newdir):
         os.mkdir(newdir)
@@ -13,7 +8,7 @@ def filter_adj(olddir, newdir):
         f = open("%s/%s" % (olddir,filename)).read().split("\n")
         w = open("%s/%s" % (newdir,filename), 'w')
         for word in f:
-            if word[-3:]=='_JJ' or word[-4:]=='_JJR':
+            if word[-4:]=='_VBZ' or word[-4:]=="_VBD" or word[-3:]=="_VB":
                 w.write("%s\n" % word)
         w.close()
 
@@ -26,5 +21,5 @@ if __name__ == "__main__":
     (options, args) = parser.parse_args()
 
     olddir = "%s_tagged" % options.directory
-    newdir = "%s_adj" % options.directory
+    newdir = "%s_verb" % options.directory
     filter_adj(olddir,newdir)
