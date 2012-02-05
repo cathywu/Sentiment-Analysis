@@ -32,6 +32,7 @@ different_JJ
 capable_JJ
 direct_JJ
 correct_JJ
+better_JJR
 overall_JJ
 personal_JJ
 general_JJ

@@ -21,6 +21,7 @@ isolated_JJ
 full_JJ
 tedious_JJ
 necessary_JJ
+better_JJR
 other_JJ
 old_JJ
 alive_JJ

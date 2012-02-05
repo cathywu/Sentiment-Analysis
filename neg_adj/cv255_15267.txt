@@ -3,6 +3,8 @@ grievous_JJ
 original_JJ
 able_JJ
 illogical_JJ
+shorter_JJR
+longer_JJR
 appropriate_JJ
 stupid_JJ
 preferable_JJ

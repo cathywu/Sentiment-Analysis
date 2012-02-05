@@ -75,5 +75,6 @@ implausible_JJ
 magic_JJ
 inevitable_JJ
 hackneyed_JJ
+further_JJR
 happy_JJ
 awkward_JJ

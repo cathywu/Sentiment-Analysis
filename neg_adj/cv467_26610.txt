@@ -26,6 +26,8 @@ suspicious_JJ
 little_JJ
 fascistic_JJ
 little_JJ
+deeper_JJR
+deeper_JJR
 affable_JJ
 nebbish_JJ
 bad_JJ

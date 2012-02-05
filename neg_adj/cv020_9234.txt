@@ -49,4 +49,5 @@ compelling_JJ
 religious_JJ
 african-american_JJ
 awful_JJ
+worse_JJR
 dead_JJ

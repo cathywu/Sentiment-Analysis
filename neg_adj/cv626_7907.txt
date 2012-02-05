@@ -30,6 +30,7 @@ modest_JJ
 encouraging_JJ
 acting_JJ
 emotional_JJ
+better_JJR
 delicious_JJ
 just_JJ
 late_JJ

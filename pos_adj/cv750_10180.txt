@@ -47,8 +47,10 @@ great_JJ
 amazing_JJ
 famous_JJ
 infamous_JJ
+earlier_JJR
 nasty_JJ
 still_JJ
+quieter_JJR
 stimulating_JJ
 entire_JJ
 gorgeous_JJ
@@ -72,6 +74,7 @@ clever_JJ
 bland_JJ
 amazing_JJ
 great_JJ
+smaller_JJR
 great_JJ
 wonderful_JJ
 underrated_JJ

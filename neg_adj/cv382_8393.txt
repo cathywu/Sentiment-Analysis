@@ -1,6 +1,7 @@
 anticipated_JJ
 good_JJ
 elaborate_JJ
+further_JJR
 untouched_JJ
 other_JJ
 jurrasic_JJ

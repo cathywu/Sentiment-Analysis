@@ -28,6 +28,7 @@ requisite_JJ
 sexy_JJ
 strange_JJ
 castilian_JJ
+funnier_JJR
 reigning_JJ
 exploited_JJ
 serious_JJ
@@ -40,6 +41,7 @@ dead_JJ
 good_JJ
 evil_JJ
 classic_JJ
+better_JJR
 celebrity-directed_JJ
 great_JJ
 supporting_JJ

@@ -24,9 +24,11 @@ successful_JJ
 new_JJ
 emotional_JJ
 other_JJ
+later_JJR
 profound_JJ
 sexual_JJ
 close_JJ
 musical_JJ
 forgettable_JJ
 acceptable_JJ
+older_JJR

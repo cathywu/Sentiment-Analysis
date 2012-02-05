@@ -22,7 +22,10 @@ parody_JJ
 horrible_JJ
 terrible_JJ
 bad_JJ
+better_JJR
+better_JJR
 impossible_JJ
+worse_JJR
 written_JJ
 whole_JJ
 mental_JJ

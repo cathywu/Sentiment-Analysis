@@ -53,6 +53,7 @@ true_JJ
 dead_JJ
 different_JJ
 obsessive_JJ
+better_JJR
 little_JJ
 little_JJ
 new_JJ

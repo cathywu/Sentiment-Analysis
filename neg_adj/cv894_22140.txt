@@ -24,8 +24,10 @@ insensitive_JJ
 funny_JJ
 black_JJ
 drunk_JJ
+wilder_JJR
 evil_JJ
 decent_JJ
+wilder_JJR
 embarrassed_JJ
 little_JJ
 black_JJ

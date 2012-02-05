@@ -15,6 +15,7 @@ fast_JJ
 intended_JJ
 new_JJ
 white_JJ
+better_JJR
 increasing_JJ
 pretty_JJ
 separate_JJ

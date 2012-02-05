@@ -44,7 +44,9 @@ essential_JJ
 supposed_JJ
 acting_JJ
 great_JJ
+better_JJR
 unique_JJ
+better_JJR
 independent_JJ
 certain_JJ
 galore_JJ
@@ -61,5 +63,7 @@ lovable_JJ
 fun_JJ
 serious_JJ
 unsuccessful_JJ
+bigger_JJR
 awesome_JJ
 amazing_JJ
+better_JJR

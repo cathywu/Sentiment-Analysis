@@ -59,6 +59,7 @@ sweating_JJ
 confused_JJ
 new_JJ
 main_JJ
+later_JJR
 sensitive_JJ
 confusing_JJ
 late_JJ

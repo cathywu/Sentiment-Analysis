@@ -54,6 +54,7 @@ successful_JJ
 super_JJ
 human_JJ
 disastrous_JJ
+greater_JJR
 amazing_JJ
 open_JJ
 minor_JJ
@@ -66,5 +67,6 @@ drastic_JJ
 available_JJ
 awesome_JJ
 early_JJ
+better_JJR
 insurmountable_JJ
 eye-opening_JJ

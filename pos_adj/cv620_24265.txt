@@ -20,6 +20,7 @@ controversial_JJ
 disappointed_JJ
 similar_JJ
 cryptic_JJ
+better_JJR
 open_JJ
 fastidious_JJ
 facial_JJ
@@ -36,6 +37,8 @@ initial_JJ
 unwatchable_JJ
 watchable_JJ
 satirical_JJ
+bigger_JJR
+longer_JJR
 uncut_JJ
 ill-fated_JJ
 female_JJ
@@ -74,6 +77,7 @@ obvious_JJ
 instrumental_JJ
 unknown_JJ
 open_JJ
+bigger_JJR
 still_JJ
 undecided_JJ
 old_JJ

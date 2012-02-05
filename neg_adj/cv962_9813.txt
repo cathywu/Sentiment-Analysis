@@ -29,6 +29,7 @@ strangling_JJ
 up-to-date_JJ
 final_JJ
 american_JJ
+further_JJR
 rolling_JJ
 hard_JJ
 serious_JJ

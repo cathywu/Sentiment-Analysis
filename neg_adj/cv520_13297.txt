@@ -12,10 +12,12 @@ generic_JJ
 modern_JJ
 black_JJ
 atrocious_JJ
+greater_JJR
 individual_JJ
 great_JJ
 underdeveloped_JJ
 stereotyped_JJ
+worse_JJR
 unrecognizable_JJ
 comedian_JJ
 special_JJ

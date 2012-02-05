@@ -12,6 +12,7 @@ lost_JJ
 reputable_JJ
 clear_JJ
 monstrous_JJ
+worse_JJR
 other_JJ
 normal_JJ
 shocking_JJ

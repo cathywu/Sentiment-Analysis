@@ -46,6 +46,7 @@ good_JJ
 decent_JJ
 likable_JJ
 creative_JJ
+greater_JJR
 great_JJ
 final_JJ
 different_JJ

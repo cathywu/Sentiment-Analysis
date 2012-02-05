@@ -8,7 +8,10 @@ following_JJ
 tyrannical_JJ
 obsessed_JJ
 typical_JJ
+better_JJR
+better_JJR
 supporting_JJ
+shorter_JJR
 just_JJ
 turned_JJ
 long_JJ
@@ -17,6 +20,7 @@ pathetic_JJ
 bad_JJ
 evil_JJ
 heist_JJ
+worse_JJR
 final_JJ
 bad_JJ
 dumb_JJ

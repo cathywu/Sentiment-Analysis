@@ -27,6 +27,7 @@ repeated_JJ
 other_JJ
 desired_JJ
 cute_JJ
+easier_JJR
 human_JJ
 little_JJ
 bland_JJ

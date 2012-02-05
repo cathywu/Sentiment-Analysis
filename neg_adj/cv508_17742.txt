@@ -10,6 +10,7 @@ funny_JJ
 wee_JJ
 whole_JJ
 thick_JJ
+younger_JJR
 rolling_JJ
 silly_JJ
 other_JJ

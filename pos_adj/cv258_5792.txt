@@ -2,6 +2,7 @@ common_JJ
 economic_JJ
 well-off_JJ
 classic_JJ
+easier_JJR
 obsessed_JJ
 acrylic_JJ
 drab_JJ
@@ -16,6 +17,7 @@ black_JJ
 white_JJ
 shabby_JJ
 moody_JJ
+younger_JJR
 successful_JJ
 suspicious_JJ
 warm_JJ

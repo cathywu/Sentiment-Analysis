@@ -41,6 +41,7 @@ riveting_JJ
 intense_JJ
 hard_JJ
 questioning_JJ
+deeper_JJR
 perfect_JJ
 genuine_JJ
 sympathetic_JJ

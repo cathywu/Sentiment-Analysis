@@ -34,6 +34,7 @@ generic_JJ
 irrelevant_JJ
 moral_JJ
 false_JJ
+worse_JJR
 false_JJ
 false_JJ
 existing_JJ

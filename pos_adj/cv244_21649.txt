@@ -26,8 +26,10 @@ charming_JJ
 wrong_JJ
 eerie_JJ
 facial_JJ
+better_JJR
 extreme_JJ
 likely_JJ
 excellent_JJ
 entertaining_JJ
+better_JJR
 puzzling_JJ

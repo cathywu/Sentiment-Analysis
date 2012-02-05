@@ -37,13 +37,16 @@ only_JJ
 scared_JJ
 chilling_JJ
 final_JJ
+higher_JJR
 able_JJ
 great_JJ
 bad_JJ
 able_JJ
 desperate_JJ
 great_JJ
+cooler_JJR
 likely_JJ
+better_JJR
 amazing_JJ
 american_JJ
 deep_JJ

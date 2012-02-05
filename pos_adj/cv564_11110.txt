@@ -1,6 +1,7 @@
 terrific_JJ
 psychotic_JJ
 demented_JJ
+roper_JJR
 british_JJ
 new_JJ
 new_JJ

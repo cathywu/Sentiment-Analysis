@@ -12,6 +12,7 @@ earthy_JJ
 inevitable_JJ
 pretentious_JJ
 laughable_JJ
+smarter_JJR
 beautiful_JJ
 other_JJ
 cruel_JJ

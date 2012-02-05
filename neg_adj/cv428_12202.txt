@@ -5,10 +5,12 @@ horrible_JJ
 horrible_JJ
 cheap_JJ
 moronic_JJ
+better_JJR
 similar_JJ
 sorry_JJ
 cheap_JJ
 hardy_JJ
+later_JJR
 buxom_JJ
 white_JJ
 randy_JJ
@@ -27,6 +29,7 @@ easy_JJ
 natural_JJ
 born_JJ
 deep_JJ
+deeper_JJR
 sole_JJ
 real_JJ
 weird_JJ
@@ -101,6 +104,8 @@ one-note_JJ
 dead_JJ
 laughable_JJ
 bad_JJ
+better_JJR
+worse_JJR
 bad_JJ
 talented_JJ
 bad_JJ

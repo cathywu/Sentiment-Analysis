@@ -38,10 +38,12 @@ confusing_JJ
 hurt_JJ
 special_JJ
 strong_JJ
+worse_JJR
 science-heavy_JJ
 sappy_JJ
 bearable_JJ
 tedious_JJ
+longer_JJR
 only_JJ
 great_JJ
 tense_JJ

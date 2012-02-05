@@ -45,6 +45,7 @@ intelligent_JJ
 sensual_JJ
 serious_JJ
 certain_JJ
+better_JJR
 embarrassing_JJ
 unnecessary_JJ
 sure_JJ

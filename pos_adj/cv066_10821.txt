@@ -42,6 +42,7 @@ snobbish_JJ
 great_JJ
 looking_JJ
 happy_JJ
+further_JJR
 romantic_JJ
 thurman_JJ
 great_JJ

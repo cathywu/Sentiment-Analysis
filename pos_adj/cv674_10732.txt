@@ -1,3 +1,5 @@
+better_JJR
+worse_JJR
 different_JJ
 dizzying_JJ
 minor_JJ
@@ -58,6 +60,7 @@ old_JJ
 new_JJ
 new_JJ
 american_JJ
+younger_JJR
 gay_JJ
 likable_JJ
 good_JJ

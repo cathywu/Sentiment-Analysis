@@ -1,5 +1,6 @@
 international_JJ
 skeptical_JJ
+better_JJR
 good_JJ
 original_JJ
 different_JJ

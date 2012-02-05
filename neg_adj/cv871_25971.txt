@@ -14,6 +14,7 @@ dutch_JJ
 great_JJ
 impossible_JJ
 attractive_JJ
+casper_JJR
 american_JJ
 monotonous_JJ
 graphic_JJ

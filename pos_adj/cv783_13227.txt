@@ -30,6 +30,7 @@ cohesive_JJ
 believable_JJ
 entertaining_JJ
 sharp_JJ
+better_JJR
 alone_JJ
 different_JJ
 spectacular_JJ
@@ -69,6 +70,7 @@ pretty_JJ
 deep_JJ
 terrific_JJ
 glad_JJ
+bigger_JJR
 recent_JJ
 disappointing_JJ
 great_JJ

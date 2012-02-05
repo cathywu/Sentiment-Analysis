@@ -13,6 +13,7 @@ curious_JJ
 compelling_JJ
 entire_JJ
 early_JJ
+later_JJR
 clean_JJ
 sober_JJ
 whole_JJ

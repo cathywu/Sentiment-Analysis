@@ -33,6 +33,7 @@ past_JJ
 three-act_JJ
 funny_JJ
 long_JJ
+funnier_JJR
 actual_JJ
 excellent_JJ
 subtle_JJ
@@ -55,3 +56,5 @@ silly_JJ
 dry_JJ
 subtle_JJ
 nice_JJ
+better_JJR
+better_JJR

@@ -18,6 +18,7 @@ good_JJ
 miserable_JJ
 exciting_JJ
 leading_JJ
+worse_JJR
 long_JJ
 different_JJ
 bored_JJ
@@ -36,9 +37,11 @@ cold_JJ
 entertaining_JJ
 commanding_JJ
 odd_JJ
+stronger_JJR
 armored_JJ
 unable_JJ
 original_JJ
+better_JJR
 uncomfortable_JJ
 suspenseful_JJ
 uneasy_JJ

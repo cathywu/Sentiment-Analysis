@@ -47,6 +47,7 @@ karate_JJ
 roving_JJ
 weird_JJ
 extraneous_JJ
+further_JJR
 integrated_JJ
 absolute_JJ
 looking_JJ

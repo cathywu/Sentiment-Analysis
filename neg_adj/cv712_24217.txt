@@ -14,6 +14,7 @@ specific_JJ
 ominous_JJ
 smoking_JJ
 scary_JJ
+later_JJR
 gay_JJ
 main_JJ
 silly_JJ

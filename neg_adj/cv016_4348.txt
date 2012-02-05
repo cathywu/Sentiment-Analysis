@@ -8,6 +8,7 @@ minor_JJ
 good_JJ
 only_JJ
 open_JJ
+further_JJR
 good_JJ
 bad_JJ
 unlikable_JJ
@@ -16,6 +17,7 @@ bad_JJ
 inner_JJ
 thin_JJ
 shred_JJ
+slower_JJR
 old_JJ
 violent_JJ
 other_JJ

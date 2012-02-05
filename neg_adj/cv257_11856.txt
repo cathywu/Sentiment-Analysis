@@ -54,6 +54,7 @@ bored_JJ
 entertaining_JJ
 particular_JJ
 odd_JJ
+older_JJR
 full_JJ
 howling_JJ
 crazy_JJ

@@ -16,6 +16,7 @@ big_JJ
 funny_JJ
 successful_JJ
 intended_JJ
+higher_JJR
 funny_JJ
 supporting_JJ
 refreshing_JJ

@@ -38,6 +38,7 @@ savage_JJ
 secret_JJ
 long_JJ
 chop-socky_JJ
+better_JJR
 well-choreographed_JJ
 kevlar_JJ
 gaping_JJ

@@ -11,6 +11,7 @@ timid_JJ
 unfaithful_JJ
 busy_JJ
 lifelong_JJ
+better_JJR
 american_JJ
 fine_JJ
 impressive_JJ

@@ -10,6 +10,7 @@ american_JJ
 ambiguous_JJ
 urban_JJ
 american_JJ
+further_JJR
 abandoned_JJ
 ideal_JJ
 dead_JJ
@@ -73,6 +74,7 @@ idle_JJ
 american_JJ
 proletarian_JJ
 content_JJ
+longer_JJR
 significant_JJ
 compromised_JJ
 final_JJ
@@ -81,7 +83,10 @@ frequent_JJ
 new_JJ
 final_JJ
 raved_JJ
+longer_JJR
+smaller_JJR
 american_JJ
+longer_JJR
 enterprising_JJ
 normal_JJ
 basic_JJ

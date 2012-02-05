@@ -12,6 +12,7 @@ thoughtful_JJ
 cool_JJ
 dead_JJ
 dead_JJ
+wider_JJR
 inventive_JJ
 famed_JJ
 argentinian_JJ
@@ -93,6 +94,7 @@ right_JJ
 american_JJ
 late_JJ
 brilliant_JJ
+better_JJR
 soft_JJ
 old_JJ
 good_JJ

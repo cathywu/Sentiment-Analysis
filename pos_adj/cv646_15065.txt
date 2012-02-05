@@ -12,6 +12,7 @@ main_JJ
 main_JJ
 wooden_JJ
 dark_JJ
+darker_JJR
 said_JJ
 bloody_JJ
 maximum_JJ

@@ -20,11 +20,14 @@ solid_JJ
 random_JJ
 lifelong_JJ
 supposed_JJ
+worse_JJR
 sudden_JJ
 supposed_JJ
 devastating_JJ
 manipulative_JJ
 shallow_JJ
+worse_JJR
+worse_JJR
 absurd_JJ
 overwhelming_JJ
 minor_JJ

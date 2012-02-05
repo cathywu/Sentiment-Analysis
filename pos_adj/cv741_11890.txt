@@ -42,8 +42,11 @@ varying_JJ
 musical_JJ
 euphoric_JJ
 pleasing_JJ
+smaller_JJR
+quieter_JJR
 devoted_JJ
 lovely_JJ
+worse_JJR
 still_JJ
 awful_JJ
 high_JJ

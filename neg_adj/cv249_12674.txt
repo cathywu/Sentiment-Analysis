@@ -34,6 +34,7 @@ poor_JJ
 rotting_JJ
 beaten_JJ
 bad_JJ
+further_JJR
 murdered_JJ
 mutilated_JJ
 derivative_JJ

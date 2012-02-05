@@ -33,6 +33,7 @@ mature_JJ
 excellent_JJ
 normal_JJ
 human_JJ
+greater_JJR
 regular_JJ
 fine_JJ
 main_JJ

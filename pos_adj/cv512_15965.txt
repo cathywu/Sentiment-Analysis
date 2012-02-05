@@ -20,6 +20,7 @@ fictitious_JJ
 entire_JJ
 glam_JJ
 other_JJ
+smaller_JJR
 bitter_JJ
 bitter_JJ
 deep_JJ
@@ -93,6 +94,7 @@ engaging_JJ
 notable_JJ
 old_JJ
 glam_JJ
+newer_JJR
 bowie-like_JJ
 impressive_JJ
 good_JJ
@@ -121,16 +123,19 @@ wild_JJ
 similar_JJ
 engaging_JJ
 personal_JJ
+tougher_JJR
 slight_JJ
 cultural_JJ
 goldmine_JJ
 good_JJ
 good_JJ
 great_JJ
+better_JJR
 captivating_JJ
 slow_JJ
 fantastic_JJ
 shallow_JJ
+worse_JJR
 final_JJ
 real_JJ
 entire_JJ

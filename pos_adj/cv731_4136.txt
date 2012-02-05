@@ -44,6 +44,7 @@ infuriated_JJ
 innocent_JJ
 just_JJ
 superficial_JJ
+larger_JJR
 conducive_JJ
 stylistic_JJ
 slick_JJ

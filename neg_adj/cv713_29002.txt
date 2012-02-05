@@ -19,6 +19,7 @@ final_JJ
 rosy_JJ
 new_JJ
 fretting_JJ
+worse_JJR
 walken_JJ
 visionary_JJ
 withholding_JJ
@@ -69,3 +70,4 @@ suitable_JJ
 operative_JJ
 minor_JJ
 good_JJ
+better_JJR

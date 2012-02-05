@@ -20,6 +20,7 @@ serious_JJ
 sure_JJ
 occasional_JJ
 welcome_JJ
+younger_JJR
 great_JJ
 good_JJ
 schizophrenic_JJ

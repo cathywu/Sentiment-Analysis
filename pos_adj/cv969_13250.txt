@@ -13,6 +13,7 @@ winning_JJ
 directorial_JJ
 charismatic_JJ
 original_JJ
+easier_JJR
 storyline_JJ
 criminal_JJ
 unarmed_JJ

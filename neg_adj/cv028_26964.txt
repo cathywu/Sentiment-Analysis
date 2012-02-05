@@ -1,4 +1,5 @@
 follow-up_JJ
+better_JJR
 entertaining_JJ
 just_JJ
 unlikely_JJ

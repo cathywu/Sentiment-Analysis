@@ -9,6 +9,7 @@ new_JJ
 long_JJ
 soothing_JJ
 handsome_JJ
+later_JJR
 blind_JJ
 new_JJ
 certain_JJ
@@ -16,6 +17,7 @@ retinal_JJ
 similar_JJ
 reluctant_JJ
 loving_JJ
+older_JJR
 eager_JJ
 overall_JJ
 great_JJ

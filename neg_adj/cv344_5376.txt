@@ -16,6 +16,7 @@ contrived_JJ
 contrived_JJ
 full_JJ
 memorable_JJ
+easier_JJR
 common_JJ
 high-speed_JJ
 disbelieved_JJ

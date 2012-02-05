@@ -68,4 +68,5 @@ fascinating_JJ
 marketable_JJ
 happy_JJ
 only_JJ
+greater_JJR
 ill-luck_JJ

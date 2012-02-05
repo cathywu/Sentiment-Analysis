@@ -11,6 +11,7 @@ arroway_JJ
 exceptional_JJ
 supporting_JJ
 impressive_JJ
+better_JJR
 acting_JJ
 foster_JJ
 great_JJ

@@ -7,12 +7,14 @@ good_JJ
 mundane_JJ
 following_JJ
 dead_JJ
+funnier_JJR
 previous_JJ
 new_JJ
 real_JJ
 biological_JJ
 difficult_JJ
 other_JJ
+better_JJR
 gay_JJ
 federal_JJ
 bi-sexual_JJ

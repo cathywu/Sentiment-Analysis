@@ -2,11 +2,14 @@ recent_JJ
 animated_JJ
 negative_JJ
 other_JJ
+better_JJR
 animated_JJ
 wonderful_JJ
 seasonal_JJ
 dominating_JJ
+hopper_JJR
 unwanted_JJ
+hopper_JJR
 whole_JJ
 other_JJ
 strong_JJ
@@ -26,6 +29,8 @@ thin_JJ
 unbearable_JJ
 pointless_JJ
 animated_JJ
+older_JJR
+newer_JJR
 little_JJ
 bad_JJ
 lively_JJ

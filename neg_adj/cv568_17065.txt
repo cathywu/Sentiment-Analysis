@@ -39,6 +39,7 @@ sure_JJ
 kudrow_JJ
 little_JJ
 rival_JJ
+worse_JJR
 actual_JJ
 hilarious_JJ
 bad_JJ

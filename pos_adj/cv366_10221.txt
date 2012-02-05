@@ -7,11 +7,13 @@ new_JJ
 bored_JJ
 unlikely_JJ
 married_JJ
+younger_JJR
 sandy_JJ
 sexual_JJ
 prevalent_JJ
 interesting_JJ
 fantastic_JJ
+deeper_JJR
 return_JJ
 dismal_JJ
 individual_JJ
@@ -45,5 +47,6 @@ little_JJ
 lost_JJ
 used_JJ
 other_JJ
+higher_JJR
 good_JJ
 different_JJ

@@ -76,6 +76,7 @@ green_JJ
 whole_JJ
 greenlit_JJ
 great_JJ
+better_JJR
 passable_JJ
 notable_JJ
 technical_JJ

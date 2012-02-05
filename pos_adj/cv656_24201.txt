@@ -4,7 +4,9 @@ lucrative_JJ
 creative_JJ
 exciting_JJ
 innocuous_JJ
+younger_JJR
 intellectual_JJ
+older_JJR
 good_JJ
 actual_JJ
 true_JJ

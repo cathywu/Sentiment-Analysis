@@ -8,6 +8,7 @@ merry_JJ
 early_JJ
 small_JJ
 original_JJ
+wilder_JJR
 great_JJ
 absolute_JJ
 high_JJ

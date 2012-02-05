@@ -30,3 +30,4 @@ attempted_JJ
 easy_JJ
 credible_JJ
 fine_JJ
+older_JJR

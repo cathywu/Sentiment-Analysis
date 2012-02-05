@@ -59,6 +59,7 @@ little_JJ
 rolling_JJ
 warm-and-fuzzy_JJ
 lengthy_JJ
+younger_JJR
 climactic_JJ
 long_JJ
 able_JJ

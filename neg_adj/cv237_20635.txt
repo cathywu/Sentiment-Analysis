@@ -1,4 +1,5 @@
 early_JJ
+better_JJR
 jewish_JJ
 one-time_JJ
 other_JJ

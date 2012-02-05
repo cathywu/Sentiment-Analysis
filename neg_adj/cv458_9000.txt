@@ -45,6 +45,7 @@ resulting_JJ
 confusing_JJ
 scant_JJ
 existing_JJ
+worse_JJR
 growing_JJ
 unanswered_JJ
 excess_JJ

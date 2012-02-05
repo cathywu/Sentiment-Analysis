@@ -11,6 +11,7 @@ other_JJ
 open_JJ
 small_JJ
 suspicious_JJ
+worse_JJR
 determined_JJ
 elaborate_JJ
 amazing_JJ
@@ -26,6 +27,7 @@ psychological_JJ
 entire_JJ
 fake_JJ
 disappointed_JJ
+better_JJR
 well_JJ
 exclusive_JJ
 fair_JJ
@@ -33,6 +35,7 @@ competently_JJ
 hidden_JJ
 hidden_JJ
 green_JJ
+lower_JJR
 well-chosen_JJ
 beautiful_JJ
 perfect_JJ

@@ -15,6 +15,7 @@ evil_JJ
 ugly_JJ
 mean-tempered_JJ
 hard_JJ
+better_JJR
 quick_JJ
 gentle_JJ
 tremendous_JJ

@@ -31,6 +31,8 @@ canadian_JJ
 sheer_JJ
 accurate_JJ
 rubin_JJ
+stronger_JJR
+nobler_JJR
 real_JJ
 accurate_JJ
 rubin_JJ
@@ -44,6 +46,7 @@ happy_JJ
 sad_JJ
 masterful_JJ
 good_JJ
+further_JJR
 necessary_JJ
 galloping_JJ
 multiple_JJ
@@ -82,6 +85,7 @@ impassioned_JJ
 special_JJ
 bad_JJ
 interesting_JJ
+safer_JJR
 boring_JJ
 real_JJ
 other_JJ

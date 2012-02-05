@@ -16,6 +16,7 @@ physical_JJ
 desired_JJ
 bad_JJ
 mnemonic_JJ
+better_JJR
 bad_JJ
 strong_JJ
 big_JJ

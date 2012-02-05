@@ -1,5 +1,6 @@
 other_JJ
 ongoing_JJ
+younger_JJR
 pretty_JJ
 sure_JJ
 curious_JJ
@@ -43,6 +44,7 @@ sure_JJ
 interesting_JJ
 intimate_JJ
 hidden_JJ
+greater_JJR
 good_JJ
 right_JJ
 implausible_JJ

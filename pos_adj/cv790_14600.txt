@@ -36,6 +36,7 @@ good_JJ
 lurking_JJ
 nearby_JJ
 married_JJ
+worse_JJR
 good_JJ
 buddy_JJ
 busy_JJ

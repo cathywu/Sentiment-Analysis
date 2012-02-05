@@ -2,6 +2,7 @@ beautiful_JJ
 rare_JJ
 serious_JJ
 disrespectful_JJ
+worse_JJR
 charming_JJ
 little_JJ
 enjoyable_JJ
@@ -17,6 +18,7 @@ rustic_JJ
 italian_JJ
 nicoletta_JJ
 perfect_JJ
+worse_JJR
 bad_JJ
 jewish_JJ
 new_JJ

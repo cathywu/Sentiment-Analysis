@@ -43,6 +43,7 @@ left_JJ
 right_JJ
 wonderful_JJ
 lovable_JJ
+longer_JJR
 mild-mannered_JJ
 cowardly_JJ
 only_JJ

@@ -51,6 +51,7 @@ molten_JJ
 memorable_JJ
 memorable_JJ
 terrific_JJ
+later_JJR
 only_JJ
 bald_JJ
 complete_JJ

@@ -17,11 +17,14 @@ tongue-tied_JJ
 powerful_JJ
 new_JJ
 overcome_JJ
+better_JJR
 chubby_JJ
 embarrassing_JJ
 would-be_JJ
+older_JJR
 teenage_JJ
 smart-mouthed_JJ
+younger_JJR
 whole_JJ
 funny_JJ
 superhuman_JJ
@@ -54,6 +57,7 @@ cartoonish_JJ
 broodwarrior_JJ
 packed_JJ
 fine_JJ
+younger_JJR
 excited_JJ
 good_JJ
 favorite_JJ

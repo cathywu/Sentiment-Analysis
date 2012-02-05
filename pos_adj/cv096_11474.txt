@@ -29,6 +29,7 @@ various_JJ
 satisfied_JJ
 long_JJ
 wily_JJ
+older_JJR
 deep_JJ
 constant_JJ
 long_JJ

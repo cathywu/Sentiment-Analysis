@@ -22,9 +22,11 @@ graphic_JJ
 uneasy_JJ
 exploitative_JJ
 gratuitous_JJ
+zipper_JJR
 female_JJ
 supposed_JJ
 bare_JJ
+harder_JJR
 literal_JJ
 short_JJ
 rampant_JJ

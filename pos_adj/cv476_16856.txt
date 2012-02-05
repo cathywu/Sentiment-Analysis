@@ -46,6 +46,7 @@ negative_JJ
 modern_JJ
 old-fashioned_JJ
 universal_JJ
+better_JJR
 good_JJ
 intelligent_JJ
 classic_JJ

@@ -37,6 +37,7 @@ crazy_JJ
 other_JJ
 perfect_JJ
 other_JJ
+older_JJR
 abandoned_JJ
 open_JJ
 musical_JJ

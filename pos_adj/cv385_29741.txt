@@ -25,6 +25,7 @@ ambiguous_JJ
 obvious_JJ
 final_JJ
 open_JJ
+better_JJR
 obvious_JJ
 visual_JJ
 important_JJ

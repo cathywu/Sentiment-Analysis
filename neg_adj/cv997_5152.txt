@@ -15,6 +15,7 @@ long_JJ
 quick_JJ
 additional_JJ
 necessary_JJ
+longer_JJR
 coherent_JJ
 fast_JJ
 tame_JJ

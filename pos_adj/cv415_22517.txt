@@ -15,6 +15,9 @@ other_JJ
 original_JJ
 likely_JJ
 young_JJ
+newer_JJR
+shorter_JJR
+shorter_JJR
 primary_JJ
 silly_JJ
 short_JJ
@@ -32,6 +35,7 @@ other_JJ
 rhapsody_JJ
 blue_JJ
 resulting_JJ
+greater_JJR
 short_JJ
 goofy_JJ
 playing_JJ
@@ -49,6 +53,7 @@ flying_JJ
 ethereal_JJ
 uplifting_JJ
 frightening_JJ
+younger_JJR
 only_JJ
 original_JJ
 overall_JJ

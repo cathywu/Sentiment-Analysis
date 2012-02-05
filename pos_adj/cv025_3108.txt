@@ -54,5 +54,7 @@ junior_JJ
 pregnant_JJ
 sure_JJ
 comparable_JJ
+better_JJR
+slower_JJR
 early_JJ
 romantic_JJ

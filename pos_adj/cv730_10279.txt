@@ -50,6 +50,7 @@ fond_JJ
 dead_JJ
 easy_JJ
 worrying_JJ
+harder_JJR
 sweeping_JJ
 outdoor_JJ
 warm_JJ

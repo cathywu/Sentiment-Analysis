@@ -1,6 +1,7 @@
 electromagnetic_JJ
 unauthorized_JJ
 proverbial_JJ
+better_JJR
 jr_JJ
 rosenthal_JJ
 mighty_JJ

@@ -32,6 +32,7 @@ supporting_JJ
 deep_JJ
 feeble_JJ
 deep_JJ
+better_JJR
 dumb_JJ
 predictable_JJ
 sitcomish_JJ

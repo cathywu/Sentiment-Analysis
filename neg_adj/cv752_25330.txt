@@ -30,6 +30,7 @@ safe_JJ
 ugly_JJ
 great_JJ
 crazy_JJ
+worse_JJR
 perfect_JJ
 getty_JJ
 getty_JJ

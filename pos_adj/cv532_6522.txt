@@ -49,6 +49,7 @@ presidential_JJ
 white_JJ
 secluded_JJ
 big-haired_JJ
+earlier_JJR
 clear_JJ
 human_JJ
 old_JJ

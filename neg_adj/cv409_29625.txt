@@ -26,9 +26,11 @@ shy_JJ
 other_JJ
 certain_JJ
 lebanese-born_JJ
+better_JJR
 local_JJ
 long_JJ
 little_JJ
+better_JJR
 whole_JJ
 biological_JJ
 entertaining_JJ

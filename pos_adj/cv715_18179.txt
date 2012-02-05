@@ -18,6 +18,7 @@ english_JJ
 gay_JJ
 strange_JJ
 strange_JJ
+earlier_JJR
 confusing_JJ
 good_JJ
 limon_JJ
@@ -34,5 +35,7 @@ intertwining_JJ
 good_JJ
 confusing_JJ
 different_JJ
+better_JJR
+younger_JJR
 little_JJ
 sliding_JJ

@@ -8,6 +8,7 @@ unaware_JJ
 ugly_JJ
 long_JJ
 bad_JJ
+worse_JJR
 weak_JJ
 spoof_JJ
 funny_JJ
@@ -31,6 +32,7 @@ disgraceful_JJ
 lucky_JJ
 sloppy_JJ
 talented_JJ
+worse_JJR
 nice_JJ
 special_JJ
 big_JJ

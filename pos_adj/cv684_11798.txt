@@ -1,10 +1,12 @@
 dark_JJ
 good_JJ
 dark_JJ
+better_JJR
 specific_JJ
 following_JJ
 original_JJ
 potential_JJ
+broader_JJR
 similar_JJ
 dark_JJ
 thoughtful_JJ

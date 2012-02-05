@@ -9,6 +9,7 @@ overweight_JJ
 married_JJ
 poor_JJ
 poor_JJ
+worse_JJR
 new_JJ
 only_JJ
 nasty_JJ

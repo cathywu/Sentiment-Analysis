@@ -9,6 +9,8 @@ religious_JJ
 fanatical_JJ
 delany_JJ
 successful_JJ
+older_JJR
+younger_JJR
 well-run_JJ
 catholic_JJ
 handsome_JJ

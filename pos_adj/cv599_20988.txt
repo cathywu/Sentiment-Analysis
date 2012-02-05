@@ -6,6 +6,7 @@ hilarious_JJ
 earnest_JJ
 moralize_JJ
 wrong_JJ
+better_JJR
 heavy-handed_JJ
 great_JJ
 true_JJ
@@ -44,4 +45,5 @@ rapid_JJ
 emotional_JJ
 pretty_JJ
 comic_JJ
+better_JJR
 silent_JJ

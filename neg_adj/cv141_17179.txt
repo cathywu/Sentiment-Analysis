@@ -7,6 +7,7 @@ early_JJ
 long_JJ
 mysterious_JJ
 early_JJ
+bigger_JJR
 mediocre_JJ
 respectable_JJ
 similarly-fated_JJ

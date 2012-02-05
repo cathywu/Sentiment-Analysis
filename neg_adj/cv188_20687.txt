@@ -8,11 +8,13 @@ designated_JJ
 flailing_JJ
 deep_JJ
 embarrassing_JJ
+kinder_JJR
 cold-hearted_JJ
 peculiar_JJ
 ancient_JJ
 previous_JJ
 other_JJ
+kinder_JJR
 little_JJ
 sly_JJ
 short_JJ

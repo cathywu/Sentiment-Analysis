@@ -10,6 +10,7 @@ united_JJ
 usual_JJ
 other_JJ
 acting_JJ
+worse_JJR
 normal_JJ
 naked_JJ
 high_JJ

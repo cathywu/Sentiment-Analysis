@@ -1,5 +1,6 @@
 small_JJ
 human_JJ
+worse_JJR
 unfortunate_JJ
 dark_JJ
 god-forsaken_JJ
@@ -12,6 +13,7 @@ european_JJ
 opposite_JJ
 famous_JJ
 italian_JJ
+later_JJR
 numerous_JJ
 american_JJ
 heretical_JJ

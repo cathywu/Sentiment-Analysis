@@ -3,6 +3,7 @@ likeable_JJ
 real_JJ
 sweet_JJ
 unsuccessful_JJ
+earlier_JJR
 pretty_JJ
 co-starring_JJ
 ever-versatile_JJ

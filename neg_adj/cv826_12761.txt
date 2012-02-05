@@ -59,8 +59,10 @@ jumbled_JJ
 wrong_JJ
 gimmicky_JJ
 biting_JJ
+better_JJR
 interesting_JJ
 direct_JJ
+better_JJR
 able_JJ
 vicious_JJ
 uncertain_JJ

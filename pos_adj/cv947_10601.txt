@@ -22,6 +22,7 @@ hilarious_JJ
 irrelevant_JJ
 horrible_JJ
 possible_JJ
+worse_JJR
 bad_JJ
 hysterical_JJ
 complete_JJ
@@ -29,6 +30,7 @@ short_JJ
 funny_JJ
 long_JJ
 occasional_JJ
+better_JJR
 whole_JJ
 likely_JJ
 sharp_JJ
@@ -41,6 +43,7 @@ annoying_JJ
 asinine_JJ
 unfunny_JJ
 heavy_JJ
+damper_JJR
 overall_JJ
 likely_JJ
 good_JJ

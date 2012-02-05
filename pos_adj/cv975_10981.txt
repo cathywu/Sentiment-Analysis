@@ -66,6 +66,7 @@ fit_JJ
 different_JJ
 good_JJ
 fit_JJ
+slower_JJR
 beautiful_JJ
 tibetan_JJ
 beautiful_JJ
@@ -83,6 +84,7 @@ tibetan_JJ
 small_JJ
 tiny_JJ
 interesting_JJ
+larger_JJR
 great_JJ
 outstanding_JJ
 interesting_JJ

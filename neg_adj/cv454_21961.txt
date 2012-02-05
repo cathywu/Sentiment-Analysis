@@ -50,6 +50,7 @@ jittery_JJ
 graphic_JJ
 early_JJ
 young_JJ
+older_JJR
 murdered_JJ
 petrified_JJ
 classic_JJ

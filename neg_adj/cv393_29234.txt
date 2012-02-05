@@ -12,6 +12,7 @@ cute_JJ
 fresh_JJ
 southern_JJ
 civil_JJ
+younger_JJR
 lay_JJ
 small_JJ
 evil_JJ

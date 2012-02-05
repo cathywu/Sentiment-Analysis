@@ -37,3 +37,4 @@ pointless_JJ
 predictable_JJ
 graphic_JJ
 acceptable_JJ
+older_JJR

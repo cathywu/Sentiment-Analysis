@@ -35,6 +35,7 @@ reese_JJ
 reese_JJ
 subsequent_JJ
 dead_JJ
+harder_JJR
 cored_JJ
 criminal_JJ
 brooding_JJ
@@ -47,12 +48,15 @@ typical_JJ
 sullen_JJ
 reese_JJ
 true_JJ
+deeper_JJR
+deeper_JJR
 trying_JJ
 suspicious_JJ
 apparent_JJ
 new_JJ
 early_JJ
 black_JJ
+later_JJR
 honest_JJ
 other_JJ
 other_JJ

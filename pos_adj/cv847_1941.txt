@@ -7,6 +7,7 @@ familiar_JJ
 little_JJ
 famous_JJ
 english_JJ
+better_JJR
 chinese_JJ
 american_JJ
 all-white_JJ

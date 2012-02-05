@@ -3,6 +3,7 @@ super_JJ
 typical_JJ
 funny_JJ
 local_JJ
+better_JJR
 strong_JJ
 biting_JJ
 imaginable_JJ
@@ -14,6 +15,7 @@ corporate_JJ
 concerned_JJ
 expensive_JJ
 galore_JJ
+better_JJR
 familiar_JJ
 fresh_JJ
 new_JJ
@@ -22,6 +24,7 @@ serious_JJ
 running_JJ
 low_JJ
 other_JJ
+stronger_JJR
 corrupt_JJ
 funny_JJ
 important_JJ

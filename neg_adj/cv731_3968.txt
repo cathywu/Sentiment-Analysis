@@ -2,9 +2,11 @@ dangerous_JJ
 good_JJ
 true_JJ
 mild_JJ
+tougher_JJR
 lightweight_JJ
 fleeing_JJ
 murdered_JJ
+stronger_JJR
 appealing_JJ
 practiced_JJ
 muddy_JJ

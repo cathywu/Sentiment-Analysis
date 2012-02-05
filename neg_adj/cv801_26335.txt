@@ -8,6 +8,7 @@ weary_JJ
 american_JJ
 deadly_JJ
 murdered_JJ
+older_JJR
 alcoholic_JJ
 abusive_JJ
 stranded_JJ

@@ -1,5 +1,6 @@
 long_JJ
 wrong_JJ
+greater_JJR
 pretty_JJ
 bad_JJ
 teenage_JJ

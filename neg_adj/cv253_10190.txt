@@ -8,6 +8,8 @@ still_JJ
 funny_JJ
 funny_JJ
 correct_JJ
+richer_JJR
+poorer_JJR
 moronic_JJ
 rich_JJ
 married_JJ
@@ -40,6 +42,10 @@ trite_JJ
 stereotypical_JJ
 big_JJ
 pretty_JJ
+richer_JJR
+poorer_JJR
 right_JJ
 bad_JJ
+richer_JJR
+poorer_JJR
 happy_JJ

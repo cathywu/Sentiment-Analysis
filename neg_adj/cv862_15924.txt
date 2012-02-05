@@ -49,6 +49,7 @@ bleak_JJ
 depressing_JJ
 intriguing_JJ
 sudden_JJ
+darker_JJR
 sinister_JJ
 fine_JJ
 noble_JJ

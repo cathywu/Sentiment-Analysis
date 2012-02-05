@@ -19,6 +19,7 @@ black_JJ
 abundant_JJ
 palatial_JJ
 beauteous_JJ
+easier_JJR
 right_JJ
 difficult_JJ
 appropriate_JJ
@@ -39,6 +40,7 @@ violent_JJ
 sarcastic_JJ
 funny_JJ
 black_JJ
+worse_JJR
 massive_JJ
 black_JJ
 interesting_JJ
@@ -67,7 +69,9 @@ understandable_JJ
 shallow_JJ
 good_JJ
 other_JJ
+better_JJR
 black_JJ
+better_JJR
 evil_JJ
 marked_JJ
 due_JJ

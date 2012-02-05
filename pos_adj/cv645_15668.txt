@@ -16,6 +16,7 @@ strong_JJ
 calvinist_JJ
 worried_JJ
 private_JJ
+harder_JJR
 kristen_JJ
 cheap_JJ
 pornographic_JJ
@@ -49,6 +50,7 @@ rural_JJ
 conservative_JJ
 new_JJ
 other_JJ
+better_JJR
 so-called_JJ
 sexual_JJ
 other_JJ
@@ -70,6 +72,7 @@ cruel_JJ
 sorry_JJ
 flawed_JJ
 subtle_JJ
+better_JJR
 loving_JJ
 other_JJ
 shocking_JJ

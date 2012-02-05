@@ -13,6 +13,7 @@ late_JJ
 lefty_JJ
 aging_JJ
 generic_JJ
+younger_JJR
 afraid_JJ
 lefty_JJ
 lefty_JJ

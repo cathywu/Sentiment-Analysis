@@ -23,6 +23,7 @@ long_JJ
 flat_JJ
 wooden_JJ
 likeable_JJ
+better_JJR
 funny_JJ
 believable_JJ
 long_JJ
@@ -37,6 +38,7 @@ interesting_JJ
 bland_JJ
 interesting_JJ
 auspicious_JJ
+worse_JJR
 just_JJ
 good_JJ
 good_JJ

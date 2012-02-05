@@ -42,6 +42,7 @@ boring_JJ
 current_JJ
 deep_JJ
 rising_JJ
+longer_JJR
 necessary_JJ
 easy_JJ
 bad_JJ

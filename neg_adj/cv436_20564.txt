@@ -41,6 +41,7 @@ predictable_JJ
 jr_JJ
 exciting_JJ
 sure_JJ
+better_JJR
 hot_JJ
 single_JJ
 incessant_JJ

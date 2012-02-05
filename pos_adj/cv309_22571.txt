@@ -30,6 +30,7 @@ all-american_JJ
 high_JJ
 atypical_JJ
 suitable_JJ
+larger_JJR
 real_JJ
 remarkable_JJ
 talented_JJ

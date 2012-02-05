@@ -13,6 +13,7 @@ magician_JJ
 dazzling_JJ
 solid_JJ
 traditional_JJ
+later_JJR
 colorful_JJ
 pretty_JJ
 dull_JJ

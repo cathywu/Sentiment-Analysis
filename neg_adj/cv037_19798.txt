@@ -30,6 +30,7 @@ unnatural_JJ
 placid_JJ
 little_JJ
 semi-mystical_JJ
+better_JJR
 urban_JJ
 radioactive_JJ
 outer_JJ

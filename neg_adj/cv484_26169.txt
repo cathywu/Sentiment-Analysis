@@ -28,6 +28,7 @@ overrated_JJ
 rolling_JJ
 growing_JJ
 sprawling_JJ
+worse_JJR
 fresh_JJ
 gritty_JJ
 common_JJ

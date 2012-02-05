@@ -31,6 +31,7 @@ expensive_JJ
 trying_JJ
 wrong_JJ
 minor_JJ
+later_JJR
 back_JJ
 charming_JJ
 friendly_JJ
@@ -64,6 +65,7 @@ sinister_JJ
 callous_JJ
 vital_JJ
 crucial_JJ
+wider_JJR
 powerful_JJ
 tired_JJ
 riveting_JJ
@@ -81,6 +83,7 @@ reverse_JJ
 main_JJ
 brokedown_JJ
 good_JJ
+bigger_JJR
 main_JJ
 proffered_JJ
 other_JJ
@@ -93,6 +96,7 @@ perfect_JJ
 cautious_JJ
 straightforward_JJ
 complex_JJ
+poorer_JJR
 suburban_JJ
 uncertain_JJ
 unfocused_JJ
@@ -120,6 +124,7 @@ american_JJ
 half-baked_JJ
 materialistic_JJ
 impotent_JJ
+better_JJR
 different_JJ
 american_JJ
 inferior_JJ
@@ -131,6 +136,7 @@ consistent_JJ
 behavior_JJ
 true_JJ
 treated_JJ
+worse_JJR
 native-born_JJ
 stark_JJ
 probable_JJ

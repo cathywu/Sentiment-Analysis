@@ -1,3 +1,5 @@
+bigger_JJR
+longer_JJR
 uncut_JJ
 crude_JJ
 offensive_JJ
@@ -29,6 +31,8 @@ entertaining_JJ
 regular_JJ
 extreme_JJ
 bad_JJ
+bigger_JJR
+longer_JJR
 uncut_JJ
 laughing_JJ
 good_JJ

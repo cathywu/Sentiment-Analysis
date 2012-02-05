@@ -17,6 +17,7 @@ boring_JJ
 very_JJ
 old_JJ
 old_JJ
+younger_JJR
 due_JJ
 strange_JJ
 peaceful_JJ

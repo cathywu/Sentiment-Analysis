@@ -22,6 +22,7 @@ long_JJ
 twisted_JJ
 other_JJ
 little_JJ
+truer_JJR
 great_JJ
 shakespearean_JJ
 breathtaking_JJ

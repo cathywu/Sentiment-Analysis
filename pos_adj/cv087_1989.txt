@@ -29,6 +29,7 @@ surprising_JJ
 stephane_JJ
 due_JJ
 due_JJ
+longer_JJR
 new_JJ
 unchanged_JJ
 subtle_JJ
@@ -65,6 +66,7 @@ unsure_JJ
 other_JJ
 complicated_JJ
 complicated_JJ
+greater_JJR
 american_JJ
 native_JJ
 french_JJ

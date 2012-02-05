@@ -6,6 +6,7 @@ occasional_JJ
 forced_JJ
 straight_JJ
 enjoyable_JJ
+better_JJR
 big_JJ
 golden_JJ
 buddy_JJ

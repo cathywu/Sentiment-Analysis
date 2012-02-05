@@ -11,6 +11,7 @@ new_JJ
 anemic_JJ
 low_JJ
 major_JJ
+worse_JJR
 mediocre_JJ
 likely_JJ
 real_JJ
@@ -54,6 +55,7 @@ believable_JJ
 little_JJ
 genuine_JJ
 naked_JJ
+better_JJR
 major_JJ
 nice_JJ
 old_JJ

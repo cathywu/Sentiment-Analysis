@@ -18,6 +18,7 @@ sloppy_JJ
 precious_JJ
 away_JJ
 funny_JJ
+better_JJR
 buck-naked_JJ
 mechanical_JJ
 arguable_JJ

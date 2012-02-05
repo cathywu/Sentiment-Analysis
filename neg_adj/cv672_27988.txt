@@ -20,6 +20,7 @@ black_JJ
 black_JJ
 funny_JJ
 ultimate_JJ
+better_JJR
 good_JJ
 bad_JJ
 nelkan_JJ

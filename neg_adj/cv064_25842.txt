@@ -48,3 +48,4 @@ exciting_JJ
 pointless_JJ
 good_JJ
 great_JJ
+better_JJR

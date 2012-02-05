@@ -15,6 +15,7 @@ cheap_JJ
 direct-to-cable_JJ
 other_JJ
 goofy_JJ
+better_JJR
 creative_JJ
 large-scale_JJ
 acting_JJ

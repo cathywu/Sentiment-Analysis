@@ -44,5 +44,6 @@ exceptional_JJ
 other_JJ
 current_JJ
 undeniable_JJ
+older_JJR
 welcome_JJ
 dramatic_JJ

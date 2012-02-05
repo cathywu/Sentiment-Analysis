@@ -22,6 +22,7 @@ acting_JJ
 overall_JJ
 bad_JJ
 poor_JJ
+better_JJR
 wrong_JJ
 different_JJ
 wont_JJ

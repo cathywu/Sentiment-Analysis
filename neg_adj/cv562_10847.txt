@@ -61,3 +61,4 @@ deep_JJ
 rising_JJ
 interesting_JJ
 unlikely_JJ
+better_JJR

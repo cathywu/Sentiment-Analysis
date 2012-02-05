@@ -15,6 +15,7 @@ violent_JJ
 much-prized_JJ
 violent_JJ
 blind_JJ
+worse_JJR
 relevant_JJ
 other_JJ
 real_JJ

@@ -18,6 +18,7 @@ white_JJ
 black_JJ
 old_JJ
 free_JJ
+further_JJR
 young_JJ
 naked_JJ
 sure_JJ

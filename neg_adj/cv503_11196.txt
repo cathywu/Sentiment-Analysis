@@ -5,6 +5,7 @@ profitable_JJ
 afraid_JJ
 whole_JJ
 little_JJ
+better_JJR
 novel_JJ
 good_JJ
 expensive_JJ

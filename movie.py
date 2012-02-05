@@ -13,11 +13,13 @@ POS_DIR="pos"
 POS_POSITION_DIR="pos_position"
 POS_PARTOFSPEECH_DIR="pos_tagged"
 POS_ADJ_DIR="pos_adj"
+POS_VERB_DIR="pos_verb"
 
 NEG_DIR="neg"
 NEG_POSITION_DIR="neg_position"
 NEG_PARTOFSPEECH_DIR="neg_tagged"
 NEG_ADJ_DIR="neg_adj"
+NEG_VERB_DIR="neg_verb"
 
 YELP_DIR = "yelp/default"
 
@@ -218,14 +220,16 @@ def select_dataset(dataset):
     return {'default':(POS_DIR, NEG_DIR), #untagged
             'partofspeech':(POS_PARTOFSPEECH_DIR, NEG_PARTOFSPEECH_DIR), #part of speech tagged
             'position':(POS_POSITION_DIR, NEG_POSITION_DIR), #position tagged
-            'adjectives':(POS_ADJ_DIR, NEG_ADJ_DIR) #adjectives tagged
+            'adjectives':(POS_ADJ_DIR, NEG_ADJ_DIR), #adjectives tagged
+            'verbs':(POS_VERB_DIR, NEG_VERB_DIR), #verbs tagged
             }[dataset]
 
 def select_extradata(dataset,stars):
-    return {'default':("%s/%sstar" % (YELP_DIR,stars)), #yelp untagged
-            'partofspeech':("%s/%sstar_tagged" % (YELP_DIR,stars)), #yelp part of speech tagged
-            'position':("%s/%sstar_position" % (YELP_DIR,stars)), #yelp position tagged
-            'adjectives':("%s/%sstar_adj" % (YELP_DIR,stars)), #yelp adjectives only
+    return {'default':("%s/%sstar_limited" % (YELP_DIR,stars)), #yelp untagged
+            'partofspeech':("%s/%sstar_limited_tagged" % (YELP_DIR,stars)), #yelp part of speech tagged
+            'position':("%s/%sstar_limited_position" % (YELP_DIR,stars)), #yelp position tagged
+            'adjectives':("%s/%sstar_limited_adj" % (YELP_DIR,stars)), #yelp adjectives only
+            'verbs':("%s/%sstar_limited_verb" % (YELP_DIR,stars)), #yelp verbs only
             }[dataset]
 
 def test(classif, n=1, train_size=500, mode='k', iterations=1, dataset='',
@@ -267,9 +271,11 @@ def test(classif, n=1, train_size=500, mode='k', iterations=1, dataset='',
 
 if __name__ == "__main__":
 
-    n = [2]
+
+    n = [1]
     dataset = 'default'
-    limit = [16165]
+    limit = None
+
     binary = True
     idf = False
     negation = True
@@ -279,6 +285,7 @@ if __name__ == "__main__":
     iterations = 3
     extra_dataset=None
     
+
 #    print "Bayes:"
 #    test(classifier.BayesClassifier,n=n,train_size=train_size,mode=mode,iterations=iterations,
 #            dataset=dataset,extra_dataset=extra_dataset,limit=limit,binary=binary, idf=idf, negation = negation)

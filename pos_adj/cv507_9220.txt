@@ -24,6 +24,7 @@ remarkable_JJ
 cornered_JJ
 decaying_JJ
 black_JJ
+worse_JJR
 expensive_JJ
 abstract_JJ
 limited_JJ

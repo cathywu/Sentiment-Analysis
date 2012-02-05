@@ -7,6 +7,7 @@ rocky_JJ
 awful_JJ
 disappointing_JJ
 lost_JJ
+better_JJR
 scorsese_JJ
 miraculous_JJ
 dead_JJ

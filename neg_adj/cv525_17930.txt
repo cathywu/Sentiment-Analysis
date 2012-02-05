@@ -43,6 +43,7 @@ charismatic_JJ
 neurotic_JJ
 forgettable_JJ
 unnecessary_JJ
+greater_JJR
 other_JJ
 awful_JJ
 implausible_JJ
@@ -54,3 +55,4 @@ unpredictable_JJ
 unbelievable_JJ
 entire_JJ
 quasi-artistic_JJ
+wiser_JJR

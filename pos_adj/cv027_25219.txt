@@ -2,13 +2,17 @@ common_JJ
 only_JJ
 ancient_JJ
 suitable_JJ
+gentler_JJR
+kinder_JJR
 scorsese_JJ
 italoamerican_JJ
+lower_JJR
 organised_JJ
 scorsese_JJ
 unspectacular_JJ
 scorsese_JJ
 new_JJ
+darker_JJR
 american_JJ
 organised_JJ
 black_JJ

@@ -32,6 +32,7 @@ stale_JJ
 special_JJ
 entire_JJ
 early_JJ
+later_JJR
 tired_JJ
 maddened_JJ
 depressed_JJ

@@ -19,4 +19,5 @@ right_JJ
 storyboard_JJ
 exciting_JJ
 parody_JJ
+funnier_JJR
 sure_JJ

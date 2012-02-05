@@ -48,6 +48,8 @@ sporting_JJ
 new_JJ
 o-negative_JJ
 classic_JJ
+wider_JJR
+newer_JJR
 modern_JJ
 investing_JJ
 mute_JJ

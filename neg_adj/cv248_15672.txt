@@ -4,6 +4,7 @@ present_JJ
 shocked_JJ
 low_JJ
 regressive_JJ
+worse_JJR
 obsessed_JJ
 good_JJ
 obnoxious_JJ

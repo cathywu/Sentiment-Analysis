@@ -9,6 +9,7 @@ full_JJ
 orphaned_JJ
 pretty_JJ
 good_JJ
+better_JJR
 wonderful_JJ
 drama-packed_JJ
 fast_JJ
@@ -27,6 +28,7 @@ musical_JJ
 wrong_JJ
 big_JJ
 big_JJ
+cheaper_JJR
 17-year_JJ
 old_JJ
 hard_JJ

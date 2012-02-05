@@ -25,3 +25,4 @@ original_JJ
 honest_JJ
 pure_JJ
 original_JJ
+worse_JJR

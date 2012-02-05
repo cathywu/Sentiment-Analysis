@@ -86,6 +86,8 @@ tatooine_JJ
 digitalized_JJ
 astonishing_JJ
 young_JJ
+simpler_JJR
+happier_JJR
 meaningful_JJ
 profound_JJ
 co-write_JJ

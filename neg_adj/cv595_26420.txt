@@ -26,6 +26,7 @@ rolling_JJ
 comprehendible_JJ
 complicated_JJ
 complex_JJ
+worse_JJR
 intricate_JJ
 smart_JJ
 usual_JJ

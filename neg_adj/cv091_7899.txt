@@ -20,6 +20,7 @@ other_JJ
 wrecked_JJ
 alien_JJ
 amuck_JJ
+worse_JJR
 weird_JJ
 cheap_JJ
 cinematic_JJ

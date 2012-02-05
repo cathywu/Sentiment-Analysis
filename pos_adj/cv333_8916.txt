@@ -11,6 +11,7 @@ blond_JJ
 golden_JJ
 natural_JJ
 corporate_JJ
+weaker_JJR
 clumsy_JJ
 dogged_JJ
 raw_JJ
@@ -19,6 +20,7 @@ shakespearean_JJ
 vulnerable_JJ
 single_JJ
 easy_JJ
+fairer_JJR
 little_JJ
 helpless_JJ
 fragile_JJ

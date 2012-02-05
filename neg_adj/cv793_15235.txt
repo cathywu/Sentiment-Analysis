@@ -1,5 +1,6 @@
 silly_JJ
 evil_JJ
+greater_JJR
 evil_JJ
 wrong_JJ
 great_JJ
@@ -11,10 +12,12 @@ smart_JJ
 random_JJ
 vital_JJ
 other_JJ
+finer_JJR
 british_JJ
 dynamic_JJ
 pure_JJ
 english_JJ
+better_JJR
 erratic_JJ
 stormy_JJ
 embarrassing_JJ

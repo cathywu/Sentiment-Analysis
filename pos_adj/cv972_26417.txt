@@ -15,6 +15,7 @@ good_JJ
 simple_JJ
 familiar_JJ
 pretty_JJ
+worse_JJR
 bad_JJ
 likable_JJ
 romantic_JJ

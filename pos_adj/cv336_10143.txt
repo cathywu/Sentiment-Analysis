@@ -2,6 +2,7 @@ clever_JJ
 gruesome_JJ
 bloody_JJ
 funny_JJ
+further_JJR
 original_JJ
 unexpected_JJ
 gross_JJ
@@ -11,6 +12,7 @@ entire_JJ
 creative_JJ
 stipulated_JJ
 obsessed_JJ
+higher_JJR
 original_JJ
 excessive_JJ
 spilled_JJ
@@ -65,6 +67,7 @@ long_JJ
 enjoyable_JJ
 little_JJ
 overlong_JJ
+better_JJR
 whodunit_JJ
 nice_JJ
 overall_JJ

@@ -21,6 +21,7 @@ heroic_JJ
 subsequent_JJ
 long_JJ
 bizarre_JJ
+longer_JJR
 half-machine_JJ
 indebted_JJ
 nifty_JJ
@@ -37,6 +38,7 @@ raw_JJ
 expensive_JJ
 sly_JJ
 condescending_JJ
+better_JJR
 ultra-cool_JJ
 complex_JJ
 simple_JJ
@@ -55,6 +57,7 @@ obvious_JJ
 good_JJ
 animated_JJ
 long_JJ
+quicker_JJR
 good_JJ
 worthless_JJ
 sloppy_JJ

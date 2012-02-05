@@ -11,6 +11,7 @@ extra-terrestrial_JJ
 simple_JJ
 aware_JJ
 literal_JJ
+longer_JJR
 regular_JJ
 treacherous_JJ
 clear_JJ
@@ -20,5 +21,7 @@ fun_JJ
 funny_JJ
 nice_JJ
 fun_JJ
+nicer_JJR
+clearer_JJR
 great_JJ
 black_JJ

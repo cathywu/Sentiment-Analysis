@@ -17,6 +17,7 @@ short_JJ
 awesome_JJ
 great_JJ
 real_JJ
+better_JJR
 jealous_JJ
 famous_JJ
 joyful_JJ

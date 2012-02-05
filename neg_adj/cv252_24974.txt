@@ -47,6 +47,7 @@ high-profile_JJ
 christian_JJ
 major_JJ
 bright_JJ
+longer_JJR
 guilty_JJ
 big_JJ
 mediocre_JJ

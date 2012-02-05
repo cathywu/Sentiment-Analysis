@@ -5,10 +5,13 @@ mocking_JJ
 fantastic_JJ
 fair_JJ
 low_JJ
+better_JJR
+higher_JJR
 spiceworld_JJ
 very_JJ
 very_JJ
 young_JJ
+older_JJR
 british_JJ
 real_JJ
 spicy_JJ
@@ -46,6 +49,7 @@ pretentious_JJ
 satirical_JJ
 big_JJ
 likely_JJ
+better_JJR
 self-indulged_JJ
 mocking_JJ
 embarrassing_JJ

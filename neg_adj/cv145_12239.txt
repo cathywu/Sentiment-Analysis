@@ -46,6 +46,7 @@ crummy_JJ
 prior_JJ
 broken_JJ
 definite_JJ
+better_JJR
 broken_JJ
 local_JJ
 hard_JJ

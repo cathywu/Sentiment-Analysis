@@ -74,6 +74,7 @@ meaty_JJ
 current_JJ
 tremendous_JJ
 expanding_JJ
+better_JJR
 running_JJ
 sumptuous_JJ
 vivid_JJ

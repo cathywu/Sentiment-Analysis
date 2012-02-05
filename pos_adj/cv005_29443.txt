@@ -53,6 +53,7 @@ communist_JJ
 cold_JJ
 russian_JJ
 bad_JJ
+worse_JJR
 remaining_JJ
 evacuate_JJ
 belgian_JJ
@@ -86,6 +87,7 @@ linear_JJ
 straightforward_JJ
 good_JJ
 stalwart_JJ
+larger_JJR
 brief_JJ
 short_JJ
 lopsided_JJ

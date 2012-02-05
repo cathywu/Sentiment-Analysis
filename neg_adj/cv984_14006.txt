@@ -17,6 +17,7 @@ sweet_JJ
 diabolical_JJ
 usual_JJ
 boring_JJ
+longer_JJR
 sitcom-bred_JJ
 manic_JJ
 psychotic_JJ

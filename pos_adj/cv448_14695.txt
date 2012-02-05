@@ -19,6 +19,7 @@ other_JJ
 other_JJ
 good_JJ
 anti-apartheid_JJ
+greater_JJR
 precise_JJ
 detailed_JJ
 special_JJ

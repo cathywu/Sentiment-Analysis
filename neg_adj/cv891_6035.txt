@@ -47,6 +47,8 @@ blank_JJ
 armed_JJ
 minor_JJ
 macho_JJ
+tougher_JJR
+smarter_JJR
 walken_JJ
 brutal_JJ
 slight_JJ

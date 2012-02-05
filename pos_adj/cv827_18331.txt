@@ -2,6 +2,7 @@ directoral_JJ
 corporate_JJ
 involved_JJ
 mundane_JJ
+worse_JJR
 other_JJ
 entire_JJ
 boring_JJ
@@ -15,11 +16,14 @@ over-effective_JJ
 lifelong_JJ
 nonsensical_JJ
 sudden_JJ
+larger_JJR
 bleak_JJ
 funny_JJ
 mundane_JJ
 plausible_JJ
 whole_JJ
+funnier_JJR
+higher_JJR
 corporate_JJ
 modern_JJ
 humorous_JJ

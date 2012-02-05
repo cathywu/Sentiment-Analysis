@@ -10,6 +10,8 @@ conservative_JJ
 unscathed_JJ
 popular_JJ
 controversial_JJ
+bigger_JJR
+longer_JJR
 uncut_JJ
 loose_JJ
 bad_JJ
@@ -56,5 +58,6 @@ late_JJ
 numerous_JJ
 smart_JJ
 funny_JJ
+better_JJR
 continuing_JJ
 big_JJ

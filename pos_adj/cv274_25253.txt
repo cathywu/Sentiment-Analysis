@@ -55,6 +55,7 @@ online_JJ
 amusing_JJ
 tiresome_JJ
 original_JJ
+greater_JJR
 funny_JJ
 lean_JJ
 sole_JJ
@@ -66,6 +67,7 @@ visual_JJ
 verbal_JJ
 obvious_JJ
 vague_JJ
+richer_JJR
 lively_JJ
 given_JJ
 subtle_JJ

@@ -19,6 +19,7 @@ hideous_JJ
 short-cropped_JJ
 red_JJ
 supposed_JJ
+worse_JJR
 interested_JJ
 colorful_JJ
 working-class_JJ
@@ -48,6 +49,7 @@ scrumptious_JJ
 particular_JJ
 unscrupulous_JJ
 financially-strapped_JJ
+bigger_JJR
 psychological_JJ
 restrained_JJ
 tasteful_JJ

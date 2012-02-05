@@ -60,6 +60,8 @@ original_JJ
 hilarious_JJ
 gay_JJ
 certain_JJ
+bigger_JJR
+longer_JJR
 uncut_JJ
 gay_JJ
 crude_JJ
@@ -76,4 +78,5 @@ snappy_JJ
 romantic_JJ
 superb_JJ
 great_JJ
+better_JJR
 romantic_JJ

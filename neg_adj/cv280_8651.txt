@@ -27,6 +27,7 @@ thick_JJ
 complete_JJ
 even_JJ
 serious_JJ
+better_JJR
 thoughtful_JJ
 boring_JJ
 overheated_JJ

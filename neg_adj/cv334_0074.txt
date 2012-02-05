@@ -20,6 +20,7 @@ idle_JJ
 wealthy_JJ
 eccentric_JJ
 dangerous_JJ
+worse_JJR
 ugly_JJ
 female_JJ
 uninteresting_JJ

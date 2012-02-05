@@ -83,6 +83,7 @@ powerful_JJ
 big_JJ
 serious_JJ
 dramatic_JJ
+bigger_JJR
 left_JJ
 said_JJ
 following_JJ

@@ -29,6 +29,8 @@ typical_JJ
 always-phenomenal_JJ
 directorial_JJ
 rolling_JJ
+greater_JJR
+bigger_JJR
 visual_JJ
 outstanding_JJ
 particular_JJ

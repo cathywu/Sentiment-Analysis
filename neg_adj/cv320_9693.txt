@@ -9,6 +9,7 @@ un-safe_JJ
 due_JJ
 alternate_JJ
 futuristic_JJ
+better_JJR
 acting_JJ
 visual_JJ
 special_JJ
@@ -29,6 +30,8 @@ main_JJ
 innocent_JJ
 short_JJ
 good_JJ
+further_JJR
 short_JJ
 exciting_JJ
 other_JJ
+better_JJR

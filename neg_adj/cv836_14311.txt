@@ -36,5 +36,6 @@ leaden_JJ
 1940s-style_JJ
 little_JJ
 complete_JJ
+better_JJR
 different_JJ
 acceptable_JJ

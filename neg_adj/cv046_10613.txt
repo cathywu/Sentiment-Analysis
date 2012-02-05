@@ -6,6 +6,7 @@ paramount_JJ
 nervous_JJ
 other_JJ
 hard_JJ
+worse_JJR
 overworked_JJ
 cloud-choked_JJ
 initial_JJ

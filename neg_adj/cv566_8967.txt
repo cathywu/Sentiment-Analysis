@@ -27,6 +27,7 @@ crazy_JJ
 anarchic_JJ
 main_JJ
 successive_JJ
+further_JJR
 underdeveloped_JJ
 poignant_JJ
 other_JJ

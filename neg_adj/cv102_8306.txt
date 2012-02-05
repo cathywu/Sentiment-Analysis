@@ -2,6 +2,7 @@ real_JJ
 impossible_JJ
 ridiculous_JJ
 real_JJ
+greater_JJR
 guilty_JJ
 familiar_JJ
 stupid_JJ
@@ -17,6 +18,7 @@ thankful_JJ
 young_JJ
 old_JJ
 old_JJ
+later_JJR
 phantom_JJ
 impossible_JJ
 little_JJ

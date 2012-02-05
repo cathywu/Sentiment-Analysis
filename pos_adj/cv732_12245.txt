@@ -10,6 +10,7 @@ valjean_JJ
 hard_JJ
 hardened_JJ
 unexpected_JJ
+better_JJR
 obsessive_JJ
 benign_JJ
 valjean_JJ

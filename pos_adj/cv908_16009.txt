@@ -48,6 +48,7 @@ original_JJ
 perfect_JJ
 affected_JJ
 smooth_JJ
+better_JJR
 new_JJ
 charming_JJ
 new_JJ
@@ -58,6 +59,7 @@ right_JJ
 corny_JJ
 safe_JJ
 original_JJ
+better_JJR
 foolish_JJ
 classic_JJ
 repeated_JJ

@@ -33,6 +33,7 @@ acting_JJ
 important_JJ
 written_JJ
 superb_JJ
+wiser_JJR
 easy_JJ
 right_JJ
 realistic_JJ

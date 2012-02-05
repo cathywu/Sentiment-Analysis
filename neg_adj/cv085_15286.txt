@@ -14,6 +14,7 @@ elated_JJ
 secluded_JJ
 tropical_JJ
 accompanying_JJ
+phifer_JJR
 potential_JJ
 good_JJ
 true_JJ

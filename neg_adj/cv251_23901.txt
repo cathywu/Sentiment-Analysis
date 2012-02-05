@@ -32,9 +32,11 @@ emotional_JJ
 rocky-style_JJ
 ill-fated_JJ
 lovely_JJ
+easier_JJR
 just_JJ
 typical_JJ
 single_JJ
+younger_JJR
 winning_JJ
 only_JJ
 good_JJ

@@ -37,6 +37,7 @@ drawn-out_JJ
 different_JJ
 intelligent_JJ
 average_JJ
+easier_JJR
 horrible_JJ
 chucky_JJ
 good_JJ

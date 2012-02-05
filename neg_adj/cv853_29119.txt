@@ -16,6 +16,7 @@ infomercial_JJ
 healthy_JJ
 live_JJ
 human_JJ
+better_JJR
 lethal_JJ
 hard-boiled_JJ
 gross_JJ
@@ -36,7 +37,9 @@ exciting_JJ
 funny_JJ
 fluish_JJ
 live_JJ
+better_JJR
 difficult_JJ
+bigger_JJR
 animated_JJ
 violent_JJ
 young_JJ

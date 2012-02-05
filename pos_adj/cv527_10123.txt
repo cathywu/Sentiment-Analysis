@@ -27,6 +27,7 @@ great_JJ
 modern_JJ
 burlesque_JJ
 cystic_JJ
+earlier_JJR
 female_JJ
 outstanding_JJ
 sick_JJ

@@ -1,4 +1,5 @@
 difficult_JJ
+harder_JJR
 successful_JJ
 opposite_JJ
 solitary_JJ
@@ -42,6 +43,7 @@ unlikely_JJ
 wonderful_JJ
 hilarious_JJ
 nice_JJ
+better_JJR
 afraid_JJ
 monetary_JJ
 hidden_JJ

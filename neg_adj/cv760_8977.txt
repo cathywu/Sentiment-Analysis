@@ -6,6 +6,7 @@ jaded_JJ
 virtual_JJ
 real_JJ
 deadly_JJ
+younger_JJR
 special_JJ
 clear_JJ
 foolish_JJ

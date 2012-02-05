@@ -42,6 +42,7 @@ bad_JJ
 weak_JJ
 unimaginative_JJ
 pivotal_JJ
+stronger_JJR
 able_JJ
 moody_JJ
 pastoral_JJ

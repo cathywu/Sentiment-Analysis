@@ -19,6 +19,7 @@ handsome_JJ
 good_JJ
 doe-eyed_JJ
 pretty_JJ
+stronger_JJR
 supporting_JJ
 impressive_JJ
 good_JJ
@@ -28,7 +29,9 @@ chief_JJ
 bad_JJ
 smoking_JJ
 double_JJ
+stronger_JJR
 mediocre_JJ
+better_JJR
 straightforward_JJ
 appropriate_JJ
 full_JJ

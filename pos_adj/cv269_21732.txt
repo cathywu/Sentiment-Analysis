@@ -10,6 +10,7 @@ lillian_JJ
 natural_JJ
 artistic_JJ
 other_JJ
+greater_JJR
 deadly_JJ
 political_JJ
 big_JJ
@@ -45,6 +46,8 @@ good_JJ
 evil_JJ
 bad_JJ
 impatient_JJ
+higher_JJR
+longer_JJR
 gorgeous_JJ
 bloodied_JJ
 trapped_JJ
@@ -69,6 +72,7 @@ lillian_JJ
 suspicious_JJ
 coming_JJ
 cunning_JJ
+longer_JJR
 impossible_JJ
 good_JJ
 lonely_JJ
@@ -84,12 +88,14 @@ related_JJ
 american_JJ
 peaceful_JJ
 subtle_JJ
+deeper_JJR
 decent_JJ
 smart_JJ
 hard_JJ
 black_JJ
 white_JJ
 harmful_JJ
+better_JJR
 poetical_JJ
 didactic_JJ
 considerable_JJ

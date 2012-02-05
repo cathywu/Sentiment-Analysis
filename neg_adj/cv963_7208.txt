@@ -56,6 +56,7 @@ intercut_JJ
 real_JJ
 emotional_JJ
 estranged_JJ
+better_JJR
 happy_JJ
 commendable_JJ
 absolute_JJ

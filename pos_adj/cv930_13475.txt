@@ -58,6 +58,7 @@ visual_JJ
 prime_JJ
 cinematic_JJ
 main_JJ
+happier_JJR
 childish_JJ
 trite_JJ
 contemporary_JJ

@@ -83,6 +83,7 @@ tall_JJ
 wide_JJ
 tall_JJ
 new_JJ
+stronger_JJR
 maneuver_JJ
 maneuver_JJ
 nuclear_JJ

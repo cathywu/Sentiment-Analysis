@@ -20,6 +20,7 @@ wrong_JJ
 right_JJ
 real_JJ
 running_JJ
+shorter_JJR
 lasting_JJ
 good_JJ
 black_JJ
@@ -57,6 +58,7 @@ pink_JJ
 looking_JJ
 current_JJ
 obvious_JJ
+better_JJR
 wild_JJ
 major_JJ
 tv-movie-ish_JJ

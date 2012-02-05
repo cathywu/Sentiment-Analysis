@@ -19,6 +19,7 @@ everyday_JJ
 amusing_JJ
 rocky_JJ
 high_JJ
+stronger_JJR
 idle_JJ
 frantic_JJ
 convincing_JJ

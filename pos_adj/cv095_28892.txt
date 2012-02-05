@@ -5,6 +5,7 @@ parental_JJ
 early_JJ
 overblown_JJ
 special_JJ
+worse_JJR
 federal_JJ
 violent_JJ
 sexual_JJ

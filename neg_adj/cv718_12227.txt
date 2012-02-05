@@ -25,6 +25,7 @@ long_JJ
 amiable_JJ
 professional_JJ
 blank_JJ
+better_JJR
 developed_JJ
 clever_JJ
 ironic_JJ

@@ -2,6 +2,7 @@ hard-earned_JJ
 wild_JJ
 wild_JJ
 right_JJ
+better_JJR
 spent_JJ
 starbuck_JJ
 great_JJ
@@ -29,6 +30,7 @@ surprised_JJ
 bankable_JJ
 angry_JJ
 white_JJ
+worse_JJR
 still_JJ
 final_JJ
 mechanical_JJ

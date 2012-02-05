@@ -62,6 +62,7 @@ white_JJ
 black_JJ
 good_JJ
 real_JJ
+worse_JJR
 saxon_JJ
 possible_JJ
 damn_JJ

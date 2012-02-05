@@ -21,6 +21,7 @@ disturbing_JJ
 ugly_JJ
 very_JJ
 wise_JJ
+better_JJR
 slick_JJ
 frightening_JJ
 real_JJ

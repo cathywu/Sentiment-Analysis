@@ -19,6 +19,7 @@ disturbing_JJ
 excessive_JJ
 gritty_JJ
 realistic_JJ
+worse_JJR
 graphic_JJ
 loyal_JJ
 private_JJ
@@ -32,6 +33,7 @@ right_JJ
 rapid_JJ
 full_JJ
 quick_JJ
+better_JJR
 close_JJ
 copious_JJ
 gory_JJ

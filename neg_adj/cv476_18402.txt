@@ -3,9 +3,12 @@ great_JJ
 endless_JJ
 dark_JJ
 big_JJ
+louder_JJR
+better_JJR
 irresistible_JJ
 early_JJ
 wrong_JJ
+better_JJR
 nostalgic_JJ
 hot_JJ
 young_JJ

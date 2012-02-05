@@ -3,6 +3,7 @@ good_JJ
 average_JJ
 unstable_JJ
 drunken_JJ
+worse_JJR
 original_JJ
 fascinating_JJ
 countless_JJ
@@ -32,6 +33,7 @@ trite_JJ
 quiet_JJ
 complex_JJ
 due_JJ
+better_JJR
 excellent_JJ
 little_JJ
 past_JJ

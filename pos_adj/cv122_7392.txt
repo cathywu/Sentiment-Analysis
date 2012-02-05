@@ -94,6 +94,7 @@ absurd_JJ
 average_JJ
 marxist_JJ
 retaliate_JJ
+further_JJR
 human_JJ
 general_JJ
 black_JJ

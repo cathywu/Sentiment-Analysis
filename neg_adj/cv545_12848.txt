@@ -12,6 +12,7 @@ new_JJ
 junky_JJ
 high_JJ
 high_JJ
+further_JJR
 complicated_JJ
 deep_JJ
 drunk_JJ

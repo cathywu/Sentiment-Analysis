@@ -51,6 +51,7 @@ vulnerable_JJ
 rewarding_JJ
 overrated_JJ
 unglamorous_JJ
+younger_JJR
 convincing_JJ
 quivering_JJ
 competent_JJ

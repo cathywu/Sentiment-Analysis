@@ -20,6 +20,7 @@ content_JJ
 convinced_JJ
 willing_JJ
 far_JJ
+better_JJR
 sub-par_JJ
 romantic_JJ
 other_JJ

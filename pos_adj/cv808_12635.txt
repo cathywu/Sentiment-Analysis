@@ -43,6 +43,7 @@ comatose_JJ
 good_JJ
 increased_JJ
 certain_JJ
+better_JJR
 intelligent_JJ
 supporting_JJ
 wise_JJ

@@ -32,6 +32,7 @@ genuine_JJ
 long-term_JJ
 pop_JJ
 classical_JJ
+better_JJR
 timid_JJ
 innate_JJ
 finished_JJ

@@ -9,6 +9,7 @@ pretty_JJ
 orphaned_JJ
 female_JJ
 young_JJ
+older_JJR
 different_JJ
 lovely_JJ
 tough_JJ

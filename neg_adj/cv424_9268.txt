@@ -1,6 +1,7 @@
 renewed_JJ
 early_JJ
 heavy_JJ
+better_JJR
 slow_JJ
 evacuate_JJ
 little_JJ
@@ -43,6 +44,7 @@ geological_JJ
 fit_JJ
 ready_JJ
 grim_JJ
+better_JJR
 boiling_JJ
 cold_JJ
 heated_JJ
@@ -85,3 +87,4 @@ beautiful_JJ
 special_JJ
 real_JJ
 pyroclastic_JJ
+better_JJR

@@ -33,6 +33,7 @@ devine_JJ
 perfect_JJ
 sincere_JJ
 touching_JJ
+better_JJR
 great_JJ
 unnecessary_JJ
 creative_JJ

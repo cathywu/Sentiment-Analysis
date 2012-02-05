@@ -19,6 +19,7 @@ obvious_JJ
 inconsistent_JJ
 other_JJ
 innocent_JJ
+greater_JJR
 simple_JJ
 arab_JJ
 interesting_JJ
@@ -38,6 +39,7 @@ unobjective_JJ
 finished_JJ
 arab_JJ
 foreign_JJ
+higher_JJR
 countless_JJ
 definable_JJ
 ironic_JJ

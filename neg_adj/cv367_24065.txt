@@ -30,6 +30,7 @@ contrived_JJ
 thrilling_JJ
 able_JJ
 main_JJ
+better_JJR
 trained_JJ
 little_JJ
 obvious_JJ

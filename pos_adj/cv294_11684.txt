@@ -42,6 +42,7 @@ great_JJ
 silent_JJ
 deadly_JJ
 big_JJ
+earlier_JJR
 previous_JJ
 strong_JJ
 political_JJ

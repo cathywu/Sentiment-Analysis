@@ -15,6 +15,7 @@ horrified_JJ
 advanced_JJ
 aging_JJ
 lost_JJ
+older_JJR
 sexual_JJ
 natural_JJ
 intimate_JJ
@@ -38,4 +39,5 @@ unique_JJ
 fascinating_JJ
 double_JJ
 faithless_JJ
+earlier_JJR
 different_JJ

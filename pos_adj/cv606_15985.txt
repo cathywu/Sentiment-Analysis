@@ -1,5 +1,6 @@
 peaceful_JJ
 evil_JJ
+firmer_JJR
 successful_JJ
 devoted_JJ
 following_JJ
@@ -62,6 +63,7 @@ memorable_JJ
 agitated_JJ
 facial_JJ
 open_JJ
+better_JJR
 forgettable_JJ
 okay_JJ
 young_JJ

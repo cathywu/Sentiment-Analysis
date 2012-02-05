@@ -12,6 +12,7 @@ green_JJ
 would-be_JJ
 lesbian_JJ
 eccentric_JJ
+tougher_JJR
 sexual_JJ
 discourteous_JJ
 other_JJ

@@ -18,6 +18,7 @@ other_JJ
 unsympathetic_JJ
 innocent_JJ
 batman_JJ
+further_JJR
 wrong_JJ
 countless_JJ
 bad_JJ
@@ -29,6 +30,7 @@ enjoyable_JJ
 dramatic_JJ
 black_JJ
 important_JJ
+finer_JJR
 only_JJ
 real_JJ
 final_JJ

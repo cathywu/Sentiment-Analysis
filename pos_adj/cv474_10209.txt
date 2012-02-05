@@ -1,5 +1,6 @@
 million-plus_JJ
 good_JJ
+better_JJR
 nice_JJ
 new_JJ
 new_JJ
@@ -34,6 +35,7 @@ agreeable_JJ
 memorable_JJ
 talented_JJ
 experienced_JJ
+sharper_JJR
 amused_JJ
 double_JJ
 hackneyed_JJ

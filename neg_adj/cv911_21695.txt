@@ -63,6 +63,7 @@ bad_JJ
 funny_JJ
 silent_JJ
 sure_JJ
+better_JJR
 good_JJ
 terrible_JJ
 terrible_JJ

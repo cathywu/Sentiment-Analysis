@@ -58,4 +58,5 @@ red-eyed_JJ
 fine_JJ
 stereotypical_JJ
 other_JJ
+better_JJR
 working_JJ

@@ -31,6 +31,7 @@ unhappy_JJ
 refreshing_JJ
 usual_JJ
 stereotypical_JJ
+closer_JJR
 other_JJ
 touching_JJ
 flawless_JJ
@@ -43,6 +44,7 @@ australian_JJ
 other_JJ
 caught_JJ
 able_JJ
+older_JJR
 natural_JJ
 popular_JJ
 accurate_JJ

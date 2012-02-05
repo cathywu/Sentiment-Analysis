@@ -46,6 +46,7 @@ horrible_JJ
 foreign_JJ
 good_JJ
 american_JJ
+earlier_JJR
 big_JJ
 tired_JJ
 long_JJ

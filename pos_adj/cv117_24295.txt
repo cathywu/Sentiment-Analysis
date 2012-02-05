@@ -5,6 +5,7 @@ other_JJ
 high_JJ
 failed_JJ
 funny_JJ
+better_JJR
 pathetic_JJ
 ok_JJ
 fictional_JJ

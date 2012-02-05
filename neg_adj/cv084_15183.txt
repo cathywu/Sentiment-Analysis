@@ -15,6 +15,7 @@ bored_JJ
 boring_JJ
 unlikeable_JJ
 supposed_JJ
+nicer_JJR
 unbelievable_JJ
 poor_JJ
 terrible_JJ

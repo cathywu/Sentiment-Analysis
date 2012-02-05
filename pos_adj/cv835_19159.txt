@@ -1,5 +1,6 @@
 rare_JJ
 dying_JJ
+rarer_JJR
 hard_JJ
 wet_JJ
 sloppy_JJ

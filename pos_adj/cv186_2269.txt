@@ -37,6 +37,7 @@ foul-mouthed_JJ
 new_JJ
 petty_JJ
 perfect_JJ
+better_JJR
 solid_JJ
 good_JJ
 cute_JJ

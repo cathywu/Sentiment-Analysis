@@ -4,6 +4,7 @@ even_JJ
 enjoyable_JJ
 idiotic_JJ
 contemptuous_JJ
+better_JJR
 cold_JJ
 plain_JJ
 woody_JJ

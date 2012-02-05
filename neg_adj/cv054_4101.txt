@@ -16,7 +16,9 @@ supporting_JJ
 unscathed_JJ
 big_JJ
 green_JJ
+better_JJR
 peppy_JJ
+better_JJR
 bombastic_JJ
 orchestral_JJ
 old_JJ

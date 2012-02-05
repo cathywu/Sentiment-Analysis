@@ -4,6 +4,7 @@ married_JJ
 innocuous_JJ
 obvious_JJ
 little_JJ
+deeper_JJR
 tough_JJ
 timid_JJ
 wise_JJ

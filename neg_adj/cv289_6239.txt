@@ -2,6 +2,7 @@ fair_JJ
 epic_JJ
 historical_JJ
 big_JJ
+bigger_JJR
 beautiful_JJ
 overblown_JJ
 basic_JJ

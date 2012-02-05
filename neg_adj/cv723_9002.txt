@@ -25,6 +25,7 @@ locklear_JJ
 bad_JJ
 unlikely_JJ
 buddy_JJ
+better_JJR
 entertaining_JJ
 due_JJ
 spastic_JJ

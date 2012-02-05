@@ -13,7 +13,7 @@ def filter_adj(olddir, newdir):
         f = open("%s/%s" % (olddir,filename)).read().split("\n")
         w = open("%s/%s" % (newdir,filename), 'w')
         for word in f:
-            if word[-3:]=='_JJ':
+            if word[-3:]=='_JJ' or word[-4:]=='_JJR':
                 w.write("%s\n" % word)
         w.close()
 

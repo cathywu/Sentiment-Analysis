@@ -16,6 +16,7 @@ shallow_JJ
 main_JJ
 insufficient_JJ
 high_JJ
+younger_JJR
 perfect_JJ
 dean_JJ
 desired_JJ
@@ -42,6 +43,7 @@ retentive_JJ
 other_JJ
 long_JJ
 lost_JJ
+older_JJR
 real_JJ
 big_JJ
 dead_JJ

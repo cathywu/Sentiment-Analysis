@@ -8,11 +8,13 @@ key_JJ
 deadly_JJ
 medical_JJ
 direct_JJ
+better_JJR
 bad_JJ
 stupid_JJ
 hard_JJ
 supposed_JJ
 good_JJ
+smarter_JJR
 dumb_JJ
 walken_JJ
 supposed_JJ
@@ -42,4 +44,6 @@ used_JJ
 pivotal_JJ
 climactic_JJ
 real_JJ
+bigger_JJR
 safe_JJ
+better_JJR

@@ -30,6 +30,7 @@ black_JJ
 key_JJ
 memorable_JJ
 unfortunate_JJ
+later_JJR
 overweight_JJ
 entire_JJ
 massive_JJ

@@ -9,7 +9,9 @@ late_JJ
 unfulfilled_JJ
 married_JJ
 insensitive_JJ
+younger_JJR
 complicating_JJ
+worse_JJR
 old_JJ
 buddy_JJ
 little_JJ

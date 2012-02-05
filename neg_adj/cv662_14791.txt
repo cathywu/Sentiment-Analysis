@@ -20,6 +20,8 @@ black_JJ
 funny_JJ
 strange_JJ
 strange_JJ
+deeper_JJR
+deeper_JJR
 popular_JJ
 familiar_JJ
 new_JJ

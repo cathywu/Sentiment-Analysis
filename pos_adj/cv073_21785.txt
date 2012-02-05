@@ -1,6 +1,7 @@
 inspired_JJ
 short_JJ
 sleepy_JJ
+casper_JJR
 special_JJ
 walken_JJ
 sleepy_JJ
@@ -16,6 +17,8 @@ biographical_JJ
 sleepy_JJ
 similar_JJ
 atmospheric_JJ
+earlier_JJR
+better_JJR
 sleepy_JJ
 old_JJ
 american_JJ

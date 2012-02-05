@@ -14,6 +14,7 @@ dumb_JJ
 entire_JJ
 actual_JJ
 funny_JJ
+further_JJR
 potential_JJ
 very_JJ
 funny_JJ
@@ -24,6 +25,7 @@ able_JJ
 only_JJ
 goofy_JJ
 vast_JJ
+longer_JJR
 great_JJ
 lowly_JJ
 great_JJ

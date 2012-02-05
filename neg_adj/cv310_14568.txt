@@ -30,7 +30,9 @@ female_JJ
 urban_JJ
 great_JJ
 little_JJ
+longer_JJR
 urban_JJ
 pretty_JJ
 cool_JJ
 whodunit_JJ
+better_JJR

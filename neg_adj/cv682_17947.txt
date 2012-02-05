@@ -5,6 +5,7 @@ disappointing_JJ
 solid_JJ
 potential_JJ
 far_JJ
+greater_JJR
 solid_JJ
 apparent_JJ
 latin_JJ
@@ -43,6 +44,7 @@ limited_JJ
 uneven_JJ
 long_JJ
 panoramic_JJ
+faster_JJR
 determined_JJ
 potential_JJ
 technical_JJ

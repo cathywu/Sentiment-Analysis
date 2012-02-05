@@ -27,6 +27,7 @@ intelligent_JJ
 great_JJ
 empirical_JJ
 scientific_JJ
+higher_JJR
 religious_JJ
 extraterrestrial_JJ
 easy_JJ
@@ -46,6 +47,7 @@ foster_JJ
 virtual_JJ
 gutsy_JJ
 foster_JJ
+smaller_JJR
 high_JJ
 smallish_JJ
 religious_JJ

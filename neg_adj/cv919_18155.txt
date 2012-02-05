@@ -6,6 +6,7 @@ obvious_JJ
 following_JJ
 associated_JJ
 low_JJ
+lower_JJR
 hard_JJ
 real_JJ
 terrible_JJ
@@ -50,3 +51,4 @@ capable_JJ
 solid_JJ
 forgettable_JJ
 good_JJ
+bigger_JJR

@@ -13,6 +13,7 @@ futuristic_JJ
 hybrid_JJ
 distant_JJ
 high_JJ
+casper_JJR
 federal_JJ
 accepted_JJ
 mobile_JJ
@@ -29,6 +30,7 @@ weakening_JJ
 new_JJ
 mobile_JJ
 good_JJ
+smarter_JJR
 diabolical_JJ
 numerous_JJ
 good_JJ
@@ -58,6 +60,7 @@ titular_JJ
 alien_JJ
 terrifying_JJ
 sharp_JJ
+sharper_JJR
 funny_JJ
 scary_JJ
 repeated_JJ
@@ -76,6 +79,7 @@ botched_JJ
 strong_JJ
 outstanding_JJ
 bland_JJ
+higher_JJR
 definite_JJ
 acting_JJ
 decent_JJ
@@ -83,6 +87,7 @@ spectacular_JJ
 smallish_JJ
 limited_JJ
 likeable_JJ
+smaller_JJR
 afore-mentioned_JJ
 recent_JJ
 overall_JJ

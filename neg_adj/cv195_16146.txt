@@ -34,6 +34,8 @@ nice_JJ
 single_JJ
 other_JJ
 awful_JJ
+younger_JJR
+better_JJR
 positive_JJ
 charismatic_JJ
 due_JJ

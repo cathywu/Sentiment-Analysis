@@ -37,6 +37,8 @@ realistic_JJ
 good_JJ
 horrible_JJ
 great_JJ
+worse_JJR
+worse_JJR
 real_JJ
 human_JJ
 pretty_JJ
@@ -63,6 +65,8 @@ quick_JJ
 sloppy_JJ
 good_JJ
 sure_JJ
+better_JJR
 great_JJ
 political_JJ
 great_JJ
+better_JJR

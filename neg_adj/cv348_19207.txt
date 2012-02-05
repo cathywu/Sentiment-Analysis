@@ -2,6 +2,7 @@ happy_JJ
 quick_JJ
 wild_JJ
 wild_JJ
+better_JJR
 wild_JJ
 wild_JJ
 black_JJ
@@ -24,12 +25,15 @@ racist_JJ
 complete_JJ
 creative_JJ
 ruthless_JJ
+lower_JJR
 civil_JJ
 steam-controlled_JJ
+bigger_JJR
 complete_JJ
 acting_JJ
 miserable_JJ
 western_JJ
+better_JJR
 charming_JJ
 strange_JJ
 missing_JJ
@@ -65,3 +69,4 @@ racist_JJ
 racist_JJ
 vicious_JJ
 black_JJ
+better_JJR

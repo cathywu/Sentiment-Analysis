@@ -53,4 +53,5 @@ nice_JJ
 classic_JJ
 maniacal_JJ
 learned_JJ
+better_JJR
 hard_JJ

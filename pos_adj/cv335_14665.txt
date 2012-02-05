@@ -5,6 +5,7 @@ pragmatic_JJ
 authorial_JJ
 other_JJ
 beloved_JJ
+finer_JJR
 main_JJ
 open_JJ
 wide_JJ
@@ -38,6 +39,7 @@ beloved_JJ
 beloved_JJ
 hard_JJ
 impressive_JJ
+younger_JJR
 appalling_JJ
 disturbed_JJ
 affable_JJ

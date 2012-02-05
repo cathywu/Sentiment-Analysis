@@ -13,6 +13,7 @@ suspicious_JJ
 late_JJ
 private_JJ
 crazy_JJ
+later_JJR
 climactic_JJ
 mean-spirited_JJ
 graceful_JJ
@@ -42,6 +43,7 @@ resulting_JJ
 sluggish_JJ
 hollywood-conventional_JJ
 emotional_JJ
+better_JJR
 small_JJ
 tentative_JJ
 real_JJ

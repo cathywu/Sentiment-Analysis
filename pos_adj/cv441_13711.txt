@@ -73,3 +73,4 @@ full_JJ
 random_JJ
 classic_JJ
 private_JJ
+better_JJR

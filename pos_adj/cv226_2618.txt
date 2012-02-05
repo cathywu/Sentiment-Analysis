@@ -6,6 +6,7 @@ disappointed_JJ
 basic_JJ
 original_JJ
 stern_JJ
+younger_JJR
 live_JJ
 curly_JJ
 original_JJ
@@ -38,3 +39,4 @@ story-line_JJ
 worthy_JJ
 original_JJ
 full_JJ
+better_JJR

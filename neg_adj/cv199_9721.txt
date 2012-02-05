@@ -16,6 +16,7 @@ brief_JJ
 predictable_JJ
 smart_JJ
 great_JJ
+further_JJR
 little_JJ
 interesting_JJ
 smart_JJ

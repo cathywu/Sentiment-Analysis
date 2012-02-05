@@ -3,6 +3,7 @@ super_JJ
 cool_JJ
 super_JJ
 acclaimed_JJ
+better_JJR
 right_JJ
 final_JJ
 old_JJ

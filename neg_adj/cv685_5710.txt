@@ -5,6 +5,7 @@ plain_JJ
 lazy_JJ
 sad_JJ
 mixed_JJ
+larger_JJR
 following_JJ
 likely_JJ
 original_JJ
@@ -24,6 +25,7 @@ major_JJ
 tough_JJ
 new_JJ
 major_JJ
+younger_JJR
 suitable_JJ
 exceptional_JJ
 average_JJ

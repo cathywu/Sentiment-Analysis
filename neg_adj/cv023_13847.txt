@@ -1,6 +1,7 @@
 potential_JJ
 disappointing_JJ
 great_JJ
+worse_JJR
 sole_JJ
 intelligent_JJ
 then_JJ
@@ -33,6 +34,7 @@ supposed_JJ
 red_JJ
 stupid_JJ
 cliched_JJ
+worse_JJR
 interesting_JJ
 complex_JJ
 original_JJ
@@ -48,6 +50,7 @@ credible_JJ
 respective_JJ
 intriguing_JJ
 great_JJ
+earlier_JJR
 flawed_JJ
 just_JJ
 half-assed_JJ

@@ -11,6 +11,7 @@ incomprehensible_JJ
 wrong_JJ
 unacceptable_JJ
 incoherent_JJ
+worse_JJR
 terrible_JJ
 entertaining_JJ
 inventive_JJ
@@ -41,6 +42,7 @@ strange_JJ
 hard_JJ
 huge_JJ
 interesting_JJ
+later_JJR
 talky_JJ
 acting_JJ
 bad_JJ

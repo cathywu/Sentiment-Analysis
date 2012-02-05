@@ -30,6 +30,7 @@ dead_JJ
 pretty_JJ
 shivery_JJ
 frightened_JJ
+older_JJR
 beguiling_JJ
 blank_JJ
 lovely_JJ

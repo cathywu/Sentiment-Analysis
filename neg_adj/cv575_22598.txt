@@ -11,6 +11,7 @@ dying_JJ
 obvious_JJ
 growing_JJ
 short_JJ
+younger_JJR
 ideal_JJ
 surprised_JJ
 impending_JJ
@@ -34,6 +35,7 @@ willing_JJ
 quits_JJ
 other_JJ
 pathetic_JJ
+longer_JJR
 capitalize_JJ
 brief_JJ
 eager_JJ
@@ -41,6 +43,7 @@ away_JJ
 worthy_JJ
 dysfunctional_JJ
 interminable_JJ
+worse_JJR
 intended_JJ
 ineffective_JJ
 splattered_JJ

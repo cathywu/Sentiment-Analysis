@@ -34,6 +34,7 @@ hard_JJ
 real_JJ
 memorable_JJ
 musical_JJ
+wilder_JJR
 mulan_JJ
 female_JJ
 great_JJ

@@ -23,6 +23,7 @@ various_JJ
 various_JJ
 grisly_JJ
 graphic_JJ
+further_JJR
 flimsy_JJ
 unspeakable_JJ
 bad_JJ

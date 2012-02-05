@@ -8,6 +8,7 @@ nutty_JJ
 overweight_JJ
 wrong_JJ
 new_JJ
+younger_JJR
 short_JJ
 lovable_JJ
 ridiculous_JJ

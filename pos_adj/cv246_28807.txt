@@ -42,9 +42,12 @@ new_JJ
 credible_JJ
 various_JJ
 sympathetic_JJ
+larger_JJR
 quiet_JJ
+worse_JJR
 original_JJ
 little_JJ
+greater_JJR
 central_JJ
 genuine_JJ
 favorite_JJ

@@ -9,6 +9,7 @@ stale_JJ
 clever_JJ
 reminiscent_JJ
 old_JJ
+wilder_JJR
 following_JJ
 past_JJ
 prime_JJ

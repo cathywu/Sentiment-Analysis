@@ -15,6 +15,7 @@ single_JJ
 short-term_JJ
 common_JJ
 cosmic_JJ
+stronger_JJR
 good_JJ
 evil_JJ
 important_JJ
@@ -24,6 +25,7 @@ wrong_JJ
 rightful_JJ
 universal_JJ
 serious_JJ
+longer_JJR
 flippant_JJ
 typical_JJ
 real_JJ
@@ -32,6 +34,8 @@ mortician_JJ
 yucky_JJ
 galore_JJ
 normal_JJ
+funnier_JJR
+odder_JJR
 venerable_JJ
 likeable_JJ
 great_JJ

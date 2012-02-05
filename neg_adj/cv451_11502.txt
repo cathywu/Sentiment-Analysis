@@ -39,6 +39,7 @@ idiotic_JJ
 nearby_JJ
 idiotic_JJ
 great_JJ
+longer_JJR
 normal_JJ
 short_JJ
 weird_JJ

@@ -28,6 +28,7 @@ other_JJ
 first-rate_JJ
 chief_JJ
 skillful_JJ
+better_JJR
 adequate_JJ
 limited_JJ
 flat_JJ
@@ -51,6 +52,7 @@ enigmatic_JJ
 mysterious_JJ
 difficult_JJ
 original_JJ
+worse_JJR
 following_JJ
 recent_JJ
 lengthy_JJ

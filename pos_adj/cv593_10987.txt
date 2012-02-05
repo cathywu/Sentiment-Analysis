@@ -3,12 +3,14 @@ large_JJ
 decent_JJ
 good_JJ
 samaritan_JJ
+further_JJR
 other_JJ
 racist_JJ
 damn_JJ
 killed_JJ
 different_JJ
 justifiable_JJ
+easier_JJR
 easy_JJ
 extremist_JJ
 good_JJ

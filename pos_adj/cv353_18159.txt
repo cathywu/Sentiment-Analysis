@@ -5,6 +5,7 @@ tremendous_JJ
 present_JJ
 wide_JJ
 original_JJ
+further_JJR
 incredible_JJ
 german_JJ
 contemporary_JJ
@@ -28,6 +29,7 @@ visual_JJ
 breathtaking_JJ
 desired_JJ
 intriguing_JJ
+longer_JJR
 damn_JJ
 good_JJ
 equivalent_JJ

@@ -5,8 +5,10 @@ powerful_JJ
 black_JJ
 prime_JJ
 good_JJ
+worse_JJR
 individual_JJ
 inner_JJ
+worse_JJR
 bloody_JJ
 apparent_JJ
 back_JJ

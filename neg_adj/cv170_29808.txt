@@ -26,6 +26,7 @@ strange_JJ
 strange_JJ
 little_JJ
 long_JJ
+heavier_JJR
 important_JJ
 main_JJ
 low_JJ
@@ -41,6 +42,7 @@ large_JJ
 self-contradictory_JJ
 lynch_JJ
 contradictory_JJ
+better_JJR
 lynch_JJ
 visual_JJ
 popular_JJ

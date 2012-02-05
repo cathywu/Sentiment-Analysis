@@ -30,6 +30,7 @@ defunct_JJ
 jurassic_JJ
 safe_JJ
 safe_JJ
+better_JJR
 united_JJ
 paleontologist_JJ
 real_JJ
@@ -41,6 +42,7 @@ safe_JJ
 safe_JJ
 back_JJ
 appealing_JJ
+smaller_JJR
 present_JJ
 large_JJ
 great_JJ
@@ -60,6 +62,7 @@ new_JJ
 new_JJ
 major_JJ
 common_JJ
+larger_JJR
 nasty_JJ
 upright_JJ
 visual_JJ

@@ -43,6 +43,7 @@ common_JJ
 verlaine_JJ
 haughty_JJ
 bad_JJ
+older_JJR
 verlaine_JJ
 despicable_JJ
 verlaine_JJ

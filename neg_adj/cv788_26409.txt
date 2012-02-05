@@ -1,4 +1,5 @@
 mid_JJ
+closer_JJR
 comprehendable_JJ
 little_JJ
 claustrophobic_JJ
@@ -39,6 +40,7 @@ supposed_JJ
 great_JJ
 criminal_JJ
 real_JJ
+further_JJR
 other_JJ
 old_JJ
 rich_JJ

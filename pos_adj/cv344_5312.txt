@@ -14,6 +14,7 @@ opposite_JJ
 unattractive_JJ
 gorgeous_JJ
 thurman_JJ
+worse_JJR
 cute_JJ
 shallow_JJ
 superficial_JJ

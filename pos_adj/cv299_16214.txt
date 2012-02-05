@@ -1,6 +1,8 @@
+worse_JJR
 dull_JJ
 full_JJ
 dark_JJ
+better_JJR
 simple_JJ
 sweet_JJ
 snowy_JJ
@@ -9,7 +11,9 @@ crisp_JJ
 cold_JJ
 quick_JJ
 dead_JJ
+better_JJR
 odd_JJ
+better_JJR
 american_JJ
 snowy_JJ
 simple_JJ
@@ -17,6 +21,7 @@ safe_JJ
 american_JJ
 true_JJ
 right_JJ
+better_JJR
 selfish_JJ
 selected_JJ
 coherent_JJ

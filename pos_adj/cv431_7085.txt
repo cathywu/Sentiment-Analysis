@@ -39,6 +39,7 @@ gothic_JJ
 italian_JJ
 minimal_JJ
 concerned_JJ
+deeper_JJR
 psychological_JJ
 stylish_JJ
 chilling_JJ

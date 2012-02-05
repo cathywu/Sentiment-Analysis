@@ -12,6 +12,8 @@ recent_JJ
 genetic_JJ
 genuine_JJ
 due_JJ
+smarter_JJR
+better_JJR
 realistic_JJ
 genetic_JJ
 normal_JJ

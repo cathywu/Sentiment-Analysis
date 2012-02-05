@@ -25,6 +25,7 @@ treehorn_JJ
 hot_JJ
 big_JJ
 black_JJ
+better_JJR
 imaginative_JJ
 directed_JJ
 big_JJ

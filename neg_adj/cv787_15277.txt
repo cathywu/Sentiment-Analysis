@@ -107,6 +107,7 @@ arduous_JJ
 irreversible_JJ
 psychological_JJ
 entire_JJ
+worse_JJR
 clear_JJ
 historical_JJ
 good_JJ

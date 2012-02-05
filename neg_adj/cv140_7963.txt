@@ -1,4 +1,5 @@
 great_JJ
+bigger_JJR
 big_JJ
 good_JJ
 damn_JJ
@@ -6,6 +7,7 @@ left_JJ
 poor_JJ
 mere_JJ
 finished_JJ
+better_JJR
 gigantic_JJ
 stunning_JJ
 anti-climactic_JJ
@@ -69,6 +71,8 @@ seductive_JJ
 right_JJ
 hot_JJ
 pretty_JJ
+lower_JJR
+quieter_JJR
 plain_JJ
 cool_JJ
 fried_JJ
@@ -109,4 +113,5 @@ interesting_JJ
 cool_JJ
 nazi_JJ
 other_JJ
+better_JJR
 smart_JJ

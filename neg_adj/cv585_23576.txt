@@ -38,6 +38,7 @@ distant_JJ
 reliable_JJ
 selfish_JJ
 distant_JJ
+better_JJR
 powerful_JJ
 devastating_JJ
 known_JJ

@@ -57,7 +57,9 @@ social_JJ
 scary_JJ
 international_JJ
 general_JJ
+greater_JJR
 good_JJ
+better_JJR
 fascinating_JJ
 martial_JJ
 historical_JJ

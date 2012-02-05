@@ -54,6 +54,7 @@ possible_JJ
 goofy_JJ
 familiar_JJ
 even_JJ
+better_JJR
 old_JJ
 stand-by_JJ
 able_JJ

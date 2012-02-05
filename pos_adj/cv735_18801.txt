@@ -10,6 +10,7 @@ early_JJ
 evil_JJ
 green_JJ
 evil_JJ
+longer_JJR
 funny_JJ
 evil_JJ
 other_JJ

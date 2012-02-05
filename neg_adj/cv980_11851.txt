@@ -27,6 +27,7 @@ funny_JJ
 crazy_JJ
 dull_JJ
 coyote_JJ
+better_JJR
 boring_JJ
 godawful_JJ
 great_JJ

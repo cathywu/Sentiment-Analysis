@@ -50,6 +50,8 @@ good_JJ
 secret_JJ
 impressive_JJ
 adrenaline_JJ
+better_JJR
+better_JJR
 sentimental_JJ
 suckered_JJ
 moral_JJ

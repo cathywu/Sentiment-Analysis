@@ -3,6 +3,7 @@ regular_JJ
 swansong_JJ
 increased_JJ
 suspicious_JJ
+earlier_JJR
 complete_JJ
 old_JJ
 double_JJ
@@ -11,6 +12,7 @@ funny_JJ
 mad_JJ
 small_JJ
 effective_JJ
+milder_JJR
 annoying_JJ
 mundane_JJ
 boring_JJ
@@ -22,6 +24,7 @@ french_JJ
 robbed_JJ
 notable_JJ
 great_JJ
+poorer_JJR
 marked_JJ
 high_JJ
 apparent_JJ

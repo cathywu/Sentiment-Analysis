@@ -39,6 +39,7 @@ jr_JJ
 brutal_JJ
 released_JJ
 disgusted_JJ
+easier_JJR
 said_JJ
 dominican_JJ
 hired_JJ

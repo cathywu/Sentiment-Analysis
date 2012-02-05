@@ -12,6 +12,7 @@ musical_JJ
 two-hour_JJ
 young_JJ
 cool_JJ
+older_JJR
 interesting_JJ
 bad_JJ
 different_JJ

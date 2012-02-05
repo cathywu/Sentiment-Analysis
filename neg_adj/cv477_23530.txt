@@ -4,6 +4,7 @@ dying_JJ
 unusual_JJ
 clever_JJ
 final_JJ
+better_JJR
 shocking_JJ
 graphic_JJ
 requisite_JJ

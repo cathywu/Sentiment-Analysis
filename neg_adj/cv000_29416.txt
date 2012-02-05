@@ -1,6 +1,7 @@
 mind-fuck_JJ
 cool_JJ
 bad_JJ
+harder_JJR
 lost_JJ
 good_JJ
 bad_JJ

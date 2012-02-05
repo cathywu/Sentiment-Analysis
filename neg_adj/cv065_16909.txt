@@ -54,6 +54,7 @@ laughable_JJ
 different_JJ
 ludicrous_JJ
 big_JJ
+better_JJR
 supposed_JJ
 good_JJ
 male_JJ
@@ -62,6 +63,7 @@ gratuitous_JJ
 naked_JJ
 little_JJ
 sure_JJ
+smaller_JJR
 big_JJ
 blue_JJ
 weird_JJ

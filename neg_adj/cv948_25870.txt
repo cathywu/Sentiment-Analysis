@@ -1,6 +1,7 @@
 just_JJ
 little_JJ
 soft_JJ
+lower_JJR
 cinematic_JJ
 thick_JJ
 successful_JJ
@@ -24,6 +25,7 @@ present_JJ
 present_JJ
 mixed_JJ
 flashback_JJ
+further_JJR
 confused_JJ
 interested_JJ
 random_JJ

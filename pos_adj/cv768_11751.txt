@@ -7,6 +7,7 @@ inept_JJ
 serious_JJ
 good_JJ
 quick_JJ
+smarter_JJR
 other_JJ
 working-class_JJ
 good-looking_JJ
@@ -72,6 +73,8 @@ real_JJ
 stellan_JJ
 award-winning_JJ
 reduced_JJ
+younger_JJR
+smarter_JJR
 old_JJ
 back_JJ
 enigmatic_JJ
@@ -83,3 +86,4 @@ musical_JJ
 intriguing_JJ
 fascinating_JJ
 likely_JJ
+better_JJR

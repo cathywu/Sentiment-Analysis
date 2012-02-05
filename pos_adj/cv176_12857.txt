@@ -21,6 +21,7 @@ overweight_JJ
 constant_JJ
 self-denial_JJ
 perceived_JJ
+longer_JJR
 franken_JJ
 real_JJ
 okay_JJ

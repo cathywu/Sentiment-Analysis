@@ -27,6 +27,7 @@ likely_JJ
 dark_JJ
 hollywood-ian_JJ
 special_JJ
+greater_JJR
 real_JJ
 taped_JJ
 credible_JJ

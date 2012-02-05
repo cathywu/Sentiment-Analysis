@@ -11,6 +11,7 @@ alive_JJ
 acting_JJ
 insignificant_JJ
 crippled_JJ
+greater_JJR
 good_JJ
 final_JJ
 uncomfortable_JJ

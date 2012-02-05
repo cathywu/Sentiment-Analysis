@@ -9,6 +9,7 @@ pretentious_JJ
 entertaining_JJ
 early_JJ
 following_JJ
+younger_JJR
 lifeless_JJ
 horrified_JJ
 supposed_JJ

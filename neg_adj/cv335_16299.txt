@@ -2,6 +2,7 @@ interesting_JJ
 clunky_JJ
 robotic_JJ
 human_JJ
+further_JJR
 entire_JJ
 solar_JJ
 human_JJ
@@ -50,6 +51,7 @@ clunky_JJ
 immobile_JJ
 dead_JJ
 half-machine_JJ
+worse_JJR
 big_JJ
 big_JJ
 big_JJ

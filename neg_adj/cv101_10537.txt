@@ -54,6 +54,7 @@ actual_JJ
 burning_JJ
 sick_JJ
 even_JJ
+worse_JJR
 faint_JJ
 bad_JJ
 acceptable_JJ

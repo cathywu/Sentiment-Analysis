@@ -46,11 +46,13 @@ amazing_JJ
 honest_JJ
 uncomfortable_JJ
 skylar_JJ
+later_JJR
 slow_JJ
 painful_JJ
 lonely_JJ
 bitter_JJ
 main_JJ
+deeper_JJR
 interesting_JJ
 hypocritical_JJ
 other_JJ

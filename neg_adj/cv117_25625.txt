@@ -18,6 +18,7 @@ voyeuristic_JJ
 right_JJ
 hollow_JJ
 special_JJ
+better_JJR
 used_JJ
 invisible_JJ
 wet_JJ

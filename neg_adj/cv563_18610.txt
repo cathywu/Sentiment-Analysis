@@ -3,6 +3,7 @@ open_JJ
 similar_JJ
 superior_JJ
 little_JJ
+nicer_JJR
 adequate_JJ
 rich_JJ
 perfect_JJ

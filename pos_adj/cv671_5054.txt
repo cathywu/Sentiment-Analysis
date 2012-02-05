@@ -21,6 +21,7 @@ nice_JJ
 good_JJ
 special_JJ
 major_JJ
+better_JJR
 excellent_JJ
 beautiful_JJ
 new_JJ

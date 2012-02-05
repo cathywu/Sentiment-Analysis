@@ -95,6 +95,7 @@ wrong_JJ
 happy_JJ
 other_JJ
 undeniable_JJ
+damper_JJR
 disaffirm_JJ
 petty_JJ
 warm_JJ

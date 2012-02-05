@@ -49,6 +49,7 @@ predictable_JJ
 predictable_JJ
 black_JJ
 little_JJ
+better_JJR
 lousy_JJ
 good_JJ
 mighty_JJ

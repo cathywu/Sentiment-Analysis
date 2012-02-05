@@ -16,6 +16,7 @@ young_JJ
 young_JJ
 immense_JJ
 conservationist_JJ
+better_JJR
 controlled_JJ
 restless_JJ
 new_JJ
@@ -66,6 +67,7 @@ mighty_JJ
 young_JJ
 able_JJ
 young_JJ
+older_JJR
 likely_JJ
 colourful_JJ
 bland_JJ

@@ -1,4 +1,5 @@
 predetermined_JJ
+larger_JJR
 final_JJ
 riveting_JJ
 heavy_JJ
@@ -27,6 +28,7 @@ sudden_JJ
 sympathetic_JJ
 thankful_JJ
 final_JJ
+better_JJR
 thoughtful_JJ
 granddaddy_JJ
 grim_JJ

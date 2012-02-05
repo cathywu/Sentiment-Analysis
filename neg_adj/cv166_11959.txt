@@ -47,6 +47,7 @@ available_JJ
 dull_JJ
 young_JJ
 cool_JJ
+worse_JJR
 generic_JJ
 white_JJ
 printed_JJ
@@ -71,7 +72,9 @@ flawed_JJ
 wooden_JJ
 corny_JJ
 acting_JJ
+worse_JJR
 disappointing_JJ
+happier_JJR
 entire_JJ
 obvious_JJ
 awful_JJ

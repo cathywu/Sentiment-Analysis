@@ -13,6 +13,7 @@ extended_JJ
 special_JJ
 original_JJ
 improved_JJ
+clearer_JJR
 storyline_JJ
 available_JJ
 various_JJ
@@ -46,9 +47,11 @@ epic_JJ
 confusing_JJ
 haphazard_JJ
 theatrical_JJ
+shorter_JJR
 universal_JJ
 popular_JJ
 initial_JJ
+closer_JJR
 great_JJ
 complex_JJ
 incomprehensible_JJ
@@ -125,6 +128,8 @@ storyline_JJ
 intimate_JJ
 political_JJ
 warring_JJ
+better_JJR
+further_JJR
 new_JJ
 brief_JJ
 superior_JJ
@@ -157,6 +162,7 @@ sudden_JJ
 repeated_JJ
 great_JJ
 late_JJ
+better_JJR
 circulating_JJ
 new_JJ
 new_JJ

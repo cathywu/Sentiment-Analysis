@@ -2,6 +2,7 @@ overcome_JJ
 high_JJ
 just_JJ
 washed_JJ
+easier_JJR
 dreaded_JJ
 finishing_JJ
 oppressive_JJ
@@ -31,6 +32,7 @@ real_JJ
 human_JJ
 great_JJ
 early_JJ
+better_JJR
 comfortable_JJ
 insular_JJ
 academic_JJ

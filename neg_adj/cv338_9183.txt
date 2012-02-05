@@ -64,6 +64,7 @@ real_JJ
 evil_JJ
 even_JJ
 inspiring_JJ
+better_JJR
 nationalist_JJ
 vigilant_JJ
 sure_JJ

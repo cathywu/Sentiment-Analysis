@@ -1,5 +1,7 @@
+worse_JJR
 little_JJ
 worried_JJ
+schumaccer_JJR
 good_JJ
 even_JJ
 awkward_JJ
@@ -13,12 +15,14 @@ good_JJ
 crafty_JJ
 usual_JJ
 casted_JJ
+better_JJR
 bad_JJ
 good_JJ
 major_JJ
 terrible_JJ
 heavy_JJ
 limited_JJ
+better_JJR
 real_JJ
 major_JJ
 nice_JJ
@@ -29,5 +33,6 @@ little_JJ
 limited_JJ
 real_JJ
 low_JJ
+better_JJR
 other_JJ
 other_JJ

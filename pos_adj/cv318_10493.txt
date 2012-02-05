@@ -2,6 +2,7 @@ initial_JJ
 inevitable_JJ
 parodic_JJ
 noticeable_JJ
+broader_JJR
 conventional_JJ
 violent_JJ
 gruesome_JJ
@@ -47,6 +48,7 @@ actual_JJ
 time-honored_JJ
 dead_JJ
 alive_JJ
+later_JJR
 running_JJ
 able_JJ
 particular_JJ
@@ -57,4 +59,5 @@ hard_JJ
 pretty_JJ
 genuine_JJ
 sure_JJ
+better_JJR
 randy_JJ

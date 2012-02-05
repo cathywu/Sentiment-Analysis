@@ -9,6 +9,7 @@ deep_JJ
 red_JJ
 red_JJ
 estranged_JJ
+younger_JJR
 mutual_JJ
 mutual_JJ
 ready_JJ

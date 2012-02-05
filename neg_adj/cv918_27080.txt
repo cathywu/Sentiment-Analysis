@@ -28,6 +28,7 @@ corrupt_JJ
 grinch_JJ
 complex_JJ
 actual_JJ
+better_JJR
 supple_JJ
 superfluous_JJ
 changing_JJ

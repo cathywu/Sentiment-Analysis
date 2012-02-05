@@ -58,6 +58,8 @@ basic_JJ
 bad_JJ
 total_JJ
 great_JJ
+better_JJR
+worse_JJR
 average_JJ
 incapable_JJ
 complex_JJ

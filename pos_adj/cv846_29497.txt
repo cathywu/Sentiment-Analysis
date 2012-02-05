@@ -30,6 +30,7 @@ nasty_JJ
 scared_JJ
 scary_JJ
 shite_JJ
+better_JJR
 rival_JJ
 quaint_JJ
 little_JJ
@@ -52,6 +53,7 @@ c'mon_JJ
 favorite_JJ
 decent_JJ
 obvious_JJ
+stronger_JJR
 exquisite_JJ
 original_JJ
 dynamic_JJ

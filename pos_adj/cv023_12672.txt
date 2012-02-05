@@ -9,6 +9,7 @@ primary_JJ
 unbearable_JJ
 unwatchable_JJ
 bulworth_JJ
+better_JJR
 lasting_JJ
 funny_JJ
 intelligent_JJ
@@ -50,6 +51,7 @@ angry_JJ
 serious_JJ
 accessible_JJ
 recent_JJ
+higher_JJR
 funny_JJ
 subtle_JJ
 noticeable_JJ

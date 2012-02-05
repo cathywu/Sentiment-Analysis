@@ -15,6 +15,7 @@ different_JJ
 mysterious_JJ
 electronic_JJ
 involved_JJ
+fuller_JJR
 different_JJ
 talented_JJ
 young_JJ

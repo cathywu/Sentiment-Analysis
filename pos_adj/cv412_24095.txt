@@ -16,6 +16,7 @@ new_JJ
 other_JJ
 special_JJ
 present_JJ
+better_JJR
 confusing_JJ
 overall_JJ
 pleased_JJ

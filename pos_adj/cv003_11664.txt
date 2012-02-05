@@ -46,6 +46,7 @@ technical_JJ
 mechanical_JJ
 obsolete_JJ
 technical_JJ
+better_JJR
 traditional_JJ
 cinematic_JJ
 sharp_JJ

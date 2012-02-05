@@ -53,6 +53,7 @@ clean_JJ
 insurmountable_JJ
 loving_JJ
 anonymous_JJ
+better_JJR
 dead_JJ
 barren_JJ
 countless_JJ
@@ -61,10 +62,12 @@ holy_JJ
 examined_JJ
 sly_JJ
 sterile_JJ
+younger_JJR
 exiled_JJ
 cold_JJ
 jewish_JJ
 spirited_JJ
+younger_JJR
 married_JJ
 liberated_JJ
 long_JJ

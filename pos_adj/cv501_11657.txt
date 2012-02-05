@@ -20,6 +20,7 @@ gorgeous_JJ
 sure_JJ
 good_JJ
 true_JJ
+better_JJR
 basic_JJ
 bound_JJ
 wild_JJ
@@ -82,9 +83,11 @@ effective_JJ
 good_JJ
 rubin-vega_JJ
 good_JJ
+bigger_JJR
 male_JJ
 subtle_JJ
 wooden_JJ
+deeper_JJR
 whole_JJ
 entire_JJ
 acclaimed_JJ

@@ -6,6 +6,7 @@ chopped_JJ
 accessible_JJ
 original_JJ
 public_JJ
+further_JJR
 enraptured_JJ
 classic_JJ
 original_JJ
@@ -33,11 +34,13 @@ explicit_JJ
 american_JJ
 american_JJ
 extra_JJ
+better_JJR
 bad_JJ
 unseen_JJ
 great_JJ
 french_JJ
 additional_JJ
+stronger_JJR
 murky_JJ
 american_JJ
 ironic_JJ

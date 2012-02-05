@@ -25,6 +25,7 @@ top_JJ
 original_JJ
 dead_JJ
 suicidal_JJ
+kinder_JJR
 docile_JJ
 red_JJ
 crazy_JJ

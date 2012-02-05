@@ -51,6 +51,7 @@ great_JJ
 unnoticeable_JJ
 shallow_JJ
 'girl_JJ
+greater_JJR
 superior_JJ
 visual_JJ
 nice_JJ
@@ -61,6 +62,7 @@ important_JJ
 'clean_JJ
 sober_JJ
 other_JJ
+stronger_JJR
 other_JJ
 moviemaking_JJ
 caught_JJ

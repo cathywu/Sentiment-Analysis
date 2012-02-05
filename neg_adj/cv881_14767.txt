@@ -18,4 +18,5 @@ used_JJ
 animated_JJ
 great_JJ
 dramatic_JJ
+longer_JJR
 two-hour_JJ

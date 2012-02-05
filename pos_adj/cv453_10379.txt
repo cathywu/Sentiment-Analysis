@@ -27,6 +27,7 @@ good_JJ
 marvelous_JJ
 young_JJ
 worldly-wise_JJ
+older_JJR
 likable_JJ
 able_JJ
 good_JJ
@@ -40,9 +41,11 @@ certain_JJ
 mistrustful_JJ
 evil_JJ
 incarnate_JJ
+cheaper_JJR
 personal_JJ
 good_JJ
 distinguished_JJ
+smaller_JJR
 fictional_JJ
 non-fictional_JJ
 unsinkable_JJ
@@ -67,6 +70,7 @@ informed_JJ
 analytic_JJ
 conventional_JJ
 good_JJ
+longer_JJR
 unnoticed_JJ
 main_JJ
 intriguing_JJ

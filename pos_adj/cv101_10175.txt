@@ -33,6 +33,7 @@ human_JJ
 interested_JJ
 other_JJ
 lucky_JJ
+older_JJR
 mysterious_JJ
 married_JJ
 lucky_JJ
@@ -44,6 +45,7 @@ interacting_JJ
 lucky_JJ
 long_JJ
 naked_JJ
+older_JJR
 romantic_JJ
 interesting_JJ
 multiple_JJ
@@ -73,6 +75,7 @@ wry_JJ
 afterglow_JJ
 little_JJ
 accessible_JJ
+earlier_JJR
 afterglow_JJ
 four-pronged_JJ
 compelling_JJ

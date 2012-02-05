@@ -35,6 +35,8 @@ tight_JJ
 jolly_JJ
 crazy_JJ
 scottish_JJ
+better_JJR
+colder_JJR
 warm_JJ
 funny_JJ
 swarm_JJ

@@ -6,13 +6,16 @@ general_JJ
 stupid_JJ
 dumb_JJ
 fun_JJ
+better_JJR
 deep_JJ
 deep_JJ
 modest_JJ
 large_JJ
 new_JJ
 just_JJ
+bigger_JJR
 familiar_JJ
+better_JJR
 tagline_JJ
 special_JJ
 new_JJ

@@ -28,6 +28,7 @@ melodramatic_JJ
 other_JJ
 necessary_JJ
 only_JJ
+worse_JJR
 serious_JJ
 pathetic_JJ
 laughable_JJ

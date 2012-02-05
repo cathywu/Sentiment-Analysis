@@ -22,3 +22,4 @@ funny_JJ
 live_JJ
 white_JJ
 live_JJ
+better_JJR

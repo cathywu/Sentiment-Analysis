@@ -30,6 +30,7 @@ psychic_JJ
 deadly_JJ
 predatory_JJ
 clever_JJ
+stronger_JJR
 military_JJ
 free_JJ
 interstellar_JJ
@@ -53,6 +54,7 @@ adept_JJ
 serious_JJ
 excess_JJ
 great_JJ
+greater_JJR
 slow_JJ
 welcome_JJ
 wild_JJ

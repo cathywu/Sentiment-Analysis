@@ -4,6 +4,7 @@ sexy_JJ
 tried_JJ
 supposed_JJ
 horrible_JJ
+worse_JJR
 vulgar_JJ
 bad_JJ
 bad_JJ
@@ -15,6 +16,7 @@ incessant_JJ
 stupid_JJ
 brutal_JJ
 healthy_JJ
+wittier_JJR
 accidental_JJ
 little_JJ
 multiple_JJ

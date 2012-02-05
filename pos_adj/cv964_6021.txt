@@ -22,6 +22,7 @@ adventurous_JJ
 premier_JJ
 hard_JJ
 different_JJ
+better_JJR
 follow-up_JJ
 full_JJ
 distinguished_JJ

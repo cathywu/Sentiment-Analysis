@@ -9,6 +9,7 @@ previous_JJ
 double_JJ
 frenetic_JJ
 hard_JJ
+faster_JJR
 crazed_JJ
 energetic_JJ
 beautiful_JJ

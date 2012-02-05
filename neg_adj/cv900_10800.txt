@@ -1,6 +1,7 @@
 alive_JJ
 delighted_JJ
 critically-savaged_JJ
+lower_JJR
 black_JJ
 deep_JJ
 rising_JJ

@@ -15,6 +15,7 @@ trite_JJ
 cute_JJ
 wealthy_JJ
 new_JJ
+worse_JJR
 outrageous_JJ
 true_JJ
 outrageous_JJ

@@ -17,6 +17,7 @@ awful_JJ
 groan-worthy_JJ
 only_JJ
 nonexistent_JJ
+worse_JJR
 ludicrous_JJ
 old_JJ
 fresh_JJ

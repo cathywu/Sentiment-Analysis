@@ -50,6 +50,7 @@ matty_JJ
 chemical_JJ
 full_JJ
 dirty_JJ
+wider_JJR
 teenage_JJ
 sexual_JJ
 matty_JJ
@@ -90,3 +91,4 @@ famous_JJ
 modine_JJ
 feral_JJ
 fair_JJ
+better_JJR

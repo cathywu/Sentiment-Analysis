@@ -19,6 +19,7 @@ virtual_JJ
 bad_JJ
 psychological_JJ
 virtual_JJ
+better_JJR
 bored_JJ
 virtual_JJ
 virtual_JJ

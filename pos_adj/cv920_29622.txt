@@ -18,6 +18,7 @@ strong_JJ
 wild_JJ
 harsh_JJ
 amused_JJ
+better_JJR
 exaggerated_JJ
 original_JJ
 only_JJ

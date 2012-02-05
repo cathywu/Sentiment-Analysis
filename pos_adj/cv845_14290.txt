@@ -41,6 +41,7 @@ stiller_JJ
 short_JJ
 theatrical_JJ
 spoof_JJ
+older_JJR
 short-lived_JJ
 late_JJ
 early_JJ
@@ -53,6 +54,7 @@ true_JJ
 good_JJ
 supporting_JJ
 good_JJ
+bigger_JJR
 good_JJ
 focal_JJ
 interesting_JJ

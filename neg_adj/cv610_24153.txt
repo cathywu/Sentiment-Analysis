@@ -40,6 +40,7 @@ embarrassing_JJ
 bewildered_JJ
 full_JJ
 shocked_JJ
+pay-per_JJR
 essential_JJ
 fallen_JJ
 like_JJ

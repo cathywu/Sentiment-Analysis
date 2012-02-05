@@ -91,5 +91,6 @@ visual_JJ
 primitive_JJ
 good_JJ
 good_JJ
+worse_JJR
 average_JJ
 american_JJ

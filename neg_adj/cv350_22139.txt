@@ -17,6 +17,7 @@ safe_JJ
 evil_JJ
 acting_JJ
 bad_JJ
+worse_JJR
 special_JJ
 old_JJ
 rerun_JJ
@@ -29,5 +30,6 @@ long_JJ
 capitalize_JJ
 local_JJ
 good_JJ
+better_JJR
 nice_JJ
 upset_JJ

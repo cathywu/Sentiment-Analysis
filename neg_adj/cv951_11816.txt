@@ -11,6 +11,7 @@ tiresome_JJ
 original_JJ
 simple_JJ
 intangible_JJ
+longer_JJR
 possible_JJ
 certain_JJ
 high-level_JJ
@@ -60,6 +61,7 @@ new_JJ
 good_JJ
 autistic_JJ
 individual_JJ
+younger_JJR
 hard_JJ
 pallid_JJ
 good_JJ

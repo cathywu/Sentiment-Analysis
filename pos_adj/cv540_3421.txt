@@ -38,6 +38,7 @@ likely_JJ
 unintended_JJ
 political_JJ
 revolutionary_JJ
+finer_JJR
 voluntary_JJ
 small_JJ
 sensual_JJ
@@ -55,6 +56,7 @@ gay_JJ
 faustian_JJ
 fine_JJ
 patriotic_JJ
+better_JJR
 real_JJ
 political_JJ
 aguilar_JJ

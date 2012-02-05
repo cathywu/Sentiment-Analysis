@@ -38,5 +38,6 @@ good_JJ
 realistic_JJ
 strong_JJ
 supporting_JJ
+smaller_JJR
 early_JJ
 available_JJ

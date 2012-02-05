@@ -35,5 +35,6 @@ likely_JJ
 single_JJ
 bad_JJ
 safe_JJ
+longer_JJR
 sexual_JJ
 graphic_JJ

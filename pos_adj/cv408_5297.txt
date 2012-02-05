@@ -8,11 +8,13 @@ familiar_JJ
 sheer_JJ
 different_JJ
 frank_JJ
+slower_JJR
 deliberate_JJ
 previous_JJ
 big_JJ
 classic_JJ
 special_JJ
+larger_JJR
 average_JJ
 ideal_JJ
 acting_JJ
@@ -21,6 +23,7 @@ seattle_JJ
 funny_JJ
 short_JJ
 big_JJ
+larger_JJR
 following_JJ
 impending_JJ
 big_JJ

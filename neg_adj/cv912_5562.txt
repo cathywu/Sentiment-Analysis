@@ -8,6 +8,7 @@ famous_JJ
 blue_JJ
 straight-faced_JJ
 old_JJ
+younger_JJR
 melodramatic_JJ
 convinced_JJ
 different_JJ
@@ -43,6 +44,7 @@ human_JJ
 small_JJ
 poor_JJ
 early_JJ
+later_JJR
 male_JJ
 lesbian_JJ
 responsible_JJ

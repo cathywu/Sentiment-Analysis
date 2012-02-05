@@ -15,6 +15,7 @@ typical_JJ
 predictable_JJ
 wide_JJ
 open_JJ
+phifer_JJR
 peachy_JJ
 infamous_JJ
 bloody_JJ

@@ -50,6 +50,7 @@ then_JJ
 wacky_JJ
 rampant_JJ
 entertaining_JJ
+better_JJR
 equivalent_JJ
 innocent_JJ
 naive_JJ

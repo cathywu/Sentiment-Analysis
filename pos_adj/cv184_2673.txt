@@ -7,6 +7,7 @@ sexy_JJ
 little_JJ
 bad_JJ
 reasonable_JJ
+older_JJR
 fine_JJ
 wishful_JJ
 dull_JJ

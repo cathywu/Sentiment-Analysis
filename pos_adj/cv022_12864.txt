@@ -5,6 +5,7 @@ sympathetic_JJ
 supposed_JJ
 big_JJ
 zany_JJ
+darker_JJR
 dramatic_JJ
 less-than-stellar_JJ
 willing_JJ
@@ -15,6 +16,9 @@ simple_JJ
 new_JJ
 creeping_JJ
 various_JJ
+later_JJR
+newer_JJR
+darker_JJR
 less-manic_JJ
 interesting_JJ
 whole_JJ

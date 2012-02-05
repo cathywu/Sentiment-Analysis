@@ -22,6 +22,7 @@ stranded_JJ
 different_JJ
 inner_JJ
 final_JJ
+older_JJR
 real_JJ
 charming_JJ
 likable_JJ

@@ -46,6 +46,7 @@ young_JJ
 large_JJ
 exciting_JJ
 exciting_JJ
+younger_JJR
 intelligent_JJ
 original_JJ
 poor_JJ

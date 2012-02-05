@@ -30,6 +30,7 @@ sweet_JJ
 irreparable_JJ
 soong_JJ
 other_JJ
+longer_JJR
 slim_JJ
 small_JJ
 slim_JJ
@@ -50,6 +51,7 @@ complex_JJ
 cheap_JJ
 typical_JJ
 colossal_JJ
+easier_JJR
 unrequited_JJ
 decent_JJ
 ordinary_JJ

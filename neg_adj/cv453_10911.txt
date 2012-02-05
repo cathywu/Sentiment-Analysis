@@ -18,6 +18,7 @@ private_JJ
 mild_JJ
 extreme_JJ
 disappointing_JJ
+worse_JJR
 real_JJ
 unexploited_JJ
 bad_JJ
@@ -54,5 +55,6 @@ chinese_JJ
 surprising_JJ
 long_JJ
 bad_JJ
+better_JJR
 funny_JJ
 forgettable_JJ

@@ -43,6 +43,7 @@ final_JJ
 heated_JJ
 fleshy_JJ
 flashy_JJ
+better_JJR
 arbitrary_JJ
 comical_JJ
 spirited_JJ

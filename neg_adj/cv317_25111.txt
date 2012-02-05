@@ -46,6 +46,7 @@ good_JJ
 real_JJ
 creative_JJ
 andrea_JJ
+farther_JJR
 human_JJ
 computer-generated_JJ
 gigantic_JJ

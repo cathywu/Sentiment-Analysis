@@ -2,6 +2,7 @@ gifted_JJ
 russian_JJ
 political_JJ
 russian_JJ
+older_JJR
 german_JJ
 talented_JJ
 other_JJ

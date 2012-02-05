@@ -4,6 +4,7 @@ loving_JJ
 little_JJ
 acting_JJ
 drippy_JJ
+better_JJR
 ground_JJ
 major_JJ
 hopeful_JJ
@@ -24,6 +25,8 @@ fat_JJ
 ludicrous_JJ
 nutty_JJ
 robinson-like_JJ
+better_JJR
+better_JJR
 major_JJ
 pretty_JJ
 amateurish_JJ

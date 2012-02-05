@@ -38,6 +38,7 @@ aware_JJ
 beautiful_JJ
 realistic_JJ
 flattering_JJ
+earlier_JJR
 mad_JJ
 human_JJ
 wonderful_JJ

@@ -4,6 +4,7 @@ pretty_JJ
 awful_JJ
 good_JJ
 irritating_JJ
+longer_JJR
 just_JJ
 reasonable_JJ
 spoof_JJ
@@ -21,6 +22,7 @@ original_JJ
 carrey_JJ
 constant_JJ
 funny_JJ
+tighter_JJR
 reminiscent_JJ
 old_JJ
 new_JJ

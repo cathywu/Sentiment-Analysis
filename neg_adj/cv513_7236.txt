@@ -5,6 +5,7 @@ mnemonic_JJ
 bad_JJ
 terrible_JJ
 lethal_JJ
+neater_JJR
 only_JJ
 new_JJ
 bad_JJ
@@ -17,6 +18,7 @@ thoughtful_JJ
 bound_JJ
 american_JJ
 stereotyped_JJ
+cheaper_JJR
 fake_JJ
 new_JJ
 odd_JJ

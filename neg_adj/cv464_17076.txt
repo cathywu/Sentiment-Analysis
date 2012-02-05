@@ -19,6 +19,7 @@ dull_JJ
 obsessed_JJ
 attractive_JJ
 awkward_JJ
+later_JJR
 right_JJ
 angry_JJ
 noteworthy_JJ
@@ -62,6 +63,7 @@ uninspired_JJ
 recent_JJ
 strict_JJ
 original_JJ
+better_JJR
 laughable_JJ
 long_JJ
 solid_JJ

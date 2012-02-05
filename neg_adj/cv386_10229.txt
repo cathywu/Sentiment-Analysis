@@ -25,6 +25,7 @@ angus_JJ
 sweet_JJ
 little_JJ
 genuine_JJ
+wider_JJR
 strategic_JJ
 human_JJ
 affected_JJ

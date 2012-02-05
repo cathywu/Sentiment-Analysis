@@ -16,6 +16,8 @@ robbin_JJ
 alright_JJ
 robbin_JJ
 robbin_JJ
+better_JJR
+funnier_JJR
 funny_JJ
 particulary_JJ
 sophisticated_JJ

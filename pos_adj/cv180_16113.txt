@@ -2,6 +2,7 @@ well_JJ
 dim-witted_JJ
 tubby_JJ
 large_JJ
+better_JJR
 secret_JJ
 simple_JJ
 bad_JJ
@@ -39,6 +40,7 @@ long_JJ
 unoriginal_JJ
 appealing_JJ
 new_JJ
+better_JJR
 straight_JJ
 serious_JJ
 simple_JJ

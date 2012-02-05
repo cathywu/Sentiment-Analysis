@@ -46,6 +46,8 @@ certain_JJ
 insecure_JJ
 unable_JJ
 growing_JJ
+further_JJR
+further_JJR
 compelling_JJ
 identifiable_JJ
 slow_JJ
@@ -69,6 +71,7 @@ fine_JJ
 deceitful_JJ
 young_JJ
 voyeuristic_JJ
+deeper_JJR
 profound_JJ
 troublesome_JJ
 grand_JJ

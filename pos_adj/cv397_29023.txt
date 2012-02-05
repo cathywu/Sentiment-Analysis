@@ -8,6 +8,7 @@ inevitable_JJ
 follow-up_JJ
 successful_JJ
 original_JJ
+better_JJR
 american_JJ
 chief_JJ
 involved_JJ

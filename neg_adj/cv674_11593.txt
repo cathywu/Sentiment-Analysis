@@ -12,6 +12,7 @@ clean_JJ
 new_JJ
 old_JJ
 small_JJ
+bigger_JJR
 original_JJ
 pale_JJ
 only_JJ

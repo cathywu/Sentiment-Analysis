@@ -2,6 +2,7 @@ directed_JJ
 written_JJ
 new_JJ
 vague_JJ
+longer_JJR
 new_JJ
 hsiao-hsien_JJ
 wan_JJ

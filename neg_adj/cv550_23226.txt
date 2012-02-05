@@ -10,7 +10,9 @@ stunning_JJ
 wrong_JJ
 decent_JJ
 great_JJ
+better_JJR
 said_JJ
+better_JJR
 pretty_JJ
 good_JJ
 spectacular_JJ
@@ -36,8 +38,10 @@ early_JJ
 little_JJ
 sure_JJ
 little_JJ
+better_JJR
 good_JJ
 passable_JJ
+better_JJR
 paid_JJ
 international_JJ
 american_JJ

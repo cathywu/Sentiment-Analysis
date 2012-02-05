@@ -36,6 +36,7 @@ special_JJ
 final_JJ
 fun_JJ
 acting_JJ
+stronger_JJR
 previous_JJ
 terrific_JJ
 human_JJ
@@ -44,6 +45,7 @@ cunning_JJ
 evil_JJ
 great_JJ
 big_JJ
+greater_JJR
 spectacular_JJ
 new_JJ
 special_JJ

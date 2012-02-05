@@ -1,6 +1,7 @@
 good_JJ
 old_JJ
 bad_JJ
+better_JJR
 nice_JJ
 contemporary_JJ
 popular_JJ
@@ -34,6 +35,7 @@ presidential_JJ
 humiliating_JJ
 fatal_JJ
 only_JJ
+better_JJR
 convinced_JJ
 formidable_JJ
 physical_JJ
@@ -74,6 +76,7 @@ average_JJ
 particular_JJ
 other_JJ
 only_JJ
+better_JJR
 obvious_JJ
 troubled_JJ
 gloomy_JJ

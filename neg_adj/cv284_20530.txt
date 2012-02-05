@@ -41,3 +41,4 @@ minor_JJ
 secret_JJ
 evil_JJ
 unconventional_JJ
+better_JJR

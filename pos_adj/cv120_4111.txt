@@ -18,6 +18,7 @@ vicious_JJ
 new_JJ
 convicted_JJ
 public_JJ
+better_JJR
 scripted_JJ
 absolute_JJ
 artistic_JJ

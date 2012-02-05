@@ -11,6 +11,7 @@ central_JJ
 alive_JJ
 frantic_JJ
 virtual_JJ
+better_JJR
 technician_JJ
 datalink_JJ
 different_JJ

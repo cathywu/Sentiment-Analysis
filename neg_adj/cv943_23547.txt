@@ -24,6 +24,7 @@ painful_JJ
 local_JJ
 hostile_JJ
 military_JJ
+further_JJR
 possible_JJ
 commanding_JJ
 general_JJ

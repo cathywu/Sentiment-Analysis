@@ -4,6 +4,7 @@ strong_JJ
 similar_JJ
 straightforward_JJ
 psychological_JJ
+closer_JJR
 psychological_JJ
 major_JJ
 recent_JJ

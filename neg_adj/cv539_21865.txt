@@ -33,6 +33,8 @@ boring_JJ
 religious_JJ
 pregnant_JJ
 successful_JJ
+longer_JJR
+longer_JJR
 responsible_JJ
 cliched_JJ
 cliched_JJ

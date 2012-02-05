@@ -37,6 +37,7 @@ bizarre_JJ
 simple_JJ
 hypnotic_JJ
 free_JJ
+easier_JJR
 orgiastic_JJ
 great_JJ
 devoid_JJ
@@ -54,6 +55,7 @@ bizarre_JJ
 beautiful_JJ
 dark_JJ
 stunning_JJ
+better_JJR
 visual_JJ
 complete_JJ
 similar_JJ

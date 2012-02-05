@@ -82,6 +82,7 @@ solid_JJ
 tristine_JJ
 incredible_JJ
 common_JJ
+worse_JJR
 original_JJ
 completed_JJ
 commercial_JJ

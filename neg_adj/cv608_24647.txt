@@ -4,6 +4,7 @@ shallow_JJ
 ugly_JJ
 dramatic_JJ
 implausible_JJ
+worse_JJR
 endangered_JJ
 menacing_JJ
 humanoid_JJ
@@ -14,6 +15,7 @@ petty_JJ
 maniacal_JJ
 certain_JJ
 clear_JJ
+richer_JJR
 scrappy_JJ
 other_JJ
 euclidean_JJ

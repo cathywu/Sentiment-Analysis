@@ -35,6 +35,7 @@ great_JJ
 sad_JJ
 depressed_JJ
 pathetic_JJ
+better_JJR
 great_JJ
 injured_JJ
 absurd_JJ

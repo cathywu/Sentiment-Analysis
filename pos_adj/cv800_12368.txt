@@ -20,6 +20,7 @@ hell-bent_JJ
 valjean_JJ
 fantine_JJ
 thurman_JJ
+later_JJR
 solid_JJ
 striking_JJ
 authentic_JJ
@@ -58,6 +59,7 @@ subtle_JJ
 intense_JJ
 charitable_JJ
 talented_JJ
+better_JJR
 said_JJ
 solid_JJ
 intelligent_JJ

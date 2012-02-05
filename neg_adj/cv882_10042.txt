@@ -22,7 +22,9 @@ loving_JJ
 childish_JJ
 major_JJ
 related_JJ
+worse_JJR
 usual_JJ
+worse_JJR
 interested_JJ
 rival_JJ
 broke_JJ
@@ -38,6 +40,7 @@ unconvincing_JJ
 inanimate_JJ
 clear_JJ
 weak_JJ
+worse_JJR
 fast-moving_JJ
 flubber-powered_JJ
 flying_JJ

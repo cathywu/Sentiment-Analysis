@@ -19,6 +19,7 @@ cultural_JJ
 small-town_JJ
 static_JJ
 eponymous_JJ
+louder_JJR
 one-dimensional_JJ
 supposed_JJ
 similar_JJ

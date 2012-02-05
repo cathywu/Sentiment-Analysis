@@ -3,10 +3,12 @@ sickly_JJ
 sweet_JJ
 incredible_JJ
 great_JJ
+worse_JJR
 good_JJ
 clunky_JJ
 manufactured_JJ
 extra_JJ
+worse_JJR
 wrong_JJ
 convincing_JJ
 upset_JJ

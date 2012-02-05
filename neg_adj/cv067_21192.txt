@@ -6,6 +6,7 @@ rare_JJ
 noteworthy_JJ
 dull_JJ
 pleasurable_JJ
+worse_JJR
 drunk_JJ
 pitiful_JJ
 other_JJ
@@ -20,6 +21,7 @@ desperate_JJ
 right_JJ
 depressing_JJ
 disgusted_JJ
+bigger_JJR
 mere_JJ
 particular_JJ
 good_JJ

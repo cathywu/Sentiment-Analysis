@@ -86,3 +86,4 @@ un-dynamic_JJ
 extended_JJ
 good_JJ
 easy_JJ
+truer_JJR

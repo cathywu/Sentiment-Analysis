@@ -9,6 +9,7 @@ long_JJ
 evil_JJ
 deathless_JJ
 young_JJ
+pig-keeper_JJR
 nice_JJ
 warm_JJ
 crazy_JJ
@@ -35,6 +36,7 @@ black_JJ
 only_JJ
 free_JJ
 alive_JJ
+worse_JJR
 horned_JJ
 black_JJ
 horned_JJ
@@ -73,6 +75,7 @@ constant_JJ
 black_JJ
 disneyfied_JJ
 scarier_JJ
+darker_JJR
 other_JJ
 previous_JJ
 scary_JJ
@@ -86,6 +89,7 @@ financial_JJ
 exiled_JJ
 nearby_JJ
 animated_JJ
+longer_JJR
 animated_JJ
 great_JJ
 little_JJ
@@ -173,12 +177,14 @@ entertaining_JJ
 unfamiliar_JJ
 young_JJ
 scary_JJ
+darker_JJR
 other_JJ
 scary_JJ
 main_JJ
 familiar_JJ
 true_JJ
 classic_JJ
+better_JJR
 black_JJ
 big_JJ
 proudest_JJ

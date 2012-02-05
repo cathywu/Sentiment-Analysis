@@ -37,6 +37,7 @@ young_JJ
 similar_JJ
 classic_JJ
 deserved_JJ
+better_JJR
 sentimental_JJ
 sappy_JJ
 serious_JJ

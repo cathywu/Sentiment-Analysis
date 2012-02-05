@@ -44,6 +44,7 @@ powerful_JJ
 fascinating_JJ
 complex_JJ
 limited_JJ
+better_JJR
 little_JJ
 droll_JJ
 normal_JJ
@@ -63,6 +64,7 @@ pretty_JJ
 white_JJ
 appealing_JJ
 american_JJ
+darker_JJR
 common_JJ
 dark_JJ
 ironic_JJ

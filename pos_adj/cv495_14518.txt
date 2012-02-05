@@ -17,6 +17,7 @@ silent_JJ
 expressionless_JJ
 dead_JJ
 bleeding_JJ
+better_JJR
 silent_JJ
 brooding_JJ
 shred_JJ
@@ -41,7 +42,9 @@ fat_JJ
 little_JJ
 other_JJ
 exciting_JJ
+stronger_JJR
 bloodless_JJ
+wittier_JJR
 strong_JJ
 supporting_JJ
 able_JJ

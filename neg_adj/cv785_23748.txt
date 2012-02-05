@@ -30,6 +30,7 @@ jermaine_JJ
 interested_JJ
 direct_JJ
 pregnant_JJ
+further_JJR
 involved_JJ
 jermaine_JJ
 fatal_JJ

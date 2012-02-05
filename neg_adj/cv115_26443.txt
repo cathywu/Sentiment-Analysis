@@ -50,6 +50,7 @@ tough_JJ
 trying_JJ
 proper_JJ
 responsible_JJ
+better_JJR
 british_JJ
 caine_JJ
 astonishing_JJ

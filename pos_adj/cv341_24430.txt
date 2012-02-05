@@ -55,6 +55,7 @@ fast_JJ
 half-blurred_JJ
 realistic_JJ
 satisfying_JJ
+tighter_JJR
 fine_JJ
 tarnished_JJ
 stylistic_JJ

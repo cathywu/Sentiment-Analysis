@@ -71,4 +71,5 @@ vigilant_JJ
 important_JJ
 memorable_JJ
 classic_JJ
+better_JJR
 cold_JJ

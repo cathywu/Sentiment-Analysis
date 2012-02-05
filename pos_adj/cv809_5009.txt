@@ -35,6 +35,7 @@ civil_JJ
 important_JJ
 strong-willed_JJ
 ultimate_JJ
+worse_JJR
 self-conscious_JJ
 hired_JJ
 good-natured_JJ

@@ -16,6 +16,7 @@ perfect_JJ
 winning_JJ
 criminal_JJ
 incredible_JJ
+bigger_JJR
 entire_JJ
 hefty_JJ
 lonely_JJ

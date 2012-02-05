@@ -60,6 +60,7 @@ magnetic_JJ
 flawed_JJ
 powerful_JJ
 weak_JJ
+better_JJR
 hard_JJ
 magnificent_JJ
 real_JJ

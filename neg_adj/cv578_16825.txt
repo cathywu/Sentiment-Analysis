@@ -11,6 +11,7 @@ mythical_JJ
 free_JJ
 mindless_JJ
 poor_JJ
+poorer_JJR
 nonchalant_JJ
 mighty_JJ
 basic_JJ

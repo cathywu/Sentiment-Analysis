@@ -12,6 +12,7 @@ arbitrary_JJ
 supposed_JJ
 sexy_JJ
 unpleasant_JJ
+younger_JJR
 dirty_JJ
 other_JJ
 other_JJ

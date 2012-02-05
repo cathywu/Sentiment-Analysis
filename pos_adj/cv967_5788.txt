@@ -76,9 +76,11 @@ snazzy_JJ
 other_JJ
 separate_JJ
 early_JJ
+better_JJR
 increased_JJ
 colorful_JJ
 dynamic_JJ
+greater_JJR
 true_JJ
 extreme_JJ
 magnificent_JJ

@@ -59,4 +59,5 @@ male_JJ
 high_JJ
 decent_JJ
 imperial_JJ
+bigger_JJR
 other_JJ

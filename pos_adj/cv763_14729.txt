@@ -14,6 +14,7 @@ hilarious_JJ
 lengthy_JJ
 exceptional_JJ
 explicit_JJ
+earlier_JJR
 entertaining_JJ
 funny_JJ
 human_JJ

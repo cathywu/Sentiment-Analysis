@@ -46,6 +46,7 @@ detached_JJ
 gay_JJ
 interested_JJ
 personal_JJ
+worse_JJR
 isolated_JJ
 voluntary_JJ
 involuntary_JJ

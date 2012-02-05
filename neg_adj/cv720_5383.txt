@@ -2,6 +2,7 @@ naked_JJ
 hot_JJ
 desperate_JJ
 hard_JJ
+funnier_JJR
 over-extended_JJ
 spoof_JJ
 secret_JJ

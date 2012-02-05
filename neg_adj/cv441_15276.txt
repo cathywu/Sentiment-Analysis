@@ -16,9 +16,12 @@ little_JJ
 daring_JJ
 daring_JJ
 lukewarm_JJ
+bigger_JJR
+better_JJR
 live_JJ
 popular_JJ
 big_JJ
+better_JJR
 wonderful_JJ
 long-suffering_JJ
 silly_JJ
@@ -30,6 +33,7 @@ important_JJ
 good_JJ
 popular_JJ
 underlying_JJ
+longer_JJR
 special_JJ
 physical_JJ
 positive_JJ

@@ -25,6 +25,7 @@ new_JJ
 great_JJ
 creative_JJ
 mainstream_JJ
+later_JJR
 commercial_JJ
 established_JJ
 mid_JJ

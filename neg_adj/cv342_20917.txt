@@ -33,6 +33,8 @@ useless_JJ
 unbelievable_JJ
 soppy_JJ
 poor_JJ
+better_JJR
+better_JJR
 funny_JJ
 pretty_JJ
 funny_JJ

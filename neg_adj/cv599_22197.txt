@@ -5,6 +5,7 @@ cute_JJ
 boring_JJ
 contrived_JJ
 extreme_JJ
+casper_JJR
 civilized_JJ
 impending_JJ
 key_JJ
@@ -22,6 +23,7 @@ awful_JJ
 sure_JJ
 easy_JJ
 bad_JJ
+better_JJR
 old_JJ
 added_JJ
 beautiful_JJ
@@ -41,5 +43,6 @@ ridiculous_JJ
 grand_JJ
 special_JJ
 right_JJ
+lower_JJR
 amateur_JJ
 lost_JJ

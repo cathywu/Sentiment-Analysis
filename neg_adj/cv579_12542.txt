@@ -7,6 +7,7 @@ japanese_JJ
 able_JJ
 broderick_JJ
 fascinating_JJ
+larger_JJR
 military_JJ
 godzilla_JJ
 supposed_JJ
@@ -20,6 +21,7 @@ jurassic_JJ
 talent-challenged_JJ
 terrible_JJ
 belive_JJ
+higher_JJR
 new_JJ
 handy_JJ
 new_JJ
@@ -37,11 +39,13 @@ old_JJ
 good_JJ
 potential_JJ
 bad_JJ
+worse_JJR
 good_JJ
 american_JJ
 headed_JJ
 naked_JJ
 bad_JJ
+better_JJR
 visual_JJ
 supposed_JJ
 stupid_JJ

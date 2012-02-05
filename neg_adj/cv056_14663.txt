@@ -18,6 +18,7 @@ pretty_JJ
 good_JJ
 fine_JJ
 tough_JJ
+better_JJR
 tough_JJ
 tough_JJ
 new_JJ
@@ -33,3 +34,4 @@ terrible_JJ
 unique_JJ
 classic_JJ
 sure_JJ
+better_JJR

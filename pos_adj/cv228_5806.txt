@@ -27,6 +27,7 @@ simple_JJ
 beautiful_JJ
 slow_JJ
 clever_JJ
+wiper_JJR
 rhythmic_JJ
 slow_JJ
 public_JJ

@@ -3,6 +3,7 @@ other_JJ
 mighty_JJ
 relegated_JJ
 similar_JJ
+better_JJR
 frenetic_JJ
 childish_JJ
 improbable_JJ

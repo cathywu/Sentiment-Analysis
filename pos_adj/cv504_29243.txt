@@ -16,6 +16,7 @@ real_JJ
 only_JJ
 genuine_JJ
 bad_JJ
+higher_JJR
 other_JJ
 shut_JJ
 funny_JJ
@@ -35,9 +36,11 @@ hilarious_JJ
 dubious_JJ
 cute_JJ
 high_JJ
+funnier_JJR
 usual_JJ
 perfect_JJ
 incredible_JJ
+funnier_JJR
 whole_JJ
 different_JJ
 original_JJ

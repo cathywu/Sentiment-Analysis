@@ -43,6 +43,7 @@ yellow_JJ
 floppy_JJ
 assumed_JJ
 right_JJ
+further_JJR
 assumed_JJ
 bad_JJ
 maternal_JJ

@@ -20,6 +20,7 @@ local_JJ
 radiant_JJ
 young_JJ
 financially-oriented_JJ
+later_JJR
 tyrannical_JJ
 good_JJ
 great_JJ

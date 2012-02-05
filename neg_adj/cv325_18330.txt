@@ -8,6 +8,7 @@ surviving_JJ
 little_JJ
 final_JJ
 guilty_JJ
+worse_JJR
 geeky_JJ
 quick_JJ
 beautiful_JJ
@@ -27,6 +28,7 @@ uncharted_JJ
 sudden_JJ
 manipulative_JJ
 difficult_JJ
+better_JJR
 semi-likable_JJ
 unintentional_JJ
 murky_JJ

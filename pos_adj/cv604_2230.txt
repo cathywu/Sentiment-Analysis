@@ -59,6 +59,7 @@ good_JJ
 limited_JJ
 new_JJ
 integrated_JJ
+easier_JJR
 superficial_JJ
 solid_JJ
 cinematic_JJ

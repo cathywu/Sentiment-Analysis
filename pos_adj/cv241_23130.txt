@@ -4,6 +4,7 @@ final_JJ
 elaborate_JJ
 escaping_JJ
 menacing_JJ
+older_JJR
 inventive_JJ
 entertaining_JJ
 fine_JJ
@@ -53,6 +54,7 @@ flowing_JJ
 true_JJ
 even_JJ
 little_JJ
+damper_JJR
 exceptional_JJ
 creative_JJ
 afraid_JJ

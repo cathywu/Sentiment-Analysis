@@ -2,6 +2,7 @@ stopped_JJ
 fun_JJ
 horrible_JJ
 vast_JJ
+better_JJR
 dead_JJ
 hollywoodized_JJ
 happy_JJ

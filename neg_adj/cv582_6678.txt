@@ -28,3 +28,4 @@ overused_JJ
 recent_JJ
 relic_JJ
 even_JJ
+worse_JJR

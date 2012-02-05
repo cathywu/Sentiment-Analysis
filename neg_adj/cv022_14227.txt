@@ -1,4 +1,5 @@
 cheap_JJ
+cheaper_JJR
 supposed_JJ
 bizarre_JJ
 endearing_JJ

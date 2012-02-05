@@ -36,7 +36,9 @@ prevalent_JJ
 re-cut_JJ
 sagemiller_JJ
 full_JJ
+longer_JJR
 quick_JJ
+better_JJR
 wise_JJ
 sorry_JJ
 other_JJ

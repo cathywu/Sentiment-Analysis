@@ -42,6 +42,7 @@ cheap_JJ
 able_JJ
 longtime_JJ
 cinematic_JJ
+further_JJR
 wacky_JJ
 intellectual_JJ
 playful_JJ

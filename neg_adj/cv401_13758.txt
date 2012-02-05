@@ -72,6 +72,8 @@ mental_JJ
 rotten_JJ
 colorful_JJ
 regular_JJ
+tougher_JJR
+smarter_JJR
 villainous_JJ
 dense_JJ
 late_JJ

@@ -14,6 +14,7 @@ important_JJ
 poor_JJ
 ugly_JJ
 double_JJ
+worse_JJR
 quaid_JJ
 lost_JJ
 quaid_JJ

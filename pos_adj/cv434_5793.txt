@@ -13,10 +13,12 @@ widespread_JJ
 unpredictable_JJ
 close_JJ
 rogue-ish_JJ
+greener_JJR
 practical_JJ
 good_JJ
 city-bred_JJ
 initial_JJ
+better_JJR
 reliable_JJ
 unpredictable_JJ
 current_JJ

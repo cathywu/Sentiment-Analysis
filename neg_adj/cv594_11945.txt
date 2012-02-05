@@ -17,9 +17,11 @@ constant_JJ
 painful_JJ
 appropriate_JJ
 triple_JJ
+better_JJR
 entire_JJ
 prolonged_JJ
 wretched_JJ
+further_JJR
 entire_JJ
 cold_JJ
 rainy_JJ

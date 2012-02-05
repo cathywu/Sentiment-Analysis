@@ -10,6 +10,7 @@ new_JJ
 upper_JJ
 african_JJ
 other_JJ
+happier_JJR
 female_JJ
 easy_JJ
 apparent_JJ

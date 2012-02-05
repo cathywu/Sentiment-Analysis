@@ -8,7 +8,9 @@ behavior_JJ
 particular_JJ
 fair_JJ
 mannered_JJ
+older_JJR
 teenage_JJ
+younger_JJR
 teenage_JJ
 unbroken_JJ
 unimaginative_JJ
@@ -62,6 +64,7 @@ absent_JJ
 hefty_JJ
 pretentious_JJ
 young_JJ
+better_JJR
 other_JJ
 young_JJ
 intense_JJ

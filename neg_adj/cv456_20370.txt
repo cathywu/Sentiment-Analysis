@@ -31,6 +31,7 @@ old_JJ
 sole_JJ
 silent_JJ
 bad_JJ
+worse_JJR
 animated_JJ
 big_JJ
 bad_JJ

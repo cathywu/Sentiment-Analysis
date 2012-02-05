@@ -116,6 +116,7 @@ double-edged_JJ
 hilarious_JJ
 funny_JJ
 utter_JJ
+greater_JJR
 great_JJ
 clever_JJ
 valid_JJ
@@ -174,6 +175,7 @@ tumultuous_JJ
 traumatic_JJ
 good_JJ
 acting_JJ
+earlier_JJR
 terrific_JJ
 stable_JJ
 true_JJ

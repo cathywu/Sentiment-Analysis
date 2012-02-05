@@ -32,6 +32,8 @@ fond_JJ
 confident_JJ
 simple_JJ
 other_JJ
+bigger_JJR
+smaller_JJR
 equivalent_JJ
 mass-produced_JJ
 mediocre_JJ

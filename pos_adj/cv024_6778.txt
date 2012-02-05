@@ -12,6 +12,7 @@ new_JJ
 comatose_JJ
 borrowed_JJ
 new_JJ
+easier_JJR
 said_JJ
 red_JJ
 nasty_JJ
@@ -40,6 +41,7 @@ interesting_JJ
 significant_JJ
 devoted_JJ
 predictable_JJ
+d-reper_JJR
 chummy_JJ
 old_JJ
 public_JJ

@@ -49,6 +49,7 @@ little_JJ
 old_JJ
 little_JJ
 supporting_JJ
+worse_JJR
 unplayable_JJ
 stern_JJ
 other_JJ
@@ -82,6 +83,7 @@ gay_JJ
 good_JJ
 particular_JJ
 elevate_JJ
+higher_JJR
 just_JJ
 little_JJ
 superior_JJ

@@ -16,6 +16,8 @@ bad_JJ
 desirable_JJ
 asexual_JJ
 interesting_JJ
+better_JJR
+better_JJR
 young_JJ
 fascinating_JJ
 metoclorian_JJ

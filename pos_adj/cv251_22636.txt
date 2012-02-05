@@ -58,6 +58,7 @@ supporting_JJ
 only_JJ
 acting_JJ
 little_JJ
+earlier_JJR
 effective_JJ
 sympathetic_JJ
 numerous_JJ

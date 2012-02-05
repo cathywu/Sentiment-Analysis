@@ -86,6 +86,7 @@ able_JJ
 visual_JJ
 live_JJ
 venerable_JJ
+greater_JJR
 emotional_JJ
 traditional_JJ
 recent_JJ
@@ -120,6 +121,7 @@ recent_JJ
 animated_JJ
 hummable_JJ
 little_JJ
+wilder_JJR
 accompanying_JJ
 tired_JJ
 lean_JJ

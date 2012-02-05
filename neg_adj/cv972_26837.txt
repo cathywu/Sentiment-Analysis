@@ -23,12 +23,14 @@ tough_JJ
 serious_JJ
 thurral_JJ
 obvious_JJ
+longer_JJR
 human_JJ
 racial_JJ
 complex_JJ
 emotional_JJ
 human_JJ
 other_JJ
+further_JJR
 other_JJ
 serious_JJ
 obvious_JJ
@@ -40,6 +42,7 @@ disappointing_JJ
 frozen_JJ
 still_JJ
 late_JJ
+bigger_JJR
 unlikely_JJ
 human_JJ
 unlikely_JJ

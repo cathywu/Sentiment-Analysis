@@ -7,6 +7,8 @@ oriental_JJ
 requisite_JJ
 reminiscent_JJ
 wagnerian_JJ
+purer_JJR
+stronger_JJR
 invincible_JJ
 able_JJ
 superhuman_JJ

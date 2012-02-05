@@ -1,3 +1,4 @@
+further_JJR
 hard_JJ
 huge_JJ
 right_JJ

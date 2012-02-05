@@ -40,5 +40,7 @@ authentic_JJ
 entertaining_JJ
 whole_JJ
 solid_JJ
+greater_JJR
 original_JJ
 jr_JJ
+younger_JJR

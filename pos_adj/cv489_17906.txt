@@ -9,6 +9,7 @@ dead_JJ
 real_JJ
 short_JJ
 happy_JJ
+worse_JJR
 willing_JJ
 violent_JJ
 graphic_JJ
@@ -18,6 +19,7 @@ gratuitous_JJ
 disjointed_JJ
 understandable_JJ
 final_JJ
+better_JJR
 original_JJ
 original_JJ
 choppy_JJ
@@ -35,5 +37,6 @@ supporting_JJ
 real_JJ
 big_JJ
 big_JJ
+bigger_JJR
 solid_JJ
 other_JJ

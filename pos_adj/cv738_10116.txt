@@ -60,6 +60,7 @@ key_JJ
 crucial_JJ
 occasionally-humorous_JJ
 white_JJ
+larger_JJR
 similar_JJ
 civil_JJ
 legal_JJ

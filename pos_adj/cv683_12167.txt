@@ -36,6 +36,7 @@ political_JJ
 eventual_JJ
 little_JJ
 old_JJ
+darker_JJR
 other_JJ
 entire_JJ
 black_JJ
@@ -92,6 +93,7 @@ black_JJ
 interesting_JJ
 long_JJ
 sweet_JJ
+older_JJR
 southern_JJ
 imminent_JJ
 african-american_JJ
@@ -107,6 +109,7 @@ documentary-like_JJ
 visual_JJ
 aural_JJ
 good_JJ
+older_JJR
 only_JJ
 bad_JJ
 sweet_JJ

@@ -34,6 +34,7 @@ bad_JJ
 ridiculous_JJ
 old_JJ
 quick_JJ
+casper_JJR
 civilized_JJ
 english_JJ
 english_JJ

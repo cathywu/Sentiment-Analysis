@@ -39,6 +39,7 @@ poor_JJ
 pretty_JJ
 competent_JJ
 right_JJ
+further_JJR
 possible_JJ
 apparent_JJ
 glad_JJ

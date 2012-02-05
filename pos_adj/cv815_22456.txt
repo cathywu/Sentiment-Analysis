@@ -14,6 +14,7 @@ mean-spirited_JJ
 malintentioned_JJ
 current_JJ
 tagline_JJ
+longer_JJR
 obsessive_JJ
 logical_JJ
 delirious_JJ

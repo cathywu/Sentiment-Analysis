@@ -61,6 +61,7 @@ emotional_JJ
 mortizen_JJ
 great_JJ
 touching_JJ
+earlier_JJR
 live_JJ
 deep_JJ
 true_JJ

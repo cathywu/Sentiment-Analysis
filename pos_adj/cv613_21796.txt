@@ -17,6 +17,7 @@ tangled_JJ
 local_JJ
 merry_JJ
 funny_JJ
+smarter_JJR
 complex_JJ
 analogous_JJ
 main_JJ

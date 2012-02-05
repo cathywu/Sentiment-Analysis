@@ -7,6 +7,7 @@ major_JJ
 supposed_JJ
 different_JJ
 other_JJ
+better_JJR
 central_JJ
 nine-year-old_JJ
 autistic_JJ

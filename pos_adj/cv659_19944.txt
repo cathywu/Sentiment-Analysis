@@ -22,6 +22,7 @@ glad_JJ
 teen-styled_JJ
 countless_JJ
 released_JJ
+later_JJR
 pretty_JJ
 entertaining_JJ
 close_JJ

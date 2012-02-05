@@ -24,3 +24,68 @@ jam [apt-get]
 Important points
 * L-BFGS is the default parameter estimating method in this toolkit.
 
+==============================================================================
+Preprocess movie data
+==============================================================================
+
+Use Qtag with the "underscore" and "process all files in directory" options
+$ java -jar qtag.jar
+
+Move the POS tagged data out to its own directory, for further processing
+$ mv pos/tagged/ pos_tagged
+$ mv neg/tagged/ neg_tagged
+
+Tag data with position
+$ python position_tagger.py -d pos 
+$ python position_tagger.py -d neg 
+
+Filter out for only adjectives
+$ python adjectives_filter.py -d neg
+$ python adjectives_filter.py -d pos
+
+Filter out for only verbs
+$ python verb_filter.py -d pos
+$ python verb_filter.py -d neg
+
+==============================================================================
+Preprocess Yelp data
+==============================================================================
+
+Make yelp data look like movie data in terms of formatting, and limit to 1000 
+per star rating
+$ python preprocess_yelp.py -d yelp/default/1star_limited
+$ python preprocess_yelp.py -d yelp/default/2star_limited
+$ python preprocess_yelp.py -d yelp/default/3star_limited
+$ python preprocess_yelp.py -d yelp/default/4star_limited
+$ python preprocess_yelp.py -d yelp/default/5star_limited
+
+Use Qtag with the "underscore" and "process all files in directory" options
+$ java -jar qtag.jar
+
+Move the POS tagged data out to its own directory, for further processing
+$ mv 1star_limited/tagged/ 1star_limited_tagged
+$ mv 2star_limited/tagged/ 2star_limited_tagged
+$ mv 3star_limited/tagged/ 3star_limited_tagged
+$ mv 4star_limited/tagged/ 4star_limited_tagged
+$ mv 5star_limited/tagged/ 5star_limited_tagged
+
+Tag data with position
+$ python position_tagger.py -d yelp/default/1star_limited
+$ python position_tagger.py -d yelp/default/2star_limited
+$ python position_tagger.py -d yelp/default/3star_limited
+$ python position_tagger.py -d yelp/default/4star_limited
+$ python position_tagger.py -d yelp/default/5star_limited
+
+Filter out for only adjectives
+$ python adjectives_filter.py -d yelp/default/1star_limited
+$ python adjectives_filter.py -d yelp/default/2star_limited
+$ python adjectives_filter.py -d yelp/default/3star_limited
+$ python adjectives_filter.py -d yelp/default/4star_limited
+$ python adjectives_filter.py -d yelp/default/5star_limited
+
+Filter out for only verbs
+$ python verb_filter.py -d yelp/default/1star_limited
+$ python verb_filter.py -d yelp/default/2star_limited
+$ python verb_filter.py -d yelp/default/3star_limited
+$ python verb_filter.py -d yelp/default/4star_limited
+$ python verb_filter.py -d yelp/default/5star_limited

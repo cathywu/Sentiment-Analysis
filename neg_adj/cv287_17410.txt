@@ -50,6 +50,7 @@ weird_JJ
 supporting_JJ
 irresistible_JJ
 gellar_JJ
+better_JJR
 major_JJ
 small-screen_JJ
 sole_JJ

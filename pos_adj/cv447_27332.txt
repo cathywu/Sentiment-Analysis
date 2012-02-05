@@ -19,6 +19,7 @@ classic_JJ
 new_JJ
 new_JJ
 original_JJ
+darker_JJR
 wonderful_JJ
 digital_JJ
 amazing_JJ
@@ -30,6 +31,7 @@ little_JJ
 unable_JJ
 amazing_JJ
 entire_JJ
+younger_JJR
 comical_JJ
 funny_JJ
 green_JJ

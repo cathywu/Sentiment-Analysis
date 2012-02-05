@@ -32,6 +32,7 @@ school-girl_JJ
 embarrassed_JJ
 complete_JJ
 bitter_JJ
+younger_JJR
 jr_JJ
 only_JJ
 foible_JJ
@@ -48,6 +49,7 @@ ashamed_JJ
 perfect_JJ
 perverse_JJ
 subtle_JJ
+better_JJR
 challenging_JJ
 classical_JJ
 short_JJ
@@ -80,4 +82,5 @@ sexual_JJ
 mature_JJ
 violent_JJ
 fine_JJ
+older_JJR
 mature_JJ

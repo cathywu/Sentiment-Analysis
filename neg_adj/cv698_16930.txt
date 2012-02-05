@@ -33,6 +33,7 @@ comfortable_JJ
 preschool_JJ
 sure_JJ
 female_JJ
+worse_JJR
 inaudacious_JJ
 real_JJ
 cattrall_JJ
@@ -50,9 +51,12 @@ humiliating_JJ
 so-called_JJ
 other_JJ
 serious_JJ
+worse_JJR
 porky_JJ
+greater_JJR
 serious_JJ
 great_JJ
+funnier_JJR
 bright_JJ
 truthful_JJ
 porky_JJ
@@ -64,4 +68,5 @@ porky_JJ
 nostalgic_JJ
 classic_JJ
 whole_JJ
+funnier_JJR
 porky_JJ

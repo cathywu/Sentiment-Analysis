@@ -20,6 +20,7 @@ unnecessary_JJ
 bad_JJ
 so-called_JJ
 serious_JJ
+worse_JJR
 ladybugs_JJ
 bizarre_JJ
 sour_JJ

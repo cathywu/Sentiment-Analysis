@@ -24,6 +24,7 @@ deep_JJ
 meaningful_JJ
 poor_JJ
 corny_JJ
+better_JJR
 stupid_JJ
 bad_JJ
 little_JJ

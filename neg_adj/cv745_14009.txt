@@ -65,5 +65,7 @@ humorous_JJ
 sexual_JJ
 clever_JJ
 broken_JJ
+better_JJR
 good_JJ
 antiquated_JJ
+better_JJR

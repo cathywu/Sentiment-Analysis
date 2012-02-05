@@ -1,5 +1,6 @@
 cinematic_JJ
 desperate_JJ
+worse_JJR
 watchable_JJ
 following_JJ
 particular_JJ
@@ -14,6 +15,7 @@ primitive_JJ
 western_JJ
 bad_JJ
 shakespearean_JJ
+worse_JJR
 pure_JJ
 general_JJ
 retro-futuristic_JJ

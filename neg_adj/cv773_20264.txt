@@ -49,6 +49,7 @@ black_JJ
 black_JJ
 telecommunicative_JJ
 conspicuous_JJ
+party-pooper_JJR
 nice_JJ
 even_JJ
 original_JJ
@@ -71,6 +72,7 @@ born_JJ
 new_JJ
 olympic_JJ
 bad_JJ
+better_JJR
 known_JJ
 popular_JJ
 sure_JJ

@@ -28,6 +28,7 @@ well-written_JJ
 bad_JJ
 recognized_JJ
 only_JJ
+lower_JJR
 realistic_JJ
 fascinated_JJ
 meticulous_JJ
@@ -67,6 +68,7 @@ invigorating_JJ
 long_JJ
 memorable_JJ
 sadistic_JJ
+worse_JJR
 generic_JJ
 bad_JJ
 boring_JJ
@@ -78,6 +80,7 @@ burly_JJ
 absolute_JJ
 small_JJ
 early_JJ
+worse_JJR
 general_JJ
 promotional_JJ
 cool_JJ

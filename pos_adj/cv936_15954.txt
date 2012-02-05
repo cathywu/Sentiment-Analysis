@@ -4,6 +4,7 @@ ethnocentric_JJ
 american_JJ
 human_JJ
 neo-nazi_JJ
+worse_JJR
 blind_JJ
 brilliant_JJ
 political_JJ
@@ -24,6 +25,7 @@ american_JJ
 neo-nazi_JJ
 black_JJ
 fit_JJ
+younger_JJR
 smart_JJ
 vicious_JJ
 correct_JJ
@@ -31,6 +33,7 @@ principal_JJ
 full_JJ
 intelligent_JJ
 rough_JJ
+longer_JJR
 controlled_JJ
 large_JJ
 neo-nazi-dom_JJ
@@ -41,8 +44,10 @@ prime_JJ
 vicious_JJ
 quasi-sadistic_JJ
 local_JJ
+longer_JJR
 white_JJ
 middle-class_JJ
+cheaper_JJR
 illegal_JJ
 illegal_JJ
 white_JJ
@@ -110,3 +115,4 @@ normal_JJ
 personal_JJ
 late_JJ
 perfect_JJ
+better_JJR

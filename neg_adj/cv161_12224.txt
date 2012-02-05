@@ -17,6 +17,7 @@ uninspired_JJ
 tepid_JJ
 entertaining_JJ
 basic_JJ
+better_JJR
 only_JJ
 worthwhile_JJ
 lost_JJ

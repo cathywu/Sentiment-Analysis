@@ -47,11 +47,14 @@ due_JJ
 technical_JJ
 close_JJ
 sheer_JJ
+better_JJR
 other_JJ
 significant_JJ
 portentuous_JJ
 criminal_JJ
 evil_JJ
+better_JJR
+better_JJR
 free_JJ
 popcorn_JJ
 awful_JJ

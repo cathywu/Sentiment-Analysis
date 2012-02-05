@@ -58,10 +58,12 @@ complete_JJ
 early_JJ
 whole_JJ
 bad_JJ
+worse_JJR
 intelligent_JJ
 ridiculous_JJ
 unlikely_JJ
 bad_JJ
+worse_JJR
 preposterous_JJ
 preposterous_JJ
 bad_JJ

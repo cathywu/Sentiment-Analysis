@@ -9,6 +9,7 @@ mindless_JJ
 insulting_JJ
 small_JJ
 dubious_JJ
+better_JJR
 finished_JJ
 hard_JJ
 first-_JJ
@@ -16,6 +17,7 @@ top-line_JJ
 high_JJ
 excellent_JJ
 bad_JJ
+worse_JJR
 little_JJ
 recent_JJ
 good_JJ
@@ -73,5 +75,6 @@ willing_JJ
 creative_JJ
 early_JJ
 cinematic_JJ
+better_JJR
 unstoppable_JJ
 ninth-consecutive_JJ

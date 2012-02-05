@@ -7,6 +7,7 @@ funny_JJ
 outgoing_JJ
 funny_JJ
 outgoing_JJ
+phifer_JJR
 jr_JJ
 called_JJ
 local_JJ
@@ -39,3 +40,4 @@ suspenseful_JJ
 scary_JJ
 original_JJ
 involved_JJ
+better_JJR

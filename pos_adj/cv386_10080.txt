@@ -6,8 +6,10 @@ genetic_JJ
 sexual_JJ
 predetermine_JJ
 old-fashioned_JJ
+lower_JJR
 long_JJ
 genetic_JJ
+younger_JJR
 second-rate_JJ
 enchanted_JJ
 janitorial_JJ

@@ -50,6 +50,7 @@ supporting_JJ
 positive_JJ
 searching_JJ
 enjoyable_JJ
+better_JJR
 obvious_JJ
 misguided_JJ
 blatant_JJ

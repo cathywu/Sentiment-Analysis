@@ -82,6 +82,7 @@ awesome_JJ
 good_JJ
 irreplaceable_JJ
 new_JJ
+better_JJR
 new_JJ
 impressive_JJ
 fond_JJ
@@ -90,6 +91,7 @@ supporting_JJ
 little_JJ
 slanted_JJ
 slow_JJ
+longer_JJR
 likely_JJ
 pouring_JJ
 anxious_JJ

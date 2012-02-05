@@ -24,6 +24,7 @@ goofy_JJ
 real_JJ
 close_JJ
 big_JJ
+funnier_JJR
 funny_JJ
 personal_JJ
 like_JJ

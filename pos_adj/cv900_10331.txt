@@ -28,6 +28,7 @@ good_JJ
 whole_JJ
 main_JJ
 acting_JJ
+better_JJR
 humble_JJ
 likely_JJ
 other_JJ

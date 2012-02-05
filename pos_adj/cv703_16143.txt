@@ -18,6 +18,7 @@ little_JJ
 gigantic_JJ
 impersonal_JJ
 online_JJ
+stronger_JJR
 artificial_JJ
 nice_JJ
 happy_JJ

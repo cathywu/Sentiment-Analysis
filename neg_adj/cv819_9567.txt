@@ -52,5 +52,6 @@ boring_JJ
 asleep_JJ
 good_JJ
 sly_JJ
+earlier_JJR
 entertaining_JJ
 dull_JJ

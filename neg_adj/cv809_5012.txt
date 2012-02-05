@@ -13,6 +13,7 @@ original_JJ
 red_JJ
 hair-raising_JJ
 hard_JJ
+harder_JJR
 impossible_JJ
 bad_JJ
 good_JJ

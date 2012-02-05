@@ -18,6 +18,7 @@ silly_JJ
 white_JJ
 high_JJ
 final_JJ
+worse_JJR
 other_JJ
 important_JJ
 cool_JJ

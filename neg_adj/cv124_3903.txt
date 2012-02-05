@@ -62,6 +62,7 @@ fond_JJ
 previous_JJ
 speechless_JJ
 associated_JJ
+better_JJR
 given_JJ
 expensive_JJ
 good_JJ

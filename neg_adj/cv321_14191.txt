@@ -11,6 +11,7 @@ bland_JJ
 good_JJ
 big_JJ
 potential_JJ
+worse_JJR
 finished_JJ
 fascinated_JJ
 infamous_JJ
@@ -59,10 +60,12 @@ sole_JJ
 shocking_JJ
 male_JJ
 only_JJ
+better_JJR
 trite_JJ
 shallow_JJ
 flat_JJ
 great_JJ
+easier_JJR
 accurate_JJ
 impressive_JJ
 captivating_JJ

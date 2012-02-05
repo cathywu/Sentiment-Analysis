@@ -48,6 +48,7 @@ invisible_JJ
 appalling_JJ
 immediate_JJ
 bad_JJ
+better_JJR
 parallel_JJ
 real_JJ
 identifiable_JJ

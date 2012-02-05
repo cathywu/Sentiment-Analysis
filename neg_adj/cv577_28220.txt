@@ -39,3 +39,5 @@ colorful_JJ
 bad_JJ
 good_JJ
 pokemon_JJ
+better_JJR
+better_JJR
