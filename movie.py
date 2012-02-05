@@ -23,7 +23,7 @@ YELP_DIR = "yelp/default"
 
 class TestConfiguration:
     def __init__(self, clsf, n, ind, pos_dir, neg_dir, test_set=None,
-                 binary=False, limit=None, idf=False):
+                 binary=False, limit=None, idf=False, negation = True):
         self.count = 0
         self.n = n
         self.index = ind
@@ -34,6 +34,7 @@ class TestConfiguration:
         self.test_set = test_set
         self.pos_dir = pos_dir
         self.neg_dir = neg_dir
+        self.negation = negation
 
         # filenames needed for this test configuration used
         pos_files = os.listdir(pos_dir)
@@ -72,12 +73,12 @@ class TestConfiguration:
         
         # Reading files
         for (j,lim) in zip(self.n,self.limit):
-            all_grams = [ngrams.ngrams(j, f) for f in self.pos_train_data]
+            all_grams = [ngrams.ngrams(j, f, self.negation) for f in self.pos_train_data]
             for i in range(len(self.pos_train_data)):
                 pos_train[i].update(all_grams[i])
             featureslist = all_grams
 
-            all_grams = [ngrams.ngrams(j, f) for f in self.neg_train_data]
+            all_grams = [ngrams.ngrams(j, f, self.negation) for f in self.neg_train_data]
             for i in range(len(self.neg_train_data)):
                 neg_train[i].update(all_grams[i])
             featureslist.extend(all_grams)
@@ -119,7 +120,7 @@ class TestConfiguration:
                 for i in range(ntest):
                     for j in self.n:
                         tests[i].update(ngrams.ngrams(j, open("%s/%s" % (
-                            self.test_dir,test_files[i])).read()))
+                            self.test_dir,test_files[i])).read(), self.negation))
                 results = [self.classifier.classify(i,binary=self.binary) for i in tests]
                 correct = len([i for i in results if int(i) == 1])
                 print "%s Stars, Positive: %s of %s, %s accuracy" % (s,correct,len(tests),
@@ -132,9 +133,9 @@ class TestConfiguration:
         # Testset --> Feature Vectors
         for j in self.n:
             for i in range(len(self.pos_test_data)):
-                pos_tests[i].update(ngrams.ngrams(j, self.pos_test_data[i]))
+                pos_tests[i].update(ngrams.ngrams(j, self.pos_test_data[i], self.negation))
             for i in range(len(self.neg_test_data)):
-                neg_tests[i].update(ngrams.ngrams(j, self.neg_test_data[i]))
+                neg_tests[i].update(ngrams.ngrams(j, self.neg_test_data[i], self.negation))
 
         # Testing
         pos_results = [self.classifier.classify(i,binary=self.binary) for i in pos_tests]
@@ -148,7 +149,8 @@ class TestConfiguration:
         return (float(pos_correct)/len(pos_tests), float(neg_correct)/len(neg_tests))
 
 class MajorityVotingTester():
-    def __init__(self):
+    def __init__(self, negation):
+        self.negation = negation
         self.testers = []
     def addClassifier(self, c):
         self.testers.append(c)
@@ -181,9 +183,9 @@ class MajorityVotingTester():
             neg_tests = [{} for f in t.neg_test_data]
             for j in t.n:
                 for i in range(len(t.pos_test_data)):
-                    pos_tests[i].update(ngrams.ngrams(j, t.pos_test_data[i]))
+                    pos_tests[i].update(ngrams.ngrams(j, t.pos_test_data[i], self.negation))
                 for i in range(len(t.neg_test_data)):
-                    neg_tests[i].update(ngrams.ngrams(j, t.neg_test_data[i]))
+                    neg_tests[i].update(ngrams.ngrams(j, t.neg_test_data[i], self.negation))
             pos_results = [t.classifier.classify(i) for i in pos_tests]
             neg_results = [t.classifier.classify(i) for i in neg_tests]
             if not pos_test_votes:
@@ -227,7 +229,7 @@ def select_extradata(dataset,stars):
             }[dataset]
 
 def test(classif, n=1, train_size=500, mode='k', iterations=1, dataset='',
-         extra_dataset=None, limit=None, binary=False, idf=False):
+         extra_dataset=None, limit=None, binary=False, idf=False, negation=True):
     (pos_dir, neg_dir) = select_dataset(dataset)
     if extra_dataset:
         mode='d'
@@ -253,7 +255,7 @@ def test(classif, n=1, train_size=500, mode='k', iterations=1, dataset='',
     for k in range(iterations):
         ind.next()
         m = TestConfiguration(classif, n, ind, pos_dir, neg_dir, idf=idf,
-                              test_set=test_set, binary=binary, limit=limit)
+                              test_set=test_set, binary=binary, limit=limit, negation=negation)
         m.train()
         (pos, neg) = m.test()
         pos_correct += pos
@@ -265,46 +267,48 @@ def test(classif, n=1, train_size=500, mode='k', iterations=1, dataset='',
 
 if __name__ == "__main__":
 
-    n = [1]
-    dataset = 'partofspeech'
+    n = [2]
+    dataset = 'default'
     limit = [16165]
     binary = True
     idf = False
+    negation = True
 
     train_size = 800
     mode = 'k'
     iterations = 3
-    extra_dataset=3
+    extra_dataset=None
     
-    print "Bayes:"
-    test(classifier.BayesClassifier,n=n,train_size=train_size,mode=mode,iterations=iterations,
-            dataset=dataset,extra_dataset=extra_dataset,limit=limit,binary=binary, idf=idf)
+#    print "Bayes:"
+#    test(classifier.BayesClassifier,n=n,train_size=train_size,mode=mode,iterations=iterations,
+#            dataset=dataset,extra_dataset=extra_dataset,limit=limit,binary=binary, idf=idf, negation = negation)
     print "MaxEnt:"
-    test(classifier.MaximumEntropyClassifier,n=n,train_size=train_size,mode=mode,iterations=iterations, dataset=dataset,extra_dataset=extra_dataset,limit=limit,binary=binary, idf=idf)
-    print "SVM:"
-    test(classifier.LinearSVMClassifier,n=n,train_size=train_size,mode=mode,iterations=iterations, dataset=dataset,extra_dataset=extra_dataset,limit=limit,binary=binary, idf=idf)
+#    test(classifier.MaximumEntropyClassifier,n=n,train_size=train_size,mode=mode,iterations=iterations, dataset=dataset,extra_dataset=extra_dataset,limit=limit,binary=binary, idf=idf, negation=negation)
+ #   print "SVM:"
+#    test(classifier.LinearSVMClassifier,n=n,train_size=train_size,mode=mode,iterations=iterations, dataset=dataset,extra_dataset=extra_dataset,limit=limit,binary=binary, idf=idf, negation=negation)
 
-    #mvc = MajorityVotingTester()
-    #ind = Indexes(mode='k',iterations=3,train_size=800)
-    #ind.next()
-    #print ind
-    #(pos_dir, neg_dir) = select_dataset('default')
-    #m1 = TestConfiguration(classifier.BayesClassifier, [1], ind, pos_dir, neg_dir, binary=False, limit=[16165], idf=False)
-    #mvc.addClassifier(m1)
+    mvc = MajorityVotingTester(negation)
+    ind = Indexes(mode='k',iterations=3,train_size=800)
+    ind.next()
+    print ind
+    (pos_dir, neg_dir) = select_dataset(dataset)
+    m1 = TestConfiguration(classifier.BayesClassifier, n=n, ind=ind, pos_dir=pos_dir, neg_dir=neg_dir, binary=binary, limit=limit, idf=idf)
+    mvc.addClassifier(m1)
 
-    #(pos_dir, neg_dir) = select_dataset('default')
-    #m2 = TestConfiguration(classifier.LinearSVMClassifier, [1], ind, pos_dir, neg_dir, binary=False, limit=[16165], idf=False)
-    #mvc.addClassifier(m2)
+    (pos_dir, neg_dir) = select_dataset(dataset)
+    m2 = TestConfiguration(classifier.MaximumEntropyClassifier, n=n, ind=ind, pos_dir=pos_dir, neg_dir=neg_dir, binary=binary, limit=limit, idf=idf)
+
+    mvc.addClassifier(m2)
 
 
-    #(pos_dir, neg_dir) = select_dataset('default')
-    #m3 = TestConfiguration(classifier.LinearSVMClassifier, [2], ind, pos_dir, neg_dir, binary=False, limit=[16165], idf=False)
-    #mvc.addClassifier(m3)
+    (pos_dir, neg_dir) = select_dataset(dataset)
+    m3 = TestConfiguration(classifier.LinearSVMClassifier, n=n, ind=ind, pos_dir=pos_dir, neg_dir=neg_dir, binary=binary, limit=limit, idf=idf)
+    mvc.addClassifier(m3)
 
-    #
-    #mvc.train()
-    #mvc.crossValidate(3)
-    #exit()
+    
+    mvc.train()
+    mvc.crossValidate(3)
+    exit()
 
 
 
