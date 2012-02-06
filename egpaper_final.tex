@@ -177,6 +177,7 @@ Part of speech tagging was not very helpful for unigram results; in fact, the NB
 \subsection{Adjectives}
 Intuitively, adjectives like ``beautiful'', ``wonderful'', and ``great'' hold valuable sentiment information, so we trained our classifiers after filtering out only the adjectives within reviews. On average, adjective tests performed about 6\% worse than their unfiltered negation-tagged counterparts, with no notable difference between the 3 classifiers. These results suggest that the limited information conveyed in adjectives is not representative of the full review itself.
 
+
 \subsection{Verbs}
 As in the motivating example for the use of POS tagging, it was in the case of the verb use of ``love'' (``I love this movie'') that conveyed sentimental information, rather than the adjective use of the word. Interestingly, Pang did not include results for training only on verbs. Even more interestingly, despite the motivating example, verbs under-performed all other tests, while still being consistently better than random. The tests ranged from 60\% to 67\% accuracy, even sometimes doing worse than the 64\% accurate human-based classifier from Pang 2002. We suspect this is in part due to the sparsity of features when only using verbs, as there were on average 37.2 verbs and 55.7 adjectives per review.
 
@@ -191,6 +192,133 @@ Across the board, the classifiers has a harder time with the Yelp dataset as com
 
 We expected to see worse results, given the difference in vocabulary, subject matter, tone, etc., but all configurations performed better than random. We also saw strong positive trends across all test configurations, classifying reviews with more stars more positively.
 
+
+
+%-------------------------------------------------------------------------
+\begin{figure*}
+\begin{tabular}{{|l}*{11}{|c}|r|}
+\hline
+\multicolumn{4}{|c|}{Test configurations}           & \multicolumn{3}{|c|}{Naive Bayes} & \multicolumn{3}{|c|}{MaxEnt} & \multicolumn{3}{|c|}{SVM}\\
+\hline
+Domain      & Features & \# of features & Frequency & +    & -    & $\pm$& +   & -   & $\pm$& +   & -   & $\pm$\\
+\hline
+No-negation & Unigrams & 16165          & Frequency & 0.94 & 0.62 & 0.78 & - & - & - & 0.82 & 0.82 & 0.82 \\
+No-negation & Unigrams & 16165          & Presence  & 0.87 & 0.72 & 0.82 & 0.85 & 0.87 & 0.86 & 0.85 & 0.84 & 0.84 \\
+No-negation & Bigrams & 16165 & Frequency & 0.92 & 0.64 & 0.78 & - & - & - & 0.77 & 0.81 & 0.79 \\
+No-negation & Bigrams & 16165 & Presence & 0.89 & 0.73 & 0.81 & 0.79 & 0.82 & 0.81 & 0.8 & 0.81 & 0.80 \\
+adjectives & Unigrams & 16165 & Frequency & 0.95 & 0.52 & 0.73 & - & - & - & 0.75 & 0.77 & 0.76 \\
+default & Bigrams & 2633 & Frequency & 0.91 & 0.46 & 0.69 & - & - & - & 0.74 & 0.75 & 0.75 \\
+default & Bigrams & 16165 & Frequency & 0.92 & 0.64 & 0.78 & - & - & - & 0.78 & 0.79 & 0.78 \\
+default & Unigrams & 2633 & Frequency & 0.96 & 0.5 & 0.74 & - & - & - & 0.81 & 0.79 & 0.80 \\
+default & Unigrams & 16165 & Frequency & 0.93 & 0.59 & 0.76 & - & - & - & 0.82 & 0.81 & 0.82 \\
+default & Unigrams & maximum & Frequency & 0.95 & 0.49 & 0.72 & - & - & - & 0.82 & 0.81 & 0.82 \\
+partofspeech & Bigrams & 16165 & Frequency & 0.96 & 0.47 & 0.71 & - & - & - & 0.82 & 0.82 & 0.82 \\
+partofspeech & Unigrams & 16165 & Frequency & 0.96 & 0.54 & 0.75 & - & - & - & 0.82 & 0.81 & 0.81 \\
+position & Bigrams & 16165 & Frequency & 0.96 & 0.49 & 0.73 & - & - & - & 0.77 & 0.78 & 0.78 \\
+position & Unigrams & 16165 & Frequency & 0.93 & 0.58 & 0.76 & - & - & - & 0.81 & 0.82 & 0.82 \\
+verbs & Unigrams & maximum & Frequency & 0.8 & 0.55 & 0.67 & - & - & - & 0.61 & 0.65 & 0.63 \\
+adjectives & Unigrams & 16165 & Presence & 0.93 & 0.59 & 0.76 & 0.79 & 0.77 & 0.78 & 0.75 & 0.73 & 0.74 \\
+default & Bigrams & 2633 & Presence & 0.86 & 0.64 & 0.75 & 0.75 & 0.75 & 0.75 & 0.73 & 0.75 & 0.74 \\
+default & Bigrams & 16165 & Presence & 0.89 & 0.74 & 0.81 & 0.81 & 0.82 & 0.81 & 0.78 & 0.79 & 0.78 \\
+default & Unigrams & 2633 & Presence & 0.84 & 0.8 & 0.82 & 0.84 & 0.82 & 0.83 & 0.78 & 0.82 & 0.8 \\
+default & Unigrams & 16165 & Presence & 0.87 & 0.77 & 0.82 & 0.84 & 0.85 & 0.85 & 0.83 & 0.82 & 0.83 \\
+default & Unigrams & maximum & Presence & 0.91 & 0.7 & 0.81 & 0.84 & 0.86 & 0.85 & 0.83 & 0.85 & 0.84 \\
+partofspeech & Bigrams & 16165 & Presence & 0.89 & 0.73 & 0.81 & 0.84 & 0.84 & 0.84 & 0.79 & 0.82 & 0.8 \\
+partofspeech & Unigrams & 16165 & Presence & 0.86 & 0.76 & 0.81 & 0.85 & 0.85 & 0.85 & 0.84 & 0.83 & 0.84 \\
+position & Bigrams & 16165 & Presence & 0.87 & 0.66 & 0.76 & 0.82 & 0.83 & 0.82 & 0.73 & 0.76 & 0.74 \\
+position & Unigrams & 16165 & Presence & 0.86 & 0.78 & 0.82 & 0.84 & 0.85 & 0.85 & 0.80 & 0.80 & 0.80 \\
+verbs & Unigrams & maximum & Presence & 0.80 & 0.54 & 0.67 & 0.65 & 0.65 & 0.65 & 0.64 & 0.63 & 0.635 \\
+adjectives & Unigrams & 16165 & TF-IDF & 0.82 & 0.60 & 0.71 & - & - & - & 0.79 & 0.76 & 0.77 \\
+default & Bigrams & 2633 & TF-IDF & 0.92 & 0.46 & 0.69 & - & - & - & 0.76 & 0.71 & 0.74 \\
+default & Bigrams & 16165 & TF-IDF & 0.90 & 0.68 & 0.79 & - & - & - & 0.83 & 0.74 & 0.79 \\
+default & Unigrams & 2633 & TF-IDF & 0.85 & 0.52 & 0.74 & - & - & - & 0.81 & 0.79 & 0.80 \\
+default & Unigrams & 16165 & TF-IDF & 0.88 & 0.68 & 0.78 & - & - & - & 0.83 & 0.77 & 0.80 \\
+default & Unigrams & maximum & TF-IDF & 0.86 & 0.65 & 0.76 & - & - & - & 0.83 & 0.78 & 0.81 \\
+partofspeech & Bigrams & 16165 & TF-IDF & 0.89 & 0.67 & 0.78 & - & - & - & 0.79 & 0.74 & 0.76 \\
+partofspeech & Unigrams & 16165 & TF-IDF & 0.89 & 0.63 & 0.76 & - & - & - & 0.81 & 0.78 & 0.79 \\
+position & Bigrams & 16165 & TF-IDF & 0.89 & 0.59 & 0.74 & - & - & - & 0.79 & 0.69 & 0.74 \\
+position & Unigrams & 16165 & TF-IDF & 0.91 & 0.61 & 0.76 & - & - & - & 0.81 & 0.71 & 0.76 \\
+verbs & Unigrams & maximum & TF-IDF & 0.64 & 0.57 & 0.60 & - & - & - & 0.62 & 0.66 & 0.64 \\
+\hline
+\end{tabular}
+\caption{3-fold cross validation results on movie dataset. Values repesent positive, negative, or overall accuracy.}
+\end{figure*}
+
+%-------------------------------------------------------------------------
+
+\begin{figure*}
+\begin{tabular}{{|l}*{8}{|c}|r|}
+\hline
+\multicolumn{4}{|c|}{Test configurations}      & \multicolumn{6}{|c|}{Naive Bayes} \\
+\hline
+Domain & Features & \# of features & Frequency & ***** & **** & *** & **  & * & score \\
+\hline
+default & Unigrams & 16165 & Frequency & 0.72 & 0.68 & 0.53 & 0.34 & 0.24 & 0.74 \\
+default & Unigrams & 16165 & Presence & 0.49 & 0.41 & 0.24 & 0.14 & 0.08 & 0.71 \\
+default & Bigrams & 16165 & Presence & 0.50 & 0.42 & 0.26 & 0.13 & 0.10 & 0.70 \\
+position & Unigrams & 16165 & Presence & 0.35 & 0.29 & 0.14 & 0.08 & 0.04 & 0.65 \\
+partofspeech & Unigrams & 16165 & Presence & 0.45 & 0.37 & 0.20 & 0.11 & 0.06 & 0.69 \\
+adjectives & Unigrams & 16165 & Presence & 0.76 & 0.73 & 0.61 & 0.45 & 0.36 & 0.70 \\
+verbs & Unigrams & 16165 & Presence & 0.44 & 0.43 & 0.41 & 0.37 & 0.32 & 0.56 \\
+default & Unigrams & maximum & Presence & 0.59 & 0.55 & 0.36 & 0.23 & 0.15 & 0.72 \\
+position & Unigrams & maximum & Presence & 0.54 & 0.50 & 0.33 & 0.22 & 0.14 & 0.70 \\
+partofspeech & Unigrams & maximum & Presence & 0.56 & 0.52 & 0.35 & 0.22 & 0.14 & 0.71 \\
+adjectives & Unigrams & maximum & Presence & 0.76 & 0.73 & 0.61 & 0.45 & 0.36 & 0.70 \\
+verbs & Unigrams & maximum & Presence & 0.44 & 0.43 & 0.41 & 0.37 & 0.32 & 0.56 \\
+\hline
+\end{tabular}
+\caption{Test results on Yelp dataset with Naive Bayes classifier. Values repesent percent of reviews classified as positive for a given star rating.}
+\end{figure*}
+
+\begin{figure*}
+\begin{tabular}{{|l}*{20}{|c}|r|}
+\hline
+\multicolumn{4}{|c|}{Test configurations}      & \multicolumn{6}{|c|}{MaxEnt}\\
+\hline
+Domain & Features & \# of features & Frequency & ***** & **** & *** & ** & * & score \\
+\hline
+default & Unigrams & 16165 & Frequency         & - & - & - & - & - & - \\
+default & Unigrams & 16165 & Presence          & 0.61 & 0.57 & 0.39 & 0.23 & 0.11 & 0.75 \\
+default & Bigrams & 16165 & Presence           & 0.63 & 0.59 & 0.45 & 0.28 & 0.26 & 0.68 \\
+position & Unigrams & 16165 & Presence         & 0.46 & 0.43 & 0.28 & 0.17 & 0.11 & 0.67 \\
+partofspeech & Unigrams & 16165 & Presence     & 0.55 & 0.50 & 0.32 & 0.20 & 0.10 & 0.72 \\
+adjectives & Unigrams & 16165 & Presence       & 0.75 & 0.72 & 0.62 & 0.45 & 0.37 & 0.69 \\
+verbs & Unigrams & 16165 & Presence            & 0.43 & 0.41 & 0.38 & 0.34 & 0.30 & 0.56 \\
+default & Unigrams & maximum & Presence        & 0.59 & 0.54 & 0.36 & 0.20 & 0.11 & 0.74 \\
+position & Unigrams & maximum & Presence       & 0.44 & 0.40 & 0.26 & 0.15 & 0.09 & 0.68 \\
+partofspeech & Unigrams & maximum & Presence   & 0.52 & 0.47 & 0.30 & 0.18 & 0.09 & 0.72 \\
+adjectives & Unigrams & maximum & Presence     & 0.75 & 0.72 & 0.62 & 0.45 & 0.37 & 0.69 \\
+verbs & Unigrams & maximum & Presence          & 0.43 & 0.41 & 0.38 & 0.34 & 0.30 & 0.56 \\
+\hline
+\end{tabular}
+\caption{Test results on Yelp dataset with Maximum Entropy classifier. Values repesent percent of reviews classified as positive for a given star rating.}
+\end{figure*}
+
+\begin{figure*}
+\begin{tabular}{{|l}*{20}{|c}|r|}
+\hline
+\multicolumn{4}{|c|}{Test configurations}      & \multicolumn{6}{|c|}{SVM}\\
+\hline
+Domain & Features & \# of features & Frequency & ***** & **** & *** & **  & * & score \\
+\hline
+default & Unigrams & 16165 & Frequency         & 0.78 & 0.76 & 0.62 & 0.42 & 0.30 & 0.74 \\
+default & Unigrams & 16165 & Presence          & 0.58 & 0.54 & 0.38 & 0.25 & 0.14 & 0.72 \\
+default & Bigrams & 16165 & Presence           & 0.62 & 0.58 & 0.48 & 0.30 & 0.29 & 0.67 \\
+position & Unigrams & 16165 & Presence         & 0.42 & 0.39 & 0.27 & 0.39 & 0.42 & 0.50 \\
+partofspeech & Unigrams & 16165 & Presence     & 0.52 & 0.48 & 0.31 & 0.21 & 0.01 & 0.75 \\
+adjectives & Unigrams & 16165 & Presence       & 0.71 & 0.71 & 0.61 & 0.46 & 0.37 & 0.67 \\
+verbs & Unigrams & 16165 & Presence            & 0.45 & 0.45 & 0.42 & 0.38 & 0.32 & 0.57 \\
+default & Unigrams & maximum & Presence        & - & - & - & - & - & - \\
+position & Unigrams & maximum & Presence       & - & - & - & - & - & - \\
+partofspeech & Unigrams & maximum & Presence   & - & - & - & - & - & - \\
+adjectives & Unigrams & maximum & Presence     & 0.71 & 0.71 & 0.61 & 0.46 & 0.37 & 0.67 \\
+verbs & Unigrams & maximum & Presence          & 0.45 & 0.45 & 0.42 & 0.38 & 0.32 & 0.57 \\
+\hline
+\end{tabular}
+\caption{Test results on Yelp dataset with SVM classifier. Values repesent percent of reviews classified as positive for a given star rating.}
+\end{figure*}
+
+%-------------------------------------------------------------------------
 
 {\small
 \bibliographystyle{ieee}
