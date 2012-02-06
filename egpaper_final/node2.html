@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Previous Work</TITLE>
+<META NAME="description" CONTENT="Previous Work">
+<META NAME="keywords" CONTENT="egpaper_final">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="egpaper_final.css">
+
+<LINK REL="next" HREF="node3.html">
+<LINK REL="previous" HREF="node1.html">
+<LINK REL="up" HREF="egpaper_final.html">
+<LINK REL="next" HREF="node3.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html47"
+  HREF="node3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html45"
+  HREF="egpaper_final.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html39"
+  HREF="node1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html48"
+  HREF="node3.html">The User Review Domain</A>
+<B> Up:</B> <A NAME="tex2html46"
+  HREF="egpaper_final.html">Sentiment Classification using Machine</A>
+<B> Previous:</B> <A NAME="tex2html40"
+  HREF="node1.html">Introduction</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00020000000000000000">
+Previous Work</A>
+</H1>
+
+<P>
+We set out to replicate Pang's work [<A
+ HREF="node20.html#Pang">7</A>] from 2002 on using classical knowledge-free supervised machine learning techniques to perform sentiment classification. They used the machine learning methods (Naive Bayes, maximum entropy classification, and support vector machines), methods commonly used for topic classification, to explore the difference between and sentiment classification in documents. Pang cited a number of related works, but they mostly pertain to classifying documents on criteria weakly tied to sentiment or using knowledge-based sentiment classification methods. We used a similar dataset, as released by the authors, and made efforts to use the same libraries and pre-processing techniques.
+
+<P>
+In addition to replicating Pang's work as closely as we could, we extended the work by exploring an additional dataset, additional preprocessing techniques, and combining classifiers. We tested how well classifiers trained on Pang's dataset extended to reviews in another domain. Although Pang limited many of his tests to use only the 16165 most common ngrams, advanced processors have lifted this computational constraint, and so we additionally tested on all ngrams. We used a newer parameter estimation algorithm called Limited-Memory Variable Metric (L-BFGS)[<A
+ HREF="node20.html#Liu">5</A>] for maximum entropy classification. Pang used the Improved Iterative Scaling method. We also implemented and tested the effect of term frequency-inver document frequency (TF-IDF) on classification results.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html47"
+  HREF="node3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html45"
+  HREF="egpaper_final.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html39"
+  HREF="node1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html48"
+  HREF="node3.html">The User Review Domain</A>
+<B> Up:</B> <A NAME="tex2html46"
+  HREF="egpaper_final.html">Sentiment Classification using Machine</A>
+<B> Previous:</B> <A NAME="tex2html40"
+  HREF="node1.html">Introduction</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Pranjal Vachaspati
+2012-02-05
+</ADDRESS>
+</BODY>
+</HTML>

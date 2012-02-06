@@ -1,0 +1,50 @@
+\begin{thebibliography}{1}\itemsep=-1pt
+
+\bibitem{PyML}
+A.~Ben-Hur.
+\newblock Pyml - machine learning in python.
+\newblock http://pyml.sourceforge.net/, 2011.
+
+\bibitem{Manning}
+P.~R. Christopher D.~Manning and H.~Schütze.
+\newblock {\em Introduction to Information Retrieval}.
+\newblock Cambridge University Press, 2008.
+
+\bibitem{Jaynes}
+E.~Jaynes.
+\newblock Information theory and statistical mechanics.
+\newblock In {\em The Physical Review}, volume 106, 1957.
+
+\bibitem{Le}
+Z.~Le.
+\newblock Maximum entropy modeling toolkit for python and c++.
+\newblock http://homepages.inf.ed.ac.uk/lzhang10/maxent\_toolkit.html, 2011.
+
+\bibitem{Liu}
+D.~C. Liu and J.~Nocedal.
+\newblock On the limited memory bfgs method for large scale optimization.
+\newblock In {\em Mathematical Programming 45}, pages 503--528, 1989.
+
+\bibitem{qtag}
+O.~Mason.
+\newblock Qtag.
+\newblock http://phrasys.net/uob/om/software.
+
+\bibitem{Pang}
+B.~Pang, L.~Lee, and S.~Vaithyanathan.
+\newblock Thumbs up? {Sentiment} classification using machine learning
+  techniques.
+\newblock In {\em Proceedings of the 2002 Conference on Empirical Methods in
+  Natural Language Processing (EMNLP)}, pages 79--86, 2002.
+
+\bibitem{yelp}
+Yelp.
+\newblock Yelp academic dataset.
+\newblock http://www.yelp.com/academic\_dataset.
+
+\bibitem{Zhang}
+H.~Zhang.
+\newblock The optimality of naive bayes.
+\newblock In {\em American Association for Artificial Intelligence}, 2004.
+
+\end{thebibliography}

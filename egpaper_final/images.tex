@@ -1,0 +1,477 @@
+\batchmode
+\documentclass[10pt,twocolumn,letterpaper]{article}
+\RequirePackage{ifthen}
+
+
+
+
+\usepackage{cvpr}
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{url}
+
+
+\cvprfinalcopy % *** Uncomment this line for the final submission
+
+
+% *** Enter the CVPR Paper ID here
+
+
+
+\ifcvprfinal\pagestyle{empty}\fi
+
+
+\usepackage[dvips]{color}
+
+
+\pagecolor[gray]{.7}
+
+\usepackage[]{inputenc}
+
+
+
+\makeatletter
+
+\makeatletter
+\count@=\the\catcode`\_ \catcode`\_=8 
+\newenvironment{tex2html_wrap}{}{}%
+\catcode`\<=12\catcode`\_=\count@
+\newcommand{\providedcommand}[1]{\expandafter\providecommand\csname #1\endcsname}%
+\newcommand{\renewedcommand}[1]{\expandafter\providecommand\csname #1\endcsname{}%
+  \expandafter\renewcommand\csname #1\endcsname}%
+\newcommand{\newedenvironment}[1]{\newenvironment{#1}{}{}\renewenvironment{#1}}%
+\let\newedcommand\renewedcommand
+\let\renewedenvironment\newedenvironment
+\makeatother
+\let\mathon=$
+\let\mathoff=$
+\ifx\AtBeginDocument\undefined \newcommand{\AtBeginDocument}[1]{}\fi
+\newbox\sizebox
+\setlength{\hoffset}{0pt}\setlength{\voffset}{0pt}
+\addtolength{\textheight}{\footskip}\setlength{\footskip}{0pt}
+\addtolength{\textheight}{\topmargin}\setlength{\topmargin}{0pt}
+\addtolength{\textheight}{\headheight}\setlength{\headheight}{0pt}
+\addtolength{\textheight}{\headsep}\setlength{\headsep}{0pt}
+\setlength{\textwidth}{349pt}
+\newwrite\lthtmlwrite
+\makeatletter
+\let\realnormalsize=\normalsize
+\global\topskip=2sp
+\def\preveqno{}\let\real@float=\@float \let\realend@float=\end@float
+\def\@float{\let\@savefreelist\@freelist\real@float}
+\def\liih@math{\ifmmode$\else\bad@math\fi}
+\def\end@float{\realend@float\global\let\@freelist\@savefreelist}
+\let\real@dbflt=\@dbflt \let\end@dblfloat=\end@float
+\let\@largefloatcheck=\relax
+\let\if@boxedmulticols=\iftrue
+\def\@dbflt{\let\@savefreelist\@freelist\real@dbflt}
+\def\adjustnormalsize{\def\normalsize{\mathsurround=0pt \realnormalsize
+ \parindent=0pt\abovedisplayskip=0pt\belowdisplayskip=0pt}%
+ \def\phantompar{\csname par\endcsname}\normalsize}%
+\def\lthtmltypeout#1{{\let\protect\string \immediate\write\lthtmlwrite{#1}}}%
+\newcommand\lthtmlhboxmathA{\adjustnormalsize\setbox\sizebox=\hbox\bgroup\kern.05em }%
+\newcommand\lthtmlhboxmathB{\adjustnormalsize\setbox\sizebox=\hbox to\hsize\bgroup\hfill }%
+\newcommand\lthtmlvboxmathA{\adjustnormalsize\setbox\sizebox=\vbox\bgroup %
+ \let\ifinner=\iffalse \let\)\liih@math }%
+\newcommand\lthtmlboxmathZ{\@next\next\@currlist{}{\def\next{\voidb@x}}%
+ \expandafter\box\next\egroup}%
+\newcommand\lthtmlmathtype[1]{\gdef\lthtmlmathenv{#1}}%
+\newcommand\lthtmllogmath{\dimen0\ht\sizebox \advance\dimen0\dp\sizebox
+  \ifdim\dimen0>.95\vsize
+   \lthtmltypeout{%
+*** image for \lthtmlmathenv\space is too tall at \the\dimen0, reducing to .95 vsize ***}%
+   \ht\sizebox.95\vsize \dp\sizebox\z@ \fi
+  \lthtmltypeout{l2hSize %
+:\lthtmlmathenv:\the\ht\sizebox::\the\dp\sizebox::\the\wd\sizebox.\preveqno}}%
+\newcommand\lthtmlfigureA[1]{\let\@savefreelist\@freelist
+       \lthtmlmathtype{#1}\lthtmlvboxmathA}%
+\newcommand\lthtmlpictureA{\bgroup\catcode`\_=8 \lthtmlpictureB}%
+\newcommand\lthtmlpictureB[1]{\lthtmlmathtype{#1}\egroup
+       \let\@savefreelist\@freelist \lthtmlhboxmathB}%
+\newcommand\lthtmlpictureZ[1]{\hfill\lthtmlfigureZ}%
+\newcommand\lthtmlfigureZ{\lthtmlboxmathZ\lthtmllogmath\copy\sizebox
+       \global\let\@freelist\@savefreelist}%
+\newcommand\lthtmldisplayA{\bgroup\catcode`\_=8 \lthtmldisplayAi}%
+\newcommand\lthtmldisplayAi[1]{\lthtmlmathtype{#1}\egroup\lthtmlvboxmathA}%
+\newcommand\lthtmldisplayB[1]{\edef\preveqno{(\theequation)}%
+  \lthtmldisplayA{#1}\let\@eqnnum\relax}%
+\newcommand\lthtmldisplayZ{\lthtmlboxmathZ\lthtmllogmath\lthtmlsetmath}%
+\newcommand\lthtmlinlinemathA{\bgroup\catcode`\_=8 \lthtmlinlinemathB}
+\newcommand\lthtmlinlinemathB[1]{\lthtmlmathtype{#1}\egroup\lthtmlhboxmathA
+  \vrule height1.5ex width0pt }%
+\newcommand\lthtmlinlineA{\bgroup\catcode`\_=8 \lthtmlinlineB}%
+\newcommand\lthtmlinlineB[1]{\lthtmlmathtype{#1}\egroup\lthtmlhboxmathA}%
+\newcommand\lthtmlinlineZ{\egroup\expandafter\ifdim\dp\sizebox>0pt %
+  \expandafter\centerinlinemath\fi\lthtmllogmath\lthtmlsetinline}
+\newcommand\lthtmlinlinemathZ{\egroup\expandafter\ifdim\dp\sizebox>0pt %
+  \expandafter\centerinlinemath\fi\lthtmllogmath\lthtmlsetmath}
+\newcommand\lthtmlindisplaymathZ{\egroup %
+  \centerinlinemath\lthtmllogmath\lthtmlsetmath}
+\def\lthtmlsetinline{\hbox{\vrule width.1em \vtop{\vbox{%
+  \kern.1em\copy\sizebox}\ifdim\dp\sizebox>0pt\kern.1em\else\kern.3pt\fi
+  \ifdim\hsize>\wd\sizebox \hrule depth1pt\fi}}}
+\def\lthtmlsetmath{\hbox{\vrule width.1em\kern-.05em\vtop{\vbox{%
+  \kern.1em\kern0.8 pt\hbox{\hglue.17em\copy\sizebox\hglue0.8 pt}}\kern.3pt%
+  \ifdim\dp\sizebox>0pt\kern.1em\fi \kern0.8 pt%
+  \ifdim\hsize>\wd\sizebox \hrule depth1pt\fi}}}
+\def\centerinlinemath{%
+  \dimen1=\ifdim\ht\sizebox<\dp\sizebox \dp\sizebox\else\ht\sizebox\fi
+  \advance\dimen1by.5pt \vrule width0pt height\dimen1 depth\dimen1 
+ \dp\sizebox=\dimen1\ht\sizebox=\dimen1\relax}
+
+\def\lthtmlcheckvsize{\ifdim\ht\sizebox<\vsize 
+  \ifdim\wd\sizebox<\hsize\expandafter\hfill\fi \expandafter\vfill
+  \else\expandafter\vss\fi}%
+\providecommand{\selectlanguage}[1]{}%
+\makeatletter \tracingstats = 1 
+\providecommand{\Beta}{\textrm{B}}
+\providecommand{\Mu}{\textrm{M}}
+\providecommand{\Kappa}{\textrm{K}}
+\providecommand{\Rho}{\textrm{R}}
+\providecommand{\Epsilon}{\textrm{E}}
+\providecommand{\Chi}{\textrm{X}}
+\providecommand{\Iota}{\textrm{J}}
+\providecommand{\omicron}{\textrm{o}}
+\providecommand{\Zeta}{\textrm{Z}}
+\providecommand{\Eta}{\textrm{H}}
+\providecommand{\Nu}{\textrm{N}}
+\providecommand{\Omicron}{\textrm{O}}
+\providecommand{\Tau}{\textrm{T}}
+\providecommand{\Alpha}{\textrm{A}}
+
+
+\begin{document}
+\pagestyle{empty}\thispagestyle{empty}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength hsize=\the\hsize}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength vsize=\the\vsize}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength hoffset=\the\hoffset}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength voffset=\the\voffset}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength topmargin=\the\topmargin}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength topskip=\the\topskip}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength headheight=\the\headheight}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength headsep=\the\headsep}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength parskip=\the\parskip}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength oddsidemargin=\the\oddsidemargin}\lthtmltypeout{}%
+\makeatletter
+\if@twoside\lthtmltypeout{latex2htmlLength evensidemargin=\the\evensidemargin}%
+\else\lthtmltypeout{latex2htmlLength evensidemargin=\the\oddsidemargin}\fi%
+\lthtmltypeout{}%
+\makeatother
+\setcounter{page}{1}
+\onecolumn
+
+% !!! IMAGES START HERE !!!
+
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay545}%
+$\displaystyle P(C | F_1, F_2, \ldots, F_n)
+= \frac{P(C)P(F_1, F_2, \ldots, F_n | C)}{P(F_1, F_2, \ldots, F_n)} \\
+$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay547}%
+$\displaystyle P(C)P(F_1, F_2, \ldots, F_n | C)\\$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay549}%
+$\displaystyle = P(C)P(F_1 | C)P( F_2, F_3, \ldots, F_n| C, F_1) \\$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay551}%
+$\displaystyle = P(C)P(F_1 | C)P(F_2 | C, F_1)P(F_3, F_4, \ldots, F_n | C, F_1, F_2) \\$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay553}%
+$\displaystyle \ldots$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay555}%
+$\displaystyle P(F_i | F_j\ldots F_k) = F(F_i)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay557}%
+$\displaystyle P(F_i | C, F_j\ldots F_k) = P(F_i | C)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay559}%
+$\displaystyle P(C | F_1\ldots F_n) = P(C) [\prod_{i=0}^n P(F_i | C) ]$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline561}%
+$ P(Fi | C)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay563}%
+$\displaystyle \frac{(1+count(C, F_i))}{\sum_i count(C_j, F_i))}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline565}%
+$ count(C, F_j)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline567}%
+$ F_j$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline569}%
+$ C$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay571}%
+$\displaystyle C^* = \operatorname*{arg\,max}_C P(C | F_1...F_n)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay573}%
+$\displaystyle C^* = \operatorname*{arg\,max}_C (P(C) + \sum_i [F_i (\lg count (C, F_i)$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay575}%
+$\displaystyle - \lg (\sum_j count C_j, F_i))])$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline578}%
+$ P(c|d)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay580}%
+$\displaystyle P(c|d) = \frac{1}{Z(d)} \exp(\sum_i(\lambda_{i,c} F_{i,c}(d,c)))$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline582}%
+$ \lambda_{i,c}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline586}%
+$ f_i$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline588}%
+$ c$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay591}%
+$\displaystyle f(\vec{B}, B_0) = \{\vec{x} | \vec{x}^T \cdot \vec{B} + B_0 = 0\}$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay593}%
+$\displaystyle \frac{1}{2} |\vec{B}|^2 + C\sum_i \zeta_i$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay595}%
+$\displaystyle \forall i, \zeta_i \ge 0$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay597}%
+$\displaystyle \forall i, y_i  (\vec{x}_i^T \cdot \vec{B} + B0) \ge 1 - \zeta_i $%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+{\newpage\clearpage
+\lthtmlfigureA{figurestar71}%
+\begin{figure*}
+\begin{tabular}{{|l}*{11}{|c}|r|}
+\hline
+\multicolumn{4}{|c|}{Test configurations}           & \multicolumn{3}{|c|}{Naive Bayes} & \multicolumn{3}{|c|}{MaxEnt} & \multicolumn{3}{|c|}{SVM}\\
+\hline
+Domain      & Features & \# of features & Frequency & +    & -    & $\pm$& +   & -   & $\pm$& +   & -   & $\pm$\\
+\hline
+No-negation & Unigrams & 16165          & Frequency & 0.94 & 0.62 & 0.78 & - & - & - & 0.82 & 0.82 & 0.82 \\
+No-negation & Unigrams & 16165          & Presence  & 0.87 & 0.72 & 0.82 & 0.85 & 0.87 & 0.86 & 0.85 & 0.84 & 0.84 \\
+No-negation & Bigrams & 16165 & Frequency & 0.92 & 0.64 & 0.78 & - & - & - & 0.77 & 0.81 & 0.79 \\
+No-negation & Bigrams & 16165 & Presence & 0.89 & 0.73 & 0.81 & 0.79 & 0.82 & 0.81 & 0.8 & 0.81 & 0.80 \\
+adjectives & Unigrams & 16165 & Frequency & 0.95 & 0.52 & 0.73 & - & - & - & 0.75 & 0.77 & 0.76 \\
+default & Bigrams & 2633 & Frequency & 0.91 & 0.46 & 0.69 & - & - & - & 0.74 & 0.75 & 0.75 \\
+default & Bigrams & 16165 & Frequency & 0.92 & 0.64 & 0.78 & - & - & - & 0.78 & 0.79 & 0.78 \\
+default & Unigrams & 2633 & Frequency & 0.96 & 0.5 & 0.74 & - & - & - & 0.81 & 0.79 & 0.80 \\
+default & Unigrams & 16165 & Frequency & 0.93 & 0.59 & 0.76 & - & - & - & 0.82 & 0.81 & 0.82 \\
+default & Unigrams & maximum & Frequency & 0.95 & 0.49 & 0.72 & - & - & - & 0.82 & 0.81 & 0.82 \\
+partofspeech & Bigrams & 16165 & Frequency & 0.96 & 0.47 & 0.71 & - & - & - & 0.82 & 0.82 & 0.82 \\
+partofspeech & Unigrams & 16165 & Frequency & 0.96 & 0.54 & 0.75 & - & - & - & 0.82 & 0.81 & 0.81 \\
+position & Bigrams & 16165 & Frequency & 0.96 & 0.49 & 0.73 & - & - & - & 0.77 & 0.78 & 0.78 \\
+position & Unigrams & 16165 & Frequency & 0.93 & 0.58 & 0.76 & - & - & - & 0.81 & 0.82 & 0.82 \\
+verbs & Unigrams & maximum & Frequency & 0.8 & 0.55 & 0.67 & - & - & - & 0.61 & 0.65 & 0.63 \\
+adjectives & Unigrams & 16165 & Presence & 0.93 & 0.59 & 0.76 & 0.79 & 0.77 & 0.78 & 0.75 & 0.73 & 0.74 \\
+default & Bigrams & 2633 & Presence & 0.86 & 0.64 & 0.75 & 0.75 & 0.75 & 0.75 & 0.73 & 0.75 & 0.74 \\
+default & Bigrams & 16165 & Presence & 0.89 & 0.74 & 0.81 & 0.81 & 0.82 & 0.81 & 0.78 & 0.79 & 0.78 \\
+default & Unigrams & 2633 & Presence & 0.84 & 0.8 & 0.82 & 0.84 & 0.82 & 0.83 & 0.78 & 0.82 & 0.8 \\
+default & Unigrams & 16165 & Presence & 0.87 & 0.77 & 0.82 & 0.84 & 0.85 & 0.85 & 0.83 & 0.82 & 0.83 \\
+default & Unigrams & maximum & Presence & 0.91 & 0.7 & 0.81 & 0.84 & 0.86 & 0.85 & 0.83 & 0.85 & 0.84 \\
+partofspeech & Bigrams & 16165 & Presence & 0.89 & 0.73 & 0.81 & 0.84 & 0.84 & 0.84 & 0.79 & 0.82 & 0.8 \\
+partofspeech & Unigrams & 16165 & Presence & 0.86 & 0.76 & 0.81 & 0.85 & 0.85 & 0.85 & 0.84 & 0.83 & 0.84 \\
+position & Bigrams & 16165 & Presence & 0.87 & 0.66 & 0.76 & 0.82 & 0.83 & 0.82 & 0.73 & 0.76 & 0.74 \\
+position & Unigrams & 16165 & Presence & 0.86 & 0.78 & 0.82 & 0.84 & 0.85 & 0.85 & 0.80 & 0.80 & 0.80 \\
+verbs & Unigrams & maximum & Presence & 0.80 & 0.54 & 0.67 & 0.65 & 0.65 & 0.65 & 0.64 & 0.63 & 0.635 \\
+adjectives & Unigrams & 16165 & TF-IDF & 0.82 & 0.60 & 0.71 & - & - & - & 0.79 & 0.76 & 0.77 \\
+default & Bigrams & 2633 & TF-IDF & 0.92 & 0.46 & 0.69 & - & - & - & 0.76 & 0.71 & 0.74 \\
+default & Bigrams & 16165 & TF-IDF & 0.90 & 0.68 & 0.79 & - & - & - & 0.83 & 0.74 & 0.79 \\
+default & Unigrams & 2633 & TF-IDF & 0.85 & 0.52 & 0.74 & - & - & - & 0.81 & 0.79 & 0.80 \\
+default & Unigrams & 16165 & TF-IDF & 0.88 & 0.68 & 0.78 & - & - & - & 0.83 & 0.77 & 0.80 \\
+default & Unigrams & maximum & TF-IDF & 0.86 & 0.65 & 0.76 & - & - & - & 0.83 & 0.78 & 0.81 \\
+partofspeech & Bigrams & 16165 & TF-IDF & 0.89 & 0.67 & 0.78 & - & - & - & 0.79 & 0.74 & 0.76 \\
+partofspeech & Unigrams & 16165 & TF-IDF & 0.89 & 0.63 & 0.76 & - & - & - & 0.81 & 0.78 & 0.79 \\
+position & Bigrams & 16165 & TF-IDF & 0.89 & 0.59 & 0.74 & - & - & - & 0.79 & 0.69 & 0.74 \\
+position & Unigrams & 16165 & TF-IDF & 0.91 & 0.61 & 0.76 & - & - & - & 0.81 & 0.71 & 0.76 \\
+verbs & Unigrams & maximum & TF-IDF & 0.64 & 0.57 & 0.60 & - & - & - & 0.62 & 0.66 & 0.64 \\
+\hline
+\end{tabular}
+
+\end{figure*}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figurestar91}%
+\begin{figure*}
+\begin{tabular}{{|l}*{8}{|c}|r|}
+\hline
+\multicolumn{4}{|c|}{Test configurations}      & \multicolumn{6}{|c|}{Naive Bayes} \\
+\hline
+Domain & Features & \# of features & Frequency & ***** & **** & *** & **  & * & score \\
+\hline
+default & Unigrams & 16165 & Frequency & 0.72 & 0.68 & 0.53 & 0.34 & 0.24 & 0.74 \\
+default & Unigrams & 16165 & Presence & 0.49 & 0.41 & 0.24 & 0.14 & 0.08 & 0.71 \\
+default & Bigrams & 16165 & Presence & 0.50 & 0.42 & 0.26 & 0.13 & 0.10 & 0.70 \\
+position & Unigrams & 16165 & Presence & 0.35 & 0.29 & 0.14 & 0.08 & 0.04 & 0.65 \\
+partofspeech & Unigrams & 16165 & Presence & 0.45 & 0.37 & 0.20 & 0.11 & 0.06 & 0.69 \\
+adjectives & Unigrams & 16165 & Presence & 0.76 & 0.73 & 0.61 & 0.45 & 0.36 & 0.70 \\
+verbs & Unigrams & 16165 & Presence & 0.44 & 0.43 & 0.41 & 0.37 & 0.32 & 0.56 \\
+default & Unigrams & maximum & Presence & 0.59 & 0.55 & 0.36 & 0.23 & 0.15 & 0.72 \\
+position & Unigrams & maximum & Presence & 0.54 & 0.50 & 0.33 & 0.22 & 0.14 & 0.70 \\
+partofspeech & Unigrams & maximum & Presence & 0.56 & 0.52 & 0.35 & 0.22 & 0.14 & 0.71 \\
+adjectives & Unigrams & maximum & Presence & 0.76 & 0.73 & 0.61 & 0.45 & 0.36 & 0.70 \\
+verbs & Unigrams & maximum & Presence & 0.44 & 0.43 & 0.41 & 0.37 & 0.32 & 0.56 \\
+\hline
+\end{tabular}
+
+\end{figure*}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figurestar105}%
+\begin{figure*}
+\begin{tabular}{{|l}*{20}{|c}|r|}
+\hline
+\multicolumn{4}{|c|}{Test configurations}      & \multicolumn{6}{|c|}{MaxEnt}\\
+\hline
+Domain & Features & \# of features & Frequency & ***** & **** & *** & ** & * & score \\
+\hline
+default & Unigrams & 16165 & Frequency         & - & - & - & - & - & - \\
+default & Unigrams & 16165 & Presence          & 0.61 & 0.57 & 0.39 & 0.23 & 0.11 & 0.75 \\
+default & Bigrams & 16165 & Presence           & 0.63 & 0.59 & 0.45 & 0.28 & 0.26 & 0.68 \\
+position & Unigrams & 16165 & Presence         & 0.46 & 0.43 & 0.28 & 0.17 & 0.11 & 0.67 \\
+partofspeech & Unigrams & 16165 & Presence     & 0.55 & 0.50 & 0.32 & 0.20 & 0.10 & 0.72 \\
+adjectives & Unigrams & 16165 & Presence       & 0.75 & 0.72 & 0.62 & 0.45 & 0.37 & 0.69 \\
+verbs & Unigrams & 16165 & Presence            & 0.43 & 0.41 & 0.38 & 0.34 & 0.30 & 0.56 \\
+default & Unigrams & maximum & Presence        & 0.59 & 0.54 & 0.36 & 0.20 & 0.11 & 0.74 \\
+position & Unigrams & maximum & Presence       & 0.44 & 0.40 & 0.26 & 0.15 & 0.09 & 0.68 \\
+partofspeech & Unigrams & maximum & Presence   & 0.52 & 0.47 & 0.30 & 0.18 & 0.09 & 0.72 \\
+adjectives & Unigrams & maximum & Presence     & 0.75 & 0.72 & 0.62 & 0.45 & 0.37 & 0.69 \\
+verbs & Unigrams & maximum & Presence          & 0.43 & 0.41 & 0.38 & 0.34 & 0.30 & 0.56 \\
+\hline
+\end{tabular}
+
+\end{figure*}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlfigureA{figurestar119}%
+\begin{figure*}
+\begin{tabular}{{|l}*{20}{|c}|r|}
+\hline
+\multicolumn{4}{|c|}{Test configurations}      & \multicolumn{6}{|c|}{SVM}\\
+\hline
+Domain & Features & \# of features & Frequency & ***** & **** & *** & **  & * & score \\
+\hline
+default & Unigrams & 16165 & Frequency         & 0.78 & 0.76 & 0.62 & 0.42 & 0.30 & 0.74 \\
+default & Unigrams & 16165 & Presence          & 0.58 & 0.54 & 0.38 & 0.25 & 0.14 & 0.72 \\
+default & Bigrams & 16165 & Presence           & 0.62 & 0.58 & 0.48 & 0.30 & 0.29 & 0.67 \\
+position & Unigrams & 16165 & Presence         & 0.42 & 0.39 & 0.27 & 0.39 & 0.42 & 0.50 \\
+partofspeech & Unigrams & 16165 & Presence     & 0.52 & 0.48 & 0.31 & 0.21 & 0.01 & 0.75 \\
+adjectives & Unigrams & 16165 & Presence       & 0.71 & 0.71 & 0.61 & 0.46 & 0.37 & 0.67 \\
+verbs & Unigrams & 16165 & Presence            & 0.45 & 0.45 & 0.42 & 0.38 & 0.32 & 0.57 \\
+default & Unigrams & maximum & Presence        & - & - & - & - & - & - \\
+position & Unigrams & maximum & Presence       & - & - & - & - & - & - \\
+partofspeech & Unigrams & maximum & Presence   & - & - & - & - & - & - \\
+adjectives & Unigrams & maximum & Presence     & 0.71 & 0.71 & 0.61 & 0.46 & 0.37 & 0.67 \\
+verbs & Unigrams & maximum & Presence          & 0.45 & 0.45 & 0.42 & 0.38 & 0.32 & 0.57 \\
+\hline
+\end{tabular}
+
+\end{figure*}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+
+\end{document}

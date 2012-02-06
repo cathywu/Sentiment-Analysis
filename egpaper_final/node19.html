@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Neighboring Domain Data</TITLE>
+<META NAME="description" CONTENT="Neighboring Domain Data">
+<META NAME="keywords" CONTENT="egpaper_final">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="egpaper_final.css">
+
+<LINK REL="previous" HREF="node18.html">
+<LINK REL="up" HREF="node9.html">
+<LINK REL="next" HREF="node20.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html226"
+  HREF="node20.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html224"
+  HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html220"
+  HREF="node18.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html227"
+  HREF="node20.html">Bibliography</A>
+<B> Up:</B> <A NAME="tex2html225"
+  HREF="node9.html">Results</A>
+<B> Previous:</B> <A NAME="tex2html221"
+  HREF="node18.html">Majority Voting</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000610000000000000000">
+Neighboring Domain Data</A>
+</H2>
+Mostly out of curiosity, we wanted to see how our test configurations will perform when training on the movie dataset and testing on the Yelp dataset, an external out-of-domain dataset. We preprocessed the Yelp dataset[<A
+ HREF="node20.html#yelp">8</A>] such that it matched the format of the movie dataset and selected 1000 of each of the 1-5 star rating reviews. For evaluation purposes, we scored the accuracy on only 1-star and 5-star reviews, giving our testbed only high-confidence negative and positive reviews, respectively. The score was simply the average of the two accuracies.
+
+<P>
+Across the board, the classifiers had a harder time with the Yelp dataset as compared to the movie dataset, performing between 56.0% and 75.2%. The respective lowest and highest performing configurations scored at 67.0% and 84.0% on the movie dataset.
+
+<P>
+We expected to see worse results, given the difference in vocabulary, subject matter, tone, etc., but all configurations performed better than random. We also saw strong positive trends across all test configurations, classifying reviews with more stars more positively.
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="89"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 1:</STRONG>
+3-fold cross validation results on movie dataset. Values repesent positive, negative, or overall accuracy.</CAPTION>
+<TR><TD><IMG
+ WIDTH="798" HEIGHT="747" BORDER="0"
+ SRC="img26.png"
+ ALT="\begin{figure*}
+\begin{tabular}{{\vert l}*{11}{\vert c}\vert r\vert}
+\hline
+\...
+....60 &amp; - &amp; - &amp; - &amp; 0.62 &amp; 0.66 &amp; 0.64 \\
+\hline
+\end{tabular}
+\end{figure*}"></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="103"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 2:</STRONG>
+Test results on Yelp dataset with Naive Bayes classifier. Values repesent percent of reviews classified as positive for a given star rating.</CAPTION>
+<TR><TD><IMG
+ WIDTH="671" HEIGHT="270" BORDER="0"
+ SRC="img27.png"
+ ALT="\begin{figure*}
+\begin{tabular}{{\vert l}*{8}{\vert c}\vert r\vert}
+\hline
+\m...
+...4 &amp; 0.43 &amp; 0.41 &amp; 0.37 &amp; 0.32 &amp; 0.56 \\
+\hline
+\end{tabular}
+\end{figure*}"></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="117"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 3:</STRONG>
+Test results on Yelp dataset with Maximum Entropy classifier. Values repesent percent of reviews classified as positive for a given star rating.</CAPTION>
+<TR><TD><IMG
+ WIDTH="671" HEIGHT="270" BORDER="0"
+ SRC="img28.png"
+ ALT="\begin{figure*}
+\begin{tabular}{{\vert l}*{20}{\vert c}\vert r\vert}
+\hline
+\...
+...3 &amp; 0.41 &amp; 0.38 &amp; 0.34 &amp; 0.30 &amp; 0.56 \\
+\hline
+\end{tabular}
+\end{figure*}"></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="131"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 4:</STRONG>
+Test results on Yelp dataset with SVM classifier. Values repesent percent of reviews classified as positive for a given star rating.</CAPTION>
+<TR><TD><IMG
+ WIDTH="671" HEIGHT="270" BORDER="0"
+ SRC="img29.png"
+ ALT="\begin{figure*}
+\begin{tabular}{{\vert l}*{20}{\vert c}\vert r\vert}
+\hline
+\...
+...5 &amp; 0.45 &amp; 0.42 &amp; 0.38 &amp; 0.32 &amp; 0.57 \\
+\hline
+\end{tabular}
+\end{figure*}"></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+<SMALL CLASS="SMALL">
+
+</SMALL>
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html226"
+  HREF="node20.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html224"
+  HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html220"
+  HREF="node18.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html227"
+  HREF="node20.html">Bibliography</A>
+<B> Up:</B> <A NAME="tex2html225"
+  HREF="node9.html">Results</A>
+<B> Previous:</B> <A NAME="tex2html221"
+  HREF="node18.html">Majority Voting</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Pranjal Vachaspati
+2012-02-05
+</ADDRESS>
+</BODY>
+</HTML>
