@@ -6,6 +6,7 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{url}
 
 % Include other packages here, before hyperref.
 
@@ -51,11 +52,14 @@ We implement a series of classifiers (Naive Bayes, Maximum Entropy, and SVM) to 
 
 Sentiment analysis, broadly speaking, is the set of techniques that allows detection of emotional content in text. This has a variety of applications: it is commonly used by trading algorithms to process news articles, as well as by corporations to better respond to consumer service needs. Similar techniques can also be applied to other text analysis problems, like spam filtering.
 
+The source code described in this paper is available at https://github.com/cathywu/Sentiment-Analysis.
+
 \section{Previous Work}
 
-We set out to replicate Pang's work from 2002 on using classical knowledge-free supervised machine learning techniques to perform sentiment classification. They used the machine learning methods (Naive Bayes, maximum entropy classification, and support vector machines), methods commonly used for topic classification, to explore the difference between and sentiment classification in documents. Pang cited a number of related works, but they mostly pertain to classifying documents on criteria weakly tied to sentiment or using knowledge-based sentiment classification methods. We used a similar dataset, as released by the authors, and made efforts to use the same libraries and pre-processing techniques.
+We set out to replicate Pang's work \cite{Pang} from 2002 on using classical knowledge-free supervised machine learning techniques to perform sentiment classification. They used the machine learning methods (Naive Bayes, maximum entropy classification, and support vector machines), methods commonly used for topic classification, to explore the difference between and sentiment classification in documents. Pang cited a number of related works, but they mostly pertain to classifying documents on criteria weakly tied to sentiment or using knowledge-based sentiment classification methods. We used a similar dataset, as released by the authors, and made efforts to use the same libraries and pre-processing techniques.
 
-In addition to replicating Pang's work as closely as we could, we extended the work by exploring an additional dataset, additional preprocessing techniques, and combining classifiers. We tested how well classifiers trained on Pang's dataset extended to reviews in another domain. Although Pang limited many of his tests to use only the 16165 most common ngrams, advanced processors have lifted this computational constraint, and so we additionally tested on all ngrams. We used a newer parameter estimation algorithm called Limited-Memory Variable Metric (L-BFGS) for maximum entropy classification. Pang used the Improved Iterative Scaling method. We also implemented and tested the effect of term frequency-inverse document frequency (TF-IDF) on classification results.
+In addition to replicating Pang's work as closely as we could, we extended the work by exploring an additional dataset, additional preprocessing techniques, and combining classifiers. We tested how well classifiers trained on Pang's dataset extended to reviews in another domain. Although Pang limited many of his tests to use only the 16165 most common ngrams, advanced processors have lifted this computational constraint, and so we additionally tested on all ngrams. We used a newer parameter estimation algorithm called Limited-Memory Variable Metric (L-BFGS)\cite{Liu} for maximum entropy classification. Pang used the Improved Iterative Scaling method. We also implemented and tested the effect of term frequency-inver document frequency (TF-IDF) on classification results.
+
 
 \section{The User Review Domain}
 For our experiments, we worked with movie reviews. Our data source was Pang's released dataset (http://www.cs.cornell.edu/people/pabo/movie-review-data/) from their 2004 publication. The dataset contains 1000 positive reviews and 1000 negative reviews, each labeled with their true sentiment. The original data source was the Internet Movie Database (IMDb).
@@ -67,7 +71,7 @@ The domain of reviews is experimentally convenient because there are largely ava
 
 \section{Machine Learning Methods}
 \subsection{The Naive Bayes Classifier}
-The Naive Bayes classifier is an extremely simple classifier that relies on Bayesian probability and the assumption that feature probabilities are independent of one another.
+The Naive Bayes classifier\cite{Manning} is an extremely simple classifier that relies on Bayesian probability and the assumption that feature probabilities are independent of one another.
 Baye's Rule gives:
 $$
 P(C | F_1, F_2, \ldots, F_n)
@@ -98,18 +102,16 @@ $$ - \lg (\sum_j count C_j, F_i))])$$
 
 While the Naive Bayes classifier seems very simple, it is observed to have high predictive power; in our tests, it performed competitively with the more sophisticated classifiers we used. The Bayes classifier can also be implemented very efficiently. Its independence assumption means that it does not fall prey to the curse of dimensionality, and its running time is linear in the size of the input.
 
-[http://nlp.stanford.edu/IR-book/html/htmledition/naive-bayes-text-classification-1.html]
-
 \subsection{The Maximum Entropy Classifier}
 
-Maximum Entropy is a general-purpose machine learning technique that provides the least biased estimate possible based on the given information. In other words, “it is maximally noncommittal with regards to missing information” [src]. Importantly, it makes no conditional independence assumption between features, as the Naive Bayes classifier does.
+Maximum Entropy is a general-purpose machine learning technique that provides the least biased estimate possible based on the given information. In other words, ``it is maximally noncommittal with regards to missing information'' \cite{Jaynes}. Importantly, it makes no conditional independence assumption between features, as the Naive Bayes classifier does.
 
 Maximum entropy's estimate of $P(c|d)$ takes the following exponential form:
 $$P(c|d) = \frac{1}{Z(d)} \exp(\sum_i(\lambda_{i,c} F_{i,c}(d,c)))$$
 
 The $\lambda_{i,c}$'s are feature-weigh parameters, where a large $\lambda_{i,c}$ means that $f_i$ is considered a strong indicator for class $c$. We use 30 iterations of the Limited-Memory Variable Metric (L-BFGS) parameter estimation. Pang used the Improved Iterative Scaling (IIS) method, but L-BFGS, a method that was invented after their paper was published, was found to out-perform both IIS and generalized iterative scaling (GIS), yet another parameter estimation method. 
 
-We used Zhang Le's (2004) Package Maximum Entropy Modeling Toolkit for Python and C++ [link] [src], with no special configuration.
+We used Zhang Le's (2004) Package Maximum Entropy Modeling Toolkit for Python and C++ \cite{Le}, with no special configuration.
 
 \subsection{The Support Vector Machine Classifier}
 
@@ -121,7 +123,7 @@ given
 $$\forall i, \zeta_i \ge 0$$
 $$\forall i, y_i  (\vec{x}_i^T \cdot \vec{B} + B0) \ge 1 - \zeta_i $$
 
-For this paper, we use the PyML implementation of SVMs, which uses the liblinear optimizer to actually find the separating hyperplane. Of the three classifiers, this was the slowest to train, as it suffers from the curse of dimensionalit
+For this paper, we use the PyML implementation of SVMs \cite{PyML}, which uses the liblinear optimizer to actually find the separating hyperplane. Of the three classifiers, this was the slowest to train, as it suffers from the curse of dimensionalit
 
 \section{Experimental Setup}
 We used documents from the movie review dataset and ran 3-fold cross validation in a number of test configurations. We ignored case and treated punctuation marks as separate lexical items. 
@@ -138,7 +140,7 @@ Interestingly, for Naive Bayes, the positive and negative tests performed very d
 
 \subsection{Conditional Independence Assumption}
 
-The Bayes classifier depends on a conditional independence assumption, meaning that the model it predicts assumes that the probability of a given word is independent of the other words. Clearly, this assumption does not hold. Nevertheless, the Bayes classifier functions well, in part because the positive and negative correlations between features tend to cancel each other out [http://www.cs.unb.ca/profs/hzhang/publications/FLAIRS04ZhangH.pdf].
+The Bayes classifier depends on a conditional independence assumption, meaning that the model it predicts assumes that the probability of a given word is independent of the other words. Clearly, this assumption does not hold. Nevertheless, the Bayes classifier functions well, in part because the positive and negative correlations between features tend to cancel each other out \cite{Zhang}.
 
 We found a huge difference between results of Naive Bayes and Maximum Entropy for positive testing accuracy and negative testing accuracy. Maximum Entropy, which makes no unfounded assumptions about the data, gave very similar results for positive tests and negative tests with a 0.2\% difference on average. On the other hand, positive and negative results from Naive Bayes, which assumes conditional independence, varies by 27.5\% on average, with the worst cases performing on test configurations using frequency, averaging 40\% difference. These disparities suggest evidence that the movie dataset does not satisfy the conditional independence assumption.
 
@@ -166,7 +168,8 @@ Reviews are split into a beginning, middle, and end, so to see if one section ca
 Position tagging was not helpful. For bigrams, it harmed performance by around 5\% in most cases, and for unigrams, it was not helpful. If reviews end up not actually following the model specified or if the model has no bearing on where the relevant data is, position tagging will be harmful because it increases the dimensionality of the input without increasing the information content. We suspect that is the case here.
 
 \subsection{Part of Speech Tagging}
-We appended POS tags to every word using Oliver Mason's Qtag program [src]. This serves as a rough way to disambiguate words that may hold different meanings in different contexts. For example, it would distinguish the different uses of “love” in ``I love this movie'' versus ``This is a love story.'' However, it turns out that word disambiguation is a much more complicated problem, as POS says nothing to distinguish between the meaning of cold in ``I was a bit cold during the movie'' and ``The cold murderer chilled my heart.''
+
+We appended POS tags to every word using Oliver Mason's Qtag program \cite{qtag}. This serves as a rough way to disambiguate words that may hold different meanings in different contexts. For example, it would distinguish the different uses of “love” in ``I love this movie'' versus ``This is a love story.'' However, it turns out that word disambiguation is a much more complicated problem, as POS says nothing to distinguish between the meaning of cold in ``I was a bit cold during the movie'' and ``The cold murderer chilled my heart.''
 
 Part of speech tagging was not very helpful for unigram results; in fact, the NB classifier did slightly worse with parts of speech tagged when using unigrams. However, when using bigrams, the MaxEnt and SVM classifiers did significantly better, achieving 3-4\% better accuracy with part of speech tagging when measuring frequency and presence information.
 
@@ -182,7 +185,7 @@ Given a large ensemble of classifiers, an easy way to combine them is with a sim
 Majority voting in some cases provided a small but significant improvement over the classifiers alone; combining Bayes, MaxEnt, and SVM classifiers over the same data provided a three to four percent boost over the best of the individual classifiers alone.
 
 \subsection{Neighboring Domain Data}
-Mostly out of curiosity, we wanted to see how our test configurations will perform when training on the movie dataset and testing on the Yelp dataset, an external out-of-domain dataset. We preprocessed the Yelp dataset such that it matched the format of the movie dataset and selected 1000 of each of the 1-5 star rating reviews. For evaluation purposes, we scored the accuracy on only 1-star and 5-star reviews, giving our testbed only high-confidence negative and positive reviews, respectively. The score was simply the average of the two accuracies.
+Mostly out of curiosity, we wanted to see how our test configurations will perform when training on the movie dataset and testing on the Yelp dataset, an external out-of-domain dataset. We preprocessed the Yelp dataset\cite{yelp} such that it matched the format of the movie dataset and selected 1000 of each of the 1-5 star rating reviews. For evaluation purposes, we scored the accuracy on only 1-star and 5-star reviews, giving our testbed only high-confidence negative and positive reviews, respectively. The score was simply the average of the two accuracies.
 
 Across the board, the classifiers had a harder time with the Yelp dataset as compared to the movie dataset, performing between 56.0\% and 75.2\%. The respective lowest and highest performing configurations scored at 67.0\% and 84.0\% on the movie dataset.
 
