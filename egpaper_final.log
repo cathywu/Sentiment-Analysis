@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.2)  5 FEB 2012 20:56
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.2)  5 FEB 2012 21:15
 entering extended mode
  %&-line parsing enabled.
 **egpaper_final.tex
@@ -269,7 +269,7 @@ Overfull \hbox (4.21208pt too wide) in paragraph at lines 369--414
  []
 
 
-LaTeX Warning: Citation `Authors06' on page 4 undefined on input line 494.
+LaTeX Warning: Citation `Authors06' on page 4 undefined on input line 498.
 
 
 Underfull \vbox (badness 5652) has occurred while \output is active []
@@ -301,7 +301,7 @@ nts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/u
 rw/courier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pf
 b></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-
 texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on egpaper_final.pdf (6 pages, 162017 bytes).
+Output written on egpaper_final.pdf (6 pages, 162579 bytes).
 PDF statistics:
  70 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
