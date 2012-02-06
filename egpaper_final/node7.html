@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>The Support Vector Machine Classifier</TITLE>
+<META NAME="description" CONTENT="The Support Vector Machine Classifier">
+<META NAME="keywords" CONTENT="egpaper_final">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="egpaper_final.css">
+
+<LINK REL="previous" HREF="node6.html">
+<LINK REL="up" HREF="node4.html">
+<LINK REL="next" HREF="node8.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html98"
+  HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html96"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html92"
+  HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html99"
+  HREF="node8.html">Experimental Setup</A>
+<B> Up:</B> <A NAME="tex2html97"
+  HREF="node4.html">Machine Learning Methods</A>
+<B> Previous:</B> <A NAME="tex2html93"
+  HREF="node6.html">The Maximum Entropy Classifier</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00043000000000000000">
+The Support Vector Machine Classifier</A>
+</H2>
+
+<P>
+Support Vector Machines (SVMs) operate by separating points in a d-dimensional space using a (d-1)-dimensional hyperplane, unlike Max-Ent and Naive Bayes classifiers, which use probabilistic measures to classify points. Given a set of training data, the SVM classifier finds a hyperplane with the largest possible margin; that is, it tries finds the hyperplane such that each training point is correctly classified and the hyperplane is as far as possible from the points closest to it. In practice, it is usually not possible to find a hyperplane that separates the classes perfectly, so points are permitted to be inside the margin or on the wrong side of the hyperplane. Any point on or inside the margin is referred to as a support vector, and the hyperplane, given by
+<P><!-- MATH
+ \begin{displaymath}
+f(\vec{B}, B_0) = \{\vec{x} | \vec{x}^T \cdot \vec{B} + B_0 = 0\}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="227" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img22.png"
+ ALT="$\displaystyle f(\vec{B}, B_0) = \{\vec{x} \vert \vec{x}^T \cdot \vec{B} + B_0 = 0\}$">
+</DIV><P></P>
+is selected through a constrained quadratic optimization to minimize 
+<P><!-- MATH
+ \begin{displaymath}
+\frac{1}{2} |\vec{B}|^2 + C\sum_i \zeta_i
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="117" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img23.png"
+ ALT="$\displaystyle \frac{1}{2} \vert\vec{B}\vert^2 + C\sum_i \zeta_i$">
+</DIV><P></P>
+given
+<P><!-- MATH
+ \begin{displaymath}
+\forall i, \zeta_i \ge 0
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="67" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img24.png"
+ ALT="$\displaystyle \forall i, \zeta_i \ge 0$">
+</DIV><P></P>
+<P><!-- MATH
+ \begin{displaymath}
+\forall i, y_i  (\vec{x}_i^T \cdot \vec{B} + B0) \ge 1 - \zeta_i
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="195" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.png"
+ ALT="$\displaystyle \forall i, y_i (\vec{x}_i^T \cdot \vec{B} + B0) \ge 1 - \zeta_i $">
+</DIV><P></P>
+
+<P>
+For this paper, we use the PyML implementation of SVMs [<A
+ HREF="node20.html#PyML">1</A>], which uses the liblinear optimizer to actually find the separating hyperplane. Of the three classifiers, this was the slowest to train, as it suffers from the curse of dimensionalit
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html98"
+  HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html96"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html92"
+  HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html99"
+  HREF="node8.html">Experimental Setup</A>
+<B> Up:</B> <A NAME="tex2html97"
+  HREF="node4.html">Machine Learning Methods</A>
+<B> Previous:</B> <A NAME="tex2html93"
+  HREF="node6.html">The Maximum Entropy Classifier</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Pranjal Vachaspati
+2012-02-05
+</ADDRESS>
+</BODY>
+</HTML>

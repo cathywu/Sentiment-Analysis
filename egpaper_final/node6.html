@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>The Maximum Entropy Classifier</TITLE>
+<META NAME="description" CONTENT="The Maximum Entropy Classifier">
+<META NAME="keywords" CONTENT="egpaper_final">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="egpaper_final.css">
+
+<LINK REL="next" HREF="node7.html">
+<LINK REL="previous" HREF="node5.html">
+<LINK REL="up" HREF="node4.html">
+<LINK REL="next" HREF="node7.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html90"
+  HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html88"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html82"
+  HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html91"
+  HREF="node7.html">The Support Vector Machine</A>
+<B> Up:</B> <A NAME="tex2html89"
+  HREF="node4.html">Machine Learning Methods</A>
+<B> Previous:</B> <A NAME="tex2html83"
+  HREF="node5.html">The Naive Bayes Classifier</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00042000000000000000">
+The Maximum Entropy Classifier</A>
+</H2>
+
+<P>
+Maximum Entropy is a general-purpose machine learning technique that provides the least biased estimate possible based on the given information. In other words, ``it is maximally noncommittal with regards to missing information'' [<A
+ HREF="node20.html#Jaynes">3</A>]. Importantly, it makes no conditional independence assumption between features, as the Naive Bayes classifier does.
+
+<P>
+Maximum entropy's estimate of <SPAN CLASS="MATH"><IMG
+ WIDTH="48" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.png"
+ ALT="$ P(c\vert d)$"></SPAN> takes the following exponential form:
+<P><!-- MATH
+ \begin{displaymath}
+P(c|d) = \frac{1}{Z(d)} \exp(\sum_i(\lambda_{i,c} F_{i,c}(d,c)))
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="264" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="$\displaystyle P(c\vert d) = \frac{1}{Z(d)} \exp(\sum_i(\lambda_{i,c} F_{i,c}(d,c)))$">
+</DIV><P></P>
+
+<P>
+The <!-- MATH
+ $\lambda_{i,c}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="28" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$ \lambda_{i,c}$"></SPAN>'s are feature-weigh parameters, where a large <!-- MATH
+ $\lambda_{i,c}$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="28" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="$ \lambda_{i,c}$"></SPAN> means that <SPAN CLASS="MATH"><IMG
+ WIDTH="17" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$ f_i$"></SPAN> is considered a strong indicator for class <SPAN CLASS="MATH"><IMG
+ WIDTH="11" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img21.png"
+ ALT="$ c$"></SPAN>. We use 30 iterations of the Limited-Memory Variable Metric (L-BFGS) parameter estimation. Pang used the Improved Iterative Scaling (IIS) method, but L-BFGS, a method that was invented after their paper was published, was found to out-perform both IIS and generalized iterative scaling (GIS), yet another parameter estimation method. 
+
+<P>
+We used Zhang Le's (2004) Package Maximum Entropy Modeling Toolkit for Python and C++ [<A
+ HREF="node20.html#Le">4</A>], with no special configuration.
+
+<P>
+<BR><HR>
+<ADDRESS>
+Pranjal Vachaspati
+2012-02-05
+</ADDRESS>
+</BODY>
+</HTML>

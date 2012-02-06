@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Number of Features</TITLE>
+<META NAME="description" CONTENT="Number of Features">
+<META NAME="keywords" CONTENT="egpaper_final">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="egpaper_final.css">
+
+<LINK REL="next" HREF="node13.html">
+<LINK REL="previous" HREF="node11.html">
+<LINK REL="up" HREF="node9.html">
+<LINK REL="next" HREF="node13.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html158"
+  HREF="node13.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html156"
+  HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html150"
+  HREF="node11.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html159"
+  HREF="node13.html">Negation Tagging</A>
+<B> Up:</B> <A NAME="tex2html157"
+  HREF="node9.html">Results</A>
+<B> Previous:</B> <A NAME="tex2html151"
+  HREF="node11.html">Conditional Independence Assumption</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00063000000000000000">
+Number of Features</A>
+</H2>
+
+<P>
+One key decision in a bag-of-words feature set is which words to include. Using more words provides more information, but harms the performance of the classifiers, and words that appear only infrequently in the training data may not present accurate information due to the law of small numbers. We examine results with the entire training data, as well as with only the top 16165 and 2633 unigrams and bigrams.
+
+<P>
+Using the most frequent unigrams is an extremely simple method of feature selection, and in this case, not a particularly robust one, since feature selection should look for words that identify a given class. Choosing frequent words does not discriminate between the two classes and will select common words like ``the'' and ``it'', which likely are weak sentiment indicators. On the other hand, uncommon words that only appear in a handful or less of reviews will not contribute much to sentiment indication. Pang's motivation for limiting the number of features was for improve testing performance, but our classifiers and processors were fast enough that this was not particularly noticeable.
+
+<P>
+On average, limiting the number of features from 16165 to 2633, as in the original Pang paper, caused accuracy to drop by 5.2%, 4.0%, and 2.8% for Naive Bayes, Maximum Entropy, and SVM, respectively. These results indicate that valuable sentiment information was lost in the restriction of features. 
+
+<P>
+However, when restricting from all features down to 16165, the results were a wash. Naive Bayes did vaguely worse, Maximum Entropy remained unchanged, and SVMs did vaguely better. These results suggest that uncommon features do not carry much sentiment information. Additionally, this validated Pang's use of limited features, as they did not significantly impact the results but satisfied their performance constraints.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html158"
+  HREF="node13.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html156"
+  HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html150"
+  HREF="node11.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html159"
+  HREF="node13.html">Negation Tagging</A>
+<B> Up:</B> <A NAME="tex2html157"
+  HREF="node9.html">Results</A>
+<B> Previous:</B> <A NAME="tex2html151"
+  HREF="node11.html">Conditional Independence Assumption</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Pranjal Vachaspati
+2012-02-05
+</ADDRESS>
+</BODY>
+</HTML>

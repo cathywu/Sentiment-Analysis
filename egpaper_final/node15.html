@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Part of Speech Tagging</TITLE>
+<META NAME="description" CONTENT="Part of Speech Tagging">
+<META NAME="keywords" CONTENT="egpaper_final">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="egpaper_final.css">
+
+<LINK REL="next" HREF="node16.html">
+<LINK REL="previous" HREF="node14.html">
+<LINK REL="up" HREF="node9.html">
+<LINK REL="next" HREF="node16.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html188"
+  HREF="node16.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html186"
+  HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html180"
+  HREF="node14.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html189"
+  HREF="node16.html">Adjectives</A>
+<B> Up:</B> <A NAME="tex2html187"
+  HREF="node9.html">Results</A>
+<B> Previous:</B> <A NAME="tex2html181"
+  HREF="node14.html">Position Tagging</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00066000000000000000">
+Part of Speech Tagging</A>
+</H2>
+
+<P>
+We appended POS tags to every word using Oliver Mason's Qtag program [<A
+ HREF="node20.html#qtag">6</A>]. This serves as a rough way to disambiguate words that may hold different meanings in different contexts. For example, it would distinguish the different uses of “love” in ``I love this movie'' versus ``This is a love story.'' However, it turns out that word disambiguation is a much more complicated problem, as POS says nothing to distinguish between the meaning of cold in ``I was a bit cold during the movie'' and ``The cold murderer chilled my heart.''
+
+<P>
+Part of speech tagging was not very helpful for unigram results; in fact, the NB classifier did slightly worse with parts of speech tagged when using unigrams. However, when using bigrams, the MaxEnt and SVM classifiers did significantly better, achieving 3-4% better accuracy with part of speech tagging when measuring frequency and presence information.
+
+<P>
+<BR><HR>
+<ADDRESS>
+Pranjal Vachaspati
+2012-02-05
+</ADDRESS>
+</BODY>
+</HTML>

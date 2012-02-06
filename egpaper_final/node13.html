@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Negation Tagging</TITLE>
+<META NAME="description" CONTENT="Negation Tagging">
+<META NAME="keywords" CONTENT="egpaper_final">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="egpaper_final.css">
+
+<LINK REL="next" HREF="node14.html">
+<LINK REL="previous" HREF="node12.html">
+<LINK REL="up" HREF="node9.html">
+<LINK REL="next" HREF="node14.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html168"
+  HREF="node14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html166"
+  HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html160"
+  HREF="node12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html169"
+  HREF="node14.html">Position Tagging</A>
+<B> Up:</B> <A NAME="tex2html167"
+  HREF="node9.html">Results</A>
+<B> Previous:</B> <A NAME="tex2html161"
+  HREF="node12.html">Number of Features</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00064000000000000000">
+Negation Tagging</A>
+</H2>
+
+<P>
+In an effort to preserve the potential value of negation information while using dead-simple features, we tagged words between those expressing negation and the next punctuation mark with a postfix ``_NOT.'' This distinguishes sentences like ``That movie was very good'' and ``That movie was not very good.'' Diverging from Pang, we also added negation tags to bigrams.
+
+<P>
+Negation tagging did not appear to have a significant effect on the data. For all the classifiers, the results from negation tagged data were almost the same as the results from the raw data. Nevertheless, we used negation tagging for the remainder of the tests, as it did not seem to hurt performance or accuracy. 
+
+<P>
+The ineffectiveness of negation tagging probably comes from a few sources. First, it increases the number of uncommon features, which, as discussed previously, harms effectiveness and cancels out the increase in semantic awareness. Second, the presence of a “not” does not always indicate negation. Rather, it is often used idiomatically, as in the example fragment ``with his distinctive, more often than not ingenious dialogue''. Finally, the method of tagging all words up to the next punctuation mark is suspect. Only a few words after the not are actually semantically negated, and these often occur after a comma or other punctuation mark.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html168"
+  HREF="node14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html166"
+  HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html160"
+  HREF="node12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html169"
+  HREF="node14.html">Position Tagging</A>
+<B> Up:</B> <A NAME="tex2html167"
+  HREF="node9.html">Results</A>
+<B> Previous:</B> <A NAME="tex2html161"
+  HREF="node12.html">Number of Features</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Pranjal Vachaspati
+2012-02-05
+</ADDRESS>
+</BODY>
+</HTML>

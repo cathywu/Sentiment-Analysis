@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Conditional Independence Assumption</TITLE>
+<META NAME="description" CONTENT="Conditional Independence Assumption">
+<META NAME="keywords" CONTENT="egpaper_final">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="egpaper_final.css">
+
+<LINK REL="next" HREF="node12.html">
+<LINK REL="previous" HREF="node10.html">
+<LINK REL="up" HREF="node9.html">
+<LINK REL="next" HREF="node12.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html148"
+  HREF="node12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html146"
+  HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html140"
+  HREF="node10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html149"
+  HREF="node12.html">Number of Features</A>
+<B> Up:</B> <A NAME="tex2html147"
+  HREF="node9.html">Results</A>
+<B> Previous:</B> <A NAME="tex2html141"
+  HREF="node10.html">Feature Counting Method</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00062000000000000000">
+Conditional Independence Assumption</A>
+</H2>
+
+<P>
+The Bayes classifier depends on a conditional independence assumption, meaning that the model it predicts assumes that the probability of a given word is independent of the other words. Clearly, this assumption does not hold. Nevertheless, the Bayes classifier functions well, in part because the positive and negative correlations between features tend to cancel each other out [<A
+ HREF="node20.html#Zhang">9</A>].
+
+<P>
+We found a huge difference between results of Naive Bayes and Maximum Entropy for positive testing accuracy and negative testing accuracy. Maximum Entropy, which makes no unfounded assumptions about the data, gave very similar results for positive tests and negative tests with a 0.2% difference on average. On the other hand, positive and negative results from Naive Bayes, which assumes conditional independence, varies by 27.5% on average, with the worst cases performing on test configurations using frequency, averaging 40% difference. These disparities suggest evidence that the movie dataset does not satisfy the conditional independence assumption.
+
+<P>
+<BR><HR>
+<ADDRESS>
+Pranjal Vachaspati
+2012-02-05
+</ADDRESS>
+</BODY>
+</HTML>

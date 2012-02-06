@@ -1,0 +1,269 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>The Naive Bayes Classifier</TITLE>
+<META NAME="description" CONTENT="The Naive Bayes Classifier">
+<META NAME="keywords" CONTENT="egpaper_final">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="egpaper_final.css">
+
+<LINK REL="next" HREF="node6.html">
+<LINK REL="previous" HREF="node4.html">
+<LINK REL="up" HREF="node4.html">
+<LINK REL="next" HREF="node6.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html80"
+  HREF="node6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html78"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html72"
+  HREF="node4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html81"
+  HREF="node6.html">The Maximum Entropy Classifier</A>
+<B> Up:</B> <A NAME="tex2html79"
+  HREF="node4.html">Machine Learning Methods</A>
+<B> Previous:</B> <A NAME="tex2html73"
+  HREF="node4.html">Machine Learning Methods</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00041000000000000000">
+The Naive Bayes Classifier</A>
+</H2>
+The Naive Bayes classifier[<A
+ HREF="node20.html#Manning">2</A>] is an extremely simple classifier that relies on Bayesian probability and the assumption that feature probabilities are independent of one another.
+Baye's Rule gives:
+<P><!-- MATH
+ \begin{displaymath}
+P(C | F_1, F_2, \ldots, F_n)
+= \frac{P(C)P(F_1, F_2, \ldots, F_n | C)}{P(F_1, F_2, \ldots, F_n)} \\
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="342" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$\displaystyle P(C \vert F_1, F_2, \ldots, F_n)
+= \frac{P(C)P(F_1, F_2, \ldots, F_n \vert C)}{P(F_1, F_2, \ldots, F_n)} \\
+$">
+</DIV><P></P>
+
+<P>
+Simplifying the numerator gives:
+<P><!-- MATH
+ \begin{displaymath}
+P(C)P(F_1, F_2, \ldots, F_n | C)\\
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="179" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.png"
+ ALT="$\displaystyle P(C)P(F_1, F_2, \ldots, F_n \vert C)\\ $">
+</DIV><P></P>
+<P><!-- MATH
+ \begin{displaymath}
+= P(C)P(F_1 | C)P( F_2, F_3, \ldots, F_n| C, F_1) \\
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="279" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.png"
+ ALT="$\displaystyle = P(C)P(F_1 \vert C)P( F_2, F_3, \ldots, F_n\vert C, F_1) \\ $">
+</DIV><P></P>
+<P><!-- MATH
+ \begin{displaymath}
+= P(C)P(F_1 | C)P(F_2 | C, F_1)P(F_3, F_4, \ldots, F_n | C, F_1, F_2) \\
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="386" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.png"
+ ALT="$\displaystyle = P(C)P(F_1 \vert C)P(F_2 \vert C, F_1)P(F_3, F_4, \ldots, F_n \vert C, F_1, F_2) \\ $">
+</DIV><P></P>
+<P><!-- MATH
+ \begin{displaymath}
+\ldots
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="22" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.png"
+ ALT="$\displaystyle \ldots$">
+</DIV><P></P>
+
+<P>
+Then, assuming the probabilities are independent gives
+<P><!-- MATH
+ \begin{displaymath}
+P(F_i | F_j\ldots F_k) = F(F_i)
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="169" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.png"
+ ALT="$\displaystyle P(F_i \vert F_j\ldots F_k) = F(F_i)$">
+</DIV><P></P>
+so 
+<P><!-- MATH
+ \begin{displaymath}
+P(F_i | C, F_j\ldots F_k) = P(F_i | C)
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="205" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$\displaystyle P(F_i \vert C, F_j\ldots F_k) = P(F_i \vert C)$">
+</DIV><P></P>
+<P><!-- MATH
+ \begin{displaymath}
+P(C | F_1\ldots F_n) = P(C) [\prod_{i=0}^n P(F_i | C) ]
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="254" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.png"
+ ALT="$\displaystyle P(C \vert F_1\ldots F_n) = P(C) [\prod_{i=0}^n P(F_i \vert C) ]$">
+</DIV><P></P>
+
+<P>
+<SPAN CLASS="MATH"><IMG
+ WIDTH="64" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.png"
+ ALT="$ P(Fi \vert C)$"></SPAN> is estimated through plus-one smoothing on a labeled training set, that is:
+<P><!-- MATH
+ \begin{displaymath}
+\frac{(1+count(C, F_i))}{\sum_i count(C_j, F_i))}
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="133" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.png"
+ ALT="$\displaystyle \frac{(1+count(C, F_i))}{\sum_i count(C_j, F_i))}$">
+</DIV><P></P>
+where <!-- MATH
+ $count(C, F_j)$
+ -->
+<SPAN CLASS="MATH"><IMG
+ WIDTH="91" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img11.png"
+ ALT="$ count(C, F_j)$"></SPAN> is the number of times that <SPAN CLASS="MATH"><IMG
+ WIDTH="21" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="img12.png"
+ ALT="$ F_j$"></SPAN> appears over all training documents in class <SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$ C$"></SPAN>.
+
+<P>
+The class a feature vector belongs to is given by
+<P><!-- MATH
+ \begin{displaymath}
+C^* = \operatorname*{arg\,max}_C P(C | F_1...F_n)
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="194" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img14.png"
+ ALT="$\displaystyle C^* = \operatorname*{arg\,max}_C P(C \vert F_1...F_n)$">
+</DIV><P></P>
+Taking the logarithm of both sides gives
+<P><!-- MATH
+ \begin{displaymath}
+C^* = \operatorname*{arg\,max}_C (P(C) + \sum_i [F_i (\lg count (C, F_i)
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="313" HEIGHT="49" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.png"
+ ALT="$\displaystyle C^* = \operatorname*{arg\,max}_C (P(C) + \sum_i [F_i (\lg count (C, F_i)$">
+</DIV><P></P> 
+<P><!-- MATH
+ \begin{displaymath}
+- \lg (\sum_j count C_j, F_i))])
+\end{displaymath}
+ -->
+</P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<IMG
+ WIDTH="166" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img16.png"
+ ALT="$\displaystyle - \lg (\sum_j count C_j, F_i))])$">
+</DIV><P></P>
+
+<P>
+While the Naive Bayes classifier seems very simple, it is observed to have high predictive power; in our tests, it performed competitively with the more sophisticated classifiers we used. The Bayes classifier can also be implemented very efficiently. Its independence assumption means that it does not fall prey to the curse of dimensionality, and its running time is linear in the size of the input.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html80"
+  HREF="node6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html78"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html72"
+  HREF="node4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html81"
+  HREF="node6.html">The Maximum Entropy Classifier</A>
+<B> Up:</B> <A NAME="tex2html79"
+  HREF="node4.html">Machine Learning Methods</A>
+<B> Previous:</B> <A NAME="tex2html73"
+  HREF="node4.html">Machine Learning Methods</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Pranjal Vachaspati
+2012-02-05
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Feature Counting Method</TITLE>
+<META NAME="description" CONTENT="Feature Counting Method">
+<META NAME="keywords" CONTENT="egpaper_final">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="egpaper_final.css">
+
+<LINK REL="next" HREF="node11.html">
+<LINK REL="previous" HREF="node9.html">
+<LINK REL="up" HREF="node9.html">
+<LINK REL="next" HREF="node11.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html138"
+  HREF="node11.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html136"
+  HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html130"
+  HREF="node9.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html139"
+  HREF="node11.html">Conditional Independence Assumption</A>
+<B> Up:</B> <A NAME="tex2html137"
+  HREF="node9.html">Results</A>
+<B> Previous:</B> <A NAME="tex2html131"
+  HREF="node9.html">Results</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00061000000000000000">
+Feature Counting Method</A>
+</H2>
+There are several ways to construct a probability model for a set of document n-grams. The most obvious is to use feature frequency. The value of a feature in a given document is simply the number of times it appears in that document. Presence, on the other hand, attributes a value of 1 if a feature exists in a document and 0 otherwise.
+
+<P>
+As a whole (across all other parameters), training on presence rather than frequency performed on average 5.5% better for Naive Bayes, ranging from 0% to 10% improvement, with no particular outliers in other test configurations, from 73.1% accuracy with frequency to 78.5% accuracy with presence. There was no significant difference for SVMs and applying TF-IDF did not provide any improvement from using frequency for either. Both of these comparisons do not apply to Maximum Entropy.
+
+<P>
+Interestingly, for Naive Bayes, the positive and negative tests performed very differently between presence and frequency tests. Excluding verb tests, which did not exhibit this disparity, positive tests averaged 6.5% worse (up to 12% worse in the case) on presence tests while negative tests averaged 18.9% better (up to 30% better). There was an average aggregate difference of 25.4% between positive and negative results. By comparison, SVMs exhibited an average aggregate difference of 0.7%. These results provide evidence that training on presence rather than frequency yields models with less bias.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html138"
+  HREF="node11.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html136"
+  HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html130"
+  HREF="node9.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html139"
+  HREF="node11.html">Conditional Independence Assumption</A>
+<B> Up:</B> <A NAME="tex2html137"
+  HREF="node9.html">Results</A>
+<B> Previous:</B> <A NAME="tex2html131"
+  HREF="node9.html">Results</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Pranjal Vachaspati
+2012-02-05
+</ADDRESS>
+</BODY>
+</HTML>
