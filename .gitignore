@@ -2,3 +2,7 @@
 *.swp
 *.tar.gz
 *.dump
+*~
+*.log
+*.aux
+*.blg
