@@ -26,9 +26,7 @@
 %%%%%%%%% TITLE
 \title{Sentiment Classification using Machine Learning Techniques}
 
-\author{Pranjal Vashaspati\\
-Institution1\\
-Institution1 address\\
+\author{Pranjal Vachaspati\\
 {\tt\small pranjal@mit.edu}
 % For a paper whose authors are all at the same institutiton,
 % omit the following lines up until the closing ``}''.
@@ -37,8 +35,6 @@ Institution1 address\\
 % To save space, use either the email address or home page, not both
 \and
 Cathy Wu\\
-Institution2\\
-First line of institution2 address\\
 {\tt\small cathywu@mit.edu}
 }
 
@@ -47,7 +43,7 @@ First line of institution2 address\\
 
 %%%%%%%%% ABSTRACT
 \begin{abstract}
-We implement a series of classifiers (Naive Bayes, Maximum Entropy, and SVM) to distinguish positive and negative sentiment in critic and user reviews. We apply various processing methods, including negation tagging, part-of-speech tagging, and position tagging to achieve maximum accuracy. We test our classifiers on an external dataset to see how well they generalize. Finally, we use a majority-voting technique to combine classifiers and achieve accuracy of close to 90\% in 3-fold cross-validation.
+We implement a series of classifiers (Naive Bayes, Maximum Entropy, and SVM) to distinguish positive and negative sentiment in critic and user reviews. We apply various processing methods, including negation tagging, part-of-speech tagging, and position tagging to achieve maximum accuracy. We test our classifiers on an external dataset to see how well they generalize. Finally, we use a majority-voting technique to combine classifiers and achieve accuracy of close to 90\% in 3-fold cross-validation\cite{Martin}.
 \end{abstract}
 
 %%%%%%%%% BODY TEXT
@@ -322,7 +318,7 @@ verbs & Unigrams & maximum & Presence          & 0.45 & 0.45 & 0.42 & 0.38 & 0.3
 
 {\small
 \bibliographystyle{ieee}
-\bibliography{egbib}
+\bibliography{fpbib}
 }
 
 \end{document}
