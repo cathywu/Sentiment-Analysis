@@ -184,7 +184,7 @@ Majority voting in some cases provided a small but significant improvement over 
 \subsection{Neighboring Domain Data}
 Mostly out of curiosity, we wanted to see how our test configurations will perform when training on the movie dataset and testing on the Yelp dataset, an external out-of-domain dataset. We preprocessed the Yelp dataset such that it matched the format of the movie dataset and selected 1000 of each of the 1-5 star rating reviews. For evaluation purposes, we scored the accuracy on only 1-star and 5-star reviews, giving our testbed only high-confidence negative and positive reviews, respectively. The score was simply the average of the two accuracies.
 
-Across the board, the classifiers has a harder time with the Yelp dataset as compared to the movie dataset, performing between 56.0\% and 75.2\%. The respective lowest and highest performing configurations scored at 67.0\% and 84.0\% on the movie dataset.
+Across the board, the classifiers had a harder time with the Yelp dataset as compared to the movie dataset, performing between 56.0\% and 75.2\%. The respective lowest and highest performing configurations scored at 67.0\% and 84.0\% on the movie dataset.
 
 We expected to see worse results, given the difference in vocabulary, subject matter, tone, etc., but all configurations performed better than random. We also saw strong positive trends across all test configurations, classifying reviews with more stars more positively.
 
