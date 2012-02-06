@@ -1,0 +1,10 @@
+\begin{thebibliography}{1}\itemsep=-1pt
+
+\bibitem{Martin}
+J.~M. D.~Martin, C.~Fowlkes.
+\newblock Learning to detect natural image boundaries using local brightness,
+  color, and texture cues.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  26(5):530--549, 2004.
+
+\end{thebibliography}

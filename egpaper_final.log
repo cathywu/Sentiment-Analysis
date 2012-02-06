@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.2)  5 FEB 2012 21:26
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.2)  5 FEB 2012 21:39
 entering extended mode
  %&-line parsing enabled.
 **egpaper_final.tex
@@ -191,29 +191,23 @@ Package color Info: Driver file: pdftex.def on input line 130.
 \everyMPtoPDFconversion=\toks21
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 45.
-LaTeX Font Info:    Try loading font information for U+msa on input line 45.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
+LaTeX Font Info:    Try loading font information for U+msa on input line 41.
  (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 45.
+LaTeX Font Info:    Try loading font information for U+msb on input line 41.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 45.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 41.
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
-
-
-LaTeX Warning: Citation `Authors11' on page 1 undefined on input line 50.
-
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 45.
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
@@ -227,17 +221,17 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
 
-Underfull \hbox (badness 3088) in paragraph at lines 65--66
+Underfull \hbox (badness 3088) in paragraph at lines 61--62
 []\OT1/ptm/m/n/10 For our ex-per-i-ments, we worked with movie re-
  []
 
 
-Underfull \hbox (badness 1803) in paragraph at lines 65--66
+Underfull \hbox (badness 1803) in paragraph at lines 61--62
 \OT1/ptm/m/n/10 views. Our data source was Pangs re-leased dataset
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 \OT1/ptm/m/n/10 (http://www.cs.cornell.edu/people/pabo/movie-review-
  []
 
@@ -247,14 +241,11 @@ Missing character: There is no ú in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Overfull \hbox (2.72952pt too wide) detected at line 84
+Overfull \hbox (2.72952pt too wide) detected at line 80
 \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 C\OT1/cmr
 /m/n/10 )\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 F[]\OMS/cmsy/m/n/1
 0 j\OML/cmm/m/it/10 C\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/c
@@ -264,12 +255,12 @@ m/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 F[]; F[]; [] ; F[]\OMS/cmsy/m/n/10
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 []\OT1/ptm/m/n/10 [http://nlp.stanford.edu/IR-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 \OT1/ptm/m/n/10 book/html/htmledition/naive-bayes-text-classification-
  []
 
@@ -289,12 +280,12 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
 [2]
-Underfull \hbox (badness 1688) in paragraph at lines 145--146
+Underfull \hbox (badness 1688) in paragraph at lines 141--142
 \OT1/ptm/m/n/10 tions well, in part be-cause the pos-i-tive and neg-a-tive
  []
 
 
-Overfull \hbox (58.7314pt too wide) in paragraph at lines 145--146
+Overfull \hbox (58.7314pt too wide) in paragraph at lines 141--142
 \OT1/ptm/m/n/10 [http://www.cs.unb.ca/profs/hzhang/publications/FLAIRS04ZhangH.
 pdf]. 
  []
@@ -322,36 +313,33 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
  [4]
-Overfull \hbox (4.21208pt too wide) in paragraph at lines 199--244
+Overfull \hbox (4.21208pt too wide) in paragraph at lines 195--240
 [][] 
  []
 
 (./egpaper_final.bbl) [5
 
-] [6] [7] (./egpaper_final.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+] [6] [7] (./egpaper_final.aux) ) 
 Here is how much of TeX's memory you used:
- 2139 strings out of 495061
- 25791 string characters out of 1182621
- 134725 words of memory out of 3000000
- 5284 multiletter control sequences out of 15000+50000
- 24844 words of font info for 61 fonts, out of 3000000 for 9000
+ 2138 strings out of 495061
+ 25774 string characters out of 1182621
+ 134728 words of memory out of 3000000
+ 5283 multiletter control sequences out of 15000+50000
+ 24902 words of font info for 61 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  32i,9n,24p,794b,314s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
-ve/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/ty
-pe1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/
-amsfonts/cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
-cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></u
-sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
-xmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/
-fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/ti
-mes/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr
-/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on egpaper_final.pdf (7 pages, 160339 bytes).
+{/usr/share/texmf-texlive/fonts/enc/dvips/base
+/8r.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/te
+xmf-texlive/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-texlive/
+fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/
+public/amsfonts/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7
+.pfb></usr/share/texmf-texlive/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/t
+exmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/t
+ype1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri
+8a.pfb>
+Output written on egpaper_final.pdf (7 pages, 160449 bytes).
 PDF statistics:
  71 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

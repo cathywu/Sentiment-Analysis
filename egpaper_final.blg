@@ -1,56 +1,45 @@
 This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: egpaper_final.aux
-I couldn't open style file ieee.bst
----line 22 of file egpaper_final.aux
- : \bibstyle{ieee
- :               }
-I'm skipping whatever remains of this command
-I couldn't open database file egbib.bib
----line 23 of file egpaper_final.aux
- : \bibdata{egbib
- :               }
-I'm skipping whatever remains of this command
-I found no database files---while reading file egpaper_final.aux
-I found no style file---while reading file egpaper_final.aux
+The style file: ieee.bst
+Database file #1: fpbib.bib
 You've used 1 entry,
-            0 wiz_defined-function locations,
-            87 strings with 527 characters,
-and the built_in function-call counts, 0 in all, are:
-= -- 0
-> -- 0
+            2120 wiz_defined-function locations,
+            507 strings with 3943 characters,
+and the built_in function-call counts, 318 in all, are:
+= -- 32
+> -- 7
 < -- 0
-+ -- 0
-- -- 0
-* -- 0
-:= -- 0
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
++ -- 3
+- -- 2
+* -- 25
+:= -- 58
+add.period$ -- 3
+call.type$ -- 1
+change.case$ -- 4
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 0
-format.name$ -- 0
-if$ -- 0
+cite$ -- 1
+duplicate$ -- 11
+empty$ -- 28
+format.name$ -- 2
+if$ -- 62
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 0
-num.names$ -- 0
-pop$ -- 0
-preamble$ -- 0
-purify$ -- 0
+int.to.str$ -- 1
+missing$ -- 1
+newline$ -- 8
+num.names$ -- 2
+pop$ -- 2
+preamble$ -- 1
+purify$ -- 3
 quote$ -- 0
-skip$ -- 0
+skip$ -- 7
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 30
+swap$ -- 1
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 4
 warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 0
-(There were 4 error messages)
+while$ -- 4
+width$ -- 2
+write$ -- 13
