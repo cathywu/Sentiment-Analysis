@@ -43,13 +43,15 @@ Cathy Wu\\
 
 %%%%%%%%% ABSTRACT
 \begin{abstract}
-We implement a series of classifiers (Naive Bayes, Maximum Entropy, and SVM) to distinguish positive and negative sentiment in critic and user reviews. We apply various processing methods, including negation tagging, part-of-speech tagging, and position tagging to achieve maximum accuracy. We test our classifiers on an external dataset to see how well they generalize. Finally, we use a majority-voting technique to combine classifiers and achieve accuracy of close to 90\% in 3-fold cross-validation\cite{Authors11}.
+We implement a series of classifiers (Naive Bayes, Maximum Entropy, and SVM) to distinguish positive and negative sentiment in critic and user reviews. We apply various processing methods, including negation tagging, part-of-speech tagging, and position tagging to achieve maximum accuracy. We test our classifiers on an external dataset to see how well they generalize. Finally, we use a majority-voting technique to combine classifiers and achieve accuracy of close to 90\% in 3-fold cross-validation.
 \end{abstract}
 
 %%%%%%%%% BODY TEXT
 \section{Introduction}
 
 Sentiment analysis, broadly speaking, is the set of techniques that allows detection of emotional content in text. This has a variety of applications: it is commonly used by trading algorithms to process news articles, as well as by corporations to better respond to consumer service needs. Similar techniques can also be applied to other text analysis problems, like spam filtering.
+
+The source code described in this paper is available at https://github.com/cathywu/Sentiment-Analysis.
 
 \section{Previous Work}
 
@@ -138,7 +140,7 @@ Interestingly, for Naive Bayes, the positive and negative tests performed very d
 
 \subsection{Conditional Independence Assumption}
 
-The Bayes classifier depends on a conditional independence assumption, meaning that the model it predicts assumes that the probability of a given word is independent of the other words. Clearly, this assumption does not hold. Nevertheless, the Bayes classifier functions well, in part because the positive and negative correlations between features tend to cancel each other out [http://www.cs.unb.ca/profs/hzhang/publications/FLAIRS04ZhangH.pdf].
+The Bayes classifier depends on a conditional independence assumption, meaning that the model it predicts assumes that the probability of a given word is independent of the other words. Clearly, this assumption does not hold. Nevertheless, the Bayes classifier functions well, in part because the positive and negative correlations between features tend to cancel each other out [Zhang].
 
 We found a huge difference between results of Naive Bayes and Maximum Entropy for positive testing accuracy and negative testing accuracy. Maximum Entropy, which makes no unfounded assumptions about the data, gave very similar results for positive tests and negative tests with a 0.2\% difference on average. On the other hand, positive and negative results from Naive Bayes, which assumes conditional independence, varies by 27.5\% on average, with the worst cases performing on test configurations using frequency, averaging 40\% difference. These disparities suggest evidence that the movie dataset does not satisfy the conditional independence assumption.
 
